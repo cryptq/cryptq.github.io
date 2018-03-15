@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+body {
+  background: #D0FEF5;
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  display: block;
+  margin: auto;
+  background: none;
+  margin-top: 8%;
+}
+
+.console {
+  position: absolute;
+  background: #1C1018;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  background: #941B0C;
+  border-radius: 50px;
+  height: 4.5%;
+  width: 3%;
+  top: 5%;
+  left: 10%;
+}
+
+.minimize {
+  position: absolute;
+  background: #F6AA1C;
+  border-radius: 50px;
+  height: 4.5%;
+  width: 3%;
+  top: 5%;
+  left: 6%;
+}
+
+.expand {
+  position: absolute;
+  background: #81E979;
+  border-radius: 50px;
+  height: 4.5%;
+  width: 3%;
+  top: 5%;
+  left: 2%;
+}
+
+.message {
+  position: absolute;
+  color: #FAB2EA;
+  top: 35%;
+  left: 17%;
+  font-family: "Lato";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media all and (max-width: 600px) {
+  .box {
+    margin-top: 100px;
+    width: 250px;
+    height: 175px;
+  }
+
+  .message {
+    position: absolute;
+    color: #FAB2EA;
+    top: 35%;
+    left: 17%;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
