@@ -73,7 +73,12 @@
     <div class="minimize"></div>
     <div class="close"></div>
   </div>
-  <div class="message"><p>&gt;_ </p></div>
+  <div class="message"><p>&gt;_ </p>
+    <pre>.screen p::after {
+	content: '_';
+	opacity: 0;
+	animation: cursor 1s infinite;
+}</pre></div>
   </div>  
   
 </body>
