@@ -1,0 +1,97 @@
+/*Browser and Terminal Octicons designed for GitHub by Joel Glovier
+http://dribbble.com/jag
+*/
+
+body {
+  background-color: #fdfdfd;
+  
+}
+
+.Absolute-Center {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.display {
+  display: inline-block;
+  margin: 10px;
+}
+
+/*Browser Octicon designed by Joel Glovier
+http://dribbble.com/shots/1222601-browser-octicon?list=tags&tag=icon
+*/
+
+.browser {
+  background-color: #fdfdfd;
+  border: 8px solid #2b2b2b;
+  border-top: 22px solid #2b2b2b;
+  border-radius: 8px;
+  height: 59px;
+  position: relative;
+  width: 90px;
+}
+
+.browser:before {
+  background-color: #fdfdfd;
+  box-shadow: 14px 0 0 0 #fdfdfd, 28px 0 0 0 #fdfdfd;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  top: -14px;
+}
+
+.browser:after {
+  content: '';
+  background-color: #fdfdfd;
+  height: 7px;
+  width: 48px;
+  position: absolute;
+  right: 0;
+  top: -14px;
+}
+
+/*Terminal Octicon designed by Joel Glovier
+http://dribbble.com/shots/1222603-terminal-octicon?list=users
+*/
+
+.terminal {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  height: 89px;
+  position: relative;
+  width: 106px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.terminal:before {
+  background-color: #2b2b2b;
+  content: '';
+  height: 22px;
+  position: absolute;
+  border-right: 11px solid #fdfdfd;
+  border-bottom: 11px solid #fdfdfd;
+  width: 22px;
+  top: 20px;
+  transform: rotate(-45deg);
+  z-index: 2;
+  left: 6px;
+}
+
+.terminal:after {
+  background-color: #fdfdfd;
+  content: "";
+  height: 8px;
+  left: 45px; 
+  top: 53px;
+  position: absolute;
+  width: 31px;
+  z-index: 2;
+}
