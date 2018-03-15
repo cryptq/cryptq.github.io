@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic CSS Grid Examples</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1>Generic Grid</h1>
+	<div class="grid grid--basic">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+<h1>Objects spanning multiple columns</h1>
+	<div class="grid grid--span2">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+<h1>Featured Object</h1>
+	<div class="grid grid--big-space">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+<h1>Main content with two sidebar</h1>
+	<div class="grid grid--sidebars">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+<h1>Using named template areas</h1>
+	<div class="grid grid--named">
+		<div>Masthead</div>
+		<div>Sidebar</div>
+		<div>Main Content</div>
+		<div>Footer</div>
+	</div>
+
+<h1>Gallery with alternating reversed layouts</h1>
+	<div class="container">
+		<div class="grid grid--gallery">
+			<div class="small 1"></div>
+			<div class="small 2"></div>
+			<div class="big 3"></div>
+			<div class="wide 4"></div>
+		</div>
+		<div class="grid grid--gallery">
+			<div class="small 5"></div>
+			<div class="small 6"></div>
+			<div class="big 7"></div>
+			<div class="wide 8"></div>
+		</div>
+		<div class="grid grid--gallery">
+			<div class="small 5"></div>
+			<div class="small 6"></div>
+			<div class="big 7"></div>
+			<div class="wide 8"></div>
+		</div>
+	</div>
+
+
+	<section class="panel">
+    <h1>Messing with using classes to handle different layouts</h1>
+		<div class="grid grid--thirds">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</section>
+
+	<section class="panel panel--offset">
+		<div class="grid grid--halves">
+			<div></div>
+			<div></div>
+		</div>
+	</section>
+  
+  
+
+</body>
+
+</html>
