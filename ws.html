@@ -153,7 +153,7 @@ function addRowToTable(data) {
     
     
     // add the transaction row to the appropriate table
-    $('#bucket-'+network+' tr:first').before('<tr><td><a href="https://chain.so/tx/'+network+'/'+data.txid+'" target=_blank>'+data.txid.substring(0,8)+'...</a></td><td>'+sumSent.toFixed(4)+' '+coinSymbols[network]+'</td></tr>');
+    $('#bucket-'+network+' tr:first').before('<tr><td><a href="https://chain.so/tx/'+network+'/'+data.txid+'" target=_blank>'+data.txid+'...</a></td><td>'+sumSent.toFixed(4)+' '+coinSymbols[network]+'</td></tr>');
     
     $('#bucket-'+network).find('tr:gt(10)').remove(); // keep the first 10 rows, remove the rest
     
