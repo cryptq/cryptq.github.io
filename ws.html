@@ -70,11 +70,40 @@
     <div class="close"></div>
   </div>
   <div class="message"><p>&gt;_ </p>
-    <pre class="tbd">.screen p::after {
-<script  src="mina-bach/js/rcnt.js"></script>
+    <pre class="tbd">
+      <div class="row">
+    
+    <div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12">
+      <h4>Bitcoin<br><small id="txpm-BTC"></small></h4>
+      <table id="bucket-BTC">
+	<tr></tr>
+      </table>
+    </div>
+    
+    <div class="col-md-offset-1 col-md-3 col-sm-5 col-sm-offset-1 col-xs-12">
+      <h4>Dogecoin<br><small id="txpm-DOGE"></small></h4>
+      <table id="bucket-DOGE">
+	<tr></tr>
+      </table>
+    </div>
+    
+    <div class="col-md-offset-1 col-md-3 col-sm-5 col-sm-offset-1 col-xs-12">
+      <h4>Litecoin<br><small id="txpm-LTC"></small></h4>
+      <table id="bucket-LTC">
+	<tr></tr>
+      </table>
+    </div>  
+   </div>
+ </div>
+	  
+
+           </pre>
+
+	      </div>
+             </div>  
+	
+	<script  src="mina-bach/js/rcnt.js"></script>
     <script>    
-       
-       
        var ws = new ReconnectingWebSocket('wss://n.block.io/');
 ws.debug = false; // set to true to see messages as they appear
 ws.timeout = 5400;
@@ -147,11 +176,7 @@ function addRowToTable(data) {
     addToTxpm(data.network); // update transactions per minute data
     
     
-}
-                 </script>
-       }        </pre>
-
-	      </div>
-             </div>    
+}</script>
+	
             </body>
            </html>
