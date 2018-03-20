@@ -110,8 +110,8 @@ ws.timeout = 5400;
 // this is just a proof of concept, not a robust implementation
 var subscribed = false;
 // we'll track transactions per minute aswell
-var txpm = {'BTC': [], 'DOGE': [], 'LTC': []}
-var coinSymbols = {'BTC': '&#3647;', 'DOGE': '&#208;', 'LTC': '&#321;'}
+var txpm = {'BTC': []}     //  {'BTC': [], 'DOGE': [], 'LTC': []}
+var coinSymbols = {'BTC': '&#3647;'}   //  {'BTC': '&#3647;', 'DOGE': '&#208;', 'LTC': '&#321;'}
 ws.onmessage = function(msg) {
     // whenever a new message appears, this executes
     msg = JSON.parse(msg.data);
