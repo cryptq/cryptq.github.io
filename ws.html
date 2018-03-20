@@ -100,7 +100,7 @@ ws.onmessage = function(msg) {
 	//subscribeToNewTransactions('LTC'); // litecoin
     }
     
-}
+}/*
 function addToTxpm(network) {
     // adds to Transactions per Minute array
     // return Transactions per Minute for given data's network
@@ -123,7 +123,7 @@ function addToTxpm(network) {
     $('#txpm-'+network).text(' (Tx/min = ' + curTxpm + ')');
     
     return curTxpm;
-}
+}*/
 function subscribeToNewTransactions(network) {
     // send the appropriate JSON string to subscribe to a network's new tx stream
     ws.send(JSON.stringify({'type':'new-transactions','network':network}));
