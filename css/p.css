@@ -18,13 +18,15 @@ div.hood {
     opacity: .94;
     cursor: zoom-in;
     background-image: url(https://cryptq.github.io/css/h.png);
-    background-color: #673ab78f;
+    background-color: #607d8bbd;
     background-repeat: no-repeat;
     background-size: contain;
     top: 287px;
     left: 334px;
     width: 580px;
+    border-radius: 447px 0px 414px;
     height: 335px;
+    transform: rotate(356deg);
     position: absolute;
     background-blend-mode: difference;
 }
@@ -116,4 +118,16 @@ div.hood {
 }
 
 
+
+@keyframes transfrm {   
+  0% {     
+    color: pink;   
+  }   
+  50% {     
+    color: yellow;   
+  } 
+  100% {
+    color: blue;
+   }
+}
 
