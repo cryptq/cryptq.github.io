@@ -21,6 +21,7 @@ function onSuccess() {
   }, 3000);
 }
 
+
 function onTouchStart() {
   fingerprint.classList.add('active');
   timer = setTimeout(onSuccess, 2000);
