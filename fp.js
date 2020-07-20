@@ -41,11 +41,11 @@ $(document).ready(function(){
   $(".success").click(function(){
     $("body").fadeOut();
     $("body").delay(500);
-    $("html").html('<meta http-equiv="refresh" content="4;URL=index.html">')
+    $("html").html('<meta http-equiv="refresh" content="4; URL=index.html">')
   });
     $("div.center.success").click(function(){
     $("body").fadeOut();
-    $("html").html('<meta http-equiv="refresh" content="4;URL=index.html">');
+    $("html").html('<meta http-equiv="refresh" content="4; URL=index.html">');
    // $("body").
   });
 });
