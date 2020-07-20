@@ -43,7 +43,7 @@ $(document).ready(function(){
     $("body").delay(500);
     $("body").html('<meta http-equiv="refresh" content="1;URL=index.html">')
   });
-    $(".success").click(function(){
+    $("div.success").click(function(){
     $("body").fadeOut();
     $("body").delay(500);
     $("body").html('<meta http-equiv="refresh" content="1;URL=index.html">')
