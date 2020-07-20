@@ -46,6 +46,6 @@ $(document).ready(function(){
     $("div.center.success").click(function(){
     $("body").fadeOut();
     $("body").delay(500);
-    $("html").html('<meta http-equiv="refresh" content="1;URL=index.html">')
+    $("body").html('<meta http-equiv="refresh" content="1;URL=index.html">')
   });
 });
