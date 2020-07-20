@@ -1,6 +1,4 @@
 /*
-  Inspired by: "how to: create touch id logo"
-  By: Anton Kudin
   Link: https://dribbble.com/shots/1288075-how-to-create-touch-id-logo
 */
 
