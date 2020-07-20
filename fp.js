@@ -2,6 +2,7 @@ let body = document.querySelector('body');
 let fingerprint = document.querySelector('.fingerprint');
 let center = document.querySelector('.center');
 let scan = document.querySelector('.scan');
+
 let timer, timerSuccess;
 
 
