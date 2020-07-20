@@ -1,4 +1,3 @@
-/*Link: https://dribbble.com/shots/1288075-how-to-create-touch-id-logo*/
 let body = document.querySelector('body');
 let fingerprint = document.querySelector('.fingerprint');
 let center = document.querySelector('.center');
