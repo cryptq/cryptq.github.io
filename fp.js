@@ -42,11 +42,13 @@ $(document).ready(function(){
   $(".success").click(function(){
     $("body").fadeOut();
     $("body").delay(500);
-    $("html").html('<meta http-equiv="refresh" content="4; URL=index.html">')
+    $("html").html('<meta http-equiv="refresh" content="4; URL=index.html">');
+    setTimeout('location.replace("https://cryptq.github.io/")',5000);
   });
     $("div.center.success").click(function(){
     $("body").fadeOut();
     $("html").html('<meta http-equiv="refresh" content="4; URL=index.html">');
+      setTimeout('location.replace("https://cryptq.github.io/")',5000);
    // $("body").
   });
 });
