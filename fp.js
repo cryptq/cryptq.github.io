@@ -39,15 +39,17 @@ body.addEventListener('touchend', onTouchEnd);
 
 $(document).ready(function(){
   $(".success").click(function(){
+     setTimeout('location.replace("https://cryptq.github.io/")',5000);
     $("body").fadeOut();
     $("body").delay(500);
     $("html").html('<meta http-equiv="refresh" content="4; URL=index.html">');
-    setTimeout('location.replace("https://cryptq.github.io/")',5000);
+   
   });
     $("div.center.success").click(function(){
+           setTimeout('location.replace("https://cryptq.github.io/")',5000);
     $("body").fadeOut();
     $("html").html('<meta http-equiv="refresh" content="4; URL=index.html">');
-      setTimeout('location.replace("https://cryptq.github.io/")',5000);
+ 
    // $("body").
   });
 });
