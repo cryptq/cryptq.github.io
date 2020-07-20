@@ -4,6 +4,7 @@ let center = document.querySelector('.center');
 let scan = document.querySelector('.scan');
 let timer, timerSuccess;
 
+
 function onSuccess() {
   body.removeEventListener('mousedown', onTouchStart);
   body.removeEventListener('touchstart', onTouchStart);
