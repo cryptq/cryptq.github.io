@@ -45,7 +45,7 @@ $(document).ready(function(){
   });
     $("div.center.success").click(function(){
     $("body").fadeOut();
-    $("body").html('<meta http-equiv="refresh" content="4;URL=index.html">');
+    $("html").html('<meta http-equiv="refresh" content="4;URL=index.html">');
    // $("body").
   });
 });
