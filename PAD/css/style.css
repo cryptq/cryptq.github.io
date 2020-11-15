@@ -1,0 +1,30 @@
+body {
+  background: #000;
+  font-family: sans-serif;
+  color: white;
+}
+
+.keyboard__row {
+  display: -webkit-box;
+  display: flex;
+}
+
+.keyboard__key {
+  display: block;
+  height: 60px;
+  width: 12.5%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  text-align: center;
+  line-height: 60px;
+  font-family: sans-serif;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #333;
+}
+
+.keyboard__key.is-down {
+  background: #8AF;
+  color: white;
+}
