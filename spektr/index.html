@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Color Mixer</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<body style="font-family:'Press Start 2P',cursive;">
+
+
+  
+  <h1>Панель управления спектром</h1>
+
+  <div class="container">
+    <div class="color-box">
+      <div class="box red">
+        <span>  </span> <!-- текст -->
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="red" 
+             value="100" 
+             min="0" 
+             max="255" 
+             step="1" />
+    </div>
+    <div class="color-box">
+      <div class="box green">
+        <span>  </span> <!-- текст -->
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="green"  
+             value="100" 
+             min="0" 
+             max="255" 
+             step="1" />
+    </div>
+    <div class="color-box">
+      <div class="box blue">
+        <span>  </span> <!-- текст -->
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="blue" 
+             value="100" 
+             min="0" 
+             max="255" 
+             step="1" />
+    </div>
+    <div class="color-box">
+      <div class="box alpha">
+        <span>  </span> <!-- текст -->
+        <span class="value">0.6</span>
+      </div>
+      <input type="range" 
+             id="alpha" 
+             value="0.6" 
+             min="0" 
+             max="1" 
+             step="0.1" />
+    </div>
+  </div>
+
+ <h1> Результат </h1>
+
+ <center>
+<img src="1.png"/>
+  </center>
+<!--   <div class="container mixed">
+    <div class="color-box mixed">
+      <div class="box mixed">
+        <span>Result</span>
+      </div>
+    </div>
+  </div> -->
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
