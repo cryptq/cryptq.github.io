@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<голова>
+  <meta charset="UTF-8">
+  <title>CodePen - Color Mixer</title>
+  <link rel="таблица стилей" href="./style.css">
+
+</head>
+<тело>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com- кроссоригин>
+<link href="https://fonts.googleapis.com/css2?family=Press +Start+2P&display=swap" rel="таблица стилей">
+<body style="font-family:'Press Start 2P',cursive;">
+
+
+  
+  <h1>Панель управления спектром</h1>
+
+  <div class="контейнер">
+    <div class="color-box">
+      <div class="box red">
+        <span>  </span> <!-- текст -->
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="красный" 
+             значение= "100" 
+             min="0" 
+             max="255" 
+             шаг="1" />
+    </div>
+    <div class="color-box">
+      <div class="box green">
+        <span>  </span> <!-- текст -->
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="зеленый" 
+             значение= "100" 
+             min="0" 
+             max="255" 
+             шаг="1" />
+    </div>
+    <div class="color-box">
+      <div class="box blue">
+        <span>  </span> <!-- текст -->
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="синий" 
+             значение= "100" 
+             min="0" 
+             max="255" 
+             step="1" />
+    </div>
+    <div class="color-box">
+      <div class="box alpha">
+        <span>  </span> <!-- текст -->
+        <span class="value">0.6</span>
+      </div>
+      <input type="range" 
+             id="alpha" 
+             value="0.6" 
+             min="0" 
+             max="1" 
+             step="0.1" />
+    </div>
+  </div>
+
+  <br><br>
+  <center>
+
+  <div class="wrap">
+    <div class="half">
+      <div class="colorPicker"></div>
+    </div>
+      <div class="half readout">
+      <div id="values" style="opacity:0;"></div>
+      <input id="hexInput" style="opacity:0;"></input>
+    </div>
+  </div>
+
+  <center>
+
+ <h1> Результат </h1>
+
+  <center>
+  <img src="1.png" style="width: 33%;">
+  </center>
+
+</body>
+<script src='https://cdn.jsdelivr.net/npm/@jaames/iro/dist/iro.min.js'></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
