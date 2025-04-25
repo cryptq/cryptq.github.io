@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+    <meta charset="UTF-8">
+    <title>Viewport and System Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script src="https://kit.fontawesome.com/969af07023.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: linear-gradient(40deg, transparent 10%, rgba(255, 255, 255, 0.16) 60%, transparent 100%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .viewport-info {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: chartreuse;
+            font-size: 16px;
+            z-index: 10;
+        }
+
+        .system-info {
+            position: fixed;
+            top: 70px;
+            left: 10px;
+            color: #969696;
+            font-size: 16px;
+            z-index: 10;
+        }
+
+        eq#eq {
+            position: absolute;
+            width: 98%;
+            height: 25vh;
+            top: 35vh;
+            margin: 1%;
+        }
+    </style>
+    <script src="https://biometricz.github.io/audio/js/eq.js"></script>
+</head>
+<body>
+
+  <!-- Информация о viewport -->
+  <div class="viewport-info">
+    <p>Viewport Width: <span id="wdt"></span>px</p>
+    <p>Viewport Height: <span id="hgt"></span>px</p>
+    <p>Screen Width: <span id="screen-wdt"></span>px</p>
+    <p>Screen Height: <span id="screen-hgt"></span>px</p>
+    <p>Device Pixel Ratio: <span id="dpr"></span></p>
+    <p>Available Screen Width: <span id="avail-wdt"></span>px</p>
+    <p>Available Screen Height: <span id="avail-hgt"></span>px</p>
+    <p>Color Depth: <span id="color-depth"></span> bits</p>
+  </div>
+
+  <!-- Информация о системе -->
+  <div class="system-info">
+    <p id="os-info"></p>
+  </div>
+
+  <eq id="eq"></eq>
+
+  <script>
+    // Получение характеристик viewport и экрана
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    var screenW = screen.width;
+    var screenH = screen.height;
+    var dpr = window.devicePixelRatio;
+    var availW = screen.availWidth;
+    var availH = screen.availHeight;
+    var colorDepth = screen.colorDepth;
+
+    document.getElementById('wdt').innerText = w;
+    document.getElementById('hgt').innerText = h;
+    document.getElementById('screen-wdt').innerText = screenW;
+    document.getElementById('screen-hgt').innerText = screenH;
+    document.getElementById('dpr').innerText = dpr;
+    document.getElementById('avail-wdt').innerText = availW;
+    document.getElementById('avail-hgt').innerText = availH;
+    document.getElementById('color-depth').innerText = colorDepth;
+
+    // Получение информации о системе
+    var OSName = "Unknown OS";
+    if (navigator.appVersion.indexOf("Win") !== -1) OSName = "Windows";
+    if (navigator.appVersion.indexOf("Mac") !== -1) OSName = "MacOS";
+    if (navigator.appVersion.indexOf("X11") !== -1) OSName = "UNIX";
+    if (navigator.appVersion.indexOf("Linux") !== -1) OSName = "Linux";
+    document.getElementById('os-info').innerText = 'OS: ' + OSName;
+  </script>
+
+</body>
+</html>
