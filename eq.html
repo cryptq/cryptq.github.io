@@ -1,94 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head> 
+<head>
     <meta charset="UTF-8">
-    <title>Viewport and System Info</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <script src="https://kit.fontawesome.com/969af07023.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эквалайзер</title>
     <style>
         body {
-            background: linear-gradient(40deg, transparent 10%, rgba(255, 255, 255, 0.16) 60%, transparent 100%);
             margin: 0;
-            font-family: Arial, sans-serif;
+            overflow: hidden;
+            background-color: #000;
+            color: white;
         }
-
-        .viewport-info {
-            position: fixed;
+        #eq {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #system-info {
+            position: absolute;
             top: 10px;
             left: 10px;
-            color: chartreuse;
-            font-size: 16px;
-            z-index: 10;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            color: white;
         }
-
-        .system-info {
-            position: fixed;
-            top: 70px;
-            left: 10px;
-            color: #969696;
-            font-size: 16px;
-            z-index: 10;
-        }
-
-        eq#eq {
-            position: absolute;
-            width: 98%;
-            height: 25vh;
-            top: 35vh;
-            margin: 1%;
+        #system-info p {
+            margin: 5px 0;
         }
     </style>
-    <script src="https://biometricz.github.io/audio/js/eq.js"></script>
 </head>
 <body>
 
-  <!-- Информация о viewport -->
-  <div class="viewport-info">
-    <p>Viewport Width: <span id="wdt"></span>px</p>
-    <p>Viewport Height: <span id="hgt"></span>px</p>
-    <p>Screen Width: <span id="screen-wdt"></span>px</p>
-    <p>Screen Height: <span id="screen-hgt"></span>px</p>
-    <p>Device Pixel Ratio: <span id="dpr"></span></p>
-    <p>Available Screen Width: <span id="avail-wdt"></span>px</p>
-    <p>Available Screen Height: <span id="avail-hgt"></span>px</p>
-    <p>Color Depth: <span id="color-depth"></span> bits</p>
-  </div>
+<div id="eq"></div>
+<div id="system-info">
+    <p>Ширина экрана: <span id="screen-width"></span></p>
+    <p>Высота экрана: <span id="screen-height"></span></p>
+    <p>Ширина окна: <span id="viewport-width"></span></p>
+    <p>Высота окна: <span id="viewport-height"></span></p>
+    <p>Количество ядер процессора: <span id="cpu-cores"></span></p>
+    <p>Доступная память: <span id="memory"></span></p>
+</div>
 
-  <!-- Информация о системе -->
-  <div class="system-info">
-    <p id="os-info"></p>
-  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+"use strict";
 
-  <eq id="eq"></eq>
+// Ваш код эквалайзера здесь...
 
-  <script>
-    // Получение характеристик viewport и экрана
-    var w = window.innerWidth;
-    var h = window.innerHeight;
-    var screenW = screen.width;
-    var screenH = screen.height;
-    var dpr = window.devicePixelRatio;
-    var availW = screen.availWidth;
-    var availH = screen.availHeight;
-    var colorDepth = screen.colorDepth;
+function updateSystemInfo() {
+    document.getElementById('screen-width').textContent = window.screen.width;
+    document.getElementById('screen-height').textContent = window.screen.height;
+    document.getElementById('viewport-width').textContent = window.innerWidth;
+    document.getElementById('viewport-height').textContent = window.innerHeight;
+    document.getElementById('cpu-cores').textContent = window.navigator.hardwareConcurrency;
+    document.getElementById('memory').textContent = (window.performance.memory ? window.performance.memory.jsHeapSizeLimit / 1024 / 1024 : 'Не доступно') + ' MB';
+}
 
-    document.getElementById('wdt').innerText = w;
-    document.getElementById('hgt').innerText = h;
-    document.getElementById('screen-wdt').innerText = screenW;
-    document.getElementById('screen-hgt').innerText = screenH;
-    document.getElementById('dpr').innerText = dpr;
-    document.getElementById('avail-wdt').innerText = availW;
-    document.getElementById('avail-hgt').innerText = availH;
-    document.getElementById('color-depth').innerText = colorDepth;
+setInterval(updateSystemInfo, 1000); // Обновляем информацию каждую секунду
 
-    // Получение информации о системе
-    var OSName = "Unknown OS";
-    if (navigator.appVersion.indexOf("Win") !== -1) OSName = "Windows";
-    if (navigator.appVersion.indexOf("Mac") !== -1) OSName = "MacOS";
-    if (navigator.appVersion.indexOf("X11") !== -1) OSName = "UNIX";
-    if (navigator.appVersion.indexOf("Linux") !== -1) OSName = "Linux";
-    document.getElementById('os-info').innerText = 'OS: ' + OSName;
-  </script>
+// Основная логика эквалайзера
+function updateVis(a) {
+    $.ctx.clearRect(0, 0, S.w, S.h), 1 === a ? curr_vis = curr_vis < VIS.length - 1 ? curr_vis + 1 : 0 : -1 === a && (curr_vis = curr_vis > 0 ? curr_vis - 1 : VIS.length - 1), vis = VIS[curr_vis];
+}
 
+function updateColor(a) {
+    1 === a ? curr_color = curr_color < COLOR.length - 1 ? curr_color + 1 : 0 : -1 === a && (curr_color = curr_color > 0 ? curr_color - 1 : COLOR.length - 1), color = COLOR[curr_color];
+}
+
+function toggleVis() {
+    playing = !playing;
+}
+
+function handleAudio(a) {
+    var b = window.AudioContext || window.webkitAudioContext;
+    A.audio_ctx = new b, A.audio_src = A.audio_ctx.createMediaStreamSource(a), A.audio_analyser = A.audio_analyser || A.audio_ctx.createAnalyser(), A.audio_analyser.minDecibels = -90, A.audio_analyser.maxDecibels = 0, A.audio_analyser.smoothingTimeConstant = .8, A.audio_analyser.fftSize = A.fft, A.audio_src.connect(A.audio_analyser), loop();
+}
+
+function setup() {
+    function a(a) {
+        console.log(a);
+    }
+    navigator.mediaDevices.getUserMedia ? navigator.mediaDevices.getUserMedia({
+        audio: !0
+    }).then(handleAudio).catch(a) : (navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia, navigator.getUserMedia && navigator.getUserMedia({
+        audio: !0
+    }, handleAudio, a));
+}
+
+function loop() {
+    var b = new Uint8Array(A.audio_analyser.frequencyBinCount);
+    vis.data ? A.audio_analyser[vis.data](b) : A.audio_analyser.getByteFrequencyData(b), vis.keep || $.ctx.clearRect(0, 0, S.w, S.h), $.ctx_fg.clearRect(0, 0, S.w, S.h), $.ctx.lineWidth = 1, V.points1 = [], V.points2 = [], V.points3 = [], V.points4 = [];
+    var c = "getByteTimeDomainData" === vis.data;
+    b = Array.from(b), c || (b = b.slice(0, Math.round(b.length / 2))), b = vis.sort ? vis.sort(b) : sortNone(b);
+    var d = b.length;
+    if (S.squares = d, d <= 0 || !playing) return void window.requestAnimationFrame(loop);
+    S.sq_per_row = S.divisible.y, S.sq_rows = S.divisible.x, S.sq_w = S.w / S.sq_per_row, S.sq_h = S.h / S.sq_rows, S.meter_w = S.w / S.squares, S.meter_max_h = .5 * S.h, A.average = 0;
+    for (var f = 0; f < d / 2; f++) A.average += b[f];
+    A.rms = A.average / (d / 2), A.rms /= A.max - A.min;
+    for (var f = 0; f < d; f++) {
+        var g = b[f];
+        g = c ? g / 256 : (g - A.min) / (A.max - A.min), g < 0 && (g = 0), vis.fn(g, f, d);
+        var h = c ? b[f] : b[f];
+        h > A.max && (A.max = h), h < A.min && (A.min = h);
+    }
+    window.requestAnimationFrame(loop);
+}
+
+function noise(a, b, c) {
+    var d = S.h,
+        e = .02 * d,
+        f = (1 - a) * S.h_rad,
+        g = (b - .75 * c) * PI * 2,
+        h = g / c,
+        j = S.w_rad + Math.cos(h) * f * .8,
+        k = S.h_rad + Math.sin(h) * f * .8,
+        l = .6 * a + .4;
+    $.ctx.fillStyle = hsla(l, b), $.ctx.beginPath();
+    var m = e / 2 * (.7 * a + .3);
+    $.ctx.arc(j, k, m, 0, 2 * PI, !1), $.ctx.fill();
+}
+
+// Продолжение логики эквалайзера...
+
+// Инициализация
+$(document).ready(function() {
+    $.cvs = document.createElement('canvas');
+    $.cvs_fg = document.createElement('canvas');
+    $.ctx = $.cvs.getContext('2d');
+    $.ctx_fg = $.cvs_fg.getContext('2d');
+    document.getElementById('eq').appendChild($.cvs);
+    document.getElementById('eq').appendChild($.cvs_fg);
+    $.cvs.width = window.innerWidth;
+    $.cvs_fg.width = window.innerWidth;
+    $.cvs.height = window.innerHeight;
+    $.cvs_fg.height = window.innerHeight;
+
+    randomHues();
+    https && setup();
+
+    document.body.addEventListener("keyup", function(a) {
+        switch (a.keyCode) {
+            case 27:
+                toggleVis();
+                break;
+            case 37:
+                updateVis(-1);
+                break;
+            case 39:
+                updateVis(1);
+                break;
+            case 38:
+                updateColor(-1);
+                break;
+            case 40:
+                updateColor(1);
+        }
+    });
+});
+</script>
 </body>
 </html>
