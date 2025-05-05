@@ -22,6 +22,32 @@
     th, td { padding: 12px 8px; text-align: left; border-bottom: 1px solid var(--border); }
     th { background: var(--bg); color: var(--accent); position: sticky; top: 0; }
     @media (max-width: 600px) { th, td { padding: 8px 4px; font-size: 0.8rem; } }
+    @media (max-width: 767px) {
+    /* Секции занимают всю ширину */
+    section {width: 100% !important;
+             margin: 0 !important;
+             padding: 12px 0 !important;
+             box-sizing: border-box;}
+
+  /* Таблицы с горизонтальной прокруткой */
+  .table-container {overflow-x: auto; -webkit-overflow-scrolling: touch;width: 100%;}
+  
+  table { min-width: 100%;white-space: nowrap; }
+  
+  th, td {
+    white-space: normal;
+    word-break: break-word;
+    padding: 8px !important;
+  }
+
+  /* Изображения во всю ширину */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
   </style>
 </head>
 <body>
