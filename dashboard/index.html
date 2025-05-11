@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель управления кибер-расследованиями</title>
+  <!-- Библиотеки -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <style>
+    /* Стили глобальные и scrollbars */
+    ::-webkit-scrollbar { width: 0; }
+    ::-webkit-scrollbar-thumb { background: transparent; }
+    :root {
+      --bg: #151b23;
+      --fg: #fff;
+      --accent: #3498db;
+      --card: #1f2937;
+      --input-bg: #0f131a;
+      --border: #333;
+      --flag-red: #D52B1E;
+      --flag-blue: #0039A6;
+      --flag-white: #fff;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto 1fr;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+    }
+    header {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 10px;
+      background: var(--card);
+      border-radius: 8px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+    .chart-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+    }
+    #traffic-analysis, #stylometry {
+      overflow-y: auto;
+    }
+    button {
+      background: var(--accent);
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      color: var(--fg);
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    input[type=file] {
+      background: var(--input-bg);
+      color: var(--fg);
+      border: 1px solid var(--border);
+      padding: 6px;
+      border-radius: 4px;
+    }
+    /* SVG Holographic frame */
+    .hologram {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <header>Панель управления расследованиями международных кибер-преступлений</header>
+    <!-- Метрики -->
+    <div class="card">
+      <h2>Ключевые метрики</h2>
+      <div class="chart-container">
+        <canvas id="metricChart"></canvas>
+      </div>
+    </div>
+    <!-- Симуляция Reverse Shell -->
+    <div id="simulation" class="card">
+      <h2>Симуляция Reverse Shell</h2>
+      <div id="threejs-container" style="flex:1"></div>
+    </div>
+    <!-- Analysis panels -->
+    <div id="traffic-analysis" class="card">
+      <h2>Анализ трафика</h2>
+      <div id="d3-traffic"></div>
+    </div>
+    <div id="stylometry" class="card">
+      <h2>Стилометрический анализ</h2>
+      <input type="file" id="text-file" accept=".txt">
+      <button id="analyze-btn">Анализировать</button>
+      <pre id="stylometry-result"></pre>
+    </div>
+    <!-- AR Holographic Widget -->
+    <div class="card" style="grid-column: 2 / 4; position: relative;">
+      <h2>Голографический AR-виджет</h2>
+      <canvas id="ar-canvas"></canvas>
+    </div>
+  </div>
+
+  <script>
+    // Chart.js - метрики
+    const ctx = document.getElementById('metricChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['00:00','04:00','08:00','12:00','16:00','20:00'],
+        datasets: [{
+          label: 'Попытки вторжений',
+          data: [12,19,3,5,2,3],
+          borderColor: 'var(--accent)',
+          fill: false,
+        }]
+      },
+      options: {responsive:true, maintainAspectRatio:false}
+    });
+
+    // Three.js - reverse shell симуляция
+    const simContainer = document.getElementById('threejs-container');
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, simContainer.clientWidth / simContainer.clientHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+    renderer.setSize(simContainer.clientWidth, simContainer.clientHeight);
+    simContainer.appendChild(renderer.domElement);
+    const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+    const material = new THREE.MeshBasicMaterial({color: varColor('--flag-blue'), wireframe:true});
+    const torus = new THREE.Mesh(geometry, material);
+    scene.add(torus);
+    camera.position.z = 30;
+    function animate() {
+      requestAnimationFrame(animate);
+      torus.rotation.x += 0.01;
+      torus.rotation.y += 0.01;
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // D3.js - визуализация маршрутов
+    const trafficData = [
+      {src:'RU',dst:'US',count:45}, {src:'CN',dst:'DE',count:30}, {src:'UA',dst:'PL',count:20}
+    ];
+    const svg = d3.select('#d3-traffic').append('svg').attr('class','hologram');
+    function drawLinks(){
+      const w = svg.node().clientWidth, h = svg.node().clientHeight;
+      svg.selectAll('*').remove();
+      svg.attr('viewBox',`0 0 ${w} ${h}`);
+      trafficData.forEach((d,i)=>{
+        svg.append('line')
+          .attr('x1',Math.random()*w)
+          .attr('y1',Math.random()*h)
+          .attr('x2',Math.random()*w)
+          .attr('y2',Math.random()*h)
+          .attr('stroke-width',d.count/10)
+          .attr('stroke','var(--flag-red)')
+          .attr('opacity',0.7);
+      });
+    }
+    drawLinks();
+
+    // Стилометрический анализ (псевдо)
+    document.getElementById('analyze-btn').onclick = ()=>{
+      const file = document.getElementById('text-file').files[0];
+      if(!file) return alert('Выберите файл');
+      const reader = new FileReader();
+      reader.onload = e=>{
+        const text = e.target.result;
+        const words = text.match(/\w+/g) || [];
+        const uniq = new Set(words.map(w=>w.toLowerCase()));
+        const result = `Слов всего: ${words.length}\nУникальных слов: ${uniq.size}`;
+        document.getElementById('stylometry-result').textContent = result;
+      };
+      reader.readAsText(file);
+    };
+
+    // AR Canvas - простой голографический куб
+    const arCanvas = document.getElementById('ar-canvas');
+    const arRenderer = new THREE.WebGLRenderer({canvas:arCanvas, alpha:true, antialias:true});
+    arRenderer.setSize(arCanvas.clientWidth, arCanvas.clientHeight);
+    const arScene = new THREE.Scene();
+    const arCamera = new THREE.PerspectiveCamera(70, arCanvas.clientWidth/arCanvas.clientHeight, 0.1, 1000);
+    const cubeGeo = new THREE.BoxGeometry(5,5,5);
+    const cubeMat = new THREE.MeshBasicMaterial({color: varColor('--flag-white'), wireframe:true});
+    const cube = new THREE.Mesh(cubeGeo, cubeMat);
+    arScene.add(cube);
+    arCamera.position.z = 20;
+    function renderAR(){ requestAnimationFrame(renderAR); cube.rotation.y += 0.01; arRenderer.render(arScene, arCamera);} renderAR();
+    
+    // Утилита получения CSS-переменной в Three.js
+    function varColor(name){ return getComputedStyle(document.documentElement).getPropertyValue(name); }
+  </script>
+</body>
+</html>
