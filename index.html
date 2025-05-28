@@ -32,6 +32,28 @@
  /* .modulation-table th {padding: 12px;text-align: left;border: 1px solid #ddd; } */
  /* .modulation-table td {padding: 10px;border: 1px solid #ddd; } */
     .constellation {font-family: monospace;white-space: pre; }
+    .holo-frame {
+      border: 2px solid rgba(0, 255, 255, 0.4);padding: 40px;max-width: 800px;background: rgba(0, 30, 40, 0.25);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), inset 0 0 10px rgba(0, 255, 255, 0.1);
+      text-align: center;position: relative;animation: pulse 3s infinite ease-in-out;border-radius: 12px;backdrop-filter: blur(10px);
+    }
+
+    .holo-frame::before {
+      content: "";position: absolute;top: -2px;left: -2px;right: -2px;bottom: -2px;border-radius: 14px;background: linear-gradient(45deg, rgba(0,255,255,0.2), rgba(255,255,255,0.1), rgba(0,255,255,0.2));z-index: -1;filter: blur(8px);
+    }
+
+    .holo-text {
+      font-size: 1.3em;line-height: 1.8em;/*text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;*/
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), inset 0 0 10px rgba(0, 255, 255, 0.1);
+      }
+      50% {
+        box-shadow: 0 0 40px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.2);
+      }
+    }
     @media (max-width: 600px) { th, td { padding: 8px 4px; font-size: 0.8rem; } }
     @media (max-width: 767px) {
     /* Секции занимают всю ширину */
@@ -67,7 +89,16 @@ top: -20px;right: -20px;width: 80px;height: 80px;background: yellow;
     </div>
   </section>
 
-<center><img class="iii" src="https://cryptq.github.io/css/t.png"/></center>
+<!--<center><img class="iii" src="https://cryptq.github.io/css/t.png"/></center>-->
+
+  <div class="holo-frame">
+    <div class="holo-text">
+      <strong>Я, гражданин РФ</strong>,<br>
+      подвергаюсь целенаправленному нейропсихологическому воздействию, которое распознаётся как <strong>V2K</strong>.<br><br>
+      Через данный канал озвучиваются угрозы о готовящихся террористических актах, вмешательстве в политический строй РФ и подготовке захвата власти.<br><br>
+      Мною зафиксированы конкретные фразы, адреса (Предположительно сейчас 29.05.2025 они находятся по адресу: 3-й Новомихалковский проезд, дом 3 квартира 21 (дома серии II-14) и мониторят оперативную обстановку), псевдонимы и последовательность угроз.<br><br>
+      Прошу рассматривать это заявление как <strong>официальное сообщение о готовящемся преступлении</strong> в соответствии со <strong>статьёй 205.6 УК РФ</strong>.
+    </div>
 
 <center><img class="iii" src="https://cryptq.github.io/css/edmod.png"/>
 
