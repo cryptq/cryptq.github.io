@@ -38,8 +38,17 @@
       text-align: center;position: relative;/*animation: pulse 3s infinite ease-in-out;*/border-radius: 12px;backdrop-filter: blur(10px);
     }
 
+    .holo-frame1 {
+      border: 2px solid rgba(0, 255, 255, 0.4);padding: 40px;background: rgba(0, 30, 40, 0.25);color: #bbfcff;
+      text-align: center;position: relative;border-radius: 12px;backdrop-filter: blur(10px);
+    }
+
     .holo-frame::before {
       content: "";position: absolute;top: -2px;left: -2px;right: -2px;bottom: -2px;border-radius: 14px;background: linear-gradient(45deg, rgba(0,255,255,0.2), rgba(255,255,255,0.1), rgba(0,255,255,0.2));z-index: -1;filter: blur(8px);
+    }
+
+    .holo-frame1::before {
+      content: "";position: absolute;top: -2px;left: -2px;right: -2px;bottom: -2px;border-radius: 14px;background: linear-gradient(145deg, rgba(0,255,255,0.2), rgba(255,255,255,0.1), rgba(0,255,255,0.2));z-index: -1;filter: blur(8px);
     }
 
     .holo-warning {color:#bbfcff;font-size: 1.1em;line-height: 1.6em;background: rgba(0, 30, 40, 0.25);padding: 20px;border: 1px solid rgba(0, 255, 255, 0.2);border-radius: 10px;}
@@ -92,7 +101,7 @@ top: -20px;right: -20px;width: 80px;height: 80px;background: yellow;
 
 <!--<center><img class="iii" src="https://cryptq.github.io/css/t.png"/></center>-->
 
-   <div class="holo-frame">
+   <div class="holo-frame1">
       <strong>ВАЖНО: Почему нельзя игнорировать угрозы, даже через V2K</strong>
       <ol>
         <li><u>Юридическая трактовка V2K:</u><br>
