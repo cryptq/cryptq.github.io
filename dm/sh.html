@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Блок-схема воздействия через спутник и 5G</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    .diagram {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+    }
+    .block {
+      background: #222;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #555;
+      min-height: 100px;
+      min-width: 180px;
+      transition: transform 0.3s ease;
+    }
+    .block:hover {
+      transform: scale(1.05);
+      background: #333;
+    }
+    .arrow {
+      grid-column: span 4;
+      text-align: center;
+      font-size: 24px;
+    }
+    @media (max-width: 768px) {
+      .diagram {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Интерактивная блок-схема управления через спутник и 5G</h1>
+  <div class="diagram">
+    <div class="block">Оператор / Центр управления<br><small>(радарный GUI)</small></div>
+    <div class="block">База данных<br><small>(IMEI, координаты, шаблоны)</small></div>
+    <div class="block">Поиск цели<br><small>(по номеру телефона / координатам)</small></div>
+    <div class="block">AI/ML модуль<br><small>(анализ + принятие решений)</small></div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="block">Спутник (LEO/MEO)<br><small>(передача сигнала)</small></div>
+    <div class="block">gNodeB (5G)<br><small>Massive MIMO / Beamforming</small></div>
+    <div class="block">Антенная решётка<br><small>(наведение сигнала)</small></div>
+    <div class="block">Контрольный блок<br><small>V2K / инфразвук / частоты</small></div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="block" style="grid-column: span 4; background: #5f2b60;">Целевое лицо<br><small>(мозг / реакции / поведение)</small></div>
+  </div>
+</body>
+</html>
