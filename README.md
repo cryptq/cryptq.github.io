@@ -57,7 +57,7 @@
 
 ---
 
-[ИСПОЛЬЗУЕМЫЕ НАРРАТИВЫ](https://skillbox.ru/media/)
+<center>[ИСПОЛЬЗУЕМЫЕ НАРРАТИВЫ](https://skillbox.ru/media/)</center>
 
 
 
