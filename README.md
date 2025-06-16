@@ -14,6 +14,8 @@
 
 ![](https://cryptq.github.io/css/gosorg.png)
 
+![](https://cryptq.github.io/css/msg_send.jpg)
+
 ---
 
 ## ⚖️ ИМИТАЦИЯ ГОСУДАРСТВЕННОСТИ КАК ИНСТРУМЕНТ ЗАХВАТА
