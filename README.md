@@ -88,3 +88,97 @@
 | 21 | Указ №490 «О развитии искусственного интеллекта» | Стратегия ИИ | Технологии декодирования мозговой активности. | Запрет на манипуляции сознанием (п.15). |
 | 22 | Указ №400 «О нац. безопасности» | Национальная безопасность | Защита от психоинформационного воздействия. | Воздействие на волю, деструкция личности. |
 
+---
+
+Cистематизация клинических синдромов, выявленных при воздействии с применением описанных технологий. Каждый синдром включает ключевые симптомы, диапазон воздействий и юридическую интерпретацию.
+
+| № | **Синдром / Метод**                   | **Описание**                                                                                                     | **Основные симптомы / характеристики**  | **Связь со статьями УК РФ и федеральными законами**                                                                                       |
+|---|---------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Подсознательная дезинтеграция         | Разрушение целостности личности через внедрение гипнотических команд (V2K) и инфразвукового воздействия          | Эмоциональная нестабильность, потеря идентичности, нарушения памяти и внимания | Ст. 110, Ст. 117; нарушение ФЗ №152 «О персональных данных» и требований Постановления №187 |
+| 2 | Гэнгсталкинг                          | Организованное преследование с применением технологий гипноза, дезинформации и цифрового давления  | Страх, паранойя, социальная изоляция, ухудшение качества жизни, проявления тревожных расстройств | Ст. 278, Ст. 210; ФЗ №149 «Об информации» и ФЗ №114 «О противодействии экстремистской деятельности» |
+| 3 | Шпионаж через гипноз                  | Использование гипнотических методов (V2K, инфразвук) для получения секретной информации                          | Нарушения личной безопасности, утечка конфиденциальных данных, когнитивные расстройства     | Ст. 275, Ст. 283; ФЗ №150 «Об оружии» (ограничения на оборот подобных устройств) |
+| 4 | Синдром Миннора                       | Хроническое нарушение работы вестибулярного аппарата под воздействием инфразвука                                 | Головокружение, нарушение координации движений, тошнота, длительные изменения вестибулярных функций, общее недомогание | Ст. 215.3, Ст. 117; Постановление №187, ФЗ №323 «Об основах охраны здоровья граждан» |
+| 5 | Акустическая депривация               | Повреждение слуховых рецепторов в результате воздействия высокоинтенсивных низкочастотных импульсов              | Снижение слуха, гиперакузия, постоянная боль, шум в ушах, общее ухудшение слуховой функции  | Ст. 110, Ст. 205; ФЗ «Об оружии» (ст. 6) |
+| 6 | Микроволновая травма                  | Термическое и механическое повреждение тканей вследствие воздействия микроволн                                   | Головные боли, термические ожоги, повреждение тканей, неврологические расстройства, нарушения когнитивных функций, ощущение жара в определённых участках тела | Ст. 215.3, Ст. 275, Ст. 222; Конвенция ENMOD (1976), Постановление №187 |
+| 7 | Когнитивная дисфункция                | Хронические нарушения памяти, внимания и мыслительных процессов под действием комбинированного воздействия (V2K + инфразвук) | Забывчивость, нарушения концентрации, проблемы с принятием решений, снижение общей умственной активности  | Ст. 235, Ст. 110; ФЗ №323, ФЗ №152 |
+| 8 | Инфразвуковой стрессовый синдром      | Хронический стресс и эмоциональное истощение при длительном воздействии инфразвука                               | Постоянное чувство тревоги, усталость, депрессия, нарушение сна, снижение работоспособности | Ст. 117, Ст. 110; СанПиН, Постановление №187 |
+| 9 | Неврологическая диссоциация           | Дисфункция нейронных связей вследствие повторного импульсного воздействия (комбинированное воздействие акустических и микроволновых сигналов) | Нарушения нейропередачи, замедленная реакция, когнитивные нарушения, деперсонализация | Ст. 117, Ст. 235; ФЗ №149, ФЗ «О психобезопасности» |
+| 10 | Общая психофизическая нестабильность  | Состояние, возникающее при комбинированном воздействии перечисленных технологий, приводящее к общему ухудшению психофизического состояния | Смешанный клинический синдром: головные боли, тошнота, эмоциональная лабильность, снижение моторной активности, нарушение восприятия окружающей среды | Корректно классифицируется в совокупности статей УК (например, ст. 110, 117, 215.3) и нормативных актах (Постановление №187, ФЗ №323) |
+
+*Примечание: Указанные диапазоны частот служат для доказательной базы в судебной практике.*
+
+---
+
+## **Корреляция технологий, клинических синдромов и правовой ответственности**
+#### Направленное воздействие инфразвуковых и акустических волн (волновое оружие) приводит к резонансным явлениям и микротравмам в тонких структурах организма, что в свою очередь проявляется в различных синдромах и симптомах. 
+#### Эта таблица связывает применяемые технологии (гипноз через V2K, инфразвук, микроволны) с клиническими последствиями и соответствующей квалификацией по УК РФ и федеральным законам.
+
+| **Технология / Метод воздействия** | **Клинические синдромы** | **Применимые статьи УК РФ** | **Федеральные законы/Нормативные акты** | **Ключевые особенности и отягчающие факторы** |
+|------------------------------------|--------------------------|-----------------------------|-----------------------------------------|-----------------------------------------------|
+| Гипноз через V2K | Подсознательная дезинтеграция, когнитивная дисфункция | Ст. 110, Ст. 235, Ст. 275  | ФЗ №152, ФЗ №149  | Использование для шантажа и доведения до самоубийства; длительность воздействия; применение к уязвимым группам (дети, инвалиды) |
+| Инфразвук | Синдром Миннора, акустическая депривация, неврологическая диссоциация | Ст. 117, Ст. 215.3, Ст. 110     | Постановление №187, ФЗ №323 | Низкочастотные импульсы, длительное воздействие (>6 месяцев), массовый характер, применение для подавления активности граждан или политических оппонентов |
+| Микроволновое воздействие | Микроволновая травма, термические повреждения, когнитивная дисфункция  | Ст. 215.3, Ст. 275, Ст. 222     | ФЗ №150, Постановление №187 | Высокоинтенсивные импульсы, воздействие на ткани, использование в условиях массовых скоплений (ближе к учреждениям, школам); связь с шпионажем и государственной изменой |
+| Комбинированное воздействие (V2K + инфразвук)  | Неврологическая диссоциация, общая психофизическая нестабильность | Ст. 110, Ст. 117, Ст. 235       | ФЗ №323, ФЗ №152, ФЗ «О психобезопасности»      | Синергия нескольких методов, вызывающая систематическое ухудшение когнитивных и психофизических функций; служит доказательством комбинированного применения технологий для подавления оппозиции и изменения поведения |
+
+---
+
+**Диэлектрические свойства тканей организма и материалов (10–100 ГГц)**
+
+|**№**| **ТКАНЬ/МАТЕРИАЛ**                     | **ГРАФИК**                                                                               |
+|----|-----------------------------------------|------------------------------------------------------------------------------------------|
+| 1  | **АОРТА**                               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/aorta.html) |
+| 2  | **МОЧЕВОЙ ПУЗЫРЬ**                      | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/bladder.html) |
+| 3  | **КРОВЕНОСНЫЙ СОСУД**                   | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/blood-vessel.html) |
+| 4  | **КРОВЬ**                               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/blood.html) |
+| 5  | **ЖИДКОСТИ ОРГАНИЗМА**                  | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/body-fluid.html) |
+| 6  | **КОСТНО-ГУБЧАТАЯ ТКАНЬ**               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/bone-cancellous.html) |
+| 7  | **КОСТНО-КОРТИКАЛЬНАЯ ТКАНЬ**           | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/bone-cortical.html) |
+| 8  | **КОСТНЫЙ МОЗГ**                        | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/bone-marrow.html) |
+| 9  | **СЕРОЕ ВЕЩЕСТВО ГОЛОВНОГО МОЗГА**      | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/brain-grey-matter.html) |
+| 10 | **БЕЛОЕ ВЕЩЕСТВО ГОЛОВНОГО МОЗГА**      | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/brain-white-matter.html) |
+| 11 | **ЖИР НА ГРУДИ**                        | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/breast-fat.html) |
+| 12 | **ХРЯЩ**                                | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/cartilage.html) |
+| 13 | **МОЗЖЕЧОК**                            | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/cerebellum.html) |
+| 14 | **СПИННОМОЗГОВАЯ ЖИДКОСТЬ**             | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/cerebro-spinal-fluid.html) |
+| 15 | **ШЕЙКА МАТКИ**                         | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/cervix.html) |
+| 16 | **ДВОЕТОЧИЕ (ТОЛСТАЯ КИШКА)**           | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/colon.html) |
+| 17 | **РОГОВИЦА**                            | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/cornea.html) |
+| 18 | **ДВЕНАДЦАТИПЕРСТНАЯ КИШКА**            | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/duodenum.html) |
+| 19 | **ТВЕРДАЯ ОБОЛОЧКА**                    | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/dura.html) |
+| 20 | **ГЛАЗНОЕ СКЛЕРА**                      | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/eye-sclera.html) |
+| 21 | **ЖИР**                                 | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/fat.html) |
+| 22 | **ЖЕЛЧНЫЙ ПУЗЫРЬ**                      | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/gall-bladder.html) |
+| 23 | **ЖЕЛЧНЫЙ ПУЗЫРЬ С ЖЕЛЧЬЮ**             | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/gall-bladder-bile.html) |
+| 24 | **ЖЕЛЕЗА**                              | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/gland.html) |
+| 25 | **СЕРДЦЕ**                              | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/heart.html) |
+| 26 | **ПОЧКА**                               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/kidney.html) |
+| 27 | **ХРУСТАЛИК**                           | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/lens.html) |
+| 28 | **ЛЕГКИЕ (СЖАТЫ)**                      | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/lung-deflated.html) |
+| 29 | **ЛЕГКИЕ (НАДУТЫ)**                     | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/lung-inflated.html) |
+| 30 | **ЛИМФА**                               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/lymph.html) |
+| 31 | **СЛИЗИСТАЯ ОБОЛОЧКА**                  | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/mucous-membrane.html) |
+| 32 | **МЫШЦА**                               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/muscle.html) |
+| 33 | **НОГОТЬ**                              | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/nail.html) |
+| 34 | **НЕРВ**                                | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/nerve.html) |
+| 35 | **ПИЩЕВОД**                             | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/oesophagus.html) |
+| 36 | **ЯИЧНИК**                              | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/ovary.html) |
+| 37 | **ПОДЖЕЛУДОЧНАЯ ЖЕЛЕЗА**                | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/pancreas.html) |
+| 38 | **ПРЕДСТАТЕЛЬНАЯ ЖЕЛЕЗА**               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/prostate.html) |
+| 39 | **СЕТЧАТКА**                            | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/retina.html) |
+| 40 | **КОЖА (СУХАЯ)**                        | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/skin-dry.html) |
+| 41 | **КОЖА (ВЛАЖНАЯ)**                      | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/skin-wet.html) |
+| 42 | **ТОНКАЯ КИШКА**                        | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/small-intestine.html) |
+| 43 | **СПИННОЙ МОЗГ**                        | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/spinal-cord.html) |
+| 44 | **СЕЛЕЗЕНКА**                           | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/spleen.html) |
+| 45 | **ЖЕЛУДОК**                             | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/stomach.html) |
+| 46 | **СУХОЖИЛИЕ**                           | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/tendon.html) |
+| 47 | **ЯИЧКО**                               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/testis.html) |
+| 48 | **ВИЛОЧКОВАЯ ЖЕЛЕЗА**                   | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/thymus.html) |
+| 49 | **ЩИТОВИДНАЯ ЖЕЛЕЗА**                   | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/thyroid.html) |
+| 50 | **ЯЗЫК**                                | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/tongue.html) |
+| 51 | **ЗУБ**                                 | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/tooth.html) |
+| 52 | **ТРАХЕЯ**                              | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/trachea.html) |
+| 53 | **МАТКА**                               | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/uterus.html) |
+| 54 | **СТЕКЛОВИДНОЕ ТЕЛО**                   | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/vitreous-humor.html) |
+| 55 | **ВОЗДУХ**                              | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/air.html) |
+| 56 | **ВАКУУМ**                              | [**ГРАФИК**](https://neuroforlunch.github.io/dielectric-properties-of-body-tissues/graphs/vacuum.html) |
