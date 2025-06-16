@@ -12,7 +12,11 @@
 
 ![](https://cryptq.github.io/css/gosorg.png)
 
+---
+
 #### ✅ СРОК ОТВЕТА ДО 30 ДНЕЙ
+
+---
 
 ![](https://cryptq.github.io/css/msg_send.jpg)
 
