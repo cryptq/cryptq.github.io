@@ -59,7 +59,7 @@
 
 
 <h3 align="center"> [ИСПОЛЬЗУЕМЫЕ НАРРАТИВЫ](https://skillbox.ru/media/) </h3>
-<p align="center">Абзац по центру</p>
+<p align="center"> <a href="link">ССЫЛКА</a> </p>
 
 
 
