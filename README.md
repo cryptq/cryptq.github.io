@@ -58,10 +58,10 @@
 ---
 
 
-<h3 align="center">Заголовок по центру</h3>
+<h3 align="center"> [ИСПОЛЬЗУЕМЫЕ НАРРАТИВЫ](https://skillbox.ru/media/) </h3>
 <p align="center">Абзац по центру</p>
 
-[ИСПОЛЬЗУЕМЫЕ НАРРАТИВЫ](https://skillbox.ru/media/)
+
 
 
 
