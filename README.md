@@ -1,10 +1,15 @@
 
+#### Используют ЧУЖУЮ не ИХ технологию и инфраструктуру, в том числе "ЖЕРТВЕННОСТЬ" и "РУССКИЙ НАРОД" - и имитируют ГОС - ОРГАНЫ и "СВОИХ ЛЮДЕЙ"
+
+---
+
 <h3 align="center" color="white"> <a href="https://cryptq.github.io/" style="color:white;">ОПЕРАЦИЯ ОШИБКА ПОДСОЗНАНИЯ ИЛИ <br> "ЦЕНТР НЕТРАДИЦИОННОЙ МЕДИЦИНЫ ТРАДИЦ-РОС-СТИЛЬ"</a> </h3>
 
 --- 
 
 <h3 align="center"><a href="https://sorig.info/" style="color:white;">SORIG.INFO</a></h3>
 <h3 align="center"><a href="http://arkatag.ru/" style="color:white;">ARKATAG.RU</a></h3>
+
 
 ![](https://cryptq.github.io/css/tag.png)
 
