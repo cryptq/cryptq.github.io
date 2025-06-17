@@ -5,7 +5,7 @@
 
 ---
 
-![](https://cryptq.github.io/css/legion1.png)
+![](https://cryptq.github.io/css/legion1.jpg)
 
 ---
 
