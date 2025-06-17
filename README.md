@@ -1,5 +1,7 @@
 
-<h3 align="center"> <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/TEZIS.MD">ОШИБКА ПОДСОЗНАНИЯ ИЛИ "ЦЕНТР ТИБЕТСКОЙ МЕДИЦИНЫ"</a> </h3>
+<h3 align="center"> <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/TEZIS.MD">ОПЕРАЦИЯ ОШИБКА ПОДСОЗНАНИЯ ИЛИ "ЦЕНТР ТИБЕТСКОЙ МЕДИЦИНЫ"</a> </h3>
+
+![](https://cryptq.github.io/css/tag.png)
 
 ---
 #### ✅ РЕГИСТРАЦИЯ ЗАЯВЛЕНИЯ	МГНОВЕННО, ПРИ ПОДАЧЕ ЧЕРЕЗ ПРИЁМНУЮ (ЭЛЕКТРОННУЮ ИЛИ БУМАЖНУЮ)
