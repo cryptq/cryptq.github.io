@@ -1,5 +1,5 @@
 
-<h3 align="center"> <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/TEZIS.MD">ОПЕРАЦИЯ ОШИБКА ПОДСОЗНАНИЯ ИЛИ "ЦЕНТР НЕТРАДИЦИОННОЙ МЕДИЦИНЫ ТРАДИЦ-РОС-СТИЛЬ"</a> </h3>
+<h3 align="center"> <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/TEZIS.MD">ОПЕРАЦИЯ ОШИБКА ПОДСОЗНАНИЯ ИЛИ <br> "ЦЕНТР НЕТРАДИЦИОННОЙ МЕДИЦИНЫ ТРАДИЦ-РОС-СТИЛЬ"</a> </h3>
 
 ![](https://cryptq.github.io/css/tag.png)
 
