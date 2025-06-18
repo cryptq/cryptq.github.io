@@ -1,11 +1,17 @@
+<h3 align="center">
+<a href="https://cryptq.github.io/">
+ОПЕРАЦИЯ ОШИБКА ПОДСОЗНАНИЯ ИЛИ <br> "ЦЕНТР НЕТРАДИЦИОННОЙ МЕДИЦИНЫ ТРАДИЦ-РОС-СТИЛЬ"
+</a>
+</h3>
+
+<hr>
 
 <h3 align="center">
 <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
-ИМИТАЦИЯ ХОЗЯЕВ СТРАНЫ <br> Используют ЧУЖУЮ не ИХ технологию и инфраструктуру, в том числе: <br> 
-"ЖЕРТВЕННОСТЬ" и "РУССКИЙ НАРОД" - и имитируют ГОС-ОРГАНЫ и "СВОИХ ЛЮДЕЙ" <br>
-ИМИТАЦИЯ ГОС-ОРГАНОВ <br>
-ИМИТАЦИЯ ГОСУДАРСТВЕННОСТИ РФ</a>
+ИМИТАЦИЯ ХОЗЯЕВ СТРАНЫ
+</a>
 </h3>
+
 
 ---
 
@@ -25,15 +31,17 @@
 
 📌 Это превращает **человека в социального раба, который сам оправдывает своё положение**.
 
----
+--- 
 
 <h3 align="center">
-<a href="https://cryptq.github.io/">
-ОПЕРАЦИЯ ОШИБКА ПОДСОЗНАНИЯ ИЛИ <br> "ЦЕНТР НЕТРАДИЦИОННОЙ МЕДИЦИНЫ ТРАДИЦ-РОС-СТИЛЬ"
-</a>
+<a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
+ИМИТАЦИЯ ХОЗЯЕВ СТРАНЫ <br> Используют ЧУЖУЮ не ИХ технологию и инфраструктуру, в том числе: <br> 
+"ЖЕРТВЕННОСТЬ" и "РУССКИЙ НАРОД" - и имитируют ГОС-ОРГАНЫ и "СВОИХ ЛЮДЕЙ" <br>
+ИМИТАЦИЯ ГОС-ОРГАНОВ <br>
+ИМИТАЦИЯ ГОСУДАРСТВЕННОСТИ</a>
 </h3>
 
---- 
+---
 
 <h3 align="center"><a href="https://sorig.info/" style="color:white;">SORIG.INFO</a></h3>
 <h3 align="center"><a href="http://arkatag.ru/" style="color:white;">ARKATAG.RU</a></h3>
