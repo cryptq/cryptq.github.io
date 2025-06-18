@@ -27,6 +27,10 @@
 
 ---
 
+![](https://cryptq.github.io/css/tros.png)
+
+---
+
 <p style="text-align:center">
 
 ![](https://cryptq.github.io/css/sorig-n.jpg)
