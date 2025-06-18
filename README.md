@@ -18,11 +18,13 @@
 ![](https://cryptq.github.io/css/tag.png)
 
 ---
+
 <p style="text-align:center">
 
 ![](https://cryptq.github.io/css/sorig-n.jpg)
 
 </p>
+
 ---
 
 ![](https://cryptq.github.io/css/legion1.jpg)
