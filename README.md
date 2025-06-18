@@ -19,7 +19,7 @@
 
 ---
 
-![Alt](https://cryptq.github.io/css/sorig-n.jpg)
+![Alt](https://cryptq.github.io/css/sorig-n.jpg){: .center-image }
 
 ---
 
