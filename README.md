@@ -18,9 +18,9 @@
 ![](https://cryptq.github.io/css/tag.png)
 
 ---
-
-![Alt](https://cryptq.github.io/css/sorig-n.jpg){: .center-image }
-
+<p style="text-align:center">
+![Alt](https://cryptq.github.io/css/sorig-n.jpg)
+</p>
 ---
 
 ![](https://cryptq.github.io/css/legion1.jpg)
