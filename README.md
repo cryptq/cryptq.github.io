@@ -19,7 +19,9 @@
 
 ---
 <p style="text-align:center">
-![Alt](https://cryptq.github.io/css/sorig-n.jpg)
+
+![](https://cryptq.github.io/css/sorig-n.jpg)
+
 </p>
 ---
 
