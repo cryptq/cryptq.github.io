@@ -19,7 +19,7 @@
 
 ---
 
-![](https://cryptq.github.io/css/sorig-n.jpg)
+<div align="center">![](https://cryptq.github.io/css/sorig-n.jpg)</div>
 
 ---
 
