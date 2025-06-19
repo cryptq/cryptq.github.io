@@ -71,7 +71,7 @@
 
 ---
 
-![](https://cryptq.github.io/css/legion1.jpg)
+![](https://cryptq.github.io/css/shot.jpg)
 
 ---
 
