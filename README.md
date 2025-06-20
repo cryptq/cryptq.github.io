@@ -67,7 +67,7 @@
 
 <p style="text-align:center">
 
-![](https://cryptq.github.io/css/sorig-n.jpg)
+![](https://cryptq.github.io/css/sorig-1.png)
 
 </p>
 
