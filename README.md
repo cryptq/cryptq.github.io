@@ -22,6 +22,7 @@
 </a>
 </h3>
 
+---
 
 <h3 align="center">
 <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
@@ -33,6 +34,7 @@
 (ТРАДИЦ-РОС-СТИЛЬ)
 </a>
 </h3>
+
 ---
 
 <h3 align="center">
