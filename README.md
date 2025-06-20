@@ -6,13 +6,11 @@
 
 <hr>
 
-<h3 align="center">
+<!-- <h3 align="center">
 <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
 ИМИТАЦИЯ ПОВЕДЕНИЯ ХОЗЯЕВ СТРАНЫ (ССЫЛКА)
 </a>
-</h3>
-
-<hr>
+</h3> -->
 
 <h3 align="center">
 <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
@@ -22,7 +20,11 @@
 
 ---
 
-<h3 align="center"> ИМИТАЦИЯ ПОВЕДЕНИЯ "ХОЗЯЕВ" СТРАНЫ И ГОС ОРГАНОВ </h3>
+<h3 align="center">
+<a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
+ИМИТАЦИЯ ПОВЕДЕНИЯ ХОЗЯЕВ СТРАНЫ (ССЫЛКА)
+</a>
+</h3>
 
 #### "ЖЕРТВЕННОСТЬ", ОБРАЗ "РУССКОГО НАРОДА", И "ФАШИСТСКАЯ ИДЕОЛОГИЯ" — ЭТО СТРУКТУРЫ, ВНЕДРЯЕМЫЕ В ПОДСОЗНАНИЕ ДЛЯ СОЗДАНИЯ ИДЕАЛЬНОГО УПРАВЛЯЕМОГО СУБЪЕКТА. СОТРУДНИКИ ОРГАНОВ ТИПА КГБ ИСПОЛЬЗУЮТ ЭТО КАК ИНСТРУМЕНТЫ ДАВЛЕНИЯ И КОНТРОЛЯ
 
