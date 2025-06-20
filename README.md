@@ -195,7 +195,11 @@
 ---
 
 <h3 align="center">
-<p align="center"> <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/TEZIS.MD">ИСПОЛЬЗУЕМЫЕ ТЕЗИСЫ</a> </p>
+<p align="center"> <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/TEZIS.MD">
+ИСПОЛЬЗУЕМЫЕ ТЕЗИСЫ
+<br>
+(ссылка)
+</a> </p>
 </h3>
 
 ---
