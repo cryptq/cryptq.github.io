@@ -22,9 +22,7 @@
 </a>
 </h3>
 
----
-
-<h3 align="center">
+<!-- <h3 align="center">
 <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
 «РУССКО-АФРИКАНСКИЙ МАУГЛИ И ОСН ДОВЕРЕННОГО СПЕНАЗА УДЕРЖАЛИ РОССИЮ
 ПОКА ЗОМБИ В ГИПНОЗЕ
@@ -33,7 +31,7 @@
 <br>
 (ТРАДИЦ-РОС-СТИЛЬ)
 </a>
-</h3>
+</h3> -->
 
 ---
 
