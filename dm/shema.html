@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Схема микроволнового слухового эффекта с инфразвуковым воздействием</title>
+    <!-- Современные стили для аккуратного и понятного вида -->
+    <style> ::-webkit-scrollbar {width: 0;} 
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+        .subtitle {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            margin: 0 auto 16px auto;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        nav a {
+            color: #4fc3f7;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            margin-bottom: 48px;
+        }
+        .diagram-section {
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        }
+        .diagram-title {
+            color: #4fc3f7;
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 1.5rem;
+        }
+        .diagram-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .diagram-block {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 18px 20px;
+            min-width: 180px;
+            max-width: 220px;
+            text-align: center;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: relative;
+            transition: transform 0.2s;
+        }
+        .diagram-block:hover {
+            transform: translateY(-4px) scale(1.04);
+            z-index: 2;
+        }
+        .diagram-block i {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            color: #ffcc00;
+        }
+        .arrow-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #4fc3f7;
+        }
+        /* Карточки эффектов */
+        .effects-section {
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        }
+        .effects-title {
+            color: #ff9800;
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 1.5rem;
+        }
+        .effects-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .effect-card {
+            background: rgba(255,255,255,0.10);
+            border-radius: 10px;
+            padding: 18px 20px;
+            min-width: 220px;
+            max-width: 320px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .effect-card:hover {
+            transform: scale(1.03);
+        }
+        .effect-card i {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #4fc3f7;
+        }
+        .effect-title {
+            color: #ffcc00;
+            margin-bottom: 6px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .effect-desc {
+            font-size: 1rem;
+            text-align: center;
+        }
+        /* Таблица */
+        .table-section {
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            font-size: 0.98rem;
+        }
+        th, td {
+            padding: 12px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        th {
+            background: rgba(30, 60, 100, 0.9);
+            color: #4fc3f7;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        tr:nth-child(even) {
+            background: rgba(255,255,255,0.04);
+        }
+        tr:nth-child(odd) {
+            background: rgba(255,255,255,0.02);
+        }
+        .phase-cell {
+            font-weight: bold;
+            color: #ffcc00;
+            vertical-align: top;
+            width: 13%;
+        }
+        .component-cell {
+            font-weight: bold;
+            color: #4fc3f7;
+            width: 13%;
+        }
+        .combined-cell {
+            background: rgba(173, 20, 87, 0.18);
+        }
+        /* Примечание */
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.98rem;
+            color: rgba(255,255,255,0.7);
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 0 0 12px 12px;
+        }
+        /* Адаптивность */
+        @media (max-width: 900px) {
+            .diagram-container, .effects-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .diagram-block, .effect-card {
+                min-width: 180px;
+                max-width: 100%;
+            }
+            .arrow-diagram {
+                display: none;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 8px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+            }
+            nav {
+                gap: 12px;
+            }
+            .diagram-section, .effects-section, .table-section {
+                padding: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Микроволновый слуховой эффект с инфразвуковым воздействием</h1>
+            <p class="subtitle">Комплексная схема работы системы, сочетающей эффект Фрея (микроволновое акустическое воздействие) и инфразвуковое излучение для создания комбинированного психофизиологического воздействия</p>
+        </header>
+        <!-- Навигация по разделам -->
+        <nav>
+            <a href="#scheme">Схема</a>
+            <a href="#effects">Эффекты</a>
+            <a href="#table">Таблица</a>
+            <a href="#note">Примечание</a>
+        </nav>
+        <!-- Секция схемы -->
+        <section id="scheme" class="diagram-section">
+            <div class="diagram-title">Схема системы</div>
+            <div class="diagram-container">
+                <div class="diagram-block">
+                    <i class="fas fa-wave-square"></i>
+                    <div>СВЧ-генератор</div>
+                    <div style="font-size:0.9em;opacity:0.7;">Генерирует СВЧ-сигнал</div>
+                </div>
+                <div class="arrow-diagram">→</div>
+                <div class="diagram-block">
+                    <i class="fas fa-microphone"></i>
+                    <div>Модулятор звука</div>
+                    <div style="font-size:0.9em;opacity:0.7;">Для передачи голоса</div>
+                </div>
+                <div class="arrow-diagram">→</div>
+                <div class="diagram-block">
+                    <i class="fas fa-wave-square"></i>
+                    <div>Инфразвуковой генератор</div>
+                    <div style="font-size:0.9em;opacity:0.7;">Создаёт инфразвук</div>
+                </div>
+                <div class="arrow-diagram">→</div>
+                <div class="diagram-block">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <div>Направленная антенна<br><span style="font-size:0.95em;opacity:0.8;">(базовая станция 3GPP)</span></div>
+                    <div style="font-size:0.9em;opacity:0.7;">Объединяет оба сигнала и направляет</div>
+                </div>
+                <div class="arrow-diagram">→</div>
+                <div class="diagram-block">
+                    <i class="fas fa-brain"></i>
+                    <div>Мозг человека</div>
+                    <div style="font-size:0.9em;opacity:0.7;">Воспринимает сигналы</div>
+                </div>
+                <div class="arrow-diagram">→</div>
+                <div class="diagram-block">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>Комбинированное воздействие</div>
+                    <div style="font-size:0.9em;opacity:0.7;">Психофизиологический эффект</div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция эффектов -->
+        <section id="effects" class="effects-section">
+            <div class="effects-title">Эффекты комбинированного воздействия</div>
+            <div class="effects-cards">
+                <div class="effect-card">
+                    <i class="fas fa-headphones"></i>
+                    <div class="effect-title">Слуховые эффекты</div>
+                    <div class="effect-desc">Создание "голосов в голове", щелчков, тонов или речи за счёт термоакустической трансформации СВЧ-сигнала в тканях мозга.</div>
+                </div>
+                <div class="effect-card">
+                    <i class="fas fa-brain"></i>
+                    <div class="effect-title">Психоэмоциональное воздействие</div>
+                    <div class="effect-desc">Инфразвук вызывает тревожность, страх, панику и депрессию, усиливая восприимчивость к слуховым галлюцинациям.</div>
+                </div>
+                <div class="effect-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <div class="effect-title">Физиологический дискомфорт</div>
+                    <div class="effect-desc">Резонансное воздействие инфразвука на органы вызывает тошноту, головокружение, нарушение координации и боль.</div>
+                </div>
+                <div class="effect-card">
+                    <i class="fas fa-user-slash"></i>
+                    <div class="effect-title">Когнитивные нарушения</div>
+                    <div class="effect-desc">Снижение концентрации, ухудшение памяти и логического мышления.</div>
+                </div>
+                <div class="effect-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div class="effect-title">Физические повреждения</div>
+                    <div class="effect-desc">Инфразвук высокой интенсивности может вызывать микротравмы органов, повреждение слуха и вестибулярного аппарата.</div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция таблицы -->
+        <section id="table" class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Этап</th>
+                        <th>Компонент</th>
+                        <th>Физический принцип</th>
+                        <th>Параметры воздействия</th>
+                        <th>Физиологический эффект</th>
+                        <th>Комбинирование с инфразвуком</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Содержимое таблицы оставлено без изменений, так как оно уже структурировано и на русском -->
+                    <tr>
+                        <td rowspan="2" class="phase-cell">Генерация сигнала</td>
+                        <td class="component-cell">СВЧ-генератор</td>
+                        <td>Создание высокочастотного электромагнитного излучения (обычно 0.3-10 ГГц)</td>
+                        <td>Частота: 0.3-10 ГГц, Мощность: 1-100 мВт/см²</td>
+                        <td>Нагрев тканей при высоких интенсивностях</td>
+                        <td class="combined-cell">Инфразвук модулирует СВЧ-сигнал, создавая сложные паттерны воздействия</td>
+                    </tr>
+                    <tr>
+                        <td class="component-cell">Модулятор звука</td>
+                        <td>Амплитудная или импульсная модуляция СВЧ-сигнала звуковой информацией</td>
+                        <td>Частота модуляции: 100-5000 Гц (диапазон слышимых частот)</td>
+                        <td>Формирование будущего акустического сигнала в тканях</td>
+                        <td class="combined-cell">Инфразвук добавляет низкочастотную составляющую к модулирующему сигналу</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase-cell">Излучение и проникновение</td>
+                        <td class="component-cell">Направленная антенна</td>
+                        <td>Фокусировка СВЧ-излучения в узкий луч для точного воздействия</td>
+                        <td>Диаметр луча: 10-50 см, Дальность: до 1 км</td>
+                        <td>Локальное воздействие на определенные области мозга</td>
+                        <td class="combined-cell">СВЧ-луч и инфразвук синхронизируются по времени воздействия</td>
+                    </tr>
+                    <tr>
+                        <td class="component-cell">Проникновение СВЧ</td>
+                        <td>Прохождение СВЧ-излучения через ткани (кожа, кости черепа) с частичным поглощением</td>
+                        <td>Глубина проникновения: 1-4 см (зависит от частоты)</td>
+                        <td>Нагрев поверхностных тканей, частичное поглощение энергии</td>
+                        <td class="combined-cell">Инфразвук повышает проницаемость тканей для СВЧ-излучения</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase-cell">Термоакустическая трансформация</td>
+                        <td class="component-cell">Тканевое поглощение</td>
+                        <td>Поглощение СВЧ-энергии тканями (особенно богатыми водой)</td>
+                        <td>Поглощенная мощность: 0.1-10 мВт/см³</td>
+                        <td>Локальный нагрев на 0.001-0.01°C</td>
+                        <td class="combined-cell">Инфразвук создает механические напряжения, усиливая тепловое расширение</td>
+                    </tr>
+                    <tr>
+                        <td class="component-cell">Термоупругий эффект</td>
+                        <td>Мгновенное тепловое расширение тканей → создание акустической волны</td>
+                        <td>Амплитуда расширения: 0.1-10 нм</td>
+                        <td>Формирование акустического сигнала в тканях</td>
+                        <td class="combined-cell">Инфразвук модулирует амплитуду термоупругого эффекта</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase-cell">Акустическое восприятие</td>
+                        <td class="component-cell">Распространение волны</td>
+                        <td>Акустическая волна распространяется через ткани к улитке внутреннего уха</td>
+                        <td>Скорость звука в тканях: ~1500 м/с</td>
+                        <td>Механическая стимуляция волосковых клеток улитки</td>
+                        <td class="combined-cell">Инфразвук создает фон, усиливая восприятие СВЧ-индуцированных звуков</td>
+                    </tr>
+                    <tr>
+                        <td class="component-cell">Слуховое восприятие</td>
+                        <td>Мозг интерпретирует сигнал как реальный звук, возникающий "в голове"</td>
+                        <td>Субъективная громкость: 40-80 дБ</td>
+                        <td>"Слышание" голосов, щелчков или музыки без внешнего источника</td>
+                        <td class="combined-cell">Инфразвук вызывает тревогу, усиливая восприятие как угрожающих сигналов</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase-cell">Инфразвуковое воздействие</td>
+                        <td class="component-cell">Инфразвуковой генератор</td>
+                        <td>Генерация звуковых волн ниже порога слышимости (1-20 Гц)</td>
+                        <td>Частота: 1-20 Гц, Уровень: 90-130 дБ</td>
+                        <td>Вибрация внутренних органов, воздействие на вестибулярный аппарат</td>
+                        <td class="combined-cell">Синергия с СВЧ-эффектом на нейронном уровне</td>
+                    </tr>
+                    <tr>
+                        <td class="component-cell">Резонансные эффекты</td>
+                        <td>Возбуждение резонансных частот органов и тканей организма</td>
+                        <td>Резонансные частоты: 4-8 Гц (голова), 5-7 Гц (грудная клетка)</td>
+                        <td>Дискомфорт, боль, повреждения тканей при высоких интенсивностях</td>
+                        <td class="combined-cell">Повышает восприимчивость к СВЧ-индуцированным слуховым эффектам</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="phase-cell">Комбинированный эффект</td>
+                        <td class="component-cell">Психофизиологическое воздействие</td>
+                        <td>Сочетанное влияние на слуховую систему, вестибулярный аппарат и внутренние органы</td>
+                        <td>Продолжительность: минуты-часы</td>
+                        <td>Тревожность, паника, дезориентация, когнитивные нарушения</td>
+                        <td class="combined-cell">Инфразвук усиливает эмоциональную реакцию на "голоса"</td>
+                    </tr>
+                    <tr>
+                        <td class="component-cell">Патологические эффекты</td>
+                        <td>Длительное воздействие вызывает стойкие изменения</td>
+                        <td>Хроническое воздействие: дни-месяцы</td>
+                        <td>Посттравматическое стрессовое расстройство, повреждение органов слуха, неврологические нарушения</td>
+                        <td class="combined-cell">Синергетическое повреждение тканей и нервной системы</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Примечание -->
+        <section id="note" class="footer-note">
+            <p>Примечание: Описанные технологии и их комбинированное применение представляют значительную опасность для здоровья человека. Использование подобных систем против людей противоречит международным нормам в области прав человека и может рассматриваться как форма пыток или бесчеловечного обращения.</p>
+        </section>
+    </div>
+</body>
+</html>
