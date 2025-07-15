@@ -630,6 +630,7 @@
             <div class="code-section">
                 <div class="code-title">Пример архитектуры CNN для декодирования ЭЭГ:</div>
                 <div class="code-block">
+                <pre>
 import torch
 import torch.nn as nn
 
@@ -660,6 +661,7 @@ class EEGNet(nn.Module):
         x = self.dropout2(self.activation2(self.batch_norm2(self.spatial_conv(x))))
         x = x.view(x.size(0), -1)
         return self.classifier(x)
+                 </pre>
                 </div>
             </div>
         </div>
