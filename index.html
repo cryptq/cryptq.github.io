@@ -2934,46 +2934,65 @@ background: #673ab7;">144-ФЗ; 150-ФЗ; 187-ПП; 99-ФЗ; 5485-1, 813-УКП.
     });
   </script>
 
-    <script>
+  <script>
         document.addEventListener('DOMContentLoaded', () => {
             const fsbElement = document.querySelector('fsb');
             const skElement = document.querySelector('sk');
             
-            // Стартовые даты (указаны в местном часовом поясе)
-            const startFSB = new Date(2025, 5, 17); // 17 июня 2025 (месяцы: 0-январь, 5-июнь)
-            const startSK = new Date(2025, 6, 15);  // 15 июля 2025 (6-июль)
-
+            // Стартовые даты
+            const startFSB = new Date(2025, 5, 17); // 17 июня 2025
+            const startSK = new Date(2025, 6, 15);  // 15 июля 2025
+            
+            // Элементы для значений ФСБ
+            const fsbDays = fsbElement.querySelectorAll('.value')[0];
+            const fsbHours = fsbElement.querySelectorAll('.value')[1];
+            const fsbMinutes = fsbElement.querySelectorAll('.value')[2];
+            const fsbSeconds = fsbElement.querySelectorAll('.value')[3];
+            
+            // Элементы для значений СК
+            const skDays = skElement.querySelectorAll('.value')[0];
+            const skHours = skElement.querySelectorAll('.value')[1];
+            const skMinutes = skElement.querySelectorAll('.value')[2];
+            const skSeconds = skElement.querySelectorAll('.value')[3];
+            
+            // Функция для склонения слов
+            function declension(num, words) {
+                return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+            }
+            
             function updateTimers() {
                 const now = new Date();
                 
                 // Обновление таймера ФСБ
                 let diffFSB = now - startFSB;
-                updateElement(fsbElement, diffFSB);
+                updateTimer(diffFSB, fsbDays, fsbHours, fsbMinutes, fsbSeconds);
                 
                 // Обновление таймера СК
                 let diffSK = now - startSK;
-                updateElement(skElement, diffSK);
+                updateTimer(diffSK, skDays, skHours, skMinutes, skSeconds);
             }
             
-            function updateElement(element, diffMs) {
+            function updateTimer(diffMs, daysEl, hoursEl, minutesEl, secondsEl) {
                 if (diffMs < 0) {
-                    element.textContent = "0:00:00:00";
+                    daysEl.textContent = '0 дней';
+                    hoursEl.textContent = '0 часов';
+                    minutesEl.textContent = '0 минут';
+                    secondsEl.textContent = '0 секунд';
                     return;
-                }
-                
+                }   
                 // Рассчет компонентов времени
                 const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
-                
-                // Форматирование с ведущими нулями
-                element.textContent = `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-            }
-            
+                const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);   
+                // Форматирование с правильным склонением
+                daysEl.textContent = `${days} ${declension(days, ['день', 'дня', 'дней'])}`;
+                hoursEl.textContent = `${hours} ${declension(hours, ['час', 'часа', 'часов'])}`;
+                minutesEl.textContent = `${minutes} ${declension(minutes, ['минута', 'минуты', 'минут'])}`;
+                secondsEl.textContent = `${seconds} ${declension(seconds, ['секунда', 'секунды', 'секунд'])}`;
+            }   
             // Первоначальное обновление
             updateTimers();
-            
             // Обновление каждую секунду
             setInterval(updateTimers, 1000);
         });
