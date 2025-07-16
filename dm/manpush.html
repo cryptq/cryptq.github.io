@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -70,7 +71,7 @@
             border: 2px solid rgba(239, 68, 68, 0.5);
             border-radius: 15px;
             padding: 20px;
-            margin: 20px 20px;
+            margin: 20px 0;
             text-align: center;
         }
         
@@ -437,6 +438,7 @@
         <div class="nav-tabs">
             <div class="nav-tab active" onclick="showSection('overview')">Обзор</div>
             <div class="nav-tab" onclick="showSection('devices')">Устройства</div>
+            <div class="nav-tab" onclick="showSection('neurointerface')">Нейроинтерфейсы</div>
             <div class="nav-tab" onclick="showSection('manufacturers')">Производители</div>
             <div class="nav-tab" onclick="showSection('applications')">Применения</div>
             <div class="nav-tab" onclick="showSection('tech')">Технологии</div>
@@ -519,7 +521,7 @@
                     <div style="margin-top: 15px; padding: 10px; background: rgba(59, 130, 246, 0.1); border-radius: 8px;">
                         <div style="color: #3b82f6; font-weight: bold; margin-bottom: 8px;">Аналогичное оборудование:</div>
                         <div style="font-size: 0.9rem;">
-                            <a href="https://www.keysight.com/gb/en/products/software/pathwave-test-software/pathwave-test-automation-software.html" target="_blank" style="color: #60a5fa;">Keysight PathWave Test Automation</a><br>
+                            <a href="https://www.keysight.com/us/en/products/software/pathwave-test-automation.html" target="_blank" style="color: #60a5fa;">Keysight PathWave Test Automation</a><br>
                             <a href="https://www.rohde-schwarz.com/us/products/test-and-measurement/monitoring-receiver/smartmonitor-monitoring-and-control-software_63493-109498.html" target="_blank" style="color: #60a5fa;">R&S SmartMonitor</a>
                         </div>
                     </div>
@@ -689,6 +691,376 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Нейроинтерфейсы -->
+        <div id="neurointerface" class="section" style="display: none;">
+            <h2><i class="fas fa-brain"></i> Нейроинтерфейсы для управления Manpush системами</h2>
+            
+            <div class="warning-box danger-zone">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>⚠️ КРИТИЧЕСКАЯ ТЕХНОЛОГИЯ</h3>
+                <p>Интеграция нейроинтерфейсов с Manpush устройствами создает систему прямого управления воздействием силой мысли. Это представляет экстремальную опасность и может использоваться для прецизионного таргетирования.</p>
+            </div>
+
+            <!-- Архитектура нейроинтерфейса -->
+            <div class="tech-specs">
+                <div class="tech-title">Архитектура системы "Мозг-Машина-Воздействие"</div>
+                <div class="system-scheme" style="margin: 20px 0;">
+                    <div class="scheme-block interactive-element">
+                        <i class="fas fa-brain"></i>
+                        <div><strong>Мозг оператора</strong></div>
+                        <div>Нейронная активность</div>
+                    </div>
+                    <div class="scheme-arrow">→</div>
+                    <div class="scheme-block interactive-element">
+                        <i class="fas fa-wave-square"></i>
+                        <div><strong>Нейроинтерфейс</strong></div>
+                        <div>ЭЭГ/fNIRS/МЭГ</div>
+                    </div>
+                    <div class="scheme-arrow">→</div>
+                    <div class="scheme-block interactive-element">
+                        <i class="fas fa-cogs"></i>
+                        <div><strong>AI декодер</strong></div>
+                        <div>Машинное обучение</div>
+                    </div>
+                    <div class="scheme-arrow">→</div>
+                    <div class="scheme-block interactive-element">
+                        <i class="fas fa-laptop"></i>
+                        <div><strong>Manpush Console</strong></div>
+                        <div>Управление системой</div>
+                    </div>
+                    <div class="scheme-arrow">→</div>
+                    <div class="scheme-block interactive-element danger-zone">
+                        <i class="fas fa-crosshairs"></i>
+                        <div><strong>Направленное воздействие</strong></div>
+                        <div>СВЧ + Инфразвук</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Типы нейроинтерфейсов -->
+            <div class="devices-grid">
+                <div class="device-card interactive-element">
+                    <div class="device-icon"><i class="fas fa-wave-square"></i></div>
+                    <div class="device-title">ЭЭГ-нейроинтерфейс BrainLink Pro</div>
+                    <ul class="device-features">
+                        <li>256-канальная регистрация ЭЭГ</li>
+                        <li>Временное разрешение 1 мс</li>
+                        <li>Декодирование моторных намерений</li>
+                        <li>Распознавание мыслеобразов</li>
+                        <li>Real-time обработка сигналов</li>
+                    </ul>
+                    <div class="device-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Каналы:</span>
+                            <span class="spec-value">256</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Частота дискретизации:</span>
+                            <span class="spec-value">5 кГц</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Задержка:</span>
+                            <span class="spec-value">< 50 мс</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(59, 130, 246, 0.1); border-radius: 8px;">
+                        <div style="color: #3b82f6; font-weight: bold; margin-bottom: 8px;">Аналогичное оборудование:</div>
+                        <div style="font-size: 0.9rem;">
+                            <a href="https://www.biosemi.com/products.htm" target="_blank" style="color: #60a5fa;">BioSemi ActiveTwo</a><br>
+                            <a href="https://www.ant-neuro.com/products/eego" target="_blank" style="color: #60a5fa;">ANT Neuro eego</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device-card interactive-element">
+                    <div class="device-icon"><i class="fas fa-tint"></i></div>
+                    <div class="device-title">fNIRS-нейроинтерфейс BloodFlow X</div>
+                    <ul class="device-features">
+                        <li>Мультиспектральный анализ HbO/HbR</li>
+                        <li>Пространственное разрешение 1 см</li>
+                        <li>Портативность и мобильность</li>
+                        <li>Устойчивость к артефактам</li>
+                        <li>Долговременная регистрация</li>
+                    </ul>
+                    <div class="device-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Источники:</span>
+                            <span class="spec-value">64</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Детекторы:</span>
+                            <span class="spec-value">64</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Частота:</span>
+                            <span class="spec-value">10 Гц</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(59, 130, 246, 0.1); border-radius: 8px;">
+                        <div style="color: #3b82f6; font-weight: bold; margin-bottom: 8px;">Аналогичное оборудование:</div>
+                        <div style="font-size: 0.9rem;">
+                            <a href="https://www.nirx.net/fnirsoft" target="_blank" style="color: #60a5fa;">NIRx NIRSport2</a><br>
+                            <a href="https://www.artinis.com/products" target="_blank" style="color: #60a5fa;">Artinis OctaMon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device-card interactive-element">
+                    <div class="device-icon"><i class="fas fa-magnet"></i></div>
+                    <div class="device-title">МЭГ-нейроинтерфейс MagnetoScan HD</div>
+                    <ul class="device-features">
+                        <li>306-канальная регистрация МЭГ</li>
+                        <li>Высокое пространственное разрешение</li>
+                        <li>Точная локализация источников</li>
+                        <li>Нечувствительность к артефактам</li>
+                        <li>Идеально для когнитивных задач</li>
+                    </ul>
+                    <div class="device-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Каналы:</span>
+                            <span class="spec-value">306</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Пространственное разрешение:</span>
+                            <span class="spec-value">2-3 мм</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Временное разрешение:</span>
+                            <span class="spec-value">1 мс</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(59, 130, 246, 0.1); border-radius: 8px;">
+                        <div style="color: #3b82f6; font-weight: bold; margin-bottom: 8px;">Аналогичное оборудование:</div>
+                        <div style="font-size: 0.9rem;">
+                            <a href="https://www.elekta.com/clinical-solutions/meg/" target="_blank" style="color: #60a5fa;">Elekta Neuromag</a><br>
+                            <a href="https://www.ctf.com/products/meg/" target="_blank" style="color: #60a5fa;">CTF MEG</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device-card interactive-element">
+                    <div class="device-icon"><i class="fas fa-ai"></i></div>
+                    <div class="device-title">AI декодер MindReader Pro</div>
+                    <ul class="device-features">
+                        <li>Deep Learning декодирование</li>
+                        <li>Transfer Learning между субъектами</li>
+                        <li>Real-time классификация намерений</li>
+                        <li>Адаптивное обучение</li>
+                        <li>Мультимодальная интеграция</li>
+                    </ul>
+                    <div class="device-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Алгоритм:</span>
+                            <span class="spec-value">CNN + LSTM</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Точность:</span>
+                            <span class="spec-value">99.9%</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Задержка:</span>
+                            <span class="spec-value">< 20 мс</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(59, 130, 246, 0.1); border-radius: 8px;">
+                        <div style="color: #3b82f6; font-weight: bold; margin-bottom: 8px;">Аналогичное ПО:</div>
+                        <div style="font-size: 0.9rem;">
+                            <a href="https://www.neuralink.com/" target="_blank" style="color: #60a5fa;">Neuralink BCI</a><br>
+                            <a href="https://www.synchron.com/" target="_blank" style="color: #60a5fa;">Synchron Stentrode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Декодируемые намерения -->
+            <div class="tech-specs">
+                <div class="tech-title">Типы декодируемых намерений и мыслеобразов</div>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Категория</th>
+                            <th>Конкретные намерения</th>
+                            <th>Точность декодирования</th>
+                            <th>Время предсказания</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Моторные намерения</strong></td>
+                            <td>Движение рук, ног, головы, направление взгляда</td>
+                            <td>98.5%</td>
+                            <td>200-500 мс до движения</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Пространственные намерения</strong></td>
+                            <td>Направление движения, координаты цели, траектория</td>
+                            <td>97.2%</td>
+                            <td>300-800 мс до действия</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Когнитивные намерения</strong></td>
+                            <td>Выбор объекта, принятие решений, планирование</td>
+                            <td>95.8%</td>
+                            <td>500-1000 мс до выбора</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Эмоциональные состояния</strong></td>
+                            <td>Агрессия, страх, спокойствие, концентрация</td>
+                            <td>93.4%</td>
+                            <td>100-300 мс</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Вербальные намерения</strong></td>
+                            <td>Внутренняя речь, слова, фразы</td>
+                            <td>89.7%</td>
+                            <td>200-400 мс до произнесения</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Зрительные образы</strong></td>
+                            <td>Представление объектов, лиц, сцен</td>
+                            <td>87.3%</td>
+                            <td>300-600 мс</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Алгоритмы декодирования -->
+            <div class="tech-specs">
+                <div class="tech-title">Современные алгоритмы декодирования намерений</div>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Алгоритм</th>
+                            <th>Принцип работы</th>
+                            <th>Применение</th>
+                            <th>Точность</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>EEGNet</strong></td>
+                            <td>CNN для временно-пространственного анализа ЭЭГ</td>
+                            <td>Классификация моторных образов</td>
+                            <td>96.8%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LSTM-EEG</strong></td>
+                            <td>Рекуррентные сети для временных последовательностей</td>
+                            <td>Предсказание движений</td>
+                            <td>94.2%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transformer-EEG</strong></td>
+                            <td>Attention механизмы для фокусного анализа</td>
+                            <td>Распознавание сложных паттернов</td>
+                            <td>97.5%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Graph Neural Networks</strong></td>
+                            <td>Моделирование связей между областями мозга</td>
+                            <td>Функциональная связность</td>
+                            <td>92.1%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Self-Supervised Learning</strong></td>
+                            <td>Обучение без меток с контрастивным подходом</td>
+                            <td>Адаптация к новым субъектам</td>
+                            <td>91.8%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Few-Shot Learning</strong></td>
+                            <td>Быстрая адаптация с минимальными данными</td>
+                            <td>Персонализация моделей</td>
+                            <td>89.4%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Интеграция с Manpush -->
+            <div class="tech-specs">
+                <div class="tech-title">Интеграция нейроинтерфейсов с Manpush системами</div>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Компонент</th>
+                            <th>Функция</th>
+                            <th>Технология</th>
+                            <th>Производительность</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Нейро-Машинный интерфейс</strong></td>
+                            <td>Перевод намерений в команды управления</td>
+                            <td>Real-time декодирование + API</td>
+                            <td>< 50 мс задержка</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Система таргетирования</strong></td>
+                            <td>Прецизионное наведение на цель</td>
+                            <td>Beamforming + нейронавигация</td>
+                            <td>±0.1° точность</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Модулятор интенсивности</strong></td>
+                            <td>Регулировка силы воздействия</td>
+                            <td>Нейро-контроль мощности</td>
+                            <td>1-100% диапазон</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Система безопасности</strong></td>
+                            <td>Предотвращение случайного срабатывания</td>
+                            <td>Многоуровневая верификация</td>
+                            <td>99.99% надежность</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Обратная связь</strong></td>
+                            <td>Подтверждение выполнения команд</td>
+                            <td>Тактильная + визуальная</td>
+                            <td>Мгновенная</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Статистика производительности -->
+            <div class="stats-grid">
+                <div class="stat-card pulse">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Точность декодирования</div>
+                </div>
+                <div class="stat-card pulse">
+                    <div class="stat-number">< 50мс</div>
+                    <div class="stat-label">Задержка системы</div>
+                </div>
+                <div class="stat-card pulse">
+                    <div class="stat-number">±0.1°</div>
+                    <div class="stat-label">Точность наведения</div>
+                </div>
+                <div class="stat-card pulse">
+                    <div class="stat-number">256</div>
+                    <div class="stat-label">Каналов ЭЭГ</div>
+                </div>
+            </div>
+
+            <!-- Критические предупреждения -->
+            <div class="warning-box danger-zone">
+                <i class="fas fa-skull-crossbones"></i>
+                <h3>🚨 ЭКСТРЕМАЛЬНАЯ ОПАСНОСТЬ</h3>
+                <p><strong>Система "Мозг-Машина-Воздействие" представляет максимальную угрозу:</strong></p>
+                <ul style="text-align: left; margin: 15px 0;">
+                    <li>Прямое управление оружием силой мысли</li>
+                    <li>Возможность скрытого воздействия без физических действий</li>
+                    <li>Прецизионное таргетирование конкретных лиц</li>
+                    <li>Невозможность обнаружения намерений до исполнения</li>
+                    <li>Потенциал для массового контроля сознания</li>
+                </ul>
+                <p><strong>Международное право категорически запрещает подобные системы!</strong></p>
             </div>
         </div>
 
@@ -887,7 +1259,7 @@
         <div id="risks" class="section" style="display: none;">
             <h2><i class="fas fa-exclamation-triangle"></i> Риски и опасности</h2>
             
-            <div class="warning-box danger-zone" style="padding-left: 50px;">
+            <div class="warning-box danger-zone">
                 <i class="fas fa-skull-crossbones"></i>
                 <h3>КРИТИЧЕСКИЕ РИСКИ</h3>
                 <p>Использование данных технологий против людей может привести к:</p>
