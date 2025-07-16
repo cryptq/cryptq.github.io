@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инфографика: Защита от ПСИ-ТЕХНО-ИДЕОЛОГИЧЕСКИХ ОПГ</title>
+    <!-- Современные стили для аккуратного и понятного вида -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #232526, #414345);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin: 0 auto 16px auto;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+        .infographic-section {
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            margin-bottom: 36px;
+        }
+        .infographic-title {
+            color: #4fc3f7;
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+        }
+        .infographic-blocks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+        }
+        .infographic-block {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 18px 20px;
+            min-width: 220px;
+            max-width: 320px;
+            text-align: center;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: relative;
+            transition: transform 0.2s;
+        }
+        .infographic-block:hover {
+            transform: translateY(-4px) scale(1.04);
+            z-index: 2;
+        }
+        .infographic-block i {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            color: #ffcc00;
+        }
+        .block-title {
+            color: #ffcc00;
+            margin-bottom: 6px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .block-desc {
+            font-size: 1rem;
+            text-align: center;
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.98rem;
+            color: rgba(255,255,255,0.7);
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 0 0 12px 12px;
+        }
+        @media (max-width: 900px) {
+            .infographic-blocks {
+                flex-direction: column;
+                align-items: center;
+            }
+            .infographic-block {
+                min-width: 180px;
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 8px;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+            }
+            .infographic-section {
+                padding: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>РЕКОМЕНДАЦИИ ДЛЯ СПЕЦСЛУЖБ ПО ПРЕДОТВРАЩЕНИЮ ПРЕСТУПЛЕНИЙ С ИСПОЛЬЗОВАНИЕМ СОВРЕМЕННЫХ СЕТЕВЫХ И ПСИХОФИЗИОЛОГИЧЕСКИХ ТЕХНОЛОГИЙ</h1>
+        <!--<p class="subtitle">Рекомендации для легитимных спецслужб по предотвращению преступлений с использованием современных сетевых и психофизиологических технологий</p>-->
+        </header>
+        <!-- Первый блок: Безопасность сети и предотвращение атак -->
+        <section class="infographic-section">
+            <div class="infographic-title">Безопасность телекоммуникационных сетей — первый рубеж</div>
+            <div class="infographic-blocks">
+                <div class="infographic-block">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="block-title">RAN‑authenticate: отсечение злоумышленников</div>
+                    <div class="block-desc">Любой сторонний femto‑BTS или манипулятор сразу же отсекается на уровне аутентификации. SIM/UE не пройдут проверку IMSI/ACB/CSG.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-ban"></i>
+                    <div class="block-title">Минимизация риска rogue‑станций</div>
+                    <div class="block-desc">CSG‑белый список и ACB‑правила автоматически блокируют несанкционированные базовые станции и попытки проникновения через фейковые femto‑ячейки.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-id-badge"></i>
+                    <div class="block-title">Сертификация сотрудников и техники</div>
+                    <div class="block-desc">Перед развёртыванием спец‑станций проводится выдача SIM с защитой от клонирования и запись IMSI/5G‑SUPI в центральный кластер. ЧП‑станции невозможны.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-user-lock"></i>
+                    <div class="block-title">Нулевой толеранс к "неизвестным" SIM и оборудованию</div>
+                    <div class="block-desc">Параметры ACB и CSG гарантируют 0% шанса подключения несертифицированных UE. Это стандарт для военных и критических сетей.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-bolt"></i>
+                    <div class="block-title">Интеллектуальный мониторинг аномалий</div>
+                    <div class="block-desc">Анализ всплесков потребления электроэнергии и активности БС позволяет выявлять попытки использования ПСИ-оружия и несанкционированных устройств.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-tasks"></i>
+                    <div class="block-title">Регламентированный доступ при учениях</div>
+                    <div class="block-desc">Во время учений или мероприятий ограничения на БС снимаются только через легитимный регламентированный доступ.</div>
+                </div>
+            </div>
+        </section>
+        <!-- Второй блок: Выявление мишеней и атак -->
+        <section class="infographic-section">
+            <div class="infographic-title">Выявление мишеней и предотвращение атак на личность</div>
+            <div class="infographic-blocks">
+                <div class="infographic-block">
+                    <i class="fas fa-fingerprint"></i>
+                    <div class="block-title">Био‑ЭМИ‑отпечаток как идентификатор</div>
+                    <div class="block-desc">Каждый человек имеет уникальную биоэлектромагнитную подпись, сопоставимую с отпечатком пальца. Преступники могут использовать её для таргетированных атак.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-search-location"></i>
+                    <div class="block-title">Анализ логов сети</div>
+                    <div class="block-desc">В логах фиксируются попытки воздействия на конкретных людей (эффект Фрея, инфразвук, декодирование активности мозга). Важно выявлять аномалии и коррелировать их с событиями.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-bullseye"></i>
+                    <div class="block-title">Выявление инфразвуковых и иных атак</div>
+                    <div class="block-desc">Используйте мониторинг параметров БС и UE для обнаружения инфразвуковых и других аномальных воздействий на абонентов.</div>
+                </div>
+                <div class="infographic-block">
+                    <i class="fas fa-user-shield"></i>
+                    <div class="block-title">Защита личности</div>
+                    <div class="block-desc">Внедряйте системы раннего оповещения и реагирования на попытки психофизиологического воздействия на абонентов.</div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-note">
+            <p>Примечание: Описанные меры и технологии направлены на предотвращение преступлений и защиту граждан от ПСИ-ТЕХНО-ИДЕОЛОГИЧЕСКИХ угроз. Использование подобных систем должно соответствовать международным нормам и правам человека.</p>
+        </section>
+    </div>
+</body>
+</html>
