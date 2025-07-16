@@ -6,28 +6,13 @@
     <title>Инфографика: Защита от современных угроз</title>
     <!-- Современные стили для аккуратного и понятного вида -->
     <style>
-        body {
-            background: linear-gradient(135deg, #232526, #414345);
-            color: #fff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 24px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 32px;
-        }
-        h1 {
-            font-size: 2.2rem;
-            color: #ffcc00;
-            margin-bottom: 10px;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
-        }
+        body {background: linear-gradient(135deg, #232526, #414345);
+            color: #fff;margin: 0;min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        .container {max-width: 1200px;margin: 0 auto;padding: 24px;}
+        header {text-align: center;margin-bottom: 32px;}
+        h1 {font-size: 2.2rem;color: #ffcc00;font-weight:900;
+            margin-bottom: 10px;text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);}
         .subtitle {
             font-size: 1.1rem;
             opacity: 0.9;
@@ -66,10 +51,7 @@
             position: relative;
             transition: transform 0.2s;
         }
-        .infographic-block:hover {
-            transform: translateY(-4px) scale(1.04);
-            z-index: 2;
-        }
+        .infographic-block:hover {transform: translateY(-4px) scale(1.04);z-index: 2;}
         .infographic-block i {
             font-size: 2.2rem;
             margin-bottom: 8px;
@@ -88,7 +70,7 @@
         .footer-note {
             text-align: center;
             margin-top: 30px;
-            padding: 20px;
+            padding: 20px;font-weight:900;
             border-top: 1px solid rgba(255,255,255,0.1);
             font-size: 0.98rem;
             color: rgba(255,255,255,0.7);
@@ -96,28 +78,14 @@
             border-radius: 0 0 12px 12px;
         }
         @media (max-width: 900px) {
-            .infographic-blocks {
-                flex-direction: column;
-                align-items: center;
-            }
-            .infographic-block {
-                min-width: 180px;
-                max-width: 100%;
-            }
+            .infographic-blocks {flex-direction: column;align-items: center;}
+            .infographic-block {min-width: 180px;max-width: 100%;}
         }
         @media (max-width: 600px) {
-            .container {
-                padding: 8px;
-            }
-            h1 {
-                font-size: 1.3rem;
-            }
-            .subtitle {
-                font-size: 1rem;
-            }
-            .infographic-section {
-                padding: 10px;
-            }
+            .container {padding: 8px;}
+            h1 {font-size: 1.3rem;}
+            .subtitle {font-size: 1rem;}
+            .infographic-section {padding: 10px;}
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -166,7 +134,7 @@
         </section>
         <!-- Второй блок: Выявление мишеней и атак -->
         <section class="infographic-section">
-            <div class="infographic-title">ВЫЯВЛЕНИЕ МИШЕНЕЙ И ПРЕДОТВРАЩЕНИЕ АТАК НА ЛИЧНОСТЬ</div>
+            <div class="infographic-title">ВЫЯВЛЕНИЕ ЖИВЫХ МИШЕНЕЙ И ПРЕДОТВРАЩЕНИЕ АТАК НА ЛИЧНОСТЬ</div>
             <div class="infographic-blocks">
                 <div class="infographic-block">
                     <i class="fas fa-fingerprint"></i>
