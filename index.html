@@ -465,16 +465,85 @@ position:absolute;top:0;left:0;width:100%;height:100%;
         <tbody>
             <tr>
                 <td style="text-align: center;">ФСБ РФ</td>
-                <td style="text-align: center;">&nbsp;✉️ № ******* 📝 от 15.06.2025 📄 ✅ <fsb>0:00:00:00</fsb> </td>
+                <td style="text-align: center;">✉️ № ******* 📝 от 15.06.2025 📄 ✅ </td>
             </tr>
             <tr>
                 <td style="text-align: center;">СК РФ</td>
-                <td style="text-align: center;">✉️ № ******* 📝 от 15.07.2025 📄 ✅ <sk>0:00:00:00</sk> </td>
+                <td style="text-align: center;">✉️ № ******* 📝 от 15.07.2025 📄 ✅ </td>
             </tr>
         </tbody>
     </table>
 
 </center>
+
+
+ <div class="timers">
+            <div class="timer-card fsb-card">
+                <div class="agency">
+                    <div class="agency-icon fsb-icon">Ф</div>
+                    <div class="agency-name">ФЕДЕРАЛЬНАЯ СЛУЖБА БЕЗОПАСНОСТИ</div>
+                </div>
+                <div class="start-date">Старт отсчёта: 17 июня 2025 года</div>
+                <div class="timer-display">
+                    <div class="time-unit">
+                        <span class="time-label">Дни:</span>
+                        <span class="time-value" id="fsb-days">0 дней</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-label">Часы:</span>
+                        <span class="time-value" id="fsb-hours">0 часов</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-label">Минуты:</span>
+                        <span class="time-value" id="fsb-minutes">0 минут</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-label">Секунды:</span>
+                        <span class="time-value" id="fsb-seconds">0 секунд</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timer-card sk-card">
+                <div class="agency">
+                    <div class="agency-icon sk-icon">С</div>
+                    <div class="agency-name">СЛЕДСТВЕННЫЙ КОМИТЕТ</div>
+                </div>
+                <div class="start-date">Старт отсчёта: 15 июля 2025 года</div>
+                <div class="timer-display">
+                    <div class="time-unit">
+                        <span class="time-label">Дни:</span>
+                        <span class="time-value" id="sk-days">0 дней</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-label">Часы:</span>
+                        <span class="time-value" id="sk-hours">0 часов</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-label">Минуты:</span>
+                        <span class="time-value" id="sk-minutes">0 минут</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-label">Секунды:</span>
+                        <span class="time-value" id="sk-seconds">0 секунд</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="current-time">
+            Текущее время: <span class="current-time-value" id="current-time"></span>
+        </div>
+        
+        <div class="footer">
+            Таймеры обновляются в реальном времени | © 2025
+        </div>
+    </div>
+
+
+
+
+
 </header>
 </section>
 
@@ -2934,25 +3003,24 @@ background: #673ab7;">144-ФЗ; 150-ФЗ; 187-ПП; 99-ФЗ; 5485-1, 813-УКП.
     });
   </script>
 
-    <script>
+  <script>
+        // Ожидаем полной загрузки DOM перед выполнением скрипта
         document.addEventListener('DOMContentLoaded', function() {
             // Стартовые даты
             const startFSB = new Date(2025, 5, 17); // 17 июня 2025
             const startSK = new Date(2025, 6, 15);   // 15 июля 2025
             
-            // Элементы для ФСБ
+            // Получаем элементы по ID
             const fsbDays = document.getElementById('fsb-days');
             const fsbHours = document.getElementById('fsb-hours');
             const fsbMinutes = document.getElementById('fsb-minutes');
             const fsbSeconds = document.getElementById('fsb-seconds');
             
-            // Элементы для СК
             const skDays = document.getElementById('sk-days');
             const skHours = document.getElementById('sk-hours');
             const skMinutes = document.getElementById('sk-minutes');
             const skSeconds = document.getElementById('sk-seconds');
             
-            // Элемент текущего времени
             const currentTimeElement = document.getElementById('current-time');
             
             // Функция для склонения слов
@@ -2963,18 +3031,22 @@ background: #673ab7;">144-ФЗ; 150-ФЗ; 187-ПП; 99-ФЗ; 5485-1, 813-УКП.
             // Обновление таймеров
             function updateTimers() {
                 const now = new Date();
+                
                 // Обновление текущего времени
-                currentTimeElement.textContent = now.toLocaleString('ru-RU', {
-                    day: '2-digit',
-                    month: '2-digit',
-                    year: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit'
-                });
+                if (currentTimeElement) {
+                    currentTimeElement.textContent = now.toLocaleString('ru-RU', {
+                        day: '2-digit',
+                        month: '2-digit',
+                        year: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    });
+                }
                 
                 // Обновление таймера ФСБ
-                updateTimer(now, startFSB, fsbDays, fsbHours, fsbMinutes, fsbSeconds); 
+                updateTimer(now, startFSB, fsbDays, fsbHours, fsbMinutes, fsbSeconds);
+                
                 // Обновление таймера СК
                 updateTimer(now, startSK, skDays, skHours, skMinutes, skSeconds);
             }
@@ -2983,31 +3055,31 @@ background: #673ab7;">144-ФЗ; 150-ФЗ; 187-ПП; 99-ФЗ; 5485-1, 813-УКП.
                 const diffMs = currentDate - startDate;
                 
                 if (diffMs < 0) {
-                    daysEl.textContent = '0';
-                    hoursEl.textContent = '0';
-                    minutesEl.textContent = '0';
-                    secondsEl.textContent = '0';
+                    // Если дата еще не наступила
+                    if (daysEl) daysEl.textContent = '0 дней';
+                    if (hoursEl) hoursEl.textContent = '0 часов';
+                    if (minutesEl) minutesEl.textContent = '0 минут';
+                    if (secondsEl) secondsEl.textContent = '0 секунд';
                     return;
                 }
+                
                 // Рассчет компонентов времени
                 const seconds = Math.floor(diffMs / 1000);
                 const days = Math.floor(seconds / (3600 * 24));
                 const hours = Math.floor((seconds % (3600 * 24)) / 3600);
                 const mins = Math.floor((seconds % 3600) / 60);
-                const secs = seconds % 60;  
-                // Обновление элементов
-                daysEl.textContent = days;
-                hoursEl.textContent = hours.toString().padStart(2, '0');
-                minutesEl.textContent = mins.toString().padStart(2, '0');
-                secondsEl.textContent = secs.toString().padStart(2, '0');  
-                // Обновление склонений
-                daysEl.nextSibling.textContent = ' ' + declension(days, ['день', 'дня', 'дней']);
-                hoursEl.nextSibling.textContent = ' ' + declension(hours, ['час', 'часа', 'часов']);
-                minutesEl.nextSibling.textContent = ' ' + declension(mins, ['минута', 'минуты', 'минут']);
-                secondsEl.nextSibling.textContent = ' ' + declension(secs, ['секунда', 'секунды', 'секунд']);
-            }  
+                const secs = seconds % 60;
+                
+                // Обновление элементов с проверкой на существование
+                if (daysEl) daysEl.textContent = `${days} ${declension(days, ['день', 'дня', 'дней'])}`;
+                if (hoursEl) hoursEl.textContent = `${hours} ${declension(hours, ['час', 'часа', 'часов'])}`;
+                if (minutesEl) minutesEl.textContent = `${mins} ${declension(mins, ['минута', 'минуты', 'минут'])}`;
+                if (secondsEl) secondsEl.textContent = `${secs} ${declension(secs, ['секунда', 'секунды', 'секунд'])}`;
+            }
+            
             // Первоначальное обновление
-            updateTimers();     
+            updateTimers();
+            
             // Обновление каждую секунду
             setInterval(updateTimers, 1000);
         });
