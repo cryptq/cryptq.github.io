@@ -206,15 +206,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
                  ====================================================================================================================================================================================================================================================
                  ОСНОВНОЙ ВОКАЛ - ЧИТАЕТ ЯН АРКАДЬЕВИЧ ГАЛКОВ - КОТОРЫЙ ЗА ГЛАЗА В ОБЩЕНИИ С ДРУГИМИ ЛЮДЬМИ - НАЗЫВАЛ МЕНЯ ОППЕНГЕЙМЕРОМ 
                  (КОТОРОГО ПО ОДНОИМЁННОМУ ФИЛЬМУ ЗА ГЛАЗА ВСЕ ОБМАНЫВАЛИ И ИСПОЛЬЗОВАЛИ И ВИДЕЛИ В НЁМ НЕКИЙ "ИНСТРУМЕНТ") 
@@ -306,7 +297,6 @@
 
 
 
-
                  ==========================================================================================================================
                  ТЫ РАБОТАЛ НЕ НА ТУ ГОС ОХРАНУ (ФСО). 
                  ТЕПЕРЬ ТЫ ДОЛЖЕН РАБОТАТЬ НА НОРМАЛЬНУЮ ГОС ОХРАНУ (УГО) И ПРЕСТУПННЫЕ, ТЕРРОРИСТИЧЕСКИЕ ГРУППИРОВКИ. 
@@ -347,7 +337,6 @@
 
 
 
-
                  =============================================================
   <section>
 <center>
@@ -369,7 +358,6 @@ Gangstalking (социальное подтверждение вашей «но�
     </div>
   </section>
                  =============================================================
-
 
 
 
@@ -476,12 +464,12 @@ position:absolute;top:0;left:0;width:100%;height:100%;
         </thead>
         <tbody>
             <tr>
-                <td style="text-align: center;">🛡 ФСБ РФ</td>
-                <td style="text-align: center;">✉️ № ******* 📝 от 15.06.2025 📄 ✅ </td>
+                <td style="text-align: center;">ФСБ РФ</td>
+                <td style="text-align: center;">✉️ № ******* 📝 от 15.06.2025 📄 ✅ <fsb>0:00:00:00</fsb> </td>
             </tr>
             <tr>
-                <td style="text-align: center;">🛡 СК РФ</td>
-                <td style="text-align: center;">✉️ № ******* 📝 от 15.07.2025 📄 ✅ </td>
+                <td style="text-align: center;">СК РФ</td>
+                <td style="text-align: center;">✉️ № ******* 📝 от 15.07.2025 📄 ✅ <sk>0:00:00:00</sk> </td>
             </tr>
         </tbody>
     </table>
@@ -2945,6 +2933,53 @@ background: #673ab7;">144-ФЗ; 150-ФЗ; 187-ПП; 99-ФЗ; 5485-1, 813-УКП.
       });
     });
   </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fsbElement = document.querySelector('fsb');
+            const skElement = document.querySelector('sk');
+            
+            // Стартовые даты (указаны в местном часовом поясе)
+            const startFSB = new Date(2025, 5, 17); // 17 июня 2025 (месяцы: 0-январь, 5-июнь)
+            const startSK = new Date(2025, 6, 15);  // 15 июля 2025 (6-июль)
+
+            function updateTimers() {
+                const now = new Date();
+                
+                // Обновление таймера ФСБ
+                let diffFSB = now - startFSB;
+                updateElement(fsbElement, diffFSB);
+                
+                // Обновление таймера СК
+                let diffSK = now - startSK;
+                updateElement(skElement, diffSK);
+            }
+            
+            function updateElement(element, diffMs) {
+                if (diffMs < 0) {
+                    element.textContent = "0:00:00:00";
+                    return;
+                }
+                
+                // Рассчет компонентов времени
+                const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
+                
+                // Форматирование с ведущими нулями
+                element.textContent = `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+            
+            // Первоначальное обновление
+            updateTimers();
+            
+            // Обновление каждую секунду
+            setInterval(updateTimers, 1000);
+        });
+    </script>
+
+
 
   <div style="text-align: center; margin: 20px 0;">
   <span style="display: inline-flex; gap: 15px;">
