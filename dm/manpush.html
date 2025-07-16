@@ -418,8 +418,8 @@
             border-color: rgba(59, 130, 246, 0.5);
             background: rgba(59, 130, 246, 0.1);
         }
-/*.scheme-block.interactive-element.danger-zone::after{content:'↑';position:relative;}
-.scheme-block.interactive-element.danger-zone::before{content:'↓';position:relative;}*/
+.twice::after{content:'↓';position:relative;}
+.twice::before{content:'↑';position:relative;}
     </style>
 </head>
 <body>
@@ -721,7 +721,7 @@
                         <div><strong>Нейроинтерфейс</strong></div>
                         <div>ЭЭГ/fNIRS/МЭГ</div>
                     </div>
-                    <div class="scheme-arrow">←→</div>
+                    <div class="scheme-arrow twice">←→</div>
                     <div class="scheme-block interactive-element">
                         <i class="fas fa-cogs"></i>
                         <div><strong>AI декодер</strong></div>
@@ -734,17 +734,17 @@
                         <div>Управление системой</div>
                     </div>
                     
-                    <br>
+                   <!-- <br>
                     <div>
                     <div class="scheme-arrow">↓</div>
                     <div class="scheme-arrow">↑</div>
                     </div>
-                    <br>
+                    <br> -->
                     
                     <div class="scheme-block interactive-element danger-zone">
                         <i class="fas fa-crosshairs"></i>
                         <div><strong>Направленное воздействие</strong></div>
-                        <div>СВЧ + Инфразвук <br> + ELF‑сигналы (Для Декодирования Активности Мозга)</div>
+                        <div>СВЧ + Инфразвук + ELF‑сигналы<br>(Для Декодирования Активности Мозга)</div>
                     </div>
                     
                 </div>
