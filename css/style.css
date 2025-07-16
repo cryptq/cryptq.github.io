@@ -132,3 +132,64 @@
 .infographic-arrow { display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #ffffff; }
 .arrow-diagram { flex-direction: column; }
 .infographic-arrow { margin: 0 0.2rem; }
+
+
+
+        .timers {display: flex;flex-wrap: wrap;gap: 30px;justify-content: center;}
+        .timer-card {background: rgba(20, 40, 70, 0.7);border-radius: 12px;padding: 25px;width: 100%;max-width: 380px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);position: relative;overflow: hidden;border: 1px solid rgba(100, 150, 255, 0.2);transition: transform 0.3s ease;}
+        
+        .timer-card:hover {transform: translateY(-5px);}
+        .timer-card::before {content: '';position: absolute;top: 0;left: 0; width: 100%;height: 5px;}
+        .fsb-card::before {background: linear-gradient(90deg, #b22222, #ff4d4d);}
+        .sk-card::before {background: linear-gradient(90deg, #1e90ff, #4da6ff);}
+        .agency {display: flex;align-items: center;margin-bottom: 20px;}
+        
+        .agency-icon {width: 50px;height: 50px;background: rgba(30, 60, 110, 0.8);border-radius: 50%;display: flex;align-items: center;justify-content: center;margin-right: 15px;font-size: 1.5rem;font-weight: bold;border: 2px solid;}
+        .fsb-icon {color: #ff4d4d;border-color: #ff4d4d;}
+        .sk-icon {color: #4da6ff;border-color: #4da6ff;}
+        .agency-name {font-size: 1.5rem;font-weight: bold;color: #f8f9fa;}
+        .start-date {font-size: 0.95rem;color: #adb5bd;margin-bottom: 15px;font-style: italic;}
+        
+        .timer-display {
+            background: rgba(10, 20, 40, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            border: 1px solid rgba(100, 150, 255, 0.1);
+            margin-top: 10px;
+        }
+        
+        .time-unit {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .time-unit:last-child {border-bottom: none;margin-bottom: 0;padding-bottom: 0;} 
+        .time-label {color: #dee2e6;}
+        .time-value {color: #ffcc00;font-weight: bold;min-width: 100px;text-align: right;} 
+        .fsb-card .time-value {color: #ff6b6b;}
+        .sk-card .time-value {color: #6bcaff;}
+        
+        .current-time {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(20, 40, 70, 0.5);
+            border-radius: 8px;
+            font-size: 1.1rem;
+            color: #adb5bd;
+            border: 1px solid rgba(100, 150, 255, 0.1);}
+        
+        .current-time-value {color: #ffcc00;font-weight: bold;margin-left: 10px;}
+        
+        .footer {text-align: center;margin-top: 30px;color: #6c757d;font-size: 0.9rem;padding-top: 15px;border-top: 1px solid rgba(100, 150, 255, 0.1);}
+        
+        @media (max-width: 768px) {
+            .timers {flex-direction: column;align-items: center;}   
+            .header h1 {font-size: 2rem;}
+            .timer-card {max-width: 100%;}}
