@@ -2934,71 +2934,84 @@ background: #673ab7;">144-ФЗ; 150-ФЗ; 187-ПП; 99-ФЗ; 5485-1, 813-УКП.
     });
   </script>
 
-  <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const fsbElement = document.querySelector('fsb');
-            const skElement = document.querySelector('sk');
-            
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
             // Стартовые даты
             const startFSB = new Date(2025, 5, 17); // 17 июня 2025
-            const startSK = new Date(2025, 6, 15);  // 15 июля 2025
+            const startSK = new Date(2025, 6, 15);   // 15 июля 2025
             
-            // Элементы для значений ФСБ
-            const fsbDays = fsbElement.querySelectorAll('.value')[0];
-            const fsbHours = fsbElement.querySelectorAll('.value')[1];
-            const fsbMinutes = fsbElement.querySelectorAll('.value')[2];
-            const fsbSeconds = fsbElement.querySelectorAll('.value')[3];
+            // Элементы для ФСБ
+            const fsbDays = document.getElementById('fsb-days');
+            const fsbHours = document.getElementById('fsb-hours');
+            const fsbMinutes = document.getElementById('fsb-minutes');
+            const fsbSeconds = document.getElementById('fsb-seconds');
             
-            // Элементы для значений СК
-            const skDays = skElement.querySelectorAll('.value')[0];
-            const skHours = skElement.querySelectorAll('.value')[1];
-            const skMinutes = skElement.querySelectorAll('.value')[2];
-            const skSeconds = skElement.querySelectorAll('.value')[3];
+            // Элементы для СК
+            const skDays = document.getElementById('sk-days');
+            const skHours = document.getElementById('sk-hours');
+            const skMinutes = document.getElementById('sk-minutes');
+            const skSeconds = document.getElementById('sk-seconds');
+            
+            // Элемент текущего времени
+            const currentTimeElement = document.getElementById('current-time');
             
             // Функция для склонения слов
             function declension(num, words) {
                 return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
             }
             
+            // Обновление таймеров
             function updateTimers() {
                 const now = new Date();
+                // Обновление текущего времени
+                currentTimeElement.textContent = now.toLocaleString('ru-RU', {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                });
                 
                 // Обновление таймера ФСБ
-                let diffFSB = now - startFSB;
-                updateTimer(diffFSB, fsbDays, fsbHours, fsbMinutes, fsbSeconds);
-                
+                updateTimer(now, startFSB, fsbDays, fsbHours, fsbMinutes, fsbSeconds); 
                 // Обновление таймера СК
-                let diffSK = now - startSK;
-                updateTimer(diffSK, skDays, skHours, skMinutes, skSeconds);
+                updateTimer(now, startSK, skDays, skHours, skMinutes, skSeconds);
             }
             
-            function updateTimer(diffMs, daysEl, hoursEl, minutesEl, secondsEl) {
+            function updateTimer(currentDate, startDate, daysEl, hoursEl, minutesEl, secondsEl) {
+                const diffMs = currentDate - startDate;
+                
                 if (diffMs < 0) {
-                    daysEl.textContent = '0 дней';
-                    hoursEl.textContent = '0 часов';
-                    minutesEl.textContent = '0 минут';
-                    secondsEl.textContent = '0 секунд';
+                    daysEl.textContent = '0';
+                    hoursEl.textContent = '0';
+                    minutesEl.textContent = '0';
+                    secondsEl.textContent = '0';
                     return;
-                }   
+                }
                 // Рассчет компонентов времени
-                const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);   
-                // Форматирование с правильным склонением
-                daysEl.textContent = `${days} ${declension(days, ['день', 'дня', 'дней'])}`;
-                hoursEl.textContent = `${hours} ${declension(hours, ['час', 'часа', 'часов'])}`;
-                minutesEl.textContent = `${minutes} ${declension(minutes, ['минута', 'минуты', 'минут'])}`;
-                secondsEl.textContent = `${seconds} ${declension(seconds, ['секунда', 'секунды', 'секунд'])}`;
-            }   
+                const seconds = Math.floor(diffMs / 1000);
+                const days = Math.floor(seconds / (3600 * 24));
+                const hours = Math.floor((seconds % (3600 * 24)) / 3600);
+                const mins = Math.floor((seconds % 3600) / 60);
+                const secs = seconds % 60;  
+                // Обновление элементов
+                daysEl.textContent = days;
+                hoursEl.textContent = hours.toString().padStart(2, '0');
+                minutesEl.textContent = mins.toString().padStart(2, '0');
+                secondsEl.textContent = secs.toString().padStart(2, '0');  
+                // Обновление склонений
+                daysEl.nextSibling.textContent = ' ' + declension(days, ['день', 'дня', 'дней']);
+                hoursEl.nextSibling.textContent = ' ' + declension(hours, ['час', 'часа', 'часов']);
+                minutesEl.nextSibling.textContent = ' ' + declension(mins, ['минута', 'минуты', 'минут']);
+                secondsEl.nextSibling.textContent = ' ' + declension(secs, ['секунда', 'секунды', 'секунд']);
+            }  
             // Первоначальное обновление
-            updateTimers();
+            updateTimers();     
             // Обновление каждую секунду
             setInterval(updateTimers, 1000);
         });
     </script>
-
-
 
   <div style="text-align: center; margin: 20px 0;">
   <span style="display: inline-flex; gap: 15px;">
