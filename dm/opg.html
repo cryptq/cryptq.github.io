@@ -12,113 +12,30 @@
       <meta name="twitter:image" content="https://cryptq.github.io/css/tr1.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
+    <style>::-webkit-scrollbar {width: 0;}
+        body {margin: 0;padding: 0;
             font-family: 'Montserrat', Arial, sans-serif;
             background: linear-gradient(120deg, #232526 0%, #414345 100%);
-            color: #fff;
-            min-height: 100vh;
+            color: #fff;min-height: 100vh;
         }
-        .song-card {
-            display: inline-grid;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            /*transition: transform 0.3s;*/
-        }
-        .song-card:hover {
-            /*transform: translateY(-3px);*/
-        }
-        .song-title {
-            color: #1a73e8;
-            font-size: 1.5em;
-            margin-bottom: 5px;
-        }
-        .song-style {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-        .song-link {
-            display: inline-block;
-            background-color: #1a73e8;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .song-link:hover {
-            background-color: #0d5cb6;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #333;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            background: rgba(30, 30, 40, 0.97);
-            border-radius: 24px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-            padding: 48px 32px 32px 32px;
-        }
-        h1, h2, h3 {
-            font-weight: 800;
-            margin-bottom: 0.5em;
-            letter-spacing: 1.5px;
-        }
-        h1 {
-            font-size: 2.4rem;
-            color: #00ffe7;
-            margin-bottom: 0.7em;
-        }
-        h2 {
-            font-size: 1.5rem;
-            color: #ffb347;
-            margin-top: 2em;
-        }
-        h3 {
-            font-size: 1.1rem;
-            color: #00ffe7;
-            margin-top: 1.5em;
-        }
-        .section {
-            margin-bottom: 2.5em;
-        }
-        .highlight {
-            color: #00ffe7;
-            font-weight: bold;
-        }
-        .table-wrap {
-            overflow-x: auto;
-            margin: 1.5em 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: rgba(40, 40, 60, 0.98);
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 1.5em;
-        }
-        th, td {
-            padding: 12px 10px;
-            border-bottom: 1px solid #31314a;
-            text-align: left;
-        }
-        th {
-            background: #232946;
-            color: #00ffe7;
-            font-weight: 700;
-        }
-        tr:last-child td {
-            border-bottom: none;
-        }
+        .song-card {display: inline-grid;border-radius: 10px;padding: 20px;margin-bottom: 20px;}
+        .song-title {color: #1a73e8;font-size: 1.5em;margin-bottom: 5px;}
+        .song-style {color: #666;font-style: italic;margin-bottom: 15px;}
+        .song-link {display: inline-block;background-color: #1a73e8;color: white;text-decoration: none;padding: 10px 20px;border-radius: 5px;font-weight: bold;transition: background-color 0.3s;}
+        .song-link:hover {background-color: #0d5cb6;}
+        .header {text-align: center;margin-bottom: 30px;color: #333;}
+        .container {max-width: 1100px;margin: 40px auto;background: rgba(30, 30, 40, 0.97);border-radius: 24px;box-shadow: 0 8px 32px rgba(0,0,0,0.25);padding: 48px 32px 32px 32px;}
+        h1, h2, h3 {font-weight: 800;margin-bottom: 0.5em;letter-spacing: 1.5px;}
+        h1 {font-size: 2.4rem;color: #00ffe7;margin-bottom: 0.7em;}
+        h2 {font-size: 1.5rem;color: #ffb347;margin-top: 2em;}
+        h3 {font-size: 1.1rem;color: #00ffe7;margin-top: 1.5em;}
+        .section {margin-bottom: 2.5em;}
+        .highlight {color: #00ffe7;font-weight: bold;}
+        .table-wrap {overflow-x: auto;margin: 1.5em 0;}
+        table {width: 100%;border-collapse: collapse;background: rgba(40, 40, 60, 0.98);border-radius: 12px;overflow: hidden;margin-bottom: 1.5em;}
+        th, td {padding: 12px 10px;border-bottom: 1px solid #31314a;text-align: left;}
+        th {background: #232946;color: #00ffe7;font-weight: 700;}
+        tr:last-child td {border-bottom: none;}
         .card {
             background: linear-gradient(120deg, #31314a 60%, #232526 100%);
             border-radius: 18px;
@@ -134,59 +51,16 @@
             font-style: italic;
             color: #b2fff7;
         }
-        .disclaimer {
-            margin-top: 2.5em;
-            padding: 18px 24px;
-            background: rgba(255, 80, 80, 0.13);
-            border-left: 5px solid #ff4d4d;
-            color: #ffb3b3;
-            font-size: 1.05em;
-            border-radius: 10px;
-        }
-        a, a.audio-link {
-           text-decoration: none;
-           font-weight: 900;
-           color: white;
-        }
-                .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .gallery-item {
-            background: #232323;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.3);
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .gallery-item:hover {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-        }
-        .gallery-item img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            display: block;
-        }
-        .caption {
-            padding: 12px 16px;
-            font-size: 1.1em;
-            text-align: center;
-            color: #bdbdbd;
-        }
+        .disclaimer {margin-top: 2.5em;padding: 18px 24px;background: rgba(255, 80, 80, 0.13);border-left: 5px solid #ff4d4d;color: #ffb3b3;font-size: 1.05em;border-radius: 10px;}
+        a, a.audio-link {text-decoration: none;font-weight: 900;color: white;}
+        .gallery {display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));gap: 20px;padding: 40px;max-width: 1200px;margin: 0 auto;}
+        .gallery-item {background: #232323;border-radius: 16px;box-shadow: 0 4px 24px rgba(0,0,0,0.3);overflow: hidden;transition: transform 0.2s, box-shadow 0.2s;}
+        .gallery-item:hover {transform: translateY(-8px) scale(1.03);box-shadow: 0 8px 32px rgba(0,0,0,0.5);}
+        .gallery-item img {width: 100%;height: 220px;object-fit: cover;display: block;}
+        .caption {padding: 12px 16px;font-size: 1.1em;text-align: center;color: #bdbdbd;}
         @media (max-width: 600px) {
-            .gallery {
-                padding: 10px;
-                gap: 10px;
-            }
-            .gallery-item img {
-                height: 120px;
-            }
+            .gallery {padding: 10px;gap: 10px;}
+            .gallery-item img {height: 120px;}
         }
         @media (max-width: 700px) {
             .container { padding: 18px 4vw; }
