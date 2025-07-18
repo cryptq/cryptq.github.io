@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Инфографика: Методы и квалификация преступлений</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --panel: rgba(255,255,255,0.05);
+      --border: rgba(255,255,255,0.2);
+      --accent1: #00e5ff;
+      --accent2: #ff6ec7;
+      --text: #e0e0e0;
+      --font: 'Segoe UI', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.5;
+    }
+    header {
+      padding: 20px 40px;
+      background: rgba(0,0,0,0.8);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    header h1 {
+      color: var(--accent1);
+      font-size: 28px;
+      text-shadow: 0 0 8px var(--accent1);
+    }
+    #dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px 40px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(8px);
+      position: relative;
+      overflow: hidden;
+    }
+    .panel::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      background: var(--accent2);
+      opacity: 0.1;
+      transform: rotate(45deg);
+    }
+    .panel h2 {
+      font-size: 18px;
+      color: var(--accent2);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .panel p {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .panel p strong { color: var(--accent1); }
+    .full-width { grid-column: 1 / -1; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table th, table td {
+      border: 1px solid var(--border);
+      padding: 8px;
+      font-size: 13px;
+    }
+    table th {
+      background: rgba(255,255,255,0.1);
+      color: var(--accent1);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Инфографика: Методы и квалификация преступлений</h1>
+  </header>
+
+  <div id="dashboard">
+    <!-- OSINT -->
+    <div class="panel">
+      <h2>OSINT</h2>
+      <p>Сбор открытых данных о субъекте: профили в соцсетях, публичные реестры, посты, комментарии.</p>
+      <p><strong>Незаконные действия:</strong> массовый анализ и хранение личных данных без согласия.</p>
+      <p><strong>Статьи:</strong> 137, 152</p>
+    </div>
+
+    <!-- ENROLL -->
+    <div class="panel">
+      <h2>ENROLL</h2>
+      <p>Регистрация и ведение «человеческого материала» спецслужбами: биометрия, поведенческие шаблоны.</p>
+      <p><strong>Незаконные действия:</strong> сбор биометрии и психофизиологических данных без согласия.</p>
+      <p><strong>Статьи:</strong> 137, 152</p>
+    </div>
+
+    <!-- Нейро Фишинг -->
+    <div class="panel">
+      <h2>Нейро Фишинг</h2>
+      <p>Декодирование активности мозга в мыслеобразы и распознавание намерений.</p>
+      <p><strong>Незаконные действия:</strong> скрытое считывание и анализ нейропаттернов.</p>
+      <p><strong>Статьи:</strong> 128.1, 137, 235</p>
+    </div>
+
+    <!-- Фишинг контактов -->
+    <div class="panel">
+      <h2>Фишинг синхр. контактов</h2>
+      <p>Несанкционированная синхр. WhatsApp/Telegram: импорт чужих адресных книг.</p>
+      <p><strong>Незаконные действия:</strong> внедрение вредоносного модуля для экспорта контактов.</p>
+      <p><strong>Статьи:</strong> 272, 273, 274</p>
+    </div>
+
+    <!-- Доксинг -->
+    <div class="panel">
+      <h2>Доксинг</h2>
+      <p>Поиск и публикация персональной информации без согласия: адрес, телефоны, рабочие данные.</p>
+      <p><strong>Незаконные действия:</strong> открытая публикация личных данных и их распространение.</p>
+      <p><strong>Статьи:</strong> 137, 152</p>
+    </div>
+
+    <!-- Bot Sherlock -->
+    <div class="panel">
+      <h2>Бот Sherlock</h2>
+      <p>Автоматизированный сбор коммерческой и персональной информации из разных источников.</p>
+      <p><strong>Незаконные действия:</strong> кража алгоритмов и баз данных, передача зарубеж.</p>
+      <p><strong>Статьи:</strong> 137, 272, 183.1, 275, 276</p>
+    </div>
+
+    <!-- Сводная таблица -->
+    <div class="panel full-width">
+      <h2>Сводная таблица статей УК РФ</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Блок</th>
+            <th>Статья</th>
+            <th>Наименование</th>
+            <th>Методы</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td><td>137</td><td>Нарушение неприкосновенности личной жизни</td><td>OSINT, ENROLL, Neuro Fishing, Doxing</td>
+          </tr>
+          <tr>
+            <td>A</td><td>152</td><td>Нарушение персональных данных</td><td>OSINT, ENROLL, Doxing</td>
+          </tr>
+          <tr>
+            <td>A</td><td>272</td><td>Неправомерный доступ к информации</td><td>Phishing синхр., Bot Sherlock</td>
+          </tr>
+          <tr>
+            <td>A</td><td>128.1</td><td>Клевета с применением спецсредств</td><td>Neuro Fishing</td>
+          </tr>
+          <tr>
+            <td>B</td><td>273</td><td>Вредоносные программы</td><td>Bot Sherlock, Phishing синхр.</td>
+          </tr>
+          <tr>
+            <td>B</td><td>274</td><td>Нарушение правил эксплуатации ЭВМ</td><td>Phishing синхр.</td>
+          </tr>
+          <tr>
+            <td>C</td><td>183.1</td><td>Незаконное использование коммерческой тайны</td><td>Bot Sherlock</td>
+          </tr>
+          <tr>
+            <td>C</td><td>275</td><td>Государственная измена</td><td>Bot Sherlock → передача зарубеж</td>
+          </tr>
+          <tr>
+            <td>C</td><td>276</td><td>Шпионаж</td><td>Bot Sherlock, Neuro Fishing</td>
+          </tr>
+          <tr>
+            <td>C</td><td>205</td><td>Терроризм</td><td>Все методы, если способствовали терактам</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Квалифицирующие признаки -->
+    <div class="panel full-width">
+      <h2>Квалифицирующие признаки</h2>
+      <ul>
+        <li>Систематичность и массовость (ст. 63 УК РФ)</li>
+        <li>Использование специальных технических средств</li>
+        <li>Передача данных иностранным спецслужбам</li>
+        <li>Способствование террористическим актам</li>
+        <li>Нанесение крупного ущерба или создание угрозы для общества</li>
+      </ul>
+    </div>
+
+    <!-- Моменты возникновения состава преступления -->
+    <div class="panel full-width">
+      <h2>Моменты возникновения состава преступления</h2>
+      <ul>
+        <li>Первый несанкционированный доступ к чужим аккаунтам (ст. 272)</li>
+        <li>Сбор и публикация личных данных без согласия (ст. 137, 152)</li>
+        <li>Установка или запуск вредоносного ПО (ст. 273)</li>
+        <li>Пересылка украденной коммерческой тайны (ст. 183.1)</li>
+        <li>Передача данных иностранным спецслужбам (ст. 275)</li>
+        <li>Действия, способствующие подготовке терактов (ст. 205)</li>
+        <li>Сбор и передача разведданных (ст. 276)</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
