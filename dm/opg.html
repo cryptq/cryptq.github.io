@@ -854,10 +854,18 @@
     <div id="modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); align-items:center; justify-content:center;">
         <!-- Кнопка закрытия -->
         <span id="closeModal" style="position:absolute; top:30px; right:50px; font-size:3em; color:#fff; cursor:pointer; user-select:none;">&times;</span>
+        <!-- Кнопка назад -->
+        <span id="prevBtn" style="position:absolute; left:40px; top:50%; transform:translateY(-50%); font-size:3em; color:#fff; cursor:pointer; user-select:none;">&#8592;</span>
+        <!-- Кнопка вперёд -->
+        <span id="nextBtn" style="position:absolute; right:40px; top:50%; transform:translateY(-50%); font-size:3em; color:#fff; cursor:pointer; user-select:none;">&#8594;</span>
         <!-- Контейнер для изображения -->
         <img id="modalImg" src="" alt="Просмотр" style="max-width:90vw; max-height:80vh; display:block; margin:auto; box-shadow:0 8px 32px rgba(0,0,0,0.7); border-radius:16px; background:#232323;">
     </div>
     <script>
+    // Массив всех изображений галереи
+    var galleryImages = Array.from(document.querySelectorAll('.gallery-item img'));
+    var currentIndex = 0;
+
     // Открыть модальное окно с изображением
     function openModal(img) {
         var modal = document.getElementById('modal');
@@ -865,6 +873,16 @@
         modal.style.display = 'flex';
         modalImg.src = img.src;
         modalImg.alt = img.alt;
+        currentIndex = galleryImages.indexOf(img);
+    }
+    // Показать изображение по индексу
+    function showImage(index) {
+        var modalImg = document.getElementById('modalImg');
+        if (index >= 0 && index < galleryImages.length) {
+            modalImg.src = galleryImages[index].src;
+            modalImg.alt = galleryImages[index].alt;
+            currentIndex = index;
+        }
     }
     // Закрыть модальное окно при клике на крестик или вне изображения
     document.getElementById('closeModal').onclick = function() {
@@ -875,6 +893,33 @@
             this.style.display = 'none';
         }
     };
+    // Переключение на предыдущее изображение
+    document.getElementById('prevBtn').onclick = function(e) {
+        e.stopPropagation(); // Не закрывать модалку при клике на кнопку
+        var newIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        showImage(newIndex);
+    };
+    // Переключение на следующее изображение
+    document.getElementById('nextBtn').onclick = function(e) {
+        e.stopPropagation();
+        var newIndex = (currentIndex + 1) % galleryImages.length;
+        showImage(newIndex);
+    };
+    // Переключение стрелками клавиатуры
+    document.addEventListener('keydown', function(e) {
+        var modal = document.getElementById('modal');
+        if (modal.style.display === 'flex') {
+            if (e.key === 'ArrowLeft') {
+                var newIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                showImage(newIndex);
+            } else if (e.key === 'ArrowRight') {
+                var newIndex = (currentIndex + 1) % galleryImages.length;
+                showImage(newIndex);
+            } else if (e.key === 'Escape') {
+                modal.style.display = 'none';
+            }
+        }
+    });
     </script>
 
 </body>
