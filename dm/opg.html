@@ -44,7 +44,10 @@
         .trait-card h4 {font-size: 1.4rem;color: var(--gold);margin-bottom: 15px;}
         @media (max-width: 600px) {.gallery {padding: 10px;gap: 10px;}.gallery-item img {height: 120px;}}
         @media (max-width: 700px) {.container { padding: 18px 4vw; }h1 { font-size: 1.3rem; }h2 { font-size: 1.1rem; }.card, .quote, .disclaimer { padding: 12px 8px; }th, td { padding: 7px 4px; font-size: 0.95em; }}
-    </style>
+        .video-container {position: relative;max-width: 90%;max-height: 90vh;box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);}
+        video {width: 100%;height: auto;display: block;outline: none;}
+        .overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;pointer-events: none;background: repeating-linear-gradient(0deg,rgba(0, 0, 0, 0.1) 0px,rgba(0, 0, 0, 0.1) 1px,transparent 1px,transparent 10px);}    
+</style>
 </head>
 <body>
 <div class="container">
@@ -148,6 +151,48 @@
 
     <p class="summary">В тексте песни «ДСО-наука» содержится:<br>● <b>7 УПОМИНАНИЙ ПЕРВЫХ ЛИЦ</b>,<br>● <b>2 УПОМИНАНИЯ "НАРОДОВ"</b>,<br>● <b>1 УПОМИНАНИЕ ГОСУДАРСТВЕННОГО УЧРЕЖДЕНИЯ</b>.</p>
         </div>
+
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="https://cryptq.github.io/video/video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <script>
+        // Блокировка контекстного меню
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.nodeName === 'VIDEO') {
+                e.preventDefault();
+            }
+        });
+
+        // Блокировка перетаскивания
+        const video = document.querySelector('video');
+        video.addEventListener('dragstart', (e) => e.preventDefault());
+
+        // Шифрование URL (базовое)
+        window.addEventListener('DOMContentLoaded', () => {
+            const key = 'video-protection';
+            const videoSrc = document.querySelector('source');
+            
+            // Шифрование/дешифровка URL
+            function simpleXOR(str, key) {
+                return str.split('').map((char, i) => 
+                    String.fromCharCode(char.charCodeAt(0) ^ key.charCodeAt(i % key.length)
+                ).join('');
+            }
+            
+            // Установка реального URL после загрузки
+            setTimeout(() => {
+                const realUrl = atob('aHR0cHM6Ly9jcnlwdHEuZ2l0aHViLmlvL3ZpZGVvL3ZpZGVvLm1wNA==');
+                videoSrc.src = realUrl;
+                video.load();
+            }, 500);
+        });
+    </script>
+
 </section>
 
 
