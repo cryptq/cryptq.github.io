@@ -1,0 +1,4362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;PC;e9</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<PropStorageFileName>E:\DevelStable\Distribution\SystemVue\Examples\PreReleaseExamples\RF Beamforming\BeamPattern_using_MATLABScript.wsv</PropStorageFileName>
+<Time>2018:323:15:45</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2011.03</D></Ver>
+<Version>1.21</Version>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="AntennaPattern" UserName="AntennaPattern" Type="Design">
+<Intent><T>Int</T><D>4</D></Intent>
+<LibName>MATLAB_Script Models</LibName>
+<Selected><T>Bool</T><D>1</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>weights</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part13</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item>
+<Item XName="P2" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M2</PartID>
+<PinName>weights</PinName>
+<SchObject>Part13</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>Azimuth</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M2</PartID>
+<PinName>azimuth</PinName>
+<SchObject>Part13</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M2</PartID>
+<PinName>zenith</PinName>
+<SchObject>Part13</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M2</PartID>
+<PinName>magnitude</PinName>
+<SchObject>Part13</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>Zenith</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>Magnitude</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item></Item>
+<Item XName="Equations" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="ApplyTaper" Type="Variable">
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="CosineThetaExponent" Type="Variable">
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Dx" Type="Variable">
+<Data><T>Double</T><D>0.5</D></Data></Item>
+<Item XName="Dy" Type="Variable">
+<Data><T>Double</T><D>0.5</D></Data></Item>
+<Item XName="Isotropic" Type="Variable">
+<Data><T>Double</T><D>1</D></Data></Item>
+<Item XName="LocationX" Type="Variable">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>6004</D></Unit></Item>
+<Item XName="LocationY" Type="Variable">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>6004</D></Unit></Item>
+<Item XName="LocationZ" Type="Variable">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>6004</D></Unit></Item>
+<Item XName="Loss" Type="Variable">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>15001</D></Unit></Item>
+<Item XName="MinLevel_dB" Type="Variable">
+<Data><T>Double</T><D>-20</D></Data></Item>
+<Item XName="NumOfAnt_X" Type="Variable">
+<Data><T>Double</T><D>8</D></Data></Item>
+<Item XName="NumOfAnt_Y" Type="Variable">
+<Data><T>Double</T><D>8</D></Data></Item>
+<Item XName="Resolution" Type="Variable">
+<Data><T>Double</T><D>0.0174532925199433</D></Data>
+<Unit><T>Int</T><D>8001</D></Unit></Item>
+<Item XName="SpecifyLocation" Type="Variable">
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Taper" Type="Variable">
+<Data><T>Array_Dbl64</T><D>2;8;8;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3;m}3</D></Data></Item>
+<Item XName="Vectorization" Type="Variable">
+<Data><T>Double</T><D>1</D></Data></Item>
+<Item XName="Wavelength" Type="Variable">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>6004</D></Unit></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;Ru14;at14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;vTctPUHEm24;g1k6uQCIl24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;r5;33;GC;d9</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item></Item>
+<Item XName="Parameters" Type="Parameters">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;17;SpecifyLocation;NumOfAnt_X;NumOfAnt_Y;Dx;Dy;LocationX;LocationY;LocationZ;Wavelength;Resolution;MinLevel_dB;Loss;Isotropic;CosineThetaExponent;ApplyTaper;Taper;Vectorization</D></ParamOrder>
+<Item XName="ApplyTaper" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineThetaExponent" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Use cos(theta)^exponent to model element factor</Description>
+<HideCondition>Isotropic == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dx" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Distance in wavelength between antenna elements in X</Description>
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dy" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Distance in wavelength between antenna elements in Y</Description>
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Isotropic" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is the antenna element isotropic</Description>
+<Enum>EVM_Cx__ContinuousMode@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Loss" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<DataEntry>-20</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NumOfAnt_X" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NumOfAnt_Y" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SpecifyLocation" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Taper" Type="PartParam">
+<DataEntry>ones(8,8)</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>ApplyTaper==0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="Vectorization" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Vectorization factor</Description>
+<Enum />
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Azimuth" Type="Part">
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>DATAPORT</Model>
+<ModelID />
+<Netlist>Port_1,2?Connect1</Netlist>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>DATAPORT</ModelName>
+<SymbolName>SYM_DataPort</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>11</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>11</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item>
+<Item XName="M2" Type="Part">
+<Category>Math Scalar;Math Matrix</Category>
+<Description>MATLAB Script Block</Description>
+<DisabledNetlist />
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>MATLAB_Script@Data Flow Models</Model>
+<ModelID />
+<Netlist>weights,1?Part0|azimuth,2?Connect1|zenith,3?Connect2|magnitude,4?Connect3</Netlist>
+<ParentPartName>MATLAB_Script@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>AutoSymDF{MATLAB_SCRIPT_LOGO}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>MATLAB_Script@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF{MATLAB_SCRIPT_LOGO}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ApplyTaper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>ApplyTaper</DataEntry>
+<Description>NO or YES</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineThetaExponent" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>CosineThetaExponent</DataEntry>
+<HideCondition>Isotropic==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Dx</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dy" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Dy</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationSet" Type="PartParam">
+<DataEntry />
+<Description>Flags that we need a right-click &quot;Edit Equations&quot; menu</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry>if ( SpecifyLocation == 0 )&#x000D;&#x000A;&#x0009;if ( ~isequal( size( weights ), [NumOfAnty, NumOfAntx] ) )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;size( weights ) should be equal to [NumOfAnty, NumOfAntx].&apos;);&#x000D;&#x000A;&#x0009;else&#x000D;&#x000A;&#x0009;&#x0009;[LocationX, LocationY] = meshgrid( (0:NumOfAntx-1)*Dx, (0:NumOfAnty-1)*Dy );&#x000D;&#x000A;&#x0009;&#x0009;LocationZ = zeros( NumOfAnty, NumOfAntx );&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;else&#x000D;&#x000A;&#x0009;if ( ~isequal( size( weights ), size( LocationX ) ) || ~isequal( size( weights ), size( LocationY ) ) || ~isequal( size( weights ), size( LocationZ ) ) )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;size( weights ) should be equal to size(LocationX), size(LocationY), and size(LocationZ).&apos;);&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;&#x0009;if ( Wavelength == 0 )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;Wavelength must be a positive number.&apos;);&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;&#x0009;LocationX = LocationX / Wavelength;&#x000D;&#x000A;&#x0009;LocationY = LocationY / Wavelength;&#x000D;&#x000A;&#x0009;LocationZ = LocationZ / Wavelength;&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;if ( ApplyTaper == 1 )&#x000D;&#x000A;&#x0009;if ( ~isequal( size( weights ), size( Taper ) ) )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;size( Taper ) should be equal to size(weights).&apos;);&#x000D;&#x000A;&#x0009;else&#x000D;&#x000A;&#x0009;&#x0009;weights = weights .* Taper;&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;TWOPI = 2*pi;&#x000D;&#x000A;&#x000D;&#x000A;theta = [0 : Resolution : pi/2];&#x000D;&#x000A;phi = [0 : Resolution : TWOPI];&#x000D;&#x000A;&#x000D;&#x000A;[THETA,PHI]=meshgrid(theta,phi);&#x000D;&#x000A;&#x000D;&#x000A;AF_Tx = zeros(size(THETA)); %antenna factor&#x000D;&#x000A;&#x000D;&#x000A;%for n = 1 : NumOfAnty&#x000D;&#x000A;%&#x0009;for m = 1 : NumOfAntx&#x000D;&#x000A;%        AF_Tx = AF_Tx + weights(n,m) * exp(j * TWOPI * ((m-1) * Dx * cos(PHI) + (n-1) * Dy * sin(PHI)) .* sin(THETA));&#x000D;&#x000A;%    end&#x000D;&#x000A;%end&#x000D;&#x000A;&#x000D;&#x000A;numElements = numel(weights);&#x000D;&#x000A;for k = 1 : numElements&#x000D;&#x000A;&#x0009;AF_Tx = AF_Tx + weights(k) * exp(j * TWOPI * ( LocationX(k) * sin(THETA) .* cos(PHI) + LocationY(k) * sin(THETA) .* sin(PHI) + LocationZ(k) * cos(THETA) ));&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;% This example only normalize AF by the power of input weights&#x000D;&#x000A;% To compute directivity, this should be normalized by the integral of the beam pattern&#x000D;&#x000A;Pin = sum(sum(abs(weights).^2));&#x000D;&#x000A;if Pin == 0&#x000D;&#x000A;&#x0009;Pin = 1;&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;if Isotropic == 1&#x000D;&#x000A;&#x0009;AG_Tx = (abs(AF_Tx).^2) / Loss / Pin; % antenna gain w.r.t isotropic assume each element is isotropic&#x000D;&#x000A;else&#x000D;&#x000A;&#x0009;AG_Tx = (abs(AF_Tx).^2) .* (cos(THETA).^CosineThetaExponent) / Loss / Pin; % antenna gain w.r.t isotropic assume each element antenna gain is cosine(theta) ^ CosineThetaExponent&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;azimuth = PHI;&#x000D;&#x000A;zenith = THETA;&#x000D;&#x000A;magnitude = max(10*log10(AG_Tx),MinLevel_dB); %dBi with minimum level MinLevel_dB</DataEntry>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>weights?1?0?1?17#azimuth?0?0?1?17#zenith?0?0?1?17#magnitude?0?0?1?17#</DataEntry>
+<Description>IO Port Info</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Interpreter" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>MATLAB Script or retail MATLAB</Description>
+<DocSymbol />
+<Enum>MATLAB_Script__Interpreter@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Isotropic" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Isotropic</DataEntry>
+<Description>NO or YES</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>LocationX</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>LocationY</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>LocationZ</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Loss" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Loss</DataEntry>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>MinLevel_dB</DataEntry>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NumOfAntx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>NumOfAnt_X</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NumOfAnty" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>NumOfAnt_Y</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Resolution</DataEntry>
+<Unit><T>Int</T><D>40769</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SpecifyLocation" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>SpecifyLocation</DataEntry>
+<Description>NO or YES</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Taper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Taper</DataEntry>
+<HideCondition>ApplyTaper==0</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Vectorization" Type="PartParam">
+<DataEntry>Vectorization</DataEntry>
+<Description>Vectorization factor</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Wavelength</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="__CustParams_Def" Type="Parameters">
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;16;NumOfAntx;NumOfAnty;Dx;Dy;Resolution;MinLevel_dB;Loss;Isotropic;CosineThetaExponent;ApplyTaper;Taper;SpecifyLocation;LocationX;LocationY;LocationZ;Wavelength</D></ParamOrder>
+<Item XName="ApplyTaper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineThetaExponent" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<HideCondition>Isotropic==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0.5</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dy" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0.5</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Isotropic" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>1</DataEntry>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Loss" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>-20</DataEntry>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NumOfAntx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>8</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NumOfAnty" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>8</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>40769</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SpecifyLocation" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Taper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>ones(8,8)</DataEntry>
+<HideCondition>ApplyTaper==0</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ApplyTaper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>ApplyTaper</DataEntry>
+<Description>NO or YES</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineThetaExponent" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>CosineThetaExponent</DataEntry>
+<HideCondition>Isotropic==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Dx</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dy" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Dy</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationSet" Type="PartParam">
+<DataEntry />
+<Description>Flags that we need a right-click &quot;Edit Equations&quot; menu</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry>if ( SpecifyLocation == 0 )&#x000D;&#x000A;&#x0009;if ( ~isequal( size( weights ), [NumOfAnty, NumOfAntx] ) )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;size( weights ) should be equal to [NumOfAnty, NumOfAntx].&apos;);&#x000D;&#x000A;&#x0009;else&#x000D;&#x000A;&#x0009;&#x0009;[LocationX, LocationY] = meshgrid( (0:NumOfAntx-1)*Dx, (0:NumOfAnty-1)*Dy );&#x000D;&#x000A;&#x0009;&#x0009;LocationZ = zeros( NumOfAnty, NumOfAntx );&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;else&#x000D;&#x000A;&#x0009;if ( ~isequal( size( weights ), size( LocationX ) ) || ~isequal( size( weights ), size( LocationY ) ) || ~isequal( size( weights ), size( LocationZ ) ) )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;size( weights ) should be equal to size(LocationX), size(LocationY), and size(LocationZ).&apos;);&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;&#x0009;if ( Wavelength == 0 )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;Wavelength must be a positive number.&apos;);&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;&#x0009;LocationX = LocationX / Wavelength;&#x000D;&#x000A;&#x0009;LocationY = LocationY / Wavelength;&#x000D;&#x000A;&#x0009;LocationZ = LocationZ / Wavelength;&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;if ( ApplyTaper == 1 )&#x000D;&#x000A;&#x0009;if ( ~isequal( size( weights ), size( Taper ) ) )&#x000D;&#x000A;&#x0009;&#x0009;error(&apos;size( Taper ) should be equal to size(weights).&apos;);&#x000D;&#x000A;&#x0009;else&#x000D;&#x000A;&#x0009;&#x0009;weights = weights .* Taper;&#x000D;&#x000A;&#x0009;end&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;TWOPI = 2*pi;&#x000D;&#x000A;&#x000D;&#x000A;theta = [0 : Resolution : pi/2];&#x000D;&#x000A;phi = [0 : Resolution : TWOPI];&#x000D;&#x000A;&#x000D;&#x000A;[THETA,PHI]=meshgrid(theta,phi);&#x000D;&#x000A;&#x000D;&#x000A;AF_Tx = zeros(size(THETA)); %antenna factor&#x000D;&#x000A;&#x000D;&#x000A;%for n = 1 : NumOfAnty&#x000D;&#x000A;%&#x0009;for m = 1 : NumOfAntx&#x000D;&#x000A;%        AF_Tx = AF_Tx + weights(n,m) * exp(j * TWOPI * ((m-1) * Dx * cos(PHI) + (n-1) * Dy * sin(PHI)) .* sin(THETA));&#x000D;&#x000A;%    end&#x000D;&#x000A;%end&#x000D;&#x000A;&#x000D;&#x000A;numElements = numel(weights);&#x000D;&#x000A;for k = 1 : numElements&#x000D;&#x000A;&#x0009;AF_Tx = AF_Tx + weights(k) * exp(j * TWOPI * ( LocationX(k) * sin(THETA) .* cos(PHI) + LocationY(k) * sin(THETA) .* sin(PHI) + LocationZ(k) * cos(THETA) ));&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;% This example only normalize AF by the power of input weights&#x000D;&#x000A;% To compute directivity, this should be normalized by the integral of the beam pattern&#x000D;&#x000A;Pin = sum(sum(abs(weights).^2));&#x000D;&#x000A;if Pin == 0&#x000D;&#x000A;&#x0009;Pin = 1;&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;if Isotropic == 1&#x000D;&#x000A;&#x0009;AG_Tx = (abs(AF_Tx).^2) / Loss / Pin; % antenna gain w.r.t isotropic assume each element is isotropic&#x000D;&#x000A;else&#x000D;&#x000A;&#x0009;AG_Tx = (abs(AF_Tx).^2) .* (cos(THETA).^CosineThetaExponent) / Loss / Pin; % antenna gain w.r.t isotropic assume each element antenna gain is cosine(theta) ^ CosineThetaExponent&#x000D;&#x000A;end&#x000D;&#x000A;&#x000D;&#x000A;azimuth = PHI;&#x000D;&#x000A;zenith = THETA;&#x000D;&#x000A;magnitude = max(10*log10(AG_Tx),MinLevel_dB); %dBi with minimum level MinLevel_dB</DataEntry>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>weights?1?0?1?17#azimuth?0?0?1?17#zenith?0?0?1?17#magnitude?0?0?1?17#</DataEntry>
+<Description>IO Port Info</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Interpreter" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>MATLAB Script or retail MATLAB</Description>
+<DocSymbol />
+<Enum>MATLAB_Script__Interpreter@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Isotropic" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Isotropic</DataEntry>
+<Description>NO or YES</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>LocationX</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>LocationY</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>LocationZ</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Loss" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Loss</DataEntry>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>MinLevel_dB</DataEntry>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NumOfAntx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>NumOfAnt_X</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NumOfAnty" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>NumOfAnt_Y</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Resolution</DataEntry>
+<Unit><T>Int</T><D>40769</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SpecifyLocation" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>SpecifyLocation</DataEntry>
+<Description>NO or YES</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Taper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Taper</DataEntry>
+<HideCondition>ApplyTaper==0</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Vectorization" Type="PartParam">
+<DataEntry>Vectorization</DataEntry>
+<Description>Vectorization factor</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>Wavelength</DataEntry>
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="__CustParams_Def" Type="Parameters">
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;16;NumOfAntx;NumOfAnty;Dx;Dy;Resolution;MinLevel_dB;Loss;Isotropic;CosineThetaExponent;ApplyTaper;Taper;SpecifyLocation;LocationX;LocationY;LocationZ;Wavelength</D></ParamOrder>
+<Item XName="ApplyTaper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineThetaExponent" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<HideCondition>Isotropic==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0.5</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dy" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0.5</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Isotropic" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>1</DataEntry>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Loss" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>-20</DataEntry>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NumOfAntx" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>8</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NumOfAnty" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>8</DataEntry>
+<HideCondition>SpecifyLocation==1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>40769</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SpecifyLocation" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>0</DataEntry>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Taper" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>ones(8,8)</DataEntry>
+<HideCondition>ApplyTaper==0</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<Data />
+<HideCondition>SpecifyLocation==0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item></Item>
+<Item XName="Magnitude" Type="Part">
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>DATAPORT</Model>
+<ModelID />
+<Netlist>Port_1,4?Connect3</Netlist>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>DATAPORT</ModelName>
+<SymbolName>SYM_DataPort</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>11</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>4</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>11</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>4</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item>
+<Item XName="Zenith" Type="Part">
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>DATAPORT</Model>
+<ModelID />
+<Netlist>Port_1,3?Connect2</Netlist>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>DATAPORT</ModelName>
+<SymbolName>SYM_DataPort</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>11</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>3</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>11</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>3</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item>
+<Item XName="weights" Type="Part">
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>DATAPORT</Model>
+<ModelID />
+<Netlist>Port_1,1?Part13</Netlist>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>DATAPORT</ModelName>
+<SymbolName>SYM_DataPort</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>13</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bus" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Is this a bus</Description>
+<Enum>NO_YES</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Commutative" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bus ordering does not matter</Description>
+<Enum>NO_YES</Enum>
+<HideCondition>Bus == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Data Type" Type="PartParam">
+<DataEntry>13</DataEntry>
+<Description>Data type</Description>
+<Enum>ModelTypeType</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Direction" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Data direction</Description>
+<Enum>ModelTypeIO</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Optional" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is this port optional</Description>
+<Enum>NO_YES</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50.000000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Shown><T>Int</T><D>15354</D></Shown>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.2159</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;G7m24;eVF34;WZo24;eVF34</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;G7m24;O0F34;WZo24;O0F34</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;G7m24;8XE34;WZo24;8XE34</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;us14;qq14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;uosK24;mmfms22xC34;qL2y24;zPrDz8mfJ34</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>8500</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>11000</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>125</D></CenterY>
+<Designator>weights</Designator>
+<PosX><T>Double</T><D>2375.000000000006</D></PosX>
+<PosY><T>Double</T><D>15749.99999999988</D></PosY>
+<Rotate><T>Double</T><D>180</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>237.74755859375</D></PosX>
+<PosY><T>Double</T><D>252.5</D></PosY>
+<Rotate><T>Double</T><D>-180</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pweights" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-225.64</D></PosY>
+<Text>weights {DATAPORT}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pBus" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Bus=NO</Text></Item>
+<Item XName="_pData Type" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-112.82</D></PosY>
+<Text>Data Type=Complex Matrix</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>125</D></CenterY>
+<Designator>Azimuth</Designator>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>4750</D></PosX>
+<PosY><T>Double</T><D>16000</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>237.75</D></PosX>
+<PosY><T>Double</T><D>252.5</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pAzimuth" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Azimuth {DATAPORT}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pBus" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>Bus=NO</Text></Item>
+<Item XName="_pData Type" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>Data Type=Floating Point (Real) Matrix</Text></Item></Item></Item>
+<Item XName="Part13" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>MATLAB Script Block</Description>
+<Designator>M2</Designator>
+<PosX><T>Double</T><D>2125.000015380778</D></PosX>
+<PosY><T>Double</T><D>15250.00034894026</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{MATLAB_SCRIPT_LOGO}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pM2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>M2 {MATLAB_Script@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pApplyTaper" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1015.38</D></PosY>
+<Text>ApplyTaper=0 [ApplyTaper]</Text></Item>
+<Item XName="_pDx" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>Dx=0.5 [Dx]</Text></Item>
+<Item XName="_pDy" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>Dy=0.5 [Dy]</Text></Item>
+<Item XName="_pIsotropic" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>902.5600000000001</D></PosY>
+<Text>Isotropic=1 [Isotropic]</Text></Item>
+<Item XName="_pLoss" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>789.7400000000001</D></PosY>
+<Text>Loss=0 dB10 [Loss]</Text></Item>
+<Item XName="_pMinLevel_dB" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>676.9200000000001</D></PosY>
+<Text>MinLevel_dB=-20 [MinLevel_dB]</Text></Item>
+<Item XName="_pNumOfAntx" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>NumOfAntx=8 [NumOfAnt_X]</Text></Item>
+<Item XName="_pNumOfAnty" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>NumOfAnty=8 [NumOfAnt_Y]</Text></Item>
+<Item XName="_pResolution" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>Resolution=1 &#x00B0; [Resolution]</Text></Item>
+<Item XName="_pSpecifyLocation" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1128.2</D></PosY>
+<Text>SpecifyLocation=0 [SpecifyLocation]</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>125</D></CenterY>
+<Designator>Zenith</Designator>
+<Justification><T>Int</T><D>6</D></Justification>
+<PosX><T>Double</T><D>4750</D></PosX>
+<PosY><T>Double</T><D>15750</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>603</D></PosX>
+<PosY><T>Double</T><D>125</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pZenith" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>4</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-112.82</D></PosY>
+<Text>Zenith {DATAPORT}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pBus" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>4</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>Bus=NO</Text></Item>
+<Item XName="_pData Type" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>4</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Data Type=Floating Point (Real) Matrix</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>125</D></CenterY>
+<Designator>Magnitude</Designator>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>4750</D></PosX>
+<PosY><T>Double</T><D>15500</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_DataPort</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>237.75</D></PosX>
+<PosY><T>Double</T><D>-2.5</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pMagnitude" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-225.64</D></PosY>
+<Text>Magnitude {DATAPORT}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pBus" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Bus=NO</Text></Item>
+<Item XName="_pData Type" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-112.82</D></PosY>
+<Text>Data Type=Floating Point (Real) Matrix</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.2794</D></Data></Item></Item></Item>
+<Item XName="Design1" UserName="Design1" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>B1</PartID>
+<PinName>Phi</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N10" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>CompareMeToTheSubNetwork</PartID>
+<PinName>Theta</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>17</NetName></Item></Item></Item></Item>
+<Item XName="N11" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>CompareMeToTheSubNetwork</PartID>
+<PinName>AntennaGain</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>18</NetName></Item></Item></Item></Item>
+<Item XName="N12" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>CompareMeToTheSubNetwork</PartID>
+<PinName>OutputX</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>15</NetName></Item></Item></Item></Item>
+<Item XName="N13" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>CompareMeToTheSubNetwork</PartID>
+<PinName>OutputY</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>6</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>16</NetName></Item></Item></Item></Item>
+<Item XName="N14" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>CompareMeToTheSubNetwork</PartID>
+<PinName>OutputZ</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>7</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>13</NetName></Item></Item></Item></Item>
+<Item XName="N15" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>B1</PartID>
+<PinName>Weights</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N16" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>Subnetwork1</PartID>
+<PinName>weights</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N17" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>10</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>Subnetwork1</PartID>
+<PinName>Azimuth</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>10</NetName></Item></Item></Item></Item>
+<Item XName="N18" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>Subnetwork1</PartID>
+<PinName>Zenith</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N19" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>Subnetwork1</PartID>
+<PinName>Magnitude</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>B1</PartID>
+<PinName>Theta</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N20" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>10</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>D1</PartID>
+<PinName>X/Phi</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>10</NetName></Item></Item></Item></Item>
+<Item XName="N21" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>D1</PartID>
+<PinName>Y/Theta</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N22" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>D1</PartID>
+<PinName>Z/Magnitude</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>B1</PartID>
+<PinName>Magnitudes</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>B1</PartID>
+<PinName>Phases</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>B1</PartID>
+<PinName>OutputX</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>6</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>B1</PartID>
+<PinName>OutputY</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>7</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>7</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>B1</PartID>
+<PinName>OutputZ</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>8</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>8</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>CompareMeToTheSubNetwork</PartID>
+<PinName>Input</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>14</NetName></Item></Item></Item></Item>
+<Item XName="N9" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>CompareMeToTheSubNetwork</PartID>
+<PinName>Phi</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>11</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;4s14;Kt14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;mB2l8ykIj24;M3RDmryyk24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;43;r5;a9</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item>
+<Item XName="Display1" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;ocEUzxu8B24;OI8qB74lr14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GJz24;WLUtd24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>1</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="B1" Type="Part">
+<Category>Phased Array</Category>
+<Description>Generate beamformer weights by Theta and Phi</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>BeamformerWeights@Data Flow Models</Model>
+<ModelID />
+<Netlist>Phi,1|Theta,2|Weights,3?Connect0|Magnitudes,4|Phases,5|OutputX,6|OutputY,7|OutputZ,8</Netlist>
+<ParentPartName>BeamformerWeights@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BeamformerWeights@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ApplyCustomWindow" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Apply custom window</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__ApplyCustomWindow@Data Flow Enums</Enum>
+<HideCondition>Configuration ~= 0 &amp;&amp; MultiUser == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Configuration" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Antenna array configuration</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__Configuration@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CustomWindow" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Custom window</Description>
+<DocSymbol />
+<HideCondition>~((Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; Window == 11) || (~((Configuration == 1 || Configuration == 2) &amp;&amp; MultiUser == 0) &amp;&amp; ApplyCustomWindow == 1))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="DistanceUnit" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Distance unit</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__DistanceUnit@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DistanceX" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceX_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ElementToUserMap" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Element to user map. ElementToUserMap(i) means i-th array element is used by user ElementToUserMap(i).</Description>
+<DocSymbol />
+<HideCondition>MultiUser ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="InitialAngles" Type="PartParam">
+<DataEntry>[0,0,0,0]</DataEntry>
+<Description>Initial angles for each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY_in_Wavelengths" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="MultiUser" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Multiuser configuration</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__MultiUser@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Normalization" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize window so the maximum value is 1</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__Normalization@Data Flow Enums</Enum>
+<HideCondition>~((Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; Window ~= 0) || (~((Configuration == 1 || Configuration == 2) &amp;&amp; MultiUser == 0) &amp;&amp; ApplyCustomWindow == 1))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NumBars" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Number of bars for Taylor window</Description>
+<DocSymbol />
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; Window == 10)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElements" Type="PartParam">
+<DataEntry>[1,4,8,16]</DataEntry>
+<Description>Number of elements in each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="NumElementsX" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsY" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 &amp;&amp; Configuration ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Phi" Type="PartParam">
+<DataEntry>[300]</DataEntry>
+<Description>Phi angle</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="RotateArray" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotate antenna array from antenna coordinate to reference coordinate</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__RotateArray@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RotationAroundX" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around x&apos;&apos; axis after the second rotation (also known as Roll or Slant angle), observed from positive x&apos;&apos;, measured from positive y&apos;&apos; axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundY" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around y&apos; axis after the first rotation (also known as Pitch or Downtilt angle), observed from positive y&apos;, measured from positive z(z&apos;) axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundZ" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around z axis (also known as Yaw or Bearing angle), observed from positive z, measured from positive x axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SideLobeLevel" Type="PartParam">
+<DataEntry>-20</DataEntry>
+<Description>Side lobe level in dB</Description>
+<DocSymbol />
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; (Window == 8 || Window == 10))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Theta" Type="PartParam">
+<DataEntry>[30]</DataEntry>
+<Description>Theta angle</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Wavelength at the center frequency</Description>
+<DocSymbol />
+<HideCondition>DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Window" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Window (taper) type</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__Window@Data Flow Enums</Enum>
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowParameter" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Window parameter for GeneralizedCosine and Ready</Description>
+<DocSymbol />
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; (Window == 6 || Window == 7))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ApplyCustomWindow" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Apply custom window</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__ApplyCustomWindow@Data Flow Enums</Enum>
+<HideCondition>Configuration ~= 0 &amp;&amp; MultiUser == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Configuration" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Antenna array configuration</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__Configuration@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CustomWindow" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Custom window</Description>
+<DocSymbol />
+<HideCondition>~((Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; Window == 11) || (~((Configuration == 1 || Configuration == 2) &amp;&amp; MultiUser == 0) &amp;&amp; ApplyCustomWindow == 1))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="DistanceUnit" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Distance unit</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__DistanceUnit@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DistanceX" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceX_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ElementToUserMap" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Element to user map. ElementToUserMap(i) means i-th array element is used by user ElementToUserMap(i).</Description>
+<DocSymbol />
+<HideCondition>MultiUser ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="InitialAngles" Type="PartParam">
+<DataEntry>[0,0,0,0]</DataEntry>
+<Description>Initial angles for each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY_in_Wavelengths" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="MultiUser" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Multiuser configuration</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__MultiUser@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Normalization" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize window so the maximum value is 1</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__Normalization@Data Flow Enums</Enum>
+<HideCondition>~((Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; Window ~= 0) || (~((Configuration == 1 || Configuration == 2) &amp;&amp; MultiUser == 0) &amp;&amp; ApplyCustomWindow == 1))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NumBars" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Number of bars for Taylor window</Description>
+<DocSymbol />
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; Window == 10)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElements" Type="PartParam">
+<DataEntry>[1,4,8,16]</DataEntry>
+<Description>Number of elements in each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="NumElementsX" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsY" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 &amp;&amp; Configuration ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Phi" Type="PartParam">
+<DataEntry>[300]</DataEntry>
+<Description>Phi angle</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="RotateArray" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotate antenna array from antenna coordinate to reference coordinate</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__RotateArray@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RotationAroundX" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around x&apos;&apos; axis after the second rotation (also known as Roll or Slant angle), observed from positive x&apos;&apos;, measured from positive y&apos;&apos; axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundY" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around y&apos; axis after the first rotation (also known as Pitch or Downtilt angle), observed from positive y&apos;, measured from positive z(z&apos;) axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundZ" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around z axis (also known as Yaw or Bearing angle), observed from positive z, measured from positive x axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SideLobeLevel" Type="PartParam">
+<DataEntry>-20</DataEntry>
+<Description>Side lobe level in dB</Description>
+<DocSymbol />
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; (Window == 8 || Window == 10))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Theta" Type="PartParam">
+<DataEntry>[30]</DataEntry>
+<Description>Theta angle</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Wavelength at the center frequency</Description>
+<DocSymbol />
+<HideCondition>DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Window" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Window (taper) type</Description>
+<DocSymbol />
+<Enum>BeamformerWeights__Window@Data Flow Enums</Enum>
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowParameter" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Window parameter for GeneralizedCosine and Ready</Description>
+<DocSymbol />
+<HideCondition>~(Configuration ~= 0 &amp;&amp; MultiUser == 0 &amp;&amp; (Window == 6 || Window == 7))</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item></Item></Item>
+<Item XName="CompareMeToTheSubNetwork" Type="Part">
+<Category>Beamforming</Category>
+<Description>Beam pattern calculation</Description>
+<DisabledNetlist>Input,14|Phi,11|Theta,17|AntennaGain,18|OutputX,15|OutputY,16|OutputZ,13</DisabledNetlist>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>BeamPattern@Data Flow Models</Model>
+<ModelID />
+<Netlist>Input,14|Phi,11|Theta,17|AntennaGain,18|OutputX,15|OutputY,16|OutputZ,13</Netlist>
+<ParentPartName>BeamPattern@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>1</D></SimOverride>
+<Symbol>AutoSymDF</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BeamPattern@Data Flow Models</ModelName>
+<SymbolName>SYM_BeamPattern</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ArrayRadiation" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Array radiation region for directivity beam pattern integration</Description>
+<DocSymbol />
+<Enum>BeamPattern__ArrayRadiation@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Configuration" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Antenna array configuration</Description>
+<DocSymbol />
+<Enum>BeamPattern__Configuration@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineExponent" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>The element pattern is cos(theta)^CosineExponent</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceUnit" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Distance unit</Description>
+<DocSymbol />
+<Enum>BeamPattern__DistanceUnit@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DistanceX" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceX_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ElementPatternFileMap" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Element pattern file mapping matrix</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=3 || ElementPatternFileMapOption~=2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="ElementPatternFileMapOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Element pattern file to antenna mapping</Description>
+<DocSymbol />
+<Enum>BeamPattern__ElementPatternFileMapOption@Data Flow Enums</Enum>
+<HideCondition>ElementPatternType~=3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ElementPatternFileName" Type="PartParam">
+<DataEntry />
+<Description>Antenna Pattern Filename (if there are multiple files, select the first one)</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="ElementPatternFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Antenna pattern file format (EMPro or HFSS)</Description>
+<DocSymbol />
+<Enum>BeamPattern__ElementPatternFileType@Data Flow Enums</Enum>
+<HideCondition>ElementPatternType~=3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ElementPatternType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Antenna Element Radiation Pattern</Description>
+<DocSymbol />
+<Enum>BeamPattern__ElementPatternType@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ElementRotationAroundX" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Rotation angle around x&apos;&apos; axis after the second rotation (also known as Roll or Slant angle), observed from positive x&apos;&apos;, measured from positive y&apos;&apos; axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateElement == 0 || (ElementPatternType~=2 &amp;&amp; ElementPatternType~=3)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="ElementRotationAroundY" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Rotation angle around y&apos; axis after the first rotation (also known as Pitch or Downtilt angle), observed from positive y&apos;, measured from positive z(z&apos;) axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateElement == 0 || (ElementPatternType~=2 &amp;&amp; ElementPatternType~=3)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="ElementRotationAroundZ" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Rotation angle around z axis (also known as Yaw or Bearing angle), observed from positive z, measured from positive x axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateElement == 0 || (ElementPatternType~=2 &amp;&amp; ElementPatternType~=3)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Ephi" Type="PartParam">
+<DataEntry>[0.0]</DataEntry>
+<Description>Phi component of the E-field</Description>
+<DocSymbol />
+<HideCondition>OutputPolarizationPatterns == 0 || ElementPatternType==3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="Etheta" Type="PartParam">
+<DataEntry>[1.0]</DataEntry>
+<Description>Theta component of the E-field</Description>
+<DocSymbol />
+<HideCondition>OutputPolarizationPatterns == 0 || ElementPatternType==3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>Input?1?0?1?13?0#Phi?0?0?1?11?0#Theta?0?0?1?11?0#AntennaGain?0?0?1?11?0#OutputX?0?0?1?11?0#OutputY?0?0?1?11?0#OutputZ?0?0?1?11?0#</DataEntry>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOInfoFormula" Type="PartParam">
+<DataEntry>Input?1?0?1?13?0?#Phi?0?0?1?11?0?#Theta?0?0?1?11?0?#AntennaGain?0?0?1?11?0?#Polarization1?0?0?1?11?0?OutputPolarizationPatterns == 0#Polarization2?0?0?1?11?0?OutputPolarizationPatterns == 0#OutputX?0?0?1?11?0?#OutputY?0?0?1?11?0?#OutputZ?0?0?1?11?0?#</DataEntry>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InitialAngles" Type="PartParam">
+<DataEntry>[0,0,0,0]</DataEntry>
+<Description>Initial angles for each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY_in_Wavelengths" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="NumAntennasPerLocation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of antenna elements at the same location (for dual polarization modeling)</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElements" Type="PartParam">
+<DataEntry>[1,4,8,16]</DataEntry>
+<Description>Number of elements in each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="NumElementsBottomRow" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Number of antennas on bottom row</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 5</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsMiddleRow" Type="PartParam">
+<DataEntry>9</DataEntry>
+<Description>Number of antennas on mid row</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 5</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsX" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsY" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 &amp;&amp; Configuration ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OutputPolarizationPatterns" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Output polarization patterns</Description>
+<DocSymbol />
+<Enum>BeamPattern__OutputPolarizationPatterns@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PatternDataEphi" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Complex Ephi in M x N matrix. M is the number of phi angles and N is the number of theta angles.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="PatternDataEtheta" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Complex Etheta in M x N matrix. M is the number of phi angles and N is the number of theta angles.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="PatternDataPhiGrid" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Phi grid in M x N matrix. M is the number of phi angles and N is the number of theta angles. Phi should be [0,360], and the phi interval should be consistent.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PatternDataThetaGrid" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Theta grid in M x N matrix. M is the number of phi angles and N is the number of theta angles. Theta should be [0,180], and the theta interval should be consistent.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PolarizationPatterns" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Polarization pattern decomposition</Description>
+<DocSymbol />
+<Enum>BeamPattern__PolarizationPatterns@Data Flow Enums</Enum>
+<HideCondition>OutputPolarizationPatterns == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RadiationEfficiency" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Radiation efficiency used in HFSS antenna pattern where rETheta and rEPhi are defined</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=3 || ElementPatternFileType~=1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Angular resolution in Phi and Theta in beam pattern</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotateArray" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotate antenna array from antenna coordinate to reference coordinate</Description>
+<DocSymbol />
+<Enum>BeamPattern__RotateArray@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RotateElement" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotate element pattern from antenna coordinate to reference coordinate</Description>
+<DocSymbol />
+<Enum>BeamPattern__RotateElement@Data Flow Enums</Enum>
+<HideCondition>ElementPatternType~= 2 &amp;&amp; ElementPatternType~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RotationAroundX" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around x&apos;&apos; axis after the second rotation (also known as Roll or Slant angle), observed from positive x&apos;&apos;, measured from positive y&apos;&apos; axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundY" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around y&apos; axis after the first rotation (also known as Pitch or Downtilt angle), observed from positive y&apos;, measured from positive z(z&apos;) axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundZ" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around z axis (also known as Yaw or Bearing angle), observed from positive z, measured from positive x axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ThetaRange" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Description>The angular range in Theta angle in beam pattern, e.g. [0, 90] degree or [0, 180] degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Wavelength at the center frequency</Description>
+<DocSymbol />
+<HideCondition>DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ArrayRadiation" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Array radiation region for directivity beam pattern integration</Description>
+<DocSymbol />
+<Enum>BeamPattern__ArrayRadiation@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Configuration" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Antenna array configuration</Description>
+<DocSymbol />
+<Enum>BeamPattern__Configuration@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineExponent" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>The element pattern is cos(theta)^CosineExponent</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceUnit" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Distance unit</Description>
+<DocSymbol />
+<Enum>BeamPattern__DistanceUnit@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DistanceX" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceX_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on X axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="DistanceY_in_Wavelengths" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>Distance between antenna elements on Y axis in wavelengths</Description>
+<DocSymbol />
+<HideCondition>(Configuration ~= 2 &amp;&amp; Configuration ~= 1) || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ElementPatternFileMap" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Element pattern file mapping matrix</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=3 || ElementPatternFileMapOption~=2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="ElementPatternFileMapOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Element pattern file to antenna mapping</Description>
+<DocSymbol />
+<Enum>BeamPattern__ElementPatternFileMapOption@Data Flow Enums</Enum>
+<HideCondition>ElementPatternType~=3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ElementPatternFileName" Type="PartParam">
+<DataEntry />
+<Description>Antenna Pattern Filename (if there are multiple files, select the first one)</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="ElementPatternFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Antenna pattern file format (EMPro or HFSS)</Description>
+<DocSymbol />
+<Enum>BeamPattern__ElementPatternFileType@Data Flow Enums</Enum>
+<HideCondition>ElementPatternType~=3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ElementPatternType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Antenna Element Radiation Pattern</Description>
+<DocSymbol />
+<Enum>BeamPattern__ElementPatternType@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ElementRotationAroundX" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Rotation angle around x&apos;&apos; axis after the second rotation (also known as Roll or Slant angle), observed from positive x&apos;&apos;, measured from positive y&apos;&apos; axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateElement == 0 || (ElementPatternType~=2 &amp;&amp; ElementPatternType~=3)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="ElementRotationAroundY" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Rotation angle around y&apos; axis after the first rotation (also known as Pitch or Downtilt angle), observed from positive y&apos;, measured from positive z(z&apos;) axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateElement == 0 || (ElementPatternType~=2 &amp;&amp; ElementPatternType~=3)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="ElementRotationAroundZ" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Rotation angle around z axis (also known as Yaw or Bearing angle), observed from positive z, measured from positive x axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateElement == 0 || (ElementPatternType~=2 &amp;&amp; ElementPatternType~=3)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Ephi" Type="PartParam">
+<DataEntry>[0.0]</DataEntry>
+<Description>Phi component of the E-field</Description>
+<DocSymbol />
+<HideCondition>OutputPolarizationPatterns == 0 || ElementPatternType==3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="Etheta" Type="PartParam">
+<DataEntry>[1.0]</DataEntry>
+<Description>Theta component of the E-field</Description>
+<DocSymbol />
+<HideCondition>OutputPolarizationPatterns == 0 || ElementPatternType==3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>Input?1?0?1?13?0#Phi?0?0?1?11?0#Theta?0?0?1?11?0#AntennaGain?0?0?1?11?0#OutputX?0?0?1?11?0#OutputY?0?0?1?11?0#OutputZ?0?0?1?11?0#</DataEntry>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOInfoFormula" Type="PartParam">
+<DataEntry>Input?1?0?1?13?0?#Phi?0?0?1?11?0?#Theta?0?0?1?11?0?#AntennaGain?0?0?1?11?0?#Polarization1?0?0?1?11?0?OutputPolarizationPatterns == 0#Polarization2?0?0?1?11?0?OutputPolarizationPatterns == 0#OutputX?0?0?1?11?0?#OutputY?0?0?1?11?0?#OutputZ?0?0?1?11?0?#</DataEntry>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InitialAngles" Type="PartParam">
+<DataEntry>[0,0,0,0]</DataEntry>
+<Description>Initial angles for each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationX_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>X coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY_in_Wavelengths" Type="PartParam">
+<DataEntry>[0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5]</DataEntry>
+<Description>Y coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0]</DataEntry>
+<Description>Z coordinate of antenna elements in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 0 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="NumAntennasPerLocation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of antenna elements at the same location (for dual polarization modeling)</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElements" Type="PartParam">
+<DataEntry>[1,4,8,16]</DataEntry>
+<Description>Number of elements in each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="NumElementsBottomRow" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Number of antennas on bottom row</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 5</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsMiddleRow" Type="PartParam">
+<DataEntry>9</DataEntry>
+<Description>Number of antennas on mid row</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 5</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsX" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on X axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NumElementsY" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of elements on Y axis</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 2 &amp;&amp; Configuration ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OutputPolarizationPatterns" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Output polarization patterns</Description>
+<DocSymbol />
+<Enum>BeamPattern__OutputPolarizationPatterns@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PatternDataEphi" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Complex Ephi in M x N matrix. M is the number of phi angles and N is the number of theta angles.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="PatternDataEtheta" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Complex Etheta in M x N matrix. M is the number of phi angles and N is the number of theta angles.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="PatternDataPhiGrid" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Phi grid in M x N matrix. M is the number of phi angles and N is the number of theta angles. Phi should be [0,360], and the phi interval should be consistent.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PatternDataThetaGrid" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Description>Theta grid in M x N matrix. M is the number of phi angles and N is the number of theta angles. Theta should be [0,180], and the theta interval should be consistent.</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=4</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PolarizationPatterns" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Polarization pattern decomposition</Description>
+<DocSymbol />
+<Enum>BeamPattern__PolarizationPatterns@Data Flow Enums</Enum>
+<HideCondition>OutputPolarizationPatterns == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RadiationEfficiency" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>Radiation efficiency used in HFSS antenna pattern where rETheta and rEPhi are defined</Description>
+<DocSymbol />
+<HideCondition>ElementPatternType~=3 || ElementPatternFileType~=1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Radii_in_Wavelengths" Type="PartParam">
+<DataEntry>[0,0.5,1,1.5]</DataEntry>
+<Description>Radius of each circle in wavelengths</Description>
+<DocSymbol />
+<HideCondition>Configuration ~= 3 || DistanceUnit ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Angular resolution in Phi and Theta in beam pattern</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotateArray" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotate antenna array from antenna coordinate to reference coordinate</Description>
+<DocSymbol />
+<Enum>BeamPattern__RotateArray@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RotateElement" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotate element pattern from antenna coordinate to reference coordinate</Description>
+<DocSymbol />
+<Enum>BeamPattern__RotateElement@Data Flow Enums</Enum>
+<HideCondition>ElementPatternType~= 2 &amp;&amp; ElementPatternType~= 3</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RotationAroundX" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around x&apos;&apos; axis after the second rotation (also known as Roll or Slant angle), observed from positive x&apos;&apos;, measured from positive y&apos;&apos; axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundY" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around y&apos; axis after the first rotation (also known as Pitch or Downtilt angle), observed from positive y&apos;, measured from positive z(z&apos;) axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RotationAroundZ" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Rotation angle around z axis (also known as Yaw or Bearing angle), observed from positive z, measured from positive x axis counterclockwise</Description>
+<DocSymbol />
+<HideCondition>RotateArray == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ThetaRange" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Description>The angular range in Theta angle in beam pattern, e.g. [0, 90] degree or [0, 180] degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Wavelength at the center frequency</Description>
+<DocSymbol />
+<HideCondition>DistanceUnit ~= 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="D1" Type="Part">
+<Category>Sinks</Category>
+<Description>Dynamic 3D Plot</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Dynamic3D@Data Flow Models</Model>
+<ModelID />
+<Netlist>X/Phi,10?Connect1|Y/Theta,9?Connect2|Z/Magnitude,12?Connect3</Netlist>
+<ParentPartName>Dynamic3D@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_Dynamic3D</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Dynamic3D@Data Flow Models</ModelName>
+<SymbolName>SYM_Dynamic3D</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="CoordinateSystem" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Coordinate System: Cartesian, Spherical</Description>
+<DocSymbol />
+<Enum>Dynamic3D__CoordinateSystem@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MagnitudeUnit" Type="PartParam">
+<DataEntry />
+<Description>Magnitude unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<DataEntry>-30</DataEntry>
+<Description>The minimum dB level to be dispalyed.</Description>
+<DocSymbol />
+<HideCondition>~( (CoordinateSystem == 0) &amp;&amp; ( length(ZUnit) &gt; 1 ) &amp;&amp; ( ZUnit(1) == &apos;d&apos; ) &amp;&amp; ( ZUnit(2) == &apos;B&apos;) ) &amp;&amp; ~( (CoordinateSystem == 1) &amp;&amp; ( length(MagnitudeUnit) &gt; 1 ) &amp;&amp; (MagnitudeUnit(1) == &apos;d&apos;) &amp;&amp; (MagnitudeUnit(2) == &apos;B&apos;) )</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phi" Type="PartParam">
+<DataEntry />
+<Description>Phi angle in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="ScatterPlot" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Display as scatter plot</Description>
+<DocSymbol />
+<Enum>Dynamic3D__ScatterPlot@Data Flow Enums</Enum>
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Theta" Type="PartParam">
+<DataEntry />
+<Description>Theta angle in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="X" Type="PartParam">
+<DataEntry />
+<Description>X in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="XUnit" Type="PartParam">
+<DataEntry />
+<Description>X unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Y" Type="PartParam">
+<DataEntry />
+<Description>Y in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="YUnit" Type="PartParam">
+<DataEntry />
+<Description>Y unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ZUnit" Type="PartParam">
+<DataEntry />
+<Description>Z unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="CoordinateSystem" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Coordinate System: Cartesian, Spherical</Description>
+<DocSymbol />
+<Enum>Dynamic3D__CoordinateSystem@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MagnitudeUnit" Type="PartParam">
+<DataEntry />
+<Description>Magnitude unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<DataEntry>-30</DataEntry>
+<Description>The minimum dB level to be dispalyed.</Description>
+<DocSymbol />
+<HideCondition>~( (CoordinateSystem == 0) &amp;&amp; ( length(ZUnit) &gt; 1 ) &amp;&amp; ( ZUnit(1) == &apos;d&apos; ) &amp;&amp; ( ZUnit(2) == &apos;B&apos;) ) &amp;&amp; ~( (CoordinateSystem == 1) &amp;&amp; ( length(MagnitudeUnit) &gt; 1 ) &amp;&amp; (MagnitudeUnit(1) == &apos;d&apos;) &amp;&amp; (MagnitudeUnit(2) == &apos;B&apos;) )</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phi" Type="PartParam">
+<DataEntry />
+<Description>Phi angle in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="ScatterPlot" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Display as scatter plot</Description>
+<DocSymbol />
+<Enum>Dynamic3D__ScatterPlot@Data Flow Enums</Enum>
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Theta" Type="PartParam">
+<DataEntry />
+<Description>Theta angle in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="X" Type="PartParam">
+<DataEntry />
+<Description>X in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="XUnit" Type="PartParam">
+<DataEntry />
+<Description>X unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Y" Type="PartParam">
+<DataEntry />
+<Description>Y in vector or matrix format</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="YUnit" Type="PartParam">
+<DataEntry />
+<Description>Y unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ZUnit" Type="PartParam">
+<DataEntry />
+<Description>Z unit</Description>
+<DocSymbol />
+<HideCondition>CoordinateSystem == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;pCpCpCdG234;pCpCpCNe734</D></PVPort></Item></Item>
+<Item XName="Subnetwork1" Type="Part">
+<Model>AntennaPattern</Model>
+<ModelID />
+<Netlist>weights,3?Connect0|Azimuth,10?Connect1|Zenith,9?Connect2|Magnitude,12?Connect3</Netlist>
+<ShowModel><T>Bool</T><D>1</D></ShowModel>
+<Symbol>AutoSymDF</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>AntennaPattern</ModelName>
+<SymbolName />
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ApplyTaper" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineThetaExponent" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Use cos(theta)^exponent to model element factor</Description>
+<HideCondition>Isotropic == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dx" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Distance in wavelength between antenna elements in X</Description>
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dy" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Distance in wavelength between antenna elements in Y</Description>
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Isotropic" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is the antenna element isotropic</Description>
+<Enum>EVM_Cx__ContinuousMode@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Loss" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<DataEntry>-20</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NumOfAnt_X" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NumOfAnt_Y" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SpecifyLocation" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Taper" Type="PartParam">
+<DataEntry>ones(8,8)</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>ApplyTaper==0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="Vectorization" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Vectorization factor</Description>
+<Enum />
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ApplyTaper" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CosineThetaExponent" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Use cos(theta)^exponent to model element factor</Description>
+<HideCondition>Isotropic == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dx" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Distance in wavelength between antenna elements in X</Description>
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Dy" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Distance in wavelength between antenna elements in Y</Description>
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Isotropic" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Is the antenna element isotropic</Description>
+<Enum>EVM_Cx__ContinuousMode@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="LocationX" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationY" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="LocationZ" Type="PartParam">
+<DataEntry>[0]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Loss" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MinLevel_dB" Type="PartParam">
+<DataEntry>-20</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NumOfAnt_X" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NumOfAnt_Y" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>SpecifyLocation == 1</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Resolution" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SpecifyLocation" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Taper" Type="PartParam">
+<DataEntry>ones(8,8)</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Enum />
+<HideCondition>ApplyTaper==0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="Vectorization" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Vectorization factor</Description>
+<Enum />
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Wavelength" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<HideCondition>SpecifyLocation == 0</HideCondition>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Annotate0" Type="TextA">
+<BorderColor><T>Int</T><D>8388608</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>3</D></BorderWeight>
+<Color><T>Int</T><D>11862015</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Height><T>Double</T><D>1000</D></Height>
+<HorizMargin><T>Int</T><D>50</D></HorizMargin>
+<Justification><T>Int</T><D>5</D></Justification>
+<PosX><T>Double</T><D>2250</D></PosX>
+<PosY><T>Double</T><D>-375</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ToPoint><T>Bool</T><D>0</D></ToPoint>
+<VertMargin><T>Int</T><D>50</D></VertMargin>
+<Width><T>Double</T><D>4250</D></Width>
+<ZOrder><T>Int</T><D>-1</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>0</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>152.7777777777778</D></Size></Item>
+<Item XName="Text" Type="Param">
+<DataEntry>The phased array beam pattern calculation is done manually using the MATLAB Script model inside the AntennaPattern subnetwork.&#x000D;&#x000A;&#x000D;&#x000A;The MATLAB Script code is for your reference.</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item></Item>
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;JT24;YJ24;WZY24;YJ24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;G7m24;RN24;G4o24;RN24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;G7m24;YJ24;G4o24;YJ24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;G7m24;GF24;G4o24;GF24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;Wq14;aq14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;oC2C;c52C;M8gK{cOax24;btP9bpzZy24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Display1" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;MA24;p14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>Generate beamformer weights by Theta and Phi</Description>
+<Designator>B1</Designator>
+<PosX><T>Double</T><D>-125.0000152587891</D></PosX>
+<PosY><T>Double</T><D>-374.9999999999966</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1137.249877929688</D></PosX>
+<PosY><T>Double</T><D>1795</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pB1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>B1 {BeamformerWeights@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pConfiguration" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Configuration=Uniform Rectangular Array</Text></Item>
+<Item XName="_pDistanceUnit" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>DistanceUnit=Wavelengths</Text></Item>
+<Item XName="_pDistanceX_in_Wavelengths" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>DistanceX_in_Wavelengths=0.5</Text></Item>
+<Item XName="_pDistanceY_in_Wavelengths" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>DistanceY_in_Wavelengths=0.5</Text></Item>
+<Item XName="_pMultiUser" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1514.113333333333</D></PosY>
+<Text>MultiUser=Shared Array</Text></Item>
+<Item XName="_pNumAntennasPerLocation" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1101.173333333333</D></PosY>
+<Text>NumAntennasPerLocation=1</Text></Item>
+<Item XName="_pNumElementsX" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>NumElementsX=8</Text></Item>
+<Item XName="_pNumElementsY" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>NumElementsY=8</Text></Item>
+<Item XName="_pPhi" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1238.82</D></PosY>
+<Text>Phi=300 &#x00B0;</Text></Item>
+<Item XName="_pRotateArray" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>963.5266666666668</D></PosY>
+<Text>RotateArray=NO</Text></Item>
+<Item XName="_pTheta" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1376.466666666667</D></PosY>
+<Text>Theta=30 &#x00B0;</Text></Item>
+<Item XName="_pWindow" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1651.76</D></PosY>
+<Text>Window=None</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Designator>Subnetwork1</Designator>
+<PosX><T>Double</T><D>2124.999999999999</D></PosX>
+<PosY><T>Double</T><D>624.9999999999964</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSubnetwork1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Subnetwork1 {AntennaPattern}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pDx" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>Dx=0.5</Text></Item>
+<Item XName="_pDy" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>Dy=0.5</Text></Item>
+<Item XName="_pMinLevel_dB" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>963.5266666666668</D></PosY>
+<Text>MinLevel_dB=-20</Text></Item>
+<Item XName="_pNumOfAnt_X" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>NumOfAnt_X=8</Text></Item>
+<Item XName="_pNumOfAnt_Y" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>NumOfAnt_Y=8</Text></Item>
+<Item XName="_pResolution" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>Resolution=1 &#x00B0;</Text></Item>
+<Item XName="_pSpecifyLocation" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>SpecifyLocation=NO</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>Dynamic 3D Plot</Description>
+<Designator>D1</Designator>
+<PosX><T>Double</T><D>4624.999999999998</D></PosX>
+<PosY><T>Double</T><D>1499.99999999999</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Dynamic3D</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>583.75</D></PosX>
+<PosY><T>Double</T><D>170</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pD1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>D1 {Dynamic3D@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pCoordinateSystem" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>CoordinateSystem=Spherical</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>Beam pattern calculation</Description>
+<Designator>CompareMeToTheSubNetwork</Designator>
+<PosX><T>Double</T><D>2125</D></PosX>
+<PosY><T>Double</T><D>2750</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>CompareMeToTheSubNetwork {BeamPattern@Data Flow Models}&#x000A;Disabled: OPEN&#x000A;Configuration=Uniform Rectangular Array&#x000A;NumElementsX=8&#x000A;NumElementsY=8&#x000A;DistanceUnit=Wavelengths&#x000A;DistanceX_in_Wavelengths=0.5&#x000A;DistanceY_in_Wavelengths=0.5&#x000A;CenterArrayAtOrigin=NO&#x000A;RotateArray=NO&#x000A;NumAntennasPerLocation=1&#x000A;SaveAntennaLocation=NO&#x000A;ElementPatternType=Isotropic&#x000A;OutputPolarizationPatterns=NO&#x000A;ArrayRadiation=Full Sphere&#x000A;Resolution=1 &#x00B0;&#x000A;ThetaRange=90 &#x00B0;&#x000A;NormalizePattern=YES</Description>
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1795</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="Override" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>8388736</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Disabled: OPEN</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="__pCompareMeToTheSubNetwork" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>CompareMeToTheSubNetwork {BeamPattern@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pArrayRadiation" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1927.053333333334</D></PosY>
+<Text>ArrayRadiation=Full Sphere</Text></Item>
+<Item XName="_pCenterArrayAtOrigin" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1101.173333333333</D></PosY>
+<Text>CenterArrayAtOrigin=NO</Text></Item>
+<Item XName="_pConfiguration" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>Configuration=Uniform Rectangular Array</Text></Item>
+<Item XName="_pDistanceUnit" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>DistanceUnit=Wavelengths</Text></Item>
+<Item XName="_pDistanceX_in_Wavelengths" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>DistanceX_in_Wavelengths=0.5</Text></Item>
+<Item XName="_pDistanceY_in_Wavelengths" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>963.5266666666668</D></PosY>
+<Text>DistanceY_in_Wavelengths=0.5</Text></Item>
+<Item XName="_pElementPatternType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1651.76</D></PosY>
+<Text>ElementPatternType=Isotropic</Text></Item>
+<Item XName="_pNormalizePattern" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2339.993333333334</D></PosY>
+<Text>NormalizePattern=YES</Text></Item>
+<Item XName="_pNumAntennasPerLocation" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1376.466666666667</D></PosY>
+<Text>NumAntennasPerLocation=1</Text></Item>
+<Item XName="_pNumElementsX" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>NumElementsX=8</Text></Item>
+<Item XName="_pNumElementsY" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>NumElementsY=8</Text></Item>
+<Item XName="_pOutputPolarizationPatterns" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1789.406666666667</D></PosY>
+<Text>OutputPolarizationPatterns=NO</Text></Item>
+<Item XName="_pResolution" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2064.7</D></PosY>
+<Text>Resolution=1 &#x00B0;</Text></Item>
+<Item XName="_pRotateArray" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1238.82</D></PosY>
+<Text>RotateArray=NO</Text></Item>
+<Item XName="_pSaveAntennaLocation" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1514.113333333333</D></PosY>
+<Text>SaveAntennaLocation=NO</Text></Item>
+<Item XName="_pThetaRange" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11184810</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2202.346666666667</D></PosY>
+<Text>ThetaRange=90 &#x00B0;</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Design1 Analysis" UserName="Design1 Analysis" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<AutoSave><T>Int</T><D>0</D></AutoSave>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="ConfigurationName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Bool</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Bool</T><D>0</D></Data></Item>
+<Item XName="DefaultNumericStart" Type="Param">
+<DataEntry>0</DataEntry></Item>
+<Item XName="DefaultNumericStop" Type="Param">
+<DataEntry>100</DataEntry></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DefaultTimeStart" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DefaultTimeStop" Type="Param">
+<DataEntry>100</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>Design1</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="FreqRes" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>1000</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="NumSamples" Type="Param">
+<Data><T>Int</T><D>1024</D></Data></Item>
+<Item XName="Num_Samples" Type="Param">
+<DataEntry>1000</DataEntry></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="SampleRate" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Sample_Rate" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.0009990000000000001</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="TimeSpacing" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStart" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStop" Type="Param">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item></Item>
+<Item XName="Design1 Analysis_Design1_Data" UserName="Design1 Analysis_Design1_Data" Type="DataSet">
+<FullPath>Designs\Design1 Analysis_Design1_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : Design1 Analysis&#x000D;&#x000A;3/22/2016..6:14 PM&#x000D;&#x000A;Ambient Temperature[C]=27.000000&#x000D;&#x000A;Warning: MATLAB_Script &apos;Design1__Subnetwork1.M2&apos;: Evaluation cancelled.&#x000D;&#x000A;&#x000D;&#x000A;Warning: MATLAB_Script &apos;Design1__Subnetwork1.M2&apos;: Evaluation cancelled.&#x000D;&#x000A;&#x000D;&#x000A;Execution time: 2.741 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Note" UserName="Note" Type="Notes">
+<Description>Example text with pretty printing</Description>
+<LibName>Eagleware</LibName>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;P class=MsoTitle style=&quot;BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: windowtext 0.75pt solid; PADDING-BOTTOM: 1pt; PADDING-TOP: 0in; PADDING-LEFT: 0in; MARGIN: 0in 0in 0pt; BORDER-LEFT: medium none; PADDING-RIGHT: 0in&quot; align=center&gt;&lt;STRONG&gt;&lt;FONT size=5 face=Arial&gt;Manual &lt;EM&gt;BeamPattern&lt;/EM&gt; using MATLAB Script&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue&amp;nbsp;Example Workspace&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;?xml:namespace prefix = &quot;o&quot; ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&amp;nbsp;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoBodyText style=&quot;MARGIN: 0in 0in 0pt&quot;&gt;&lt;FONT face=Arial&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;This example demontrates some of the theoretical basis for the calculation of the farfield beam pattern, based on a set of complex-valued weights.&amp;nbsp; It is similar to the source code of the &quot;BeamPattern&quot; part, so you can see the theory.&amp;nbsp; (The compiled part is much faster!)&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&lt;/FONT&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;A824;eY14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;sMOSXjK2034;s2SBijekO24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;PC;03</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item></Item>

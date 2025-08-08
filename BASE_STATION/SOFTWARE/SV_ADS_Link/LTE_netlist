@@ -1,0 +1,67 @@
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="ADS_SV_LTE_lib:ADS_SV_LTE:schematic"
+define amplifier_model ( N__2  N__3 ) 
+;parameters 
+#uselib "sml" , "Amplifier2"
+Amplifier2:AMP1  N__2 N__3 S21=20.+j*0. S11=0. S22=0. S12=0. NF=0. GainCompType=0 ReferToInput=0 TOI=40 GainCompSat=5.0 dB GainComp=1. ClipDataFile=1 
+HB:Env1 MaxOrder=4 Freq[1]=2.5 GHz Order[1]=1 StatusLevel=0 FundOversample=1 \
+Restart=no UseGear=no EnvIntegOrder=1 EnvBandwidth=1 UseAllSS_Freqs=yes UseOutFile=no UseInFile=no SweepVar="time" SweepPlan="Env1_stim" OutputPlan="Env1_Output" ConvMode=2 MaxIters=250 ArcLevelMaxStep=0.0 MaxStepRatio=100 MaxShrinkage=1.0e-5 ArcMaxStep=0.0 \
+UseKrylov=0 SamanskiiConstant=2 \
+
+
+SweepPlan: Env1_stim Stop=2000 usec Step=(1e-7/1.536) sec 
+
+OutputPlan:Env1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:Env1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=2.5 GHz Order[1]=1 \
+OutputPlan="Env1_Output"
+
+Component:tahb_Env1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="Env1_tran" HB_Analysis="Env1" 
+
+end amplifier_model
+define GainRF ( N__3  N__2 ) 
+parameters  RIn=DefaultRIn  ROut=DefaultROut  RTemp=DefaultRTemp  Gain=1  NoiseFigure=0  GCType=0  TOIout=3  dBc1out=1  PSat=1  GCSat=1  GComp="0  0  0" 
+R:R2  N__1 N__2 R=ROut Temp=RTemp 
+R:R1  0 N__3 R=RIn Temp=-273.15 
+_vAgilentEEsof_dTSDF_n_x5fGainRF_ltsdfstars:G1  N__3 N__1 RIn=RIn ROut=ROut RTemp=RTemp Gain=Gain NoiseFigure=NoiseFigure GCType=GCType TOIout=TOIout dBc1out=dBc1out PSat=PSat GCSat=GCSat GComp=GComp 
+end GainRF
+amplifier_model:X7  N__1 N__0 
+DefaultNumericStart=0
+DefaultNumericStop=100
+DefaultTimeStart=0 usec
+DefaultTimeStop=100 usec
+DefaultSeed=1234567
+DefaultRIn=50 Ohm
+DefaultROut=50 Ohm
+DefaultRLoad=1.0e18 Ohm
+DefaultRTemp=-273.15
+__DefaultPartition=1
+__SimulationID=0
+_vAgilentEEsof_dTSDF_nDF_ltsdf:DF DefaultTimeUnit=3 DefaultSeed=if (DefaultSeed==0) then 0 else (DefaultSeed+__SimulationID) endif DefaultPartition=__DefaultPartition DeadlockManager=0 CktCosimInputs=0 OutputPlan="DF_Output" 
+OutputPlan:DF_Output \
+      Type="Output" \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+_vAgilentEEsof_dTSDF_nSVCosimSinkTimed_lptsvucosimstars:S6  N__2 BlockSize=1 SVReceiverID="ADSToSystemVue" 
+OutSelector:O1  N__0 N__2 OutFreq=2.5e9 
+GainRF:G4  N__4 N__1 RIn=DefaultRIn ROut=DefaultROut RTemp=DefaultRTemp Gain=1 NoiseFigure=0 GCType=0 TOIout=3 W dBc1out=1 W PSat=1 W GCSat=1 GComp="0 0 0" 
+_vAgilentEEsof_dTSDF_nSVCosimSourceTimed_lptsvucosimstars:S5  N__4 BlockSize=1 Fc=2.5e9 TimeStep=1/15.36e6 SVSenderID="SystemVueToADS" 

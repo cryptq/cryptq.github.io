@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;PC;e9</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2018:323:16:01</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2012.06</D></Ver>
+<Version>1.21</Version>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Design1" UserName="Design1" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>S1</PartID>
+<PinName>output</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>S2</PartID>
+<PinName>input</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;8u14;Om14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;zEpxCl}0m24;{Hv7bVRlb24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;{5;;KC;n4</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item>
+<Item XName="Display1" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;ocEUzxu8B24;OI8qB74lr14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GJz24;WLUtd24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>1</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;pCpCpCdG234;pCpCpCNe734</D></PVPort></Item></Item>
+<Item XName="S1" Type="Part">
+<Category>Sources</Category>
+<Description>Sine Wave Output</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SineGen@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,1?Connect0</Netlist>
+<ParentPartName>SineGen@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SineGen@Data Flow Models</ModelName>
+<SymbolName>SYM_SineGen</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>CurAmplitude</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>SineGen__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>5e3</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<Enum>SineGen__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>SineGen__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>CurAmplitude</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>SineGen__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>5e3</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<Enum>SineGen__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>SineGen__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="S2" Type="Part">
+<Category>Sinks</Category>
+<Description>Data Sink</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Sink@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,1?Connect0</Netlist>
+<ParentPartName>Sink@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_Sink</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Sink@Data Flow Models</ModelName>
+<SymbolName>SYM_Sink</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>=[&apos;C:\tmp\Run_&apos; num2str(CurAmplitude) &apos;.txt&apos;]</DataEntry>
+<Description>Data file name</Description>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InsertFileHeader" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Enable inserting file header before csv file content</Description>
+<DocSymbol />
+<Enum>Sink__InsertFileHeader@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType ~= 4 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<HideCondition>StartStopOption == 2</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>Num_Samples - 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<HideCondition>StartStopOption == 2</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Location where simulation data is written</Description>
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<HideCondition>StartStopOption == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<HideCondition>StartStopOption == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Write data from all inputs to the same file</Description>
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>=[&apos;C:\tmp\Run_&apos; num2str(CurAmplitude) &apos;.txt&apos;]</DataEntry>
+<Description>Data file name</Description>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InsertFileHeader" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Enable inserting file header before csv file content</Description>
+<DocSymbol />
+<Enum>Sink__InsertFileHeader@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType ~= 4 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<HideCondition>StartStopOption == 2</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>Num_Samples - 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<HideCondition>StartStopOption == 2</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Location where simulation data is written</Description>
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<HideCondition>StartStopOption == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<HideCondition>StartStopOption == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Write data from all inputs to the same file</Description>
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>1</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Annotate0" Type="BalloonA">
+<BorderColor><T>Int</T><D>32768</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>3</D></BorderWeight>
+<Color><T>Int</T><D>11861978</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Height><T>Double</T><D>1250.000000000002</D></Height>
+<HorizMargin><T>Int</T><D>50</D></HorizMargin>
+<Justification><T>Int</T><D>5</D></Justification>
+<PosX><T>Double</T><D>3750.000000000002</D></PosX>
+<PosY><T>Double</T><D>4750</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ToPoint><T>Bool</T><D>0</D></ToPoint>
+<VertMargin><T>Int</T><D>50</D></VertMargin>
+<Width><T>Double</T><D>2750.000000000002</D></Width>
+<ZOrder><T>Int</T><D>-1</D></ZOrder>
+<Item XName="Anchor2" Type="Anchor">
+<AnchorType><T>Int</T><D>4</D></AnchorType>
+<AnchorX><T>Double</T><D>5252.913930378465</D></AnchorX>
+<AnchorY><T>Double</T><D>3869.099588606051</D></AnchorY></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>166.6666666666667</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Text" Type="Param">
+<DataEntry>Click this SINK to see how the Output filename increments as the master equation script runs, thus outputting a series of different external ASCII test vector files.</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item></Item>
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WQe24;WHk24;m5n24;WHk24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;as14;Gh14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;8Z6DQ7Fvy14;WMf24;qbBNwrVC{24;YenhdiRqz24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Display1" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;MA24;p14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>S1</Designator>
+<PosX><T>Double</T><D>3125</D></PosX>
+<PosY><T>Double</T><D>3875</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pS1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>S1 {SineGen@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pAmplitude" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Amplitude=5 V [CurAmplitude]</Text></Item>
+<Item XName="_pFrequency" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>Frequency=5e3 Hz</Text></Item>
+<Item XName="_pOffset" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>Offset=0 V</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>S2</Designator>
+<PosX><T>Double</T><D>4374</D></PosX>
+<PosY><T>Double</T><D>3874.999999999992</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Sink</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>596</D></PosX>
+<PosY><T>Double</T><D>232.5</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pS2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>S2 {Sink@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pStartStopOption" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>StartStopOption=Auto</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Design1 Analysis" UserName="Design1 Analysis" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<AutoSave><T>Int</T><D>0</D></AutoSave>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="ConfigurationName" Type="Param">
+<Data />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>Design1_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Bool</T><D>0</D></Data></Item>
+<Item XName="DefaultNumericStart" Type="Param">
+<DataEntry>0</DataEntry></Item>
+<Item XName="DefaultNumericStop" Type="Param">
+<DataEntry>100</DataEntry></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DefaultTimeStart" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DefaultTimeStop" Type="Param">
+<DataEntry>100</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>Design1</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="FreqRes" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>1001.001001001001</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="NumSamples" Type="Param">
+<Data><T>Int</T><D>1024</D></Data></Item>
+<Item XName="Num_Samples" Type="Param">
+<DataEntry>1000</DataEntry></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="SampleRate" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Sample_Rate" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.0009990000000000001</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="TimeSpacing" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStart" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStop" Type="Param">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item></Item>
+<Item XName="Design1_Data" UserName="Design1_Data" Type="DataSet">
+<FullPath>Designs\Design1_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : Design1 Analysis&#x000D;&#x000A;8/20/2013..4:36 PM&#x000D;&#x000A;output of SineGeneratorTimedBurst &apos;Design1.S1&apos;: Sample Rate of this signal defaulting to the System Sample Rate ( 1.0 MHz ).&#x000D;&#x000A;Execution time: 0.521265 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;eE24;iy14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GY49Ia89{24;BMiOnY5Fi24</D></PVPort>
+<SelVar>LogOutput</SelVar>
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.3</D></Split>
+<SubSplit><T>Int</T><D>0</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;d;y;NA;o6</D></Window>
+<ZOrder><T>Int</T><D>3</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="MasterScript" UserName="MasterScript" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>1</D></Selected>
+<Text>Amplitudes = [1 3 5];&#x000D;&#x000A;&#x000D;&#x000A;% Run the analysis for each value of Amplitudes&#x000D;&#x000A;for i = 1 : numel(Amplitudes)&#x000D;&#x000A;&#x0009;CurAmplitude = Amplitudes(i);&#x000D;&#x000A;&#x0009;runanalysis(&apos;Design1 Analysis&apos;);&#x000D;&#x000A;end</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>121.25</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="EquationDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;Cu14;Rm14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;kUzwrhf3m24;anD6tOmqb24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.2062062062062062</D></Split>
+<Split2><T>Double</T><D>0.3</D></Split2>
+<Window><T>Array_I64</T><D>1;4;16;o4;OC;a9</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder></Item></Item>
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="ReadMe" UserName="ReadMe" Type="Notes">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;P style=&quot;BORDER-BOTTOM: windowtext 0.75pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0in&quot; class=MsoTitle align=center&gt;&lt;STRONG&gt;&lt;FONT size=4 face=Arial&gt;Incrementing Output File Names&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue Tutorial Workspace&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;This tutorial workspace shows how to use a script to generate&amp;nbsp;output files for each value in a sequence.&amp;nbsp; An array of 3 values is declared, then for each value of the array, a simulation is re-run with a parameter change on one of the blocks, and the Sink outputs ASCII text vectors to a different filename.&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;First, here is the master script:&amp;nbsp;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;BLOCKQUOTE style=&quot;MARGIN-RIGHT: 0px&quot; dir=ltr&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#0000ff face=&quot;Courier New&quot;&gt;Amplitudes = [1 3 5];&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#0000ff face=&quot;Courier New&quot;&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#0000ff face=&quot;Courier New&quot;&gt;% Run the analysis for each value of Amplitudes&lt;BR&gt;for i = 1 : numel(Amplitudes)&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; CurAmplitude = Amplitudes(i);&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; runanalysis(&apos;Design1 Analysis&apos;);&lt;BR&gt;end&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;/BLOCKQUOTE&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;Then the Sink is programmed to output to an incrementing file name, based on the sweep value.&amp;nbsp; Each time the simulation is re-run, the file name is different.&amp;nbsp; (please look at the &quot;Filename&quot; parameter on the &quot;File Options&quot; tab of the Sink)&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;BLOCKQUOTE style=&quot;MARGIN-RIGHT: 0px&quot; dir=ltr&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#0000ff face=&quot;Courier New&quot;&gt;=[&apos;C:\tmp\Run_&apos; num2str(CurAmplitude) &apos;.txt&apos;]&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;/BLOCKQUOTE&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;This results in 3 files being generated:&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;BLOCKQUOTE style=&quot;MARGIN-RIGHT: 0px&quot; dir=ltr&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#0000ff face=&quot;Courier New&quot;&gt;C:\tmp\Run_1.txt&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#0000ff face=&quot;Courier New&quot;&gt;C:\tmp\Run_3.txt&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#0000ff face=&quot;Courier New&quot;&gt;C:\tmp\Run_5.txt&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;/BLOCKQUOTE&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;&lt;U&gt;Application&lt;/U&gt;: This can be used during regression tests to create or re-use a series of test vectors.&amp;nbsp; &lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=left&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT size=3&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&#x000D;&#x000A;&lt;DIV style=&quot;BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: medium none; PADDING-TOP: 1pt; mso-element: para-border-div; mso-border-top-alt: solid windowtext .5pt&quot;&gt;&#x000D;&#x000A;&lt;P style=&quot;BORDER-BOTTOM: medium none; TEXT-ALIGN: center; BORDER-LEFT: medium none; PADDING-BOTTOM: 0in; MARGIN: 0in 0in 0pt; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0in; mso-border-top-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 0in 0in 0in&quot; class=MsoBodyText align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;A href=&quot;http://www.steepestascent.com/content/default.asp?page=s4_3&quot;&gt;&lt;/A&gt;&lt;U&gt;&lt;FONT color=#606420&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/SPAN&gt;&lt;SPAN style=&quot;COLOR: blue&quot;&gt;&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;qs14;w124</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;k6uQWhTIk24;hNlUzwZnt24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;16;e9</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder></Item></Item></Item>
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Amplitudes" Type="Variable">
+<Creator>MasterScript</Creator>
+<Data><T>Array_Dbl64</T><D>2;3;1;m}3;804;K04</D></Data></Item>
+<Item XName="CurAmplitude" Type="Variable">
+<Creator>MasterScript</Creator>
+<Data><T>Double</T><D>5</D></Data></Item>
+<Item XName="i" Type="Variable">
+<Creator>MasterScript</Creator>
+<Data><T>Double</T><D>3</D></Data></Item></Item></Item></Item>

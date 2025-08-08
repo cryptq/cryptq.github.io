@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceprocedure xsi:schemaLocation="http://tempuri.org/SequenceProcedureSchema.xsd" procedurename="Untitled" synopsis="No description yet." schemaVersion="7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tempuri.org/SequenceProcedureSchema.xsd">
+	<parameters>
+		<localvariables />
+		<inputparameters>
+			<inputparameter id="fcHz">
+				<scalartype basetype="Real64" />
+				<value>2000000000</value>
+			</inputparameter>
+			<inputparameter id="BWHz">
+				<scalartype basetype="Real64" />
+				<value>25000000</value>
+			</inputparameter>
+			<inputparameter id="measTimeSec">
+				<scalartype basetype="Real64" />
+				<value>0.003</value>
+			</inputparameter>
+		</inputparameters>
+		<outputparameters />
+	</parameters>
+	<actions>
+		<connect configuration="MXA" address="" commandSet="5048fed0-d4d5-4271-94c9-92ceb6ba2dcb" source="SCPI" commandSetDesc="X-Series Signal Analyzers LTE FDD Commands / A.08.03" />
+		<do configuration="MXA" hierarchy="SCPI" path="*RST" syntax="0">
+			<inputs />
+			<outputs />
+		</do>
+		<set configuration="MXA" hierarchy="Transport" path="DefaultTimeout">
+			<input>
+				<scalartype basetype="Int32" />
+				<value>20000</value>
+			</input>
+		</set>
+		<do configuration="MXA" hierarchy="SCPI" path="INSTrument:NSELect" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="Int32" />
+					<value>8</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="SENSe:FREQuency:RF:CENTer" syntax="0">
+			<inputs>
+				<inputreference inputparameter="fcHz" />
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="SENSe:WAVeform:DIF:BANDwidth" syntax="0">
+			<inputs>
+				<inputreference inputparameter="BWHz" />
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="FORMat:TRACe:DATA" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="String" />
+					<value>REAL</value>
+				</input>
+				<input>
+					<scalartype basetype="Int32" />
+					<value>32</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="FORMat:BORDer" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="String" />
+					<value>SWAPped</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="INITiate:CONTinuous" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>0</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="TRIGger:WAVeform:SEQuence:RF:SOURce" syntax="0" skip="true">
+			<inputs>
+				<input>
+					<scalartype basetype="String" />
+					<value>EXTernal1</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="TRIGger:SEQuence:EXTernal:DELay" syntax="0" skip="true">
+			<inputs>
+				<input>
+					<scalartype basetype="UInt32" />
+					<value>1</value>
+				</input>
+				<input>
+					<unitaryscalartype basetype="Real64">
+						<availableunits>
+							<units name="S" default="true" />
+							<units name="MIN" />
+							<units name="HR" />
+						</availableunits>
+					</unitaryscalartype>
+					<value>-1E-06</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="INITiate:WAVeform" syntax="0">
+			<inputs />
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="SENSe:WAVeform:SWEep:TIME" syntax="0">
+			<inputs>
+				<inputreference inputparameter="measTimeSec" />
+			</inputs>
+			<outputs />
+		</do>
+	</actions>
+</sequenceprocedure>

@@ -1,0 +1,16 @@
+#ifndef _HALFBANDC_
+#define _HALFBANDC_
+
+#include "data_type.h"
+
+#define HALFBANDC_COEFNUM 13
+const coef_t coefC[HALFBANDC_COEFNUM] = {-0.0002, 0.0006, -0.0014, 0.0027, -0.0050, 0.0085, -0.0138, 0.0217, -0.0340, 0.0549, -0.1007, 0.3165, 0.5000};
+
+#define HALFBANDC_IN_SIZE 2
+#define HALFBANDC_FIR_LEN ((HALFBANDC_COEFNUM-2)*4+3)
+#define HALFBANDC_OUT_SIZE (HALFBANDC_IN_SIZE/2)
+#define HALFBANDC_REG_BANKS ((HALFBANDC_FIR_LEN-1)/HALFBANDC_IN_SIZE+2)
+
+void HalfBandC(complex_tmp_t input[HALFBANDC_IN_SIZE], complex_tmp_t output[HALFBANDC_OUT_SIZE]);
+
+#endif

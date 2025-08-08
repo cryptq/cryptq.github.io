@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestPlan type="Keysight.Tap.TestPlan" Name="WLAN_11ac_1Ant_BER.TapPlan" Version="7.0.995.0" Locked="False">
+  <Steps>
+    <TestStep type="SystemVue.Plugins.StartSV" Version="1.0.0.0" Id="380e1de1-1243-4b45-b77d-8744c21df894">
+      <ChildTestSteps />
+      <Enabled>True</Enabled>
+      <Name>SVStart</Name>
+      <svCntl>0</svCntl>
+      <Visible>True</Visible>
+    </TestStep>
+    <TestStep type="SystemVue.Plugins.TestBER" Version="1.0.0.0" Id="f2cd8f96-9d76-4d61-8bd1-b3a0ad25c7c7">
+      <ChildTestSteps>
+        <TestStep type="SystemVue.Plugins.SVOpenWorkspace" Version="1.0.0.0" Id="3765e5b6-38b7-4cbd-b610-8660074c9e09">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <FilePath>C:\Lu Feng\TAP\WLAN_11ac_1Ant_BER\WLAN_11ac_1Ant.wsv</FilePath>
+          <Name>SVOpenWorkspace</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.SVSetParm" Version="1.0.0.0" Id="15d56118-1b12-457d-99e6-b8a14e85e969">
+          <ChildTestSteps />
+          <EbN0>9</EbN0>
+          <Enabled>True</Enabled>
+          <Name>SVSetParm</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.SVRunAnalysis" Version="1.0.0.0" Id="2d989cb1-ddbc-457f-aa62-fe3413b0e8ec">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <FullName>WLAN_11ac_1Ant.Designs.[WLAN_11ac_1Ant_SRC Analysis]</FullName>
+          <Name>SVRunAnalysis</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.SVRunAnalysis" Version="1.0.0.0" Id="798b8bc5-8453-41f2-b5f5-ba0567b21a93">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <FullName>WLAN_11ac_1Ant.Designs.[WLAN_11ac_1Ant_VSA Analysis]</FullName>
+          <Name>SVRunAnalysis (1)</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.GetData" Version="1.0.0.0" Id="3f5ddb78-e6f9-4676-8e14-305bdb69aa1d">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <FullName>WLAN_11ac_1Ant.Designs.WLAN_11ac_1Ant_VSA_Data.Eqns.VarBlock.B2_BER</FullName>
+          <Name>GetData</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+      </ChildTestSteps>
+      <Enabled>True</Enabled>
+      <Name>BER Test</Name>
+      <svCntl>0</svCntl>
+    </TestStep>
+    <TestStep type="SystemVue.Plugins.ExitSV" Version="1.0.0.0" Id="efcee443-3b10-462c-ad93-6a1d3b9ad31f">
+      <ChildTestSteps />
+      <Enabled>True</Enabled>
+      <Name>SVExit</Name>
+      <svCntl>0</svCntl>
+    </TestStep>
+  </Steps>
+</TestPlan>

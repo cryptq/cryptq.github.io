@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;YF;59</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2017:334:16:44</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2011.03</D></Ver>
+<Version>1.21</Version>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Design1 Analysis" UserName="Design1 Analysis" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<AutoSave><T>Int</T><D>0</D></AutoSave>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<RunTimeTuning><T>Bool</T><D>0</D></RunTimeTuning>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="ConfigurationName" Type="Param">
+<Data />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Bool</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>Simulation Results</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Bool</T><D>0</D></Data></Item>
+<Item XName="DefaultNumericStart" Type="Param">
+<DataEntry>0</DataEntry></Item>
+<Item XName="DefaultNumericStop" Type="Param">
+<DataEntry>100</DataEntry></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DefaultTimeStart" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DefaultTimeStop" Type="Param">
+<DataEntry>100</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>E4438CDownloader</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="FreqRes" Type="Param">
+<Data><T>Double</T><D>9.9999999999999995e-07</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>19.999999999999996</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="NumSamples" Type="Param">
+<Data><T>Int</T><D>1024</D></Data></Item>
+<Item XName="Num_Samples" Type="Param">
+<Data><T>Double</T><D>2500000</D></Data></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="SampleRate" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Sample_Rate" Type="Param">
+<DataEntry>50</DataEntry>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<DataEntry>49999980</DataEntry>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="TimeSpacing" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStart" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStop" Type="Param">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>2e-08</D></Data>
+<Unit><T>Int</T><D>7001</D></Unit></Item></Item>
+<Item XName="E4438CDownloader" UserName="E4438CDownloader" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>Modulator</PartID>
+<PinName>LO</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>Modulator</PartID>
+<PinName>quad_output</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>Q</PartID>
+<PinName>output</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>I</PartID>
+<PinName>output</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>Modulator</PartID>
+<PinName>input2</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>Modulator</PartID>
+<PinName>output</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>Modulator</PartID>
+<PinName>input1</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>E4438C</PartID>
+<PinName>EnvelopIn</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;RE24;Gm14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;l9{cuSCD434;qIGB1jqab24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;L4;YF;49</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item>
+<Item XName="Display1" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;ocEUzxu8B24;OI8qB74lr14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GJz24;WLUtd24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>1</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="E4438C" Type="Part">
+<Category>Instrumentation</Category>
+<Description>Signal Downloader for Keysight ESG E4438C and MXG N5182A RF Signal Synthesizers.</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SignalDownloader_E4438C@Instruments Subnetwork Models</Model>
+<ModelID />
+<Netlist>EnvelopIn,6?Connect2</Netlist>
+<ParentPartName>SignalDownloader_E4438C@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol>SYM_SignalDownloader_E4438C@Data Flow Symbols</ShortSymbol>
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<Symbol>SYM_SignalDownloader_E4438C@Data Flow Symbols</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_E4438C@Instruments Subnetwork Models</ModelName>
+<SymbolName>SYM_SignalDownloader_E4438C@Data Flow Symbols</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;81;HWAvailable;IOType;IOBoardID;PrimAddress;SecAddress;TimeStart;TimeStop;FileName;RFPower;ArbOn;RFPowerOn;EventMarkers;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;IQModFilter;SCPICommands;AutoScale;InstructionTimeout;ARBRefSrc;ARBRefFreq;ConfigMIMO;MasterSrc;UseE4438Cs;NumMXGSlaves;SlavePosition;HWAvailable;IOType;IOBoardID;PrimAddress;SecAddress;TimeStart;TimeStop;FileName;RFPower;ArbOn;RFPowerOn;EventMarkers;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;IQModFilter;SCPICommands;AutoScale;InstructionTimeout;ARBRefSrc;ARBRefFreq;ConfigMIMO;MasterSrc;UseE4438Cs;NumMXGSlaves;SlavePosition;HWAvailable;IOType;IOBoardID;PrimAddress;SecAddress;TimeStart;TimeStop;FileName;RFPower;ArbOn;RFPowerOn;EventMarkers;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;IQModFilter;SCPICommands;AutoScale;InstructionTimeout;ARBRefSrc;ARBRefFreq;ConfigMIMO;MasterSrc;UseE4438Cs;NumMXGSlaves;SlavePosition</D></ParamOrder>
+<Item XName="ARBRefFreq" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>ARB reference frequency (Active only when chosen EXTERNAL ARB reference)</Description>
+<HideCondition>(ShowAdvancedParams == 0) || (ARBRefSrc == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ARBRefSrc" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Source for ARB reference frequency, either provided internally by the instrument (INTERNAL) or provided by an external instrument (EXTERNAL).</Description>
+<Enum>ESGFreqeuencyRef@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ArbOn" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Turn ON/OFF ARB and mpdulation.</Description>
+<Enum>OFF_ON@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="AutoScale" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize waveform into [-1, 1] Volt range before downloading.  YES: auto scale;  NO: no auto scale.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ConfigMIMO" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Establish the Master-Slaves relationship among multiple E4438C or MXG signal generators</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EventMarkers" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Enable event marker pulse outputs:  no output; Event1 output only; Event2 output only; or both Event1 and Event2 outputs</Description>
+<Enum>ESGEventMarker@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FileName" Type="PartParam">
+<DataEntry>esg.bin</DataEntry>
+<Description>File name for the downloaded binary waveform</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="HWAvailable" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES: HW available.  NO: HW not exist, communication to HW supressed.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="IOBoardID" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>For GPIB IO type only.  Identify the IO board index.  Typically 0 from default PC IO setup.</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOType" Type="PartParam">
+<DataEntry>LAN</DataEntry>
+<Description>Instrument Communication type: &apos;LAN&apos;, &apos;TCPIP&apos;, or &apos;GPIB&apos;</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IQModFilter" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Filter applied to played out IQ (ARB) waves: THROUGH (no filter applied); 2.1MHz Low Lass Filter; 40MHz Low pass Filter</Description>
+<Enum>ESGFilters@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="InstructionTimeout" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Instrument instruction timeout limit</Description>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MarkerLength" Type="PartParam">
+<DataEntry>25</DataEntry>
+<Description>Duration of event marker pulse measured in number of waveform samples</Description>
+<HideCondition>EventMarkers == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="MarkerStart" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Sample index to start event marker pulse (Note that sample index starts at 1)</Description>
+<HideCondition>EventMarkers == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="MasterSrc" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Mark this signal source as the master that will generate the synchronization trigger from EVENT1 (MXG) or  EVENT2 (E4438C)</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NumMXGSlaves" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of MXG Slaves (range: 1 to 15)</Description>
+<Enum />
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0 || UseE4438Cs == 1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="PrimAddress" Type="PartParam">
+<DataEntry>111.222.333.444</DataEntry>
+<Description>Primary address: IP address (LAN) or instrument GPIB address (GPIB)</Description>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="RFPower" Type="PartParam">
+<DataEntry>-25</DataEntry>
+<Description>RF output power level in dBm</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RFPowerOn" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Turn ON/OFF RF output.</Description>
+<Enum>OFF_ON@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Reset" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Reset the instrument before everything else</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SCPICommands" Type="PartParam">
+<DataEntry />
+<Description>Additonal SCPI commands before turning ARB and RF output ON or OFF</Description>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="SecAddress" Type="PartParam">
+<DataEntry>5025</DataEntry>
+<Description>Secondary address: Port number (LAN) or secondary address (GPIB)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>To display parameters for advanced instrument setups</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SlavePosition" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Slave position (Range: 1 to 15)</Description>
+<Enum />
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0 ||  UseE4438Cs == 1 || MasterSrc == 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="UseE4438Cs" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>YES = E4438C&apos;s are used; NO = MXG&apos;s are used</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;81;HWAvailable;IOType;IOBoardID;PrimAddress;SecAddress;TimeStart;TimeStop;FileName;RFPower;ArbOn;RFPowerOn;EventMarkers;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;IQModFilter;SCPICommands;AutoScale;InstructionTimeout;ARBRefSrc;ARBRefFreq;ConfigMIMO;MasterSrc;UseE4438Cs;NumMXGSlaves;SlavePosition;HWAvailable;IOType;IOBoardID;PrimAddress;SecAddress;TimeStart;TimeStop;FileName;RFPower;ArbOn;RFPowerOn;EventMarkers;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;IQModFilter;SCPICommands;AutoScale;InstructionTimeout;ARBRefSrc;ARBRefFreq;ConfigMIMO;MasterSrc;UseE4438Cs;NumMXGSlaves;SlavePosition;HWAvailable;IOType;IOBoardID;PrimAddress;SecAddress;TimeStart;TimeStop;FileName;RFPower;ArbOn;RFPowerOn;EventMarkers;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;IQModFilter;SCPICommands;AutoScale;InstructionTimeout;ARBRefSrc;ARBRefFreq;ConfigMIMO;MasterSrc;UseE4438Cs;NumMXGSlaves;SlavePosition</D></ParamOrder>
+<Item XName="ARBRefFreq" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>ARB reference frequency (Active only when chosen EXTERNAL ARB reference)</Description>
+<HideCondition>(ShowAdvancedParams == 0) || (ARBRefSrc == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ARBRefSrc" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Source for ARB reference frequency, either provided internally by the instrument (INTERNAL) or provided by an external instrument (EXTERNAL).</Description>
+<Enum>ESGFreqeuencyRef@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ArbOn" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Turn ON/OFF ARB and mpdulation.</Description>
+<Enum>OFF_ON@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="AutoScale" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize waveform into [-1, 1] Volt range before downloading.  YES: auto scale;  NO: no auto scale.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ConfigMIMO" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Establish the Master-Slaves relationship among multiple E4438C or MXG signal generators</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EventMarkers" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Enable event marker pulse outputs:  no output; Event1 output only; Event2 output only; or both Event1 and Event2 outputs</Description>
+<Enum>ESGEventMarker@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FileName" Type="PartParam">
+<DataEntry>esg.bin</DataEntry>
+<Description>File name for the downloaded binary waveform</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="HWAvailable" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES: HW available.  NO: HW not exist, communication to HW supressed.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="IOBoardID" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>For GPIB IO type only.  Identify the IO board index.  Typically 0 from default PC IO setup.</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOType" Type="PartParam">
+<DataEntry>LAN</DataEntry>
+<Description>Instrument Communication type: &apos;LAN&apos;, &apos;TCPIP&apos;, or &apos;GPIB&apos;</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IQModFilter" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Filter applied to played out IQ (ARB) waves: THROUGH (no filter applied); 2.1MHz Low Lass Filter; 40MHz Low pass Filter</Description>
+<Enum>ESGFilters@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="InstructionTimeout" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Instrument instruction timeout limit</Description>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MarkerLength" Type="PartParam">
+<DataEntry>25</DataEntry>
+<Description>Duration of event marker pulse measured in number of waveform samples</Description>
+<HideCondition>EventMarkers == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="MarkerStart" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Sample index to start event marker pulse (Note that sample index starts at 1)</Description>
+<HideCondition>EventMarkers == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="MasterSrc" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Mark this signal source as the master that will generate the synchronization trigger from EVENT1 (MXG) or  EVENT2 (E4438C)</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NumMXGSlaves" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of MXG Slaves (range: 1 to 15)</Description>
+<Enum />
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0 || UseE4438Cs == 1)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="PrimAddress" Type="PartParam">
+<DataEntry>111.222.333.444</DataEntry>
+<Description>Primary address: IP address (LAN) or instrument GPIB address (GPIB)</Description>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="RFPower" Type="PartParam">
+<DataEntry>-25</DataEntry>
+<Description>RF output power level in dBm</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RFPowerOn" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Turn ON/OFF RF output.</Description>
+<Enum>OFF_ON@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Reset" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Reset the instrument before everything else</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SCPICommands" Type="PartParam">
+<DataEntry />
+<Description>Additonal SCPI commands before turning ARB and RF output ON or OFF</Description>
+<HideCondition>ShowAdvancedParams == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="SecAddress" Type="PartParam">
+<DataEntry>5025</DataEntry>
+<Description>Secondary address: Port number (LAN) or secondary address (GPIB)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>To display parameters for advanced instrument setups</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SlavePosition" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Slave position (Range: 1 to 15)</Description>
+<Enum />
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0 ||  UseE4438Cs == 1 || MasterSrc == 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="UseE4438Cs" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>YES = E4438C&apos;s are used; NO = MXG&apos;s are used</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="I" Type="Part">
+<Category>Source:Baseband Scalar</Category>
+<Description>Sine Wave Output</Description>
+<Footprint />
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SineGen@Data Flow Models</Model>
+<Netlist>output,2?Connect4</Netlist>
+<ParentPartName>SineGen@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SineGen@Data Flow Models</ModelName>
+<SymbolName>SYM_SineGen</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="Modulator" Type="Part">
+<Category>Communications:Modulator/Demodulator;AnalogRF:Modulator/Demodulator</Category>
+<Description>Modulator</Description>
+<Footprint />
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Modulator@Data Flow Models</Model>
+<Netlist>input1,2?Connect4|input2,1?Connect0|LO,5|output,6?Connect2|quad_output,3</Netlist>
+<ParentPartName>Modulator@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Modulator@Data Flow Models</ModelName>
+<SymbolName>SYM_Modulator</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<HideCondition>InputType ~= 2</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<Enum>Demodulator__OutputType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<HideCondition>InputType ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<HideCondition>InputType ~= 2</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<Enum>Demodulator__OutputType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<HideCondition>InputType ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;pCpCpCdG234;pCpCpCNe734</D></PVPort></Item></Item>
+<Item XName="Q" Type="Part">
+<Category>Source:Baseband Scalar</Category>
+<Description>Sine Wave Output</Description>
+<Footprint />
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SineGen@Data Flow Models</Model>
+<Netlist>output,1?Connect0</Netlist>
+<ParentPartName>SineGen@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SineGen@Data Flow Models</ModelName>
+<SymbolName>SYM_SineGen</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.11111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;8;Rt14;GF24;Rt14;GF24;bH24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WVb24;VL24;Hk24;VL24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect4" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;8;bX24;GF24;bX24;GF24;VL24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;gD24;h14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;A999HGQnx2C;ul1C;baaaOj08434;iLoDp8G{i24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Display1" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;MA24;p14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.11111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>Q</Designator>
+<PosX><T>Double</T><D>2.019882231252268e-06</D></PosX>
+<PosY><T>Double</T><D>375</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596.00006103515625</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pQ" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Q</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pAmplitude" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.64666666666668</D></PosY>
+<Text>Amplitude=1 V</Text></Item>
+<Item XName="_pFrequency" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.94000000000005</D></PosY>
+<Text>Frequency=99900.1 Hz [100000*Sample_Rate/Num_Samples]</Text></Item>
+<Item XName="_pOffset" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.29333333333335</D></PosY>
+<Text>Offset=0 V</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>I</Designator>
+<PosX><T>Double</T><D>2.019882231252268e-06</D></PosX>
+<PosY><T>Double</T><D>2250</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596.00006103515625</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pI" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>I</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pAmplitude" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.64666666666668</D></PosY>
+<Text>Amplitude=1 V</Text></Item>
+<Item XName="_pFrequency" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.94000000000005</D></PosY>
+<Text>Frequency=99900.1 Hz [100000*Sample_Rate/Num_Samples]</Text></Item>
+<Item XName="_pOffset" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.29333333333335</D></PosY>
+<Text>Offset=0 V</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>Modulator</Designator>
+<PosX><T>Double</T><D>999.99999999999932</D></PosX>
+<PosY><T>Double</T><D>1375.0000610351551</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>295</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pModulator" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Modulator</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFCarrier" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.29333333333335</D></PosY>
+<Text>FCarrier=2 GHz</Text></Item>
+<Item XName="_pInputType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.64666666666668</D></PosY>
+<Text>InputType=I/Q</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>E4438C</Designator>
+<PosX><T>Double</T><D>3873</D></PosX>
+<PosY><T>Double</T><D>1375</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_SignalDownloader_E4438C@Data Flow Symbols</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>596</D></PosX>
+<PosY><T>Double</T><D>232.5</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pE4438C" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>E4438C</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pHWAvailable" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.64666666666668</D></PosY>
+<Text>HWAvailable=NO</Text></Item>
+<Item XName="_pPrimAddress" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.29333333333335</D></PosY>
+<Text>PrimAddress=111.222.333.444</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="Simulation Results" UserName="Simulation Results" Type="DataSet">
+<FullPath>Designs\Simulation Results</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>output of SineGen &apos;E4438CDownloader__I&apos;: Sample Rate of this signal defaulting to the System Sample Rate ( 5.0e+001 MHz ).&#x000D;&#x000A;Execution time: 33.57 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item></Item></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Data_Persistence" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="FREQ" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000000</D></Data></Item>
+<Item XName="Freq_Resolution" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Num_Samples" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Num_Samples_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Sample_Rate" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Start_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Start_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="TEMPERATURE" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>16.85</D></Data></Item>
+<Item XName="TIME" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Time_Spacing" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0.001</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item></Item></Item>
+<Item XName="Note" UserName="Note" Type="Notes">
+<Description>Example text with pretty printing</Description>
+<LibName>Eagleware</LibName>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;P style=&quot;BORDER-BOTTOM: windowtext 0.75pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0in&quot; class=MsoTitle align=center&gt;&lt;STRONG&gt;&lt;FONT size=5 face=Arial&gt;ESG Signal Downloader Example&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue2008&amp;nbsp;Example Workspace&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;/SPAN&gt;&lt;FONT face=Arial&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;What you need to know&amp;nbsp;before executing this example&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; How to create and&amp;nbsp;execute a Data Flow simulation in SystemVue2008.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;What&amp;nbsp;does this example do&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Execution of this example with an Keysight Signal Synthesizer such as ESG E4438C or MXG N5182A will generate a -25dBm CW signal at 2.002GHz with a 0.5uS pulse coming out of Event1 trigger output.&amp;nbsp; &lt;/FONT&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;What HW does this example support&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Keysight ESG &lt;STRONG&gt;E4438C&lt;/STRONG&gt; or MXG &lt;STRONG&gt;N5182A&lt;/STRONG&gt;.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;How to execute this example&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/STRONG&gt;&lt;FONT size=2&gt; You can execute the example as is,&lt;/FONT&gt; &lt;FONT size=2&gt;but it will&amp;nbsp;&lt;STRONG&gt;&lt;FONT color=#ff0000 size=3&gt;NOT&lt;/FONT&gt;&lt;/STRONG&gt; communicate to the HW.&amp;nbsp; To communicate to the HW, follow these steps:&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (1) Modify parameters of &lt;STRONG&gt;SignalDownloader_E4438C&lt;/STRONG&gt; part&amp;nbsp;&quot;E4438C&quot;&amp;nbsp;in the&amp;nbsp;shcematic: Change the &quot;&lt;STRONG&gt;&lt;FONT color=#ff8200&gt;HWAvailable&lt;/FONT&gt;&lt;/STRONG&gt;&quot; to &lt;STRONG&gt;&lt;FONT color=#c80080&gt;YES&lt;/FONT&gt;&lt;/STRONG&gt;, and change the &quot;&lt;STRONG&gt;&lt;FONT color=#ff8200&gt;PrimAddress&lt;/FONT&gt;&lt;/STRONG&gt;&quot; parameter to the &lt;STRONG&gt;&lt;FONT color=#c80080&gt;Tcpip address of your ESG/MXG&lt;/FONT&gt;&lt;/STRONG&gt; instrument.&amp;nbsp;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; (2) Execute the simulation.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; (3) It takes less than &lt;STRONG&gt;20 Seconds to simulate&lt;/STRONG&gt; and another &lt;STRONG&gt;30 Seconds or so to download&lt;/STRONG&gt; the &lt;STRONG&gt;generated 2.5M I/Q waveform sample pairs&lt;/STRONG&gt; into the instrument. (The actual downloading time may vary depending on your&amp;nbsp;LAN traffic).&amp;nbsp;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp; &lt;STRONG&gt;How to find the Tcpip address:&lt;/STRONG&gt; For ESG E4428C, you can find the Tcpip address of the instrument by following thess button&amp;nbsp;clicks: Utility =&amp;gt; GPIB/RS-232/LAN =&amp;gt; LAN Setup and take the IP Address.&amp;nbsp; Also note that the 5025 secondary address (&quot;&lt;STRONG&gt;&lt;FONT color=#ff8200&gt;SecAddress&lt;/FONT&gt;&lt;/STRONG&gt;&quot; parameter) is the designated Tcpip port for Keysight instruments.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;&lt;FONT color=#ff0000&gt;Important Note about the HW&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; Depending on the options installed in the Instrument, you might have different waveform memory available.&amp;nbsp;&lt;STRONG&gt; If you generate a waveform&amp;nbsp;with tens of Mega I/Q samples&lt;/STRONG&gt;, &lt;STRONG&gt;&lt;FONT color=#ff0000&gt;make sure your HW has enough waveform memory&lt;/FONT&gt;&lt;/STRONG&gt; to hold the waveform.&amp;nbsp;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;Theory of Operation&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; This example uses&amp;nbsp;two Sine Wave Generators that are different only in the initial phase of 90 degrees&amp;nbsp;to create coherent 2MHz sine and&amp;nbsp;cosine baseband IQ signals.&amp;nbsp;The generated IQ&amp;nbsp;signals&amp;nbsp;feed the&amp;nbsp;I and Q inputs of the modulator that has a carrier frequency of 2GHz.&amp;nbsp; Hence the output of the modulator is simply a 2.002GHz CW signal, which goes into the HW and&amp;nbsp;generates a physical 2.002GHz CW signal.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; The Event1 trigger is created with 25 samples duration (starting at the&amp;nbsp;very first&amp;nbsp;sample).&amp;nbsp; At 50MHz sample rate, this results in a pulse width of 0.5uS.&lt;/FONT&gt;&lt;/P&gt;&lt;FONT size=2&gt;&#x000D;&#x000A;&lt;P&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/P&gt;&lt;/FONT&gt;&lt;/FONT&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;RE24;Gj14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;l9{cuSCD434;lTxsjSlQZ24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;YF;L4</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item></Item>

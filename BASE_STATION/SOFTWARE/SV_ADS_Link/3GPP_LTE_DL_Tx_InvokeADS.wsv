@@ -1,0 +1,2877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;PC;e9</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2018:323:16:00</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2012.06</D></Ver>
+<Version>1.21</Version>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="LTE_DL_VSA" UserName="LTE_DL_VSA" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="DL VSA Analyses" UserName="DL VSA Analyses" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="DL_VSA" UserName="DL_VSA" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<CollectFixedPtData><T>Int</T><D>0</D></CollectFixedPtData>
+<DataFlowInformation><T>Int</T><D>0</D></DataFlowInformation>
+<DeadlockResolution><T>Int</T><D>0</D></DeadlockResolution>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<RepeatableRandomSequences><T>Int</T><D>1</D></RepeatableRandomSequences>
+<RunTimeTuning><T>Bool</T><D>1</D></RunTimeTuning>
+<SchedulerType><T>Int</T><D>0</D></SchedulerType>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPtolemyErrors><T>Bool</T><D>1</D></ShowPtolemyErrors>
+<Item XName="ConfigurationName" Type="Param">
+<Data />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Bool</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>DL_VSA_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Int</T><D>1</D></Data></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>LTE_DL_VSA_design</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>1000</D></Data>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="Num_Samples" Type="Param">
+<Data><T>Int</T><D>1000</D></Data></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="Sample_Rate" Type="Param">
+<Data><T>Double</T><D>1000000</D></Data>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.0009990000000000001</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item></Item>
+<Item XName="DL_VSA_Data" UserName="DL_VSA_Data" Type="DataSet">
+<FullPath>LTE_DL_VSA\DL VSA Analyses\DL_VSA_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : DL_VSA&#x000D;&#x000A;3/15/2012..5:27 PM&#x000D;&#x000A;LTE_DL_Src_RangeCheck &apos;LTE_DL_VSA_design__LTE_DL_Src_1__LTE_DL_Src_RangeCheck&apos;: &#x000D;&#x000A; &#x000D;&#x000A;System Configurations:&#x000D;&#x000A;1. Number of transmit antenna ports is 1.&#x000D;&#x000A;2. Frame structure is FDD.&#x000D;&#x000A;3. Channel bandwidth is 5 MHz.&#x000D;&#x000A;4. Cell ID is 0.&#x000D;&#x000A;5. Normal cyclic prefix is employed.&#x000D;&#x000A;6. Number of OFDM symbols used for transmission of PDCCHs of the 10 downlink subframes are {2,2,2,2,2,2,2,2,2,2}.&#x000D;&#x000A; &#x000D;&#x000A;For UE 1:&#x000D;&#x000A;1.HARQ closed-loop transmission is not enabled.&#x000D;&#x000A;2. For Codeword  1, transport block sizes of the 10 subframes are {2555, 2555, 2555, 2555, 2555, 2555, 2555, 2555, 2555, 2555}.&#x000D;&#x000A;3. For Codeword 1, modulation orders of the 10 subframes are {QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK}.&#x000D;&#x000A;4. Number of allocated resource blocks (RBs) of the 10 subframes are {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}.&#x000D;&#x000A;5. Number of symbols (resource elements (REs)) available for UE 1 of the 10 subframes are {690, 690, 690, 690, 690, 690, 690, 690, 690, 690}.&#x000D;&#x000A;6. For Codeword 1, number of channel bits for UE 1 of the 10 subframes are {1380, 1380, 1380, 1380, 1380, 1380, 1380, 1380, 1380, 1380}.&#x000D;&#x000A;7. For Codeword  1, code rates of the 10 subframes are {1.851, 1.851, 1.851, 1.851, 1.851, 1.851, 1.851, 1.851, 1.851, 1.851}.&#x000D;&#x000A; &#x000D;&#x000A;For UE 2:&#x000D;&#x000A;1. For Codeword 1, modulation orders of the 10 subframes are {16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM}.&#x000D;&#x000A;2. Number of allocated resource blocks (RBs) of the 10 subframes are {6, 6, 6, 6, 6, 6, 6, 6, 6, 6}.&#x000D;&#x000A;3. Number of symbols (resource elements (REs)) available for UE 2 of the 10 subframes are {723, 828, 828, 828, 828, 792, 828, 828, 828, 828}.&#x000D;&#x000A; &#x000D;&#x000A;For UE 3:&#x000D;&#x000A;1. For Codeword 1, modulation orders of the 10 subframes are {64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM}.&#x000D;&#x000A;2. Number of allocated resource blocks (RBs) of the 10 subframes are {4, 4, 4, 4, 4, 4, 4, 4, 4, 4}.&#x000D;&#x000A;3. Number of symbols (resource elements (REs)) available for UE 3 of the 10 subframes are {272, 552, 552, 552, 552, 456, 552, 552, 552, 552}.&#x000D;&#x000A; &#x000D;&#x000A;For UE 4:&#x000D;&#x000A;1. For Codeword 1, modulation orders of the 10 subframes are {QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK, QPSK}.&#x000D;&#x000A;2. Number of allocated resource blocks (RBs) of the 10 subframes are {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}.&#x000D;&#x000A;3. Number of symbols (resource elements (REs)) available for UE 4 of the 10 subframes are {655, 690, 690, 690, 690, 678, 690, 690, 690, 690}.&#x000D;&#x000A; &#x000D;&#x000A;For UE 5:&#x000D;&#x000A;1. For Codeword 1, modulation orders of the 10 subframes are {16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM, 16QAM}.&#x000D;&#x000A;2. Number of allocated resource blocks (RBs) of the 10 subframes are {3, 3, 3, 3, 3, 3, 3, 3, 3, 3}.&#x000D;&#x000A;3. Number of symbols (resource elements (REs)) available for UE 5 of the 10 subframes are {414, 414, 414, 414, 414, 414, 414, 414, 414, 414}.&#x000D;&#x000A; &#x000D;&#x000A;For UE 6:&#x000D;&#x000A;1. For Codeword 1, modulation orders of the 10 subframes are {64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM, 64QAM}.&#x000D;&#x000A;2. Number of allocated resource blocks (RBs) of the 10 subframes are {2, 2, 2, 2, 2, 2, 2, 2, 2, 2}.&#x000D;&#x000A;3. Number of symbols (resource elements (REs)) available for UE 6 of the 10 subframes are {276, 276, 276, 276, 276, 276, 276, 276, 276, 276}.&#x000D;&#x000A;ADSCosimBlockEnv &apos;LTE_DL_VSA_design__A1&apos;: Co-simulation process standard error message:&#x000D;&#x000A;hpeesofsim terminated due to an error.&#x000D;&#x000A;&#x000D;&#x000A;...ABORTED...&#x000D;&#x000A;Execution time: 18.973 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;FU24;BI24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;PnY5B6tEQ34;Xi3oEe6YF34</D></PVPort>
+<SelVar />
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.3</D></Split>
+<SubSplit><T>Int</T><D>0</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;Jt}}}}}}}}}};D3;EA;fF</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="DL VSA Design" UserName="DL VSA Design" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="LTE_DL_VSA_design" UserName="LTE_DL_VSA_design" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<LibName>LTE_DL_Src</LibName>
+<ModelUI>LTE_CustomUI</ModelUI>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>LTE_DL_Src_1</PartID>
+<PinName>frm_FD</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N10" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>8</ResolvedNetName>
+<SchObject>Connect8</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>C1</PartID>
+<PinName>imag</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect8</MappedSchObject>
+<NetName>8</NetName></Item></Item></Item></Item>
+<Item XName="N11" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect9</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>C1</PartID>
+<PinName>real</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect9</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N12" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>LO</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect7</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N13" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>8</ResolvedNetName>
+<SchObject>Connect8</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>input2</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect8</MappedSchObject>
+<NetName>8</NetName></Item></Item></Item></Item>
+<Item XName="N14" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect9</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>input1</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect9</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N15" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M1</PartID>
+<PinName>output</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part7</MappedSchObject>
+<NetName>16</NetName></Item></Item></Item>
+<Item XName="P2" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>A1</PartID>
+<PinName>input</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part3</MappedSchObject>
+<NetName>16</NetName></Item></Item></Item></Item>
+<Item XName="N16" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>O1</PartID>
+<PinName>output</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect7</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N17" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>B1</PartID>
+<PinName>output</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N18" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>13</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>V2</PartID>
+<PinName>input</PinName>
+<SchObject>Part6</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>13</NetName></Item></Item></Item></Item>
+<Item XName="N19" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>13</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>A1</PartID>
+<PinName>output</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>13</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>LTE_DL_Src_1</PartID>
+<PinName>UE1_ModSymbols</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>LTE_DL_Src_1</PartID>
+<PinName>UE1_ChannelBits</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>LTE_DL_Src_1</PartID>
+<PinName>SC_Status</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>6</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>LTE_DL_Src_1</PartID>
+<PinName>HARQ_Bits</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>7</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>7</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M1</PartID>
+<PinName>quad_output</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>10</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>LTE_DL_Src_1</PartID>
+<PinName>UE1_Data</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>LTE_DL_Src_1</PartID>
+<PinName>frm_TD</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N9" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>C1</PartID>
+<PinName>input</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>5</NetName></Item></Item></Item></Item></Item>
+<Item XName="Equations" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>SamplingTable=[1.92 3.84 7.68 15.36 23.04 30.72];&#x000D;&#x000A;SamplingFreq=1e6*SamplingTable(Bandwidth+1);&#x000D;&#x000A;SamplingRate=SamplingFreq*(2^OversamplingOption);&#x000D;&#x000A;SampsPerFrame=10*0.001*SamplingRate;&#x000D;&#x000A;SampsPerSF=0.001*SamplingRate;&#x000D;&#x000A;</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Array_I64</T><D>1;0;</D></BPLines>
+<BPStates><T>Array_I64</T><D>1;0;</D></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="EquationDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;aA2C;CH2C;mG234;We734</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Split><T>Double</T><D>0.3</D></Split>
+<Split2><T>Double</T><D>0.3</D></Split2></Item></Item>
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Bandwidth" Type="Variable">
+<Data><T>Double</T><D>2</D></Data></Item>
+<Item XName="FCarrier" Type="Variable">
+<Data><T>Double</T><D>2500000000</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="OversamplingOption" Type="Variable">
+<Data><T>Double</T><D>1</D></Data></Item>
+<Item XName="SamplingFreq" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>7680000</D></Data></Item>
+<Item XName="SamplingRate" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>15360000</D></Data></Item>
+<Item XName="SamplingTable" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Array_Dbl64</T><D>2;6;1;uwHXh75k{}3;uwHXh75kE04;uwHXh75kU04;uwHXh75kk04;ARzemrZ2t04;uwHXh75k{04</D></Data></Item>
+<Item XName="SampsPerFrame" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>153600</D></Data></Item>
+<Item XName="SampsPerSF" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>15360</D></Data></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;A824;am14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;sMOSXjK2034;jms2SBO}b24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;q4;PC;e9</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Equations" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Parameters" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item></Item>
+<Item XName="Parameters" Type="Parameters">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="ParmsDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;Wr0C;cPcPcPcvx0C;aj14;cPcPcPcBp14</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bandwidth" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>bandwidth</Description>
+<Enum>LTE_DL_Src_Bandwidth@LTE 8.9 Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>2.5e9</DataEntry>
+<Description>RF tone frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="OversamplingOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>oversampling option</Description>
+<Enum>LTE_DL_Src_OversamplingOption@LTE 8.9 Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="A1" Type="Part">
+<Category>Cosimulation;C++ Code Generation</Category>
+<Description>ADS cosimulation for envelope signal</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>ADSCosimBlockEnv@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,16?Part3|output,13?Connect2</Netlist>
+<ParentPartName>ADSCosimBlock@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_ADSCosimBlock</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ADSCosimBlockCx@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ADSCosimBlockEnv@Data Flow Models</ModelName>
+<SymbolName>SYM_ADSCosimBlock</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ADSPTOLEMY_MODEL_PATH" Type="PartParam">
+<DataEntry />
+<Description>ADSPTOLEMY_MODEL_PATH environment variable specifying user-defined ADS Ptolemy model directory</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="HPEESOF_DIR" Type="PartParam">
+<DataEntry />
+<Description>HPEESOF_DIR environment variable specifying ADS installation directory</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InputBlockSize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Array of numbers of input samples per port. The receiving end should set the same value.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="InputID" Type="PartParam">
+<DataEntry>SystemVueToADS</DataEntry>
+<Description>Identification for shared memory. The receiving end should set the same ID.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InvokeADS" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Automatically invoke ADS for cosimulation</Description>
+<DocSymbol />
+<Enum>ADSCosimBlockEnv__InvokeADS@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Netlist" Type="PartParam">
+<DataEntry />
+<Description>ADS netlist for cosimulation. Use &quot;Simulate &gt; Generate Netlist&quot; in ADS to generate netlist from schematic.</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="OutputBlockSize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Array of numbers of output samples per port. The sending end should set the same value.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="OutputFc" Type="PartParam">
+<DataEntry>2.5e9</DataEntry>
+<Description>Array of characterization frequency of output envelope signal. The values should obtained from the sending co-simulation process.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="OutputID" Type="PartParam">
+<DataEntry>ADSToSystemVue</DataEntry>
+<Description>Identification for shared memory. The sending end should set the same ID.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ADSCosimBlock@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ADSPTOLEMY_MODEL_PATH" Type="PartParam">
+<DataEntry />
+<Description>ADSPTOLEMY_MODEL_PATH environment variable specifying user-defined ADS Ptolemy model directory</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="HPEESOF_DIR" Type="PartParam">
+<DataEntry />
+<Description>HPEESOF_DIR environment variable specifying ADS installation directory</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InputBlockSize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Array of numbers of input samples per port. The receiving end should set the same value.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="InputID" Type="PartParam">
+<DataEntry>SystemVueToADS</DataEntry>
+<Description>Identification for shared memory. The receiving end should set the same ID.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InvokeADS" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Automatically invoke ADS for cosimulation</Description>
+<DocSymbol />
+<Enum>ADSCosimBlock__InvokeADS@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Netlist" Type="PartParam">
+<DataEntry />
+<Description>ADS netlist for cosimulation. Use &quot;Simulate &gt; Generate Netlist&quot; in ADS to generate netlist from schematic.</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="OutputBlockSize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Array of numbers of output samples per port. The sending end should set the same value.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="OutputID" Type="PartParam">
+<DataEntry>ADSToSystemVue</DataEntry>
+<Description>Identification for shared memory. The sending end should set the same ID.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ADSPTOLEMY_MODEL_PATH" Type="PartParam">
+<DataEntry />
+<Description>ADSPTOLEMY_MODEL_PATH environment variable specifying user-defined ADS Ptolemy model directory</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="HPEESOF_DIR" Type="PartParam">
+<DataEntry />
+<Description>HPEESOF_DIR environment variable specifying ADS installation directory</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InputBlockSize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Array of numbers of input samples per port. The receiving end should set the same value.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="InputID" Type="PartParam">
+<DataEntry>SystemVueToADS</DataEntry>
+<Description>Identification for shared memory. The receiving end should set the same ID.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InvokeADS" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Automatically invoke ADS for cosimulation</Description>
+<DocSymbol />
+<Enum>ADSCosimBlockEnv__InvokeADS@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Netlist" Type="PartParam">
+<DataEntry />
+<Description>ADS netlist for cosimulation. Use &quot;Simulate &gt; Generate Netlist&quot; in ADS to generate netlist from schematic.</Description>
+<DocSymbol />
+<HideCondition>InvokeADS == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="OutputBlockSize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Array of numbers of output samples per port. The sending end should set the same value.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="OutputFc" Type="PartParam">
+<DataEntry>2.5e9</DataEntry>
+<Description>Array of characterization frequency of output envelope signal. The values should obtained from the sending co-simulation process.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="OutputID" Type="PartParam">
+<DataEntry>ADSToSystemVue</DataEntry>
+<Description>Identification for shared memory. The sending end should set the same ID.</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item>
+<Item XName="B1" Type="Part">
+<Category>Sources</Category>
+<Description>Patterned Data Source</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>DataPattern@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,6?Connect0</Netlist>
+<ParentPartName>Bits@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_Bits</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>DataPattern@Data Flow Models</ModelName>
+<SymbolName>SYM_Bits</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="BitRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output bit rate</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample delay within burst before the start of the burst length interval</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst sample length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>RandomBits__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Samples from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DataPattern" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Data pattern</Description>
+<Enum>DataPattern__DataPattern@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample rate option</Description>
+<Enum>RandomBits__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Show advanced parameters</Description>
+<Enum>RandomBits__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>PRBS@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>RandomBits@Data Flow Models</ModelName>
+<SymbolName>SYM_Bits</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="BitRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output bit rate</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample delay within burst before the start of the burst length interval</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst sample length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>RandomBits__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Samples from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ProbOfZero" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Probability of zero bit value</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample rate option</Description>
+<Enum>RandomBits__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Show advanced parameters</Description>
+<Enum>RandomBits__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="BitRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output bit rate</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample delay within burst before the start of the burst length interval</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst sample length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>RandomBits__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Samples from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DataPattern" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Data pattern</Description>
+<Enum>DataPattern__DataPattern@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample rate option</Description>
+<Enum>RandomBits__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Show advanced parameters</Description>
+<Enum>RandomBits__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="C1" Type="Part">
+<Category>Math Scalar</Category>
+<Description>Complex to Real and Imaginary Converter</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>CxToRect@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,5?Connect1|real,9?Connect9|imag,8?Connect8</Netlist>
+<ParentPartName>CxToRect@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<Symbol>SYM_CxToRect</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>CxToRect@Data Flow Models</ModelName>
+<SymbolName>SYM_CxToRect</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" /></Item></Item>
+<Item XName="ParamSet" Type="ParamSet" /></Item>
+<Item XName="LTE_DL_Src_1" Type="Part">
+<Category>Source</Category>
+<Description>3GPP LTE downlink signal source</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>LTE_DL_Src@LTE 8.9 Models</Model>
+<ModelID />
+<Netlist>UE1_Data,6?Connect0|frm_TD,5?Connect1|frm_FD,4|UE1_ModSymbols,3|UE1_ChannelBits,2|SC_Status,1|HARQ_Bits,7</Netlist>
+<ParentPartName>LTE_DL_Src@LTE 8.9</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_LTE_DL_Src@LTE 8.9 Symbols</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LTE_DL_Src@LTE 8.9 Models</ModelName>
+<SymbolName>SYM_LTE_DL_Src@LTE 8.9 Symbols</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;427;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg</D></ParamOrder>
+<Item XName="Bandwidth" Type="PartParam">
+<DataEntry>Bandwidth</DataEntry>
+<Description>bandwidth</Description>
+<Enum>LTE_DL_Src_Bandwidth@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CI_StartPos" Type="PartParam">
+<DataEntry>-3</DataEntry>
+<Description>the start position of cyclic interval (without oversampling), compared to the start position of CP (negative means ahead of CP)</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CellID_Group" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>the index of cell identity within the physical-layer cell-identity group</Description>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CellID_Sector" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>the index of cell identity group</Description>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CyclicInterval" Type="PartParam">
+<DataEntry>6</DataEntry>
+<Description>the overlapped cyclic interval between two adjacent symbols in unit of chips (without oversampling), valid when SpectrumShapingType=TimeWindowing</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CyclicPrefix" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of cyclic prefix</Description>
+<Enum>LTE_DL_Src_CyclicPrefix@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisplayMsg" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>the messages displayed in Simulation Log window</Description>
+<Enum>LTE_DL_Src_DisplayMsg@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FIR_FilterType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>spectrum-shaping FIR filter type, valid when SpectrumShapingType=FIRFilter</Description>
+<Enum>LTE_DL_Src_FIR_FilterType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType  ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FIR_Taps" Type="PartParam">
+<DataEntry>19</DataEntry>
+<Description>number of FIR filter taps, valid when SpectrumShapingType=FIRFilter</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="FIR_withInterp" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>whether spectrum-shaping FIR filter with interpolation operation or not, valid when SpectrumShapingType=FIRFilter</Description>
+<Enum>LTE_DL_Src_FIR_withInterp@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FrameMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>frame mode</Description>
+<Enum>LTE_DL_Src_FrameMode@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HI" Type="PartParam">
+<DataEntry>[1,-1,-1,-1,-1,-1,-1,-1]</DataEntry>
+<Description>physical hybrid-ARQ ACK/NAK indicators</Description>
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OtherUEs_MappingType" Type="PartParam">
+<DataEntry>[1,2,0,1,2]</DataEntry>
+<Description>the modulation orders for other UEs  except UE 1 in all subframes. (0:QPSK, 1:16QAM, 2:64QAM)</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OversamplingOption" Type="PartParam">
+<DataEntry>OversamplingOption</DataEntry>
+<Description>oversampling option</Description>
+<Enum>LTE_DL_Src_OversamplingOption@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PBCH_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PBCH-to-RS EPRE ratio in dB  in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PBCH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PBCH-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PCFICH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PCFICH-to-RS EPRE ratio in dB in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDCCH_Common_AggreLevel" Type="PartParam">
+<DataEntry>[4]</DataEntry>
+<Description>the aggregation levels of Common PDCCH search space for every subframe. The allowable levels are 4 and 8.</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_Common_DCI_Formats" Type="PartParam">
+<DataEntry>[-1, -1, -1, -1]</DataEntry>
+<Description>the DCI Formats of the PDCCH candidates for every subframe (-1 means no DCI in corresponding candidate).</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PDCCH-to-RS EPRE ratio in dB  in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDCCH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PDCCH-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDCCH_SymsPerSF" Type="PartParam">
+<DataEntry>[2,2,2,2,2,2,2,2,2,2]</DataEntry>
+<Description>number of OFDM symbols of PDCCH for each subframe</Description>
+<HideCondition>0==ShowControlChannelParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_UE_AggreLevel" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>the aggregation levels of UE-specific PDCCH search space for every subframe. The allowable levels are 1, 2, 4 and 8.</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_UE_DCI_Formats" Type="PartParam">
+<DataEntry>[0, -1, -1, -1, -1, -1]</DataEntry>
+<Description>the DCI Formats of the PDCCH candidates for every subframe (-1 means no DCI in corresponding candidate).</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDSCH_PowerRatio" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PDSCH Cell Specific Ratio</Description>
+<Enum>LTE_DL_MuxOFDMSym__PDSCH_PowerRatio@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PHICH_Duration" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of PHICH duration</Description>
+<Enum>LTE_DL_Src_PHICH_Duration@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PHICH_Ng" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of PHICH duration</Description>
+<Enum>LTE_DL_Src_PHICH_Ng@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PHICH_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PHICH-to-RS EPRE ratio in dB  in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PHICH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PHICH-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PSS_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PSS-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RB_AllocType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>RB allocation type</Description>
+<Enum>LTE_DL_Src_RB_AllocType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RB_MappingType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>the mapping type of VRBs to PRBs</Description>
+<Enum>LTE_DL_Src_RB_MappingType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RRC_Alpha" Type="PartParam">
+<DataEntry>0.22</DataEntry>
+<Description>roll-off factor for root raised-cosine filter, valid when SpectrumShapingType=FIRFilter</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || ((SpectrumShapingType ~= 1) || (FIR_FilterType ~= 0))</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RS_EPRE" Type="PartParam">
+<DataEntry>-25.0</DataEntry>
+<Description>transmit energy per resource element (RE) for transmitted cell specific RS for each antenna port, in unit of dBm/15kHz</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SSS_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>SSS-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowControlChannelParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show parameters for control channels</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowOtherUEs_Parameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show parameters for other uncoded Ues</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowPowerParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show power-related parameters</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowSpectrumShapingParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>show parameters for transmit spectrum shaping</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowSystemParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show system parameters for LTE downlink signals</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowUE1_Parameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show parameters for coded UE1</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SpecialSF_Config" Type="PartParam">
+<DataEntry>4</DataEntry>
+<Description>downlink and uplink allocations for TDD</Description>
+<Enum>LTE_DL_Src_SpecialSF_Config@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters || FrameMode ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SpectrumShapingType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>spectrum shaping method</Description>
+<Enum>LTE_DL_Src_SpectrumShapingType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TDD_Config" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>downlink and uplink allocations for TDD</Description>
+<Enum>LTE_DL_Src_TDD_Config@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters || FrameMode ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_Category" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>defines UE1 capability, used to get the total number of soft channel bits for rate-matching in downlink.</Description>
+<Enum>LTE_HARQ_Controller__UE_Category@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_Config" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>the configuration mode of input data for UE 1.</Description>
+<Enum>LTE_DL_Src_UE1_Config@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_HARQ_Enable" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Whether HARQ closed-loop transmission is enable</Description>
+<Enum>LTE_DL_Src_FIR_withInterp@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_MappingType" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0,0,0]</DataEntry>
+<Description>the modulation orders for UE 1 in each subframe, valid when UE1_Payload is not set to MCS index. (0:QPSK, 1:16QAM, 2:64QAM)</Description>
+<HideCondition>0==ShowUE1_Parameters || UE1_Config == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE1_MaxHARQTrans" Type="PartParam">
+<DataEntry>4</DataEntry>
+<Description>Maximum number of HARQ transmission per each HARQ process</Description>
+<HideCondition>0==UE1_HARQ_Enable||0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="UE1_NumHARQ" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of HARQ processes</Description>
+<HideCondition>0==UE1_HARQ_Enable||0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="UE1_Payload" Type="PartParam">
+<DataEntry>[2555,2555,2555,2555,2555,2555,2555,2555,2555,2555]</DataEntry>
+<Description>the input payload for UE 1, the meaning of the input is defined in UE1_Config</Description>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="UE1_RB_Alloc" Type="PartParam">
+<DataEntry>[0,5]</DataEntry>
+<Description>the RB allocation for UE 1, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE1_RV_Sequence" Type="PartParam">
+<DataEntry>[0, 1, 2, 3]</DataEntry>
+<Description>Redundancy Version Sequence for HARQ closed-loop transmission</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE1_n_RNTI" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Radio network temporary identifier for UE 1</Description>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="UE2_RB_Alloc" Type="PartParam">
+<DataEntry>[5,6]</DataEntry>
+<Description>the RB allocation for UE 2, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE3_RB_Alloc" Type="PartParam">
+<DataEntry>[11,4]</DataEntry>
+<Description>the RB allocation for UE 3, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE4_RB_Alloc" Type="PartParam">
+<DataEntry>[15,5]</DataEntry>
+<Description>the RB allocation for UE 4, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE5_RB_Alloc" Type="PartParam">
+<DataEntry>[20,3]</DataEntry>
+<Description>the RB allocation for UE 5, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE6_RB_Alloc" Type="PartParam">
+<DataEntry>[23,2]</DataEntry>
+<Description>the RB allocation for UE 6, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UEs_Pa" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0]</DataEntry>
+<Description>UE specific power parameter for each UE</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="WindowType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of time transition windowing between two consecutive symbols, valid when SpectrumShapingType=TimeWindowing</Description>
+<Enum>LTE_DL_Src_WindowType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;427;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg;ShowSystemParameters;FrameMode;TDD_Config;SpecialSF_Config;Bandwidth;OversamplingOption;CyclicPrefix;CellID_Sector;CellID_Group;RB_MappingType;ShowUE1_Parameters;UE1_HARQ_Enable;UE1_NumHARQ;UE1_MaxHARQTrans;UE1_Config;UE1_Payload;UE1_MappingType;UE1_RV_Sequence;UE1_n_RNTI;UE1_Category;RB_AllocType;UE1_RB_Alloc;ShowOtherUEs_Parameters;OtherUEs_MappingType;UE2_RB_Alloc;UE3_RB_Alloc;UE4_RB_Alloc;UE5_RB_Alloc;UE6_RB_Alloc;ShowControlChannelParameters;PDCCH_SymsPerSF;PDCCH_UE_AggreLevel;PDCCH_UE_DCI_Formats;PDCCH_Common_AggreLevel;PDCCH_Common_DCI_Formats;PHICH_Duration;PHICH_Ng;HI;ShowPowerParameters;RS_EPRE;PCFICH_Rb;PHICH_Ra;PHICH_Rb;PBCH_Ra;PBCH_Rb;PDCCH_Ra;PDCCH_Rb;PDSCH_PowerRatio;UEs_Pa;PSS_Ra;SSS_Ra;ShowSpectrumShapingParameters;SpectrumShapingType;WindowType;CyclicInterval;CI_StartPos;FIR_Taps;FIR_withInterp;FIR_FilterType;RRC_Alpha;DisplayMsg</D></ParamOrder>
+<Item XName="Bandwidth" Type="PartParam">
+<DataEntry>Bandwidth</DataEntry>
+<Description>bandwidth</Description>
+<Enum>LTE_DL_Src_Bandwidth@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="CI_StartPos" Type="PartParam">
+<DataEntry>-3</DataEntry>
+<Description>the start position of cyclic interval (without oversampling), compared to the start position of CP (negative means ahead of CP)</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CellID_Group" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>the index of cell identity within the physical-layer cell-identity group</Description>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CellID_Sector" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>the index of cell identity group</Description>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CyclicInterval" Type="PartParam">
+<DataEntry>6</DataEntry>
+<Description>the overlapped cyclic interval between two adjacent symbols in unit of chips (without oversampling), valid when SpectrumShapingType=TimeWindowing</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="CyclicPrefix" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of cyclic prefix</Description>
+<Enum>LTE_DL_Src_CyclicPrefix@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisplayMsg" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>the messages displayed in Simulation Log window</Description>
+<Enum>LTE_DL_Src_DisplayMsg@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FIR_FilterType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>spectrum-shaping FIR filter type, valid when SpectrumShapingType=FIRFilter</Description>
+<Enum>LTE_DL_Src_FIR_FilterType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType  ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FIR_Taps" Type="PartParam">
+<DataEntry>19</DataEntry>
+<Description>number of FIR filter taps, valid when SpectrumShapingType=FIRFilter</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="FIR_withInterp" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>whether spectrum-shaping FIR filter with interpolation operation or not, valid when SpectrumShapingType=FIRFilter</Description>
+<Enum>LTE_DL_Src_FIR_withInterp@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FrameMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>frame mode</Description>
+<Enum>LTE_DL_Src_FrameMode@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HI" Type="PartParam">
+<DataEntry>[1,-1,-1,-1,-1,-1,-1,-1]</DataEntry>
+<Description>physical hybrid-ARQ ACK/NAK indicators</Description>
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OtherUEs_MappingType" Type="PartParam">
+<DataEntry>[1,2,0,1,2]</DataEntry>
+<Description>the modulation orders for other UEs  except UE 1 in all subframes. (0:QPSK, 1:16QAM, 2:64QAM)</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OversamplingOption" Type="PartParam">
+<DataEntry>OversamplingOption</DataEntry>
+<Description>oversampling option</Description>
+<Enum>LTE_DL_Src_OversamplingOption@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PBCH_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PBCH-to-RS EPRE ratio in dB  in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PBCH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PBCH-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PCFICH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PCFICH-to-RS EPRE ratio in dB in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDCCH_Common_AggreLevel" Type="PartParam">
+<DataEntry>[4]</DataEntry>
+<Description>the aggregation levels of Common PDCCH search space for every subframe. The allowable levels are 4 and 8.</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_Common_DCI_Formats" Type="PartParam">
+<DataEntry>[-1, -1, -1, -1]</DataEntry>
+<Description>the DCI Formats of the PDCCH candidates for every subframe (-1 means no DCI in corresponding candidate).</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PDCCH-to-RS EPRE ratio in dB  in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDCCH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PDCCH-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDCCH_SymsPerSF" Type="PartParam">
+<DataEntry>[2,2,2,2,2,2,2,2,2,2]</DataEntry>
+<Description>number of OFDM symbols of PDCCH for each subframe</Description>
+<HideCondition>0==ShowControlChannelParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_UE_AggreLevel" Type="PartParam">
+<DataEntry>[1]</DataEntry>
+<Description>the aggregation levels of UE-specific PDCCH search space for every subframe. The allowable levels are 1, 2, 4 and 8.</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDCCH_UE_DCI_Formats" Type="PartParam">
+<DataEntry>[0, -1, -1, -1, -1, -1]</DataEntry>
+<Description>the DCI Formats of the PDCCH candidates for every subframe (-1 means no DCI in corresponding candidate).</Description>
+<Enum />
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="PDSCH_PowerRatio" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PDSCH Cell Specific Ratio</Description>
+<Enum>LTE_DL_MuxOFDMSym__PDSCH_PowerRatio@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PHICH_Duration" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of PHICH duration</Description>
+<Enum>LTE_DL_Src_PHICH_Duration@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PHICH_Ng" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of PHICH duration</Description>
+<Enum>LTE_DL_Src_PHICH_Ng@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowControlChannelParameters || sum(PDCCH_SymsPerSF) == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PHICH_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PHICH-to-RS EPRE ratio in dB  in symbols with RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PHICH_Rb" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PHICH-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PSS_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>PSS-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RB_AllocType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>RB allocation type</Description>
+<Enum>LTE_DL_Src_RB_AllocType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RB_MappingType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>the mapping type of VRBs to PRBs</Description>
+<Enum>LTE_DL_Src_RB_MappingType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RRC_Alpha" Type="PartParam">
+<DataEntry>0.22</DataEntry>
+<Description>roll-off factor for root raised-cosine filter, valid when SpectrumShapingType=FIRFilter</Description>
+<HideCondition>0==ShowSpectrumShapingParameters || ((SpectrumShapingType ~= 1) || (FIR_FilterType ~= 0))</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RS_EPRE" Type="PartParam">
+<DataEntry>-25.0</DataEntry>
+<Description>transmit energy per resource element (RE) for transmitted cell specific RS for each antenna port, in unit of dBm/15kHz</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SSS_Ra" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>SSS-to-RS EPRE ratio in dB in symbols without RS</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowControlChannelParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show parameters for control channels</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowOtherUEs_Parameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show parameters for other uncoded Ues</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowPowerParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show power-related parameters</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowSpectrumShapingParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>show parameters for transmit spectrum shaping</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowSystemParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show system parameters for LTE downlink signals</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowUE1_Parameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>show parameters for coded UE1</Description>
+<Enum>LTE_DL_Src_ShowParameters@LTE 8.9 Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SpecialSF_Config" Type="PartParam">
+<DataEntry>4</DataEntry>
+<Description>downlink and uplink allocations for TDD</Description>
+<Enum>LTE_DL_Src_SpecialSF_Config@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters || FrameMode ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SpectrumShapingType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>spectrum shaping method</Description>
+<Enum>LTE_DL_Src_SpectrumShapingType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TDD_Config" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>downlink and uplink allocations for TDD</Description>
+<Enum>LTE_DL_Src_TDD_Config@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSystemParameters || FrameMode ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_Category" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>defines UE1 capability, used to get the total number of soft channel bits for rate-matching in downlink.</Description>
+<Enum>LTE_HARQ_Controller__UE_Category@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_Config" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>the configuration mode of input data for UE 1.</Description>
+<Enum>LTE_DL_Src_UE1_Config@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_HARQ_Enable" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Whether HARQ closed-loop transmission is enable</Description>
+<Enum>LTE_DL_Src_FIR_withInterp@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="UE1_MappingType" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0,0,0,0,0]</DataEntry>
+<Description>the modulation orders for UE 1 in each subframe, valid when UE1_Payload is not set to MCS index. (0:QPSK, 1:16QAM, 2:64QAM)</Description>
+<HideCondition>0==ShowUE1_Parameters || UE1_Config == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE1_MaxHARQTrans" Type="PartParam">
+<DataEntry>4</DataEntry>
+<Description>Maximum number of HARQ transmission per each HARQ process</Description>
+<HideCondition>0==UE1_HARQ_Enable||0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="UE1_NumHARQ" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Number of HARQ processes</Description>
+<HideCondition>0==UE1_HARQ_Enable||0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="UE1_Payload" Type="PartParam">
+<DataEntry>[2555,2555,2555,2555,2555,2555,2555,2555,2555,2555]</DataEntry>
+<Description>the input payload for UE 1, the meaning of the input is defined in UE1_Config</Description>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="UE1_RB_Alloc" Type="PartParam">
+<DataEntry>[0,5]</DataEntry>
+<Description>the RB allocation for UE 1, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE1_RV_Sequence" Type="PartParam">
+<DataEntry>[0, 1, 2, 3]</DataEntry>
+<Description>Redundancy Version Sequence for HARQ closed-loop transmission</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE1_n_RNTI" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Radio network temporary identifier for UE 1</Description>
+<HideCondition>0==ShowUE1_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="UE2_RB_Alloc" Type="PartParam">
+<DataEntry>[5,6]</DataEntry>
+<Description>the RB allocation for UE 2, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE3_RB_Alloc" Type="PartParam">
+<DataEntry>[11,4]</DataEntry>
+<Description>the RB allocation for UE 3, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE4_RB_Alloc" Type="PartParam">
+<DataEntry>[15,5]</DataEntry>
+<Description>the RB allocation for UE 4, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE5_RB_Alloc" Type="PartParam">
+<DataEntry>[20,3]</DataEntry>
+<Description>the RB allocation for UE 5, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UE6_RB_Alloc" Type="PartParam">
+<DataEntry>[23,2]</DataEntry>
+<Description>the RB allocation for UE 6, in the formats of [start RB, number of RBs] or [SF0 start RB, SF0 number of RBs; . . . ; SF9 start RB, SF9 number of RBs]</Description>
+<HideCondition>0==ShowOtherUEs_Parameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="UEs_Pa" Type="PartParam">
+<DataEntry>[0,0,0,0,0,0]</DataEntry>
+<Description>UE specific power parameter for each UE</Description>
+<HideCondition>0==ShowPowerParameters</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="WindowType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>type of time transition windowing between two consecutive symbols, valid when SpectrumShapingType=TimeWindowing</Description>
+<Enum>LTE_DL_Src_WindowType@LTE 8.9 Enums</Enum>
+<HideCondition>0==ShowSpectrumShapingParameters || SpectrumShapingType ~= 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="M1" Type="Part">
+<Category>Communications</Category>
+<Description>Modulator</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Modulator@Data Flow Models</Model>
+<ModelID />
+<Netlist>input1,9?Connect9|input2,8?Connect8|LO,12?Connect7|output,16?Part7|quad_output,10</Netlist>
+<ParentPartName>Modulator@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Modulator@Data Flow Models</ModelName>
+<SymbolName>SYM_Modulator</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Negate quadrature output</Description>
+<Enum>Modulator__ConjugatedQuadrature@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>FCarrier</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<HideCondition>InputType ~= 2</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB, Q channel relative to I channel</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<Enum>Modulator__InputType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance, Q channel relative to I channel</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<HideCondition>InputType ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Show I and Q impairments</Description>
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Negate quadrature output</Description>
+<Enum>Modulator__ConjugatedQuadrature@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>FCarrier</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<HideCondition>InputType ~= 2</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB, Q channel relative to I channel</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<Enum>Modulator__InputType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance, Q channel relative to I channel</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<HideCondition>InputType ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Show I and Q impairments</Description>
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="O1" Type="Part">
+<Category>Sources;Analog/RF</Category>
+<Description>Oscillator with Carrier Frequency</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Oscillator@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,12?Connect7</Netlist>
+<ParentPartName>Oscillator@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<Symbol>SYM_Oscillator</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Oscillator@Data Flow Models</ModelName>
+<SymbolName>SYM_Oscillator</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>FCarrier</DataEntry>
+<Description>RF tone frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NDensity" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Noise spectral density added</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PN_Type" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Phase noise model type with random or fixed offset freq spacing and amplitude</Description>
+<Enum>Oscillator__PN_Type@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>RF tone carrier phase</Description>
+<HideCondition>RandomPhase == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseNoiseData" Type="PartParam">
+<DataEntry />
+<Description>Phase noise specification - pairs of offset freq (Hz) and SSB phase noise level (dBc/Hz)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Power" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>RF tone carrier power</Description>
+<Unit><T>Int</T><D>11001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RandomPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Set phase of RF tone to random value between -PI and +PI</Description>
+<Enum>Oscillator__RandomPhase@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RefR" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Reference resistance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>2001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SamplingRate</DataEntry>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Sample rate option</Description>
+<Enum>Oscillator__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Show advanced parameters</Description>
+<Enum>Oscillator__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>FCarrier</DataEntry>
+<Description>RF tone frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NDensity" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Noise spectral density added</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PN_Type" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Phase noise model type with random or fixed offset freq spacing and amplitude</Description>
+<Enum>Oscillator__PN_Type@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>RF tone carrier phase</Description>
+<HideCondition>RandomPhase == 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseNoiseData" Type="PartParam">
+<DataEntry />
+<Description>Phase noise specification - pairs of offset freq (Hz) and SSB phase noise level (dBc/Hz)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Power" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>RF tone carrier power</Description>
+<Unit><T>Int</T><D>11001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RandomPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Set phase of RF tone to random value between -PI and +PI</Description>
+<Enum>Oscillator__RandomPhase@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RefR" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Reference resistance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>2001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SamplingRate</DataEntry>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Sample rate option</Description>
+<Enum>Oscillator__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Show advanced parameters</Description>
+<Enum>Oscillator__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;aA2C;CH2C;mG234;We734</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item></Item>
+<Item XName="V2" Type="Part">
+<Category>Instrumentation</Category>
+<Description>Keysight 89600 Vector Signal Analyzer</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>VSA_89600B_Sink@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,13?Connect2</Netlist>
+<ParentPartName>VSA_89600B_Sink@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{VSA Icon B}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>VSA_89600B_Sink@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF{VSA Icon B}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>YES enables continuous simulation; NO disables</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__ContinuousMode@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RecordMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES enables VSA 89600B Recording mode; NO disables; Stop must be &gt; Start, ContinuousMode = NO</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RecordMode@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RestoreHW" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES to restore VSA hardware selection at end of simulation; NO to not</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RestoreHW@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Index (start at 0) of the first sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>2*SampsPerFrame-1</DataEntry>
+<Description>Index of the last sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SamplesPerSymbol" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Digital demodulation samples per symbol; NOT to be confused with VSA points per symbol</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SetFreqProp" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Set VSA 89600B measurement properties such as center frequency, span/sampling rate, zoom, ect. based on user inputs and simulation data.</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__SetFreqProp@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SetupFile" Type="PartParam">
+<DataEntry>LTE_DL_5MHZ_25RB.set</DataEntry>
+<Description>VSA 89600B Setup file path</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__StartStopOption@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VSATitle" Type="PartParam">
+<DataEntry>Simulation output</DataEntry>
+<Description>Text for VSA title bar</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>YES enables continuous simulation; NO disables</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__ContinuousMode@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RecordMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES enables VSA 89600B Recording mode; NO disables; Stop must be &gt; Start, ContinuousMode = NO</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RecordMode@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RestoreHW" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES to restore VSA hardware selection at end of simulation; NO to not</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RestoreHW@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Index (start at 0) of the first sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>2*SampsPerFrame-1</DataEntry>
+<Description>Index of the last sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SamplesPerSymbol" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Digital demodulation samples per symbol; NOT to be confused with VSA points per symbol</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SetFreqProp" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Set VSA 89600B measurement properties such as center frequency, span/sampling rate, zoom, ect. based on user inputs and simulation data.</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__SetFreqProp@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SetupFile" Type="PartParam">
+<DataEntry>LTE_DL_5MHZ_25RB.set</DataEntry>
+<Description>VSA 89600B Setup file path</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__StartStopOption@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VSATitle" Type="PartParam">
+<DataEntry>Simulation output</DataEntry>
+<Description>Text for VSA title bar</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>14842</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>20</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Gl24;WZY24;Pf24;WZY24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;kUs24;WTc24;Gxt24;WTc24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WT634;Rd24;uA834;Rd24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect7" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;G}24;YJ24;OL134;YJ24;OL134;}}FV24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect8" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;mm{24;Vb24;G}24;Vb24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect9" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;mm{24;Rd24;G}24;Rd24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;O724;eh14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;oWsi{U4}1C;WtX24;a1jP5lvIE34;2yTxunBQx24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>20000</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>30000</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>LTE_DL_Src_1</Designator>
+<PosX><T>Double</T><D>4000</D></PosX>
+<PosY><T>Double</T><D>2375</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_LTE_DL_Src@LTE 8.9 Symbols</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>889.6875</D></PosX>
+<PosY><T>Double</T><D>670</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pLTE_DL_Src_1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>LTE_DL_Src_1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pDMRS_Ra" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>DMRS_Ra=(1x6) [0,0,0,0,0,0]</Text></Item>
+<Item XName="_pMBSFN_Enable" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1238.82</D></PosY>
+<Text>MBSFN_Enable=NO</Text></Item>
+<Item XName="_pPDCCH_Fill_OCNG" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1376.466666666667</D></PosY>
+<Text>PDCCH_Fill_OCNG=NO</Text></Item>
+<Item XName="_pPRS_Enable" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>963.5266666666668</D></PosY>
+<Text>PRS_Enable=NO</Text></Item>
+<Item XName="_pRB_Gap" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>RB_Gap=Ngap1</Text></Item>
+<Item XName="_pSetupFile" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1101.173333333333</D></PosY>
+<Text>SetupFile=C:\LTE_DL_Src.setx</Text></Item>
+<Item XName="_pUEs_SpecificRS" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>UEs_SpecificRS=(1x6) [0,0,0,0,0,0]</Text></Item>
+<Item XName="_pUEs_TransMode" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>UEs_TransMode=(1x6) [0,0,0,0,0,0]</Text></Item>
+<Item XName="_pUEs_n_RNTI" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>UEs_n_RNTI=(1x6) [1,2,3,4,5,6]</Text></Item>
+<Item XName="_pUEs_n_SCID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>UEs_n_SCID=(1x6) [0,0,0,0,0,0]</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>C1</Designator>
+<PosX><T>Double</T><D>6125</D></PosX>
+<PosY><T>Double</T><D>2875</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_CxToRect</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pC1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>C1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>M1</Designator>
+<PosX><T>Double</T><D>8000.000000000029</D></PosX>
+<PosY><T>Double</T><D>3000.000000000005</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>295</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pM1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>M1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFCarrier" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>FCarrier=2.5e+9 Hz [FCarrier]</Text></Item>
+<Item XName="_pInputType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>InputType=I/Q</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>O1</Designator>
+<PosX><T>Double</T><D>8000.000488281248</D></PosX>
+<PosY><T>Double</T><D>1250.000000000006</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Oscillator</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pO1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>O1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFrequency" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Frequency=2.5e+9 Hz [FCarrier]</Text></Item>
+<Item XName="_pPower" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>Power=1 W</Text></Item>
+<Item XName="_pSampleRate" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>SampleRate=15.36e+6 Hz [SamplingRate]</Text></Item>
+<Item XName="_pSampleRateOption" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>SampleRateOption=Timed from SampleRate</Text></Item></Item></Item>
+<Item XName="Part5" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>B1</Designator>
+<PosX><T>Double</T><D>3250.000366210937</D></PosX>
+<PosY><T>Double</T><D>2375</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Bits</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pB1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>B1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pDataPattern" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>DataPattern=PN9</Text></Item></Item></Item>
+<Item XName="Part6" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Designator>V2</Designator>
+<PosX><T>Double</T><D>12125</D></PosX>
+<PosY><T>Double</T><D>2375</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{VSA Icon B}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pV2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>V2</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pVSATitle" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>VSATitle=Simulation output</Text></Item></Item></Item>
+<Item XName="Part7" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Designator>A1</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>9500.000000000002</D></PosX>
+<PosY><T>Double</T><D>2375</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_ADSCosimBlock</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pA1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>A1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pADSPTOLEMY_MODEL_PATH" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1238.82</D></PosY>
+<Text>ADSPTOLEMY_MODEL_PATH=</Text></Item>
+<Item XName="_pHPEESOF_DIR" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1101.173333333333</D></PosY>
+<Text>HPEESOF_DIR=</Text></Item>
+<Item XName="_pInputBlockSize" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>InputBlockSize=1</Text></Item>
+<Item XName="_pInputID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>InputID=SystemVueToADS</Text></Item>
+<Item XName="_pInvokeADS" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>InvokeADS=YES</Text></Item>
+<Item XName="_pNetlist" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>963.5266666666668</D></PosY>
+<Text>Netlist=</Text></Item>
+<Item XName="_pOutputBlockSize" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>OutputBlockSize=1</Text></Item>
+<Item XName="_pOutputFc" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>OutputFc=2.5e9</Text></Item>
+<Item XName="_pOutputID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>OutputID=ADSToSystemVue</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>30</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="Note" UserName="Note" Type="Notes">
+<Selected><T>Bool</T><D>1</D></Selected>
+<Text>&lt;FONT size=2&gt;&#x000D;&#x000A;&lt;P class=MsoTitle style=&quot;BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: windowtext 0.75pt solid; PADDING-BOTTOM: 1pt; PADDING-TOP: 0in; PADDING-LEFT: 0in; MARGIN: 0in 0in 0pt; BORDER-LEFT: medium none; PADDING-RIGHT: 0in&quot; align=center&gt;&lt;FONT size=5 face=Arial&gt;&lt;SPAN style=&quot;FONT-SIZE: 18pt; FONT-FAMILY: Arial&quot;&gt;&lt;STRONG&gt;3GPP_LTE_DL_TX&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P class=MsoBodyText style=&quot;MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;FONT size=2&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue Example Workspace&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;?xml:namespace prefix = &quot;o&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT face=&quot;Times New Roman&quot;&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT face=&quot;Times New Roman&quot;&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;This&amp;nbsp;example workspace&amp;nbsp;demonstrates&amp;nbsp;SystemVue-ADS-VSA links for LTE_DL_Tx with the option to automatically invoke ADS hpeesofsim.&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;1. The folder containing this example workspace&amp;nbsp;also contains a file LTE_netlist. Set &quot;Netlist&quot; parameter of the ADS cosim&amp;nbsp;block to the path of the LTE_netlist file.&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;UL&gt;&#x000D;&#x000A;&lt;LI&gt;&#x000D;&#x000A;&lt;DIV class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;FONT face=Arial&gt;If you are using an older version of ADS&amp;nbsp;you may have to first copy LTE_netlist file to a path that does not&amp;nbsp;contain&amp;nbsp;spaces.&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/DIV&gt;&lt;/LI&gt;&lt;/UL&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;2.&amp;nbsp;&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;Set &quot;HPEESOF_DIR&quot; parameter&amp;nbsp;to the ADS installation directory.&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;3. Start simulation in SystemVue. SystemVue will automatically invoke ADS hpeesofsim process to simulate the netlist.&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;4. For full SV-ADS cosim flow, please refer to 3GPP_LTE_DL_Tx.wsv.&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&amp;nbsp;&lt;/P&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/FONT&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;A824;am14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;sMOSXjK2034;jms2SBO}b24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;PC;q4</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item></Item>

@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;xJ;DD</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2019:297:15:03</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2011.03</D></Ver>
+<Version>1.21</Version>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Design1 Analysis" UserName="Design1 Analysis" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<AutoSave><T>Int</T><D>0</D></AutoSave>
+<NeedRun><T>Bool</T><D>0</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="ConfigurationName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Bool</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Bool</T><D>0</D></Data></Item>
+<Item XName="DefaultNumericStart" Type="Param">
+<DataEntry>0</DataEntry></Item>
+<Item XName="DefaultNumericStop" Type="Param">
+<DataEntry>100</DataEntry></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DefaultTimeStart" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DefaultTimeStop" Type="Param">
+<DataEntry>100</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>M9383B</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="FreqRes" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>5859.375</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="NumSamples" Type="Param">
+<Data><T>Int</T><D>1024</D></Data></Item>
+<Item XName="Num_Samples" Type="Param">
+<DataEntry>4096</DataEntry></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="SampleRate" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Sample_Rate" Type="Param">
+<DataEntry>24</DataEntry>
+<Unit><T>Int</T><D>33771</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.000170625</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="TimeSpacing" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStart" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStop" Type="Param">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>4.166666666666667e-08</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item></Item>
+<Item XName="Design1 Analysis_M9383B_Data" UserName="Design1 Analysis_M9383B_Data" Type="DataSet">
+<FullPath>Designs\Design1 Analysis_M9383B_Data</FullPath>
+<Selected><T>Bool</T><D>1</D></Selected>
+<TimeStamp>1571900008</TimeStamp>
+<Item XName="Eqns" Type="Equation">
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : Design1 Analysis&#x000D;&#x000A;10/24/2019..2:53 PM&#x000D;&#x000A;Ambient Temperature[C]=27.0&#x000D;&#x000A;output of RandomBitsGeneratorTimed &apos;M9383B.B2&apos;: Sample Rate of this signal defaulting to the System Sample Rate ( 2.4e+01 MHz ).&#x000D;&#x000A;&#x2022; Warning: Sink &apos;M9383B__S1.S1&apos;: Warning: The number of samples needs to be a multiple of 8 and the samples have been truncated from 16377 to 16376.&#x000D;&#x000A;In M9383B__S1__S1 Equations Line: 32&#x000D;&#x000A;&#x000D;&#x000A;Execution time: 0.917 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>125</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;6F24;y024</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;Yl9{cu4f434;Cknu6ZFVs24</D></PVPort>
+<SelVar />
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.2</D></Split>
+<SubSplit><T>Double</T><D>0.2</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;44;44;xJ;DD</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder></Item></Item></Item>
+<Item XName="M9383B" UserName="M9383B" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>S1</PartID>
+<PinName>channel2</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>17</NetName></Item></Item></Item></Item>
+<Item XName="N10" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>16</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>F1</PartID>
+<PinName>input</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>16</NetName></Item></Item></Item></Item>
+<Item XName="N11" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>19</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>F3</PartID>
+<PinName>input</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>19</NetName></Item></Item></Item></Item>
+<Item XName="N12" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>F3</PartID>
+<PinName>output</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N13" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>13</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>input1</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>13</NetName></Item></Item></Item></Item>
+<Item XName="N14" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>input2</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N15" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M1</PartID>
+<PinName>output</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect7</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>LO</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>11</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M1</PartID>
+<PinName>quad_output</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>S1</PartID>
+<PinName>channel1</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect7</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>B2</PartID>
+<PinName>output</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part6</MappedSchObject>
+<NetName>15</NetName></Item></Item></Item>
+<Item XName="P2" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M2</PartID>
+<PinName>In</PinName>
+<SchObject>Part6</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part1</MappedSchObject>
+<NetName>15</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>19</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>C1</PartID>
+<PinName>imag</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>19</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>16</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>C1</PartID>
+<PinName>real</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>16</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>C1</PartID>
+<PinName>input</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part6</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item>
+<Item XName="P2" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M2</PartID>
+<PinName>Out</PinName>
+<SchObject>Part6</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part2</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N9" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>13</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>F1</PartID>
+<PinName>output</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>13</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;dJ24;it14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;FqzGt3I2A34;r0N3RDqRl24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;c6;xJ;CD</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item>
+<Item XName="Display1" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;ocEUzxu8B24;OI8qB74lr14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GJz24;WLUtd24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>1</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="B2" Type="Part">
+<Category>Sources</Category>
+<Description>Random Bit Generator</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>RandomBits@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,15?Part6</Netlist>
+<ParentPartName>Bits@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<Symbol>SYM_Bits</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>DataPattern@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>PRBS@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>RandomBits@Data Flow Models</ModelName>
+<SymbolName>SYM_Bits</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="BitRate" Type="PartParam">
+<DataEntry>24e6</DataEntry>
+<Description>Output bit rate</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample delay within burst before the start of the burst length interval</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst sample length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>RandomBits__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Samples from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ProbOfZero" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Probability of zero bit value</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>RandomBits__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>RandomBits__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="BitRate" Type="PartParam">
+<DataEntry>24e6</DataEntry>
+<Description>Output bit rate</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample delay within burst before the start of the burst length interval</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst sample length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>RandomBits__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Samples from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ProbOfZero" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Probability of zero bit value</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>RandomBits__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>RandomBits__ShowAdvancedParams@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="C1" Type="Part">
+<Category>Converters</Category>
+<Description>Complex to Real and Imaginary Converter</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>CxToRect@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,9?Part6|real,16?Connect4|imag,19?Connect2</Netlist>
+<ParentPartName>CxToRect@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<Symbol>SYM_CxToRect</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>CxToRect@Data Flow Models</ModelName>
+<SymbolName>SYM_CxToRect</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" /></Item></Item>
+<Item XName="ParamSet" Type="ParamSet" /></Item>
+<Item XName="F1" Type="Part">
+<Category>Filters;Analog/RF;Communications;Signal Processing</Category>
+<Description>Z domain FIR filter</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>ZDomainFIR@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,16?Connect4|output,13?Connect1</Netlist>
+<OverrideSubnet />
+<ParentPartName>Filter@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowGrpDelay><T>Bool</T><D>0</D></ShowGrpDelay>
+<ShowImpResp><T>Bool</T><D>0</D></ShowImpResp>
+<ShowMag><T>Bool</T><D>1</D></ShowMag>
+<ShowPhase><T>Bool</T><D>0</D></ShowPhase>
+<ShowPoleZero><T>Bool</T><D>0</D></ShowPoleZero>
+<ShowStepResp><T>Bool</T><D>0</D></ShowStepResp>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_FIR</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_10" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_11" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_12" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_13" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_14" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_15" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_16" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_17" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Window@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_18" Type="ModelListEntry">
+<Indentifier />
+<ModelName>CustomFIR@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_19" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_20" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_21" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_22" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_23" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_24" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_25" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_26" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Window@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_27" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_28" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_29" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_3" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_30" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_31" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Edge@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_32" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_33" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Gaussian@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_34" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_35" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_RaisedCosine@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_36" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_37" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Window@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_38" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SDomainSystem@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_39" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ZDomainIIR@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_4" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_40" Type="ModelListEntry">
+<Indentifier />
+<ModelName>FIR_Fxp@Fxp Models</ModelName></Item>
+<Item XName="ModelSet_41" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ZDomainFIR@Data Flow Models</ModelName>
+<SymbolName>SYM_FIR</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Coefficients" Type="PartParam">
+<DataEntry>[2.20561601948862E-19, -2.70014852893463E-04, -7.08360167514279E-04, -1.23980026328231E-03, -1.72986885223863E-03, -2.00442446015866E-03, -1.88476531156545E-03, -1.23314314532441E-03, -1.41239663955694E-18, 1.73787608461915E-03, 3.75912439928663E-03, 5.70799533847853E-03, 7.13681082709228E-03, 7.57837595135598E-03, 6.63934401181999E-03, 4.09971627639291E-03, 2.98917332008597E-18, -5.30293132019414E-03, -1.11270548182802E-02, -1.65126465202659E-02, -2.03259559079996E-02, -2.14089064406334E-02, -1.87552231108966E-02, -1.16866182639262E-02, -4.34590505243175E-18, 1.59410890948171E-02, 3.51904970665067E-02, 5.62876504145267E-02, 7.74054361971165E-02, 9.65601764753233E-02, 0.111855288748661, 0.12172371424203, 0.125133236614293, 0.12172371424203, 0.111855288748661, 9.65601764753233E-02, 7.74054361971165E-02, 5.62876504145267E-02, 3.51904970665067E-02, 1.59410890948171E-02, -4.34590505243175E-18, -1.16866182639262E-02, -1.87552231108966E-02, -2.14089064406334E-02, -2.03259559079996E-02, -1.65126465202659E-02, -1.11270548182802E-02, -5.30293132019414E-03, 2.98917332008597E-18, 4.09971627639291E-03, 6.63934401181999E-03, 7.57837595135598E-03, 7.13681082709228E-03, 5.70799533847853E-03, 3.75912439928663E-03, 1.73787608461915E-03, -1.41239663955694E-18, -1.23314314532441E-03, -1.88476531156545E-03, -2.00442446015866E-03, -1.72986885223863E-03, -1.23980026328231E-03, -7.08360167514279E-04, -2.70014852893463E-04, 2.20561601948862E-19]</DataEntry>
+<Description>Filter tap values</Description>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Decimation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DecimationPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Interpolation" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Interpolation (up sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InterpolationScaling" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain adjustment for interpolation</Description>
+<Enum>ZDomainFIR__InterpolationScaling@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_5" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Gaussian@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_6" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_7" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_RaisedCosine@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_8" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_9" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Window@Data Flow Models</ModelName></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Coefficients" Type="PartParam">
+<DataEntry>[2.20561601948862E-19, -2.70014852893463E-04, -7.08360167514279E-04, -1.23980026328231E-03, -1.72986885223863E-03, -2.00442446015866E-03, -1.88476531156545E-03, -1.23314314532441E-03, -1.41239663955694E-18, 1.73787608461915E-03, 3.75912439928663E-03, 5.70799533847853E-03, 7.13681082709228E-03, 7.57837595135598E-03, 6.63934401181999E-03, 4.09971627639291E-03, 2.98917332008597E-18, -5.30293132019414E-03, -1.11270548182802E-02, -1.65126465202659E-02, -2.03259559079996E-02, -2.14089064406334E-02, -1.87552231108966E-02, -1.16866182639262E-02, -4.34590505243175E-18, 1.59410890948171E-02, 3.51904970665067E-02, 5.62876504145267E-02, 7.74054361971165E-02, 9.65601764753233E-02, 0.111855288748661, 0.12172371424203, 0.125133236614293, 0.12172371424203, 0.111855288748661, 9.65601764753233E-02, 7.74054361971165E-02, 5.62876504145267E-02, 3.51904970665067E-02, 1.59410890948171E-02, -4.34590505243175E-18, -1.16866182639262E-02, -1.87552231108966E-02, -2.14089064406334E-02, -2.03259559079996E-02, -1.65126465202659E-02, -1.11270548182802E-02, -5.30293132019414E-03, 2.98917332008597E-18, 4.09971627639291E-03, 6.63934401181999E-03, 7.57837595135598E-03, 7.13681082709228E-03, 5.70799533847853E-03, 3.75912439928663E-03, 1.73787608461915E-03, -1.41239663955694E-18, -1.23314314532441E-03, -1.88476531156545E-03, -2.00442446015866E-03, -1.72986885223863E-03, -1.23980026328231E-03, -7.08360167514279E-04, -2.70014852893463E-04, 2.20561601948862E-19]</DataEntry>
+<Description>Filter tap values</Description>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Decimation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DecimationPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Interpolation" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Interpolation (up sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InterpolationScaling" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain adjustment for interpolation</Description>
+<Enum>ZDomainFIR__InterpolationScaling@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item>
+<Item XName="SampleRate" Type="Param">
+<DataEntry>384e6</DataEntry></Item></Item>
+<Item XName="F3" Type="Part">
+<Category>Filters;Analog/RF;Communications;Signal Processing</Category>
+<Description>Z domain FIR filter</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>ZDomainFIR@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,19?Connect2|output,3?Connect3</Netlist>
+<OverrideSubnet />
+<ParentPartName>Filter@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowGrpDelay><T>Bool</T><D>0</D></ShowGrpDelay>
+<ShowImpResp><T>Bool</T><D>0</D></ShowImpResp>
+<ShowMag><T>Bool</T><D>1</D></ShowMag>
+<ShowPhase><T>Bool</T><D>0</D></ShowPhase>
+<ShowPoleZero><T>Bool</T><D>0</D></ShowPoleZero>
+<ShowStepResp><T>Bool</T><D>0</D></ShowStepResp>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_FIR</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_10" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_11" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_12" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_13" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_14" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_15" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_16" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_17" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BSF_Window@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_18" Type="ModelListEntry">
+<Indentifier />
+<ModelName>CustomFIR@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_19" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_20" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_21" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_22" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_23" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_24" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_25" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_26" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HPF_Window@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_27" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Bessel@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_28" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Butterworth@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_29" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_ChebyshevI@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_3" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_30" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_ChebyshevII@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_31" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Edge@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_32" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_33" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Gaussian@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_34" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_35" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_RaisedCosine@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_36" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_37" Type="ModelListEntry">
+<Indentifier />
+<ModelName>LPF_Window@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_38" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SDomainSystem@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_39" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ZDomainIIR@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_4" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Elliptic@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_40" Type="ModelListEntry">
+<Indentifier />
+<ModelName>FIR_Fxp@Fxp Models</ModelName></Item>
+<Item XName="ModelSet_41" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ZDomainFIR@Data Flow Models</ModelName>
+<SymbolName>SYM_FIR</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Coefficients" Type="PartParam">
+<DataEntry>[2.20561601948862E-19, -2.70014852893463E-04, -7.08360167514279E-04, -1.23980026328231E-03, -1.72986885223863E-03, -2.00442446015866E-03, -1.88476531156545E-03, -1.23314314532441E-03, -1.41239663955694E-18, 1.73787608461915E-03, 3.75912439928663E-03, 5.70799533847853E-03, 7.13681082709228E-03, 7.57837595135598E-03, 6.63934401181999E-03, 4.09971627639291E-03, 2.98917332008597E-18, -5.30293132019414E-03, -1.11270548182802E-02, -1.65126465202659E-02, -2.03259559079996E-02, -2.14089064406334E-02, -1.87552231108966E-02, -1.16866182639262E-02, -4.34590505243175E-18, 1.59410890948171E-02, 3.51904970665067E-02, 5.62876504145267E-02, 7.74054361971165E-02, 9.65601764753233E-02, 0.111855288748661, 0.12172371424203, 0.125133236614293, 0.12172371424203, 0.111855288748661, 9.65601764753233E-02, 7.74054361971165E-02, 5.62876504145267E-02, 3.51904970665067E-02, 1.59410890948171E-02, -4.34590505243175E-18, -1.16866182639262E-02, -1.87552231108966E-02, -2.14089064406334E-02, -2.03259559079996E-02, -1.65126465202659E-02, -1.11270548182802E-02, -5.30293132019414E-03, 2.98917332008597E-18, 4.09971627639291E-03, 6.63934401181999E-03, 7.57837595135598E-03, 7.13681082709228E-03, 5.70799533847853E-03, 3.75912439928663E-03, 1.73787608461915E-03, -1.41239663955694E-18, -1.23314314532441E-03, -1.88476531156545E-03, -2.00442446015866E-03, -1.72986885223863E-03, -1.23980026328231E-03, -7.08360167514279E-04, -2.70014852893463E-04, 2.20561601948862E-19]</DataEntry>
+<Description>Filter tap values</Description>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Decimation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DecimationPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Interpolation" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Interpolation (up sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InterpolationScaling" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain adjustment for interpolation</Description>
+<Enum>ZDomainFIR__InterpolationScaling@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_5" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Gaussian@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_6" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_ParksMcClellan@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_7" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_RaisedCosine@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_8" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_SynchronouslyTuned@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_9" Type="ModelListEntry">
+<Indentifier />
+<ModelName>BPF_Window@Data Flow Models</ModelName></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Coefficients" Type="PartParam">
+<DataEntry>[2.20561601948862E-19, -2.70014852893463E-04, -7.08360167514279E-04, -1.23980026328231E-03, -1.72986885223863E-03, -2.00442446015866E-03, -1.88476531156545E-03, -1.23314314532441E-03, -1.41239663955694E-18, 1.73787608461915E-03, 3.75912439928663E-03, 5.70799533847853E-03, 7.13681082709228E-03, 7.57837595135598E-03, 6.63934401181999E-03, 4.09971627639291E-03, 2.98917332008597E-18, -5.30293132019414E-03, -1.11270548182802E-02, -1.65126465202659E-02, -2.03259559079996E-02, -2.14089064406334E-02, -1.87552231108966E-02, -1.16866182639262E-02, -4.34590505243175E-18, 1.59410890948171E-02, 3.51904970665067E-02, 5.62876504145267E-02, 7.74054361971165E-02, 9.65601764753233E-02, 0.111855288748661, 0.12172371424203, 0.125133236614293, 0.12172371424203, 0.111855288748661, 9.65601764753233E-02, 7.74054361971165E-02, 5.62876504145267E-02, 3.51904970665067E-02, 1.59410890948171E-02, -4.34590505243175E-18, -1.16866182639262E-02, -1.87552231108966E-02, -2.14089064406334E-02, -2.03259559079996E-02, -1.65126465202659E-02, -1.11270548182802E-02, -5.30293132019414E-03, 2.98917332008597E-18, 4.09971627639291E-03, 6.63934401181999E-03, 7.57837595135598E-03, 7.13681082709228E-03, 5.70799533847853E-03, 3.75912439928663E-03, 1.73787608461915E-03, -1.41239663955694E-18, -1.23314314532441E-03, -1.88476531156545E-03, -2.00442446015866E-03, -1.72986885223863E-03, -1.23980026328231E-03, -7.08360167514279E-04, -2.70014852893463E-04, 2.20561601948862E-19]</DataEntry>
+<Description>Filter tap values</Description>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="Decimation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DecimationPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation (down sampling) phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Interpolation" Type="PartParam">
+<DataEntry>8</DataEntry>
+<Description>Interpolation (up sampling) factor</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InterpolationScaling" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain adjustment for interpolation</Description>
+<Enum>ZDomainFIR__InterpolationScaling@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item>
+<Item XName="SampleRate" Type="Param">
+<DataEntry>384e6</DataEntry></Item></Item>
+<Item XName="M1" Type="Part">
+<Category>Communications:Modulator/Demodulator;AnalogRF:Modulator/Demodulator</Category>
+<Description>Modulator</Description>
+<Footprint />
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Modulator@Data Flow Models</Model>
+<ModelID />
+<Netlist>input1,13?Connect1|input2,3?Connect3|LO,11|output,1?Connect7|quad_output,5</Netlist>
+<ParentPartName>Modulator@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Modulator@Data Flow Models</ModelName>
+<SymbolName>SYM_Modulator</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<HideCondition>InputType ~= 2</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<Enum>Demodulator__OutputType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<HideCondition>InputType ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show I and Q impairments</Description>
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<HideCondition>InputType ~= 2</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<Enum>Demodulator__OutputType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<HideCondition>InputType ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show I and Q impairments</Description>
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="M2" Type="Part">
+<Category>Mappers / Demappers</Category>
+<Description>Complex Symbol Mapper</Description>
+<Footprint />
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Mapper@Data Flow Models</Model>
+<ModelID />
+<Netlist>In,15?Part1|Out,9?Part2</Netlist>
+<ParentPartName>Mapper@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Mapper</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Mapper@Data Flow Models</ModelName>
+<SymbolName>SYM_Mapper</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="BitOrder" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bit order</Description>
+<Enum>Mapper__BitOrder@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MappingTable" Type="PartParam">
+<DataEntry>[1, -1]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Constellation table (used when ModType=&quot;User defined&quot;)</Description>
+<HideCondition>ModType ~= 9</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="ModType" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Modulation type</Description>
+<Enum>Mapper__ModType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="BitOrder" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Bit order</Description>
+<Enum>Mapper__BitOrder@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MappingTable" Type="PartParam">
+<DataEntry>[1, -1]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Constellation table (used when ModType=&quot;User defined&quot;)</Description>
+<HideCondition>ModType ~= 9</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>15</D></Validate></Item>
+<Item XName="ModType" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Modulation type</Description>
+<Enum>Mapper__ModType@Data Flow Enums</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;pCpCpCdG234;pCpCpCNe734</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item></Item>
+<Item XName="S1" Type="Part">
+<Category>Instrumentation</Category>
+<Description>81180 Signal downloader.</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SignalDownloader_M9383B@Instruments Subnetwork Models</Model>
+<ModelID />
+<Netlist>channel1,1?Connect7|channel2,17</Netlist>
+<ParentPartName>SignalDownloader@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SignalDownloader}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_M9383B@Instruments Subnetwork Models</ModelName>
+<SymbolName>AutoSymDF{SignalDownloader}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;18;HWAvailable;PrimAddress;SecAddress;TimeStart;TimeStop;Mode;Chan1FileName;Chan2FileName;RFPower;SyncMarker;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;SCPICommands;AutoScale;StartEvent;InstructionTimeout</D></ParamOrder>
+<Item XName="AutoScale" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize waveform into [-1, 1] Volt range before downloading.  YES: auto scale;  NO: no auto scale.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Chan1FileName" Type="PartParam">
+<DataEntry>MyWaveformCh1.bin</DataEntry>
+<Description>Name for the binary waveform file for channel 1</Description>
+<Enum />
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="Chan2FileName" Type="PartParam">
+<DataEntry>MyWaveformCh2.bin</DataEntry>
+<Description>Name for the binary waveform file for channel 2</Description>
+<Enum />
+<HideCondition>Mode == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="HWAvailable" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES: HW available.  NO: HW not exist, communication to HW supressed.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="InstructionTimeout" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Instrument instruction timeout limit</Description>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MarkerLength" Type="PartParam">
+<DataEntry>20</DataEntry>
+<Description>Marker pulse duration measured in number of sample intervals</Description>
+<Enum />
+<HideCondition>SyncMarker == 0</HideCondition>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="MarkerStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample index to start event marker pulse (Note that the index for the first samples is 1)</Description>
+<Enum />
+<HideCondition>SyncMarker == 0</HideCondition>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Mode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Select instrument mode</Description>
+<Enum>M9383B_Mode@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PrimAddress" Type="PartParam">
+<DataEntry>127.0.0.1</DataEntry>
+<Description>Primary address: IP address (LAN) or instrument GPIB address (GPIB)</Description>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="RFPower" Type="PartParam">
+<DataEntry>-30</DataEntry>
+<Description>RF output power level in dBm</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Reset" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Reset the instrument before everything else</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SCPICommands" Type="PartParam">
+<DataEntry />
+<Description>Additonal SCPI commands before turning ARB and RF output ON or OFF</Description>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="SecAddress" Type="PartParam">
+<DataEntry>5025</DataEntry>
+<Description>Secondary address: Port number (LAN) or secondary address (GPIB)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>To display parameters for advanced instrument setups</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartEvent" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>0:Start Immediately; 1:External Event</Description>
+<Enum>SignalDownloader_M9381A__StartEvent@Data Flow Enums</Enum>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SyncMarker" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Specifies which marker to use for synchronizing the source with a client device</Description>
+<Enum>M9381_Markers@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_M8195@Instruments Subnetwork Models</ModelName></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_M8190Env@Instruments Subnetwork Models</ModelName></Item>
+<Item XName="ModelSet_3" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_M8190Env_1CH@Instruments Subnetwork Models</ModelName></Item>
+<Item XName="ModelSet_4" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_M8190@Instruments Subnetwork Models</ModelName></Item>
+<Item XName="ModelSet_5" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_M8190_1CH@Instruments Subnetwork Models</ModelName></Item>
+<Item XName="ModelSet_6" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_M933xA@Instruments Subnetwork Models</ModelName></Item>
+<Item XName="ModelSet_7" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_N824xA@Instruments Subnetwork Models</ModelName></Item>
+<Item XName="ModelSet_8" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SignalDownloader_81180@Instruments Subnetwork Models</ModelName>
+<SymbolName>AutoSymDF{SignalDownloader}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;23;HWAvailable;IOType;PrimAddress;SecAddress;TimeStart;TimeStop;FileName;OutputAmplifier;AmplitudeOutputDC;AmplitudeOutputAC_dBm;AmplitudeOutputDAC;ArbOn;EventMarkers;MarkerStart;MarkerLength;ShowAdvancedParams;SCPICommands;AutoScale;InstructionTimeout;RefClockSrc;RefClockFreq;ConfigMIMO;MasterSrc</D></ParamOrder>
+<Item XName="AmplitudeOutputAC_dBm" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>amplitude in dBm (range. -5dBm to +5dBm)</Description>
+<HideCondition>(OutputAmplifier ~=1)</HideCondition>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="AmplitudeOutputDAC" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>amplitude in V (range: 50mV - 500mV)</Description>
+<HideCondition>(OutputAmplifier ~= 2)</HideCondition>
+<Unit><T>Int</T><D>9003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="AmplitudeOutputDC" Type="PartParam">
+<DataEntry>0.5</DataEntry>
+<Description>amplitude in V (range: 0.05V - 2V)</Description>
+<HideCondition>(OutputAmplifier ~= 0)</HideCondition>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ArbOn" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Turn outputs ON of OFF</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="AutoScale" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize waveform into [-1, 1] Volt range before downloading.  YES: auto scale;  NO: no auto scale.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>(ShowAdvancedParams == 0)</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ConfigMIMO" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Establish the Master-Slave relationship among multiple 81180; 1:YES, 0:NO</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>(ShowAdvancedParams == 0)</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EventMarkers" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Enable event markers outputs of specified channel(s)</Description>
+<Enum>ESGEventMarker@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FileName" Type="PartParam">
+<DataEntry>myWaveform.bin</DataEntry>
+<Description>File name for the downloaded waveform</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="HWAvailable" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES: HW available. NO: HW not exist</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="IOType" Type="PartParam">
+<DataEntry>LAN</DataEntry>
+<Description>Instrument Communication type: &apos;LAN&apos;, &apos;TCPIP&apos;, or &apos;GPIB&apos;</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InstructionTimeout" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Instrument instruction timeout limit</Description>
+<HideCondition>(ShowAdvancedParams == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MarkerLength" Type="PartParam">
+<DataEntry>20</DataEntry>
+<Description>Duration of event marker pulse measured in number of samples.</Description>
+<Enum />
+<HideCondition>EventMarkers==0</HideCondition>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="MarkerStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample index to start event marker pulse. (Note: sample index starts at 0).</Description>
+<Enum />
+<HideCondition>EventMarkers==0</HideCondition>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="MasterSrc" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Mark this 81180 as the master that will generate the synchronization trigger ; 1:YES, 0:NO</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>(ShowAdvancedParams == 0 || ConfigMIMO == 0)</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="OutputAmplifier" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Select Output Amplifier</Description>
+<Enum>Output_Amplifier_81180@Eagleware</Enum>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PrimAddress" Type="PartParam">
+<DataEntry>127.0.0.1</DataEntry>
+<Description>Primary address: IP address (LAN) or instrument GPIB address (GPIB)</Description>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="RefClockFreq" Type="PartParam">
+<DataEntry>30</DataEntry>
+<Description>External reference clock frequency ( must between 10MHz to 100 MHz)</Description>
+<HideCondition>(~ShowAdvancedParams) || (RefClockSrc == 0)</HideCondition>
+<Unit><T>Int</T><D>33771</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RefClockSrc" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Reference clock source</Description>
+<Enum>ESGFreqeuencyRef@Eagleware</Enum>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SCPICommands" Type="PartParam">
+<DataEntry />
+<Description>Additonal SCPI commands before turning ARB and RF output ON or OFF</Description>
+<HideCondition>(ShowAdvancedParams == 0)</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="SecAddress" Type="PartParam">
+<DataEntry>5025</DataEntry>
+<Description>Secondary address: Port number (LAN) or secondary address (GPIB)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>To display parameters for advanced instrument setups</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start waveform recording</Description>
+<Enum />
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;18;HWAvailable;PrimAddress;SecAddress;TimeStart;TimeStop;Mode;Chan1FileName;Chan2FileName;RFPower;SyncMarker;MarkerStart;MarkerLength;ShowAdvancedParams;Reset;SCPICommands;AutoScale;StartEvent;InstructionTimeout</D></ParamOrder>
+<Item XName="AutoScale" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize waveform into [-1, 1] Volt range before downloading.  YES: auto scale;  NO: no auto scale.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Chan1FileName" Type="PartParam">
+<DataEntry>MyWaveformCh1.bin</DataEntry>
+<Description>Name for the binary waveform file for channel 1</Description>
+<Enum />
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="Chan2FileName" Type="PartParam">
+<DataEntry>MyWaveformCh2.bin</DataEntry>
+<Description>Name for the binary waveform file for channel 2</Description>
+<Enum />
+<HideCondition>Mode == 0</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="HWAvailable" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES: HW available.  NO: HW not exist, communication to HW supressed.</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="InstructionTimeout" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Instrument instruction timeout limit</Description>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MarkerLength" Type="PartParam">
+<DataEntry>20</DataEntry>
+<Description>Marker pulse duration measured in number of sample intervals</Description>
+<Enum />
+<HideCondition>SyncMarker == 0</HideCondition>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="MarkerStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample index to start event marker pulse (Note that the index for the first samples is 1)</Description>
+<Enum />
+<HideCondition>SyncMarker == 0</HideCondition>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Mode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Select instrument mode</Description>
+<Enum>M9383B_Mode@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PrimAddress" Type="PartParam">
+<DataEntry>127.0.0.1</DataEntry>
+<Description>Primary address: IP address (LAN) or instrument GPIB address (GPIB)</Description>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="RFPower" Type="PartParam">
+<DataEntry>-30</DataEntry>
+<Description>RF output power level in dBm</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Reset" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Reset the instrument before everything else</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SCPICommands" Type="PartParam">
+<DataEntry />
+<Description>Additonal SCPI commands before turning ARB and RF output ON or OFF</Description>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="SecAddress" Type="PartParam">
+<DataEntry>5025</DataEntry>
+<Description>Secondary address: Port number (LAN) or secondary address (GPIB)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>To display parameters for advanced instrument setups</Description>
+<Enum>NO_YES@Eagleware</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartEvent" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>0:Start Immediately; 1:External Event</Description>
+<Enum>SignalDownloader_M9381A__StartEvent@Data Flow Enums</Enum>
+<HideCondition>~ShowAdvancedParams</HideCondition>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SyncMarker" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Specifies which marker to use for synchronizing the source with a client device</Description>
+<Enum>M9381_Markers@Eagleware</Enum>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop waveform recording</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;m}3o24;GV24;ul2p24;GV24;ml2p24;VL24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<IsABus><T>Bool</T><D>0</D></IsABus>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>93500.0079361378</D></PosX>
+<PosY><T>Double</T><D>93999.99997561758</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;W0}St34;LEt34;tXt34;LEt34;uXt34;d2t34</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<IsABus><T>Bool</T><D>0</D></IsABus>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WAVy24;mA4f24;WgTz24;mA4f24;WgTz24;mAxk24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<IsABus><T>Bool</T><D>0</D></IsABus>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>90832.34147239839</D></PosX>
+<PosY><T>Double</T><D>91166.66674585427</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect4" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;W0}St34;FIt34;tXt34;FIt34;tXt34;Rt34</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<IsABus><T>Bool</T><D>0</D></IsABus>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect7" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;TRu34;FIt34;NWu34;FIt34</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<IsABus><T>Bool</T><D>0</D></IsABus>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;EJ24;yq14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;l5{LpxADs34;nus34;Hw1giZQ{u34;WX2ft34</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Display1" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;MA24;p14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>69.44444444444444</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>81180 Signal downloader.</Description>
+<Designator>S1</Designator>
+<PosX><T>Double</T><D>100125</D></PosX>
+<PosY><T>Double</T><D>94624.99999999975</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SignalDownloader}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>S1 {SignalDownloader_M9383B@Instruments Subnetwork Models}&#x000A;HWAvailable=NO&#x000A;PrimAddress=127.0.0.1&#x000A;Mode=Single_Channel&#x000A;SyncMarker=None</Description>
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pS1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>S1 {SignalDownloader_M9383B@Instruments Subnetwork Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pHWAvailable" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>86.44166666666666</D></PosY>
+<Text>HWAvailable=NO</Text></Item>
+<Item XName="_pMode" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>259.325</D></PosY>
+<Text>Mode=Single_Channel</Text></Item>
+<Item XName="_pPrimAddress" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>172.8833333333333</D></PosY>
+<Text>PrimAddress=127.0.0.1</Text></Item>
+<Item XName="_pSyncMarker" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>345.7666666666667</D></PosY>
+<Text>SyncMarker=None</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>B2</Designator>
+<PosX><T>Double</T><D>92500.00797630464</D></PosX>
+<PosY><T>Double</T><D>95249.99999780739</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Bits</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>B2</Description>
+<PosX><T>Double</T><D>-596</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pB2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>B2</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>C1</Designator>
+<PosX><T>Double</T><D>94249.00777475386</D></PosX>
+<PosY><T>Double</T><D>95250.00004133863</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_CxToRect</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>C1</Description>
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pC1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>C1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>F1</Designator>
+<PosX><T>Double</T><D>96373.99772239856</D></PosX>
+<PosY><T>Double</T><D>96000.00268335429</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_FIR</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>F1 {ZDomainFIR@Data Flow Models}&#x000A;Coefficients=(1x65) [220.6e-21,-270e-6,-708.4e-6,-1.24e-3&#x2026;</Description>
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pF1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>F1 {ZDomainFIR@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pCoefficients" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>86.44166666666666</D></PosY>
+<Text>Coefficients=(1x65) [220.6e-21,-270e-6,-708.4e-6,-1.24e-3&#x2026;</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>F3</Designator>
+<PosX><T>Double</T><D>96374.99772239823</D></PosX>
+<PosY><T>Double</T><D>94375.00268335427</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_FIR</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>F3 {ZDomainFIR@Data Flow Models}&#x000A;Coefficients=(1x65) [220.6e-21,-270e-6,-708.4e-6,-1.24e-3&#x2026;</Description>
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pF3" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>F3 {ZDomainFIR@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pCoefficients" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>86.44166666666666</D></PosY>
+<Text>Coefficients=(1x65) [220.6e-21,-270e-6,-708.4e-6,-1.24e-3&#x2026;</Text></Item></Item></Item>
+<Item XName="Part5" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Description>Modulator</Description>
+<Designator>M1</Designator>
+<PosX><T>Double</T><D>98374.99772239848</D></PosX>
+<PosY><T>Double</T><D>95375.00317163568</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>M1&#x000A;InputType=I/Q&#x000A;FCarrier=1 GHz</Description>
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>295</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pM1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>M1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFCarrier" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>172.8833333333333</D></PosY>
+<Text>FCarrier=1 GHz</Text></Item>
+<Item XName="_pInputType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>86.44166666666666</D></PosY>
+<Text>InputType=I/Q</Text></Item></Item></Item>
+<Item XName="Part6" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>M2</Designator>
+<PosX><T>Double</T><D>92499.00782589447</D></PosX>
+<PosY><T>Double</T><D>95249.99991772919</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Mapper</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<Description>M2&#x000A;ModType=QPSK</Description>
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pM2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>M2</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pModType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>86.44166666666666</D></PosY>
+<Text>ModType=QPSK</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0.0000000000000000e+00;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1.7062499999999999e-04;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=4.1666666666666669e-08;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=4.0960000000000000e+03;&#x000D;&#x000A;Sample_Rate=2.4000000000000000e+07;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=5.8593750000000000e+03;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0.0000000000000000e+00;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Data_Persistence" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="FREQ" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000000</D></Data></Item>
+<Item XName="Freq_Resolution" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>5859.375</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Num_Samples" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>4096</D></Data></Item>
+<Item XName="Num_Samples_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Sample_Rate" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>24000000</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Start_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Start_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0.000170625</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="TEMPERATURE" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>16.85</D></Data></Item>
+<Item XName="TIME" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Time_Spacing" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>4.166666666666667e-08</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item></Item></Item>
+<Item XName="Note" UserName="Note" Type="Notes">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&amp;nbsp; &#x000D;&#x000A;&lt;P class=MsoTitle style=&quot;BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: windowtext 0.75pt solid; PADDING-BOTTOM: 1pt; PADDING-TOP: 0in; PADDING-LEFT: 0in; BORDER-LEFT: medium none; MARGIN: 0in 0in 0pt; PADDING-RIGHT: 0in&quot; align=center&gt;&lt;STRONG&gt;&lt;FONT size=5 face=Arial&gt;M9383B Configuration Example&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue&amp;nbsp;Example Workspace&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;?xml:namespace prefix = &quot;o&quot; ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;/SPAN&gt;&lt;FONT face=Arial&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;What you need to know&amp;nbsp;before executing this example&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; How to create a Data Flow simulation and&amp;nbsp;execute it.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;What HW does this example support&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1 Keysight &lt;STRONG&gt;M9383B/M9384B.&lt;/STRONG&gt; &lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;How to execute this example&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;STRONG&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/STRONG&gt;&lt;FONT size=2&gt; You can execute the example as is,&lt;/FONT&gt; &lt;FONT size=2&gt;but it will&amp;nbsp;&lt;STRONG&gt;&lt;FONT color=#ff0000 size=3&gt;NOT&lt;/FONT&gt;&lt;/STRONG&gt; communicate to the HW.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;To communicate to the HW, edit the &lt;FONT color=#5aa000&gt;&quot;&lt;STRONG&gt;M9383B(Schematic)&lt;/STRONG&gt;&lt;/FONT&gt;&quot;&amp;nbsp;design to&amp;nbsp;s&lt;/FONT&gt;&lt;FONT size=2&gt;et &quot;&lt;STRONG&gt;&lt;FONT color=#ff8200&gt;HWAvailable &lt;/FONT&gt;&lt;FONT color=#000000&gt;=&amp;nbsp;YES&lt;/FONT&gt;&lt;/STRONG&gt;&quot;, and &lt;STRONG&gt;&lt;FONT color=#ff8200&gt;PrimaryAddress&lt;/FONT&gt;&lt;/STRONG&gt; to&amp;nbsp;the IP address of the M9383B/M9384B.&lt;/FONT&gt;&lt;FONT size=2&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/FONT&gt;&lt;/FONT&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;dJ24;it14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;FqzGt3I2A34;r0N3RDqRl24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;xJ;c6</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="a" Type="Variable">
+<Creator>WorkspaceVariables</Creator>
+<Data><T>Array_Dbl64</T><D>2;20;1;;;;;;;;;;;;;;;;;;;;</D></Data></Item></Item></Item></Item>

@@ -1,0 +1,3062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;PC;e9</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<PropStorageFileName>D:\EESOF_TFS\SystemVue\DevelStable\Distribution\SystemVue\Examples\Radar\System\Sea_Clutter.wsv</PropStorageFileName>
+<Time>2018:323:15:54</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2011.1</D></Ver>
+<Version>1.21</Version>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Design1" UserName="Design1" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>C2</PartID>
+<PinName>fc</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>7</NetName></Item></Item></Item></Item>
+<Item XName="N10" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>R2</PartID>
+<PinName>Signal_In</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N11" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect20</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>R2</PartID>
+<PinName>BodyRoll</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect20</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N12" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect6</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>R2</PartID>
+<PinName>BodyPitch</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect6</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N13" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect9</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>R2</PartID>
+<PinName>AntYaw</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>6</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect9</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N14" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>S1</PartID>
+<PinName>input</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N15" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>S1</PartID>
+<PinName>output</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N16" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>C2</PartID>
+<PinName>input</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N17" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>C2</PartID>
+<PinName>output</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N18" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>C1</PartID>
+<PinName>output</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect7</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N19" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect10</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>R3</PartID>
+<PinName>input</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect10</MappedSchObject>
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>R3</PartID>
+<PinName>ClutterSample</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>11</NetName></Item></Item></Item></Item>
+<Item XName="N20" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>R3</PartID>
+<PinName>output</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N21" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect5</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>S2</PartID>
+<PinName>input</PinName>
+<SchObject>Part6</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect5</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N22" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect12</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>C3</PartID>
+<PinName>output</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect12</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N23" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>G1</PartID>
+<PinName>input</PinName>
+<SchObject>Part8</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N24" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect5</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>G1</PartID>
+<PinName>output</PinName>
+<SchObject>Part8</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect5</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N25" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect11</SchObject></Item>
+<Item XName="C2" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect12</SchObject></Item>
+<Item XName="C3" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect9</SchObject></Item></Item>
+<Item XName="N26" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect11</SchObject></Item>
+<Item XName="C2" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect17</SchObject></Item>
+<Item XName="C3" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect18</SchObject></Item></Item>
+<Item XName="N27" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect18</SchObject></Item>
+<Item XName="C2" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect19</SchObject></Item>
+<Item XName="C3" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect20</SchObject></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>R3</PartID>
+<PinName>Coeff</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>8</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect10</SchObject></Item>
+<Item XName="C2" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect15</SchObject></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect6</SchObject></Item>
+<Item XName="C2" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>R1</PartID>
+<PinName>output</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect15</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>R2</PartID>
+<PinName>output</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>7</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect15</MappedSchObject>
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect17</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>R2</PartID>
+<PinName>AntTilt</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect17</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N9" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect19</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>R2</PartID>
+<PinName>BodyYaw</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect19</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item></Item>
+<Item XName="Equations" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="EquationDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;qCpCpCdG234;qCpCpCNe734</D></PVPort>
+<Split><T>Double</T><D>0.3</D></Split>
+<Split2><T>Double</T><D>0.3</D></Split2></Item></Item>
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Bandwidth" Type="Variable">
+<Data><T>Double</T><D>1000000</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Fc" Type="Variable">
+<Data><T>Double</T><D>1000000000</D></Data></Item>
+<Item XName="PRI" Type="Variable">
+<Data><T>Double</T><D>0.0001</D></Data>
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Pulsewidth" Type="Variable">
+<Data><T>Double</T><D>1e-05</D></Data>
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="SampleRate" Type="Variable">
+<Data><T>Double</T><D>5000000</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;mt14;el14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;QWh1k68Yl24;mr0N3Rf}a24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;86;;OC;e4</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Equations" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Parameters" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item>
+<Item XName="Display1" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;ocEUzxu8B24;OI8qB74lr14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GJz24;WLUtd24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>1</D></PageNo></Item></Item></Item></Item>
+<Item XName="Parameters" Type="Parameters">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="ParmsDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;Wr0C;dPcPcPcvx0C;1000000aj14;dPcPcPcBp14</D></PVPort></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;5;PRI;Pulsewidth;Bandwidth;SampleRate;Fc</D></ParamOrder>
+<Item XName="Bandwidth" Type="PartParam">
+<DataEntry>1e6</DataEntry>
+<Description>Bandwidth of LFM signal</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Fc" Type="PartParam">
+<DataEntry>1e9</DataEntry>
+<Description>Carrier frequency</Description>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PRI" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Description>Pulse Repeat Interval</Description>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Pulsewidth" Type="PartParam">
+<DataEntry>10e-6</DataEntry>
+<Description>Pulse width</Description>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>5e6</DataEntry>
+<Description>Simulation sampleRate</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="C1" Type="Part">
+<Category>Sources;C++ Code Generation</Category>
+<Description>Constant Generator</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Const@Data Flow Models</Model>
+<Netlist>output,9?Connect7</Netlist>
+<ParentPartName>Const@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_Const</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ConstFxp@Fxp Models</ModelName></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Const@Data Flow Models</ModelName>
+<SymbolName>SYM_Const</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<DocSymbol>D</DocSymbol>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range>[ 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<DocSymbol />
+<Enum>Const__ShowAdvancedParams@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Value" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Value</Description>
+<DocSymbol>V</DocSymbol>
+<Range />
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<DocSymbol>D</DocSymbol>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range>[ 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<DocSymbol />
+<Enum>Const__ShowAdvancedParams@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Value" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Value</Description>
+<DocSymbol>V</DocSymbol>
+<Range />
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item>
+<Item XName="C2" Type="Part">
+<Category>Analog/RF;Type Converters</Category>
+<Description>Complex to Envelope Converter</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>CxToEnv@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,6?Connect1|fc,7|output,2?Connect2</Netlist>
+<ParentPartName>CxToEnv@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_CxToEnv</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>CxToEnv@Data Flow Models</ModelName>
+<SymbolName>SYM_CxToEnv</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Fc" Type="PartParam">
+<DataEntry>Fc</DataEntry>
+<Description>Characterization frequency</Description>
+<DocSymbol />
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Fc" Type="PartParam">
+<DataEntry>Fc</DataEntry>
+<Description>Characterization frequency</Description>
+<DocSymbol />
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="C3" Type="Part">
+<Category>Sources;C++ Code Generation</Category>
+<Description>Constant Generator</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Const@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,3?Connect12</Netlist>
+<ParentPartName>Const@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_Const</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>ConstFxp@Fxp Models</ModelName></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Const@Data Flow Models</ModelName>
+<SymbolName>SYM_Const</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<DocSymbol>D</DocSymbol>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range>[ 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<DocSymbol />
+<Enum>Const__ShowAdvancedParams@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Value" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Value</Description>
+<DocSymbol>V</DocSymbol>
+<Range />
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<DocSymbol>D</DocSymbol>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range>[ 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<DocSymbol />
+<Enum>Const__ShowAdvancedParams@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Value" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Value</Description>
+<DocSymbol>V</DocSymbol>
+<Range />
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item>
+<Item XName="G1" Type="Part">
+<Category>Math Scalar;Math Matrix;C++ Code Generation</Category>
+<Description>Constant Gain</Description>
+<DisabledNetlist />
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Gain@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,12?Connect4|output,4?Connect5</Netlist>
+<ParentPartName>Gain@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Gain</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Amplifier@Data Flow Models</ModelName></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>GainFxp@Fxp Models</ModelName></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>NegateFxp@Fxp Models</ModelName></Item>
+<Item XName="ModelSet_3" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Gain@Data Flow Models</ModelName>
+<SymbolName>SYM_Gain</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Gain" Type="PartParam">
+<DataEntry>1e8</DataEntry>
+<Description>Gain value</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Gain" Type="PartParam">
+<DataEntry>1e8</DataEntry>
+<Description>Gain value</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;pCpCpCdG234;pCpCpCNe734</D></PVPort></Item></Item>
+<Item XName="R1" Type="Part">
+<Category>Signal Source</Category>
+<Description>Linear Frequency Modulation Waveform Generator</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>RADAR_LFM@RADAR Models</Model>
+<ModelID />
+<Netlist>output,1?Connect0</Netlist>
+<ParentPartName>RADAR_LFM@RADAR Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_RADAR_LFM@RADAR Symbols</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>RADAR_LFM@RADAR Models</ModelName>
+<SymbolName>SYM_RADAR_LFM@RADAR Symbols</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bandwidth" Type="PartParam">
+<DataEntry>Bandwidth</DataEntry>
+<Description>Waveform Bandwidth</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="FM_Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Frequency Modulation Offset</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PRI" Type="PartParam">
+<DataEntry>PRI</DataEntry>
+<Description>Pulse Repeat Interval</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PRI_Combination" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>PRI Combination reprents by each PRI repeat number</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="Pulsewidth" Type="PartParam">
+<DataEntry>Pulsewidth</DataEntry>
+<Description>Pulse Width</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SampleRate</DataEntry>
+<Description>Waveform Baseband Sampling Rate</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Bandwidth" Type="PartParam">
+<DataEntry>Bandwidth</DataEntry>
+<Description>Waveform Bandwidth</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="FM_Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Frequency Modulation Offset</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PRI" Type="PartParam">
+<DataEntry>PRI</DataEntry>
+<Description>Pulse Repeat Interval</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="PRI_Combination" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>PRI Combination reprents by each PRI repeat number</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="Pulsewidth" Type="PartParam">
+<DataEntry>Pulsewidth</DataEntry>
+<Description>Pulse Width</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SampleRate</DataEntry>
+<Description>Waveform Baseband Sampling Rate</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="R2" Type="Part">
+<Category>Environments</Category>
+<Description>Radar Sea clutter simulation</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>RADAR_Sea_Clutter@RADAR Models</Model>
+<ModelID />
+<Netlist>Signal_In,2?Connect2|BodyRoll,3?Connect20|BodyPitch,9?Connect6|BodyYaw,3?Connect19|AntTilt,3?Connect17|AntYaw,3?Connect9|output,5?Connect15</Netlist>
+<ParentPartName>RADAR_Sea_Clutter@RADAR Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_RADAR_Sea_Clutter@RADAR Symbols</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>RADAR_Sea_Clutter@RADAR Models</ModelName>
+<SymbolName>SYM_RADAR_Sea_Clutter@RADAR Symbols</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AntTiltAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The tilt angle from body frame to antenna frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="AntYawAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The yaw angle from body frame to antenna frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="AntennaGain" Type="PartParam">
+<DataEntry>40</DataEntry>
+<Description>The maximum gain of antenna in dB</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Height" Type="PartParam">
+<DataEntry>8000</DataEntry>
+<Description>Antenna height above horizon</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Mainlobe_Azimuth_3dB" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Mainlobe azimuth 3dB width in Degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Mainlobe_Elevation_3dB" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Mainlobe elevation 3dB width in Degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Pattern" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Antenna Pattern</Description>
+<DocSymbol />
+<Enum>RADAR_Sea_Clutter__Antenna_Pattern@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="AzimuthScope" Type="PartParam">
+<DataEntry>30</DataEntry>
+<Description> The azimuth scope of antenna in the mainlobe direction. This value is the +/- maximum value away from the mainlobe. The scope is the 2xAzimuthScope. Only the clutter in this scope will be considered. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BodyPitchAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The pitch angle from NED frame to body frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BodyRollAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The roll angle from NED frame to body frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BodyYawAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The yaw angle from NED frame to body frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PRF" Type="PartParam">
+<DataEntry>1/PRI</DataEntry>
+<Description>Pulse Repetion Frequency</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Platform_Velocity" Type="PartParam">
+<DataEntry>100</DataEntry>
+<Description>Platform velocity</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RF_Freq" Type="PartParam">
+<DataEntry>Fc</DataEntry>
+<Description>RF carrier frequency</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RangeAmbiguityType" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Range ambiguity is/not considered. When range ambiguity is considered, the simulation will run much more time.</Description>
+<DocSymbol />
+<Enum>RADAR_Sea_Clutter__RangeAmbiguityType@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SampleRate</DataEntry>
+<Description>Sample Rate</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SeaState_Level" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Douglas Sea State Levels</Description>
+<DocSymbol />
+<Enum>RADAR_Sea_Clutter__SeaState_Level@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AntTiltAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The tilt angle from body frame to antenna frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="AntYawAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The yaw angle from body frame to antenna frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="AntennaGain" Type="PartParam">
+<DataEntry>40</DataEntry>
+<Description>The maximum gain of antenna in dB</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Height" Type="PartParam">
+<DataEntry>8000</DataEntry>
+<Description>Antenna height above horizon</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>6004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Mainlobe_Azimuth_3dB" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Mainlobe azimuth 3dB width in Degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Mainlobe_Elevation_3dB" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Mainlobe elevation 3dB width in Degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Antenna_Pattern" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Antenna Pattern</Description>
+<DocSymbol />
+<Enum>RADAR_Sea_Clutter__Antenna_Pattern@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="AzimuthScope" Type="PartParam">
+<DataEntry>30</DataEntry>
+<Description> The azimuth scope of antenna in the mainlobe direction. This value is the +/- maximum value away from the mainlobe. The scope is the 2xAzimuthScope. Only the clutter in this scope will be considered. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BodyPitchAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The pitch angle from NED frame to body frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BodyRollAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The roll angle from NED frame to body frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BodyYawAngle" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>The yaw angle from NED frame to body frame. The unit is degree</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PRF" Type="PartParam">
+<DataEntry>1/PRI</DataEntry>
+<Description>Pulse Repetion Frequency</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Platform_Velocity" Type="PartParam">
+<DataEntry>100</DataEntry>
+<Description>Platform velocity</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RF_Freq" Type="PartParam">
+<DataEntry>Fc</DataEntry>
+<Description>RF carrier frequency</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RangeAmbiguityType" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Range ambiguity is/not considered. When range ambiguity is considered, the simulation will run much more time.</Description>
+<DocSymbol />
+<Enum>RADAR_Sea_Clutter__RangeAmbiguityType@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SampleRate</DataEntry>
+<Description>Sample Rate</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SeaState_Level" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Douglas Sea State Levels</Description>
+<DocSymbol />
+<Enum>RADAR_Sea_Clutter__SeaState_Level@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="R3" Type="Part">
+<Category>Environments</Category>
+<Description>Radar clutter simulation</Description>
+<DisabledNetlist />
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>RADAR_Clutter_H@RADAR Models</Model>
+<ModelID />
+<Netlist>input,5?Connect10|ClutterSample,11|output,12?Connect4|Coeff,8</Netlist>
+<ParentPartName>RADAR_Clutter_H@RADAR Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>AutoSymDF</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>RADAR_Clutter_H@RADAR Models</ModelName>
+<SymbolName>AutoSymDF</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FilterLen" Type="PartParam">
+<DataEntry>256</DataEntry>
+<Description>The PSD filter length, also the fft size</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="PA" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Parameter value dependent on PSD</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PB" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Parameter value dependent on PSD</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDF" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Clutter amplitude probability density</Description>
+<DocSymbol />
+<Enum>RADAR_Clutter_H__PDF@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PSD" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Clutter power spectrum density</Description>
+<DocSymbol />
+<Enum>RADAR_Clutter_H__PSD@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RF_Freq" Type="PartParam">
+<DataEntry>Fc</DataEntry>
+<Description>RF carrier frequency</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TStep" Type="PartParam">
+<DataEntry>1/SampleRate</DataEntry>
+<Description>Simulation time step; TStep=0 results in use of externally set TStep</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VA" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Voltage value dependent on PDF</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VB" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Voltage value dependent on PDF</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FilterLen" Type="PartParam">
+<DataEntry>256</DataEntry>
+<Description>The PSD filter length, also the fft size</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="PA" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Parameter value dependent on PSD</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PB" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Parameter value dependent on PSD</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PDF" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Clutter amplitude probability density</Description>
+<DocSymbol />
+<Enum>RADAR_Clutter_H__PDF@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PSD" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Clutter power spectrum density</Description>
+<DocSymbol />
+<Enum>RADAR_Clutter_H__PSD@RADAR Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RF_Freq" Type="PartParam">
+<DataEntry>Fc</DataEntry>
+<Description>RF carrier frequency</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TStep" Type="PartParam">
+<DataEntry>1/SampleRate</DataEntry>
+<Description>Simulation time step; TStep=0 results in use of externally set TStep</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VA" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Voltage value dependent on PDF</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VB" Type="PartParam">
+<DataEntry>100.0</DataEntry>
+<Description>Voltage value dependent on PDF</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="S1" Type="Part">
+<Category>Routers/Resamplers</Category>
+<Description>Set Signal Sample Rate</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SetSampleRate@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,1?Connect0|output,6?Connect1</Netlist>
+<ParentPartName>SetSampleRate@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_SetSampleRate</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SetSampleRate@Data Flow Models</ModelName>
+<SymbolName>SYM_SetSampleRate</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SampleRate</DataEntry>
+<Description>Sample rate</Description>
+<DocSymbol />
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>SampleRate</DataEntry>
+<Description>Sample rate</Description>
+<DocSymbol />
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="S2" Type="Part">
+<Category>Sinks</Category>
+<Description>Data Sink</Description>
+<DisabledNetlist />
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Sink@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,4?Connect5</Netlist>
+<ParentPartName>Sink@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Sink</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Sink@Data Flow Models</ModelName>
+<SymbolName>SYM_Sink</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>SinkData</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file name</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<DocSymbol />
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EmptyMatrixExpansion" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show delayed sample as zero or empty</Description>
+<DocSymbol />
+<Enum>Sink__EmptyMatrixExpansion@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InsertFileHeader" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Enable inserting file header before csv file content</Description>
+<DocSymbol />
+<Enum>Sink__InsertFileHeader@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType ~= 4 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Interpreter" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>MATLAB Script or retail MATLAB</Description>
+<DocSymbol />
+<Enum>Sink__Interpreter@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<DocSymbol />
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Overlap" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Percent overlap of data in dynamic graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode==0</HideCondition>
+<Range>[0:100)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<DocSymbol />
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>5*PRI*SampleRate - 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Location where simulation data is written</Description>
+<DocSymbol />
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<DocSymbol />
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Write data from all inputs to the same file</Description>
+<DocSymbol />
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range>[1:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>SinkData</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file name</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<DocSymbol />
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EmptyMatrixExpansion" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show delayed sample as zero or empty</Description>
+<DocSymbol />
+<Enum>Sink__EmptyMatrixExpansion@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InsertFileHeader" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Enable inserting file header before csv file content</Description>
+<DocSymbol />
+<Enum>Sink__InsertFileHeader@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType ~= 4 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Interpreter" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>MATLAB Script or retail MATLAB</Description>
+<DocSymbol />
+<Enum>Sink__Interpreter@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<DocSymbol />
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Overlap" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Percent overlap of data in dynamic graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode==0</HideCondition>
+<Range>[0:100)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<DocSymbol />
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>5*PRI*SampleRate - 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Location where simulation data is written</Description>
+<DocSymbol />
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<DocSymbol />
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Write data from all inputs to the same file</Description>
+<DocSymbol />
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range>[1:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;W}}KS2C;YJ24;KB2C;YJ24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;GCB24;YJ24;8WH24;YJ24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect10" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WNw24;W00Y324;WQu24;Y324</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect11" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WHk24;Gl14;WHk24;GV14</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>2</D></eLeft>
+<eRight><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect12" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WHk24;GV14;RN24;GV14</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>2</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect15" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WQu24;Y324;WTs24;W00Y324</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect17" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Gl24;Gl14;WHk24;Gl14</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect18" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WHk24;G}14;WHk24;Gl14</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>2</D></eLeft>
+<eRight><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect19" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Gl24;G}14;WHk24;G}14</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WTc24;YJ24;Gl24;YJ24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect20" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;Gl24;GF24;WHk24;GF24;WHk24;G}14</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect4" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Wc034;W00Y324;uJ234;Y324</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<IsABus><T>Bool</T><D>0</D></IsABus>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect5" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;my634;Y324;Wk534;Y324</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<IsABus><T>Bool</T><D>0</D></IsABus>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect6" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Gl24;R724;Rd24;R724</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect7" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Rd24;R724;Rd24;R72C</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect9" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;Gl24;;WHk24;;WHk24;GV14</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;Cs14;8g14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;dc7jbLKqo2C;DQDwxu1rm2C;e1ZHYog7E34;d0ktIDmjz24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Display1" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;MA24;p14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Description>Linear Frequency Modulation Waveform Generator</Description>
+<Designator>R1</Designator>
+<PosX><T>Double</T><D>-1749.999816894532</D></PosX>
+<PosY><T>Double</T><D>1250</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_RADAR_LFM@RADAR Symbols</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596.0001220703125</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pR1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>R1 {RADAR_LFM@RADAR Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pBandwidth" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>Bandwidth=1e+6 Hz [Bandwidth]</Text></Item>
+<Item XName="_pFM_Offset" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>FM_Offset=0</Text></Item>
+<Item XName="_pPRI" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>PRI=100e-6 s [PRI]</Text></Item>
+<Item XName="_pPRI_Combination" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>PRI_Combination=1</Text></Item>
+<Item XName="_pPulsewidth" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Pulsewidth=10e-6 s [Pulsewidth]</Text></Item>
+<Item XName="_pSampleRate" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>SampleRate=5e+6 Hz [SampleRate]</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>Radar Sea clutter simulation</Description>
+<Designator>R2</Designator>
+<PosX><T>Double</T><D>3749.999999999994</D></PosX>
+<PosY><T>Double</T><D>-375.0000000000086</D></PosY>
+<Selected><T>Bool</T><D>1</D></Selected>
+<Symbol>SYM_RADAR_Sea_Clutter@RADAR Symbols</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1795</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pR2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>R2 {RADAR_Sea_Clutter@RADAR Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pAntTiltAngle" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1514.113333333333</D></PosY>
+<Text>AntTiltAngle=0 &#x00B0;</Text></Item>
+<Item XName="_pAntYawAngle" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1651.76</D></PosY>
+<Text>AntYawAngle=0 &#x00B0;</Text></Item>
+<Item XName="_pAntennaGain" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>AntennaGain=40</Text></Item>
+<Item XName="_pAntenna_Height" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2202.346666666667</D></PosY>
+<Text>Antenna_Height=8000 m</Text></Item>
+<Item XName="_pAntenna_Mainlobe_Azimuth_3dB" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>Antenna_Mainlobe_Azimuth_3dB=2 &#x00B0;</Text></Item>
+<Item XName="_pAntenna_Mainlobe_Elevation_3dB" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>Antenna_Mainlobe_Elevation_3dB=5 &#x00B0;</Text></Item>
+<Item XName="_pAntenna_Pattern" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>Antenna_Pattern=Gaussian</Text></Item>
+<Item XName="_pAzimuthScope" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>963.5266666666668</D></PosY>
+<Text>AzimuthScope=30 &#x00B0;</Text></Item>
+<Item XName="_pBodyPitchAngle" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1238.82</D></PosY>
+<Text>BodyPitchAngle=0 &#x00B0;</Text></Item>
+<Item XName="_pBodyRollAngle" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1101.173333333333</D></PosY>
+<Text>BodyRollAngle=0 &#x00B0;</Text></Item>
+<Item XName="_pBodyYawAngle" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1376.466666666667</D></PosY>
+<Text>BodyYawAngle=0 &#x00B0;</Text></Item>
+<Item XName="_pPRF" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1927.053333333334</D></PosY>
+<Text>PRF=10000 Hz [1/PRI]</Text></Item>
+<Item XName="_pPlatform_Velocity" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2339.993333333334</D></PosY>
+<Text>Platform_Velocity=100</Text></Item>
+<Item XName="_pRF_Freq" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>RF_Freq=1e+9 Hz [Fc]</Text></Item>
+<Item XName="_pRangeAmbiguityType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1789.406666666667</D></PosY>
+<Text>RangeAmbiguityType=No</Text></Item>
+<Item XName="_pSampleRate" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2064.7</D></PosY>
+<Text>SampleRate=5e+6 Hz [SampleRate]</Text></Item>
+<Item XName="_pSeaState_Level" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>SeaState_Level=Sea State 1</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Description>Set Signal Sample Rate</Description>
+<Designator>S1</Designator>
+<PosX><T>Double</T><D>-874.9999999999993</D></PosX>
+<PosY><T>Double</T><D>1250</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_SetSampleRate</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>874.9999389648438</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pS1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>S1 {SetSampleRate@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pSampleRate" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>SampleRate=5 MHz [SampleRate]</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Description>Complex to Envelope Converter</Description>
+<Designator>C2</Designator>
+<PosX><T>Double</T><D>1120.125000000002</D></PosX>
+<PosY><T>Double</T><D>1249.999999999999</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_CxToEnv</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pC2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>C2 {CxToEnv@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFc" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Fc=1e+9 GHz [Fc]</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>C1</Designator>
+<PosX><T>Double</T><D>3000.000244140625</D></PosX>
+<PosY><T>Double</T><D>-750.0000000000005</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Const</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pC1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>C1 {Const@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pValue" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Value=0</Text></Item></Item></Item>
+<Item XName="Part5" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>Radar clutter simulation</Description>
+<Designator>R3</Designator>
+<PosX><T>Double</T><D>6499.999999999994</D></PosX>
+<PosY><T>Double</T><D>6.103515352151589e-05</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1044.999877929688</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pR3" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>R3 {RADAR_Clutter_H@RADAR Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFilterLen" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1238.82</D></PosY>
+<Text>FilterLen=256</Text></Item>
+<Item XName="_pPA" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>825.8800000000001</D></PosY>
+<Text>PA=100.0 Hz</Text></Item>
+<Item XName="_pPB" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>963.5266666666668</D></PosY>
+<Text>PB=100.0 Hz</Text></Item>
+<Item XName="_pPDF" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>PDF=Rayleigh PDF</Text></Item>
+<Item XName="_pPSD" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>688.2333333333335</D></PosY>
+<Text>PSD=Gaussian PSD</Text></Item>
+<Item XName="_pRF_Freq" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>RF_Freq=1e+9 Hz [Fc]</Text></Item>
+<Item XName="_pTStep" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1101.173333333333</D></PosY>
+<Text>TStep=200e-9 s [1/SampleRate]</Text></Item>
+<Item XName="_pVA" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.9400000000001</D></PosY>
+<Text>VA=100.0</Text></Item>
+<Item XName="_pVB" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>550.5866666666667</D></PosY>
+<Text>VB=100.0</Text></Item></Item></Item>
+<Item XName="Part6" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Description>Data Sink</Description>
+<Designator>S2</Designator>
+<PosX><T>Double</T><D>11749</D></PosX>
+<PosY><T>Double</T><D>625</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Sink</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>596</D></PosX>
+<PosY><T>Double</T><D>232.5</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pS2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>S2 {Sink@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pStartStopOption" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>StartStopOption=Samples</Text></Item></Item></Item>
+<Item XName="Part7" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>C3</Designator>
+<PosX><T>Double</T><D>1500.00012207031</D></PosX>
+<PosY><T>Double</T><D>125.0000000000012</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Const</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pC3" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>C3 {Const@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pValue" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Value=0</Text></Item></Item></Item>
+<Item XName="Part8" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>G1</Designator>
+<PosX><T>Double</T><D>9374.000000000025</D></PosX>
+<PosY><T>Double</T><D>625.0000000000068</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Gain</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pG1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>G1 {Gain@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pGain" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>Gain=1e8</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Design1 Analysis" UserName="Design1 Analysis" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<AutoSave><T>Int</T><D>0</D></AutoSave>
+<CollectFixedPtData><T>Int</T><D>0</D></CollectFixedPtData>
+<DataFlowInformation><T>Int</T><D>0</D></DataFlowInformation>
+<DeadlockResolution><T>Int</T><D>0</D></DeadlockResolution>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<RepeatableRandomSequences><T>Int</T><D>1</D></RepeatableRandomSequences>
+<RunTimeTuning><T>Bool</T><D>0</D></RunTimeTuning>
+<SaveDesignParamsToDataset><T>Int</T><D>0</D></SaveDesignParamsToDataset>
+<SchedulerType><T>Int</T><D>0</D></SchedulerType>
+<Selected><T>Bool</T><D>1</D></Selected>
+<ShowPtolemyErrors><T>Bool</T><D>1</D></ShowPtolemyErrors>
+<Item XName="ConfigurationName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Int</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>Design1_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Int</T><D>1</D></Data></Item>
+<Item XName="DefaultNumericStart" Type="Param">
+<DataEntry>0</DataEntry></Item>
+<Item XName="DefaultNumericStop" Type="Param">
+<DataEntry>100</DataEntry></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DefaultTimeStart" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DefaultTimeStop" Type="Param">
+<DataEntry>100</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>Design1</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="FreqRes" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>1000</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="NumSamples" Type="Param">
+<Data><T>Int</T><D>1024</D></Data></Item>
+<Item XName="Num_Samples" Type="Param">
+<DataEntry>1000</DataEntry></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="SampleRate" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Sample_Rate" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.0009990000000000001</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="TimeSpacing" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStart" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStop" Type="Param">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item></Item>
+<Item XName="Design1_Data" UserName="Design1_Data" Type="DataSet">
+<FullPath>Designs\Design1_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : Design1 Analysis&#x000D;&#x000A;6/5/2017..11:16 AM&#x000D;&#x000A;Ambient Temperature[C]=27.000000&#x000D;&#x000A;Execution time: 26.274 sec&#x000D;&#x000A;</Data></Item>
+<Item XName="S2" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Cplx64</T><D>1;5000;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1U8K7jfs08;dlHhi3Wp00;fSewdN}iK78;tEF}MBiqH70;1RhP3BIUCD8;1JpD02qW8D0;mdtBEUxaaI8;BXNFE4mjXI0;Mcf7Me4oZN8;HWSlf0{1XN0;AR98tAM6ER8;b0OJ6zPw9R0;Wf2cBBohaW8;uGiuHCgpXW0;5mO8Q6{Uia8;u9rer8SXea0;32n2mCTMbe8;3UkxHgQOYe0;LJ9hbi6fIi8;Y1uTfFC3Gi0;Do3RF8Q3ql8;6L2wNozGnl0;yMrRsDksBp8;y1J30Lw{7p0;nAUfsB00Qs8;8M7HR4nOMs0;DsISIo5uWv8;mAr8Ra74Tv0;tup2L{rOVy8;XNacL}y1Sy0;Aidpz2JTL}8;7F02DOnUI}0;gWwyvW44629;NVoJ2IL0321;277arT7Qn49;DXdAqlh}j41;itHDljOTL79;u4k2ilRVI71;m}V5XVv}q99;xoyXCMK6o91;bSUl4u0ZGC9;552N2y3YCC1;geVm2TgHbE9;coNOG4MMYE1;8sLUFSIbsG9;ZSKpBmxUpG1;}RkHXZ}}3J9;GIh{9zoG1J1;yjvQZfKsDL9;bJ9IMLfn9L1;MdYLJIyxIN9;SwMshI8NGN1;D7haay9cKP9;si79mMbpHP1;K2llVlIMJS9;UtGeA7GlGS1;PL}QPvbdFT9;LrlWJNvNBT1;K5{QMZWd6V9;OaHokLAc3V1;bm7LHwsVyW9;h8D5DOdjuW1;5Rp5jZKplY9;u9JjPxfchY1;e8x2kD9cVa9;PJqu260TSa1;66ZIGP5Cc9;p6pl6MSS8c1;PS3j6hrSsd9;4e4yMNPYpd1;75bv}9HBWf9;C6MN}rNDRf1;lzw9cXt85h9;i{q0uVBT2h1;hAsnHr78fi9;EaFcJI1{bi1;JKnWPCzGBk9;Qutw{hxt7k1;p82xCzD6hl9;BHRQTvwmdl1;RRoAWucl8n9;y5K17h8l5n1;xTZM{neqao9;{INTjCjKYo1;SS8hPzOC0q9;Hj{dYaMZyp1;Ax7IN0lLNr9;ypLCDYOdKr1;Bp6ecP1Gls9;HO9D6J6ghs1;ds1gWBuU3u9;NTdr{6rH1u1;rAYdS36hMv9;yPqJngk9Kv1;HHTV6}ghew9;UaYR1VA}bw1;W2vGmlvBvx9;K4b}wHEVsx1;ssb2Gso88z9;1XBB2nec5z1;LZOWlU6nL{9;Foa2y{{XJ{1;Whux3TIWY}9;Lr7woaNfW}1;EP9CeVPjj0A;h56xx{1pg02;syDe6YkZs1A;VIzZ38pPq12;m8827GWE03A;dW8IDSvSz22;V4f7Y2X964A;O0d0SwT9442;89u39WQkC5A;jFQMVUMDA52;hMRlI1JkH6A;TtseKe6EG62;rK9YqkarK7A;Do5Cp9L8J72;i6PeOkhNN8A;HC3eaQcXL82;actzxWF2P9A;6jPMFce8N92;AOlGYBLfPAA;Z6ZIVRvnNA2;oXBbfyg9PBA;}tQCXqjPNB2;fhVvyCzeNCA;ohccxpj4MC2;nC7qwYLKLDA;vG9E{PZ{JD2;1WAPtCbTIEA;WtYfcFONHE2;pWbV0yTlEFA;pBKHkwY1DF2;9SrjA1Be8GA;ia8jY}qL7G2;M3hjTr703HA;VWV6DO652H2;HH0Q}W0HyHA;dcqNtY40xH2;6u3}DG5IqIA;RHYh5G2TpI2;iKQ2m5o6iJA;OAbenIP4hJ2;{iLzilMqYKA;ZcrcWanCYK2;NQgjBjeNOLA;tFw364qgNL2;InFVlshYEMA;YaGbaCloDM2;SYnSUiJY2NA;kFXczHJA2N2;vT83JWZprNA;zDYUl4STrN2;AXnXyXAueOA;60rh}D1ceO2;KzR7kRpYSPA;45ex2ekMSP2;HMgsHwGdDQA;Mm5KDq3ZDQ2;omCsO2yx{QA;Qmqegdu0}Q2;aUQJPm{QlSA;3qfRUOgflS2;l9QghTz2VRA;IMwozUBSVR2;YlgvfsvsDTA;YX7tDwiNET2;ebixfAmzxTA;R2eImsXbyT2;dcFmtpMXfUA;VmyPMC4EgU2;SvTu}qCjMVA;J}gjOXbRNV2;7IRrkD5j3WA;Hg0ldcwR4W2;dbF5ylxhmWA;mZTeD7EQnW2;Kk5DfuubSXA;mZkOYx8yRX2;a0DepB4I6YA;JbYZ46iV7Y2;jv1QQoNbnYA;jKwomD1foY2;DCSsz{P8SZA;c}j7SHpwRZ2;HmiFo3BU4aA;eVzMBbAy5a2;UUbj3JVEkaA;3Ya9n4PIma2;hYmDI0wrLbA;AGuwAWzgNb2;6ktGMVJw{bA;Qemtt93s0c2;sXcwxxFSbcA;}VMuwo1Vdc2;z60hTlp6DdA;eDyYQQp2Gd2;K28QybMOpdA;opEjesMVrd2;{iISpwoJPeA;6SUhidfERe2;ph7CG5YD0fA;IQBtzx4C2f2;NxiN6jIOafA;yA23bj70df2;2LWiV5W99gA;4LBjAUZZCg2;76xS5gFUkgA;IJDs{azPng2;51sdDma8IhA;7I{4BbyrKh2;oEmGBwADrhA;3DBwGKZXuh2;qTWtOupNOiA;IcM}V19NRi2;gBC}oESYxiA;G7n3Aev70j2;vpZs1ZHcUjA;XbvDUsq1Yj2;i9Ty6PAk0kA;3OIMVX8r3k2;Zhbrfzr{XkA;SBKjyPbTbk2;bMDePm123lA;9eCstlBt6l2;gFtMEC4rZlA;Exa81zS{dl2;RFlxs3}L4mA;xZEYFIbm8m2;hzXIwZdZamA;j0h3UGnBfm2;b}V9zSgT4nA;CfNhAiAF9n2;LZiEgyh4anA;e{NPtt}wen2;Iijvjq3Q3oA;K98X0pVG8o2;7XxddlrVYoA;h}Rp3woHdo2;XLXf}CdO1pA;GcmOMFm16p2;{kr8KpJ7WpA;bamLc6mZap2;HZsWr82UzpA;84wcwbTx2q2;WbT2yhbbQqA;Qtdq7EeCXq2;VWX09A2htqA;IlfGRbjr{q2;oXpisPVpKrA;bGEYipuISr2;Hmz7EkH3orA;N3VfmHWstr2;LLcjZhcxEsA;M9mpVSFbKs2;St}ss85BgsA;dMbVy3gYns2;G4K5yz7u5tA;UFzwCJPYDt2;LBmfnVF4YtA;16yO7xXaet2;5YutfQ4VztA;BYvLhhhC4u2;Wur66FynNuA;c2FqM0IQWu2;vqI}XeLzouA;CQX6Sy6Nwu2;e13Xs7huDvA;2{NWILkxKv2;Ikl9lghIdvA;hIm0531Rmv2;p7c41p{y1wA;N4pmgg2Y9w2;Gl4WWnyNSwA;ECd4TeIdZw2;TVGaeFMfqwA;yOt7Lz3qzw2;MBZMDz4qExA;BqGJKXtQMx2;szOjQ6ImcxA;79rax9qhmx2;7RwPCsKe0yA;n76fq{1b8y2;LzAL3fx3OyA;sCbcjVxwXy2;ASPM42uEnyA;O7My8pqtvy2;eU8zrG7R8zA;Et3Lc9WVIz2;zHM7RnJAXzA;Px8{ldPBgz2;Yh4UovcttzA;54FsX8XM2{2;1Xf}X5HRG{A;wqddjwCVP{2;v4RN5h5Rc{A;sOcYrjAYn{2;ogp{nJoL{{A;t1ObOcmv7}2;tYwJWvoKK}A;aIdE2iE9W}2;wzzo7x5}g}A;aLp3bwDdr}2;y}q9PPMm10B;EK0DF2OhC03;gjfG17DAN0B;NoQiTJ2tY03;I7XVN}Zyj0B;zkO7dWxbu03;IpWNhsVC31B;H7TaYGuoF13;Fsy{gNcPO1B;UwcLS0NOa13;BYC9G4Tmk1B;C2MCpPKwv13;epmDtWSE32B;5OkhKxXLG23;r{S5kpirN2B;5yDAZliSa23;SvXSLgdKj2B;Ez8WGkYMv23;W6SzJezu13B;u2Xp4fJDF33;uFQqo1BgL3B;SO2}RGl3Z33;zLWL8aC1g3B;dzqbRTJ6t33;bPwkuu41}3B;2kWGY54oB43;bQ9UqQGMI4B;dyVdndHbW43;KVLYZWtYb4B;u0TMtcVfp43;AcXwAbB7v4B;42qLOn47753;SFxXTpe3D5B;YzDIEt6}Q53;j13Jwp7iW5B;BbDiLxJIl53;ERnq4bG2p5B;9LYH4vU0263;6gO0w7kZ56B;hMfNIxQbK63;t2z{nejFO6B;lOPTanaNd63;gT4H3W95h6B;55YznjFMw63;zDXH1Gf2{6B;EzZ{hfQWD73;6vvit4HZG7B;aOfswsNQW73;4F0z7DR7Y7B;4Ttw3Go8o73;Aamq4Wmip7B;wFmvJUTw383;ucnos32I58B;vNC}uRHkL83;{0OIv40sM8B;vfVGXB{Yd83;Xl}A9aMNe8B;FXCpe9DNv83;mHVhfGmqv8B;YLzfH3Z9B93;8vp9VeuCB9B;}px7WiXuR93;3NcxZyTUR9B;ucCpd7gYk93;k8XhjIJej9B;PyGvuOF30A3;OmoQPXIf{9B;5LsScuInGA3;Ms0QY0UWFAB;rYLB7WrQXA3;YX1en5X6WAB;2}sL78H}nA3;uxemZOBNmAB;aMca}V4U2B3;W6hK2t}X0BB;eVOng0qsIB3;XmHAquscGBB;WMJmQLA9ZB3;uAL{2LlbWBB;dGCVPvuKpB3;kOKR4TkUmBB;M{to19uP3C3;k7mcrh}H0CB;Pe{8vc7OJC3;aJnj5Me}FCB;zzXvIqjFZC3;c2tRSU4HVCB;KBzz2{t0pC3;RWhbdO9PkCB;t4sCWUvh2D3;k1YFE9qOzCB;Z67wDMBHID3;Q1LpVd7HCDB;ApzfrRBnXD3;X7r5YlA3SDB;MdvD7iSCnD3;Uvb0Cq6mfDB;1gyax6XZ0E3;qtMGGq5PuDB;Lkbjoy5kFE3;SiUqxrG}6EB;O6LXgjJFUE3;IIPuEhkZLEB;sNkU1TzhiE3;SC3XKXY7aEB;ki9NPFK5xE3;rJ59PyghoEB;mBq9jkcR9F3;XBqkw01H1FB;rHxJAp}oNF3;kxzbKLlmFFB;p5ghDPb9cF3;EQybgYs4TFB;rwiGZbNXqF3;tN5TXqYVgFB;cgbeZtFx2G3;xBPuEin1uFB;krzK8g0OHG3;BtiWqIJi5GB;JD}}a4gmVG3;2mWhbygVJGB;PEadCLXviG3;Rnz64yFRXGB;8dliIqVBwG3;OP9Wy1T4lGB;7y728BGd7H3;iPAau}HZxGB;5dqtumFDLH3;lnA3b}nK8HB;VjWowglzYH3;Ckd}}IXOLHB;I3x3usrumH3;j1wUemtjYHB;1Dz5DtyyzH3;{eN7UF3KmHB;dmciDxvRAI3;2C}XNsJKyHB;o3zVuexGNI3;F3J0GxOU8IB;uRXw9zEOaI3;PnuvDtF4LIB;BuBRcZtnnI3;pCPEF7l3YIB;5fEH6Qav{I3;r{XE1tOrkIB;r4{hMpjlAJ3;i6S79p{DwIB;CQj3rfr3NJ3;d5dHh27D6JB;4AKZP4apZJ3;29vh2jpkIJB;N0STUqXymJ3;oBzWNaCjNJ3;f7e2NMi0nJ3;zytffXzEjJ3;U3Y6CHRZcJ3;7mJN02OqoJ3;4RAJvn0p}I3;WUL59XVjnJ3;lWo12i6fVJB;OEhhnrU8eJ3;gZaZ69cclJB;XnfP0oGFDJ3;1vxiGtn2qJB;tnlgHkGrLJB;t8jA0XD9qJB;kYMlQiRzgJB;wqLwiR{amJB;9X4OUWoDpJB;OftkdvdraJB;QegyvJG9sJB;FVspmpKc7JB;xoX5}50LsJB;EjEjbEqbIJ3;gp6xEUFEqJB;JJhCIG3zcJ3;cQB9flpUmJB;9ovKlCR}mJ3;j3oWjr9bdJB;aZ9XMuC{qJ3;8ehsaZL1SJB;hwp4jZDTtJ3;zcOBYryXzIB;}b7Vo1gfuJ3;dL{PJgCz4J3;PZQPaLHsuJ3;bfaKHS2rPJ3;ZNNW1uFNuJ3;y{rK}raBZJ3;tbvr4HVVtJ3;u}D}O8w1eJ3;{osq3T3VsJ3;X0Ja{KDYhJ3;ZLsW89YYrJ3;JwnF3X8pjJ3;eZveWc}oqJ3;GzyRXvvwkJ3;mNExHKEMqJ3;sg4EkXnzkJ3;DjrDX3FqJ3;Oj6}{5HzjJ3;50KdpXdTqJ3;D414OT8uhJ3;Eu0jpPT}qJ3;QKVhgqxgeJ3;mOimYPXlrJ3;uXpVi0JHaJ3;1Y7urN1csJ3;LwnLoFbFTJ3;iQZMulLOtJ3;4wPK2BvvEJ3;U7t7325vtJ3;de}hubK24IB;fWs6srUutJ3;kunFrPUIJB;ofFXiDT5tJ3;TNqkWOTbYJB;U7mOfBQFrJ3;yPnf9zAghJB;AIN9RL29oJ3;pC89RuumnJB;K0AHwe2OhJ3;mPOKG3kYqJB;NSJ4256rVJ3;6BZ41EhbrJB;8ZQr0iHFqI3;lJsEM88QqJB;jdFU3N{BNJB;iVOceehkmJB;kwUZ{vqkeJB;Edo26BvJbJB;OHeGakHPnJB;YplFqZqJ6JB;Qg9HbPwqpJB;tgvMsl}wMJ3;6UeOd0osoJB;FS8zGyZggJ3;MDAyPANUiJB;5AJdfXHKoJ3;6XjJQ4tDQJB;otaSXCELpJ3;wPpzF5yM5J3;OoupDpVvlJ3;ThXhvN7IcJ3;Mw35WKaKYJ3;2ljy6KJKmJ3;NpmMRb51vI3;Oh63uElDmJ3;GYiwy{za7JB;SKacq0DbaJ3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;fxBeTdBu08;XaZMmMan00;JZRWXxoDM78;b3}eojzoF70;PvvkJRZiED8;7NC}qvWg5D0;}6DUYMpHcI8;LXRgRDl2VI0;OTKEHb8WbN8;kIK0vCRcTN0;wL7v0ikQGR8;yh0n202M6R0;SpVuTO3fcW8;WFE{YftUUW0;Oa2{c3uHla8;xTyiA}jraa0;JaQm4E6Xde8;U72koao1Ve0;b6dqLmwbKi8;L22V25TwAi0;TJiTkIXDsl8;2V}dg63nil0;CBIwqAhxEp8;h5d1xKps3p0;pHfXTjPyRs8;p6n0xt7SIs0;rgJVG0ErYv8;8i07Y8wnNv0;QAWEaeKZXy8;6D28{RP}Ly0;23RvGGD3O}8;gzgmY9uvD}0;XMb0Ei{n829;j2mQhndb{11;rdmvvvsbp49;Q1t7myk0e41;ErClmTgCO79;O4tY8Z4TD71;7e7ceZHkt99;PmmAX0thi91;JysaCNdkIC9;S3ezgL4W6C1;3{079bv7eE9;uln5BKRpRE1;{VmJ05ZfvG9;hcgdJCLRkG1;jnQBDHGm6J9;akdKzGRswI1;RPZ4aSU0HL9;ZsL54FJz3L1;{rI5LsJdLN9;StWqQnaE9N1;H8f2XkvYNP9;EWNGuRlLBP1;i{zvSsn9MS9;n{Gpod4c9S1;YWnF}hC8IT9;o2A3d94s4T1;jefX8cH{9V9;21L}zZdkzU1;Laz7XQmO0X9;Q52puX7hoW1;aIxdcz1KoY9;45jtvf{naY1;9j8svj5EYa9;Zq5QwywbKa1;gMR4nhxDGc9;gQAeNObG2c1;p}6MtFbyvd9;GbzR3yo6jd1;mjM8NgykYf9;1hWwglIyKf1;VQlpVPuW8h9;}O}LGm5Kxg1;PjyxALPBji9;AwNUWO8DWi1;9mWpUS}iFk9;JNOkv2cZ1k1;Sv4efFBZll9;sv{pNQ6SXl1;YSE01pFsCn9;rdwzdx{n}m1;qsnWSGiJeo9;9pS5aLpjQo1;9uOzDDRx2q9;rBIeHoWmqp1;ZoGMhpJKSr9;9muTpWNvDr1;70JcNmzJos9;VwtoBPE0as1;na5rgcBt6u9;OmFpd8fxut1;rw6}nT2fQv9;BhfHwQa0Dv1;pWMxtzX2jw9;GBrcJozaVw1;jnYvOuwgzx9;a0974vD7mx1;I1moF7FUCz9;jd6Iqs7v{y1;etqGecRjP{9;Rzgx7JntB{1;SurMBAfub}9;AItHkkKjN}1;F0D23zsbn0A;m1wZbD}2Z02;qcuL{k{lw1A;t8kH4Duyi12;vbqSnB6H33A;64gQIZHsq22;3jkSmdNLA4A;VmAN9xWVy32;OCnkZDN6H5A;u7y0jg9W252;rdVuUOG8L6A;n9LWnXt662;pe13zV{tO7A;n9ZStxcxA72;FNWtqTxxS8A;fi0qGOmGE82;zMOD5rxzT9A;GBr7yEUFG92;8LdPjxSlUAA;C{Ypja9hGA2;3{7bukACUBA;ZjBfGw}OGB2;ajigXadQRCA;VeYeQEquEC2;eoI8uIIgPDA;hqbxJuIxBD2;M1IEJUKGMEA;1IWdcw9G8E2;U}UU3hXZIFA;8XvVGP0G4F2;opOGrJRnDGA;KIe7cCQH0G2;oJw99HK07HA;Si5pg29CvG2;N7NsNAg81IA;aQM6DL1poH2;8X1tVVBeuIA;qJXjDYR4hI2;g5hc}8j5nJA;26Urb9fqYJ2;XIgDCtmwcKA;xcWSBE6JPK2;Jjv2apLkTLA;ZtNMVqORGL2;BRdLJHxfIMA;Lhw}QqBi4M2;rz2ZEHRh6NA;rfDuQbuDvM2;WkZx{m7kwNA;F51JWHZojN2;VDMmGx7YkOA;YOf4}gI4XO2;JBhN7zVxWPA;rSmGrml{IP2;4RZTWLoEIQA;ZQtpLu}V4Q2;3hWO{0v43SA;yI4FWh2XrQ2;hg{3h}3QpSA;SOSphVMzbS2;n1fcGJGDZRA;S6vgn9PpLR2;YK76E9BWITA;zyH2Rck45T2;JAA3WqzM1UA;fSkJgLjrpT2;UtoTl2EllUA;AFatRMrCYU2;L8ofbBIIRVA;JvbmadvHGV2;X7cMXfhb8WA;SOynfSBQyV2;VI5jtN}sqWA;SdDulrGCeW2;bVR1kNiHXXA;CqiLR8K7KX2;tDxYtS1zBYA;RhsFjiaL0Y2;loM}b0M6sYA;kdFziSuxfY2;IA}KX985XZA;tzk7LDC8KZ2;Pm173Veq9aA;fpcDyjZ{Z2;H7HmVSL6paA;Z9KoRAiica2;A2DpmxufSbA;BVgRhdIWGb2;5H}EjKlc3cA;wM4DgJWtb2;rQc7fYmEhcA;}4IiLrOPWc2;6yvy}I2YIdA;2lW5NWrQ6d2;QEi6IyXkudA;iH4mr9N3kd2;tBFcmDNBWeA;p2bELFGmJe2;UBI4fd0n4fA;L4cepHYUve2;5{S58c4AgfA;CJNnr}u7Wf2;iSQYxF0BGgA;Xfb22rA24g2;P83{GWiepgA;3I8Y0PVReg2;LH5Io3pQNhA;SdpmKfDJDh2;QSxUbqMRxhA;HomMc{HGnh2;9Ue9jXtcViA;rMFmu{L{Ji2;bJYdCSGv1jA;575XW7zksi2;tua1p7HxZjA;{2ZOHlaRPj2;8k9V{{sq5kA;gtnOhxF1yj2;IYWFVSUXdkA;lqbGKqzMUk2;bEspQsvy8lA;utw5bp0C0l2;vaAeIOZ3glA;stl0W9j}Wl2;CBrxk4ioAmA;4scvsrZa1m2;m5bAb6d8hmA;aIRSjTDvXm2;j1VWUzl4BnA;ZbNC{W0z1n2;iHma8GhdgnA;nyDhXE3mXn2;dIwEgA2p9oA;9jlbwu9J1o2;gg3Z}HPfeoA;eE7FH{ndWo2;sj1NQm3E7pA;YDofMIrV}o2;6OLFQGqabpA;II84XxsSTp2;RZHwh1jn3qA;rir41Qq8xp2;s7RuvVmuXqA;KrrAqG1iOq2;EgXypBdx}qA;4Lfa7JcAsq2;2d0fj9b8RrA;}tQCSjHfJr2;fFp7{0IUurA;3SZVg{ACnr2;it6aFsP1LsA;e5CzQrLjDs2;CmzHYGQrnsA;JbWkrelMfs2;ldUazo8vDtA;ut}FbjAO5t2;a{1ptZ6metA;kG4XI9lpXt2;{cgQxJAG4uA;RVC3SpWKzt2;5b8rrLDOWuA;yEv0jvrsNu2;T1rzwcwBwuA;xXXrjf6Cpu2;N4cZYGciKvA;lP1QR5LXEv2;iihVViFBmvA;gDv71g70ev2;Bvkw4cP09wA;VBF2Ovmg2w2;PfCQJpd7ZwA;ldtTjeQkRw2;1QufVC5xywA;W58QEGKtrw2;hfN9f8OfLxA;SFFVUcuTGx2;zP7j1C32mxA;N4AR1A{Yex2;qwDndpFW7yA;a}ZVqEv62y2;Go}7CdV3XyA;VsQxC}YRQy2;lmmVUKBWuyA;fFNREsf7py2;DC4Nz0SSHzA;sW4mcPxNBz2;KeNQj8MZezA;1tulI8{PZz2;4rPFtlC81{A;3}MR7b3Gxz2;74ySa{{gN{A;WCBHWg}yI{2;NxXcjf6Dm{A;}rw8BjZ7g{2;pIaWa0s{5}A;S6R1nO9r1}2;uVU0{r2ZT}A;6Ia6kSy7O}2;X{L3bVYhp}A;QXgtXb6Bm}2;H2Sc2b{{90B;ST6PzbfV503;sgo701E0X0B;Xra{HlHKR03;Npt3Axw3s0B;l9207HTVo03;V}lxU{IOC1B;957L6uVy713;ZWwu}NQ6Y1B;tYdVp3qlU13;xy3XuONvs1B;{NrUfRwap13;qlRXddRkC2B;G4WiakPk823;QXGksZwtX2B;14Z4R8O{U23;EEfTx094s2B;DADDRopFp23;5Ll{PDV1B3B;xKmeaDnk733;7L61gypQW3B;bbtHrR}1T33;3rj5jp4pp3B;fRK3Fmldn33;B9eGtDi74B;9XwgDGdE543;BQj702j8R4B;b9TOU9TOP43;sTS9euLbm4B;WBpI2Kw7k43;eDt1b1yP35B;4exxKJfl153;c2kPYdkYM5B;6hT9pmEmK53;2FzX0b{}f5B;6pth1PN6e53;mvbrEranz5B;rcp59WNox53;In08zlVxG6B;zlRFEUAqF63;I0mtNqd7Z6B;Lnqeitd5Y63;Cydf5sSRr6B;ziBw}BKSq63;RR}JmOzu77B;SlzhHhQw673;oHHLVR{SQ7B;WSL76MxXP73;dCJm2524j7B;4dPKFnbGi73;5s8T2YTl}7B;IeJWlfv4}73;}B3AwxCEH8B;Jyf{bzZ{G83;dCmyV3SaY8B;AJ8N0CgSY83;9pOujtKvp8B;IqkR3vhup83;3}0F{qpB59B;soeBHGXK593;kStNYfmQM9B;mwIDwk}jM93;CBWT605bd9B;NXH2Yix3e93;dWPkuBjfu9B;K2{Zd9ALv93;K4DXZofd9AB;U6AybWYWAA3;SavyBG1UQAB;rV0lML0bSA3;5zxJqH1ChAB;1PMWU}aXiA3;zqPHP30nxAB;}IOOOBPLzA3;9k6aXETCCBB;qCXFBFk}DB3;li1h}d2URBB;3HEeIG}VUB3;oF2}ngabiBB;ZS3hitnrkB3;oTpNzV2ZyBB;BWVFBps0}B3;341wjpbMCCB;25oas2A1FC3;lAx4NOY0RCB;Hx4j0posUC3;ar1DsOLXhCB;8GrOu23YkC3;hH56zRavwCB;H74xrvM3{C3;uJ1ucXy9ADB;poiE2jJSDD3;a8qUCeGJPDB;xHBPttcgRD3;nfeAvVOMeDB;JfbSGg4ohD3;UAqW1CFKtDB;ZhNshlcowD3;37iVPgnD6EB;2CHV9oAj9E3;TXduORz3LEB;F1zc8ymYOE3;bN10ALltZEB;yfCzVRQKdE3;jw{p6F2goEB;zqzktE83sE3;WcREDAkS1FB;nFhMsgvl4F3;JYuWMKdDGFB;GVy2sShSJF3;hnMX1vw0UFB;yBrKyYM7YF3;i4YHwXsfhFB;IypYkZlpmF3;3uXwtGCNvFB;iVN23vB3}F3;8UInhx97GB;Y9zkDK7ZCG3;FNsBfBv2LGB;rhy64jP8QG3;qOyh19k2ZGB;LFd8qa}pdG3;4mKFNNv9nGB;bRq3NlfcrG3;M{H90QVn{GB;u4eSafzW3H3;22inDgvUBHB;FhbmzLZHH3;YJ}0oH8ROHB;qaBNKd6RVH3;m3MlES3fbHB;pj4FHIQ2iH3;bCdfBgM5pHB;bTkK4YbvuH3;5WSj7zYm0IB;ickILhO16I3;AWz1mO1KDIB;8qwWKvNPJI3;yOWWh63YPIB;icQkQKz0XI3;QhRV9Za9cIB;w0Z978skjI3;4F}{5au8pIB;y36seIwtvI3;}zBaiEEU0JB;Yb4JIWMS6J3;PyHnumcFCJB;RD0wEhKNJJ3;jfZ4uWj7OJB;Sqduv4yfWJ3;X0LghYJXaJB;8o6JnadYiJ3;eRYB1lnILIB;5obCDsM0oJ3;6mBlzmpcZJ3;eLh0iNbHlJ3;i{p9inTzmJ3;oQU9bNemWJ3;ueAwVNLMpJ3;7rrvyBObqIB;MdzWvwOomJ3;asyAX09IbJB;McIPFk{kaJ3;xJhADL5YnJB;LEkv6KNhzI3;V7Eebw2oqJB;378KQDOdSJB;ZnIdCtkDqJB;E8gCxhBriJB;C1KQNN7SmJB;etJDHnwlpJB;bUgKZ5KtaJB;7z5JVbHZsJB;i60Y{e8zAJB;drpl9wBysJB;ySaWG6r7EJ3;v5xzLhnLrJB;Gj9uP3qTaJ3;9OTBRWMKoJB;xBFBEweBlJ3;835BnEGwiJB;BymNqjYgpJ3;ydP75DiXaJB;1D3kuZ2VsJ3;NdSyphZaOJB;C0D4IQqDuJ3;m8sKIxz}2JB;wjvz9qm5vJ3;T49GvjdjhI3;G5TYhSvMvJ3;cq9WIePwBJ3;Ei{E3KCGvJ3;jrZvaktrLJ3;6ptGCGH{uJ3;5AjeV4f7SJ3;{WBRUNoguJ3;48i6qNAsTJ3;NmMpg9GRuJ3;XyeJuXU5UJ3;F5gIlj3MuJ3;uinKVkGuSJ3;TAin1mbOuJ3;LKoBIMZFNJ3;puui16LXuJ3;D{4yonvBGJ3;Rw{pmtxguJ3;T4ERW}U}wI3;lL0oY5MjuJ3;cbxcP36npIB;5}XNc}}TuJ3;NFaiKbtbIJB;ilAw8VLmtJ3;ND{ruGLrWJB;KgxtAbjMsJ3;}DpmAH{feJB;ywmoGuy3qJ3;mpPWDmp4mJB;ngBoHQcjmJ3;Z8p46bGpJB;6P4a2npTeJ3;W4VBsSAQrJB;rYEIcy}mQJ3;yguNQJ12sJB;KrP8xazWMI3;vOWRnBWiqJB;AHBXrGPAPJB;G97dHc49nJB;Dv5bDY31fJB;WEM8Nd1rcJB;TfOR4}UPnJB;ewha3nznFJB;M0Ljkrs0qJB;YN0rtOQ0HJ3;kvDAjwVapJB;gupYD8PqdJ3;X82oH6gQlJB;EKM4f2LRnJ3;xZkMdFrUXJB;ufUIbTJTpJ3;je5NVkny8I3;Y6kVdYkDnJ3;QgNTKRmPYJ3;z}far3XDcJ3;}Bp7oCCzlJ3;7FtpKFdY7J3;GJGD2lrUoJ3;{2LgcKVcGJB;asAotEOWlJ3;Ij7GvBbKPJB;K9cn0VuGXJ3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;RbhS80Zv08;Q7mSn02l00;o31cUeBZN78;vURAc1DiB70;EHP}UyKKGD8;Iwp{A6Pd2D0;QYutqWnldI8;VWlj0NDLQI0;YOLSuFB{cN8;g5BVkxuoON0;vqDzEKqaHR8;n1KgCwKV2R0;g650fw3IeW8;I9erVC9xOW0;Q9ZuTbFpma8;fa3kJ7rrWa0;fZHk7tFJfe8;ihn0btSoOe0;frWYTNpBMi8;rAwdioZG5i0;yVbmAJKztl8;V0SeR5Ucl0;NG0duXviGp8;l8AwOEYh{o0;jFK7zhRIVs8;pnusqZ8ACs0;B652S26Oav8;{EJZr2Z{Hv0;7zZ0PZZ0Zy8;lEWWoohRGy0;KimMJZK4Q}8;jjJnkTT86}0;krsJpNKuA29;55u9f8lPs11;nPLKRF1Hr49;ssO8JksPX41;jSu8GW7IQ79;Bu7qwaL8571;md2iW67ov99;XV1vSUfNa91;XVWBdjSNKC9;iFGbAeae}B1;cNGAgNpFgE9;f4exP4u2KE1;IbodqpxwxG9;qzjvAnQ{aG1;oMjgy7{n8J9;2Oc79mNKoI1;XJpWu4zXIL9;CKXnMBqzwK1;f38IVZqZNN9;rrt3n9Du0N1;gP1{rzBhPP9;Uq8NT5Q72P1;vHm{oUbAOS9;onFFd76p0S1;bRKexm3oJT9;70o}0Yf6xR1;lwhq3gaMCV9;wrCKcES9pU1;46p}8MEv1X9;bW{zkWHrdW1;taZixwF0qY9;5s{iUfuHQY1;TyEHG0AwZa9;ZSTRP5bp9a1;ta78pxTkHc9;utUzdpMhsb1;DhojhPaNyd9;q9fBCUawXd1;9YN}NwEVaf9;u9sq3RZZ9f1;nOHGbjJqAh9;5KQMm7SXmg1;I4EfbPTxli9;H2IzRe5RJi1;q6A3OZTMHk9;R8KzCmYuqj1;2LBSouPHnl9;srTb9UXZKl1;sEslws2cFn9;ZM34D44com1;Zq6xVxJego9;ijRQAmr0Fo1;1wtQaeZl4q9;AxTgYE9wdp1;WDVFxORyTr9;a0BtRSQ51r1;x6s4rL35qs9;Lok2nHAiMs1;lyQQzRs49u9;1U0z6pZ4it1;NE5fKaiETv9;t8iuDacD0v1;pDWhs5ltlw9;A2CrrbUXHw1;vhIEQBNI0y9;HaRwW{ZmXx1;uAgU{tBHFz9;8lWigNBwmy1;QxRoZaeFR{9;nRft5NpJ{z1;BgNqlEE3e}9;iheA3iSd9}1;ZUFTUZhLp0A;UZAxDYrRK02;ga53MxhQz1A;yxgAL2LvU12;tmTad}YC53A;r71qCmT7c22;q}}C6ho{C4A;cRTlpUN3k32;9YqXmXrqI5A;64tRWm2Qp42;1TWHBOMHN6A;O}z7Lzpst52;NAhwrE5QS7A;njBZh{nyx62;alOv1TpoU8A;a{}5zCvF}72;HZyX5CWXW9A;SG8KBaAi092;DCc}FIHzWAA;86Dx{5W31A2;cQ1o8iIgWBA;EU6Jbx8i0B2;5RwfNMBOVCA;}aYY5eGK}B2;evWN8NKMRDA;ywLdYIhCyC2;{45uxpHcOEA;P6LGuB7PuD2;YJt0yCXKFA;KMSu1odIqE2;DV1WrA5UGGA;7QukvppFmF2;4gVszBpT9HA;q8hjv2G4fG2;zFdAUhc{2IA;1JRi4pKfYH2;WIaYfIfIxIA;}iUro5LnQI2;KoKyDVgyoJA;9IPfPZ}ZIJ2;{Z3OADESfKA;nRAqsKWu8K2;whM8wcrVWLA;wqc0xZZ80L2;9CwsSy5kKMA;DRiHqkGGqL2;jzFl7y5D9NA;Ke5qu4XeeM2;Qym{EcmjzNA;MICz4}o2TN2;Dn04CLF}mOA;KhumO83dGO2;21WqMHTsYPA;K5zFBILR2P2;}R2lnJ3KKQA;jIFMcz}upP2;pzIG8zFH5SA;Na{WGEQsaQ2;R0b}6QpfrSA;OTTqr1LGLS2;JAzZJ8URbRA;sP}PHdP55R2;GTh7o15hKTA;CWWzWnENqR2;SiCahhBQ3UA;vgpQ1I5AZT2;4EWTojPmnUA;}k4j2GaHU2;Sj43VF7hVVA;IT{7gWVQ}U2;sv15LFXZBWA;l6tvDHsPhV2;40V4YfCPtWA;EHoi6GOLNW2;QEiLZO1PZXA;2vnqBwmP3X2;wnjpnUcPFYA;bcdZQlZXlX2;cWlYzi1suYA;NhWyT{}1PY2;23tJigxDZZA;98CseirS3Z2;t}piE025DaA;IKCH6pUXjZ2;DfPgdufXraA;Rcl0ZOUyLa2;tYa8HeXCVbA;fHL7Nk8y}a2;5xd8YRg86cA;RGhTYGxmcb2;ZsvACWSnkcA;uSB2YYooFc2;Aqhh5IXzKdA;Y0GP7Cimrc2;3IPvadf}xdA;Q8SQ5CDDTd2;SaLM0uHLYeA;E3ryHRKE3e2;20iMGVUZ7fA;xnAsEb4ree2;cNW4NQjijfA;yK8Fp0QUFf2;OL4dIbHOIgA;yaOGKcYbpf2;FilwCBfLsgA;yKe8mNCyNg2;dywdGvngQhA;3Ed0kWqlyg2;1I6XkX7I}hA;2K5W22VzWh2;qePjVg92YiA;Ee0cDc3h3i2;nu94fKER4jA;ETb2iUxSci2;HBUV5pHocjA;9kaEPJhA9j2;ll4fZ42}8kA;PPMabZQnhj2;Us9vdPFzgkA;Vq69yC9AEk2;{mM{tk1eClA;4YPG2hZ7mk2;J1WEnCDxjlA;uh7O}QczGl2;G7D7SoZpEmA;vNGVpM7bnl2;RrA{TY2FlmA;G7ZaaAeyHm2;aqAuQ7vCFnA;2NLw6TN3om2;DBpOZBhjknA;dbDCR9JvHn2;wS0VgfBpDoA;pT5UyQ7Vnn2;Bm{kyYIWioA;wdhRjQAsGo2;OZHJhbkuApA;JTek9GL0mo2;ovnQ35q0fpA;vUHYbAs}Dp2;toVz2hAz6qA;{R7vBE{khp2;L59B9fSoaqA;Uhy0nsKJ9q2;xEsVy{1b2rA;3MxRt15ocq2;qsqM0OzOWrA;t79CU82G4r2;Jq9k}HHZyrA;Ode27DSnXr2;4hFi6rdZOsA;BL6LFQap{r2;iYWmwn4tqsA;sc8CwmkNQs2;i8EK4SMWHtA;Xyq6NuGJss2;1dkgudp1jtA;mUkg}qbeIt2;}A9JuUAo7uA;58Yp12ankt2;siOTzofGZuA;1X0vcNW79u2;eKdE7NXr{uA;oTvIWH0Hau2;wuUQUn{POvA;hmfM0ghA0v2;zDFXRtU6pvA;U2wl3qUWPv2;8WjPUTXaDwA;zmDNowjvpv2;DhkvFD2fcwA;zwR9F57kEw2;YdcDTbd91xA;z5uYf6HTdw2;fJl9bNLjPxA;ZPRcIQHk1x2;yqt1jSN4pxA;B5}V68DWQx2;C2SjSFn}ByA;WFyHNNIdpx2;4vCkbt3MayA;ArOoAXDlCy2;fFP0d}WHzyA;cd8pZazray2;gKhcK3esKzA;CXlY4O0yzy2;q0UHsU1SjzA;JbOltWgILz2;yIZg71gZ4{A;OMm3OTj}jz2;FkI61z6TR{A;Y2vY3{Tx4{2;B93m0jdWp{A;Ha96QzoxR{2;{qZKHXRWA}A;Vdh7EBHqp{2;xDgBcW{rX}A;A2pvtrTvA}2;HUn4zchpt}A;vpLB7Sr5Y}2;uMRNt{{UF0B;{q8T7Rj7u}2;wGc2Xtjea0B;qb4n9dDuF03;Xc5tqKPqw0B;NKaQs0bua03;rRKzkHqHH1B;jCzCdfK8x03;LddKSEw4c1B;hDcX4DLUH13;HxKBdjJ{x1B;4ylHlXeKc13;U2wkamzaH2B;Xh1F6q4Iy13;pVcaBlLwb2B;WTv3BXPnH23;4U}rc596x2B;wCbtEK}9c23;7z2o99ndG3B;hyHnGurPx23;fesjRqwEa3B;7FWSrMAqG33;VbU95vARu3B;uPr7oqVUa33;C9VxR43JD4B;301EGnjlu33;{1txTuQSX4B;fmPMsQWhD43;{8g1DrEbq4B;lw1MJ4hgX43;WeIbCPA885B;xdfgwTBuq43;iF3VHh55R5B;sIrTVkbV853;bvKLrhFEm5B;ptronovXR53;zgz6pFCd26B;JfIz7JtVm53;r4tiyI8DL6B;W2NGHpcy263;h3lDoIX}d6B;vW6CVO}cL63;U3XgIFXzw6B;K4dieZYUe63;eEZoz1{5E7B;o41R34UYx63;5pRM0jihW7B;DVoua3hnE73;BFcwUm0Oo7B;ufXRcxM5X73;OaxCl4v648B;Fsnb3Cxro73;qswp6KBtL8B;X{tRfZWf483;x9mjaAcdd8B;WMdl9UyUM83;SxA7muoMv8B;DswAzkyKe83;DyiHY6N3B9B;jriQn09Aw83;rdlw{nshR9B;Cds6Kc4zB93;mEkZMMsEk9B;ugUmgOGiT93;JBRjnsyg}9B;ENW8R}CMl93;aK3zv3SVGAB;v0TA7VkR0A3;pRVxXPg4XAB;ZxJBKXJAHA3;tfu898ganAB;RWvc}6CpXA3;nXEMv7z{1BB;d}0u{woMoA3;JXAfF9CJIBB;ceosrhdq2B3;Xv{EOM6XYBB;VztAjyFCJB3;S2l24fXeoBB;7qcfqhNTZB3;{l4pLqQf2CB;Z8q{bjndpB3;kIEp2YrZICB;oehrOxNh3C3;FThDX4yNYCB;9zrXuLBeJC3;aqmCPz{5oCB;pahb9xJUZC3;JmvEcQKk1DB;UucaAH0EpC3;tgNa9hNHHDB;5He3r5bt2D3;YI6MTDelWDB;V7ggvbRSID3;WM2v0ve9mDB;L04oYi5wXD3;W6nbqA{}{DB;N8H9LD3KnD3;I7x3FXZcDEB;Q34Whwwf0E3;G{qXbCH8REB;GCirLLfuFE3;v2aMbJMcgEB;gLjZHuoNUE3;JLM{Y802vEB;F6GbaxaoiE3;sVKg9mOR7FB;I2H5nnGAxE3;BsjETqbsLFB;l9ice15W9F3;N}M{ObdHaFB;rJTU6HCrNF3;QNqgI7OkoFB;Cll2SzhAcF3;J2NLclgD1GB;}X1WWXZXqF3;suMPXUNWFGB;tpOIkghw2G3;bIeq7K0jRGB;mK}7}xrMHG3;PQQFPpB2gGB;ouGh1zOjVG3;Z8{pQsdWtGB;}jxpP{ZriG3;9duSNAr85HB;d}UNhk37wG3;hivP7A8xIHB;9wjCD{WY7H3;LdqOk3gtWHB;KkyTQGN8LH3;FkKPyAqyjHB;ZyhRxzruYH3;cyyoUTUwHB;{IjlBW1qmH3;WUGo6DkJ7IB;B9QGR6fpzH3;ESAT{EuSKIB;jpwSSr2KAI3;B3ihrh3sXIB;v0Ux0lc8NI3;nK3uWVY2lIB;L9TJisVGaI3;QniWDiuuwIB;KcYYmHmgnI3;odnjdDwC7JB;bvLhYvci{I3;gCSC}9KyJJB;uROrNe0aAJ3;LcBk1Tp4XJB;CYekGTMvMJ3;dbB3dnE8jJB;GznGtFFgZJ3;h9YR{y6CQJB;O5sSbiLnmJ3;NY2frulEEJ3;O2ov}Hr3oJ3;12KVhtZ0gJ3;Mr7CIugThJ3;WIIYrftboJ3;O9cHkoD{LJ3;}NELM7SSpJ3;LDzNgl0hGJB;bL3kB1VblJ3;3K8IGbIjfJB;YdYCCkbtXJ3;CCUn02KsoJB;tCicv{{kWI3;I{tOV6LMrJB;CcIYRslLVJB;9S00CYDPqJB;I4ML3WhqjJB;a329sjdmJB;I30{Km3}pJB;nF9gapgxbJB;{Sy2vRWqsJB;PYZGbjdeHJB;M1vIYvlZtJB;VfVMpUXi1J3;VHr5Yx1bsJB;NLKZyJOaWJ3;8uOFnvONqJB;lAky}uiugJ3;2}s0{0EQnJB;VSTxUPZYnJ3;z1CrRjPIiJB;sww0QlnbqJ3;pGZ9m9kqbJB;cz9CyOmjsJ3;ZQ{eP8tsVJB;4l3jr9g5uJ3;dp}JNuftLJB;xj3yZeWvuJ3;isg47UqACJB;g7jAMkPKvJ3;Bk6Y}z9S1JB;7E3R2sOVvJ3;z6SqNL1NtIB;PcMDzuuWvJ3;YETNWOQxrIB;1AZPCvSRvJ3;vDfQEbdS{IB;j{cVumdIvJ3;cS{dhUwI8JB;afhvWyA1vJ3;QK8fiMc{IJB;XveZ7e7ZuJ3;R7ZKKFnuSJB;WN8}Nj7ntJ3;uTeAjloGZJB;O3kVMq{XsJ3;XNdjPG4BfJB;d3siZjXhqJ3;zz2F51iHlJB;ROOOGuw3oJ3;8tm8}LxWoJB;esI6x}37jJ3;QEU963mtqJB;TPUrXIiEaJ3;bCo92zhJsJB;2iNLlj0FJJ3;cYrvfE{PsJB;hI2nl6BoIB;JeTD7osoqJB;stV3FuwCTJB;qjO{GoNFnJB;eVCBmV39gJB;nP98qSGWdJB;CadF7CAhnJB;grOYnC2lIJB;pD74N4tHqJB;sg7hhG3f9J3;6wgTPy9qJB;RDkJ2TSYbJ3;JPkmjT0vmJB;tNT}2PUdmJ3;{dwoLxcEbJB;mNSsoLJPpJ3;H6wNYQiH1JB;H{TvNEDCoJ3;9MB5a3LiSJ3;WasyJEcxfJ3;votGuLMCjJ3;vZuQIbmYJJ3;}}of1wfroJ3;TkypnB8DJB;8OTUfB{MoJ3;lhW9}HviYJB;V9tTnTahgJ3;1ChqEAysXJB;CWmaJhKdNJ3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;aa875Hlw08;RLW9Wpjg00;3zzgQbTiO78;kZOSaMDN770;99KRy1k8HD8;nAVeADWo{C0;hPyaD6tzeI8;po2yTH4MLI0;r3LF}Z6BeN8;5KVpoMtiJN0;bdsVGCVWIR8;BaEmY8woyS0;et4tupLbfW8;OtNzoL71JW0;ipSKOmHjna8;zYfoxiGBPa0;m0EmyF3hge8;L}VxG5H9Ie0;y3JdY5}ONi8;qmK8qA}T{h0;3zS6gikGvl8;Y6NDH20XVl0;}uPCii}cHp8;Sr6{q0z2ro0;DXr6T9XVWs8;{af9OTju2s0;8ucq23aUbv8;1AJue1Ga7v0;nz3ctP}1ay8;ooyScUr35y0;P5pjxPZTS}8;rqAwrRNgx{0;lEDBG3lJC29;4Eoj3NAKh11;kecuoHqOs49;o4tChb4iK41;3xjUXB9gS79;RdufsiAUu61;wPoy1lj7x99;Qyw56uqzM91;cN{O}GSQLC9;mbMLNkGMnB1;YBx7CqIbhE9;Ez0ed7eN5E1;8wxvvHyKzG9;V8SmC3qjLG1;PJM1Yp}0AJ9;Fc0bvngPYI1;cQyzDvORJL9;VTll98RGgK1;2iJltWGjON9;dkRoWh0rlM1;siE1S3HwQP9;8MoXTtSXmO1;sEPfj07KPS9;7MUJRZocjQ1;quj2NpVjKT9;O2X083A3dR1;jxP3DXhgDV9;NjK6xbnOVU1;8QDlYjdj2X9;mpxw}uGpIW1;VqUujV3wqY9;L22qmXDx3Y1;johDq4xoaa9;lxl2V{hnoZ1;YxmzMILWIc9;PWKSHKRdVb1;UVshCcIczd9;QT9TgQpu7d1;s8v35{JNbf9;E6v28{uGme1;pE4DE9jyBh9;3ioFgvD2Kg1;utHex4Femi9;Yd4XNT2Qsh1;a3NS6R14Ik9;dZro3a3rMj1;{TXlvU8{nl9;puiHHGLGrk1;Rkjs}ZNSGn9;YNpQYmq8Im1;lcSyiyOhho9;muD2BkjRin1;mFnV9x5Z5q9;9R9BNGYZ4p1;tA}Z33r5Vr9;naqL2qYSSq1;vo3Uv9crqs9;nixY8{{xmr1;zlvOnZg0Au9;bFVEiz7P3t1;W2bd8oVJUv9;A}THhDjdKu1;kDlAukuWmw9;T2c2cc0Pav1;jA3nHSjt0y9;lRpVOASnow1;XoUQsJ}BGz9;ATGwJ7U60y1;LAroA8oET{9;tiWNKTGl9z1;3W8D8eLue}9;u2BXn0PAJ{1;oxztHKu}p0A;5CL9nfeYQ}1;Ueq8jD8Q{1A;JNGCxl83X02;79{P5Klv53A;i3WiP9ODa12;olwxMcvxD4A;RJcTtNkub22;5oof{m6RJ5A;s6Ti}rfFb32;HEHNOwO1O6A;qrxTnyFjX42;Vvfda66IR7A;ruTM95wKM52;jQ1l3c8nV8A;h1tBEwDdm52;Bbqm02f2X9A;{mbjuwY7H7A;6eoqBl{UXAA;nK{hd15QZ8A;uTSR{m8BXBA;CHEl5er4j9A;TRMGdYnAWCA;osihGg{CoAA;Uh2w2gMDTDA;1I}tWqCMqBA;CmXgAyiLPEA;SvBx14{uqCA;SKmvqRW8LFA;KasZxG70qDA;53QuENRzGGA;abn5Dwg1oEA;ztTmQv1EAHA;NriQthRnkFA;33G1WqNY3IA;ymmc3ZE}eGA;xcaSFts5yIA;liPS42bNZHA;zRObcP5WpJA;TtbQ9}BlRIA;oTLmRCcAgKA;14lssulRKJA;VbUN6fV{WLA;SrYj4kuzBKA;N908XxWKLMA;QETd}L3Q2LA;1gBtjQmx9NA;rat6mnfMtLA;nMvfk{ja{NA;LanwIY3ciMA;Sq1lLMfUnOA;k4K5ZrQwWNA;eVrd}{JPZPA;mkUBv{LMJOA;NjWjAmevKQA;QzGDuJTS5PA;goB}ipfu5SA;5Vlc0ye}sPA;VncEMS}HsSA;wV3XPtHxdQA;gaxHdTN4cRA;XOrgx0FAOSA;Mp}}fhfHLTA;mV7GwvHi7RA;RomSkRX{3UA;}Y0Ic8}asRA;2MG5TznHoUA;Clc4sz5xaTA;nv5UbbTJWVA;Cn4BpFWtIUA;ovGcgGqNCWA;XZtfhF7a0VA;PD6YW2s5uWA;ljHc3nKLiVA;8EEYIFG{ZXA;ATL9T6bdNWA;{TtOrB9BGYA;geyDVQnC3XA;rVtMlJOcvYA;IVaU{v7TkXA;XZyqYOdpZZA;HRH1qlzaNYA;APty0EW{DaA;kXfgNIqq1ZA;4znaUaZCsaA;oHNHRjGLgZA;ZNbNJvd5WbA;iBF{{Ad0JaA;4ox0v0br6cA;Kd{XaRXrwaA;l5rlw7UmlcA;P}rTs8rXYbA;nuIZo1veLdA;ki2I3oF29cA;wpMMg9BwydA;F4aEprXZmcA;hWWAHz0yYeA;bcaV4J4RLdA;9uZAxwoL8fA;pNTKOrICxdA;ybSbg6uikfA;rlttPHKvWeA;xVAXylR0JgA;EUioORua4fA;BKbgOc37tgA;xxtMd68aefA;g8q6ReVcShA;Ah2SGuGmCgA;eck2hMXC0iA;2nl}BpJWmgA;uDJd8nZhYiA;29qqchWbIhA;JYCS7InB5jA;}uRtNSCYqhA;gx74Yh{ddjA;l5wxQbkGMiA;Ef0VeMjw9kA;SINbayohtiA;lnV{MMW{hkA;7cBAGfpkOjA;YCHCTZIkDlA;BUGD5YGMvjA;YPsUT0i5llA;A9w}FL1WPkA;P9pg5Bg0GmA;OaO4iaWBvkA;1IgEdLWFmmA;{5Ie4CkPOlA;s4cu7qzEGnA;seEuxb9DtlA;Q72I}1d{lnA;wNuHJ3afLmA;f8NvMDt2FoA;r9ZiT{ippmA;ePHLqfejjoA;z}xttMwmHnA;RQyhTFn2CpA;A1WYfgVDlnA;ynaqyZk6gpA;D9ncGeDrAoA;Yb2wc2J{7qA;iS09yXpYcoA;yJM9fWJkbqA;Kmw6ILeU2pA;eqxT6eMS3rA;7nGOM8WUTpA;8pIEKEd9XrA;KWXByfaospA;hJVquWKvzrA;rX2hrs{GqA;v}1y2CnkPsA;1}9pSJPAeqA;K5GJo2vtrsA;5L{m7sq80rA;rTAh45bNItA;qQ9l{okZJrA;nL4HvEpUktA;2Zm3tWuhZrA;pVqD2Y}8uA;AjuVohLubrA;NDQVERHGauA;RCx7dxrV1s2;iT0UJPUE0vA;He47l8pNrs2;nPhfRg6jPvA;kldaKK2WRt2;RX4UTgY8qvA;QXxdPnRY}t2;Hk{h}KNCFwA;o79shmqhVu2;34EYo}mvdwA;95uoOr7xzu2;h5w4NUj72xA;p4hMFXr1Sv2;O{hDYdrBSxA;HFS2yI9btv2;FiFBlBYBqxA;dtDOcVZ}Jw2;rs8i}osfDyA;6kixI{lYmw2;yEKA2{KabyA;gDoV9mwoAx2;jYa8Y5s3}yA;r9}fwTNIbx2;19n1iWJ9MzA;LKQVcjPd0y2;WkwR63RHlzA;UctYRhFXPy2;CZahmvet5{A;N5J3HlFJpy2;XZwXfW6JU{A;h}2SkYonCz2;FWt5qqkoq{A;ynp0wWTAbz2;CkowQvgHC}A;QbIFiaMk{z2;23rc6yK3Z}A;IS2HSXc1M{2;V}phbTQRv}A;9ESmWApCl{2;w2248vmrG0B;wapqGQzr5}2;2nfZl1C6c0B;7F8H47XFU}2;ENNgKLfly0B;Q}iphYLjq}2;DUrzVDOYI1B;br3Y2Dt3C03;IyO}iSLjd1B;5O5E8gCqY03;Vx10vAY4{1B;VmfHwkj{u03;JgZmwAXwI2B;VEmKpVrQG13;jNYnohWcd2B;oAuwwvBOb13;Tfjn}lpDz2B;HCIt9Fgax13;63UMBgAyH3B;CWQ9TKZdH23;jxqcsc6tb3B;ki3npMyJc23;l14ibvnSw3B;5YST65O0y23;iQXumg9kF4B;isVBDW9SH33;SDKESqzuY4B;{XPlz}nVb33;WFPgNTELs4B;FAT0XR7Jw33;TIyBU5GDA5B;hbOpY2AwF43;PgzTrl5YU5B;JEHn2KtCZ43;oWKjrbBgn5B;Eb}}kv9xs43;Mwzj016I46B;tK4KL1x9B53;korpSmZ8N6B;GCQynanwV53;Bf1A4P2Dg6B;{JUjgOSdo53;tjrZ26gUz6B;p2pnYyNZ563;MtwNzP6UG7B;Kt8kXFCnO63;Q56b523IY7B;Itaa0eUGi63;bB7ESkDAq7B;6Qg}X{D0073;yioKJxU568B;WShB25x}H73;{IkUnib2O8B;5DcBomX6a73;tnpee390g8B;iy39dQ}Is73;gBF6Edfyx8B;glqZQB4a883;9e7DXZsD9B;Swkq2wJuQ83;lElzndGiV9B;T5ghAc7Ej83;NO5QwO5km9B;ZLAMRElZ}83;hTaJ58NY1AB;EU69Y}fxG93;UHJkM3EIIAB;nr2ZIQT3Y93;I}CT4G{yYAB;GJmkwcJ8p93;AIlZWS0YpAB;Nx}Nd3F94A3;g9EDoto04BB;cimfORK5LA3;}}5Q}EwOKBB;lDKQA8ixbA3;LzQGyA2gaBB;3pT9mWZhsA3;GNY3ImzpqBB;EB3oUIEK7B3;OE42Hids4CB;7PZZpW7rNB3;xzA{0L2oKCB;DQ6YaToDeB3;uzo6cRNcaCB;vGVYAHxTuB3;PVxakttJqCB;ogX2RINb8C3;imPCOvww3DB;X6VLwD5aOC3;GMw3razSJDB;ziUNRyCQeC3;mMk{6uXtYDB;yFtLAA}7uC3;sFNyqmDEoDB;WVcV1lqj7D3;RmhLZDgW1EB;IgdxrwDCND3;90}rsDYlGEB;iCjf0NnZcD3;GPGl7c3tVEB;LejZO0BrrD3;gHV537gAkEB;{JPR{xA15E3;f8bqGaESyEB;paAT59a8KE3;EaTlcM4gAFB;2b33RJBCZE3;KRebBHQuOFB;DtcejdrCoE3;dsFtANP7dFB;KaL9aiNB1F3;kLh{414OrFB;PnAgxXa8GF3;eVP6gHLh3GB;AZz75GPAUF3;zHM5BQ02IGB;HT8DFUw3iF3;OOSZDjmRWGB;uE5qxW}{vF3;SB39kzIujGB;XuxcDYoy7G3;zSnAWXC1xGB;b8MsrSK{LG3;e0JoZGsK8HB;YiZnmXR4aG3;hhs9MQgpLHB;IrQtMTuFoG3;oSQh6TsTZHB;1LHtpNCX0H3;AV5hJPRJnHB;FrWd3ZcnDH3;b9CbyLee{HB;F8gwr8}jQH3;8UkoKBQ0BIB;3AaIXTttdH3;TmFBiWUjNIB;3Flli8MFrH3;PfGATzvkaIB;kZ1Xj7Lq2I3;TJEX7Ce3oIB;aO1laRZcGI3;MSxzTlyK}IB;MGnFOxDBTI3;R8he2sQ4BJB;RIcOO6yXfI3;VNIzB}7JNJB;2PNCmU2GsI3;3JTXDPW{ZJB;4OL3SW9K3J3;kzhTG924nJB;}EIvmmpiGJ3;tpGiEjLvdJB;QHjgIz}wgJ3;W{9GAxUh5JB;ENAjDCkFoJ3;Whs{}DxmTJ3;TbpB9POnJ3;vHIinVN4lJ3;chE05mOBdJ3;mmtYr8WgpJ3;wtd5yyjY6J3;PnBNDllGpJ3;FK6px4NMQJB;3UNckLopjJ3;hBwLBYqAjJB;V6ztMYZXVJ3;bZnu7strpJB;m3VDrEUUIIB;8PAg}GlrrJB;7BZdX3nTWJB;4B0w1g1mqJB;NHEIE6VvjJB;wihMbh0DnJB;yq67UrEupJB;y7MH3PM4eJB;g2Yg8AFtsJB;22g}u4KKOJB;NiFlXny2uJB;PxLVKSFdcHB;Z1HnA0PmtJB;}o2JSHgFMJ3;wiaoY3kPsJB;Nh0dgTlsaJ3;ukaVbQFPqJB;N1x3{0mriJ3;Ny9BdlI6oJB;69A9TY3YnJ3;rAYPOJYdlJB;mA05ZurrpJ3;z8j2tseVhJB;xEgR{qTrJ3;jw1jg}a8eJB;sXKSyCYsJ3;sfL51txkbJB;DeXuAnIAtJ3;mQu3KCoPaJB;acy{GreStJ3;dlVaN40CaJB;LDDkk2UPtJ3;6hVDku45bJB;pU7xalW4tJ3;VjBd0LM1dJB;aPJzFw0SsJ3;k9FmAxgvfJB;SYTkX20PrJ3;LmR9fzbYjJB;F59Wm2mupJ3;KnAzmzdrmJB;fsyUjapnJ3;1urXUf6{oJB;eLuh0cu5kJ3;WURIpjMxqJB;zPLzza54dJ3;XxUM2wPQsJB;R8pXBO{{RJ3;ib8s4Y5tJB;IKjqGDm62J3;vEz3lFDcsJB;n1SRE{Hj9JB;Bwly8dMeqJB;vCNorZhfXJB;EnExlyy{mJB;vu8vY0j6iJB;GKQz{TAJdJB;NvLEpZ6FoJB;XyV3ILldJJB;ziYHHrwfqJB;1oJRGHO25J3;iA0jn{ffqJB;N}GqSzf{ZJ3;SHe1rgLpnJB;1RAS0QPwlJ3;os9SD9CFeJB;dPe3W5FHpJ3;dxCpNW2qGJB;VWMba7gyoJ3;4M1dwjHnIJ3;6x4fv1vLjJ3;{ziFsH6cfJ3;ENnOto9RRJ3;vZ4g7u{BoJ3;gzU5o6P3}IB;vEfRUJYNpJ3;sf0xzmDZZJB;70Ld5KIxlJ3;Degld4OogJB;tNn4RQHZYJ3;ZhZpGK{raJB;DuF8XTFZ3J3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;TvJQ7vlx08;aIuyzzDc00;aojMX73fP78;TI4GS5Ds270;pIAkrzzoHD8;m24X1u}3uC0;76t0qtFxfI8;gxOAASf8GI0;1kbwUD16fN8;sEawvlKmCN0;9KVFN{CJR8;o6w7hcYFqS0;jPJApYkXgW8;7WhzFk8i9W0;vrx}KLAMoa8;r1LPlfUIGa0;Vf3jfy4dhe8;857kHzPQ6e0;7NaIS{7COi8;Vu11DYxunh0;sgkgXgD6wl8;qw8GSYVWHl0;9DMxVA}AIp8;p8nvh0w}bo0;qI7vuKz}Ws8;y7{IYXRor0;Ir0xto57cv8;ZWfErl6Lru0;TCi0wV8cay8;c3yAdm0Vnx0;b3O7JnCR}8;4i3Et1}oa{0;Ro}Hbmy1D29;nbOCRHUII11;4xdK3eOxs49;{mBUx588u31;KN7dzMNIR79;en9cs6U5O61;QeHUuzhix99;asbaFqjCo81;EXia1dfrLC9;ZZmT}XuT4B1;1x9j4lp5iE9;i69lcAk3GD1;4s7IH}nqzG9;U}ZTKFGt9F1;VQgmshpQAJ9;c{6DQOM2BH9;ccwn8osjJL9;vGrzkaUGoJ9;f1I{mZ81PN9;5UzKxy6l3M9;PlLZUrODSP9;zvWSgYy5EO9;byqLPIkZPS9;QVuf5905IQ9;J7wDDNLuKT9;f6p7Dj5wHR9;FlqPxzStDV9;8rdcY3C}DU9;Ml192Xxp2X9;1CGoHJba5W9;vejwk4B}qY9;gE0ERd2}wX9;}h72ek6saa9;p262IcFejZ9;TO2NhXUXIc9;Z{9d0MinRb9;YhtL0LRbzd9;gMvww3qu8d9;YKpLz5oKbf9;ESB5oWuHpe9;q{HFXIwsBh9;Q212gPEvQg9;IUreYhKZmi9;azWBhs1{0i9;ZOlLW87zHk9;J8Yf2s7TZj9;k3OoyEjrnl9;SeZHWv4M4l9;78rTL{GIGn9;ByJ1NzXUZm9;JdY3J9kPho9;1LKduWC81o9;YWD}ZqYJ5q9;A68c68fmSp9;8qTlHuriUr9;wp4Vnpgoqq9;us2HdNAZqs9;4rmBARtCs9;du{VUzad9u9;XVuLqbldYt9;wjueVVupTv9;XGVMIWLOsu9;7rUuiHOEmw9;802CzfU79w9;MwybM1XZ0y9;9{2yP1JOQx9;9}TJlyokFz9;gdjA9pw{fy9;Z6e8eIRdR{9;wVCbIg93uz9;q964S03Le}9;5bGySOFz4}9;ZBefPg5Yp0A;USQlFwOEH0A;EACIQqigz1A;p6chq}AmQ1A;mD3eUj4M53A;eer5EGMgZ2A;hKzSid89D4A;ndXNyyEPh3A;LtE2ypsvI5A;4Z5T37U7o4A;hcsuzhWLN6A;DDU0Eozns5A;3VUFBzeRS7A;8VtEnvJHx6A;kXT8Qh7pU8A;zH6R0Mf7}7A;JNOVbkLWW9A;aGsW5Gfy09A;WVVPbxlwWAA;wBa6v9}e1AA;ccb}vHZcWBA;xyLfORLa1BA;hckx90rEVCA;VnGyW4Wm0CA;rOvbVysBRDA;s7deK5}f{CA;OnZRO}WSOEA;tpZIg7cwwDA;BuSUvTtMKFA;iKdZ17DjsEA;EuYZE2lKGGA;7nS5n5SoFA;zePrHSoD9HA;3Mkl5EzniGA;1M4b{SZn2IA;pllLcoIgbHA;pqaJAXL{wIA;QQ0SFxORVIA;WJHQtVYjoJA;lVLq7Zo1MJA;bcd}SDd5fKA;5vGrdV4qDKA;DJ257D0HWLA;bSbXD{HW3LA;UyzQ1MVQKMA;bpZPxL9iuLA;2vu6a08q8NA;NkJZVgbGkMA;xOcwea4FzNA;TqTpZEnzXNA;kgfloF1jmOA;k}M1S0ghKOA;sRCg7BYXYPA;}7eEI8P67PA;XAYaCkoyJQA;k2L9l603vPA;zjzT2kCu4SA;uIizUTQOgQA;Jgvtt5fFrSA;gAxE5Wa0SSA;F9FceLz1bRA;TOcePI8vARA;}HSDR9}GKTA;4UZeWlf3wRA;v0dvXhE13UA;Vs7jnAHbeTA;DYwYyZCPnUA;te1v9dvbMUA;FXMcUY71VVA;wCTtH4DF4VA;1ql84XX{AWA;cxtdqcQhnVA;ra7SQoRvsWA;sZ6}L}Z8UWA;TFAPtyT{YXA;lmDw4NS49XA;x6r3UMIkEYA;ZH6ytPWNqXA;43mqQsZJuYA;kbMNLzhAWYA;YMGj6PApYZA;uU2vVFa59ZA;jDN1x5SRCaA;v0tKht82pZA;rSg7K9a3raA;MWza94FGRaA;H7hSCPyWUbA;cSIYVrTX4bA;RsIZYRpf5cA;3Gwu7pBCjbA;3T5dVph6kcA;dEwB9hGLKcA;o8sMROZWKdA;67ejjN8mxcA;zAADlCEPxdA;aASZHv5aYdA;b6VIxZKyXeA;8kLUXNVM8eA;vNPUcLk37fA;O7KMefCLleA;CPlidR85jfA;8Wu2SyhnJfA;rxZgfY60IgA;o4Et4kFWufA;qEe3ojiurgA;tufkpWopTgA;m9GiMzo8QhA;VIsrUFhp1hA;BzbotB}g{hA;sq65OzivahA;biiMcL3iXiA;XCfoNm}68iA;lN6ol0l34jA;F7ADhYYLhiA;XRCtwUfNcjA;p6oFA2aUEjA;IX7DMFdY8kA;cg0PjNTjmjA;wKGfDGUVgkA;PZOXMPm1IkA;l{7uyxQ9ClA;pfc5Cbu8pkA;id623IKRjlA;1OfWuo10KlA;iyJl8JzKEmA;WRBqtH2bqlA;IgfX39InkmA;}kTYmYZsKmA;O6LdimVmEnA;NZ8wCO7qqmA;defgtW5JknA;FM{9Wd8UKnA;swCKknmQDoA;xjEZjjtrpnA;uLpjPEJAioA;CjoUqeJzIoA;aMmBevKbApA;SatU3w}snoA;fUVHhY3mepA;sGvUFqubGpA;IsMmum0l6qA;xoFO1zDQkpA;hXGqlemcaqA;JAzq2XcVBqA;fxw8G0gS2rA;R8btY6uXeqA;wnP9dZfHWrA;tN1Km4Pc5rA;maoAZbGOyrA;RdRHCminYrA;JrEeCEhSOsA;OhLRCvS70sA;a3ilRpfnqsA;ifbGg4aKSsA;oE{S{XyRHtA;cCNmRE{tssA;lRPtlw6{itA;YQ24mtuwItA;queyDAnm7uA;3zrxLIGxktA;xY98HDuGZuA;EeAfpPc{8uA;La4mAY6u{uA;ag1f4PDyZuA;zAdPvVqTOvA;yEeDRkQU}uA;lUxjX9xApvA;JtFJSTxZOvA;KSc1jygjDwA;U1FuTr1zovA;KLBvu6qncwA;ZQTj4IgxCwA;r9Vv30fH1xA;akHnId0sbwA;Y8i}q8TxPxA;9eS7OCHK0xA;DUWphASGpxA;8pcnERi7OxA;r76NUyrJCyA;OUWg3{AfnxA;km9hndPcayA;8lIT9l2Z9yA;pYTqyybhzyA;3HgkzvrJYyA;xJ07iz3BLzA;vrk5Ef1}vyA;pqOYvXXwjzA;CjQfptTGIzA;hWWw1sZx4{A;6divbD4QfzA;iBYdS}s0T{A;KnGzLydW1{A;Gr4xLB}wp{A;zC3aq91wN{A;KdI9Vzq6B}A;euuejxmAm{A;TQGJyyZHY}A;fZZG0yng5}A;}jPQZbsQu}A;2EcE2BinR}A;OFo3Jk{AG0B;lJZkQbzxo}A;ilKPB2tEb0B;mBphgl0j80B;dKFdGilex0B;I}HyVuSyV0B;SMJ0lwMrH1B;whoiLATUq0B;HsZWUsgqc1B;NzYTUtg1A1B;ZVOgdhrzy1B;bjRRdxhPW1B;tkHRrPpEI2B;lqJhwA1Wq1B;aR4ZeUwmc2B;brciUkTQ92B;hG7To5gCy2B;lZimVMyFV2B;cxwwRtvKH3B;i8HudFm3p2B;jHtNgSB8b3B;CoQf{I5473B;VTVjpXAav3B;PxFTWCLiS3B;W8HzrxniE4B;nu6thqpVm3B;OdWCcAtIY4B;ZpGocrLW34B;mOomVgAfr4B;h6puJtuM4B;5z{utxjQ95B;{UPslU9gg4B;M3}Jn9ceT5B;5k226gZq{4B;x{G8O7l9n5B;o8hrW}hH5B;EplCY2nj36B;6ugPEUv9a5B;od8Wz8DWM6B;oF{Um{Ops5B;15wqyCaWf6B;ieZFftZd96B;OB06462ky6B;M7yl02CbR6B;sq4y9Rk3G7B;6VJmJYlgl6B;85uC7HgrX7B;MXVcyiCS17B;nnRXxgvhp7B;ODjn4Y13J7B;jOLJaVNb58B;dfcHJFhha7B;d{Mk5CrWN8B;p3oaoRuJs7B;hQQLC5yRf8B;H{A0W6Jw78B;axURRyEOx8B;{246ZLYTP8B;6GieftBHD9B;7ybDhaCyg8B;KjD4vME6V9B;Ab3WKhvKy8B;qTnDXouQm9B;1VFSALcD9B;MEux}M9F1AB;myAIvLGlU9B;{7OXpg9}HAB;yqJIjLakl9B;juO5}qDgYAB;DXiQ}yfH0AB;l9ot3MkFpAB;xNd0wUMcGAB;kNB6B59l3BB;nbMUjw4rWAB;4WeV{328KBB;DzqfW2fzmAB;TiMHY74QaBB;2UGEPVz}0BB;tYQX}K1bqBB;X1I5hp3yGBB;zRidDHpe4CB;LsZ{bG4oWBB;o2ru93SbKCB;F35JEWDYmBB;kXxPD91SaCB;YGovf4qC0CB;IfLYF2r9qCB;z5rU2RZaFCB;YwNHVhCo3DB;UPpFEI9cUCB;mNdqqZKJDB;AcCFBHTVjCB;NS}BDDSnYDB;C4vzeLeHyCB;mfLJfN9oDB;IXTuwyszADB;vPrHL61T1EB;vI9nPFNbPDB;XxI3Ih1jGEB;SpIt5GN9eDB;Crj7wK9qVEB;BVKDKK3hsDB;YFKvTAh9kEB;42YOEcaB5EB;sm1UPd{SyEB;ZPci4q}hJEB;yG4TwYMiAFB;qy61gDKDYEB;b{rdZX1yOFB;cCS4emQmmEB;wJPmdf8CdFB;ypLUf7Bi{EB;m7eUeckTrFB;QaJiR2}zBFB;zlNjDykn3GB;ps0EESONPFB;gazR7ez8IGB;PXVTVvFvcFB;6Rb0jo6aWGB;Ltdsz0GaqFB;YUQJcPT7kGB;sA3wE2sO2GB;VgblzoZGxGB;VGueFwINGGB;cqw7O4Ba8HB;3{KGtvO}RGB;o88mjcl2MHB;}K8kEzZfGB;HLuEc}WiZHB;yRl}BivSsGB;iqVYyHZXnHB;DTBVVvcc3HB;LtJLufW3}HB;UNkwCuH3HHB;zEBCORoPBIB;t3AYPIzXTHB;s}2BaOF5OIB;iibIpDLTfHB;n84lZ{{4bIB;nlYbCaTsrHB;OZ8ADQ}NoIB;poHVJV3h2IB;uKwT01Gw}IB;S}743ObnFIB;Lv8PY{McBJB;VuOexemwQIB;YXceywpnNJB;EM}cuoAjcIB;Q5swlM5QaJB;tdfzdPX4pIB;W71TL4hRnJB;DNYrDxWv}IB</D></Data>
+<IndepValue>Designs\Design1_Data\Eqns\VarBlock\S2_Index</IndepValue></Item>
+<Item XName="S2_Fc" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Dbl64</T><D>1;1;KMpD74</D></Data></Item>
+<Item XName="S2_Index" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_I64</T><D>1;2500;;1;2;3;4;5;6;7;8;9;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;S;R;T;U;V;W;X;Y;Z;a;b;c;d;e;f;g;h;i;j;k;l;m;n;o;p;q;r;s;t;u;v;w;x;y;z;{;};01;11;21;31;41;51;61;71;81;91;A1;B1;C1;D1;E1;F1;G1;H1;I1;J1;K1;L1;M1;N1;O1;P1;Q1;S1;R1;T1;U1;V1;W1;X1;Y1;Z1;a1;b1;c1;d1;e1;f1;g1;h1;i1;j1;k1;l1;m1;n1;o1;p1;q1;r1;s1;t1;u1;v1;w1;x1;y1;z1;{1;}1;02;12;22;32;42;52;62;72;82;92;A2;B2;C2;D2;E2;F2;G2;H2;I2;J2;K2;L2;M2;N2;O2;P2;Q2;S2;R2;T2;U2;V2;W2;X2;Y2;Z2;a2;b2;c2;d2;e2;f2;g2;h2;i2;j2;k2;l2;m2;n2;o2;p2;q2;r2;s2;t2;u2;v2;w2;x2;y2;z2;{2;}2;03;13;23;33;43;53;63;73;83;93;A3;B3;C3;D3;E3;F3;G3;H3;I3;J3;K3;L3;M3;N3;O3;P3;Q3;S3;R3;T3;U3;V3;W3;X3;Y3;Z3;a3;b3;c3;d3;e3;f3;g3;h3;i3;j3;k3;l3;m3;n3;o3;p3;q3;r3;s3;t3;u3;v3;w3;x3;y3;z3;{3;}3;04;14;24;34;44;54;64;74;84;94;A4;B4;C4;D4;E4;F4;G4;H4;I4;J4;K4;L4;M4;N4;O4;P4;Q4;S4;R4;T4;U4;V4;W4;X4;Y4;Z4;a4;b4;c4;d4;e4;f4;g4;h4;i4;j4;k4;l4;m4;n4;o4;p4;q4;r4;s4;t4;u4;v4;w4;x4;y4;z4;{4;}4;05;15;25;35;45;55;65;75;85;95;A5;B5;C5;D5;E5;F5;G5;H5;I5;J5;K5;L5;M5;N5;O5;P5;Q5;S5;R5;T5;U5;V5;W5;X5;Y5;Z5;a5;b5;c5;d5;e5;f5;g5;h5;i5;j5;k5;l5;m5;n5;o5;p5;q5;r5;s5;t5;u5;v5;w5;x5;y5;z5;{5;}5;06;16;26;36;46;56;66;76;86;96;A6;B6;C6;D6;E6;F6;G6;H6;I6;J6;K6;L6;M6;N6;O6;P6;Q6;S6;R6;T6;U6;V6;W6;X6;Y6;Z6;a6;b6;c6;d6;e6;f6;g6;h6;i6;j6;k6;l6;m6;n6;o6;p6;q6;r6;s6;t6;u6;v6;w6;x6;y6;z6;{6;}6;07;17;27;37;47;57;67;77;87;97;A7;B7;C7;D7;E7;F7;G7;H7;I7;J7;K7;L7;M7;N7;O7;P7;Q7;S7;R7;T7;U7;V7;W7;X7;Y7;Z7;a7;b7;c7;d7;e7;f7;g7;h7;i7;j7;k7;l7;m7;n7;o7;p7;q7;r7;s7;t7;u7;v7;w7;x7;y7;z7;{7;}7;08;18;28;38;48;58;68;78;88;98;A8;B8;C8;D8;E8;F8;G8;H8;I8;J8;K8;L8;M8;N8;O8;P8;Q8;S8;R8;T8;U8;V8;W8;X8;Y8;Z8;a8;b8;c8;d8;e8;f8;g8;h8;i8;j8;k8;l8;m8;n8;o8;p8;q8;r8;s8;t8;u8;v8;w8;x8;y8;z8;{8;}8;09;19;29;39;49;59;69;79;89;99;A9;B9;C9;D9;E9;F9;G9;H9;I9;J9;K9;L9;M9;N9;O9;P9;Q9;S9;R9;T9;U9;V9;W9;X9;Y9;Z9;a9;b9;c9;d9;e9;f9;g9;h9;i9;j9;k9;l9;m9;n9;o9;p9;q9;r9;s9;t9;u9;v9;w9;x9;y9;z9;{9;}9;0A;1A;2A;3A;4A;5A;6A;7A;8A;9A;AA;BA;CA;DA;EA;FA;GA;HA;IA;JA;KA;LA;MA;NA;OA;PA;QA;SA;RA;TA;UA;VA;WA;XA;YA;ZA;aA;bA;cA;dA;eA;fA;gA;hA;iA;jA;kA;lA;mA;nA;oA;pA;qA;rA;sA;tA;uA;vA;wA;xA;yA;zA;{A;}A;0B;1B;2B;3B;4B;5B;6B;7B;8B;9B;AB;BB;CB;DB;EB;FB;GB;HB;IB;JB;KB;LB;MB;NB;OB;PB;QB;SB;RB;TB;UB;VB;WB;XB;YB;ZB;aB;bB;cB;dB;eB;fB;gB;hB;iB;jB;kB;lB;mB;nB;oB;pB;qB;rB;sB;tB;uB;vB;wB;xB;yB;zB;{B;}B;0C;1C;2C;3C;4C;5C;6C;7C;8C;9C;AC;BC;CC;DC;EC;FC;GC;HC;IC;JC;KC;LC;MC;NC;OC;PC;QC;SC;RC;TC;UC;VC;WC;XC;YC;ZC;aC;bC;cC;dC;eC;fC;gC;hC;iC;jC;kC;lC;mC;nC;oC;pC;qC;rC;sC;tC;uC;vC;wC;xC;yC;zC;{C;}C;0D;1D;2D;3D;4D;5D;6D;7D;8D;9D;AD;BD;CD;DD;ED;FD;GD;HD;ID;JD;KD;LD;MD;ND;OD;PD;QD;SD;RD;TD;UD;VD;WD;XD;YD;ZD;aD;bD;cD;dD;eD;fD;gD;hD;iD;jD;kD;lD;mD;nD;oD;pD;qD;rD;sD;tD;uD;vD;wD;xD;yD;zD;{D;}D;0E;1E;2E;3E;4E;5E;6E;7E;8E;9E;AE;BE;CE;DE;EE;FE;GE;HE;IE;JE;KE;LE;ME;NE;OE;PE;QE;SE;RE;TE;UE;VE;WE;XE;YE;ZE;aE;bE;cE;dE;eE;fE;gE;hE;iE;jE;kE;lE;mE;nE;oE;pE;qE;rE;sE;tE;uE;vE;wE;xE;yE;zE;{E;}E;0F;1F;2F;3F;4F;5F;6F;7F;8F;9F;AF;BF;CF;DF;EF;FF;GF;HF;IF;JF;KF;LF;MF;NF;OF;PF;QF;SF;RF;TF;UF;VF;WF;XF;YF;ZF;aF;bF;cF;dF;eF;fF;gF;hF;iF;jF;kF;lF;mF;nF;oF;pF;qF;rF;sF;tF;uF;vF;wF;xF;yF;zF;{F;}F;0G;1G;2G;3G;4G;5G;6G;7G;8G;9G;AG;BG;CG;DG;EG;FG;GG;HG;IG;JG;KG;LG;MG;NG;OG;PG;QG;SG;RG;TG;UG;VG;WG;XG;YG;ZG;aG;bG;cG;dG;eG;fG;gG;hG;iG;jG;kG;lG;mG;nG;oG;pG;qG;rG;sG;tG;uG;vG;wG;xG;yG;zG;{G;}G;0H;1H;2H;3H;4H;5H;6H;7H;8H;9H;AH;BH;CH;DH;EH;FH;GH;HH;IH;JH;KH;LH;MH;NH;OH;PH;QH;SH;RH;TH;UH;VH;WH;XH;YH;ZH;aH;bH;cH;dH;eH;fH;gH;hH;iH;jH;kH;lH;mH;nH;oH;pH;qH;rH;sH;tH;uH;vH;wH;xH;yH;zH;{H;}H;0I;1I;2I;3I;4I;5I;6I;7I;8I;9I;AI;BI;CI;DI;EI;FI;GI;HI;II;JI;KI;LI;MI;NI;OI;PI;QI;SI;RI;TI;UI;VI;WI;XI;YI;ZI;aI;bI;cI;dI;eI;fI;gI;hI;iI;jI;kI;lI;mI;nI;oI;pI;qI;rI;sI;tI;uI;vI;wI;xI;yI;zI;{I;}I;0J;1J;2J;3J;4J;5J;6J;7J;8J;9J;AJ;BJ;CJ;DJ;EJ;FJ;GJ;HJ;IJ;JJ;KJ;LJ;MJ;NJ;OJ;PJ;QJ;SJ;RJ;TJ;UJ;VJ;WJ;XJ;YJ;ZJ;aJ;bJ;cJ;dJ;eJ;fJ;gJ;hJ;iJ;jJ;kJ;lJ;mJ;nJ;oJ;pJ;qJ;rJ;sJ;tJ;uJ;vJ;wJ;xJ;yJ;zJ;{J;}J;0K;1K;2K;3K;4K;5K;6K;7K;8K;9K;AK;BK;CK;DK;EK;FK;GK;HK;IK;JK;KK;LK;MK;NK;OK;PK;QK;SK;RK;TK;UK;VK;WK;XK;YK;ZK;aK;bK;cK;dK;eK;fK;gK;hK;iK;jK;kK;lK;mK;nK;oK;pK;qK;rK;sK;tK;uK;vK;wK;xK;yK;zK;{K;}K;0L;1L;2L;3L;4L;5L;6L;7L;8L;9L;AL;BL;CL;DL;EL;FL;GL;HL;IL;JL;KL;LL;ML;NL;OL;PL;QL;SL;RL;TL;UL;VL;WL;XL;YL;ZL;aL;bL;cL;dL;eL;fL;gL;hL;iL;jL;kL;lL;mL;nL;oL;pL;qL;rL;sL;tL;uL;vL;wL;xL;yL;zL;{L;}L;0M;1M;2M;3M;4M;5M;6M;7M;8M;9M;AM;BM;CM;DM;EM;FM;GM;HM;IM;JM;KM;LM;MM;NM;OM;PM;QM;SM;RM;TM;UM;VM;WM;XM;YM;ZM;aM;bM;cM;dM;eM;fM;gM;hM;iM;jM;kM;lM;mM;nM;oM;pM;qM;rM;sM;tM;uM;vM;wM;xM;yM;zM;{M;}M;0N;1N;2N;3N;4N;5N;6N;7N;8N;9N;AN;BN;CN;DN;EN;FN;GN;HN;IN;JN;KN;LN;MN;NN;ON;PN;QN;SN;RN;TN;UN;VN;WN;XN;YN;ZN;aN;bN;cN;dN;eN;fN;gN;hN;iN;jN;kN;lN;mN;nN;oN;pN;qN;rN;sN;tN;uN;vN;wN;xN;yN;zN;{N;}N;0O;1O;2O;3O;4O;5O;6O;7O;8O;9O;AO;BO;CO;DO;EO;FO;GO;HO;IO;JO;KO;LO;MO;NO;OO;PO;QO;SO;RO;TO;UO;VO;WO;XO;YO;ZO;aO;bO;cO;dO;eO;fO;gO;hO;iO;jO;kO;lO;mO;nO;oO;pO;qO;rO;sO;tO;uO;vO;wO;xO;yO;zO;{O;}O;0P;1P;2P;3P;4P;5P;6P;7P;8P;9P;AP;BP;CP;DP;EP;FP;GP;HP;IP;JP;KP;LP;MP;NP;OP;PP;QP;SP;RP;TP;UP;VP;WP;XP;YP;ZP;aP;bP;cP;dP;eP;fP;gP;hP;iP;jP;kP;lP;mP;nP;oP;pP;qP;rP;sP;tP;uP;vP;wP;xP;yP;zP;{P;}P;0Q;1Q;2Q;3Q;4Q;5Q;6Q;7Q;8Q;9Q;AQ;BQ;CQ;DQ;EQ;FQ;GQ;HQ;IQ;JQ;KQ;LQ;MQ;NQ;OQ;PQ;QQ;SQ;RQ;TQ;UQ;VQ;WQ;XQ;YQ;ZQ;aQ;bQ;cQ;dQ;eQ;fQ;gQ;hQ;iQ;jQ;kQ;lQ;mQ;nQ;oQ;pQ;qQ;rQ;sQ;tQ;uQ;vQ;wQ;xQ;yQ;zQ;{Q;}Q;0S;1S;2S;3S;4S;5S;6S;7S;8S;9S;AS;BS;CS;DS;ES;FS;GS;HS;IS;JS;KS;LS;MS;NS;OS;PS;QS;SS;RS;TS;US;VS;WS;XS;YS;ZS;aS;bS;cS;dS;eS;fS;gS;hS;iS;jS;kS;lS;mS;nS;oS;pS;qS;rS;sS;tS;uS;vS;wS;xS;yS;zS;{S;}S;0R;1R;2R;3R;4R;5R;6R;7R;8R;9R;AR;BR;CR;DR;ER;FR;GR;HR;IR;JR;KR;LR;MR;NR;OR;PR;QR;SR;RR;TR;UR;VR;WR;XR;YR;ZR;aR;bR;cR;dR;eR;fR;gR;hR;iR;jR;kR;lR;mR;nR;oR;pR;qR;rR;sR;tR;uR;vR;wR;xR;yR;zR;{R;}R;0T;1T;2T;3T;4T;5T;6T;7T;8T;9T;AT;BT;CT;DT;ET;FT;GT;HT;IT;JT;KT;LT;MT;NT;OT;PT;QT;ST;RT;TT;UT;VT;WT;XT;YT;ZT;aT;bT;cT;dT;eT;fT;gT;hT;iT;jT;kT;lT;mT;nT;oT;pT;qT;rT;sT;tT;uT;vT;wT;xT;yT;zT;{T;}T;0U;1U;2U;3U;4U;5U;6U;7U;8U;9U;AU;BU;CU;DU;EU;FU;GU;HU;IU;JU;KU;LU;MU;NU;OU;PU;QU;SU;RU;TU;UU;VU;WU;XU;YU;ZU;aU;bU;cU;dU;eU;fU;gU;hU;iU;jU;kU;lU;mU;nU;oU;pU;qU;rU;sU;tU;uU;vU;wU;xU;yU;zU;{U;}U;0V;1V;2V;3V;4V;5V;6V;7V;8V;9V;AV;BV;CV;DV;EV;FV;GV;HV;IV;JV;KV;LV;MV;NV;OV;PV;QV;SV;RV;TV;UV;VV;WV;XV;YV;ZV;aV;bV;cV;dV;eV;fV;gV;hV;iV;jV;kV;lV;mV;nV;oV;pV;qV;rV;sV;tV;uV;vV;wV;xV;yV;zV;{V;}V;0W;1W;2W;3W;4W;5W;6W;7W;8W;9W;AW;BW;CW;DW;EW;FW;GW;HW;IW;JW;KW;LW;MW;NW;OW;PW;QW;SW;RW;TW;UW;VW;WW;XW;YW;ZW;aW;bW;cW;dW;eW;fW;gW;hW;iW;jW;kW;lW;mW;nW;oW;pW;qW;rW;sW;tW;uW;vW;wW;xW;yW;zW;{W;}W;0X;1X;2X;3X;4X;5X;6X;7X;8X;9X;AX;BX;CX;DX;EX;FX;GX;HX;IX;JX;KX;LX;MX;NX;OX;PX;QX;SX;RX;TX;UX;VX;WX;XX;YX;ZX;aX;bX;cX;dX;eX;fX;gX;hX;iX;jX;kX;lX;mX;nX;oX;pX;qX;rX;sX;tX;uX;vX;wX;xX;yX;zX;{X;}X;0Y;1Y;2Y;3Y;4Y;5Y;6Y;7Y;8Y;9Y;AY;BY;CY;DY;EY;FY;GY;HY;IY;JY;KY;LY;MY;NY;OY;PY;QY;SY;RY;TY;UY;VY;WY;XY;YY;ZY;aY;bY;cY;dY;eY;fY;gY;hY;iY;jY;kY;lY;mY;nY;oY;pY;qY;rY;sY;tY;uY;vY;wY;xY;yY;zY;{Y;}Y;0Z;1Z;2Z;3Z;4Z;5Z;6Z;7Z;8Z;9Z;AZ;BZ;CZ;DZ;EZ;FZ;GZ;HZ;IZ;JZ;KZ;LZ;MZ;NZ;OZ;PZ;QZ;SZ;RZ;TZ;UZ;VZ;WZ;XZ;YZ;ZZ;aZ;bZ;cZ;dZ;eZ;fZ;gZ;hZ;iZ;jZ;kZ;lZ;mZ;nZ;oZ;pZ;qZ;rZ;sZ;tZ;uZ;vZ;wZ;xZ;yZ;zZ;{Z;}Z;0a;1a;2a;3a;4a;5a;6a;7a;8a;9a;Aa;Ba;Ca;Da;Ea;Fa;Ga;Ha;Ia;Ja;Ka;La;Ma;Na;Oa;Pa;Qa;Sa;Ra;Ta;Ua;Va;Wa;Xa;Ya;Za;aa;ba;ca;da;ea;fa;ga;ha;ia;ja;ka;la;ma;na;oa;pa;qa;ra;sa;ta;ua;va;wa;xa;ya;za;{a;}a;0b;1b;2b;3b;4b;5b;6b;7b;8b;9b;Ab;Bb;Cb;Db;Eb;Fb;Gb;Hb;Ib;Jb;Kb;Lb;Mb;Nb;Ob;Pb;Qb;Sb;Rb;Tb;Ub;Vb;Wb;Xb;Yb;Zb;ab;bb;cb;db;eb;fb;gb;hb;ib;jb;kb;lb;mb;nb;ob;pb;qb;rb;sb;tb;ub;vb;wb;xb;yb;zb;{b;}b;0c;1c;2c;3c;4c;5c;6c;7c;8c;9c;Ac;Bc;Cc;Dc;Ec;Fc;Gc;Hc;Ic;Jc;Kc;Lc;Mc;Nc;Oc;Pc;Qc;Sc;Rc;Tc;Uc;Vc;Wc;Xc;Yc;Zc;ac;bc;cc;dc;ec;fc;gc;hc;ic;jc;kc;lc;mc;nc;oc;pc;qc;rc;sc;tc;uc;vc;wc;xc;yc;zc;{c;}c;0d;1d;2d;3d</D></Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;qt14;Cn14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;}}}}}}Sdl24;Wi3oE8Vqc24</D></PVPort>
+<SelVar>S2</SelVar>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.2</D></Split>
+<SubSplit><T>Int</T><D>0</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;76;e4;OC;c9</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="Design1_S2" UserName="Design1_S2" Type="Rectangular Graph">
+<AaBackgnd><T>Bool</T><D>0</D></AaBackgnd>
+<AaTraces><T>Bool</T><D>1</D></AaTraces>
+<AllowAA><T>Bool</T><D>0</D></AllowAA>
+<DefContext>Design1_Data</DefContext>
+<GoalFill><T>Int</T><D>2</D></GoalFill>
+<GoalLine><T>Int</T><D>1</D></GoalLine>
+<LastAxisTab>Y</LastAxisTab>
+<MarkerLine><T>Int</T><D>1</D></MarkerLine>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowColumns><T>Bool</T><D>0</D></ShowColumns>
+<ShowOptTargets><T>Bool</T><D>1</D></ShowOptTargets>
+<ShowPoints><T>Bool</T><D>1</D></ShowPoints>
+<ShowYieldTargets><T>Bool</T><D>0</D></ShowYieldTargets>
+<Title>Clutter Echo</Title>
+<Item XName="AxisQueue" Type="AxisQueue">
+<Current><T>Int</T><D>0</D></Current>
+<Top><T>Int</T><D>0</D></Top></Item>
+<Item XName="Font" Type="Font">
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>14</D></Size>
+<Weight><T>Int</T><D>700</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.1016</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="AxisX" Type="GrAxis">
+<AutoScale><T>Bool</T><D>0</D></AutoScale>
+<AxisType><T>Int</T><D>2</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>2499</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>0</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<TitleOverride>Range Bin</TitleOverride>
+<Unit><T>Int</T><D>0</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY" UserName="S2" Type="GrAxis">
+<AutoScale><T>Bool</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>0</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>2e-53</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>0</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>255</D></TextColor>
+<TitleColor><T>Int</T><D>255</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>0</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY2" Type="GrAxis">
+<AutoScale><T>Bool</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>1</D></AxisType>
+<InUse><T>Bool</T><D>0</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>10</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>0</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="Display0" Type="GraphDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;Kt14;Gn14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;eCj1}0Q6r24;}}}}}}}Fl24</D></PVPort>
+<PanX><T>Double</T><D>0</D></PanX>
+<PanY><T>Double</T><D>0</D></PanY>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;e4;96;d9</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder>
+<Zoom><T>Double</T><D>1</D></Zoom></Item>
+<Item XName="Legend" Type="Legend">
+<Color><T>Int</T><D>1073741824</D></Color>
+<Height><T>Double</T><D>156.4149284362793</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>3843.58507156372</D></PosY>
+<Width><T>Double</T><D>5401.625961710502</D></Width>
+<ZOrder><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Name>Arial</Name>
+<Size><T>Double</T><D>8</D></Size></Item></Item>
+<Item XName="MkrGroup" Type="MkrGroup">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>1</D></Selected>
+<ZOrder><T>Int</T><D>7000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>8</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Marker_A" Type="Marker">
+<Indep><T>Double</T><D>506</D></Indep>
+<Index><T>Int</T><D>506</D></Index>
+<MarkAll><T>Bool</T><D>1</D></MarkAll>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Series>Series0</Series>
+<SortNum><T>Int</T><D>1</D></SortNum>
+<Trace>Trace0</Trace>
+<UserIndep><T>Double</T><D>506</D></UserIndep>
+<dCoord><T>Array_Dbl64</T><D>1;2;e}14;3PDHDditqJ3</D></dCoord>
+<Item XName="Trace1" Type="SubMkr">
+<Indep><T>Double</T><D>506</D></Indep>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Series>Series0</Series>
+<Trace>Trace0</Trace>
+<dCoord><T>Array_Dbl64</T><D>1;2;e}14;3PDHDditqJ3</D></dCoord>
+<Item XName="MkrText" Type="DrawText">
+<Color><T>Int</T><D>16774124</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Justification><T>Int</T><D>8</D></Justification>
+<PosX><T>Double</T><D>1422.633969244609</D></PosX>
+<PosY><T>Double</T><D>1276.837398075746</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>506 , 13.62e-54 </Text>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>255</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="Symbol" Type="MkrSymbol">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected></Item></Item></Item>
+<Item XName="Marker_B" Type="Marker">
+<Indep><T>Double</T><D>1043</D></Indep>
+<Index><T>Int</T><D>1043</D></Index>
+<MarkAll><T>Bool</T><D>1</D></MarkAll>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Series>Series0</Series>
+<SortNum><T>Int</T><D>2</D></SortNum>
+<Trace>Trace0</Trace>
+<UserIndep><T>Double</T><D>1043</D></UserIndep>
+<dCoord><T>Array_Dbl64</T><D>1;2;JG24;FX6UWTNTpJ3</D></dCoord>
+<Item XName="Trace1" Type="SubMkr">
+<Indep><T>Double</T><D>1043</D></Indep>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Series>Series0</Series>
+<Trace>Trace0</Trace>
+<dCoord><T>Array_Dbl64</T><D>1;2;JG24;FX6UWTNTpJ3</D></dCoord>
+<Item XName="MkrText" Type="DrawText">
+<Color><T>Int</T><D>16774124</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Justification><T>Int</T><D>8</D></Justification>
+<PosX><T>Double</T><D>2451.350873967556</D></PosX>
+<PosY><T>Double</T><D>1418.506589110411</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>1043 , 12.7e-54 </Text>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>255</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="Symbol" Type="MkrSymbol">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected></Item></Item></Item></Item>
+<Item XName="Series0" Type="GraphSeries">
+<Color><T>Int</T><D>255</D></Color>
+<Context>Design1_Data</Context>
+<Label />
+<Meas>S2</Meas>
+<MeasFormat />
+<MeasGroup />
+<MeasSource><T>Int</T><D>1</D></MeasSource>
+<PPVar />
+<PlotType />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<SeriesType><T>Int</T><D>7</D></SeriesType>
+<SymbolShape><T>Int</T><D>2</D></SymbolShape>
+<ZOrder><T>Int</T><D>9000</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>Inl_i=S2;</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" /></Item></Item></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.1372012994274468</D></Data></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Notes" UserName="Notes" Type="Notes">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;P class=MsoTitle style=&quot;BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: windowtext 0.75pt solid; PADDING-BOTTOM: 1pt; PADDING-TOP: 0in; PADDING-LEFT: 0in; MARGIN: 0in 0in 0pt; BORDER-LEFT: medium none; PADDING-RIGHT: 0in&quot; align=center&gt;&lt;FONT size=5 face=Arial&gt;&lt;SPAN style=&quot;FONT-SIZE: 18pt; FONT-FAMILY: Arial&quot;&gt;&lt;STRONG&gt;Sea Clutter&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P class=MsoBodyText style=&quot;MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;FONT size=2&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue Example Workspace&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;?xml:namespace prefix = &quot;o&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT face=&quot;Times New Roman&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;FONT size=4&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;FONT face=Calibri&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;FONT face=Calibri&gt;************************************************&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;FONT size=4 face=Calibri&gt;&lt;STRONG&gt;Simulation Task&lt;/STRONG&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;FONT face=Calibri&gt;************************************************&lt;/FONT&gt;&lt;/P&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;TEXT-ALIGN: left; MARGIN: 0in 0in 0pt&quot; align=left&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;FONT face=Calibri&gt;&lt;FONT size=3&gt;This&amp;nbsp;example workspace&amp;nbsp;demonstrates&amp;nbsp;how to use&amp;nbsp;RADAR_SEA_CLUTTER and RADAR_Clutter_H models&amp;nbsp;to generate the sea clutter under different sea state&lt;/FONT&gt;.&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;FONT size=4&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;FONT face=Calibri&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;FONT face=Calibri&gt;************************************************&lt;/FONT&gt;&lt;/P&gt;&lt;FONT size=4&gt;&lt;STRONG&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;FONT size=4 face=Calibri&gt;&lt;STRONG&gt;Workspace Description&lt;/STRONG&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 10pt&quot;&gt;&lt;/STRONG&gt;&lt;/FONT&gt;&lt;FONT face=Calibri&gt;************************************************&lt;/FONT&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt&quot;&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoNormal style=&quot;MARGIN: 0in 0in 0pt&quot;&gt;&lt;FONT size=3&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: &apos;Arial&apos;,&apos;sans-serif&apos;&quot;&gt;&lt;FONT size=3 face=Calibri&gt;There&amp;nbsp;is&amp;nbsp;one top level design in this workspace&lt;/FONT&gt;:&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 12pt; FONT-FAMILY: &apos;Arial&apos;,&apos;sans-serif&apos;&quot;&gt;&lt;?xml:namespace prefix = &quot;o&quot; ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;OL type=disc&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: &apos;Arial&apos;,&apos;sans-serif&apos;&quot;&gt;&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: &apos;Arial&apos;,&apos;sans-serif&apos;&quot;&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=3 face=Calibri&gt;This example is used for LPRF radar.&amp;nbsp;It is to generate the echo at each range bin in the un-ambiguous range. &lt;/FONT&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=3 face=Calibri&gt;The output of&amp;nbsp;RADAR_SEA_CLUTTER should as the input of RADAR_Clutter_H to get the wave which meets required PDF and PSD. &lt;/FONT&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=3 face=Calibri&gt;This model support three kinds of antenna pattern, which are gaussian, cosine, and sinc type. &lt;/FONT&gt;&lt;/LI&gt;&lt;/OL&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;FONT face=Calibri&gt;&lt;FONT size=3&gt;The output of the example is the echo clutter&lt;/FONT&gt;.&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;OL type=disc&gt;&lt;/SPAN&gt;&lt;/OL&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/FONT&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;Gt14;Ol14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;nZ7FUyetk24;csNQVf1ra24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;86;c4</D></Window>
+<ZOrder><T>Int</T><D>3</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item></Item>

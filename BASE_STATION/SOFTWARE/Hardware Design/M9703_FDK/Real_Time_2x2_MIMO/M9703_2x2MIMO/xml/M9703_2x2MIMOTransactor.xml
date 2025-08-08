@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Transactor HROCSpecPath="M9703_2x2MIMOHROC.xml" name="M9703_2x2MIMO">
+<Initialize>
+<Write url="/M9703A_real_time_2x2_MIMO_Using_M8190_Matlab2014a/M9703_2x2MIMO/FPGA0/Register">
+<Constant value="FromSystemVue" /></Write></Initialize>
+<Runtime>
+<ReadGroup>
+<Read url="/M9703A_real_time_2x2_MIMO_Using_M8190_Matlab2014a/M9703_2x2MIMO/FPGA0/Out1">
+<Output index="0" /></Read></ReadGroup></Runtime></Transactor>

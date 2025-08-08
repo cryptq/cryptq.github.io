@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Transactor HROCSpecPath="M9703_TEMPLATE_tutorialHROC.xml" name="M9703_TEMPLATE_tutorial">
+<Initialize>
+<Write url="/M9703_FPGA_Design_Tutorial/M9703_TEMPLATE_tutorial/FPGA0/Register">
+<Constant value="FromSystemVue" /></Write></Initialize>
+<Runtime>
+<ReadGroup>
+<Read url="/M9703_FPGA_Design_Tutorial/M9703_TEMPLATE_tutorial/FPGA0/OutI">
+<Output index="0" /></Read>
+<Read url="/M9703_FPGA_Design_Tutorial/M9703_TEMPLATE_tutorial/FPGA0/OutQ">
+<Output index="1" /></Read></ReadGroup></Runtime></Transactor>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Transactor HROCSpecPath="wlanHROC.xml" name="wlan">
+<Initialize>
+<Write url="/WLAN_11a_tx/wlan/Control">
+<Constant value="2" /></Write>
+<Write url="/WLAN_11a_tx/wlan/Control">
+<Constant value="0" /></Write></Initialize>
+<Runtime>
+<ReadGroup>
+<Read url="/WLAN_11a_tx/wlan/Q_out">
+<Output index="0" /></Read>
+<Read url="/WLAN_11a_tx/wlan/I_out">
+<Output index="1" /></Read></ReadGroup></Runtime>
+<Setup>
+<Output integerWordLength="14" isSigned="false" wordLength="14" />
+<Output integerWordLength="14" isSigned="false" wordLength="14" /></Setup></Transactor>

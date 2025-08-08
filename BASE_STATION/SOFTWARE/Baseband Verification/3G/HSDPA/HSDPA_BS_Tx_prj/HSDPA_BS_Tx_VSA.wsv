@@ -1,0 +1,2387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;PC;e9</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2018:323:15:36</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2011.1</D></Ver>
+<Version>1.21</Version>
+<Item XName="Analysys" UserName="Analysys" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="HSDPA_BS_TX_EVM_Analysys" UserName="HSDPA_BS_TX_EVM_Analysys" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<CollectFixedPtData><T>Int</T><D>0</D></CollectFixedPtData>
+<DataFlowInformation><T>Int</T><D>0</D></DataFlowInformation>
+<DeadlockResolution><T>Int</T><D>0</D></DeadlockResolution>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<RepeatableRandomSequences><T>Int</T><D>0</D></RepeatableRandomSequences>
+<RunTimeTuning><T>Bool</T><D>1</D></RunTimeTuning>
+<SchedulerType><T>Int</T><D>0</D></SchedulerType>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPtolemyErrors><T>Bool</T><D>1</D></ShowPtolemyErrors>
+<Item XName="ConfigurationName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Bool</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>HSDPA_BS_TX_EVM_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Int</T><D>1</D></Data></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>HSDPA_BS_TX_EVM</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>1000</D></Data>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="Num_Samples" Type="Param">
+<Data><T>Int</T><D>15345</D></Data></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="Sample_Rate" Type="Param">
+<DataEntry>15.36</DataEntry>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.0009990000000000001</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>16.85</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>6.510416666666667e-08</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="Data" UserName="Data" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="HSDPA_BS_TX_EVM_Data" UserName="HSDPA_BS_TX_EVM_Data" Type="DataSet">
+<FullPath>Data\HSDPA_BS_TX_EVM_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Warning: FCarrier of Modulator &apos;HSDPA_BS_TX_EVM__HSDPA_DL_SourceRF_2__M2&apos;: Optional LO input is connected. Therefore, FCarrier will be ignored and the LO Fc will be used.&#x000D;&#x000A;...ABORTED...&#x000D;&#x000A;Execution time: 324.04 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;A824;Ga14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;sMOSXjK2034;xtlV}{juQ24</D></PVPort>
+<SelVar>HSDPA_BS_TX_EVM_Channel_EVM</SelVar>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.5329949238578681</D></Split>
+<SubSplit><T>Int</T><D>0</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;;Q6;PC;d9</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="HSDPA_BS_TX_EVM" UserName="HSDPA_BS_TX_EVM" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>CQI</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>11</NetName></Item></Item></Item></Item>
+<Item XName="N10" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>F3</PartID>
+<PinName>input</PinName>
+<SchObject>Part13</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part9</MappedSchObject>
+<NetName>19</NetName></Item></Item></Item>
+<Item XName="P2" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>E3</PartID>
+<PinName>output</PinName>
+<SchObject>Part9</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part13</MappedSchObject>
+<NetName>19</NetName></Item></Item></Item></Item>
+<Item XName="N11" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>V1</PartID>
+<PinName>input</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N12" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>RFout</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N13" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>E3</PartID>
+<PinName>input</PinName>
+<SchObject>Part9</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>ARQ</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>20</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>STTDOut</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>23</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>RV</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>22</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>nd</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>6</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>7</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>BitDSCH</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>7</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>16</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>HSDPA_DL_SourceRF_2</PartID>
+<PinName>EVMRef</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>8</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>17</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>E3</PartID>
+<PinName>fc</PinName>
+<SchObject>Part9</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>8</NetName></Item></Item></Item></Item>
+<Item XName="N9" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>F3</PartID>
+<PinName>output</PinName>
+<SchObject>Part13</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item></Item>
+<Item XName="Equations" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>SamplesPerChip=8;&#x000D;&#x000A;FilterLength=128;&#x000D;&#x000A;ModulationScheme=0;&#x000D;&#x000A;%RX RRC Filter&#x000D;&#x000A;L1 = floor(FilterLength/2);&#x000D;&#x000A;Alpha1 = 0.22;&#x000D;&#x000A;SampPerSym1 = SamplesPerChip;&#x000D;&#x000A;FilterType1 = &apos;sqrt&apos;;&#x000D;&#x000A;Window1 = &apos;rectangular&apos;;&#x000D;&#x000A;RRC_Rx = WCDMA_firrcos(L1,Alpha1,SampPerSym1,FilterType1,Window1);&#x000D;&#x000A;&#x000D;&#x000A;SourceType=0;&#x000D;&#x000A;SignalPower_dBm=10;&#x000D;&#x000A;Power = 0.001 * 10^(SignalPower_dBm/10);&#x000D;&#x000A;&#x000D;&#x000A;ChipsPerSlot=2560;&#x000D;&#x000A;FCarrier=2140e6;&#x000D;&#x000A;&#x000D;&#x000A;&#x000D;&#x000A;TimeStep=1/(3840000*SamplesPerChip);&#x000D;&#x000A;SourceDelay=(2*floor(FilterLength*SamplesPerChip/2)+1)*TimeStep;&#x000D;&#x000A;NumSlotMeasured=15*4;&#x000D;&#x000A;StartSlot=0;&#x000D;&#x000A;SearchLength=SourceDelay;&#x000D;&#x000A;SlotNum=NumSlotMeasured;&#x000D;&#x000A;if (SamplesPerChip&gt;=16) &#x000D;&#x000A;&#x0009;Ratio=1;&#x000D;&#x000A;elseif(SamplesPerChip&gt;=8) &#x000D;&#x000A;&#x0009;Ratio=2; &#x000D;&#x000A;else &#x000D;&#x000A;&#x0009;Ratio=4; &#x000D;&#x000A;end&#x000D;&#x000A;MaxDelaySample = floor( (SearchLength + (16e-6/3.84))*3840000*SamplesPerChip);&#x000D;&#x000A;&#x000D;&#x000A;L = floor(FilterLength/2);&#x000D;&#x000A;Alpha = 0.22;&#x000D;&#x000A;SampPerSym = SamplesPerChip;&#x000D;&#x000A;FilterType = &apos;sqrt&apos;;&#x000D;&#x000A;Window = &apos;rectangular&apos;;&#x000D;&#x000A;RRC_CoeEVM = WCDMA_firrcos(L,Alpha,SampPerSym,FilterType,Window);&#x000D;&#x000A;&#x000D;&#x000A;AnalysisCodeLevel=4;&#x000D;&#x000A;AnalysisCodeIndex=4;</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Array_I64</T><D>1;0;</D></BPLines>
+<BPStates><T>Array_I64</T><D>1;0;</D></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>117.6125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="EquationDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;aA2C;CH2C;mG234;We734</D></PVPort>
+<Split><T>Double</T><D>0.2417982989064399</D></Split>
+<Split2><T>Double</T><D>0.3</D></Split2></Item></Item>
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Alpha" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>0.22</D></Data></Item>
+<Item XName="Alpha1" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>0.22</D></Data></Item>
+<Item XName="AnalysisCodeIndex" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>4</D></Data></Item>
+<Item XName="AnalysisCodeLevel" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>4</D></Data></Item>
+<Item XName="ChipsPerSlot" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>2560</D></Data></Item>
+<Item XName="FCarrier" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>2140000000</D></Data></Item>
+<Item XName="FilterLength" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>128</D></Data></Item>
+<Item XName="FilterType" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Array_Char64</T><D>2;4;1;p1;n1;o1;q1</D></Data></Item>
+<Item XName="FilterType1" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Array_Char64</T><D>2;4;1;p1;n1;o1;q1</D></Data></Item>
+<Item XName="L" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>64</D></Data></Item>
+<Item XName="L1" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>64</D></Data></Item>
+<Item XName="MaxDelaySample" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>1153</D></Data></Item>
+<Item XName="ModulationScheme" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="NumSlotMeasured" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>60</D></Data></Item>
+<Item XName="PDSCH_1_TTIPattern" Type="Variable">
+<Data><T>Array_Dbl64</T><D>2;6;1;m}3;m}3;m}3;m}3;m}3;m}3</D></Data></Item>
+<Item XName="Power" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>0.01</D></Data></Item>
+<Item XName="RRC_CoeEVM" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Array_Dbl64</T><D>2;1;1025;7rYYHd{KMyB;WXJlaMTSMyB;3g80tKcSHyB;UWFsyFeq0yB;E{l6UW24bx3;pKDYCbmRAy3;442TBWozKy3;AkOUqPw4Oy3;fdsJJwipLy3;SKshLYfEDy3;VKwzC35Hmx3;ADMB2{o{zxB;avDAdPvUHyB;rF2eL5yeNyB;EHhSyOTZOyB;yJ7L1xv{JyB;crKaSjEr5yB;z4BGcYoS4x3;IPeLeccC8y3;f1DR8JluKy3;ZZwcNHl0Py3;i9kzuwNXNy3;3D9kl1RkGy3;YXJ3R95Yux3;PzQuZgCXtxB;{q5Q9tRcGyB;c2oLu3}bNyB;JYNW0P}FPyB;MzOjTfHALyB;i0uUo3mS8yB;ov6YLzvmwwB;3r7IELB97y3;B4f4{AX1Ly3;y2uOr7lmPy3;46fVzJEgOy3;zRSFDhAwHy3;TXXkzjuxxx3;SapdKLRjsxB;JRZGNU}DHyB;vheFroP0PyB;NlrHtUiESyB;KY799yLKNyB;qOpK{2WACyB;OoDHzqLkOxB;nUyXy7K07y3;R}WDI78My3;xFRh}wFwSy3;q}wxml8WSy3;fY6GRxnxKy3;ufnxPvwF3y3;dH3H1DaSlxB;hbDwV2wiGyB;xJpEQ5bqPyB;mXcuekqDTyB;rWTVNkW5QyB;h1QvzeB6HyB;RaNIwZeymxB;DnElxW6F3y3;2TqmnsNMLy3;Eq4sF98JRy3;8pGNTfitRy3;wYlTfadvMy3;Yr6B}FQ7y3;dME50iZfXxB;Ft3x3XMOFyB;L69wLNLhPyB;um2iLBRtTyB;wkCPgwKGSyB;HgF40kAOIyB;kwEqMjToqxB;j6xHNcif2y3;{R9hq3JvLy3;4FNImh}dTy3;1J9a}}ZiUy3;Bp7zf55oOy3;4ZsBvKgHAy3;1tljURtiQxB;}OlOrugKGyB;84F4}mLWSyB;RYPYjIbKWyB;cQvOSx0WUyB;3lRvBC4ULyB;Xz{kqt0{xB;5LuP9W8e0y3;nd2uZBbRMy3;GSG7Ks6jVy3;S4okGbr{Wy3;dhATcrsfRy3;M{VinGvvGy3;dJwy4K5sKx3;YbQYlkXMDyB;i0IFl0TRSyB;{V1RlPb3XyB;NNCCgzXaWyB;xQk9HOMjOyB;z3sepBKM5yB;xg3iMWCItx3;3K29C8m3Ly3;QzyTKyxaVy3;{Oi{g1iUXy3;toc0gOlOUy3;vZbA9hrrIy3;wRsohQ8Bdx3;LlZQrAqiByB;Qxifj}WbSyB;}ZZ9ZjfaXyB;iiE2vGVNXyB;HM}}VLZMQyB;jU93f9Ae7yB;3oS}Rvibsx3;Litdmwx5My3;wvZnkKYuWy3;5y1JzbN{Yy3;fPUhE6hoWy3;IAf68FPYLy3;5tCDJVNjnx3;f5UjmruvByB;vo5zroDUTyB;4Smm{d9JZyB;cQMT2WJcZyB;TkGO4az1VyB;h29QbnhgFyB;rVmhmlIUex3;yELAEoYRLy3;GYwYKzLcXy3;fFBpu87cay3;sduuUjZ0Zy3;XkEeL{cKQy3;P8Pw5wFM1y3;di}FJ5U}5yB;if0uUhDHRyB;13eMawVdZyB;49Cp072iayB;4usZpOy4XyB;bybnDyL9JyB;yv3lPo7wow3;W2NBJQ2oJy3;EexDTT3RXy3;N8BUanE3by3;RXzYdoStZy3;37W{1MjDRy3;AC{N}{{94y3;vrjkTQ{D5yB;9cNcZ3i9TyB;Uz8ikQ4fayB;ikZpWue4cyB;1{mB6SKUYyB;KwOEDETBLyB;OPEV7yTwowB;YGf}HLQ2Ly3;Yzjjivc}Yy3;SL7XohiKdy3;RdFyGujTcy3;iUHaVB3YWy3;ni7kCi1ABy3;mgH7AC2W2yB;fIqv{NSLUyB;6XnkKkNTcyB;B6MRJ4mqeyB;QAZyqlLhbyB;7TArb4ALSyB;CJRceN7JqxB;Au{1dMdUIy3;NZdXNJk1Zy3;AUg3SSAdey3;f9LbYxGjey3;feKjmDBGZy3;yIVxx4NuIy3;i58YDS9MqxB;kIBCm9C0RyB;}kahnBMLcyB;oc2{FSzdfyB;MMS7VvU5dyB;bqW5pBXVUyB;1AX6Vg3n{xB;6Si9sj06Hy3;cie7sO{6Zy3;6HdfKbiPfy3;btIlXjUxfy3;hUfS}6YVay3;Y8clFPtVKy3;t9sCJAeGqxB;q8WD}iJyTyB;idCAklCEeyB;WfJgo7n7iyB;9UFCGE7ifyB;6rcdkqWNXyB;BBYz1Fim3yB;AICq6{piHy3;ATFOUHway3;9wApI6VViy3;skN9gICqjy3;ZjUTtRDVey3;rHL3hGsDSy3;Et9lHEtKDxB;Zp89vcfCTyB;6S8eoJJffyB;8h4bZac5lyB;nr{oU0SfjyB;nuDEM{AbbyB;ol5RUNpHHyB;anKeg}fF9y3;GIZI6p0xZy3;dtWJMOQ7jy3;iD52B98oly3;PrOdDrNHhy3;vYpSn{1ZWy3;Xxat7ZEylx3;sXBvRGDDQyB;8ceeM}3KfyB;bsow7aHqlyB;QsT}0v24lyB;voxMS9v8dyB;ahfYNtHYJyB;C8vsG9FF8y3;oTg3RUxlay3;BQQWa6Qwky3;jZrn8Tc4ny3;M9Pr423bjy3;{fPe2fZ7Yy3;TA0YKE6}nx3;3MCitZe}RyB;dZaLEKjKiyB;67kA3g21oyB;jHjL7cDunyB;JmC25YtPhyB;vISq4kQPyB;vjQDErGY4y3;8fRHr7ZAcy3;l76HWwSHny3;pupKaXXjpy3;wjrL2gzony3;971u15eody3;8rhSTscEAy3;ba1fmvKeOyB;TQ}ccEMdiyB;kZuKGI7LpyB;8E8GDOH4qyB;mlW8iN0KmyB;DkqvBVnlXyB;iizAiHZLZx3;HenpP{E}Zy3;yj54MkhAny3;ZekvL2JUqy3;OYCFKVw7py3;K4YfVkPmgy3;tz0uIXY0Iy3;c6kE5DE2MyB;CC2J8meliyB;Gvpl{bI2qyB;VEYsoRT9ryB;4SLHoe5OnyB;cZFLaTC0ZyB;ZqqJDwIqdx3;LQ2at427cy3;J{JfoUF4py3;oq2GA3Cvsy3;qY1BmdSary3;FSqKFkqZky3;NxxIDtMOLy3;qasoR1YFOyB;jBX9U9jOmyB;dBefxWVHtyB;8A05vJA6vyB;q}p7grqLryB;J3RuFF0VfyB;fhuoR6FEoxB;d34bSgzrby3;SWNWamnlqy3;7OWVPna6wy3;8FTb}Zkvy3;PkGTgoEepy3;elIYAq{CYy3;mXGCkzZMCyB;Cfpwmxl{kyB;RzBT8qe2uyB;654hhp}ExyB;MWlZijsIuyB;kBBYbJuflyB;Tre4cIDcDyB;mPEvYxbkYy3;BHW}goyOqy3;irMXuayqwy3;RbIamjl8xy3;KenT9e0Ary3;nJvM0msKay3;aDLTwTsAByB;nBqXw5CRmyB;AV4SPAjyvyB;NyJorRbfzyB;GM1mVEiZwyB;3wHM7U9EnyB;2SeCP1r2DyB;JLU}4WHQcy3;Fy0ggJ6xty3;Lh4}gZ9a}y3;1pshfDC80z3;KD}QeW7gvy3;cyrEq4x9gy3;C6e}Ms}M6yB;oNSdr9hToyB;1hvwr{kP{yB;sQb9ZfAx1zB;lC7NbGKk0zB;iwRCv04btyB;Mbx}cOwdWyB;Bg7BN4X4Yy3;43p9bxVduy3;msmNz7UT1z3;nJJzME4o2z3;TjJzeGgs}y3;vsq18g1{oy3;6ERn1E6fxx3;atT4Iyd1myB;CAAklaQH{yB;vEzKWqPt2zB;XkdmLFlJ2zB;xw}nJ1T4xyB;GalEiCWKcyB;Vdhpi0UCUy3;ZFcvFSSouy3;4{XS{tQH2z3;gtxEl}V}3z3;WVEgI9541z3;7829{c87qy3;YAevQbMLlx3;p{n5qML{oyB;FgkTddwa1zB;RzlxLYls5zB;VIc4xn5E5zB;}n}CMPzK}yB;x5rEuykDfyB;YD9qsKoNZy3;CbAsWljb{y3;wOOTtS7g6z3;pzxzXG5B9z3;{5VszYF86z3;t6uix9U6yy3;Upq78RrvKy3;FHSfm}yQpyB;d9T4CVzB4zB;YRr}8mmSAzB;QcXiNdozAzB;4Acarj4Z5zB;97kvQ}nZsyB;bSUn5f14Ay3;C7DaWc9gyy3;zSqIQmuz7z3;JduLJKwKCz3;w8LVUlFMAz3;iOj7CZnO2z3;i7e3z4Jhey3;YpOeQiWKkyB;FHCTxYuk3zB;tSfS}bhTBzB;QOdC2D{vCzB;v5UIYDc7zB;94XjRCaFvyB;HKHpPCkd9y3;GCfg1GNh}y3;cCXae21nAz3;eNtQrHakFz3;dNzlfFcNDz3;1elAmLz{3z3;yIet}{t}by3;1S}SL1HrryB;RGvphRfY9zB;lnWSy2wTHzB;tSEPn9ONIzB;wVyHZ1pDEzB;qQY61JtY0zB;zajy}7cM7y3;LrBCjcEv3z3;O}0dNe0KHz3;KNDywmy6Lz3;MW2NS9PNKz3;q7jaP8PDEz3;X9t6{ytRvy3;s6X}cPx2myB;ITN4dyAWBzB;3BDAwq{gKzB;JfruMbUANzB;dsqcXApaKzB;ubwY{OrmAzB;{E4XryRueyB;R}QTcjnw}y3;2wlOJm}OHz3;22TUSvkyMz3;jAAL}RoJNz3;ZDixSwAIIz3;ZoBdlOfr1z3;fJda3emhbyB;QjkDY7LvBzB;ChnZxhU9MzB;n41XwQUIPzB;SfQHKjITMzB;lBvqL3FDCzB;Dvr}9YGhVyB;1ZBhngwQ6z3;OGHEf9oPMz3;2snd57VtRz3;pmM5o{JsRz3;l7X9b141Mz3;Or1peAoC3z3;wrUWMMdJtyB;hZf7EKttKzB;JfyLenL2WzB;lk7Dp4ZLYzB;FGJ2WkHfWzB;SPBDAcAIMzB;Xn{hRGI1tyB;jtZLJkwj9z3;YTF5Et8WTz3;OgL6vgZCaz3;}74f52HRbz3;yGzMLgS3Yz3;1r7irGOFLz3;avNFJXu2Ly3;UZkc8{7PJzB;xYBCFo99YzB;EwRThoBlczB;7xMEjasLczB;GyE50TWwWzB;6YXyoCQFEzB;CHH0V{jSzy3;D3g06f3XRz3;DGlKWyNibz3;qjTVGEs8ez3;dmUDr2iraz3;xRMNqMfjOz3;YRWm3tsuFy3;VS4s2}m5OzB;FC98rE1IczB;tXVhEEZchzB;xX4NaVPQgzB;MGmgcszZYzB;gBYUVDZt5zB;eDkeFCvFKz3;s4SNLRxhez3;5JFAhVyLnz3;vz3GoTjioz3;ypTIDmablz3;svQHraUvXz3;Prur18ykYyB;qa3HQYMjbzB;2p2K1azbpzB;H6VrmeAkuzB;dnaRbjpquzB;zE42w0LXpzB;hEMY20uDZzB;WCugmo0G8z3;IGfojnCblz3;}HXNQJ}tvz3;yB4UTJmw{z3;RKLZXtgYzz3;qndsxFSkrz3;a8NB2oSoXz3;hnYkCN7HPzB;zkcsy1WbqzB;VV2UJtqd{zB;qhpf{pXz0{B;dhJUQzjPzzB;{chwN7PlnzB;hwJHmO2gryB;8Mx9fp}2mz3;qYR9TyKE{z3;owG7Id2i2{3;CJvlAJdY1{3;nnoYo0N0tz3;8YIxBwEY9z3;1G6ilD2BqzB;RPfNKpVm4{B;b6wU0ORXB{B;UYEMTy33C{B;GLQuUw0C5{B;R96QIP1fjzB;}OdplYWBsz3;SxVEUUwfE{3;RREQsUIPN{3;toD{O6zXS{3;gQgB8K43Q{3;HbY}EzrFI{3;PD6Zw63uoz3;gY7zR7ZB9{B;IihuEoObU{B;z0HMsB0mc{B;lND5TV4pg{B;TaLUG1qzf{B;YQXWlf8ZZ{B;oQDy8gsUF{B;}nivSqfVE{3;EFTyabWUe{3;YWwjcHRnp{3;i{RfKM0mu{3;VKWiis{jv{3;Pkoeckhlr{3;PIU0RwJMf{3;ELoDqmQzczB;5oSlh3Mjm{B;IW2rxNrO0}B;DO{CswXy6}B;zFIXOspTA}B;tAghEzla9}B;saFmkHAK3}B;L7T4LbQMj{B;PKOT5}m{p{3;X6vmilGaF}3;W}s}nucqS}3;9O5m9hH0a}3;9OfVxwYaf}3;wQcp8cK2k}3;vvhakPcTm}3;e9RIBzazm}3;vvhakPcTm}3;wQcp8cK2k}3;9OfVxwYaf}3;9O5m9hH0a}3;W}s}nucqS}3;X6vmilGaF}3;PKOT5}m{p{3;L7T4LbQMj{B;saFmkHAK3}B;tAghEzla9}B;zFIXOspTA}B;DO{CswXy6}B;IW2rxNrO0}B;5oSlh3Mjm{B;ELoDqmQzczB;PIU0RwJMf{3;Pkoeckhlr{3;VKWiis{jv{3;i{RfKM0mu{3;YWwjcHRnp{3;EFTyabWUe{3;}nivSqfVE{3;oQDy8gsUF{B;YQXWlf8ZZ{B;TaLUG1qzf{B;lND5TV4pg{B;z0HMsB0mc{B;IihuEoObU{B;gY7zR7ZB9{B;PD6Zw63uoz3;HbY}EzrFI{3;gQgB8K43Q{3;toD{O6zXS{3;RREQsUIPN{3;SxVEUUwfE{3;}OdplYWBsz3;R96QIP1fjzB;GLQuUw0C5{B;UYEMTy33C{B;b6wU0ORXB{B;RPfNKpVm4{B;1G6ilD2BqzB;8YIxBwEY9z3;nnoYo0N0tz3;CJvlAJdY1{3;owG7Id2i2{3;qYR9TyKE{z3;8Mx9fp}2mz3;hwJHmO2gryB;{chwN7PlnzB;dhJUQzjPzzB;qhpf{pXz0{B;VV2UJtqd{zB;zkcsy1WbqzB;hnYkCN7HPzB;a8NB2oSoXz3;qndsxFSkrz3;RKLZXtgYzz3;yB4UTJmw{z3;}HXNQJ}tvz3;IGfojnCblz3;WCugmo0G8z3;hEMY20uDZzB;zE42w0LXpzB;dnaRbjpquzB;H6VrmeAkuzB;2p2K1azbpzB;qa3HQYMjbzB;Prur18ykYyB;svQHraUvXz3;ypTIDmablz3;vz3GoTjioz3;5JFAhVyLnz3;s4SNLRxhez3;eDkeFCvFKz3;gBYUVDZt5zB;MGmgcszZYzB;xX4NaVPQgzB;tXVhEEZchzB;FC98rE1IczB;VS4s2}m5OzB;YRWm3tsuFy3;xRMNqMfjOz3;dmUDr2iraz3;qjTVGEs8ez3;DGlKWyNibz3;D3g06f3XRz3;CHH0V{jSzy3;6YXyoCQFEzB;GyE50TWwWzB;7xMEjasLczB;EwRThoBlczB;xYBCFo99YzB;UZkc8{7PJzB;avNFJXu2Ly3;1r7irGOFLz3;yGzMLgS3Yz3;}74f52HRbz3;OgL6vgZCaz3;YTF5Et8WTz3;jtZLJkwj9z3;Xn{hRGI1tyB;SPBDAcAIMzB;FGJ2WkHfWzB;lk7Dp4ZLYzB;JfyLenL2WzB;hZf7EKttKzB;wrUWMMdJtyB;Or1peAoC3z3;l7X9b141Mz3;pmM5o{JsRz3;2snd57VtRz3;OGHEf9oPMz3;1ZBhngwQ6z3;Dvr}9YGhVyB;lBvqL3FDCzB;SfQHKjITMzB;n41XwQUIPzB;ChnZxhU9MzB;QjkDY7LvBzB;fJda3emhbyB;ZoBdlOfr1z3;ZDixSwAIIz3;jAAL}RoJNz3;22TUSvkyMz3;2wlOJm}OHz3;R}QTcjnw}y3;{E4XryRueyB;ubwY{OrmAzB;dsqcXApaKzB;JfruMbUANzB;3BDAwq{gKzB;ITN4dyAWBzB;s6X}cPx2myB;X9t6{ytRvy3;q7jaP8PDEz3;MW2NS9PNKz3;KNDywmy6Lz3;O}0dNe0KHz3;LrBCjcEv3z3;zajy}7cM7y3;qQY61JtY0zB;wVyHZ1pDEzB;tSEPn9ONIzB;lnWSy2wTHzB;RGvphRfY9zB;1S}SL1HrryB;yIet}{t}by3;1elAmLz{3z3;dNzlfFcNDz3;eNtQrHakFz3;cCXae21nAz3;GCfg1GNh}y3;HKHpPCkd9y3;94XjRCaFvyB;v5UIYDc7zB;QOdC2D{vCzB;tSfS}bhTBzB;FHCTxYuk3zB;YpOeQiWKkyB;i7e3z4Jhey3;iOj7CZnO2z3;w8LVUlFMAz3;JduLJKwKCz3;zSqIQmuz7z3;C7DaWc9gyy3;bSUn5f14Ay3;97kvQ}nZsyB;4Acarj4Z5zB;QcXiNdozAzB;YRr}8mmSAzB;d9T4CVzB4zB;FHSfm}yQpyB;Upq78RrvKy3;t6uix9U6yy3;{5VszYF86z3;pzxzXG5B9z3;wOOTtS7g6z3;CbAsWljb{y3;YD9qsKoNZy3;x5rEuykDfyB;}n}CMPzK}yB;VIc4xn5E5zB;RzlxLYls5zB;FgkTddwa1zB;p{n5qML{oyB;YAevQbMLlx3;7829{c87qy3;WVEgI9541z3;gtxEl}V}3z3;4{XS{tQH2z3;ZFcvFSSouy3;Vdhpi0UCUy3;GalEiCWKcyB;xw}nJ1T4xyB;XkdmLFlJ2zB;vEzKWqPt2zB;CAAklaQH{yB;atT4Iyd1myB;6ERn1E6fxx3;vsq18g1{oy3;TjJzeGgs}y3;nJJzME4o2z3;msmNz7UT1z3;43p9bxVduy3;Bg7BN4X4Yy3;Mbx}cOwdWyB;iwRCv04btyB;lC7NbGKk0zB;sQb9ZfAx1zB;1hvwr{kP{yB;oNSdr9hToyB;C6e}Ms}M6yB;cyrEq4x9gy3;KD}QeW7gvy3;1pshfDC80z3;Lh4}gZ9a}y3;Fy0ggJ6xty3;JLU}4WHQcy3;2SeCP1r2DyB;3wHM7U9EnyB;GM1mVEiZwyB;NyJorRbfzyB;AV4SPAjyvyB;nBqXw5CRmyB;aDLTwTsAByB;nJvM0msKay3;KenT9e0Ary3;RbIamjl8xy3;irMXuayqwy3;BHW}goyOqy3;mPEvYxbkYy3;Tre4cIDcDyB;kBBYbJuflyB;MWlZijsIuyB;654hhp}ExyB;RzBT8qe2uyB;Cfpwmxl{kyB;mXGCkzZMCyB;elIYAq{CYy3;PkGTgoEepy3;8FTb}Zkvy3;7OWVPna6wy3;SWNWamnlqy3;d34bSgzrby3;fhuoR6FEoxB;J3RuFF0VfyB;q}p7grqLryB;8A05vJA6vyB;dBefxWVHtyB;jBX9U9jOmyB;qasoR1YFOyB;NxxIDtMOLy3;FSqKFkqZky3;qY1BmdSary3;oq2GA3Cvsy3;J{JfoUF4py3;LQ2at427cy3;ZqqJDwIqdx3;cZFLaTC0ZyB;4SLHoe5OnyB;VEYsoRT9ryB;Gvpl{bI2qyB;CC2J8meliyB;c6kE5DE2MyB;tz0uIXY0Iy3;K4YfVkPmgy3;OYCFKVw7py3;ZekvL2JUqy3;yj54MkhAny3;HenpP{E}Zy3;iizAiHZLZx3;DkqvBVnlXyB;mlW8iN0KmyB;8E8GDOH4qyB;kZuKGI7LpyB;TQ}ccEMdiyB;ba1fmvKeOyB;8rhSTscEAy3;971u15eody3;wjrL2gzony3;pupKaXXjpy3;l76HWwSHny3;8fRHr7ZAcy3;vjQDErGY4y3;vISq4kQPyB;JmC25YtPhyB;jHjL7cDunyB;67kA3g21oyB;dZaLEKjKiyB;3MCitZe}RyB;TA0YKE6}nx3;{fPe2fZ7Yy3;M9Pr423bjy3;jZrn8Tc4ny3;BQQWa6Qwky3;oTg3RUxlay3;C8vsG9FF8y3;ahfYNtHYJyB;voxMS9v8dyB;QsT}0v24lyB;bsow7aHqlyB;8ceeM}3KfyB;sXBvRGDDQyB;Xxat7ZEylx3;vYpSn{1ZWy3;PrOdDrNHhy3;iD52B98oly3;dtWJMOQ7jy3;GIZI6p0xZy3;anKeg}fF9y3;ol5RUNpHHyB;nuDEM{AbbyB;nr{oU0SfjyB;8h4bZac5lyB;6S8eoJJffyB;Zp89vcfCTyB;Et9lHEtKDxB;rHL3hGsDSy3;ZjUTtRDVey3;skN9gICqjy3;9wApI6VViy3;ATFOUHway3;AICq6{piHy3;BBYz1Fim3yB;6rcdkqWNXyB;9UFCGE7ifyB;WfJgo7n7iyB;idCAklCEeyB;q8WD}iJyTyB;t9sCJAeGqxB;Y8clFPtVKy3;hUfS}6YVay3;btIlXjUxfy3;6HdfKbiPfy3;cie7sO{6Zy3;6Si9sj06Hy3;1AX6Vg3n{xB;bqW5pBXVUyB;MMS7VvU5dyB;oc2{FSzdfyB;}kahnBMLcyB;kIBCm9C0RyB;i58YDS9MqxB;yIVxx4NuIy3;feKjmDBGZy3;f9LbYxGjey3;AUg3SSAdey3;NZdXNJk1Zy3;Au{1dMdUIy3;CJRceN7JqxB;7TArb4ALSyB;QAZyqlLhbyB;B6MRJ4mqeyB;6XnkKkNTcyB;fIqv{NSLUyB;mgH7AC2W2yB;ni7kCi1ABy3;iUHaVB3YWy3;RdFyGujTcy3;SL7XohiKdy3;Yzjjivc}Yy3;YGf}HLQ2Ly3;OPEV7yTwowB;KwOEDETBLyB;1{mB6SKUYyB;ikZpWue4cyB;Uz8ikQ4fayB;9cNcZ3i9TyB;vrjkTQ{D5yB;AC{N}{{94y3;37W{1MjDRy3;RXzYdoStZy3;N8BUanE3by3;EexDTT3RXy3;W2NBJQ2oJy3;yv3lPo7wow3;bybnDyL9JyB;4usZpOy4XyB;49Cp072iayB;13eMawVdZyB;if0uUhDHRyB;di}FJ5U}5yB;P8Pw5wFM1y3;XkEeL{cKQy3;sduuUjZ0Zy3;fFBpu87cay3;GYwYKzLcXy3;yELAEoYRLy3;rVmhmlIUex3;h29QbnhgFyB;TkGO4az1VyB;cQMT2WJcZyB;4Smm{d9JZyB;vo5zroDUTyB;f5UjmruvByB;5tCDJVNjnx3;IAf68FPYLy3;fPUhE6hoWy3;5y1JzbN{Yy3;wvZnkKYuWy3;Litdmwx5My3;3oS}Rvibsx3;jU93f9Ae7yB;HM}}VLZMQyB;iiE2vGVNXyB;}ZZ9ZjfaXyB;Qxifj}WbSyB;LlZQrAqiByB;wRsohQ8Bdx3;vZbA9hrrIy3;toc0gOlOUy3;{Oi{g1iUXy3;QzyTKyxaVy3;3K29C8m3Ly3;xg3iMWCItx3;z3sepBKM5yB;xQk9HOMjOyB;NNCCgzXaWyB;{V1RlPb3XyB;i0IFl0TRSyB;YbQYlkXMDyB;dJwy4K5sKx3;M{VinGvvGy3;dhATcrsfRy3;S4okGbr{Wy3;GSG7Ks6jVy3;nd2uZBbRMy3;5LuP9W8e0y3;Xz{kqt0{xB;3lRvBC4ULyB;cQvOSx0WUyB;RYPYjIbKWyB;84F4}mLWSyB;}OlOrugKGyB;1tljURtiQxB;4ZsBvKgHAy3;Bp7zf55oOy3;1J9a}}ZiUy3;4FNImh}dTy3;{R9hq3JvLy3;j6xHNcif2y3;kwEqMjToqxB;HgF40kAOIyB;wkCPgwKGSyB;um2iLBRtTyB;L69wLNLhPyB;Ft3x3XMOFyB;dME50iZfXxB;Yr6B}FQ7y3;wYlTfadvMy3;8pGNTfitRy3;Eq4sF98JRy3;2TqmnsNMLy3;DnElxW6F3y3;RaNIwZeymxB;h1QvzeB6HyB;rWTVNkW5QyB;mXcuekqDTyB;xJpEQ5bqPyB;hbDwV2wiGyB;dH3H1DaSlxB;ufnxPvwF3y3;fY6GRxnxKy3;q}wxml8WSy3;xFRh}wFwSy3;R}WDI78My3;nUyXy7K07y3;OoDHzqLkOxB;qOpK{2WACyB;KY799yLKNyB;NlrHtUiESyB;vheFroP0PyB;JRZGNU}DHyB;SapdKLRjsxB;TXXkzjuxxx3;zRSFDhAwHy3;46fVzJEgOy3;y2uOr7lmPy3;B4f4{AX1Ly3;3r7IELB97y3;ov6YLzvmwwB;i0uUo3mS8yB;MzOjTfHALyB;JYNW0P}FPyB;c2oLu3}bNyB;{q5Q9tRcGyB;PzQuZgCXtxB;YXJ3R95Yux3;3D9kl1RkGy3;i9kzuwNXNy3;ZZwcNHl0Py3;f1DR8JluKy3;IPeLeccC8y3;z4BGcYoS4x3;crKaSjEr5yB;yJ7L1xv{JyB;EHhSyOTZOyB;rF2eL5yeNyB;avDAdPvUHyB;ADMB2{o{zxB;VKwzC35Hmx3;SKshLYfEDy3;fdsJJwipLy3;AkOUqPw4Oy3;442TBWozKy3;pKDYCbmRAy3;E{l6UW24bx3;UWFsyFeq0yB;3g80tKcSHyB;WXJlaMTSMyB;7rYYHd{KMyB</D></Data></Item>
+<Item XName="RRC_Rx" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Array_Dbl64</T><D>2;1;1025;7rYYHd{KMyB;WXJlaMTSMyB;3g80tKcSHyB;UWFsyFeq0yB;E{l6UW24bx3;pKDYCbmRAy3;442TBWozKy3;AkOUqPw4Oy3;fdsJJwipLy3;SKshLYfEDy3;VKwzC35Hmx3;ADMB2{o{zxB;avDAdPvUHyB;rF2eL5yeNyB;EHhSyOTZOyB;yJ7L1xv{JyB;crKaSjEr5yB;z4BGcYoS4x3;IPeLeccC8y3;f1DR8JluKy3;ZZwcNHl0Py3;i9kzuwNXNy3;3D9kl1RkGy3;YXJ3R95Yux3;PzQuZgCXtxB;{q5Q9tRcGyB;c2oLu3}bNyB;JYNW0P}FPyB;MzOjTfHALyB;i0uUo3mS8yB;ov6YLzvmwwB;3r7IELB97y3;B4f4{AX1Ly3;y2uOr7lmPy3;46fVzJEgOy3;zRSFDhAwHy3;TXXkzjuxxx3;SapdKLRjsxB;JRZGNU}DHyB;vheFroP0PyB;NlrHtUiESyB;KY799yLKNyB;qOpK{2WACyB;OoDHzqLkOxB;nUyXy7K07y3;R}WDI78My3;xFRh}wFwSy3;q}wxml8WSy3;fY6GRxnxKy3;ufnxPvwF3y3;dH3H1DaSlxB;hbDwV2wiGyB;xJpEQ5bqPyB;mXcuekqDTyB;rWTVNkW5QyB;h1QvzeB6HyB;RaNIwZeymxB;DnElxW6F3y3;2TqmnsNMLy3;Eq4sF98JRy3;8pGNTfitRy3;wYlTfadvMy3;Yr6B}FQ7y3;dME50iZfXxB;Ft3x3XMOFyB;L69wLNLhPyB;um2iLBRtTyB;wkCPgwKGSyB;HgF40kAOIyB;kwEqMjToqxB;j6xHNcif2y3;{R9hq3JvLy3;4FNImh}dTy3;1J9a}}ZiUy3;Bp7zf55oOy3;4ZsBvKgHAy3;1tljURtiQxB;}OlOrugKGyB;84F4}mLWSyB;RYPYjIbKWyB;cQvOSx0WUyB;3lRvBC4ULyB;Xz{kqt0{xB;5LuP9W8e0y3;nd2uZBbRMy3;GSG7Ks6jVy3;S4okGbr{Wy3;dhATcrsfRy3;M{VinGvvGy3;dJwy4K5sKx3;YbQYlkXMDyB;i0IFl0TRSyB;{V1RlPb3XyB;NNCCgzXaWyB;xQk9HOMjOyB;z3sepBKM5yB;xg3iMWCItx3;3K29C8m3Ly3;QzyTKyxaVy3;{Oi{g1iUXy3;toc0gOlOUy3;vZbA9hrrIy3;wRsohQ8Bdx3;LlZQrAqiByB;Qxifj}WbSyB;}ZZ9ZjfaXyB;iiE2vGVNXyB;HM}}VLZMQyB;jU93f9Ae7yB;3oS}Rvibsx3;Litdmwx5My3;wvZnkKYuWy3;5y1JzbN{Yy3;fPUhE6hoWy3;IAf68FPYLy3;5tCDJVNjnx3;f5UjmruvByB;vo5zroDUTyB;4Smm{d9JZyB;cQMT2WJcZyB;TkGO4az1VyB;h29QbnhgFyB;rVmhmlIUex3;yELAEoYRLy3;GYwYKzLcXy3;fFBpu87cay3;sduuUjZ0Zy3;XkEeL{cKQy3;P8Pw5wFM1y3;di}FJ5U}5yB;if0uUhDHRyB;13eMawVdZyB;49Cp072iayB;4usZpOy4XyB;bybnDyL9JyB;yv3lPo7wow3;W2NBJQ2oJy3;EexDTT3RXy3;N8BUanE3by3;RXzYdoStZy3;37W{1MjDRy3;AC{N}{{94y3;vrjkTQ{D5yB;9cNcZ3i9TyB;Uz8ikQ4fayB;ikZpWue4cyB;1{mB6SKUYyB;KwOEDETBLyB;OPEV7yTwowB;YGf}HLQ2Ly3;Yzjjivc}Yy3;SL7XohiKdy3;RdFyGujTcy3;iUHaVB3YWy3;ni7kCi1ABy3;mgH7AC2W2yB;fIqv{NSLUyB;6XnkKkNTcyB;B6MRJ4mqeyB;QAZyqlLhbyB;7TArb4ALSyB;CJRceN7JqxB;Au{1dMdUIy3;NZdXNJk1Zy3;AUg3SSAdey3;f9LbYxGjey3;feKjmDBGZy3;yIVxx4NuIy3;i58YDS9MqxB;kIBCm9C0RyB;}kahnBMLcyB;oc2{FSzdfyB;MMS7VvU5dyB;bqW5pBXVUyB;1AX6Vg3n{xB;6Si9sj06Hy3;cie7sO{6Zy3;6HdfKbiPfy3;btIlXjUxfy3;hUfS}6YVay3;Y8clFPtVKy3;t9sCJAeGqxB;q8WD}iJyTyB;idCAklCEeyB;WfJgo7n7iyB;9UFCGE7ifyB;6rcdkqWNXyB;BBYz1Fim3yB;AICq6{piHy3;ATFOUHway3;9wApI6VViy3;skN9gICqjy3;ZjUTtRDVey3;rHL3hGsDSy3;Et9lHEtKDxB;Zp89vcfCTyB;6S8eoJJffyB;8h4bZac5lyB;nr{oU0SfjyB;nuDEM{AbbyB;ol5RUNpHHyB;anKeg}fF9y3;GIZI6p0xZy3;dtWJMOQ7jy3;iD52B98oly3;PrOdDrNHhy3;vYpSn{1ZWy3;Xxat7ZEylx3;sXBvRGDDQyB;8ceeM}3KfyB;bsow7aHqlyB;QsT}0v24lyB;voxMS9v8dyB;ahfYNtHYJyB;C8vsG9FF8y3;oTg3RUxlay3;BQQWa6Qwky3;jZrn8Tc4ny3;M9Pr423bjy3;{fPe2fZ7Yy3;TA0YKE6}nx3;3MCitZe}RyB;dZaLEKjKiyB;67kA3g21oyB;jHjL7cDunyB;JmC25YtPhyB;vISq4kQPyB;vjQDErGY4y3;8fRHr7ZAcy3;l76HWwSHny3;pupKaXXjpy3;wjrL2gzony3;971u15eody3;8rhSTscEAy3;ba1fmvKeOyB;TQ}ccEMdiyB;kZuKGI7LpyB;8E8GDOH4qyB;mlW8iN0KmyB;DkqvBVnlXyB;iizAiHZLZx3;HenpP{E}Zy3;yj54MkhAny3;ZekvL2JUqy3;OYCFKVw7py3;K4YfVkPmgy3;tz0uIXY0Iy3;c6kE5DE2MyB;CC2J8meliyB;Gvpl{bI2qyB;VEYsoRT9ryB;4SLHoe5OnyB;cZFLaTC0ZyB;ZqqJDwIqdx3;LQ2at427cy3;J{JfoUF4py3;oq2GA3Cvsy3;qY1BmdSary3;FSqKFkqZky3;NxxIDtMOLy3;qasoR1YFOyB;jBX9U9jOmyB;dBefxWVHtyB;8A05vJA6vyB;q}p7grqLryB;J3RuFF0VfyB;fhuoR6FEoxB;d34bSgzrby3;SWNWamnlqy3;7OWVPna6wy3;8FTb}Zkvy3;PkGTgoEepy3;elIYAq{CYy3;mXGCkzZMCyB;Cfpwmxl{kyB;RzBT8qe2uyB;654hhp}ExyB;MWlZijsIuyB;kBBYbJuflyB;Tre4cIDcDyB;mPEvYxbkYy3;BHW}goyOqy3;irMXuayqwy3;RbIamjl8xy3;KenT9e0Ary3;nJvM0msKay3;aDLTwTsAByB;nBqXw5CRmyB;AV4SPAjyvyB;NyJorRbfzyB;GM1mVEiZwyB;3wHM7U9EnyB;2SeCP1r2DyB;JLU}4WHQcy3;Fy0ggJ6xty3;Lh4}gZ9a}y3;1pshfDC80z3;KD}QeW7gvy3;cyrEq4x9gy3;C6e}Ms}M6yB;oNSdr9hToyB;1hvwr{kP{yB;sQb9ZfAx1zB;lC7NbGKk0zB;iwRCv04btyB;Mbx}cOwdWyB;Bg7BN4X4Yy3;43p9bxVduy3;msmNz7UT1z3;nJJzME4o2z3;TjJzeGgs}y3;vsq18g1{oy3;6ERn1E6fxx3;atT4Iyd1myB;CAAklaQH{yB;vEzKWqPt2zB;XkdmLFlJ2zB;xw}nJ1T4xyB;GalEiCWKcyB;Vdhpi0UCUy3;ZFcvFSSouy3;4{XS{tQH2z3;gtxEl}V}3z3;WVEgI9541z3;7829{c87qy3;YAevQbMLlx3;p{n5qML{oyB;FgkTddwa1zB;RzlxLYls5zB;VIc4xn5E5zB;}n}CMPzK}yB;x5rEuykDfyB;YD9qsKoNZy3;CbAsWljb{y3;wOOTtS7g6z3;pzxzXG5B9z3;{5VszYF86z3;t6uix9U6yy3;Upq78RrvKy3;FHSfm}yQpyB;d9T4CVzB4zB;YRr}8mmSAzB;QcXiNdozAzB;4Acarj4Z5zB;97kvQ}nZsyB;bSUn5f14Ay3;C7DaWc9gyy3;zSqIQmuz7z3;JduLJKwKCz3;w8LVUlFMAz3;iOj7CZnO2z3;i7e3z4Jhey3;YpOeQiWKkyB;FHCTxYuk3zB;tSfS}bhTBzB;QOdC2D{vCzB;v5UIYDc7zB;94XjRCaFvyB;HKHpPCkd9y3;GCfg1GNh}y3;cCXae21nAz3;eNtQrHakFz3;dNzlfFcNDz3;1elAmLz{3z3;yIet}{t}by3;1S}SL1HrryB;RGvphRfY9zB;lnWSy2wTHzB;tSEPn9ONIzB;wVyHZ1pDEzB;qQY61JtY0zB;zajy}7cM7y3;LrBCjcEv3z3;O}0dNe0KHz3;KNDywmy6Lz3;MW2NS9PNKz3;q7jaP8PDEz3;X9t6{ytRvy3;s6X}cPx2myB;ITN4dyAWBzB;3BDAwq{gKzB;JfruMbUANzB;dsqcXApaKzB;ubwY{OrmAzB;{E4XryRueyB;R}QTcjnw}y3;2wlOJm}OHz3;22TUSvkyMz3;jAAL}RoJNz3;ZDixSwAIIz3;ZoBdlOfr1z3;fJda3emhbyB;QjkDY7LvBzB;ChnZxhU9MzB;n41XwQUIPzB;SfQHKjITMzB;lBvqL3FDCzB;Dvr}9YGhVyB;1ZBhngwQ6z3;OGHEf9oPMz3;2snd57VtRz3;pmM5o{JsRz3;l7X9b141Mz3;Or1peAoC3z3;wrUWMMdJtyB;hZf7EKttKzB;JfyLenL2WzB;lk7Dp4ZLYzB;FGJ2WkHfWzB;SPBDAcAIMzB;Xn{hRGI1tyB;jtZLJkwj9z3;YTF5Et8WTz3;OgL6vgZCaz3;}74f52HRbz3;yGzMLgS3Yz3;1r7irGOFLz3;avNFJXu2Ly3;UZkc8{7PJzB;xYBCFo99YzB;EwRThoBlczB;7xMEjasLczB;GyE50TWwWzB;6YXyoCQFEzB;CHH0V{jSzy3;D3g06f3XRz3;DGlKWyNibz3;qjTVGEs8ez3;dmUDr2iraz3;xRMNqMfjOz3;YRWm3tsuFy3;VS4s2}m5OzB;FC98rE1IczB;tXVhEEZchzB;xX4NaVPQgzB;MGmgcszZYzB;gBYUVDZt5zB;eDkeFCvFKz3;s4SNLRxhez3;5JFAhVyLnz3;vz3GoTjioz3;ypTIDmablz3;svQHraUvXz3;Prur18ykYyB;qa3HQYMjbzB;2p2K1azbpzB;H6VrmeAkuzB;dnaRbjpquzB;zE42w0LXpzB;hEMY20uDZzB;WCugmo0G8z3;IGfojnCblz3;}HXNQJ}tvz3;yB4UTJmw{z3;RKLZXtgYzz3;qndsxFSkrz3;a8NB2oSoXz3;hnYkCN7HPzB;zkcsy1WbqzB;VV2UJtqd{zB;qhpf{pXz0{B;dhJUQzjPzzB;{chwN7PlnzB;hwJHmO2gryB;8Mx9fp}2mz3;qYR9TyKE{z3;owG7Id2i2{3;CJvlAJdY1{3;nnoYo0N0tz3;8YIxBwEY9z3;1G6ilD2BqzB;RPfNKpVm4{B;b6wU0ORXB{B;UYEMTy33C{B;GLQuUw0C5{B;R96QIP1fjzB;}OdplYWBsz3;SxVEUUwfE{3;RREQsUIPN{3;toD{O6zXS{3;gQgB8K43Q{3;HbY}EzrFI{3;PD6Zw63uoz3;gY7zR7ZB9{B;IihuEoObU{B;z0HMsB0mc{B;lND5TV4pg{B;TaLUG1qzf{B;YQXWlf8ZZ{B;oQDy8gsUF{B;}nivSqfVE{3;EFTyabWUe{3;YWwjcHRnp{3;i{RfKM0mu{3;VKWiis{jv{3;Pkoeckhlr{3;PIU0RwJMf{3;ELoDqmQzczB;5oSlh3Mjm{B;IW2rxNrO0}B;DO{CswXy6}B;zFIXOspTA}B;tAghEzla9}B;saFmkHAK3}B;L7T4LbQMj{B;PKOT5}m{p{3;X6vmilGaF}3;W}s}nucqS}3;9O5m9hH0a}3;9OfVxwYaf}3;wQcp8cK2k}3;vvhakPcTm}3;e9RIBzazm}3;vvhakPcTm}3;wQcp8cK2k}3;9OfVxwYaf}3;9O5m9hH0a}3;W}s}nucqS}3;X6vmilGaF}3;PKOT5}m{p{3;L7T4LbQMj{B;saFmkHAK3}B;tAghEzla9}B;zFIXOspTA}B;DO{CswXy6}B;IW2rxNrO0}B;5oSlh3Mjm{B;ELoDqmQzczB;PIU0RwJMf{3;Pkoeckhlr{3;VKWiis{jv{3;i{RfKM0mu{3;YWwjcHRnp{3;EFTyabWUe{3;}nivSqfVE{3;oQDy8gsUF{B;YQXWlf8ZZ{B;TaLUG1qzf{B;lND5TV4pg{B;z0HMsB0mc{B;IihuEoObU{B;gY7zR7ZB9{B;PD6Zw63uoz3;HbY}EzrFI{3;gQgB8K43Q{3;toD{O6zXS{3;RREQsUIPN{3;SxVEUUwfE{3;}OdplYWBsz3;R96QIP1fjzB;GLQuUw0C5{B;UYEMTy33C{B;b6wU0ORXB{B;RPfNKpVm4{B;1G6ilD2BqzB;8YIxBwEY9z3;nnoYo0N0tz3;CJvlAJdY1{3;owG7Id2i2{3;qYR9TyKE{z3;8Mx9fp}2mz3;hwJHmO2gryB;{chwN7PlnzB;dhJUQzjPzzB;qhpf{pXz0{B;VV2UJtqd{zB;zkcsy1WbqzB;hnYkCN7HPzB;a8NB2oSoXz3;qndsxFSkrz3;RKLZXtgYzz3;yB4UTJmw{z3;}HXNQJ}tvz3;IGfojnCblz3;WCugmo0G8z3;hEMY20uDZzB;zE42w0LXpzB;dnaRbjpquzB;H6VrmeAkuzB;2p2K1azbpzB;qa3HQYMjbzB;Prur18ykYyB;svQHraUvXz3;ypTIDmablz3;vz3GoTjioz3;5JFAhVyLnz3;s4SNLRxhez3;eDkeFCvFKz3;gBYUVDZt5zB;MGmgcszZYzB;xX4NaVPQgzB;tXVhEEZchzB;FC98rE1IczB;VS4s2}m5OzB;YRWm3tsuFy3;xRMNqMfjOz3;dmUDr2iraz3;qjTVGEs8ez3;DGlKWyNibz3;D3g06f3XRz3;CHH0V{jSzy3;6YXyoCQFEzB;GyE50TWwWzB;7xMEjasLczB;EwRThoBlczB;xYBCFo99YzB;UZkc8{7PJzB;avNFJXu2Ly3;1r7irGOFLz3;yGzMLgS3Yz3;}74f52HRbz3;OgL6vgZCaz3;YTF5Et8WTz3;jtZLJkwj9z3;Xn{hRGI1tyB;SPBDAcAIMzB;FGJ2WkHfWzB;lk7Dp4ZLYzB;JfyLenL2WzB;hZf7EKttKzB;wrUWMMdJtyB;Or1peAoC3z3;l7X9b141Mz3;pmM5o{JsRz3;2snd57VtRz3;OGHEf9oPMz3;1ZBhngwQ6z3;Dvr}9YGhVyB;lBvqL3FDCzB;SfQHKjITMzB;n41XwQUIPzB;ChnZxhU9MzB;QjkDY7LvBzB;fJda3emhbyB;ZoBdlOfr1z3;ZDixSwAIIz3;jAAL}RoJNz3;22TUSvkyMz3;2wlOJm}OHz3;R}QTcjnw}y3;{E4XryRueyB;ubwY{OrmAzB;dsqcXApaKzB;JfruMbUANzB;3BDAwq{gKzB;ITN4dyAWBzB;s6X}cPx2myB;X9t6{ytRvy3;q7jaP8PDEz3;MW2NS9PNKz3;KNDywmy6Lz3;O}0dNe0KHz3;LrBCjcEv3z3;zajy}7cM7y3;qQY61JtY0zB;wVyHZ1pDEzB;tSEPn9ONIzB;lnWSy2wTHzB;RGvphRfY9zB;1S}SL1HrryB;yIet}{t}by3;1elAmLz{3z3;dNzlfFcNDz3;eNtQrHakFz3;cCXae21nAz3;GCfg1GNh}y3;HKHpPCkd9y3;94XjRCaFvyB;v5UIYDc7zB;QOdC2D{vCzB;tSfS}bhTBzB;FHCTxYuk3zB;YpOeQiWKkyB;i7e3z4Jhey3;iOj7CZnO2z3;w8LVUlFMAz3;JduLJKwKCz3;zSqIQmuz7z3;C7DaWc9gyy3;bSUn5f14Ay3;97kvQ}nZsyB;4Acarj4Z5zB;QcXiNdozAzB;YRr}8mmSAzB;d9T4CVzB4zB;FHSfm}yQpyB;Upq78RrvKy3;t6uix9U6yy3;{5VszYF86z3;pzxzXG5B9z3;wOOTtS7g6z3;CbAsWljb{y3;YD9qsKoNZy3;x5rEuykDfyB;}n}CMPzK}yB;VIc4xn5E5zB;RzlxLYls5zB;FgkTddwa1zB;p{n5qML{oyB;YAevQbMLlx3;7829{c87qy3;WVEgI9541z3;gtxEl}V}3z3;4{XS{tQH2z3;ZFcvFSSouy3;Vdhpi0UCUy3;GalEiCWKcyB;xw}nJ1T4xyB;XkdmLFlJ2zB;vEzKWqPt2zB;CAAklaQH{yB;atT4Iyd1myB;6ERn1E6fxx3;vsq18g1{oy3;TjJzeGgs}y3;nJJzME4o2z3;msmNz7UT1z3;43p9bxVduy3;Bg7BN4X4Yy3;Mbx}cOwdWyB;iwRCv04btyB;lC7NbGKk0zB;sQb9ZfAx1zB;1hvwr{kP{yB;oNSdr9hToyB;C6e}Ms}M6yB;cyrEq4x9gy3;KD}QeW7gvy3;1pshfDC80z3;Lh4}gZ9a}y3;Fy0ggJ6xty3;JLU}4WHQcy3;2SeCP1r2DyB;3wHM7U9EnyB;GM1mVEiZwyB;NyJorRbfzyB;AV4SPAjyvyB;nBqXw5CRmyB;aDLTwTsAByB;nJvM0msKay3;KenT9e0Ary3;RbIamjl8xy3;irMXuayqwy3;BHW}goyOqy3;mPEvYxbkYy3;Tre4cIDcDyB;kBBYbJuflyB;MWlZijsIuyB;654hhp}ExyB;RzBT8qe2uyB;Cfpwmxl{kyB;mXGCkzZMCyB;elIYAq{CYy3;PkGTgoEepy3;8FTb}Zkvy3;7OWVPna6wy3;SWNWamnlqy3;d34bSgzrby3;fhuoR6FEoxB;J3RuFF0VfyB;q}p7grqLryB;8A05vJA6vyB;dBefxWVHtyB;jBX9U9jOmyB;qasoR1YFOyB;NxxIDtMOLy3;FSqKFkqZky3;qY1BmdSary3;oq2GA3Cvsy3;J{JfoUF4py3;LQ2at427cy3;ZqqJDwIqdx3;cZFLaTC0ZyB;4SLHoe5OnyB;VEYsoRT9ryB;Gvpl{bI2qyB;CC2J8meliyB;c6kE5DE2MyB;tz0uIXY0Iy3;K4YfVkPmgy3;OYCFKVw7py3;ZekvL2JUqy3;yj54MkhAny3;HenpP{E}Zy3;iizAiHZLZx3;DkqvBVnlXyB;mlW8iN0KmyB;8E8GDOH4qyB;kZuKGI7LpyB;TQ}ccEMdiyB;ba1fmvKeOyB;8rhSTscEAy3;971u15eody3;wjrL2gzony3;pupKaXXjpy3;l76HWwSHny3;8fRHr7ZAcy3;vjQDErGY4y3;vISq4kQPyB;JmC25YtPhyB;jHjL7cDunyB;67kA3g21oyB;dZaLEKjKiyB;3MCitZe}RyB;TA0YKE6}nx3;{fPe2fZ7Yy3;M9Pr423bjy3;jZrn8Tc4ny3;BQQWa6Qwky3;oTg3RUxlay3;C8vsG9FF8y3;ahfYNtHYJyB;voxMS9v8dyB;QsT}0v24lyB;bsow7aHqlyB;8ceeM}3KfyB;sXBvRGDDQyB;Xxat7ZEylx3;vYpSn{1ZWy3;PrOdDrNHhy3;iD52B98oly3;dtWJMOQ7jy3;GIZI6p0xZy3;anKeg}fF9y3;ol5RUNpHHyB;nuDEM{AbbyB;nr{oU0SfjyB;8h4bZac5lyB;6S8eoJJffyB;Zp89vcfCTyB;Et9lHEtKDxB;rHL3hGsDSy3;ZjUTtRDVey3;skN9gICqjy3;9wApI6VViy3;ATFOUHway3;AICq6{piHy3;BBYz1Fim3yB;6rcdkqWNXyB;9UFCGE7ifyB;WfJgo7n7iyB;idCAklCEeyB;q8WD}iJyTyB;t9sCJAeGqxB;Y8clFPtVKy3;hUfS}6YVay3;btIlXjUxfy3;6HdfKbiPfy3;cie7sO{6Zy3;6Si9sj06Hy3;1AX6Vg3n{xB;bqW5pBXVUyB;MMS7VvU5dyB;oc2{FSzdfyB;}kahnBMLcyB;kIBCm9C0RyB;i58YDS9MqxB;yIVxx4NuIy3;feKjmDBGZy3;f9LbYxGjey3;AUg3SSAdey3;NZdXNJk1Zy3;Au{1dMdUIy3;CJRceN7JqxB;7TArb4ALSyB;QAZyqlLhbyB;B6MRJ4mqeyB;6XnkKkNTcyB;fIqv{NSLUyB;mgH7AC2W2yB;ni7kCi1ABy3;iUHaVB3YWy3;RdFyGujTcy3;SL7XohiKdy3;Yzjjivc}Yy3;YGf}HLQ2Ly3;OPEV7yTwowB;KwOEDETBLyB;1{mB6SKUYyB;ikZpWue4cyB;Uz8ikQ4fayB;9cNcZ3i9TyB;vrjkTQ{D5yB;AC{N}{{94y3;37W{1MjDRy3;RXzYdoStZy3;N8BUanE3by3;EexDTT3RXy3;W2NBJQ2oJy3;yv3lPo7wow3;bybnDyL9JyB;4usZpOy4XyB;49Cp072iayB;13eMawVdZyB;if0uUhDHRyB;di}FJ5U}5yB;P8Pw5wFM1y3;XkEeL{cKQy3;sduuUjZ0Zy3;fFBpu87cay3;GYwYKzLcXy3;yELAEoYRLy3;rVmhmlIUex3;h29QbnhgFyB;TkGO4az1VyB;cQMT2WJcZyB;4Smm{d9JZyB;vo5zroDUTyB;f5UjmruvByB;5tCDJVNjnx3;IAf68FPYLy3;fPUhE6hoWy3;5y1JzbN{Yy3;wvZnkKYuWy3;Litdmwx5My3;3oS}Rvibsx3;jU93f9Ae7yB;HM}}VLZMQyB;iiE2vGVNXyB;}ZZ9ZjfaXyB;Qxifj}WbSyB;LlZQrAqiByB;wRsohQ8Bdx3;vZbA9hrrIy3;toc0gOlOUy3;{Oi{g1iUXy3;QzyTKyxaVy3;3K29C8m3Ly3;xg3iMWCItx3;z3sepBKM5yB;xQk9HOMjOyB;NNCCgzXaWyB;{V1RlPb3XyB;i0IFl0TRSyB;YbQYlkXMDyB;dJwy4K5sKx3;M{VinGvvGy3;dhATcrsfRy3;S4okGbr{Wy3;GSG7Ks6jVy3;nd2uZBbRMy3;5LuP9W8e0y3;Xz{kqt0{xB;3lRvBC4ULyB;cQvOSx0WUyB;RYPYjIbKWyB;84F4}mLWSyB;}OlOrugKGyB;1tljURtiQxB;4ZsBvKgHAy3;Bp7zf55oOy3;1J9a}}ZiUy3;4FNImh}dTy3;{R9hq3JvLy3;j6xHNcif2y3;kwEqMjToqxB;HgF40kAOIyB;wkCPgwKGSyB;um2iLBRtTyB;L69wLNLhPyB;Ft3x3XMOFyB;dME50iZfXxB;Yr6B}FQ7y3;wYlTfadvMy3;8pGNTfitRy3;Eq4sF98JRy3;2TqmnsNMLy3;DnElxW6F3y3;RaNIwZeymxB;h1QvzeB6HyB;rWTVNkW5QyB;mXcuekqDTyB;xJpEQ5bqPyB;hbDwV2wiGyB;dH3H1DaSlxB;ufnxPvwF3y3;fY6GRxnxKy3;q}wxml8WSy3;xFRh}wFwSy3;R}WDI78My3;nUyXy7K07y3;OoDHzqLkOxB;qOpK{2WACyB;KY799yLKNyB;NlrHtUiESyB;vheFroP0PyB;JRZGNU}DHyB;SapdKLRjsxB;TXXkzjuxxx3;zRSFDhAwHy3;46fVzJEgOy3;y2uOr7lmPy3;B4f4{AX1Ly3;3r7IELB97y3;ov6YLzvmwwB;i0uUo3mS8yB;MzOjTfHALyB;JYNW0P}FPyB;c2oLu3}bNyB;{q5Q9tRcGyB;PzQuZgCXtxB;YXJ3R95Yux3;3D9kl1RkGy3;i9kzuwNXNy3;ZZwcNHl0Py3;f1DR8JluKy3;IPeLeccC8y3;z4BGcYoS4x3;crKaSjEr5yB;yJ7L1xv{JyB;EHhSyOTZOyB;rF2eL5yeNyB;avDAdPvUHyB;ADMB2{o{zxB;VKwzC35Hmx3;SKshLYfEDy3;fdsJJwipLy3;AkOUqPw4Oy3;442TBWozKy3;pKDYCbmRAy3;E{l6UW24bx3;UWFsyFeq0yB;3g80tKcSHyB;WXJlaMTSMyB;7rYYHd{KMyB</D></Data></Item>
+<Item XName="Ratio" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>2</D></Data></Item>
+<Item XName="SampPerSym" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>8</D></Data></Item>
+<Item XName="SampPerSym1" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>8</D></Data></Item>
+<Item XName="SamplesPerChip" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>8</D></Data></Item>
+<Item XName="SearchLength" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>3.336588541666667e-05</D></Data></Item>
+<Item XName="SignalPower_dBm" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>10</D></Data></Item>
+<Item XName="SlotNum" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>60</D></Data></Item>
+<Item XName="SourceDelay" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>3.336588541666667e-05</D></Data></Item>
+<Item XName="SourceType" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="StartSlot" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="TimeStep" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Double</T><D>3.255208333333333e-08</D></Data></Item>
+<Item XName="Window" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Array_Char64</T><D>2;11;1;o1;b1;Z1;q1;X1;k1;d1;r1;i1;X1;o1</D></Data></Item>
+<Item XName="Window1" Type="Variable">
+<Creator>Equations</Creator>
+<Data><T>Array_Char64</T><D>2;11;1;o1;b1;Z1;q1;X1;k1;d1;r1;i1;X1;o1</D></Data></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;A824;a14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;sMOSXjK2034;dvTctPUZQ24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;PC;B3</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Equations" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Parameters" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item></Item>
+<Item XName="Parameters" Type="Parameters">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="ParmsDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;Wr0C;cPcPcPcvx0C;aj14;cPcPcPcBp14</D></PVPort></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<ParamOrder><T>Array_BString</T><D>1;1;PDSCH_1_TTIPattern</D></ParamOrder>
+<Item XName="PDSCH_1_TTIPattern" Type="PartParam">
+<DataEntry>[1, 1, 1, 1, 1, 1]</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Tunable><T>Bool</T><D>1</D></Tunable>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="E3" Type="Part">
+<Category>Analog/RF;Type Converters</Category>
+<Description>Envelope to Complex</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>EnvToCx@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,2?Connect1|output,19?Part13|fc,8</Netlist>
+<ParentPartName>EnvToCx@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_EnvToCx</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>EnvToCx@Data Flow Models</ModelName>
+<SymbolName>SYM_EnvToCx</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" /></Item></Item>
+<Item XName="ParamSet" Type="ParamSet" /></Item>
+<Item XName="F3" Type="Part">
+<Category>Filters;C++ Code Generation</Category>
+<Description>Complex FIR Filter</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>FIR_Cx@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,19?Part9|output,1?Connect2</Netlist>
+<ParentPartName>FIR@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_FIR</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>FIR_Cx@Data Flow Models</ModelName>
+<SymbolName>SYM_FIR</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Decimation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation ratio</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DecimationPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation phase</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Interpolation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Interpolation ratio</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Taps" Type="PartParam">
+<DataEntry>(RRC_Rx+j*0)/2</DataEntry>
+<Description>Filter tap values</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>FIR_Fxp@Fxp Models</ModelName></Item>
+<Item XName="ModelSet_2" Type="ModelListEntry">
+<Indentifier />
+<ModelName>FIR@Data Flow Models</ModelName>
+<SymbolName>SYM_FIR</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Decimation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation ratio</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DecimationPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation phase</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Interpolation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Interpolation ratio</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Taps" Type="PartParam">
+<DataEntry>(RRC_Rx+j*0)/2</DataEntry>
+<Description>Filter tap values</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>14</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Decimation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation ratio</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="DecimationPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Decimation phase</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Interpolation" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Interpolation ratio</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="Taps" Type="PartParam">
+<DataEntry>(RRC_Rx+j*0)/2</DataEntry>
+<Description>Filter tap values</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>15</D></Validate></Item></Item></Item>
+<Item XName="HSDPA_DL_SourceRF_2" Type="Part">
+<Category>Signal Sources</Category>
+<Description>HSDPA downlink RF signal source</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>HSDPA_DL_SourceRF@HSDPA Models</Model>
+<ModelID />
+<Netlist>CQI,11|ARQ,20|RFout,2?Connect1|STTDOut,23|RV,22|nd,7|BitDSCH,16|EVMRef,17</Netlist>
+<ParentPartName>HSDPA_DL_SourceRF@HSDPA</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_HSDPA_DL_SourceRF@HSDPA Symbols</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HSDPA_DL_SourceRF@HSDPA Models</ModelName>
+<SymbolName>SYM_HSDPA_DL_SourceRF@HSDPA Symbols</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="DPCH_Configured" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Setting to YES if DPCH is configured, otherwise NO</Description>
+<Enum>HSDPA_DL_SourceRF_DPCH_Configured@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DPCH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>DPCH power gain factor ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ExcessBW" Type="PartParam">
+<DataEntry>0.22</DataEntry>
+<Description>Excess bandwidth of raised cosine filters ((0.0:1.0))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>FCarrier</DataEntry>
+<Description>Carrier frequency ((0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Gain imbalance, I to Q channel, in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="HS_PDSCH_1_DataPattern" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Data pattern of HS-PDSCH 1</Description>
+<Enum>HSDPA_DL_SourceRF_HS_PDSCH_1_DataPattern@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HS_PDSCH_1_FRC" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Fixed reference channel of HS-PDSCH 1</Description>
+<Enum>HSDPA_DL_SourceRF_HS_PDSCH_1_FRC@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RVSeq" Type="PartParam">
+<DataEntry>[0, 2, 5, 6]</DataEntry>
+<Description>RV coding sequence of of HS-PDSCH 1</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RepeatBitPeriod" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Repeating data period of HS-PDSCH 1 ([1, 16])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RepeatBitValue" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Repeating data value of HS-PDSCH 1 ([0, 65535])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_1_TTIPattern" Type="PartParam">
+<DataEntry>PDSCH_1_TTIPattern</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 1 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_2_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 2</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_2_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 2 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_3_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 3</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_3_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 3 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_4_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_4_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 4 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_CodeOffset" Type="PartParam">
+<DataEntry>[1, 13, 14, 15]</DataEntry>
+<Description>Spread code offset of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_Configured" Type="PartParam">
+<DataEntry>[1, 0, 0, 0]</DataEntry>
+<Description>Whether or not HS-PDSCH 1 to 4 configured</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_EcToIor" Type="PartParam">
+<DataEntry>[-6, -6, -6, -6]</DataEntry>
+<Description>Power gain factor of of HS-PDSCH 1 to 4 in dB</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="HS_PDSCH_MS" Type="PartParam">
+<DataEntry>[ModulationScheme, ModulationScheme, ModulationScheme, ModulationScheme]</DataEntry>
+<Description>Modulation scheme of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_UEIdentity" Type="PartParam">
+<DataEntry>[43690, 4778, 6826, 8106]</DataEntry>
+<Description>UE identity of of HS-PDSCH 1 to 4 ([0:66535])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_UE_Category" Type="PartParam">
+<DataEntry>[1, 1, 1, 1]</DataEntry>
+<Description>UE category of of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_SCCH_Configured" Type="PartParam">
+<DataEntry>[1, 0, 0, 0]</DataEntry>
+<Description>Whether or not SCCH 1 to 4 configured</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_SCCH_EcToIor" Type="PartParam">
+<DataEntry>[-10, -10, -10, -10]</DataEntry>
+<Description>Power gain factor of HS-SCCH 1 to 4 in dB</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>IQ rotation in degress ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>I origin offset in percent with respect to output rms voltage ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NDensity" Type="PartParam">
+<DataEntry>-10000</DataEntry>
+<Description>Additive noise density in dBm per Hz ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="OCNS_DPCHNum" Type="PartParam">
+<DataEntry>6</DataEntry>
+<Description>downlink DPCH number ([1:8] for other models;&lt;br&gt;[1:512] for 3GPPHSUPA_OCNS and 3GPPHSUPA_DPCHs)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_DataPatternArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>data pattern array: 0-random, 1-PN9, 2-PN15, 3-Repeat Bits ([0,1,2,3];&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_PowerArray" Type="PartParam">
+<DataEntry>[0, -2, -2, -4, -1, -3]</DataEntry>
+<Description>channel power array in decibels ((-inf:inf);&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="OCNS_RepBitValueArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>bits value array to be filled in data sequence ([0:255];&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_ScrambleCode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>index of scramble code ([0:512] for downlink;&lt;br&gt;[0, 16777215] for uplink)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_ScrambleOffset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>scramble code offset ([0:15])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_ScrambleType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>scramble code type</Description>
+<Enum>HSDPA_DL_SourceRF_OCNS_ScrambleType@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="OCNS_SpreadCodeArray" Type="PartParam">
+<DataEntry>[122, 123, 124, 125, 126, 127]</DataEntry>
+<Description>index array of spread codes (the i&lt;sub&gt;th&lt;/sub&gt; element shall be in [0:SpreadFactor[i]-1];&lt;br&gt;array size shall be equal to code channel number;&lt;br&gt;codes shall be in different OVSF code branch)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_SpreadFactorArray" Type="PartParam">
+<DataEntry>[128, 128, 128, 128, 128, 128]</DataEntry>
+<Description>orthogonal channel spread factor array (2&lt;sup&gt;n&lt;/sup&gt;, n=1,...,9;&lt;br&gt;array size shall be equal to DPCHNum)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_tDPCHOffsetArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>DPCH channel offset array ([0:149];&lt;br&gt;array size shall be equal to DPCH channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OutputSTTD" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Whether or not export STTD</Description>
+<Enum>HSDPA_DL_SourceRF_OutputSTTD@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PCCPCH_EcToIor" Type="PartParam">
+<DataEntry>-12</DataEntry>
+<Description>PCCPCH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PCPICH_EcToIor" Type="PartParam">
+<DataEntry>-10.0</DataEntry>
+<Description>Primary CPICH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PICH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>PICH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>4.0</DataEntry>
+<Description>Phase imbalance, I to Q channel, in degrees ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhasePolarity" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>If set to Invert, Q channel signal is inverted</Description>
+<Enum>HSDPA_DL_SourceRF_PhasePolarity@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Power" Type="PartParam">
+<DataEntry>Power</DataEntry>
+<Description>RF output power ([0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>11001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Q origin offset in percent with respect to output rms voltage ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ROut" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Output resistance ((0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>2001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RRC_FilterLength" Type="PartParam">
+<DataEntry>FilterLength</DataEntry>
+<Description>Length of raised cosine filters in number of symbols ([2:128])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SCH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>SCH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SamplesPerChip" Type="PartParam">
+<DataEntry>SamplesPerChip</DataEntry>
+<Description>Samples per chip ([2:32])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SourceType" Type="PartParam">
+<DataEntry>SourceType</DataEntry>
+<Description>Signal source type</Description>
+<Enum>HSDPA_DL_SourceRF_SourceType@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TM4_EnableP_CPICH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Test Model 4 enable primary CPICH?</Description>
+<Enum>HSDPA_DL_SourceRF_TM4_EnableP_CPICH@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TM4_PCCPCH_SCH_Gain" Type="PartParam">
+<DataEntry>-6</DataEntry>
+<Description>Test Model 4 PCCPCH_SCH level setting ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TM4_P_CPICH_Gain" Type="PartParam">
+<DataEntry>-6</DataEntry>
+<Description>Test Model 4 P_CPICH level setting ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TM_OutputMode" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>output mode of test model</Description>
+<Enum>HSDPA_DL_SourceRF_TM_OutputMode@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>HSDPA_DL_SourceRF</ModelName>
+<SymbolName>SYM_HSDPA_DL_SourceRF@HSDPA Symbols</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="DPCH_Configured" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Setting to YES if DPCH is configured, otherwise NO</Description>
+<Enum>HSDPA_DL_SourceRF_DPCH_Configured@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DPCH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>DPCH power gain factor ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ExcessBW" Type="PartParam">
+<DataEntry>0.22</DataEntry>
+<Description>Excess bandwidth of raised cosine filters ((0.0:1.0))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>FCarrier</DataEntry>
+<Description>Carrier frequency ((0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Gain imbalance, I to Q channel, in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="HS_PDSCH_1_DataPattern" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Data pattern of HS-PDSCH 1</Description>
+<Enum>HSDPA_DL_SourceRF_HS_PDSCH_1_DataPattern@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HS_PDSCH_1_FRC" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Fixed reference channel of HS-PDSCH 1</Description>
+<Enum>HSDPA_DL_SourceRF_HS_PDSCH_1_FRC@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RVSeq" Type="PartParam">
+<DataEntry>[0, 2, 5, 6]</DataEntry>
+<Description>RV coding sequence of of HS-PDSCH 1</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RepeatBitPeriod" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Repeating data period of HS-PDSCH 1 ([1, 16])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RepeatBitValue" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Repeating data value of HS-PDSCH 1 ([0, 65535])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_1_TTIPattern" Type="PartParam">
+<DataEntry>PDSCH_1_TTIPattern</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 1 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_2_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 2</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_2_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 2 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_3_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 3</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_3_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 3 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_4_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_4_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 4 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_CodeOffset" Type="PartParam">
+<DataEntry>[1, 13, 14, 15]</DataEntry>
+<Description>Spread code offset of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_Configured" Type="PartParam">
+<DataEntry>[1, 0, 0, 0]</DataEntry>
+<Description>Whether or not HS-PDSCH 1 to 4 configured</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_EcToIor" Type="PartParam">
+<DataEntry>[-6, -6, -6, -6]</DataEntry>
+<Description>Power gain factor of of HS-PDSCH 1 to 4 in dB</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="HS_PDSCH_MS" Type="PartParam">
+<DataEntry>[ModulationScheme, ModulationScheme, ModulationScheme, ModulationScheme]</DataEntry>
+<Description>Modulation scheme of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_UEIdentity" Type="PartParam">
+<DataEntry>[43690, 4778, 6826, 8106]</DataEntry>
+<Description>UE identity of of HS-PDSCH 1 to 4 ([0:66535])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_UE_Category" Type="PartParam">
+<DataEntry>[1, 1, 1, 1]</DataEntry>
+<Description>UE category of of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_SCCH_Configured" Type="PartParam">
+<DataEntry>[1, 0, 0, 0]</DataEntry>
+<Description>Whether or not SCCH 1 to 4 configured</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_SCCH_EcToIor" Type="PartParam">
+<DataEntry>[-10, -10, -10, -10]</DataEntry>
+<Description>Power gain factor of HS-SCCH 1 to 4 in dB</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>IQ rotation in degress ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>I origin offset in percent with respect to output rms voltage ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NDensity" Type="PartParam">
+<DataEntry>-10000</DataEntry>
+<Description>Additive noise density in dBm per Hz ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="OCNS_DPCHNum" Type="PartParam">
+<DataEntry>6</DataEntry>
+<Description>downlink DPCH number ([1:8] for other models;&lt;br&gt;[1:512] for 3GPPHSUPA_OCNS and 3GPPHSUPA_DPCHs)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_DataPatternArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>data pattern array: 0-random, 1-PN9, 2-PN15, 3-Repeat Bits ([0,1,2,3];&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_PowerArray" Type="PartParam">
+<DataEntry>[0, -2, -2, -4, -1, -3]</DataEntry>
+<Description>channel power array in decibels ((-inf:inf);&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="OCNS_RepBitValueArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>bits value array to be filled in data sequence ([0:255];&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_ScrambleCode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>index of scramble code ([0:512] for downlink;&lt;br&gt;[0, 16777215] for uplink)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_ScrambleOffset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>scramble code offset ([0:15])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_ScrambleType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>scramble code type</Description>
+<Enum>HSDPA_DL_SourceRF_OCNS_ScrambleType@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="OCNS_SpreadCodeArray" Type="PartParam">
+<DataEntry>[122, 123, 124, 125, 126, 127]</DataEntry>
+<Description>index array of spread codes (the i&lt;sub&gt;th&lt;/sub&gt; element shall be in [0:SpreadFactor[i]-1];&lt;br&gt;array size shall be equal to code channel number;&lt;br&gt;codes shall be in different OVSF code branch)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_SpreadFactorArray" Type="PartParam">
+<DataEntry>[128, 128, 128, 128, 128, 128]</DataEntry>
+<Description>orthogonal channel spread factor array (2&lt;sup&gt;n&lt;/sup&gt;, n=1,...,9;&lt;br&gt;array size shall be equal to DPCHNum)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_tDPCHOffsetArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>DPCH channel offset array ([0:149];&lt;br&gt;array size shall be equal to DPCH channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OutputSTTD" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Whether or not export STTD</Description>
+<Enum>HSDPA_DL_SourceRF_OutputSTTD@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PCCPCH_EcToIor" Type="PartParam">
+<DataEntry>-12</DataEntry>
+<Description>PCCPCH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PCPICH_EcToIor" Type="PartParam">
+<DataEntry>-10.0</DataEntry>
+<Description>Primary CPICH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PICH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>PICH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>4.0</DataEntry>
+<Description>Phase imbalance, I to Q channel, in degrees ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhasePolarity" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>If set to Invert, Q channel signal is inverted</Description>
+<Enum>HSDPA_DL_SourceRF_PhasePolarity@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Power" Type="PartParam">
+<DataEntry>Power</DataEntry>
+<Description>RF output power ([0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>11001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Q origin offset in percent with respect to output rms voltage ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ROut" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Output resistance ((0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>2001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RRC_FilterLength" Type="PartParam">
+<DataEntry>FilterLength</DataEntry>
+<Description>Length of raised cosine filters in number of symbols ([2:128])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SCH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>SCH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SamplesPerChip" Type="PartParam">
+<DataEntry>SamplesPerChip</DataEntry>
+<Description>Samples per chip ([2:32])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SourceType" Type="PartParam">
+<DataEntry>SourceType</DataEntry>
+<Description>Signal source type</Description>
+<Enum>HSDPA_DL_SourceRF_SourceType@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TM4_EnableP_CPICH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Test Model 4 enable primary CPICH?</Description>
+<Enum>HSDPA_DL_SourceRF_TM4_EnableP_CPICH@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TM4_PCCPCH_SCH_Gain" Type="PartParam">
+<DataEntry>-6</DataEntry>
+<Description>Test Model 4 PCCPCH_SCH level setting ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TM4_P_CPICH_Gain" Type="PartParam">
+<DataEntry>-6</DataEntry>
+<Description>Test Model 4 P_CPICH level setting ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TM_OutputMode" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>output mode of test model</Description>
+<Enum>HSDPA_DL_SourceRF_TM_OutputMode@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="DPCH_Configured" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Setting to YES if DPCH is configured, otherwise NO</Description>
+<Enum>HSDPA_DL_SourceRF_DPCH_Configured@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DPCH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>DPCH power gain factor ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ExcessBW" Type="PartParam">
+<DataEntry>0.22</DataEntry>
+<Description>Excess bandwidth of raised cosine filters ((0.0:1.0))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>FCarrier</DataEntry>
+<Description>Carrier frequency ((0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Gain imbalance, I to Q channel, in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="HS_PDSCH_1_DataPattern" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Data pattern of HS-PDSCH 1</Description>
+<Enum>HSDPA_DL_SourceRF_HS_PDSCH_1_DataPattern@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HS_PDSCH_1_FRC" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Fixed reference channel of HS-PDSCH 1</Description>
+<Enum>HSDPA_DL_SourceRF_HS_PDSCH_1_FRC@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RVSeq" Type="PartParam">
+<DataEntry>[0, 2, 5, 6]</DataEntry>
+<Description>RV coding sequence of of HS-PDSCH 1</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RepeatBitPeriod" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Repeating data period of HS-PDSCH 1 ([1, 16])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_1_RepeatBitValue" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Repeating data value of HS-PDSCH 1 ([0, 65535])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_1_TTIPattern" Type="PartParam">
+<DataEntry>PDSCH_1_TTIPattern</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 1 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_2_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 2</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_2_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 2 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_3_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 3</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_3_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 3 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_4_NumPhyCH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Number of physical channels of HS-PDSCH 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="HS_PDSCH_4_TTIPattern" Type="PartParam">
+<DataEntry>[1, 0, 0, 1, 0, 0]</DataEntry>
+<Description>Inter-TTI pattern of HS-PDSCH 4 ([0,1])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_CodeOffset" Type="PartParam">
+<DataEntry>[1, 13, 14, 15]</DataEntry>
+<Description>Spread code offset of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_Configured" Type="PartParam">
+<DataEntry>[1, 0, 0, 0]</DataEntry>
+<Description>Whether or not HS-PDSCH 1 to 4 configured</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_EcToIor" Type="PartParam">
+<DataEntry>[-6, -6, -6, -6]</DataEntry>
+<Description>Power gain factor of of HS-PDSCH 1 to 4 in dB</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="HS_PDSCH_MS" Type="PartParam">
+<DataEntry>[ModulationScheme, ModulationScheme, ModulationScheme, ModulationScheme]</DataEntry>
+<Description>Modulation scheme of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_UEIdentity" Type="PartParam">
+<DataEntry>[43690, 4778, 6826, 8106]</DataEntry>
+<Description>UE identity of of HS-PDSCH 1 to 4 ([0:66535])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_PDSCH_UE_Category" Type="PartParam">
+<DataEntry>[1, 1, 1, 1]</DataEntry>
+<Description>UE category of of HS-PDSCH 1 to 4</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_SCCH_Configured" Type="PartParam">
+<DataEntry>[1, 0, 0, 0]</DataEntry>
+<Description>Whether or not SCCH 1 to 4 configured</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="HS_SCCH_EcToIor" Type="PartParam">
+<DataEntry>[-10, -10, -10, -10]</DataEntry>
+<Description>Power gain factor of HS-SCCH 1 to 4 in dB</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>IQ rotation in degress ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>I origin offset in percent with respect to output rms voltage ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NDensity" Type="PartParam">
+<DataEntry>-10000</DataEntry>
+<Description>Additive noise density in dBm per Hz ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="OCNS_DPCHNum" Type="PartParam">
+<DataEntry>6</DataEntry>
+<Description>downlink DPCH number ([1:8] for other models;&lt;br&gt;[1:512] for 3GPPHSUPA_OCNS and 3GPPHSUPA_DPCHs)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_DataPatternArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>data pattern array: 0-random, 1-PN9, 2-PN15, 3-Repeat Bits ([0,1,2,3];&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_PowerArray" Type="PartParam">
+<DataEntry>[0, -2, -2, -4, -1, -3]</DataEntry>
+<Description>channel power array in decibels ((-inf:inf);&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="OCNS_RepBitValueArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>bits value array to be filled in data sequence ([0:255];&lt;br&gt;array size shall be equal to code channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_ScrambleCode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>index of scramble code ([0:512] for downlink;&lt;br&gt;[0, 16777215] for uplink)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_ScrambleOffset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>scramble code offset ([0:15])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="OCNS_ScrambleType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>scramble code type</Description>
+<Enum>HSDPA_DL_SourceRF_OCNS_ScrambleType@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="OCNS_SpreadCodeArray" Type="PartParam">
+<DataEntry>[122, 123, 124, 125, 126, 127]</DataEntry>
+<Description>index array of spread codes (the i&lt;sub&gt;th&lt;/sub&gt; element shall be in [0:SpreadFactor[i]-1];&lt;br&gt;array size shall be equal to code channel number;&lt;br&gt;codes shall be in different OVSF code branch)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_SpreadFactorArray" Type="PartParam">
+<DataEntry>[128, 128, 128, 128, 128, 128]</DataEntry>
+<Description>orthogonal channel spread factor array (2&lt;sup&gt;n&lt;/sup&gt;, n=1,...,9;&lt;br&gt;array size shall be equal to DPCHNum)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OCNS_tDPCHOffsetArray" Type="PartParam">
+<DataEntry>[0, 0, 0, 0, 0, 0]</DataEntry>
+<Description>DPCH channel offset array ([0:149];&lt;br&gt;array size shall be equal to DPCH channel number)</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>13</D></Validate></Item>
+<Item XName="OutputSTTD" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Whether or not export STTD</Description>
+<Enum>HSDPA_DL_SourceRF_OutputSTTD@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PCCPCH_EcToIor" Type="PartParam">
+<DataEntry>-12</DataEntry>
+<Description>PCCPCH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PCPICH_EcToIor" Type="PartParam">
+<DataEntry>-10.0</DataEntry>
+<Description>Primary CPICH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PICH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>PICH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>4.0</DataEntry>
+<Description>Phase imbalance, I to Q channel, in degrees ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhasePolarity" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>If set to Invert, Q channel signal is inverted</Description>
+<Enum>HSDPA_DL_SourceRF_PhasePolarity@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Power" Type="PartParam">
+<DataEntry>Power</DataEntry>
+<Description>RF output power ([0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>11001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Q origin offset in percent with respect to output rms voltage ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ROut" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Output resistance ((0:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>2001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="RRC_FilterLength" Type="PartParam">
+<DataEntry>FilterLength</DataEntry>
+<Description>Length of raised cosine filters in number of symbols ([2:128])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SCH_EcToIor" Type="PartParam">
+<DataEntry>-15</DataEntry>
+<Description>SCH power gain in dB ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SamplesPerChip" Type="PartParam">
+<DataEntry>SamplesPerChip</DataEntry>
+<Description>Samples per chip ([2:32])</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SourceType" Type="PartParam">
+<DataEntry>SourceType</DataEntry>
+<Description>Signal source type</Description>
+<Enum>HSDPA_DL_SourceRF_SourceType@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TM4_EnableP_CPICH" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Test Model 4 enable primary CPICH?</Description>
+<Enum>HSDPA_DL_SourceRF_TM4_EnableP_CPICH@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TM4_PCCPCH_SCH_Gain" Type="PartParam">
+<DataEntry>-6</DataEntry>
+<Description>Test Model 4 PCCPCH_SCH level setting ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TM4_P_CPICH_Gain" Type="PartParam">
+<DataEntry>-6</DataEntry>
+<Description>Test Model 4 P_CPICH level setting ((-inf:inf))</Description>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TM_OutputMode" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>output mode of test model</Description>
+<Enum>HSDPA_DL_SourceRF_TM_OutputMode@HSDPA Enums</Enum>
+<IsSettable><T>Bool</T><D>1</D></IsSettable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;aA2C;CH2C;mG234;We734</D></PVPort></Item></Item>
+<Item XName="V1" Type="Part">
+<Category>Instrumentation</Category>
+<Description>Keysight 89600 Vector Signal Analyzer</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>VSA_89600B_Sink@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,1?Connect2</Netlist>
+<ParentPartName>VSA_89600B_Sink@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{VSA Icon B}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier />
+<ModelName>VSA_89600B_Sink@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF{VSA Icon B}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>YES enables continuous simulation; NO disables</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__ContinuousMode@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RecordMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES enables VSA 89600B Recording mode; NO disables; Stop must be &gt; Start, ContinuousMode = NO</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RecordMode@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RestoreHW" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES to restore VSA hardware selection at end of simulation; NO to not</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RestoreHW@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Index (start at 0) of the first sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>Num_Samples - 1</DataEntry>
+<Description>Index of the last sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SamplesPerSymbol" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Digital demodulation samples per symbol; NOT to be confused with VSA points per symbol</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SetFreqProp" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Set VSA 89600B measurement properties such as center frequency, span/sampling rate, zoom, ect. based on user inputs and simulation data.</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__SetFreqProp@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SetupFile" Type="PartParam">
+<DataEntry>HSDPA_VSA_Setup.setx</DataEntry>
+<Description>VSA 89600B Setup file path</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__StartStopOption@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VSATitle" Type="PartParam">
+<DataEntry>Simulation output</DataEntry>
+<Description>Text for VSA title bar</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>YES enables continuous simulation; NO disables</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__ContinuousMode@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RecordMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES enables VSA 89600B Recording mode; NO disables; Stop must be &gt; Start, ContinuousMode = NO</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RecordMode@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="RestoreHW" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>YES to restore VSA hardware selection at end of simulation; NO to not</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__RestoreHW@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Index (start at 0) of the first sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>Num_Samples - 1</DataEntry>
+<Description>Index of the last sample to be streamed to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SamplesPerSymbol" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Description>Digital demodulation samples per symbol; NOT to be confused with VSA points per symbol</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SetFreqProp" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Set VSA 89600B measurement properties such as center frequency, span/sampling rate, zoom, ect. based on user inputs and simulation data.</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__SetFreqProp@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SetupFile" Type="PartParam">
+<DataEntry>HSDPA_VSA_Setup.setx</DataEntry>
+<Description>VSA 89600B Setup file path</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>VSA_89600B_Sink__StartStopOption@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection for streaming to VSA</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 1 || StartStopOption == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="VSATitle" Type="PartParam">
+<DataEntry>Simulation output</DataEntry>
+<Description>Text for VSA title bar</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>1</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>6</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Annotate0" Type="TextA">
+<BorderColor><T>Int</T><D>8388608</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>3</D></BorderWeight>
+<Color><T>Int</T><D>14483455</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Height><T>Double</T><D>625.0000000000045</D></Height>
+<HorizMargin><T>Int</T><D>50</D></HorizMargin>
+<Justification><T>Int</T><D>5</D></Justification>
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>250.0000000000002</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ToPoint><T>Bool</T><D>0</D></ToPoint>
+<VertMargin><T>Int</T><D>50</D></VertMargin>
+<Width><T>Double</T><D>11876.99999999999</D></Width>
+<ZOrder><T>Int</T><D>32</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>500</D></Size>
+<Weight><T>Int</T><D>700</D></Weight></Item>
+<Item XName="Text" Type="Param">
+<DataEntry>HSDPA:  BS EVM (Error Vector Magnitude) measurement:</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item></Item>
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;zs24;Pf24;U5o24;Pf24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>-1749.999999999969</D></PosX>
+<PosY><T>Double</T><D>-750.0000000000118</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Gs034;YZ24;Woz24;YZ24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;O724;T14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;CjpPi1MG43C;wX7kQhZD22C;3wlRzyqsH34;M8XdMcAk24</D></PVPort></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>5999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<Width><T>Double</T><D>15000</D></Width></Item>
+<Item XName="Part13" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>F3</Designator>
+<PosX><T>Double</T><D>5875.99999999977</D></PosX>
+<PosY><T>Double</T><D>2499.999999999844</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_FIR</Symbol>
+<ZOrder><T>Int</T><D>47</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pF3" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>F3 {FIR_Cx@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pTaps" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>Taps=(1025x1) [-42.59e-6; -42.78e-6; -33&#x2026; [(RRC_Rx+j*0)/2]</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Designator>V1</Designator>
+<PosX><T>Double</T><D>8376.000000000065</D></PosX>
+<PosY><T>Double</T><D>1874.999999999995</D></PosY>
+<Selected><T>Bool</T><D>1</D></Selected>
+<Symbol>AutoSymDF{VSA Icon B}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pV1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>V1 {VSA_89600B_Sink@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pVSATitle" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>VSATitle=Simulation output</Text></Item></Item></Item>
+<Item XName="Part7" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>HSDPA_DL_SourceRF_2</Designator>
+<PosX><T>Double</T><D>1125.000053405805</D></PosX>
+<PosY><T>Double</T><D>1999.999999999977</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_HSDPA_DL_SourceRF@HSDPA Symbols</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>877.4375</D></PosX>
+<PosY><T>Double</T><D>670</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pHSDPA_DL_SourceRF_2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>HSDPA_DL_SourceRF_2 {HSDPA_DL_SourceRF@HSDPA Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pDPCH_Configured" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>DPCH_Configured=YES</Text></Item>
+<Item XName="_pDPCH_EcToIor" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>676.9200000000001</D></PosY>
+<Text>DPCH_EcToIor=-15</Text></Item>
+<Item XName="_pFCarrier" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>FCarrier=2.14e+9 Hz [FCarrier]</Text></Item>
+<Item XName="_pHS_PDSCH_1_DataPattern" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1805.12</D></PosY>
+<Text>HS_PDSCH_1_DataPattern=Random</Text></Item>
+<Item XName="_pHS_PDSCH_1_FRC" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1692.3</D></PosY>
+<Text>HS_PDSCH_1_FRC=H-Set_1</Text></Item>
+<Item XName="_pHS_PDSCH_1_TTIPattern" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1917.94</D></PosY>
+<Text>HS_PDSCH_1_TTIPattern=(1x6) [1,1,1,1&#x2026; [PDSCH_1_TTIPattern]</Text></Item>
+<Item XName="_pHS_PDSCH_2_NumPhyCH" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2143.58</D></PosY>
+<Text>HS_PDSCH_2_NumPhyCH=1</Text></Item>
+<Item XName="_pHS_PDSCH_2_TTIPattern" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2030.76</D></PosY>
+<Text>HS_PDSCH_2_TTIPattern=(1x6) [1,0,0,1,0,0]</Text></Item>
+<Item XName="_pHS_PDSCH_4_NumPhyCH" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2256.4</D></PosY>
+<Text>HS_PDSCH_4_NumPhyCH=1</Text></Item>
+<Item XName="_pHS_PDSCH_EcToIor" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1353.84</D></PosY>
+<Text>HS_PDSCH_EcToIor=(1x4) [-6,-6,-6,-6]</Text></Item>
+<Item XName="_pHS_PDSCH_MS" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1579.48</D></PosY>
+<Text>HS_PDSCH_MS=(1x4) [0,0,0,0]</Text></Item>
+<Item XName="_pHS_PDSCH_UE_Category" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1466.66</D></PosY>
+<Text>HS_PDSCH_UE_Category=(1x4) [1,1,1,1]</Text></Item>
+<Item XName="_pHS_SCCH_Configured" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1241.02</D></PosY>
+<Text>HS_SCCH_Configured=(1x4) [1,0,0,0]</Text></Item>
+<Item XName="_pOCNS_DPCHNum" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2369.22</D></PosY>
+<Text>OCNS_DPCHNum=6</Text></Item>
+<Item XName="_pOCNS_DataPatternArray" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2933.32</D></PosY>
+<Text>OCNS_DataPatternArray=(1x6) [0,0,0,0,0,0]</Text></Item>
+<Item XName="_pOCNS_PowerArray" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>3158.96</D></PosY>
+<Text>OCNS_PowerArray=(1x6) [0,-2,-2,-4,-1,-3]</Text></Item>
+<Item XName="_pOCNS_RepBitValueArray" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>3046.14</D></PosY>
+<Text>OCNS_RepBitValueArray=(1x6) [0,0,0,0,0,0]</Text></Item>
+<Item XName="_pOCNS_ScrambleCode" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2482.04</D></PosY>
+<Text>OCNS_ScrambleCode=0</Text></Item>
+<Item XName="_pOCNS_ScrambleOffset" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2594.86</D></PosY>
+<Text>OCNS_ScrambleOffset=0</Text></Item>
+<Item XName="_pOCNS_ScrambleType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2707.68</D></PosY>
+<Text>OCNS_ScrambleType=normal</Text></Item>
+<Item XName="_pOCNS_SpreadCodeArray" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>2820.5</D></PosY>
+<Text>OCNS_SpreadCodeArray=(1x6) [122,123,124,125,126,127]</Text></Item>
+<Item XName="_pOCNS_tDPCHOffsetArray" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>3271.78</D></PosY>
+<Text>OCNS_tDPCHOffsetArray=(1x6) [0,0,0,0,0,0]</Text></Item>
+<Item XName="_pOutputSTTD" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>OutputSTTD=NO</Text></Item>
+<Item XName="_pPCCPCH_EcToIor" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>902.5600000000001</D></PosY>
+<Text>PCCPCH_EcToIor=-12</Text></Item>
+<Item XName="_pPCPICH_EcToIor" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>789.7400000000001</D></PosY>
+<Text>PCPICH_EcToIor=-10.0</Text></Item>
+<Item XName="_pPICH_EcToIor" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1128.2</D></PosY>
+<Text>PICH_EcToIor=-15</Text></Item>
+<Item XName="_pPower" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>Power=0.01 W [Power]</Text></Item>
+<Item XName="_pSCH_EcToIor" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>1015.38</D></PosY>
+<Text>SCH_EcToIor=-15</Text></Item>
+<Item XName="_pSourceType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>SourceType=HSDPA [SourceType]</Text></Item></Item></Item>
+<Item XName="Part9" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>E3</Designator>
+<PosX><T>Double</T><D>4125.99999999953</D></PosX>
+<PosY><T>Double</T><D>2499.999999999977</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_EnvToCx</Symbol>
+<ZOrder><T>Int</T><D>25</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pE3" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>E3 {EnvToCx@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>15</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Note" UserName="Note" Type="Notes">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;P class=MsoTitle style=&quot;BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; BORDER-LEFT: medium none; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.75pt solid&quot; align=center&gt;&lt;FONT size=2&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;STRONG&gt;&lt;FONT size=5&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;STRONG&gt;&lt;FONT size=5&gt;&amp;nbsp;&amp;nbsp;HSDPA:&amp;nbsp;BS Error Vector&amp;nbsp;Magnitude Measurement&amp;nbsp;&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoBodyText style=&quot;MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;FONT size=2&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue Example&amp;nbsp; &lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoBodyText style=&quot;MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;This example gives the HSDPA DL demodulation result using Keysight 89600B &lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0&quot;&gt;&lt;FONT size=2&gt;VSA. The source parameters and demodulation set file are according to the table &lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0&quot;&gt;&lt;FONT size=2&gt;below.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0; -qt-paragraph-type: empty&quot;&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0px; TEXT-INDENT: 0px; -qt-block-indent: 0&quot;&gt;&lt;FONT size=2&gt;&amp;nbsp;&lt;/FONT&gt;&lt;/P&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;A824;Oa14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;sMOSXjK2034;6tORZnL3S24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;B3;PC;P6</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList">
+<Item XName="Tune0" Type="TuneParam">
+<Param>Designs\HSDPA_BS_TX_EVM\Parameters\ParamSet\PDSCH_1_TTIPattern</Param></Item></Item>
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item></Item>

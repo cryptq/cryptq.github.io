@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Transactor HROCSpecPath="U5303_2x2MIMOHROC.xml" name="U5303_2x2MIMO">
+<Initialize>
+<Write url="/U5303A_real_time_2x2_MIMO_Using_M8190_Matlab2014a/U5303_2x2MIMO/FPGA0/Register">
+<Constant value="FromSystemVue" /></Write></Initialize>
+<Runtime>
+<ReadGroup>
+<Read url="/U5303A_real_time_2x2_MIMO_Using_M8190_Matlab2014a/U5303_2x2MIMO/FPGA0/Out1">
+<Output index="0" /></Read></ReadGroup></Runtime></Transactor>

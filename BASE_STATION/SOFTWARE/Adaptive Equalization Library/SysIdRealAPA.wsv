@@ -1,0 +1,1713 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData" >
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>1</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" >
+<Item XName="unknownWeights" Type="Variable" >
+<Data ><T>Array_Dbl64</T><D>2;5;1;QcPcPcPcv{3;QcPcPcPc9}B;pCpCpCpCJ}3;QcPcPcPcP}B;QcPcPcPcv{B</D></Data>
+<Creator >Equation</Creator></Item></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<UnitUse ><T>Int</T><D>2</D></UnitUse>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<AutoCalc ><T>Bool</T><D>0</D></AutoCalc></Item>
+<Version >1.18</Version>
+<Item XName="Page" Type="PageMgr" />
+<IsOpen ><T>Bool</T><D>1</D></IsOpen>
+<Item XName="Variables" Type="SerItem" />
+<Item XName="Designs" UserName="Designs" Type="Folder" >
+<Item XName="Page" Type="PageMgr" />
+<IsOpen ><T>Bool</T><D>0</D></IsOpen>
+<Item XName="Sch1" UserName="Sch1" Type="Design" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="DesignDisp" >
+<Item XName="TabInfo" Type="SerItem" >
+<Item XName="Schematic" Type="TabInfo" >
+<PageNo ><T>Int</T><D>0</D></PageNo></Item></Item>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;kQrgLhsyy24;reHZ6Dw6q24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;Y724;M024</D></DVport>
+<CurTab >Schematic</CurTab>
+<Window ><T>Array_I64</T><D>1;4;;;BJ;zB</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item>
+<Item XName="Display1" Type="DesignDisp" >
+<Item XName="TabInfo" Type="SerItem" >
+<Item XName="Schematic" Type="TabInfo" >
+<PageNo ><T>Int</T><D>1</D></PageNo></Item></Item>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;tw24;GYp24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;bJEe6Cwd024;yUh5Ach0u14</D></DVport>
+<CurTab >Schematic</CurTab>
+<ShowTabs ><T>Bool</T><D>0</D></ShowTabs></Item></Item>
+<Item XName="PartList" Type="PartList" >
+<Item XName="F1" Type="Part" >
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="Taps" Type="PartParam" >
+<Unit ><T>Int</T><D>0</D></Unit>
+<Description >Filter tap values</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >unknownWeights</DataEntry>
+<Data ><T>Array_Dbl64</T><D>2;5;1;QcPcPcPcv{3;QcPcPcPc9}B;pCpCpCpCJ}3;QcPcPcPcP}B;QcPcPcPcv{B</D></Data></Item>
+<Item XName="Decimation" Type="PartParam" >
+<Description >Decimation ratio</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >1</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="DecimationPhase" Type="PartParam" >
+<Description >Decimation phase</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="Interpolation" Type="PartParam" >
+<Description >Interpolation ratio</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >1</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item></Item>
+<Model >FIR@Data Flow Models</Model>
+<Symbol >SYM_FIR</Symbol>
+<Description >FIR Filter</Description>
+<ParentPartName >FIR@Data Flow Parts</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>1</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Filters</Category>
+<Netlist >input,1?Connect1|output,2?Connect0</Netlist>
+<LayoutUse ><T>Int</T><D>0</D></LayoutUse>
+<SimOverride ><T>Int</T><D>0</D></SimOverride></Item>
+<Item XName="A1" Type="Part" >
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="FeedforwardFilterLength" Type="PartParam" >
+<Description >Number of filter coefficients of the EqLib filter stage.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >5</DataEntry>
+<Data ><T>Double</T><D>5</D></Data></Item>
+<Item XName="FeedfowardFilterStepSize" Type="PartParam" >
+<Description >Step size of the algorithm for the EqLib coefficients.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0.4</DataEntry>
+<Data ><T>Double</T><D>0.4000000000000000222044605</D></Data></Item>
+<Item XName="FeedbackFilterLength" Type="PartParam" >
+<Description >Number of filter coefficients of the feedback filter stage. A value different from zero makes the structure an IIR setup.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="FeedbackFilterStepSize" Type="PartParam" >
+<Description >Step size of the algorithm for the feedback stage.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0.01</DataEntry>
+<Data ><T>Double</T><D>0.01000000000000000020816682</D></Data></Item>
+<Item XName="Order" Type="PartParam" >
+<Description >Selects the order of the APA algorithm.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >3</DataEntry>
+<Data ><T>Double</T><D>3</D></Data></Item>
+<Item XName="Bias" Type="PartParam" >
+<Description >Bias factor of the APA algorithm.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >1E-08</DataEntry>
+<Data ><T>Double</T><D>1.000000000000000020922561e-08</D></Data></Item>
+<Item XName="InitCoef" Type="PartParam" >
+<Description >Initialized feed forward filter coefficients</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Enum >OFF ;ON </Enum>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="InitCoefValue" Type="PartParam" >
+<Description >Sets the feed forward filter coefficients to an inital value (used when InitCoef = YES).</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >[0.0]</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item></Item>
+<Model >AdptFltAPA@EqLib Models</Model>
+<Symbol >SYM_AdptFltAPA</Symbol>
+<Description >APA Adaptive Filter</Description>
+<ParentPartName >AdptFltAPA@EqLib Parts</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>1</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Adaptive Equalizers</Category>
+<Netlist >inputSignal,1?Connect3|desiredSignal,2?Connect0|outputSignal,3|errorSignal,5?Connect5</Netlist>
+<LayoutUse ><T>Int</T><D>0</D></LayoutUse>
+<SimOverride ><T>Int</T><D>0</D></SimOverride></Item>
+<Item XName="E1" Type="Part" >
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="FloorType" Type="PartParam" >
+<Description >Specifies whether the floor parameter introduced has to be interpreted as a linear or as logarithmic value.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >1</DataEntry>
+<Enum >Linear ;dB </Enum>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="Floor" Type="PartParam" >
+<Description >Minimum value representable at the logarithmic output of this component. This value avoids the calculation of the logarithm of zero.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >-200</DataEntry>
+<Data ><T>Double</T><D>-200</D></Data></Item>
+<Item XName="FilterLength" Type="PartParam" >
+<Description >Length of the Gaussian filter. If set to one no filtering is performed.</Description>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >5</DataEntry>
+<Data ><T>Double</T><D>5</D></Data></Item></Item>
+<Model >ErrorFilter@EqLib Models</Model>
+<Symbol >SYM_ErrorFilter</Symbol>
+<Description >Error Filter</Description>
+<ParentPartName >ErrorFilter@EqLib Parts</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>1</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Adaptive Equalizers</Category>
+<Netlist >input,5?Connect5|outputLinear,6|outputLog,7?Connect4</Netlist>
+<LayoutUse ><T>Int</T><D>0</D></LayoutUse>
+<SimOverride ><T>Int</T><D>0</D></SimOverride></Item>
+<Item XName="I1" Type="Part" >
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="StdDev" Type="PartParam" >
+<Description >Standard deviation</Description>
+<Unit ><T>Int</T><D>9001</D></Unit>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >1</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="Offset" Type="PartParam" >
+<Description >Offset value</Description>
+<Unit ><T>Int</T><D>9001</D></Unit>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="SampleRateOption" Type="PartParam" >
+<Description >Sample rate option</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Enum >UnTimed;Timed from SampleRate;Timed from Graph</Enum>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="SampleRate" Type="PartParam" >
+<Description >Explicit sample rate</Description>
+<Unit ><T>Int</T><D>1001</D></Unit>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >Sample_Rate</DataEntry>
+<Data ><T>Double</T><D>1000</D></Data></Item>
+<Item XName="InitialDelay" Type="PartParam" >
+<Description >Output sample delay</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="BurstMode" Type="PartParam" >
+<Description >Burst mode</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Enum >OFF;Single;Multiple</Enum>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="BurstLength" Type="PartParam" >
+<Description >Burst sample length (used when Burst is not OFF)</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >100</DataEntry>
+<Data ><T>Double</T><D>100</D></Data></Item>
+<Item XName="BurstPeriod" Type="PartParam" >
+<Description >Samples from start of one burst to start of next (used when Burst=Multiple)</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >200</DataEntry>
+<Data ><T>Double</T><D>200</D></Data></Item>
+<Item XName="BurstDelay" Type="PartParam" >
+<Description >Sample delay within burst before the start of the burst length interval (used when Burst is not OFF)</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item></Item>
+<Model >IID_Gaussian@Data Flow Models</Model>
+<Symbol >SYM_IID_Gaussian</Symbol>
+<Description >IID Gaussian Noise Waveform</Description>
+<ParentPartName >IID_Gaussian@Data Flow Parts</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>1</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Sources</Category>
+<Netlist >output,1?Connect2</Netlist>
+<LayoutUse ><T>Int</T><D>0</D></LayoutUse>
+<SimOverride ><T>Int</T><D>0</D></SimOverride></Item>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="APAErrordB" Type="Part" >
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="StartStopOption" Type="PartParam" >
+<Description >Sink collection mode</Description>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__StartStopOption@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="SampleStart" Type="PartParam" >
+<Description >Sample number to start data collection</Description>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 2</HideCondition>
+<Validate ><T>Int</T><D>11</D></Validate>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="SampleStop" Type="PartParam" >
+<Description >Sample number to stop data collection</Description>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 2</HideCondition>
+<Validate ><T>Int</T><D>11</D></Validate>
+<DataEntry >Num_Samples - 1</DataEntry>
+<Data ><T>Double</T><D>1000</D></Data></Item>
+<Item XName="TimeStart" Type="PartParam" >
+<Description >Time to start data collection</Description>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 1</HideCondition>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >Start_Time</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="TimeStop" Type="PartParam" >
+<Description >Time to stop data collection</Description>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 1</HideCondition>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >Stop_Time</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="SinkTarget" Type="PartParam" >
+<Description >Select where the simulation data will be stored</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__SinkTarget@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="Graph" Type="PartParam" >
+<Description >Graph to display the data in, blank=none</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>4</D></Validate>
+<DataEntry />
+<Data /></Item>
+<Item XName="DynGraph" Type="PartParam" >
+<Description >Update graph as simulation runs</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__DynGraph@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="Table" Type="PartParam" >
+<Description >Table to display the data in, blank=none</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>4</D></Validate>
+<DataEntry />
+<Data /></Item>
+<Item XName="BlockSize" Type="PartParam" >
+<Description >Number of samples to collect at each input before writing to file as one data block</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>11</D></Validate>
+<DataEntry >Num_Samples</DataEntry>
+<Data ><T>Double</T><D>1001</D></Data></Item>
+<Item XName="ToSingleFile" Type="PartParam" >
+<Description >Only in effect when there are multiple inputs into the Sink. YES: will write data from every input into one single file of which name is specified in &quot;DataFileName&quot; parameter. NO: Data from each input will be written into individual files.</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__ToSingleFile@Data Flow Enums</Enum>
+<DataEntry >1</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="DataFileName" Type="PartParam" >
+<Description >Datafile name</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>10</D></Validate>
+<DataEntry >SinkData</DataEntry>
+<Data >SinkData</Data></Item>
+<Item XName="DataFileType" Type="PartParam" >
+<Description >ASCII: ACSII file; Binary: binary file; Encrypted: Signal Studio format waveform</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__DataFileType@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="SkipFrequency" Type="PartParam" >
+<Description >ONLY change this parameter for Complex Envelop data (i.e. data for modulated RF signal) if needed.  &quot;YES&quot; means that the RF frequency will not be saved in the data file, which reduces the file size.</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0 || DataFileType == 2 || DataFileType == 3</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__SkipFrequency@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="NormalizeWaveform" Type="PartParam" >
+<Description >Normalize the waveform within [-1,1]V range before waveform encryption or creating N5106A binary waveform</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 )</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<DataEntry >1</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="ClippingLevel" Type="PartParam" >
+<Description >The clipping voltage level</Description>
+<Unit ><T>Int</T><D>9001</D></Unit>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1</HideCondition>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >1.0</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="EquationText" Type="PartParam" >
+<Description >Equation Text to Parse, edited in the equation set</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<IsSettable ><T>Bool</T><D>0</D></IsSettable>
+<Validate ><T>Int</T><D>4</D></Validate>
+<DataEntry />
+<Data /></Item>
+<Item XName="EquationBP" Type="PartParam" >
+<Description >Equation Breakpoints</Description>
+<Show ><T>Bool</T><D>0</D></Show>
+<IsSettable ><T>Bool</T><D>0</D></IsSettable>
+<Validate ><T>Int</T><D>5</D></Validate>
+<DataEntry >[]</DataEntry>
+<Data ><T>Array_Dbl64</T><D>1;0;</D></Data></Item>
+<Item XName="Persistence" Type="PartParam" >
+<Description >Not saving sink data in the workspace file reduces the file size</Description>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__Persistence@Data Flow Enums</Enum>
+<Data ><T>Int</T><D>1</D></Data></Item></Item>
+<Model >Sink@Data Flow Models</Model>
+<Symbol >SYM_Sink</Symbol>
+<Description >Data Sink</Description>
+<ParentPartName >Sink@Algorithm Design</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>1</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Sinks</Category>
+<Netlist >input,7?Connect4</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >Sink@Data Flow Models</ModelName>
+<Indentifier />
+<SymbolName >SYM_Sink</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="StartStopOption" Type="PartParam" >
+<Description >Sink collection mode</Description>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__StartStopOption@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry></Item>
+<Item XName="SampleStart" Type="PartParam" >
+<Description >Sample number to start data collection</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 2</HideCondition>
+<Validate ><T>Int</T><D>11</D></Validate>
+<DataEntry >0</DataEntry></Item>
+<Item XName="SampleStop" Type="PartParam" >
+<Description >Sample number to stop data collection</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 2</HideCondition>
+<Validate ><T>Int</T><D>11</D></Validate>
+<DataEntry >Num_Samples - 1</DataEntry></Item>
+<Item XName="TimeStart" Type="PartParam" >
+<Description >Time to start data collection</Description>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 1</HideCondition>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >Start_Time</DataEntry></Item>
+<Item XName="TimeStop" Type="PartParam" >
+<Description >Time to stop data collection</Description>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >StartStopOption == 1</HideCondition>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >Stop_Time</DataEntry></Item>
+<Item XName="SinkTarget" Type="PartParam" >
+<Description >Select where the simulation data will be stored</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__SinkTarget@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry></Item>
+<Item XName="Graph" Type="PartParam" >
+<Description >Graph to display the data in, blank=none</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>4</D></Validate>
+<DataEntry /></Item>
+<Item XName="DynGraph" Type="PartParam" >
+<Description >Update graph as simulation runs</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__DynGraph@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry></Item>
+<Item XName="Table" Type="PartParam" >
+<Description >Table to display the data in, blank=none</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>4</D></Validate>
+<DataEntry /></Item>
+<Item XName="BlockSize" Type="PartParam" >
+<Description >Number of samples to collect at each input before writing to file as one data block</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>11</D></Validate>
+<DataEntry >Num_Samples</DataEntry></Item>
+<Item XName="ToSingleFile" Type="PartParam" >
+<Description >Only in effect when there are multiple inputs into the Sink. YES: will write data from every input into one single file of which name is specified in &quot;DataFileName&quot; parameter. NO: Data from each input will be written into individual files.</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__ToSingleFile@Data Flow Enums</Enum>
+<DataEntry >1</DataEntry></Item>
+<Item XName="DataFileName" Type="PartParam" >
+<Description >Datafile name</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>10</D></Validate>
+<DataEntry >SinkData</DataEntry></Item>
+<Item XName="DataFileType" Type="PartParam" >
+<Description >ASCII: ACSII file; Binary: binary file; Encrypted: Signal Studio format waveform</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__DataFileType@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry></Item>
+<Item XName="SkipFrequency" Type="PartParam" >
+<Description >ONLY change this parameter for Complex Envelop data (i.e. data for modulated RF signal) if needed.  &quot;YES&quot; means that the RF frequency will not be saved in the data file, which reduces the file size.</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0 || DataFileType == 2 || DataFileType == 3</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__SkipFrequency@Data Flow Enums</Enum>
+<DataEntry >0</DataEntry></Item>
+<Item XName="NormalizeWaveform" Type="PartParam" >
+<Description >Normalize the waveform within [-1,1]V range before waveform encryption or creating N5106A binary waveform</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 )</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<DataEntry >1</DataEntry></Item>
+<Item XName="ClippingLevel" Type="PartParam" >
+<Description >The clipping voltage level</Description>
+<Unit ><T>Int</T><D>9001</D></Unit>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1</HideCondition>
+<Validate ><T>Int</T><D>0</D></Validate>
+<DataEntry >1.0</DataEntry></Item>
+<Item XName="EquationText" Type="PartParam" >
+<Description >Equation Text to Parse, edited in the equation set</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<IsSettable ><T>Bool</T><D>0</D></IsSettable>
+<Validate ><T>Int</T><D>4</D></Validate>
+<DataEntry /></Item>
+<Item XName="EquationBP" Type="PartParam" >
+<Description >Equation Breakpoints</Description>
+<Show ><T>Bool</T><D>0</D></Show>
+<IsSettable ><T>Bool</T><D>0</D></IsSettable>
+<Validate ><T>Int</T><D>5</D></Validate>
+<DataEntry >[]</DataEntry></Item>
+<Item XName="Persistence" Type="PartParam" >
+<Description >Not saving sink data in the workspace file reduces the file size</Description>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<HideCondition >SinkTarget == 1</HideCondition>
+<Validate ><T>Int</T><D>16</D></Validate>
+<Enum >Sink__Persistence@Data Flow Enums</Enum>
+<DataEntry >Data_Persistence</DataEntry></Item></Item></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic" >
+<Item XName="SnapGrid" Type="Param" >
+<Data ><T>Double</T><D>125</D></Data>
+<Unit ><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Page" Type="PageMgr" >
+<Item XName="PageBox" Type="PageBox" >
+<Color ><T>Int</T><D>128</D></Color>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Width ><T>Double</T><D>10999</D></Width>
+<Height ><T>Double</T><D>7999</D></Height>
+<Alpha ><T>Int</T><D>32</D></Alpha>
+<Visible ><T>Bool</T><D>0</D></Visible></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>62.5</D></Size></Item>
+<Item XName="Display0" Type="SchematicDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;alOv14;m5LYabAU12C;Wv9z534;pHEM4KAIv24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;eE24;u324</D></DVport>
+<Show ><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Connect4" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;6;WwhP234;W4l24;v91334;W4l24;v91334;WXrAl24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Part3" Type="SchPart" >
+<Designator >I1</Designator>
+<PosX ><T>Double</T><D>1911.185792349726852989988</D></PosX>
+<PosY ><T>Double</T><D>4096.20797171327649266459</D></PosY>
+<Symbol >SYM_IID_Gaussian</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>0</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>-596</D></PosX>
+<PosY ><T>Double</T><D>420</D></PosY>
+<Item XName="__pI1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >I1 {IID_Gaussian@Data Flow Models}</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pStdDev" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >StdDev=1 V</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>77.90750000000001307398634</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Display1" Type="SchematicDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;m}}}}ZlOv14;E3FPI}Tyg14;Wv9z534;wamX6iQEz24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;i}14;Gr14</D></DVport></Item>
+<Item XName="Part0" Type="SchPart" >
+<Designator >A1</Designator>
+<PosX ><T>Double</T><D>5765.589221754315985890571</D></PosX>
+<PosY ><T>Double</T><D>4096.207988821170147275552</D></PosY>
+<Symbol >SYM_AdptFltAPA</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>0</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>875.80615234375</D></PosX>
+<PosY ><T>Double</T><D>545</D></PosY>
+<Item XName="__pA1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >A1 {AdptFltAPA@EqLib Models}</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pFeedforwardFilterLength" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >FeedforwardFilterLength=5</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>77.90750000000001307398634</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pFeedfowardFilterStepSize" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >FeedfowardFilterStepSize=0.4</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>155.8150000000000261479727</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pFeedbackFilterLength" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >FeedbackFilterLength=0</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>233.7225000000000534328137</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pFeedbackFilterStepSize" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >FeedbackFilterStepSize=0.01</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>311.6300000000000522959454</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pOrder" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >Order=3</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>389.5375000000000227373675</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pBias" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >Bias=1E-08</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>467.4450000000001068656275</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pInitCoef" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >InitCoef=OFF</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>545.3525000000000773070497</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pInitCoefValue" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >InitCoefValue=0</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>623.2600000000001045918907</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Part2" Type="SchPart" >
+<Designator >F1</Designator>
+<PosX ><T>Double</T><D>3499.000027710889298759867</D></PosX>
+<PosY ><T>Double</T><D>3375.000088100314314942807</D></PosY>
+<Symbol >SYM_FIR</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>0</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>875</D></PosX>
+<PosY ><T>Double</T><D>420</D></PosY>
+<Item XName="__pF1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >F1 {FIR@Data Flow Models}</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pTaps" Type="SchParameter" >
+<FontColor ><T>Int</T><D>200</D></FontColor>
+<Text >Taps=(1x5) [0.1,-0.2,0.3,-0.4,-0.1] [unknownWeights]</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>77.90750000000001307398634</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Connect0" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;6;GWq24;WNg24;GWq24;g69g24;WSPSw24;g69g24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect1" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;6;Mh24;W0WNg24;cI7U24;W0WNg24;cI7U24;L30m24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;WuBtT24;L30m24;cI7U24;L30m24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;WSPXs24;L30m24;cI7U24;L30m24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Part1" Type="SchPart" >
+<Designator >E1</Designator>
+<PosX ><T>Double</T><D>7671.489868087244758498855</D></PosX>
+<PosY ><T>Double</T><D>4102.000000000054569682106</D></PosY>
+<Symbol >SYM_ErrorFilter</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>0</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>875.80615234375</D></PosX>
+<PosY ><T>Double</T><D>420</D></PosY>
+<Item XName="__pE1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >E1 {ErrorFilter@EqLib Models}</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pFloorType" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >FloorType=dB</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>77.90750000000001307398634</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pFloor" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >Floor=-200</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>155.8150000000000261479727</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pFilterLength" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >FilterLength=5</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>233.7225000000000534328137</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Connect5" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;WSvMz24;L30m24;Wrtzz24;L30m24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Part5" Type="SchPart" >
+<Designator >APAErrordB</Designator>
+<PosX ><T>Double</T><D>9736.236328125003637978807</D></PosX>
+<PosY ><T>Double</T><D>3989.672607421886823431123</D></PosY>
+<Symbol >SYM_Sink</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>0</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>596</D></PosX>
+<PosY ><T>Double</T><D>232.499755859375</D></PosY>
+<Item XName="__pAPAErrordB" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >APAErrordB {Sink@Data Flow Models}</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pStartStopOption" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >StartStopOption=Auto</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>77.90750000000001307398634</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param" >
+<DataEntry >1</DataEntry>
+<Unit ><T>Int</T><D>6003</D></Unit>
+<Data ><T>Double</T><D>0.02539999999999999896749259</D></Data></Item>
+<Item XName="Height" Type="Param" >
+<DataEntry >8</DataEntry>
+<Unit ><T>Int</T><D>6003</D></Unit>
+<Data ><T>Double</T><D>0.2031999999999999917399407</D></Data></Item>
+<Item XName="Width" Type="Param" >
+<DataEntry >11</DataEntry>
+<Unit ><T>Int</T><D>6003</D></Unit>
+<Data ><T>Double</T><D>0.2793999999999999817035246</D></Data></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>62.5</D></Size></Item>
+<ShowPage ><T>Int</T><D>0</D></ShowPage>
+<Units ><T>Int</T><D>6003</D></Units>
+<SymScale ><T>Double</T><D>1</D></SymScale>
+<SymRotate ><T>Double</T><D>0</D></SymRotate>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<SchVer ><T>Int</T><D>1</D></SchVer>
+<Shown ><T>Int</T><D>15354</D></Shown></Item>
+<Intent ><T>Int</T><D>1</D></Intent>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology" >
+<Item XName="N1" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part3</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<PinName >output</PinName>
+<TermNum >1</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >1</NetName>
+<MappedSchObject >Connect2</MappedSchObject></Item></Item>
+<PartID >I1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect2</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<ResolvedNetName >1</ResolvedNetName></Item></Item>
+<Item XName="N2" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part0</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<PinName >inputSignal</PinName>
+<TermNum >1</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >1</NetName>
+<MappedSchObject >Connect3</MappedSchObject></Item></Item>
+<PartID >A1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect3</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<ResolvedNetName >1</ResolvedNetName></Item></Item>
+<Item XName="N3" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part0</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<PinName >desiredSignal</PinName>
+<TermNum >2</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >2</NetName>
+<MappedSchObject >Connect0</MappedSchObject></Item></Item>
+<PartID >A1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect0</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<ResolvedNetName >2</ResolvedNetName></Item></Item>
+<Item XName="N4" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part0</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<PinName >outputSignal</PinName>
+<TermNum >3</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >3</NetName></Item></Item>
+<PartID >A1</PartID></Item></Item>
+<Item XName="N5" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part0</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<PinName >errorSignal</PinName>
+<TermNum >4</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >5</NetName>
+<MappedSchObject >Connect5</MappedSchObject></Item></Item>
+<PartID >A1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect5</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<ResolvedNetName >5</ResolvedNetName></Item></Item>
+<Item XName="N6" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part2</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<PinName >input</PinName>
+<TermNum >1</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >1</NetName>
+<MappedSchObject >Connect1</MappedSchObject></Item></Item>
+<PartID >F1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect1</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<ResolvedNetName >1</ResolvedNetName></Item></Item>
+<Item XName="N7" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part2</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<PinName >output</PinName>
+<TermNum >2</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >2</NetName>
+<MappedSchObject >Connect0</MappedSchObject></Item></Item>
+<PartID >F1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect0</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<ResolvedNetName >2</ResolvedNetName></Item></Item>
+<Item XName="N8" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part1</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<PinName >input</PinName>
+<TermNum >1</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >5</NetName>
+<MappedSchObject >Connect5</MappedSchObject></Item></Item>
+<PartID >E1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect5</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<ResolvedNetName >5</ResolvedNetName></Item></Item>
+<Item XName="N9" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part1</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<PinName >outputLinear</PinName>
+<TermNum >2</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >6</NetName></Item></Item>
+<PartID >E1</PartID></Item></Item>
+<Item XName="N10" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part1</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<PinName >outputLog</PinName>
+<TermNum >3</TermNum>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >7</NetName>
+<MappedSchObject >Connect4</MappedSchObject></Item></Item>
+<PartID >E1</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect4</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<ResolvedNetName >7</ResolvedNetName></Item></Item>
+<Item XName="N11" Type="Nexus" >
+<Item XName="P1" Type="PartPin" >
+<SchObject >Part5</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<PinName >input</PinName>
+<TermNum >1</TermNum>
+<IsMultiport ><T>Bool</T><D>1</D></IsMultiport>
+<Item XName="Subterminals" Type="SerItem" >
+<Item XName="T1" Type="SubTerm" >
+<NetName >7</NetName>
+<MappedSchObject >Connect4</MappedSchObject></Item></Item>
+<PartID >APAErrordB</PartID></Item>
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect4</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<ResolvedNetName >7</ResolvedNetName></Item></Item>
+<Item XName="N12" Type="Nexus" >
+<Item XName="C1" Type="ConnEndpoint" >
+<SchObject >Connect1</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<ResolvedNetName >1</ResolvedNetName></Item>
+<Item XName="C2" Type="ConnEndpoint" >
+<SchObject >Connect2</SchObject>
+<Direction ><T>Int</T><D>1</D></Direction>
+<ResolvedNetName >1</ResolvedNetName></Item>
+<Item XName="C3" Type="ConnEndpoint" >
+<SchObject >Connect3</SchObject>
+<Direction ><T>Int</T><D>0</D></Direction>
+<ResolvedNetName >1</ResolvedNetName></Item></Item></Item></Item>
+<Item XName="DF1" UserName="DF1" Type="Data Flow Analysis" >
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param" >
+<DataEntry >27.0</DataEntry>
+<Unit ><T>Int</T><D>12001</D></Unit>
+<Data ><T>Double</T><D>27</D></Data></Item>
+<Item XName="DesignName" Type="Param" >
+<Data >Sch1</Data>
+<TextParam >1</TextParam>
+<DataEntry >Sch1</DataEntry></Item>
+<Item XName="DCAnalysis" Type="Param" >
+<Data /></Item>
+<Item XName="DataName" Type="Param" >
+<Data >DF1_Data</Data>
+<TextParam >1</TextParam>
+<DataEntry >DF1_Data</DataEntry></Item>
+<NeedRun ><T>Bool</T><D>0</D></NeedRun>
+<Item XName="Start_Time" Type="Param" >
+<Data ><T>Double</T><D>0</D></Data>
+<Unit ><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param" >
+<Data ><T>Double</T><D>0.0001269999999999999970058673</D></Data>
+<Unit ><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param" >
+<Data ><T>Double</T><D>9.999999999999999547481118e-07</D></Data>
+<Unit ><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Num_Samples" Type="Param" >
+<Data ><T>Double</T><D>128</D></Data>
+<DataEntry >128</DataEntry></Item>
+<Item XName="Sample_Rate" Type="Param" >
+<Data ><T>Double</T><D>1000000</D></Data>
+<Unit ><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param" >
+<Data ><T>Double</T><D>7874.015748031496514158789</D></Data>
+<Unit ><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="Data_Persistence" Type="Param" >
+<Data ><T>Bool</T><D>0</D></Data></Item>
+<Item XName="ScheduleLogFile" Type="Param" >
+<Data /></Item>
+<Item XName="ProfileTimesFile" Type="Param" >
+<Data /></Item>
+<Item XName="DefaultSeed" Type="Param" >
+<Data >1234567</Data></Item>
+<OutList ><T>Array_BString</T><D>1;0;</D></OutList>
+<AutoRecalc ><T>Bool</T><D>1</D></AutoRecalc>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="ConfigurationName" Type="Param" >
+<Data />
+<TextParam ><T>Bool</T><D>1</D></TextParam></Item></Item>
+<Item XName="DF1_Data" UserName="DF1_Data" Type="DataSet" >
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" >
+<Item XName="APAErrordB" Type="Variable" >
+<Data ><T>Array_Dbl64</T><D>1;128;LjMPVALc11C;{{XAHZRIu0C;iCU59MWBn0C;WInFHohLX14;P64vFUzLY14;fwGHNVpsY14;6DvzW3jyY14;UqfkfelyY14;dFJgWEFAZ14;rk2FX3f9Z14;GyNVY}RiY14;f79bAPHPX14;eYEeZ092X14;ld{pAeJPW14;m5kbOtcgW14;jSjdsPP2X14;ue79Dir5X14;VN0P9KprW14;UsYUGR{ZW14;sK2h{dWSW14;1jP}O{04W14;NgLAE2veU14;oQwxD8MiT14;Vzdg2p1{S14;JPxh7}NaR14;wmr2ocabR14;p97DkKa5R14;qP{YYv9BS14;WSbTRcuCQ14;ZXW1nYzXP14;f1u3IsEKP14;inJ6EyxJO14;Kd733Ga{L14;SE4HoOWrL14;pgEruFZVL14;bVpIz35wK14;RUYq7PCzJ14;S5AJogHfJ14;MmSlGDZHJ14;kK}6JjosI14;hLsXLrR0J14;mJG9YNo6J14;Hb}zf3gfI14;20zegjlKH14;vXF5{35qE14;OIxRbFviE14;befgWfH}C14;o1ko{ILq814;LA1glX3414;qxXw}aDY214;nyKZ{IB5{04;8EStoJB{x04;SSdF10l}{04;MEn5L5If014;y4szgD4b014;7Rt7a1Uh{04;c9dMYRwPw04;p5rKpjCir04;UsEXQfr{f04;Pvbi20oZY04;IgNdPxP2Q04;D3ArNZdui}3;{qMJ8VYm20C;aCExFZ4qM0C;iUBZfPbNQ0C;MFIxDqEXZ0C;AXEgqvKfo0C;r1Y8weWpx0C;mu3qJw6I}0C;lU{v}u3{31C;{fEVzuAi51C;L661ih7O91C;S9Dr6URG91C;5jBQML6K71C;4o{r2GL751C;{cvVVaoj31C;Q08c3ILC31C;SPqYntro31C;7qP}rgWW51C;DX8c3S3l61C;TuRWnJ4n51C;Eoe10yQe41C;gFbtQlyJ41C;MeaB0J0G51C;Gz2jEEyp71C;NRM{ffQrA1C;RFN{Lwt4C1C;n9bmw}PKE1C;WZ5s4qXkG1C;nOHv6iOSH1C;Zo9841EI1C;}RitzvvDJ1C;3yyaaxMmL1C;tPyYvDcDL1C;n}FIa}YGL1C;ckAOA{MFM1C;rXikliS0Q1C;oyGb}mCnQ1C;yU6xlkXBS1C;a76hEhhMS1C;Ywt2zflnS1C;}6Qi6USpR1C;WZ40KuncW1C;tsfpeuiBW1C;OqkxzFC9W1C;4Av66zdSW1C;OuDifhUmW1C;2HvebBZtW1C;iXwwYeRIX1C;M9E6dXw3Y1C;rCgfC8kxX1C;8cnOfHBdX1C;c8ngQqtcX1C;2jYhXTlxX1C;1IrE0UEZY1C;DEwrZzJ9Z1C;FzLADEm3a1C;uudzNX}1a1C;{oHeu4JAa1C;slKWs04Za1C;WKiuWKg8b1C;gWNrlBx6b1C;y32YXEUma1C;ocdHG4FYa1C;YjtkwDQGa1C;Ix{jmij3a1C;uQbo2RsAa1C;T0JOyiuea1C</D></Data>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<IndepValue >Designs\DF1_Data\Eqns\VarBlock\APAErrordB_Time</IndepValue></Item>
+<Item XName="A1_FeedForwardCoef" Type="Variable" >
+<Data ><T>Array_Dbl64</T><D>1;5;23z6JcPcv{3;a7PJPcPc9}B;fnElpCpCJ}3;Qe6XQcPcP}B;UFc4JcPcv{B</D></Data>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis></Item>
+<Item XName="APAErrordB_Time" Type="Variable" >
+<Data ><T>Array_Dbl64</T><D>1;128;;DsUjWUlnmw3;DsUjWUln0x3;KHE4nDdA9x3;DsUjWUlnGx3;mZsu8MB{Kx3;KHE4nDdAPx3;t{bFP53NTx3;DsUjWUlnWx3;}iApKQztYx3;mZsu8MB{ax3;YQY{yHP4dx3;KHE4nDdAfx3;58w9b9rGhx3;t{bFP53Njx3;erHLD1HTlx3;DsUjWUlnmx3;cnKmQRsqnx3;}iApKQztox3;Ne0sEO4xpx3;mZsu8MB{qx3;9Vix2KI1sx3;YQY{yHP4tx3;xLO1tFW7ux3;KHE4nDdAvx3;iC47hBkDwx3;58w9b9rGxx3;U3mCV7yJyx3;t{bFP53Nzx3;GwSIJ3AQ{x3;erHLD1HT}x3;Xu3iZ}BG0y3;DsUjWUln0y3;vpvkTzIJ1y3;cnKmQRsq1y3;IllnNxPM2y3;}iApKQzt2y3;hgbqHvWP3y3;Ne0sEO4x3y3;4cStBtdR4y3;mZsu8MB{4y3;TXHw5rkV5y3;9Vix2KI16y3;rR7z}orY6y3;YQY{yHP47y3;EOz}vmyb7y3;xLO1tFW78y3;dJp2qk3f8y3;KHE4nDdA9y3;Ff5kiAi9y3;iC47hBkDAy3;PAV8egHlAy3;58w9b9rGBy3;o5LBYeOoBy3;U3mCV7yJCy3;A1BERcVrCy3;t{bFP53NDy3;Zy0HMacuDy3;GwSIJ3AQEy3;ytsJGYjxEy3;erHLD1HTFy3;LpiMAWq{Fy3;Xu3iZ}BGGy3;NNnC2lzWGy3;DsUjWUlnGy3;3LCE}DX2Hy3;vpvkTzIJHy3;mIdFyi4aHy3;cnKmQRsqHy3;RG2HvBe5Iy3;IllnNxPMIy3;8ETIsgBdIy3;}iApKQztIy3;rBuJp9l8Jy3;hgbqHvWPJy3;X9JLmeIgJy3;Ne0sEO4xJy3;E7kMj7sBKy3;4cStBtdRKy3;w49OgcPjKy3;mZsu8MB{Ky3;c2aPd5zELy3;TXHw5rkVLy3;J0}QaaWmLy3;9Vix2KI1My3;}zPRX34IMy3;rR7z}orYMy3;ixqTUYdpMy3;YQY{yHP4Ny3;OvFVS1BLNy3;EOz}vmybNy3;4tgWOWksNy3;xLO1tFW7Oy3;nq5YL}HOOy3;dJp2qk3fOy3;ToWZIUrvOy3;KHE4nDdAPy3;AmxaFzOSPy3;Ff5kiAiPy3;sjMcCRyyPy3;iC47hBkDQy3;Zhnd9xVUQy3;PAV8egHlQy3;FfCf6Q30Sy3;58w9b9rGSy3;xcdg3vcXSy3;o5LBYeOoSy3;ea2i0OA3Ry3;U3mCV7yJRy3;KYTjzsjaRy3;A1BERcVrRy3;1WukwLH6Ty3;t{bFP53NTy3;jTJmtqqdTy3;Zy0HMacuTy3;PSknqJO9Uy3;GwSIJ3AQUy3;6P9pnoxgUy3;ytsJGYjxUy3;oMaqkHVCVy3;erHLD1HTVy3;VK}rhm2kVy3;LpiMAWq{Vy3;59jSq7p7Wy3;Xu3iZ}BGWy3;ydQyItaOWy3;NNnC2lzWWy3;o68TncMfWy3</D></Data>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Unit ><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="LogOutput" Type="Variable" >
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data >Error: Sink `Sch1__APAErrordB&apos;: No &apos;Run&apos; function was defined in the equations.&#x000D;&#x000A;Execution time: 0.511 sec&#x000D;&#x000A;</Data></Item></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<UnitUse ><T>Int</T><D>2</D></UnitUse></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="DataSetDisp" >
+<SelVar >A1_AdptFltAPA_FeedForwardCoef</SelVar>
+<Split ><T>Double</T><D>0.2999999999999999888977698</D></Split>
+<SubSplit ><T>Int</T><D>0</D></SubSplit>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;OlUzwrBku24;wpdFV{Rfm24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;6424;4x14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;01;81;XH;FB</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item></Item>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<FullPath >Designs\DF1_Data</FullPath></Item>
+<Item XName="ErrordB" UserName="ErrordB" Type="Rectangular Graph" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="MkrGroup" Type="MkrGroup" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<ZOrder ><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="AxisY" UserName="APAErrordB" Type="GrAxis" >
+<AxisType ><T>Int</T><D>0</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>1</D></InUse>
+<AutoScale ><T>Bool</T><D>1</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-200</D></Min>
+<Max ><T>Double</T><D>200</D></Max>
+<TextColor ><T>Int</T><D>255</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<Unit ><T>Int</T><D>0</D></Unit>
+<TitleOverride />
+<TitleColor ><T>Int</T><D>255</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="AxisY2" Type="GrAxis" >
+<AxisType ><T>Int</T><D>1</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>1</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>0</D></Min>
+<Max ><T>Double</T><D>10</D></Max>
+<TextColor ><T>Int</T><D>0</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<Unit ><T>Int</T><D>0</D></Unit>
+<TitleOverride />
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="AxisX" UserName="Time (s)" Type="GrAxis" >
+<AxisType ><T>Int</T><D>2</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>1</D></InUse>
+<AutoScale ><T>Bool</T><D>1</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>0</D></Min>
+<Max ><T>Double</T><D>0.0001269999999999999970058673</D></Max>
+<TextColor ><T>Int</T><D>0</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<TitleOverride />
+<TitleColor ><T>Int</T><D>0</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="Series0" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>1</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<UnitUse ><T>Int</T><D>2</D></UnitUse>
+<Text >Inl_i=APAErrordB;</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Item XName="_Var_Block" Type="VarBlock" />
+<Color ><T>Int</T><D>255</D></Color>
+<SymbolShape ><T>Int</T><D>2</D></SymbolShape>
+<Meas >APAErrordB</Meas>
+<Label />
+<OnRight ><T>Bool</T><D>0</D></OnRight>
+<UserHide ><T>Bool</T><D>0</D></UserHide>
+<ZOrder ><T>Int</T><D>9000</D></ZOrder>
+<PlotType /></Item>
+<Item XName="Display0" Type="GraphDisp" >
+<PanX ><T>Double</T><D>0</D></PanX>
+<PanY ><T>Double</T><D>0</D></PanY>
+<Zoom ><T>Double</T><D>1</D></Zoom>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;Z5BMi8GR334;Y37EROlev24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;{A24;o124</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;F3;g3;pJ;nD</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item>
+<Item XName="Legend" Type="Legend" >
+<Color ><T>Int</T><D>1073741824</D></Color>
+<ZOrder ><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font" >
+<Name >Arial</Name>
+<Size ><T>Double</T><D>8</D></Size></Item>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>4677.315833998169182450511</D></PosY>
+<Width ><T>Double</T><D>3999.999999999999545252649</D></Width>
+<Height ><T>Double</T><D>156.414928436279296875</D></Height></Item>
+<Item XName="Display1" Type="GraphDisp" >
+<PanX ><T>Double</T><D>0</D></PanX>
+<PanY ><T>Double</T><D>0</D></PanY>
+<Zoom ><T>Double</T><D>1</D></Zoom>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;}}}}}}}Fl24;QKpFJiSuo24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;UPrJTlbsn14;A39Ohs2Zr14</D></DVport></Item></Item>
+<Item XName="AxisQueue" Type="AxisQueue" >
+<Top ><T>Int</T><D>0</D></Top>
+<Current ><T>Int</T><D>0</D></Current></Item>
+<ShowPoints ><T>Bool</T><D>1</D></ShowPoints>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>14</D></Size></Item>
+<DefContext >DF1_Data</DefContext>
+<Title />
+<AaTraces ><T>Bool</T><D>1</D></AaTraces>
+<AaBackgnd ><T>Bool</T><D>0</D></AaBackgnd>
+<AllowAA ><T>Bool</T><D>0</D></AllowAA>
+<Item XName="Height" Type="Param" >
+<Data ><T>Double</T><D>0.122776761365834999328861</D></Data></Item>
+<Item XName="Width" Type="Param" >
+<Data ><T>Double</T><D>0.1015999999999999958699703</D></Data></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Identified weights" UserName="Identified weights" Type="Rectangular Graph" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="MkrGroup" Type="MkrGroup" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<ZOrder ><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="AxisY" UserName="A1_FeedForwardCoef" Type="GrAxis" >
+<AxisType ><T>Int</T><D>0</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>1</D></InUse>
+<AutoScale ><T>Bool</T><D>1</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-0.5</D></Min>
+<Max ><T>Double</T><D>0.5</D></Max>
+<TextColor ><T>Int</T><D>255</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<Unit ><T>Int</T><D>0</D></Unit>
+<TitleOverride />
+<TitleColor ><T>Int</T><D>255</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="AxisY2" Type="GrAxis" >
+<AxisType ><T>Int</T><D>1</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>1</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>0</D></Min>
+<Max ><T>Double</T><D>10</D></Max>
+<TextColor ><T>Int</T><D>0</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<Unit ><T>Int</T><D>0</D></Unit>
+<TitleOverride />
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="AxisX" Type="GrAxis" >
+<AxisType ><T>Int</T><D>2</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>1</D></InUse>
+<AutoScale ><T>Bool</T><D>0</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>0</D></Min>
+<Max ><T>Double</T><D>5</D></Max>
+<TextColor ><T>Int</T><D>0</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<Unit ><T>Int</T><D>0</D></Unit>
+<TitleOverride />
+<TitleColor ><T>Int</T><D>0</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="Series0" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>1</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<UnitUse ><T>Int</T><D>2</D></UnitUse>
+<Text >Inl_i=A1_FeedForwardCoef;</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Item XName="_Var_Block" Type="VarBlock" />
+<Color ><T>Int</T><D>255</D></Color>
+<SymbolShape ><T>Int</T><D>2</D></SymbolShape>
+<Meas >A1_FeedForwardCoef</Meas>
+<Label />
+<OnRight ><T>Bool</T><D>0</D></OnRight>
+<UserHide ><T>Bool</T><D>0</D></UserHide>
+<ZOrder ><T>Int</T><D>9000</D></ZOrder>
+<PlotType /></Item>
+<Item XName="Display0" Type="GraphDisp" >
+<PanX ><T>Double</T><D>0</D></PanX>
+<PanY ><T>Double</T><D>0</D></PanY>
+<Zoom ><T>Double</T><D>1</D></Zoom>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;fHZ6DQiT334;jStkTxdhv24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;B24;q124</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;n3;H4;NK;SE</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item>
+<Item XName="Legend" Type="Legend" >
+<Color ><T>Int</T><D>1073741824</D></Color>
+<ZOrder ><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font" >
+<Name >Arial</Name>
+<Size ><T>Double</T><D>8</D></Size></Item>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>3843.585071563720248377649</D></PosY>
+<Width ><T>Double</T><D>5517.522808106832599150948</D></Width>
+<Height ><T>Double</T><D>156.414928436279296875</D></Height></Item>
+<Item XName="Display1" Type="GraphDisp" >
+<PanX ><T>Double</T><D>0</D></PanX>
+<PanY ><T>Double</T><D>0</D></PanY>
+<Zoom ><T>Double</T><D>1</D></Zoom>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;kZ8mMNOZr24;}}}}}}}Fl24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;UPrJTlbsn14;i3Xn}Wesf14</D></DVport></Item></Item>
+<Item XName="AxisQueue" Type="AxisQueue" >
+<Top ><T>Int</T><D>0</D></Top>
+<Current ><T>Int</T><D>0</D></Current></Item>
+<ShowPoints ><T>Bool</T><D>1</D></ShowPoints>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>14</D></Size></Item>
+<DefContext >DF1_Data</DefContext>
+<Title />
+<AaTraces ><T>Bool</T><D>1</D></AaTraces>
+<AaBackgnd ><T>Bool</T><D>0</D></AaBackgnd>
+<AllowAA ><T>Bool</T><D>0</D></AllowAA>
+<Item XName="Height" Type="Param" >
+<Data ><T>Double</T><D>0.1015999999999999958699703</D></Data></Item>
+<Item XName="Width" Type="Param" >
+<Data ><T>Double</T><D>0.1401450793259135518820102</D></Data></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="APA SysId" UserName="APA SysId" Type="Report" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="PageBox" Type="PageBox" >
+<Color ><T>Int</T><D>8388608</D></Color>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Width ><T>Double</T><D>11692</D></Width>
+<Height ><T>Double</T><D>8267</D></Height>
+<Alpha ><T>Int</T><D>32</D></Alpha></Item>
+<Item XName="Display0" Type="ReportDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;CLvNAmetJ2C;e}}}}}}Fl1C;my1fdRPME34;Z4c7Q2o{}24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;jK24;o424</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;W;Y;2H;kA</D></Window>
+<ShowCmd ><T>Int</T><D>3</D></ShowCmd>
+<Show ><T>Bool</T><D>1</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item>
+<Item XName="Header" Type="HdrFtr" >
+<Justification ><T>Int</T><D>4</D></Justification>
+<Macro >%FILE%: %DOC%    %DATE%    %TIME%</Macro>
+<Text >SysIdRealAPA: APA SysId    April 20, 2017    15:10:31</Text>
+<PosX ><T>Double</T><D>499.9999999999999431565811</D></PosX>
+<PosY ><T>Double</T><D>375</D></PosY>
+<Item XName="Font" Type="Font" >
+<Name >Arial</Name>
+<Size ><T>Double</T><D>83.33333333333332859638176</D></Size></Item></Item>
+<Item XName="Footer" Type="HdrFtr" >
+<Justification ><T>Int</T><D>5</D></Justification>
+<Macro >- %PAGE% -</Macro>
+<Text >- 1 -</Text>
+<PosX ><T>Double</T><D>5846</D></PosX>
+<PosY ><T>Double</T><D>7892</D></PosY>
+<Item XName="Font" Type="Font" >
+<Name >Arial</Name>
+<Size ><T>Double</T><D>83.33333333333332859638176</D></Size></Item></Item>
+<Item XName="Annotate0" Type="gObjRect" >
+<Text >LinkX0</Text>
+<PosX ><T>Double</T><D>500</D></PosX>
+<PosY ><T>Double</T><D>500</D></PosY>
+<Width ><T>Double</T><D>6875</D></Width>
+<Height ><T>Double</T><D>5000</D></Height>
+<ZOrder ><T>Int</T><D>-1</D></ZOrder>
+<Item XName="Title" Type="DrawText" >
+<ToPoint ><T>Bool</T><D>1</D></ToPoint>
+<Text >Sch1</Text>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<PosX ><T>Double</T><D>3938</D></PosX>
+<PosY ><T>Double</T><D>468.75</D></PosY>
+<Justification ><T>Int</T><D>9</D></Justification></Item>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Annotate1" Type="gObjRect" >
+<Text >LinkX1</Text>
+<PosX ><T>Double</T><D>500</D></PosX>
+<PosY ><T>Double</T><D>5500.000000000000909494702</D></PosY>
+<Width ><T>Double</T><D>6874.999999999999090505298</D></Width>
+<Height ><T>Double</T><D>2249.999999999999090505298</D></Height>
+<ZOrder ><T>Int</T><D>-2</D></ZOrder>
+<Item XName="Title" Type="DrawText" >
+<ToPoint ><T>Bool</T><D>1</D></ToPoint>
+<Text />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<PosX ><T>Double</T><D>3937.999999999999545252649</D></PosX>
+<PosY ><T>Double</T><D>7781.75</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification>
+<Visible ><T>Bool</T><D>0</D></Visible></Item>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Annotate2" Type="gObjRect" >
+<Text >LinkX2</Text>
+<PosX ><T>Double</T><D>7375.000000000003637978807</D></PosX>
+<PosY ><T>Double</T><D>500</D></PosY>
+<Width ><T>Double</T><D>3750</D></Width>
+<Height ><T>Double</T><D>4500.000000000000909494702</D></Height>
+<ZOrder ><T>Int</T><D>-3</D></ZOrder>
+<Item XName="Title" Type="DrawText" >
+<ToPoint ><T>Bool</T><D>1</D></ToPoint>
+<Text />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<PosX ><T>Double</T><D>9250.500000000003637978807</D></PosX>
+<PosY ><T>Double</T><D>5031.750000000000909494702</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification>
+<Visible ><T>Bool</T><D>0</D></Visible></Item>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Annotate3" Type="gObjRect" >
+<Text >LinkX3</Text>
+<PosX ><T>Double</T><D>7374.999999999998181010596</D></PosX>
+<PosY ><T>Double</T><D>5000</D></PosY>
+<Width ><T>Double</T><D>3750</D></Width>
+<Height ><T>Double</T><D>2750</D></Height>
+<ZOrder ><T>Int</T><D>-4</D></ZOrder>
+<Item XName="Title" Type="DrawText" >
+<ToPoint ><T>Bool</T><D>1</D></ToPoint>
+<Text />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<PosX ><T>Double</T><D>9250.499999999998181010596</D></PosX>
+<PosY ><T>Double</T><D>7781.75</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification>
+<Visible ><T>Bool</T><D>0</D></Visible></Item>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<Selected ><T>Bool</T><D>0</D></Selected></Item></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>100</D></Size></Item>
+<Snap ><T>Bool</T><D>1</D></Snap>
+<Item XName="Height" Type="Param" >
+<Unit ><T>Int</T><D>6001</D></Unit>
+<DataEntry >210</DataEntry>
+<Data ><T>Double</T><D>0.2099999999999999922284388</D></Data></Item>
+<Item XName="Width" Type="Param" >
+<Unit ><T>Int</T><D>6001</D></Unit>
+<DataEntry >297</DataEntry>
+<Data ><T>Double</T><D>0.2969999999999999862332345</D></Data></Item>
+<Item XName="SnapGrid" Type="Param" >
+<Data ><T>Double</T><D>125</D></Data>
+<Unit ><T>Int</T><D>0</D></Unit></Item>
+<Item XName="TopMargin" Type="Param" >
+<Unit ><T>Int</T><D>6001</D></Unit>
+<Data ><T>Double</T><D>0.01269999999999999948374629</D></Data></Item>
+<Item XName="LeftMargin" Type="Param" >
+<Unit ><T>Int</T><D>6001</D></Unit>
+<Data ><T>Double</T><D>0.01269999999999999948374629</D></Data></Item>
+<Item XName="RightMargin" Type="Param" >
+<Unit ><T>Int</T><D>6001</D></Unit>
+<Data ><T>Double</T><D>0.01269999999999999948374629</D></Data></Item>
+<Item XName="BottomMargin" Type="Param" >
+<Unit ><T>Int</T><D>6001</D></Unit>
+<Data ><T>Double</T><D>0.01269999999999999948374629</D></Data></Item>
+<Item XName="Spacing" Type="Param" >
+<Unit ><T>Int</T><D>6001</D></Unit>
+<Data ><T>Double</T><D>0.006349999999999999741873147</D></Data></Item>
+<ShowLongNames ><T>Int</T><D>0</D></ShowLongNames>
+<Item XName="LinkX0" Type="ReportLink" >
+<gSrc >Designs\Sch1</gSrc>
+<gDispN >Display1</gDispN></Item>
+<Item XName="LinkX1" Type="ReportLink" >
+<gSrc >Notes</gSrc>
+<gDispN >Display1</gDispN></Item>
+<Item XName="LinkX2" Type="ReportLink" >
+<gSrc >Designs\ErrordB</gSrc>
+<gDispN >Display1</gDispN></Item>
+<Item XName="LinkX3" Type="ReportLink" >
+<gSrc >Designs\Identified weights</gSrc>
+<gDispN >Display1</gDispN></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Selected ><T>Bool</T><D>1</D></Selected></Item>
+<Item XName="Notes" UserName="Notes" Type="Notes" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="NotesDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;ysjStkSk434;{xtlV}B7o24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;mC24;8v14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;k2;Q5;NK;oC</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item>
+<Item XName="Display1" Type="NotesDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;tw24;WbX24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;bJEe6Cwd024;8CRM22Nxa14</D></DVport></Item></Item>
+<Text >&lt;P align=center&gt;&lt;STRONG&gt;&lt;U&gt;Real APA&amp;nbsp;system identification&lt;/U&gt;&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P align=center&gt;&lt;STRONG&gt;&lt;U&gt;&lt;/U&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P align=left&gt;This model implements a real arithmetic system identification setup using the APA algorithm. The unknown system is a real FIR filter. The error signal is plotted once it has gone through the error filter. The identified filter weights are also plotted.&lt;/P&gt;</Text>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Equation" UserName="Equation" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>1</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" />
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<UnitUse ><T>Int</T><D>2</D></UnitUse>
+<Text >unknownWeights = [0.1 -0.2 0.3 -0.4 -0.1];&#x000D;&#x000A;</Text>
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="EquationDisp" >
+<Split ><T>Double</T><D>0.2999999999999999888977698</D></Split>
+<Split2 ><T>Double</T><D>0.2999999999999999888977698</D></Split2>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;hKfIbAryz24;tjStkTxXc24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;M824;Ko14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;G;r1;7K;x8</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Time >2017:110:15:20</Time>
+<Item XName="TuneList" Type="TuneList" />
+<ClientWnd ><T>Array_I64</T><D>1;4;;;nK;TA</D></ClientWnd>
+<Ver ><T>Double</T><D>2008.009999999999990905053</D></Ver>
+<PropStorageFileName >C:\SoftDev\Keysight\EqLib\Examples\SysIdRealAPA.wsv</PropStorageFileName>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>1</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" >
+<Item XName="Data_Persistence" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="FREQ" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Data ><T>Double</T><D>1000000</D></Data></Item>
+<Item XName="Freq_Resolution" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Unit ><T>Int</T><D>1001</D></Unit>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="Num_Samples" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Data ><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Num_Samples_SC" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Data ><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Sample_Rate" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Unit ><T>Int</T><D>1001</D></Unit>
+<Data ><T>Double</T><D>1000</D></Data></Item>
+<Item XName="Start_Time" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="Start_Time_SC" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="Stop_Time" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="Stop_Time_SC" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="TEMPERATURE" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Data ><T>Double</T><D>16.85000000000000142108547</D></Data></Item>
+<Item XName="TIME" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="Time_Spacing" Type="Variable" >
+<Creator >GlobalEqns</Creator>
+<Unit ><T>Int</T><D>7004</D></Unit>
+<Data ><T>Double</T><D>0.001000000000000000020816682</D></Data></Item></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Selected ><T>Bool</T><D>0</D></Selected></Item></Item> 

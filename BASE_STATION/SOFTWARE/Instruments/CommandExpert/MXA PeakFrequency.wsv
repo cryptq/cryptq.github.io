@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;YF;59</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2017:334:16:43</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2012.06</D></Ver>
+<Version>1.21</Version>
+<Item XName="Equation" UserName="Equation" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>% Acquire spectrum data using the AgSAn IVI-COM driver.&#x000D;&#x000A;%&#x000D;&#x000A;% This example acquires spectrum and peak data from an Keysight&#x000D;&#x000A;% signal analyzer using the AgSAn IVI-COM driver.  The spectrum is obtained&#x000D;&#x000A;% from the United States FM band.  The example demonstrates using the&#x000D;&#x000A;% agRunSequence function to run the Command Expert sequence file&#x000D;&#x000A;% AgSAn_SignalAnalyzer_PeakFrequency.iseq that is included in the same&#x000D;&#x000A;% directory as this file.&#x000D;&#x000A;% &#x000D;&#x000A;% Running the Example:&#x000D;&#x000A;%   1. Assign the variable named address a&#x000D;&#x000A;%   string value that is the address of an Keysight signal analyzer&#x000D;&#x000A;%   supported by the AgSAn IVI-COM driver. For example, you would type the&#x000D;&#x000A;%   following, replacing &apos;abcdefg&apos; with your instrument VISA address.&#x000D;&#x000A;%&#x000D;&#x000A;%   address = &apos;abcdefg&apos;&#x000D;&#x000A;%&#x000D;&#x000A;%   Common examples of instrument VISA addresses are &apos;TCPIP0::130.27.94.12::inst0::INSTR&apos;,&#x000D;&#x000A;%   and &apos;GPIB::0::INSTR&apos;.  See the help for&#x000D;&#x000A;%   agRunSequence for additional instrument address details.&#x000D;&#x000A;%&#x000D;&#x000A;%   2. Click the Go button to run this Equation.&#x000D;&#x000A;&#x000D;&#x000A;% Measurement parameters.&#x000D;&#x000A;address = &apos;&apos;;&#x000D;&#x000A;start = 87.8e6; % Start frequency&#x000D;&#x000A;stop = 108e6;   % Stop frequency&#x000D;&#x000A;&#x000D;&#x000A;% Run command sequence.&#x000D;&#x000A;cd(getworkspacedir);&#x000D;&#x000A;[amplitude, peakX, peakY] = agRunSequence(&apos;MXA PeakFrequency&apos;, address, start, stop);&#x000D;&#x000A;&#x000D;&#x000A;&#x000D;&#x000A;</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="EquationDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;RE24;8l14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;l9{cuSCD434;StkTxsPga24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.12920592193808883</D></Split>
+<Split2><T>Double</T><D>0.29354838709677422</D></Split2>
+<Window><T>Array_I64</T><D>1;4;;W4;YF;49</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder></Item></Item>
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Info" UserName="Info" Type="Notes">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;P style=&quot;BORDER-BOTTOM: windowtext 0.75pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0in&quot; class=MsoTitle align=center&gt;&lt;FONT size=5 face=Arial&gt;&lt;STRONG&gt;Acquire MXA&amp;nbsp;Spectrum Data Example&lt;/STRONG&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue&amp;nbsp;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Tutorial&amp;nbsp;Workspace&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;This example acquires spectrum and peak data from an Keysight signal analyzer using the AgSAn IVI-COM driver.&amp;nbsp;The example demonstrates using the&amp;nbsp;agRunSequence function to run the Command Expert sequence file&amp;nbsp;&lt;STRONG&gt;MXA PeakFrequency.iseq&lt;/STRONG&gt; that is included in the same&amp;nbsp;directory as this file.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;Instructions for Running:&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;OL&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;Install &lt;STRONG&gt;Command Expert&lt;/STRONG&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;Install&amp;nbsp;AgSAn&amp;nbsp;IVI-COM driver from &lt;A href=&quot;http://www.keysight.com/find/adnivicomdrivers&quot;&gt;http://www.keysight.com/find/adnivicomdrivers&lt;/A&gt;, please be noted that 32bit IVI-COM driver can only work with SystemVue 32bit.&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;In Equation, assign the variable named &lt;STRONG&gt;address&lt;/STRONG&gt; a string value that is the address of an Keysight signal analyzer supported by the AgSAn IVI-COM driver. For example, you would type the following, replacing &apos;abcdefg&apos; with your instrument address.&lt;BR&gt;&amp;nbsp;&amp;nbsp; address = &apos;abcdefg&apos;&lt;BR&gt;&lt;BR&gt;&amp;nbsp;&amp;nbsp; Common examples of instrument addresses are &apos;TCPIP0::130.27.94.12::inst0::INSTR&apos;,&lt;BR&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;and &apos;GPIB::0::INSTR&apos;.&amp;nbsp; See the help for&lt;BR&gt;&amp;nbsp;&amp;nbsp; &lt;STRONG&gt;agRunSequence&lt;/STRONG&gt; for additional instrument address details.&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;Click the Go button to run the Equation.&lt;/FONT&gt;&lt;/LI&gt;&lt;/OL&gt;&#x000D;&#x000A;&lt;P&gt;&lt;BR&gt;&lt;FONT size=2&gt;Please reference the online help for more information about using CommandExpertLink.&lt;/FONT&gt;&lt;/P&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;RE24;ek14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;l9{cuSCD434;7vRapHALa24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;YF;W4</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="address" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Array_Char64</T><D>2;52;1;K1;31;G1;91;G1;m;w;w;11;j;E1;v;m;o;m;11;j;s;n;n;p;o;k;Z1;e1;k1;k;X1;d1;f1;i1;b1;k1;q1;k;Z1;l1;j1;w;w;f1;k1;p1;q1;m;w;w;91;E1;J1;K1;I1</D></Data></Item>
+<Item XName="amplitude" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Array_Dbl64</T><D>2;1001;1;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C;GF2C</D></Data></Item>
+<Item XName="peakX" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>40049995</D></Data></Item>
+<Item XName="peakY" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>9.9100000000000005e+37</D></Data></Item>
+<Item XName="start" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>87800000</D></Data></Item>
+<Item XName="stop" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>108000000</D></Data></Item></Item></Item></Item>

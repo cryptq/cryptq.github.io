@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Keysight_Modular_Digitizer name="M9703_FDK_Multi_Channels_Cali" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<M9703AMap BitFilePath="..\FPGA0\bitfiles\" BlockRegister="2" CLKSelection="INT" ChannelSetting="0" EXTCLKFreq="1.6" FPGADevice="0" FPGAOption="-LX2" InterFPGAIn="0" InterFPGAOut="0" OutPort="1" Register="10" SampleRateOption="-SR2" UseInterFPGALink="0" UseSameSampleRateMode="0" VFIFO="0" VRAM="0">
+<BlockRegister index="0" iwl="2" length="32" name="CoefI" offset="128" overflow="3" quantization="5" readable="true" saturationbits="0" sign="1" value="CoefI" wl="16" writable="true" />
+<BlockRegister index="1" iwl="2" length="32" name="CoefQ" offset="0" overflow="3" quantization="5" readable="true" saturationbits="0" sign="1" value="CoefQ" wl="16" writable="true" />
+<Register index="0" iwl="3" name="thres" offset="256" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="Threshold" wl="16" writable="false" />
+<Register index="1" iwl="1" name="workmode" offset="260" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="WorkMode" wl="1" writable="false" />
+<Register index="2" iwl="0" name="DDCFreq0" offset="264" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(1)" wl="32" writable="false" />
+<Register index="3" iwl="0" name="DDCFreq1" offset="268" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(2)" wl="32" writable="false" />
+<Register index="4" iwl="0" name="DDCFreq2" offset="272" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(3)" wl="32" writable="false" />
+<Register index="5" iwl="0" name="DDCFreq3" offset="276" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(4)" wl="32" writable="false" />
+<Register index="6" iwl="0" name="DDCFreq4" offset="280" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(5)" wl="32" writable="false" />
+<Register index="7" iwl="0" name="DDCFreq5" offset="284" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(6)" wl="32" writable="false" />
+<Register index="8" iwl="0" name="DDCFreq6" offset="288" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(7)" wl="32" writable="false" />
+<Register index="9" iwl="0" name="DDCFreq7" offset="292" overflow="3" quantization="5" readable="true" saturationbits="0" sign="0" value="DDCFreq(8)" wl="32" writable="false" />
+<OutPort index="0" iwl="44" length="1" name="Out1" overflow="3" quantization="5" readable="false" saturationbits="0" sign="0" wl="44" writable="true" /></M9703AMap></Keysight_Modular_Digitizer>

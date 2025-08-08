@@ -1,0 +1,474 @@
+#gpp
+#format goldengate
+# 1 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/SIM_IQ_MOD_ENV_ET.gg"
+#format spectre
+# 1 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/netlist.scs" 1
+// Generated for: spectre
+// Generated on: Oct 12 17:24:25 2010
+// Design library name: goldenGateTraining
+// Design cell name: SIM_IQ_MOD_ENV
+// Design view name: schematic
+simulator lang=spectre
+global 0
+
+// Library name: goldenGateTraining
+// Cell name: IQ_MOD
+// View name: schematic
+subckt IQ_MOD BB_IN BB_IP BB_QN BB_QP I_MIXER LO_IN LO_IP LO_QN LO_QP RF_N \
+        RF_P VDD VLO VSUB V_BB
+    NM10 (net68 BB_QP net60 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM9 (RF_N LO_QN net68 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM8 (RF_P LO_QP net68 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM7 (net60 I_MIXER VSUB VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=5 m=16
+    NM6 (net84 BB_QN net60 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM2 (RF_P LO_QN net84 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM1 (RF_N LO_QP net84 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM0 (RF_N LO_IN net104 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM21 (net104 BB_IP net112 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM4 (RF_P LO_IP net104 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM19 (net112 I_MIXER VSUB VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=5 m=16
+    NM22 (net88 BB_IN net112 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM5 (RF_P LO_IN net88 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    NM3 (RF_N LO_IP net88 VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=4 m=4
+    R9 (VDD RF_P) resistor r=1.2K
+    R8 (VDD RF_N) resistor r=1.2K
+    R12 (VLO LO_QP) resistor r=10K
+    R15 (LO_QN VLO) resistor r=10K
+    R3 (BB_QN V_BB) resistor r=10K
+    R2 (BB_QP V_BB) resistor r=10K
+    R13 (VDD RF_P) resistor r=1.2K
+    R14 (VDD RF_N) resistor r=1.2K
+    R10 (VLO LO_IP) resistor r=10K
+    R11 (LO_IN VLO) resistor r=10K
+    R1 (BB_IN V_BB) resistor r=10K
+    R0 (BB_IP V_BB) resistor r=10K
+ends IQ_MOD
+// End of subcircuit definition.
+
+// Library name: goldenGateTraining
+// Cell name: TX_BIAS
+// View name: schematic
+subckt TX_BIAS I_MOD VDD_MOD VSUB V_BB V_LO
+    NM0 (I_MOD I_MOD VSUB VSUB) nmos_rf lr=1.8e-07 wr=2.5u nr=16 m=1
+    R1 (V_LO V_BB) resistor r=4.0K
+    R2 (V_BB VSUB) resistor r=2.4K
+    R0 (VDD_MOD V_LO) resistor r=3.6K
+ends TX_BIAS
+// End of subcircuit definition.
+
+// Library name: goldenGateTraining
+// Cell name: SIM_IQ_MOD_ENV
+// View name: schematic
+
+
+RF (RFN RFP) port r=500 num=1 type=sine
+
+
+LO_Q (LOQP LOQN) vsource type=sine ampl=V_LO_V sinephase=90 freq=F_LO_Hz
+LO_I (LOIP LOIN) vsource type=sine ampl=V_LO_V freq=F_LO_Hz
+
+
+BB_I_In (BBIN BBIP) ggElement bandwidth=Input_Filter_Passband_Hz \
+        channel_freq=0.0 notch=0.0 h1=0 h2=0 h3=0 filter=TRUE \
+        rolloff=Input_Filter_Rolloff res=Rs_BB_Ohms rms_voltage=V_BB_VRMS \
+        file="is95.txt" \
+        gain=1.0 sigtype=2 sig_col=2 time_col=1 mtype=1 hs=1 fs=0.0 \
+        ggLibrary=envsrc ggElement=usriqvs
+
+BB_Q_IN (BBQN BBQP) ggElement bandwidth=Input_Filter_Passband_Hz \
+        channel_freq=0.0 notch=0.0 h1=0 h2=0 h3=0 filter=TRUE \
+        rolloff=Input_Filter_Rolloff res=Rs_BB_Ohms rms_voltage=V_BB_VRMS \
+        file="is95.txt" \
+        gain=1.0 sigtype=2 sig_col=3 time_col=1 mtype=1 hs=1 fs=0.0 \
+        ggLibrary=envsrc ggElement=usriqvs
+
+
+I8 (BBIN BBIP BBQN BBQP IMOD LOIN LOIP LOQN LOQP RFN RFP VDD VLO VSUB VBB) \
+        IQ_MOD
+I15 (IMOD VDD VSUB VBB VLO) TX_BIAS
+V1 (VSUB 0) vsource dc=0 type=dc
+V0 (VDD VSUB) vsource dc=2.5 type=dc
+I3 (VDD IMOD) isource dc=I_Tx_A type=dc
+#format goldengate
+# 2 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/SIM_IQ_MOD_ENV_ET.gg" 2
+
+
+
+
+
+#format spectre
+# 3 "$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+parameters cmim_mm=0
+parameters dtoxn=0
+parameters ddvthn=0
+parameters ddvthp=0
+parameters dxln_mm=0
+parameters dxlp_mm=0
+parameters nmos_dlfac_mm=0
+parameters nmos_vthfac_mm=0
+parameters nmos_toxfac_mm=0
+#format goldengate
+# 8 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/SIM_IQ_MOD_ENV_ET.gg" 2
+#format spectre
+# 16 "$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+parameters nmos_rgfac=1.0
+parameters nmos_rsubfac=1.0
+parameters nmos_uefffac=1.0
+parameters nmos_vthfac=1.0
+parameters nmos_toxfac=1.0
+parameters nmos_dlfac=1.0
+parameters nmos_dwfac=1.0
+parameters nmos_rdswfac=1.0
+parameters nmos_k1fac=1.0
+parameters nmos_cgdfac=1.0
+parameters ndio_cjfac=1.0
+parameters pdio_cjfac=1.0
+#format spectre
+# 64 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+ 
+subckt nmos_rf ( D G S B ) 
+parameters lr=18.e-08 nr=12.8e+01 wr=1e-6
+//  ********************
+rg ( G gi ) resistor r=(0.346 * nr + 72.849 * lr * 1e+6 + 86.075) * nmos_rgfac m=nr
+rb ( B bi ) resistor r=((62.4 / nr + 2.0808) / lr * 1e-6 + 1532.6 / nr - 0.5858) 
++ * nmos_rsubfac
+rs ( S si ) resistor r=((0.6584 * lr * 1e+6 + 0.9106) * nr + 203.68 * lr * 1e+6 
++ - 60.219 + abs((0.6584 * lr * 1e+6 + 0.9106) * nr + 203.68 * lr * 1e+6 - 60.219)) 
++ / 2 m=nr
+rd ( D di ) resistor r=(0.0248 / lr * 1e-6 / lr * 1e-6 - 0.0497 / lr * 1e-6 + 0.0602) 
++ * (nr - 1) m=nr
+//  **Rds*****************
+rds ( si xx ) resistor r=(2e+6*lr*1e+6-237663)/nr+2753.8*lr*1e+6+2615.3
+cds ( di xx ) capacitor c=(0.7609*nr+11.791)*1e-15
+//  *** Diodes  ****************
+dss ( sb si ) ndio_rf_f  area=(nr / 2 + 1) * 2.5e-6 * 6.4e-7 pj=1.28e-6 
++ * (nr / 2 + 1) + 2 * 2.5e-6
+ddd ( db di ) ndio_rf_f  area=nr / 2 * 2.5e-6 * 6.4e-7 pj=1.28e-6 * nr / 
++ 2
+dsg ( sb si ) ndio_rf_g  area=1e-15 pj=2.5e-6 * nr
+ddg ( db di ) ndio_rf_g  area=1e-15 pj=2.5e-6 * nr
+//  ***************************************************************************
+rdb ( db bi ) resistor r=21.2 / nr + 0.0892 / lr * 1e-6 / lr * 1e-6 - 0.173 / lr 
++ * 1e-6 + 0.1
+rsb ( sb bi ) resistor r=21.2 / nr + 0.0892 / lr * 1e-6 / lr * 1e-6 - 0.173 / lr 
++ * 1e-6 + 0.1
+//  ***** MOSFET *******
+m0 ( di gi si bi ) nch_rf  l=lr w=2.5e-6 m=nr ad=0 as=0 pd=0 ps=0
+ends nmos_rf
+
+subckt pmos_rf ( D G S B )
+parameters lr=18.e-08 nr=12.8e+01 wr=1e-6
+//  ********************
+rg ( G gi ) resistor r=(0.346 * nr + 72.849 * lr * 1e+6 + 86.075) * nmos_rgfac m=nr
+rb ( B bi ) resistor r=((62.4 / nr + 2.0808) / lr * 1e-6 + 1532.6 / nr - 0.5858)
++ * nmos_rsubfac
+rs ( S si ) resistor r=((0.6584 * lr * 1e+6 + 0.9106) * nr + 203.68 * lr * 1e+6
++ - 60.219 + abs((0.6584 * lr * 1e+6 + 0.9106) * nr + 203.68 * lr * 1e+6 - 60.219))
++ / 2 m=nr
+rd ( D di ) resistor r=(0.0248 / lr * 1e-6 / lr * 1e-6 - 0.0497 / lr * 1e-6 + 0.0602)
++ * (nr - 1) m=nr
+//  **Rds*****************
+rds ( si xx ) resistor r=(2e+6*lr*1e+6-237663)/nr+2753.8*lr*1e+6+2615.3
+cds ( di xx ) capacitor c=(0.7609*nr+11.791)*1e-15
+//  *** Diodes  ****************
+dss ( sb si ) ndio_rf_f  area=(nr / 2 + 1) * 2.5e-6 * 6.4e-7 pj=1.28e-6
++ * (nr / 2 + 1) + 2 * 2.5e-6
+ddd ( db di ) ndio_rf_f  area=nr / 2 * 2.5e-6 * 6.4e-7 pj=1.28e-6 * nr /
++ 2
+dsg ( sb si ) ndio_rf_g  area=1e-15 pj=2.5e-6 * nr
+ddg ( db di ) ndio_rf_g  area=1e-15 pj=2.5e-6 * nr
+//  ***************************************************************************
+rdb ( db bi ) resistor r=21.2 / nr + 0.0892 / lr * 1e-6 / lr * 1e-6 - 0.173 / lr
++ * 1e-6 + 0.1
+rsb ( sb bi ) resistor r=21.2 / nr + 0.0892 / lr * 1e-6 / lr * 1e-6 - 0.173 / lr
++ * 1e-6 + 0.1
+//  ***** MOSFET *******
+m0 ( di gi si bi ) pch_rf  l=lr w=2.5e-6 m=nr ad=0 as=0 pd=0 ps=0
+ends pmos_rf
+
+#format spectre
+# 132 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+model nch_rf bsim3v3 type=n lmin=1.8e-07 lmax=5e-07 wmin=2.5e-06 wmax=2.5e-06 noimod=1 
++ af=1.021 ef=0.874 kf=2.69e-28 tnom=25 version=3.2 tox=4.08e-09 * nmos_toxfac toxm=4.08e-09 
++ * nmos_toxfac xj=1.6000000e-07 nch=3.9000000e+17 lln=1.0000000 lwn=1.0000000 wln=1.0000000 
++ wwn=1.0000000 lint=1.0000000e-08 ll=0.00 lw=0.00 lwl=0.00 wint=1.0000000e-08 wl=0.00 
++ ww=0.00 wwl=0.00 mobmod=1 binunit=2 xl= - 2e-08 * nmos_dlfac xw=0 * nmos_dwfac 
++ dwg=0.00 dwb=0.00 hdif=2.00e-07 rsh=6.8 
++ rd=0 rs=0 rsc=0 rdc=0 vth0=0.4751247 * nmos_vthfac lvth0=5.306e-09 wvth0=1.062e-09 
++ pvth0=5.180e-15 k1=0.399 * nmos_k1fac lk1=4.9644130e-08 wk1=9.7659690e-08 
++ pk1=-6.472e-15 k2=6.352e-02 lk2=-2.388e-08 wk2=-4.203e-08 pk2=5.416e-15 
++ k3=0.00 dvt0=0.00 dvt1=0.00 dvt2=0.00 dvt0w=0.00 dvt1w=0.00 dvt2w=0.00 nlx=0.00 
++ w0=0.00 k3b=0.00 ngate=0.00 vfb=99.0000000 vsat=8.429e+04 lvsat=-2.012e-04 
++ wvsat=1.466e-03 ua=-9.057e-10 lua=4.215e-18 wua=4.675e-16 pua=-5.258e-23 
++ ub=2.760e-18 lub=5.400e-27 wub=-1.020e-24 pub=1.584e-33 uc=1.234e-10 
++ luc=4.240e-18 wuc=-6.630e-17 puc=-1.063e-24 rdsw=170 * nmos_rdswfac 
++ prwb=0.00 prwg=0.00 wr=1.0000000 u0=0.0438 * nmos_uefffac lu0=1.283e-09 
++ wu0=-5.211e-09 pu0=-3.156e-16 a0=0.526 la0=8.277e-08 wa0=1.447e-07 
++ pa0=-7.306e-14 keta=-4.428e-02 lketa=3.242e-09 wketa=2.458e-08 
++ pketa=-2.836e-15 a1=0.00 a2=0.9900000 ags=-2.836e-02 lags=1.170e-09 
++ wags=8.430e-08 pags=-1.180e-14 b0=0.00 b1=0.00 voff=-0.124 lvoff=-1.468e-09 
++ wvoff=1.245e-09 pvoff=-7.819e-16 nfactor=1.0000000 cit=2.757e-04 lcit=1.0319e-10 
++ wcit=-3.764e-11 pcit=1.731e-17 cdsc=0.00 cdscb=0.00 cdscd=0.00 eta0=-2.937e-04 
++ leta0=1.811e-10 etab=1.387e-03 letab=-6.842e-10 dsub=0.00 pclm=1.1025
++ lpclm=3.813e-08 wpclm=5.111e-08 ppclm=4.3930e-14 pdiblc1=1.000e-06 
++ pdiblc2=-6.146e-03 lpdiblc2=5.060e-09 wpdiblc2=2.1071e-09 ppdiblc2=-2.950e-16 
++ pdiblcb=1.0000000e-02 drout=0.00 pscbe1=4.0000000e+08 pscbe2=1.0000000e-06 pvag=0.00 
++ delta=1.0000000e-02 alpha0=0 alpha1=0.429 beta0=11.592 kt1=-0.227 lkt1=5.127e-09 
++ wkt1=-2.576e-09 pkt1=-2.087e-15 kt2=-2.9372e-02 lkt2=6.0691e-10 
++ wkt2=-1.650e-09 pkt2=-3.936e-17 at=2.000e+04 ute=-2.172 lute=8.369e-08 
++ wute=9.001e-07 pute=-1.3363e-13 ua1=1.217e-09 lua1=9.220e-19 wua1=8.430e-18 
++ pua1=-1.180e-24 ub1=-3.852e-18 lub1=4.306e-25 wub1=3.249e-24 pub1=-4.814e-31 
++ uc1=-1.569e-10 luc1=3.286e-17 wuc1=1.868e-16 puc1=-3.254e-23 kt1l=0.00 
++ prt=0.00 cj=1.0002e-06 mj=0.3595 pb=0.688 cjsw=2.0405e-13 mjsw=0.2003
++ pbsw=0.688 cjswg=3.340e-13 mjswg=0.43879 pbswg=0.6882 tpb=1.554e-03 
++ tpbsw=1.554e-03 tcj=1.040287e-03 tcjsw=6.45489e-04 js=8.38e-06 jsw=1.60e-11 
++ nj=1.0 xti=3.0 cgdo=3.4367e-10 * nmos_cgdfac cgso=4.317e-10 * nmos_cgdfac cgbo=1.0e-13 
++ capmod=3 nqsmod=0 elm=0 xpart=0 cf=0 tlev=1 noff=1.2 cle=1 clc=1.45e-8 
++ dlc=4.643e-8 llc=-0.123E-14 voffcv=0.1261 lvoffcv=-0.0094e-6 cgsl=6.6175e-10 
++ * nmos_cgdfac lcgsl=-0.3804e-16 cgdl=2.436e-10 * nmos_cgdfac lcgdl=-0.175e-16 
+#format spectre
+# 128 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 2
+#format spectre
+# 173 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+model pch_rf bsim3v3 type=p lmin=1.8e-07 lmax=5e-07 wmin=2.5e-06 wmax=2.5e-06 noimod=1
++ af=1.021 ef=0.874 kf=2.69e-28 tnom=25 version=3.2 tox=4.08e-09 * nmos_toxfac toxm=4.08e-09
++ * nmos_toxfac xj=1.6000000e-07 nch=3.9000000e+17 lln=1.0000000 lwn=1.0000000 wln=1.0000000
++ wwn=1.0000000 lint=1.0000000e-08 ll=0.00 lw=0.00 lwl=0.00 wint=1.0000000e-08 wl=0.00
++ ww=0.00 wwl=0.00 mobmod=1 binunit=2 xl= - 2e-08 * nmos_dlfac xw=0 * nmos_dwfac
++ dwg=0.00 dwb=0.00 hdif=2.00e-07 rsh=6.8
++ rd=0 rs=0 rsc=0 rdc=0 vth0=-0.4751247 * nmos_vthfac lvth0=5.306e-09 wvth0=1.062e-09
++ pvth0=5.180e-15 k1=0.399 * nmos_k1fac lk1=4.9644130e-08 wk1=9.7659690e-08
++ pk1=-6.472e-15 k2=6.352e-02 lk2=-2.388e-08 wk2=-4.203e-08 pk2=5.416e-15
++ k3=0.00 dvt0=0.00 dvt1=0.00 dvt2=0.00 dvt0w=0.00 dvt1w=0.00 dvt2w=0.00 nlx=0.00
++ w0=0.00 k3b=0.00 ngate=0.00 vfb=99.0000000 vsat=8.429e+04 lvsat=-2.012e-04
++ wvsat=1.466e-03 ua=-9.057e-10 lua=4.215e-18 wua=4.675e-16 pua=-5.258e-23
++ ub=2.760e-18 lub=5.400e-27 wub=-1.020e-24 pub=1.584e-33 uc=1.234e-10
++ luc=4.240e-18 wuc=-6.630e-17 puc=-1.063e-24 rdsw=170 * nmos_rdswfac
++ prwb=0.00 prwg=0.00 wr=1.0000000 u0=0.0438 * nmos_uefffac lu0=1.283e-09
++ wu0=-5.211e-09 pu0=-3.156e-16 a0=0.526 la0=8.277e-08 wa0=1.447e-07
++ pa0=-7.306e-14 keta=-4.428e-02 lketa=3.242e-09 wketa=2.458e-08
++ pketa=-2.836e-15 a1=0.00 a2=0.9900000 ags=-2.836e-02 lags=1.170e-09
++ wags=8.430e-08 pags=-1.180e-14 b0=0.00 b1=0.00 voff=-0.124 lvoff=-1.468e-09
++ wvoff=1.245e-09 pvoff=-7.819e-16 nfactor=1.0000000 cit=2.757e-04 lcit=1.0319e-10
++ wcit=-3.764e-11 pcit=1.731e-17 cdsc=0.00 cdscb=0.00 cdscd=0.00 eta0=-2.937e-04
++ leta0=1.811e-10 etab=1.387e-03 letab=-6.842e-10 dsub=0.00 pclm=1.1025
++ lpclm=3.813e-08 wpclm=5.111e-08 ppclm=4.3930e-14 pdiblc1=1.000e-06
++ pdiblc2=-6.146e-03 lpdiblc2=5.060e-09 wpdiblc2=2.1071e-09 ppdiblc2=-2.950e-16
++ pdiblcb=1.0000000e-02 drout=0.00 pscbe1=4.0000000e+08 pscbe2=1.0000000e-06 pvag=0.00
++ delta=1.0000000e-02 alpha0=0 alpha1=0.429 beta0=11.592 kt1=-0.227 lkt1=5.127e-09
++ wkt1=-2.576e-09 pkt1=-2.087e-15 kt2=-2.9372e-02 lkt2=6.0691e-10
++ wkt2=-1.650e-09 pkt2=-3.936e-17 at=2.000e+04 ute=-2.172 lute=8.369e-08
++ wute=9.001e-07 pute=-1.3363e-13 ua1=1.217e-09 lua1=9.220e-19 wua1=8.430e-18
++ pua1=-1.180e-24 ub1=-3.852e-18 lub1=4.306e-25 wub1=3.249e-24 pub1=-4.814e-31
++ uc1=-1.569e-10 luc1=3.286e-17 wuc1=1.868e-16 puc1=-3.254e-23 kt1l=0.00
++ prt=0.00 cj=1.0002e-06 mj=0.3595 pb=0.688 cjsw=2.0405e-13 mjsw=0.2003
++ pbsw=0.688 cjswg=3.340e-13 mjswg=0.43879 pbswg=0.6882 tpb=1.554e-03
++ tpbsw=1.554e-03 tcj=1.040287e-03 tcjsw=6.45489e-04 js=8.38e-06 jsw=1.60e-11
++ nj=1.0 xti=3.0 cgdo=3.4367e-10 * nmos_cgdfac cgso=4.317e-10 * nmos_cgdfac cgbo=1.0e-13
++ capmod=3 nqsmod=0 elm=0 xpart=0 cf=0 tlev=1 noff=1.2 cle=1 clc=1.45e-8
++ dlc=4.643e-8 llc=-0.123E-14 voffcv=0.1261 lvoffcv=-0.0094e-6 cgsl=6.6175e-10
++ * nmos_cgdfac lcgsl=-0.3804e-16 cgdl=2.436e-10 * nmos_cgdfac lcgdl=-0.175e-16
+#format spectre
+# 129 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 2
+#format spectre
+# 214 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+model ndio_rf_f diode tlevc=1 cj=0.0020002 * ndio_cjfac 
++ mj=0.3595 vj=0.6882 cjsw=4.045e-10 * ndio_cjfac mjsw=0.2003 vjsw=0.6882
++ cta=0.00104 ctp=0.00064 pta=0.001554 ptp=0.001554
+//  ******** diode gate edge ***************
+model ndio_rf_g diode tlevc=1 cj=0.001000266 * ndio_cjfac 
++ mj=0.3595 vj=0.6882 cjsw=4.340e-10 * ndio_cjfac mjsw=0.43879 vjsw=0.688 
++ cta=0.00104 ctp=0.000645 pta=0.001554 ptp=0.00155
+ 
+#format spectre
+# 130 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 2
+ 
+#format spectre
+# 31 "$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs" 2
+#format goldengate
+# 9 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/SIM_IQ_MOD_ENV_ET.gg" 2
+#format spectre
+# 265 "$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+parameters cox=1.0e-15
+#format spectre
+# 280 "/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"/users/dargollo/myCadence/ggUserTraining/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+
+subckt cap_mim ( Top Bottom body )
+parameters lt=10u lb=lt + 6u
+rs ( Top n1 ) resistor r= 44.23 / (lt * 1.0e6) - 1.13
+ls ( n1 n2 ) inductor l=(119.3 / (lt * 1.0e6) + 123.5) * 1e-12
+cs ( n2 Bottom ) capacitor c=(1.025 * (lt * 1.0e6) * (lt * 1.0e6) + 0.97 *(lt * 1.0e6)) * cox
+cox1 ( Bottom n3 ) capacitor c=(0.0065 * (lb * 1.0e6) * (lb * 1.0e6)) * 1e-15
+rsub ( n3 body ) resistor r=(7.0e6) / ((lb * 1.0e6) * (lb * 1.0e6))
+csub ( n3 body ) capacitor c=1.16e-15
+ends cap_mim
+
+#format spectre
+# 269 "$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs" 2
+#format goldengate
+# 10 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/SIM_IQ_MOD_ENV_ET.gg" 2
+#format spectre
+# 225 "$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+// 
+inline subckt ndio (1 2) 
+parameters area=1e-13 pj=0 rs=1.0e-10
+  r1 (1 3) resistor r=rs/area tc1=1.62e-3  
+  diode (3 2) xdio area=area pj=pj 
+ends ndio 
+model xdio diode is=8.38e-6 n=1.3217 bv=10.72 ibv=1e-3 
++ ns=1.3217 nz=1.3217 imax=1e40 allow_scaling=1
++  isw=1.24e-11   cj=1.000266e-3 vj=0.688 mj=0.3595 
++ cjsw=2.040e-10 vjsw=0.6882 mjsw=0.2003 tlev=1 eg=1.17 xti=3 tbv1=9.3e-4 
++ tlevc=1 cta=1.040e-3 ctp=6.454e-4 pta=1.554e-3 ptp =1.554e-3 
++ tnom=25 fc=0  
+// 
+inline subckt pdio (1 2) 
+parameters area=1e-13 pj=0 rs=1.0e-10  
+  r1 (1 3) resistor r=rs/area tc1=1.2e-4  
+  diode (3 2) ydio area=area pj=pj 
+ends pdio 
+model ydio diode is=4.92e-6 n=1.25 bv=10.2 ibv=1e-3 
++ ns=1.25 nz=1.25 imax=1e40 allow_scaling=1
++  isw=1.02e-11   cj=1.121e-3 vj=0.895 mj=0.4476 
++ cjsw=2.481e-10 vjsw=0.89522 mjsw=0.368 tlev=1 eg=1.17 xti=3 tbv1=8.8e-4 
++ tlevc=1 cta=9.7390e-4 ctp=4.130e-4 pta=1.572e-3 ptp =1.572e-3 tnom=25 
++ fc=0  
+// 
+inline subckt nwdio (1 2) 
+parameters area=1e-13 pj=0 rs=1.0e-10  
+  r1 (1 3) resistor r=rs/area tc1=1.125e-3  
+  diode (3 2) zwdio area=area pj=pj 
+ends nwdio 
+model zwdio diode is=1.55e-5 n=1.38 bv=14.75 ibv=1e-3 
++ ns=1.38 nz=1.38 imax=1e40 allow_scaling=1
++  isw=4.75e-11   cj=1.337e-4 vj=0.5846 mj=0.3883
++ cjsw=5.333e-10 vjsw=0.584 mjsw=0.234 tlev=1 eg=1.17 xti=3 tbv1=9.6e-4 
++ tlevc=1 cta=2.84e-3 ctp=1.5284e-3 pta=2.819e-3 ptp =2.819e-3 tnom=25 
++ fc=0  
+// 
+#format goldengate
+# 11 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/SIM_IQ_MOD_ENV_ET.gg" 2
+#format spectre
+# 294 "$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs" 1
+// simulator directive line:2, file:"$GG_USER_TRAINING_DIR/goldenGateModels/goldenGateModels.scs"
+simulator lang=spectre
+statistics {
+      process {
+	  vary nmos_rgfac 	dist=gauss 	std=(0.45/3) 	percent=no 
+          vary nmos_rsubfac 	dist=gauss 	std=(0.15/3) 	percent=no 
+          vary nmos_uefffac 	dist=gauss 	std=(0.0255/3) 	percent=no 
+          vary nmos_vthfac 	dist=gauss 	std=(0.0336/3)	percent=no 
+          vary nmos_toxfac 	dist=gauss 	std=(0.0143/3) 	percent=no 
+          vary nmos_dlfac 	dist=gauss 	std=(1.739/3) 	percent=no 
+          vary nmos_dwfac 	dist=gauss 	std=(0.039328/3)percent=no 
+          vary nmos_rdswfac 	dist=gauss 	std=(0.1639/3) 	percent=no 
+          vary nmos_k1fac 	dist=gauss 	std=(0.0132/3) 	percent=no 
+          vary nmos_cgdfac 	dist=gauss 	std=(0.090/3) 	percent=no 
+          vary ndio_cjfac 	dist=gauss 	std=(0.1968/3) 	percent=no 
+                }
+      mismatch {
+          vary dxln_mm  dist=gauss       std=(2.5e-9)               percent=no 
+          vary dxlp_mm  dist=gauss       std=(1.5e-9)               percent=no 
+          vary ddvthn  dist=gauss       std=(0.00525)/sqrt(2.0)    percent=no 
+          vary ddvthp  dist=gauss       std=(0.006)/sqrt(2.0)      percent=no 
+          vary nmos_dlfac_mm    dist=gauss      std=(0.15)/sqrt(2)      percent=no
+          vary nmos_vthfac_mm 	dist=gauss 	std=(0.0108)/sqrt(2)	percent=no
+          vary cmim_mm		dist=gauss       std=(0.01515)/sqrt(2)	percent=no 
+                }
+      }
+#format goldengate
+# 12 "/gfs/scs/shimmer/d2/dargollo/simulation/SIM_IQ_MOD_ENV/GoldenGate/schematic/netlist/SIM_IQ_MOD_ENV_ET.gg" 2
+simulation SIM_IQ_MOD_ENV_ET
+{
+	variable:
+	{
+		main sweep V_BB_VRMS {nom=0.02, min=0.01, max=0.1, step=0.01};
+		main numeric Rs_BB_Ohms {nom=1.0};
+		main numeric V_LO_V {nom=1.0};
+		main numeric F_LO_Hz {nom=2.625G};
+		main numeric I_Tx_A {nom=150u};
+		main numeric Input_Filter_Passband_Hz {nom=1.23M};
+		main numeric Input_Filter_Rolloff {nom=0.23};
+		main numeric temp {nom=27.0};
+		main numeric tnom {nom=27.0};
+	};
+	////////////////////////////////////////////////////////////////////////
+        probe:
+        {
+                #instance vmeter SYSTEM_OUTPUT (RFN, RFP) 
+                {
+                         port_type      = "sink"
+                    ,    port_num       = 1
+                    ,    carrier_freq   = F_LO_Hz 
+                };
+        };
+        ////////////////////////////////////////////////////////////////////////
+        instance:
+        {
+
+                envsrc ggcosim BB_I_In (BBIN, BBIP)
+                {
+                        port_type    = "source"
+                    ,   port_num     = 1
+                    ,   carrier_freq = 0.0
+                    ,   r            = 1
+                };
+                envsrc ggcosim BB_Q_IN(BBQN, BBQP)
+                { 
+                        port_type    = "source"
+                    ,   port_num     = 2
+                    ,   carrier_freq = 0.0
+                    ,   r            = 1
+                };
+
+        };
+        ////////////////////////////////////////////////////////////////////////
+	analysis:
+	{
+		envelope_transient
+		{
+                          tran_predict_order = 0
+                        , algo	             = 0
+  			, fast_envelope      = 0
+                        , multithread        = 1
+
+			// turns on cosimulation mode
+			, cosim_mode         = 1
+		};
+	};
+	signal:
+	{
+		rf_carrier
+		{
+			nb_tone=1
+			, frq1=F_LO_Hz
+			, nh1=5
+		};
+	};
+	specification:
+	{
+	};
+	task:
+	{
+		nominal {};
+	};
+};
+

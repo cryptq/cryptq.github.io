@@ -1,0 +1,1918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;YF;59</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<PropStorageFileName>C:\SystemVue\DevelStable\Distribution\SystemVue\Examples\Instruments\CommandExpert\MXG SignalDownloader.wsv</PropStorageFileName>
+<Time>2017:334:16:43</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2012.06</D></Ver>
+<Version>1.21</Version>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Info" UserName="Info" Type="Notes">
+<Selected><T>Bool</T><D>1</D></Selected>
+<Text>&lt;FONT size=5&gt;&lt;STRONG&gt;&#x000D;&#x000A;&lt;P style=&quot;BORDER-BOTTOM: windowtext 0.75pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0in&quot; class=MsoTitle align=center&gt;&lt;STRONG&gt;&lt;FONT size=5 face=Arial&gt;MXG&amp;nbsp;Signal Downloader Example&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;/STRONG&gt;&lt;/FONT&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue&amp;nbsp;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Tutorial&amp;nbsp;Workspace&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;This example shows how to download an I/Q waveform into a MXG N5182A Signal Generator.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;Instructions for Running:&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;OL&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;Install &lt;STRONG&gt;Command Expert&lt;/STRONG&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;Open the Properties Dialog of &lt;STRONG&gt;CommandExpertLink&lt;/STRONG&gt; part, in the Configuration page,&amp;nbsp;set a connectable address of&amp;nbsp;MXG N5182A to the &lt;STRONG&gt;Active Instruments list&lt;/STRONG&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;Run Analyses&lt;/FONT&gt;&lt;/LI&gt;&lt;/OL&gt;&lt;FONT size=2&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;Note: When using a remote N5182, error on &quot;&lt;SPAN style=&quot;FONT-FAMILY: &apos;Calibri&apos;,&apos;sans-serif&apos;; FONT-SIZE: 11pt; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;&gt;SCPI query timed out&quot; may happen due to network latency. Increase &quot;InstructionTimeout_mS&quot; parameter value inside &lt;STRONG&gt;CommandExpertLink&lt;/STRONG&gt; part&amp;nbsp;accordingly to fix such errors.&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;SPAN style=&quot;FONT-FAMILY: &apos;Calibri&apos;,&apos;sans-serif&apos;; FONT-SIZE: 11pt; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&lt;/FONT&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;Please reference the online help for more information about using CommandExpertLink.&lt;/FONT&gt;&lt;/P&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;RE24;uk14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;l9{cuSCD434;Hu5XN4oVa24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;Y4;YF;49</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="N5182ADownloader" UserName="N5182ADownloader" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>LO</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M1</PartID>
+<PinName>quad_output</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>C1</PartID>
+<PinName>dataBlock</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M1</PartID>
+<PinName>output</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>input2</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M1</PartID>
+<PinName>input1</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>I</PartID>
+<PinName>output</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>Q</PartID>
+<PinName>output</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;RE24;uk14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;l9{cuSCD434;Hu5XN4oVa24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;YF;Y4</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item>
+<Item XName="Display1" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;ocEUzxu8B24;OI8qB74lr14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GJz24;WLUtd24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>1</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="C1" Type="Part">
+<Category>Instrumentation</Category>
+<Description>Command Expert Link Block</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>CommandExpertLink@Data Flow Models</Model>
+<ModelID />
+<Netlist>dataBlock,4?Connect0</Netlist>
+<ParentPartName>CommandExpertLink@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{CommandExpert Icon}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>CommandExpertLink@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF{CommandExpert Icon}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="CommandSetInfos" Type="PartParam">
+<DataEntry>TCPIP0::156.140.158.166::inst0::INSTR,f7656bd8-5d8e-4bb2-9a63-330d96fab13c,X-Series Signal Generators,B.01.55</DataEntry>
+<Description>CommandSetInfos</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ConfigMIMO" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>ConfigMIMO</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__ConfigMIMO@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Configuration" Type="PartParam">
+<DataEntry />
+<Description>Configuration</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>dataBlock?1?0?1?15?0#</DataEntry>
+<Description>IO Port Info</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InstructionTimeout_mS" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>30e3</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="IsMaster" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>IsMaster</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__IsMaster@Data Flow Enums</Enum>
+<HideCondition>ConfigMIMO ~= 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="IsSCPISupported" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>IsSCPISupported</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__IsSCPISupported@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Location" Type="PartParam">
+<DataEntry>TCPIP0::A-N5182A-41603.chn.keysight.com::inst0::INSTR,3de975ad-b3f2-4afa-8385-a5bcaeb6b28a,MXG Signal Generators,A.01.44;</DataEntry>
+<Description>Location</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ModelType" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>ModelType</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__ModelType@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Normalize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__Normalize@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Offline" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Offline</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PortFCarrierInfo" Type="PartParam">
+<DataEntry>&lt;PortFCarrierInfo&gt;&lt;Port Name=&quot;dataBlock&quot; Direction=&quot;0&quot; Variable=&quot;freq&quot; /&gt;&lt;/PortFCarrierInfo&gt;</DataEntry>
+<Description>PortFCarrierInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="PortSampleRateInfo" Type="PartParam">
+<DataEntry>&lt;PortSampleRateInfo&gt;&lt;Port Name=&quot;dataBlock&quot; Direction=&quot;0&quot; Variable=&quot;srate&quot; UseForSampleRate=&quot;1&quot; /&gt;&lt;/PortSampleRateInfo&gt;</DataEntry>
+<Description>PortSampleRateInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="RepeatData" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>VSA hardware measurement control</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__RepeatData@Data Flow Enums</Enum>
+<HideCondition>ModelType ~= 0</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>(ModelType ~= 0 || SampleRateOption == 2) &amp;&amp; IsSCPISupported == 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>CommandExpertLink__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ModelType ~= 0</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>Num_Samples - 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ScaleFactor" Type="PartParam">
+<DataEntry>0.7</DataEntry>
+<Description>ScaleFactor</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>(0:1]</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Sequence" Type="PartParam">
+<DataEntry>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#x000D;&#x000A;&lt;sequenceprocedure xsi:schemaLocation=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot; procedurename=&quot;Untitled&quot; synopsis=&quot;No description yet.&quot; schemaVersion=&quot;7&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot;&gt;&#x000D;&#x000A;&#x0009;&lt;parameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;localvariables /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;fileName&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;String&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;WFM1:waveformdata&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;dataBlock&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;arraytype dimension=&quot;1&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;UInt8&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/arraytype&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;[1]&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;outputparameters /&gt;&#x000D;&#x000A;&#x0009;&lt;/parameters&gt;&#x000D;&#x000A;&#x0009;&lt;actions&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;connect configuration=&quot;156.140.158.166&quot; address=&quot;TCPIP0::156.140.158.166::inst0::INSTR&quot; commandSet=&quot;f7656bd8-5d8e-4bb2-9a63-330d96fab13c&quot; source=&quot;SCPI&quot; commandSetDesc=&quot;X-Series Signal Generators / B.01.55&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;MEMory:DATA:APPend&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;dataBlock&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&lt;/actions&gt;&#x000D;&#x000A;&lt;/sequenceprocedure&gt;</DataEntry>
+<Description>Sequence</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Sequence_PostRun" Type="PartParam">
+<DataEntry>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#x000D;&#x000A;&lt;sequenceprocedure xsi:schemaLocation=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot; procedurename=&quot;Untitled&quot; synopsis=&quot;No description yet.&quot; schemaVersion=&quot;7&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot;&gt;&#x000D;&#x000A;&#x0009;&lt;parameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;localvariables /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;fileName&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;String&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;WFM1:waveformdata&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;state&quot; synopsis=&quot;&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Bool&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;1&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;outputparameters /&gt;&#x000D;&#x000A;&#x0009;&lt;/parameters&gt;&#x000D;&#x000A;&#x0009;&lt;actions&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;connect configuration=&quot;156.140.158.166&quot; address=&quot;TCPIP0::156.140.158.166::inst0::INSTR&quot; commandSet=&quot;f7656bd8-5d8e-4bb2-9a63-330d96fab13c&quot; source=&quot;SCPI&quot; commandSetDesc=&quot;X-Series Signal Generators / B.01.55&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:RADIO:ARB:WAVeform&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:RADio:ARB:STATe&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;state&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;OUTPut:MODulation:STATe&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Bool&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;1&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;OUTPut:STATe&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Bool&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;1&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&lt;/actions&gt;&#x000D;&#x000A;&lt;/sequenceprocedure&gt;</DataEntry>
+<Description>Sequence_PostRun</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Sequence_PreRun" Type="PartParam">
+<DataEntry>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#x000D;&#x000A;&lt;sequenceprocedure xsi:schemaLocation=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot; procedurename=&quot;Untitled&quot; synopsis=&quot;No description yet.&quot; schemaVersion=&quot;7&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot;&gt;&#x000D;&#x000A;&#x0009;&lt;parameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;localvariables /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;freq&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Int64&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;2000000000&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;fileName&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;String&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;WFM1:waveformdata&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;InstructionTimeout_mS&quot; synopsis=&quot;Time out in mS&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Int32&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;5000000&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;srate&quot; synopsis=&quot;&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Real64&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;2000000&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;pwr&quot; synopsis=&quot;&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Real64&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;-10&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;outputparameters /&gt;&#x000D;&#x000A;&#x0009;&lt;/parameters&gt;&#x000D;&#x000A;&#x0009;&lt;actions&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;connect configuration=&quot;156.140.158.166&quot; address=&quot;TCPIP0::156.140.158.166::inst0::INSTR&quot; commandSet=&quot;f7656bd8-5d8e-4bb2-9a63-330d96fab13c&quot; source=&quot;SCPI&quot; commandSetDesc=&quot;X-Series Signal Generators / B.01.55&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;set configuration=&quot;156.140.158.166&quot; hierarchy=&quot;Transport&quot; path=&quot;DefaultTimeout&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;InstructionTimeout_mS&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/set&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;*RST&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:FREQuency:CW&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;freq&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:POWer:LEVel:IMMediate:AMPLitude&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;pwr&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;MEMory:DATA&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;arraytype dimension=&quot;1&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;UInt8&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/arraytype&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;[1]&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:RADio:ARB:SCLock:RATE&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;srate&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;MEMory:DELete:NAME&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&lt;/actions&gt;&#x000D;&#x000A;&lt;/sequenceprocedure&gt;</DataEntry>
+<Description>Sequence_PreRun</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvanceParameter" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>ShowAdvanceParameter</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__ShowAdvanceParameter@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SinkUsageTargetInfo" Type="PartParam">
+<DataEntry>&lt;UsageTargetInfo&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;InstructionTimeout_mS&quot; UsageTarget=&quot;0&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;freq&quot; UsageTarget=&quot;3&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;pwr&quot; UsageTarget=&quot;0&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;fileName&quot; UsageTarget=&quot;0&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;srate&quot; UsageTarget=&quot;1&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;fileName&quot; UsageTarget=&quot;0&quot; /&gt;&lt;/UsageTargetInfo&gt;</DataEntry>
+<Description>SinkUsageTargetInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__StartStopOption@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="UsageTargetInfo" Type="PartParam">
+<DataEntry />
+<Description>UsageTargetInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="__instr_addr0" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>TCPIP0::156.140.158.166::inst0::INSTR</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="fileName" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>WFM1:waveformdata</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="pwr" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>-10</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="state" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>1</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="CommandSetInfos" Type="PartParam">
+<DataEntry>TCPIP0::156.140.158.166::inst0::INSTR,f7656bd8-5d8e-4bb2-9a63-330d96fab13c,X-Series Signal Generators,B.01.55</DataEntry>
+<Description>CommandSetInfos</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ConfigMIMO" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>ConfigMIMO</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__ConfigMIMO@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Configuration" Type="PartParam">
+<DataEntry />
+<Description>Configuration</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>dataBlock?1?0?1?15?0#</DataEntry>
+<Description>IO Port Info</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InstructionTimeout_mS" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>30e3</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="IsMaster" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>IsMaster</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__IsMaster@Data Flow Enums</Enum>
+<HideCondition>ConfigMIMO ~= 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="IsSCPISupported" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>IsSCPISupported</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__IsSCPISupported@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Location" Type="PartParam">
+<DataEntry>TCPIP0::A-N5182A-41603.chn.keysight.com::inst0::INSTR,3de975ad-b3f2-4afa-8385-a5bcaeb6b28a,MXG Signal Generators,A.01.44;</DataEntry>
+<Description>Location</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ModelType" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>ModelType</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__ModelType@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Normalize" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__Normalize@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Offline" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Offline</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PortFCarrierInfo" Type="PartParam">
+<DataEntry>&lt;PortFCarrierInfo&gt;&lt;Port Name=&quot;dataBlock&quot; Direction=&quot;0&quot; Variable=&quot;freq&quot; /&gt;&lt;/PortFCarrierInfo&gt;</DataEntry>
+<Description>PortFCarrierInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="PortSampleRateInfo" Type="PartParam">
+<DataEntry>&lt;PortSampleRateInfo&gt;&lt;Port Name=&quot;dataBlock&quot; Direction=&quot;0&quot; Variable=&quot;srate&quot; UseForSampleRate=&quot;1&quot; /&gt;&lt;/PortSampleRateInfo&gt;</DataEntry>
+<Description>PortSampleRateInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="RepeatData" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>VSA hardware measurement control</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__RepeatData@Data Flow Enums</Enum>
+<HideCondition>ModelType ~= 0</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>(ModelType ~= 0 || SampleRateOption == 2) &amp;&amp; IsSCPISupported == 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>CommandExpertLink__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ModelType ~= 0</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>Num_Samples - 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ScaleFactor" Type="PartParam">
+<DataEntry>0.7</DataEntry>
+<Description>ScaleFactor</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>(0:1]</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Sequence" Type="PartParam">
+<DataEntry>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#x000D;&#x000A;&lt;sequenceprocedure xsi:schemaLocation=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot; procedurename=&quot;Untitled&quot; synopsis=&quot;No description yet.&quot; schemaVersion=&quot;7&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot;&gt;&#x000D;&#x000A;&#x0009;&lt;parameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;localvariables /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;fileName&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;String&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;WFM1:waveformdata&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;dataBlock&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;arraytype dimension=&quot;1&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;UInt8&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/arraytype&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;[1]&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;outputparameters /&gt;&#x000D;&#x000A;&#x0009;&lt;/parameters&gt;&#x000D;&#x000A;&#x0009;&lt;actions&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;connect configuration=&quot;156.140.158.166&quot; address=&quot;TCPIP0::156.140.158.166::inst0::INSTR&quot; commandSet=&quot;f7656bd8-5d8e-4bb2-9a63-330d96fab13c&quot; source=&quot;SCPI&quot; commandSetDesc=&quot;X-Series Signal Generators / B.01.55&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;MEMory:DATA:APPend&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;dataBlock&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&lt;/actions&gt;&#x000D;&#x000A;&lt;/sequenceprocedure&gt;</DataEntry>
+<Description>Sequence</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Sequence_PostRun" Type="PartParam">
+<DataEntry>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#x000D;&#x000A;&lt;sequenceprocedure xsi:schemaLocation=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot; procedurename=&quot;Untitled&quot; synopsis=&quot;No description yet.&quot; schemaVersion=&quot;7&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot;&gt;&#x000D;&#x000A;&#x0009;&lt;parameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;localvariables /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;fileName&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;String&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;WFM1:waveformdata&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;state&quot; synopsis=&quot;&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Bool&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;1&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;outputparameters /&gt;&#x000D;&#x000A;&#x0009;&lt;/parameters&gt;&#x000D;&#x000A;&#x0009;&lt;actions&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;connect configuration=&quot;156.140.158.166&quot; address=&quot;TCPIP0::156.140.158.166::inst0::INSTR&quot; commandSet=&quot;f7656bd8-5d8e-4bb2-9a63-330d96fab13c&quot; source=&quot;SCPI&quot; commandSetDesc=&quot;X-Series Signal Generators / B.01.55&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:RADIO:ARB:WAVeform&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:RADio:ARB:STATe&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;state&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;OUTPut:MODulation:STATe&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Bool&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;1&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;OUTPut:STATe&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Bool&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;1&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&lt;/actions&gt;&#x000D;&#x000A;&lt;/sequenceprocedure&gt;</DataEntry>
+<Description>Sequence_PostRun</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Sequence_PreRun" Type="PartParam">
+<DataEntry>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#x000D;&#x000A;&lt;sequenceprocedure xsi:schemaLocation=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot; procedurename=&quot;Untitled&quot; synopsis=&quot;No description yet.&quot; schemaVersion=&quot;7&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://tempuri.org/SequenceProcedureSchema.xsd&quot;&gt;&#x000D;&#x000A;&#x0009;&lt;parameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;localvariables /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;freq&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Int64&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;2000000000&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;fileName&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;String&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;WFM1:waveformdata&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;InstructionTimeout_mS&quot; synopsis=&quot;Time out in mS&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Int32&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;5000000&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;srate&quot; synopsis=&quot;&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Real64&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;2000000&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputparameter id=&quot;pwr&quot; synopsis=&quot;&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;Real64&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;-10&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputparameter&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/inputparameters&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;outputparameters /&gt;&#x000D;&#x000A;&#x0009;&lt;/parameters&gt;&#x000D;&#x000A;&#x0009;&lt;actions&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;connect configuration=&quot;156.140.158.166&quot; address=&quot;TCPIP0::156.140.158.166::inst0::INSTR&quot; commandSet=&quot;f7656bd8-5d8e-4bb2-9a63-330d96fab13c&quot; source=&quot;SCPI&quot; commandSetDesc=&quot;X-Series Signal Generators / B.01.55&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;set configuration=&quot;156.140.158.166&quot; hierarchy=&quot;Transport&quot; path=&quot;DefaultTimeout&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;InstructionTimeout_mS&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/set&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;*RST&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:FREQuency:CW&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;freq&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:POWer:LEVel:IMMediate:AMPLitude&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;pwr&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;MEMory:DATA&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;arraytype dimension=&quot;1&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;scalartype basetype=&quot;UInt8&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/arraytype&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&lt;value&gt;[1]&lt;/value&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;/input&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;SOURce:RADio:ARB:SCLock:RATE&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;srate&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;do configuration=&quot;156.140.158.166&quot; hierarchy=&quot;SCPI&quot; path=&quot;MEMory:DELete:NAME&quot; syntax=&quot;0&quot;&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&lt;inputreference inputparameter=&quot;fileName&quot; /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;/inputs&gt;&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&lt;outputs /&gt;&#x000D;&#x000A;&#x0009;&#x0009;&lt;/do&gt;&#x000D;&#x000A;&#x0009;&lt;/actions&gt;&#x000D;&#x000A;&lt;/sequenceprocedure&gt;</DataEntry>
+<Description>Sequence_PreRun</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvanceParameter" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>ShowAdvanceParameter</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__ShowAdvanceParameter@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SinkUsageTargetInfo" Type="PartParam">
+<DataEntry>&lt;UsageTargetInfo&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;InstructionTimeout_mS&quot; UsageTarget=&quot;0&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;freq&quot; UsageTarget=&quot;3&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;pwr&quot; UsageTarget=&quot;0&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;fileName&quot; UsageTarget=&quot;0&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;srate&quot; UsageTarget=&quot;1&quot; /&gt;&lt;Action Instrument=&quot;156.140.158.166&quot; Variable=&quot;fileName&quot; UsageTarget=&quot;0&quot; /&gt;&lt;/UsageTargetInfo&gt;</DataEntry>
+<Description>SinkUsageTargetInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>CommandExpertLink__StartStopOption@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="UsageTargetInfo" Type="PartParam">
+<DataEntry />
+<Description>UsageTargetInfo</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="__instr_addr0" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>TCPIP0::156.140.158.166::inst0::INSTR</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="fileName" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>WFM1:waveformdata</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="pwr" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>-10</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="state" Type="PartParam">
+<Custom><T>Bool</T><D>1</D></Custom>
+<DataEntry>1</DataEntry>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item>
+<Item XName="I" Type="Part">
+<Category>Source:Baseband Scalar</Category>
+<Description>Sine Wave Output</Description>
+<Footprint />
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SineGen@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,2?Connect3</Netlist>
+<ParentPartName>SineGen@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SineGen@Data Flow Models</ModelName>
+<SymbolName>SYM_SineGen</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="M1" Type="Part">
+<Category>Communications;Analog/RF</Category>
+<Description>Modulator</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Modulator@Data Flow Models</Model>
+<ModelID />
+<Netlist>input1,2?Connect3|input2,1?Connect2|LO,3|output,4?Connect0|quad_output,5</Netlist>
+<ParentPartName>Modulator@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Modulator@Data Flow Models</ModelName>
+<SymbolName>SYM_Modulator</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<DocSymbol>S&lt;sub&gt;a&lt;/sub&gt;</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<DocSymbol />
+<Enum>Modulator__ConjugatedQuadrature@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<DocSymbol>f&lt;sub&gt;c&lt;/sub&gt;</DocSymbol>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<DocSymbol>S&lt;sub&gt;f&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 2</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB</Description>
+<DocSymbol>G</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<DocSymbol>R</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<DocSymbol>I&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<DocSymbol>theta.gif</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<DocSymbol />
+<Enum>Modulator__InputType@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<DocSymbol />
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance</Description>
+<DocSymbol>phi.gif</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<DocSymbol>S&lt;sub&gt;p&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<DocSymbol>Q&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show I and Q impairments</Description>
+<DocSymbol />
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<DocSymbol>S&lt;sub&gt;a&lt;/sub&gt;</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<DocSymbol />
+<Enum>Modulator__ConjugatedQuadrature@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<DocSymbol>f&lt;sub&gt;c&lt;/sub&gt;</DocSymbol>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<DocSymbol>S&lt;sub&gt;f&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 2</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB</Description>
+<DocSymbol>G</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<DocSymbol>R</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<DocSymbol>I&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<DocSymbol>theta.gif</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<DocSymbol />
+<Enum>Modulator__InputType@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<DocSymbol />
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance</Description>
+<DocSymbol>phi.gif</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<DocSymbol>S&lt;sub&gt;p&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<DocSymbol>Q&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show I and Q impairments</Description>
+<DocSymbol />
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;pCpCpCdG234;pCpCpCNe734</D></PVPort></Item></Item>
+<Item XName="Q" Type="Part">
+<Category>Source:Baseband Scalar</Category>
+<Description>Sine Wave Output</Description>
+<Footprint />
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SineGen@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,1?Connect2</Netlist>
+<ParentPartName>SineGen@Data Flow Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<ShowModel><T>Bool</T><D>0</D></ShowModel>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SineGen@Data Flow Models</ModelName>
+<SymbolName>SYM_SineGen</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="Amplitude" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Peak sine wave voltage amplitude</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time delay within burst before the start of the BurstLength interval</Description>
+<HideCondition>( BurstMode == 0  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstLength" Type="PartParam">
+<DataEntry>100e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst time length</Description>
+<HideCondition>( BurstMode == 0 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="BurstMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Burst mode</Description>
+<Enum>WaveForm__BurstMode@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="BurstPeriod" Type="PartParam">
+<DataEntry>200e-6</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Time period from start of one burst to start of next</Description>
+<HideCondition>( BurstMode ~= 2  ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Frequency" Type="PartParam">
+<DataEntry>100000*Sample_Rate/Num_Samples</DataEntry>
+<Description>Frequency</Description>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial output time delay</Description>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Offset" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>DC offset voltage</Description>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Sample rate option</Description>
+<Enum>Const__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<IsConditionallyHidden><T>Bool</T><D>1</D></IsConditionallyHidden>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<Enum>AtoD__EnableJitter@Data Flow Enums</Enum>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.11111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Pf24;JT24;WcW24;JT24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;MB2C;MB24;Rt14;MB24;Rt14;PP24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;MB2C;WTc24;Rt14;WTc24;Rt14;JT24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;gD24;Of14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;X23XSXJL23C;WwDy{hTZk14;X23XBIzK634;Y7bAtwPMo24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Display1" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;MA24;p14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.11111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>Command Expert Link Block</Description>
+<Designator>C1</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>2999.9999658321458</D></PosX>
+<PosY><T>Double</T><D>1249.9999602303506</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{CommandExpert Icon}</Symbol>
+<TextOrigin><T>Array_Dbl64</T><D>1;2;RA24;LG24</D></TextOrigin>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pC1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>C1 {CommandExpertLink@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>M1</Designator>
+<PosX><T>Double</T><D>374.99999999999818</D></PosX>
+<PosY><T>Double</T><D>1875.0000610351558</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>295</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pM1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>M1 {Modulator@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFCarrier" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.29333333333335</D></PosY>
+<Text>FCarrier=2 GHz</Text></Item>
+<Item XName="_pInputType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.64666666666668</D></PosY>
+<Text>InputType=I/Q</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>I</Designator>
+<PosX><T>Double</T><D>-874.99995983314602</D></PosX>
+<PosY><T>Double</T><D>2875.0000000000018</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596.00006103515625</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pI" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>I</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pAmplitude" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.64666666666668</D></PosY>
+<Text>Amplitude=1 V</Text></Item>
+<Item XName="_pFrequency" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.94000000000005</D></PosY>
+<Text>Frequency=99900.1 Hz [100000*Sample_Rate/Num_Samples]</Text></Item>
+<Item XName="_pOffset" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.29333333333335</D></PosY>
+<Text>Offset=0 V</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>Q</Designator>
+<PosX><T>Double</T><D>-874.99996746253953</D></PosX>
+<PosY><T>Double</T><D>874.99999999999818</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_SineGen</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596.00006103515625</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pQ" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Q</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pAmplitude" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.64666666666668</D></PosY>
+<Text>Amplitude=1 V</Text></Item>
+<Item XName="_pFrequency" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>412.94000000000005</D></PosY>
+<Text>Frequency=99900.1 Hz [100000*Sample_Rate/Num_Samples]</Text></Item>
+<Item XName="_pOffset" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.29333333333335</D></PosY>
+<Text>Offset=0 V</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="N5182ADownloader Analysis" UserName="N5182ADownloader Analysis" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<AutoSave><T>Int</T><D>0</D></AutoSave>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<RunTimeTuning><T>Bool</T><D>0</D></RunTimeTuning>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="ConfigurationName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Bool</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Bool</T><D>0</D></Data></Item>
+<Item XName="DefaultNumericStart" Type="Param">
+<DataEntry>0</DataEntry></Item>
+<Item XName="DefaultNumericStop" Type="Param">
+<DataEntry>100</DataEntry></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DefaultTimeStart" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DefaultTimeStop" Type="Param">
+<DataEntry>100</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>N5182ADownloader</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="FreqRes" Type="Param">
+<Data><T>Double</T><D>9.9999999999999995e-07</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>20</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="NumSamples" Type="Param">
+<Data><T>Int</T><D>1024</D></Data></Item>
+<Item XName="Num_Samples" Type="Param">
+<DataEntry>2500000</DataEntry></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="SampleRate" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Sample_Rate" Type="Param">
+<Data><T>Double</T><D>50000000</D></Data>
+<Unit><T>Int</T><D>33771</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.04999998</D></Data>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="TimeSpacing" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStart" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStop" Type="Param">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<DataEntry>20</DataEntry>
+<Unit><T>Int</T><D>7001</D></Unit></Item></Item>
+<Item XName="N5182ADownloader Analysis_Data" UserName="N5182ADownloader Analysis_Data" Type="DataSet">
+<FullPath>Designs\N5182ADownloader Analysis_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : N5182ADownloader Analysis&#x000D;&#x000A;2/6/2012..2:03 PM&#x000D;&#x000A;output of SineGeneratorTimedBurst &apos;N5182ADownloader__I&apos;: Sample Rate of this signal defaulting to the System Sample Rate ( 5.0e+001 MHz ).&#x000D;&#x000A;Execution time: 58.437 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;CD24;y124</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;q{IxBjkK934;8xWi3o48}24</D></PVPort>
+<SelVar />
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.2</D></Split>
+<SubSplit><T>Int</T><D>0</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;w;r;{C;28</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder></Item></Item></Item>
+<Item XName="N5182ADownloader Analysis_N5182ADownloader_Data" UserName="N5182ADownloader Analysis_N5182ADownloader_Data" Type="DataSet">
+<FullPath>Designs\N5182ADownloader Analysis_N5182ADownloader_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : N5182ADownloader Analysis&#x000D;&#x000A;8/12/2016..11:01 AM&#x000D;&#x000A;Ambient Temperature[C]=27.000000&#x000D;&#x000A;output of SineGeneratorTimedBurst &apos;N5182ADownloader.I&apos;: Sample Rate of this signal defaulting to the System Sample Rate ( 5.0e+001 MHz ).&#x000D;&#x000A;Execution time: 18.828 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Data_Persistence" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="FREQ" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000000</D></Data></Item>
+<Item XName="Freq_Resolution" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Num_Samples" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Num_Samples_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Sample_Rate" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Start_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Start_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="TEMPERATURE" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>16.85</D></Data></Item>
+<Item XName="TIME" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Time_Spacing" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0.001</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item></Item>

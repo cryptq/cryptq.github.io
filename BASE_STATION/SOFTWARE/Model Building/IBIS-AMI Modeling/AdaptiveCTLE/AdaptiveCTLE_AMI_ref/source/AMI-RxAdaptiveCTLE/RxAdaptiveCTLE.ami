@@ -1,0 +1,16 @@
+(RxAdaptiveCTLE
+    (Reserved_Parameters
+        (AMI_Version (Usage Info) (Type String) (Default "5.1")(Description "Valid for AMI Version 5.1 and above"))
+        (Init_Returns_Impulse (Usage Info) (Type Boolean) (Default False) (Description "Init_Returns_Impulse False"))
+        (GetWave_Exists (Usage Info) (Type Boolean) (Default True) (Description "GetWave_Exists True"))
+        (Max_Init_Aggressors (Usage Info) (Type Integer) (Default 2147483646) (Description "Max_Init_Aggressors 2147483646"))
+        (Ignore_Bits (Usage Info) (Type Integer) (Default 10000) (Description "Ignore_Bits"))
+    )
+    (Model_Specific
+        (NumBitsToAvg (Usage In) (Type Integer) (Format Value 200) (Default 200) (Description "NumBitsToAvg"))
+        (TargetV (Usage In) (Type Float) (Format Value 0.15) (Default 0.15) (Description "TargetV"))
+        (ThresholdV (Usage In) (Type Float) (Format Value 0.015) (Default 0.015) (Description "ThresholdV"))
+        (CTLE_Init (Usage In) (Type Integer) (Format Value 7) (Default 7) (Description "CTLE_Init"))
+        (EnableAdaption (Usage In) (Type Integer) (Format Value 1) (Default 1) (Description "EnableAdaption"))
+    )
+)

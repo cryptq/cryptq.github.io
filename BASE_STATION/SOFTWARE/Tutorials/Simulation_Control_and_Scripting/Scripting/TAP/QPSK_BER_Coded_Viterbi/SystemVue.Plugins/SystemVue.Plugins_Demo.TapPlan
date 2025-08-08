@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestPlan type="Keysight.Tap.TestPlan" Name="SystemVue.Plugins_Demo.TapPlan" Version="7.0.229.0" Locked="False">
+  <Steps>
+    <TestStep type="SystemVue.Plugins.StartSV" Version="1.0.0.0" Id="786a0d34-1dff-4bb6-b891-9644f016615e">
+      <ChildTestSteps />
+      <Enabled>True</Enabled>
+      <Name>SVStart</Name>
+      <svCntl>0</svCntl>
+    </TestStep>
+    <TestStep type="SystemVue.Plugins.SVOpenExampleWorkspace" Version="1.0.0.0" Id="a80a7c42-73dc-4aa5-b1b7-46124c3cd87b">
+      <ChildTestSteps />
+      <Enabled>True</Enabled>
+      <FilePath>Comms/BER/QPSK_BER_Coded_Viterbi.wsv</FilePath>
+      <Name>SVOpenExampleWorkspace</Name>
+      <svCntl>0</svCntl>
+    </TestStep>
+    <TestStep type="SystemVue.Plugins.Test5G" Version="1.0.0.0" Id="5a0a868e-95d1-4f5d-9b4e-8d8ef7083389">
+      <ChildTestSteps>
+        <TestStep type="SystemVue.Plugins.Test5G" Version="1.0.0.0" Id="9263c166-0f74-4637-a7ff-f211f6a7e1c2">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <Freq>28000000000</Freq>
+          <Name>5G.TC1.Transmit.Power</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.Test5G" Version="1.0.0.0" Id="e80772a5-f912-4ddc-a726-f98183e5a12d">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <Freq>28000000000</Freq>
+          <Name>5G.TC2.Occupied.Bandwidth</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.Test5G" Version="1.0.0.0" Id="413f4908-780d-411e-a789-cbcfcd61312b">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <Freq>28000000000</Freq>
+          <Name>5G.TC3.ErrorVectorMagnitude</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.Test5G" Version="1.0.0.0" Id="26d5f721-c01d-406e-b699-2dfe0f9db0cc">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <Freq>28000000000</Freq>
+          <Name>5G.TC4.UnCoded.BER</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.Test5G" Version="1.0.0.0" Id="ea164323-54da-4f16-9d9a-b58b7004fb4d">
+          <ChildTestSteps />
+          <Enabled>True</Enabled>
+          <Freq>28000000000</Freq>
+          <Name>5G.TC5.Throughput</Name>
+          <svCntl>0</svCntl>
+        </TestStep>
+        <TestStep type="SystemVue.Plugins.SVSweepAnalysis" Version="1.0.0.0" Id="c0ac8178-0f73-4eda-880c-6be212228d6f">
+          <ChildTestSteps />
+          <EbN0>0</EbN0>
+          <Enabled>True</Enabled>
+          <Name>SVSweepAnalysis</Name>
+          <Start>-2</Start>
+          <Stop>10</Stop>
+          <svCntl>0</svCntl>
+        </TestStep>
+      </ChildTestSteps>
+      <Enabled>True</Enabled>
+      <Freq>28000000000</Freq>
+      <Name>5G.TC.Setup</Name>
+      <svCntl>0</svCntl>
+    </TestStep>
+    <TestStep type="SystemVue.Plugins.ExitSV" Version="1.0.0.0" Id="fe538f8e-f4ca-4f59-b02b-98d647828b28">
+      <ChildTestSteps />
+      <Enabled>True</Enabled>
+      <Name>SVExit</Name>
+      <svCntl>0</svCntl>
+    </TestStep>
+  </Steps>
+</TestPlan>

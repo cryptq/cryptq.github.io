@@ -1,0 +1,2534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;sO;fD</D></ClientWnd>
+<IsOpen><T>Int</T><D>1</D></IsOpen>
+<Time>2020:070:15:11</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2013.03</D></Ver>
+<Version>1.21</Version>
+<Item XName="Amp Prj" UserName="Amp Prj" Type="Folder">
+<IsOpen><T>Int</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Equation" UserName="Equation" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>% ----- Splitter Isolation Parameters&#x000D;&#x000A;Iso=tune(60);&#x000D;&#x000A;% ----- Splitter Gain Balance Parameters&#x000D;&#x000A;GainBalA = 0.0;&#x000D;&#x000A;GainBalB = 0.0;&#x000D;&#x000A;GainBalC = 0.0;&#x000D;&#x000A;GainBalD = 0.0;&#x000D;&#x000A;GainBalE = 0.0;&#x000D;&#x000A;GainBalF = 0.0;&#x000D;&#x000A;% ----- Splitter Phase Balance Parameters&#x000D;&#x000A;Phase0E = 0;&#x000D;&#x000A;Phase0F = 0;&#x000D;&#x000A;Phase90A = -90;&#x000D;&#x000A;Phase90B = -90;&#x000D;&#x000A;Phase90C = -90;&#x000D;&#x000A;Phase90D = -90;&#x000D;&#x000A;Phase90E = -90;&#x000D;&#x000A;Phase90F = -90;&#x000D;&#x000A;Phase270A = -270;&#x000D;&#x000A;Phase270B = -270;&#x000D;&#x000A;Phase270C = -270;&#x000D;&#x000A;Phase270D = -270;&#x000D;&#x000A;</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="EquationDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;c924;M024</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;lRvobBhE634;z2Imib}Oy24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.3</D></Split>
+<Split2><T>Double</T><D>0.3</D></Split2>
+<Window><T>Array_I64</T><D>1;4;;;jI;HA</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder></Item></Item>
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Graphs" UserName="Graphs" Type="Folder">
+<IsOpen><T>Int</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="In Spec" UserName="In Spec" Type="Rectangular Graph">
+<AaBackgnd><T>Int</T><D>0</D></AaBackgnd>
+<AaTraces><T>Int</T><D>1</D></AaTraces>
+<AllowAA><T>Int</T><D>0</D></AllowAA>
+<BkgdColor><T>Int</T><D>16777215</D></BkgdColor>
+<ChartColor><T>Int</T><D>16774124</D></ChartColor>
+<DefContext>System1_Data</DefContext>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPoints><T>Int</T><D>0</D></ShowPoints>
+<Snap><T>Int</T><D>0</D></Snap>
+<Title>Input Spectrum</Title>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<Item XName="AxisQueue" Type="AxisQueue">
+<Current><T>Int</T><D>0</D></Current>
+<Top><T>Int</T><D>0</D></Top></Item>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>14</D></Size>
+<Weight><T>Int</T><D>700</D></Weight></Item>
+<Item XName="Meas0" Type="MeasSer">
+<Measurement>P1</Measurement></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="AxisX" UserName="Frequency (MHz)" Type="GrAxis">
+<AutoScale><T>Int</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>2</D></AxisType>
+<InUse><T>Int</T><D>1</D></InUse>
+<LogScale><T>Int</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>1600000000</D></Max>
+<MaxPT><T>Int</T><D>1</D></MaxPT>
+<Min><T>Double</T><D>45000000</D></Min>
+<MinPT><T>Int</T><D>1</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Int</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Int</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<Unit><T>Int</T><D>1003</D></Unit>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY" UserName="P1 (dBm)" Type="GrAxis">
+<AutoScale><T>Int</T><D>0</D></AutoScale>
+<AxisType><T>Int</T><D>0</D></AxisType>
+<InUse><T>Int</T><D>1</D></InUse>
+<LogScale><T>Int</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0.01</D></Max>
+<MaxPT><T>Int</T><D>1</D></MaxPT>
+<Min><T>Double</T><D>1e-22</D></Min>
+<MinPT><T>Int</T><D>1</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Int</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Int</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>255</D></TextColor>
+<TitleColor><T>Int</T><D>255</D></TitleColor>
+<Unit><T>Int</T><D>11000</D></Unit>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY2" Type="GrAxis">
+<AutoScale><T>Int</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>1</D></AxisType>
+<InUse><T>Int</T><D>0</D></InUse>
+<LogScale><T>Int</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>-9998.5</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>-9999.5</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Int</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Int</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<Unit><T>Int</T><D>0</D></Unit>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="Display0" Type="GraphDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;A924;R224</D></DVport>
+<GridType><T>Int</T><D>0</D></GridType>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;mg634;Gd034</D></PVPort>
+<PanX><T>Double</T><D>0</D></PanX>
+<PanY><T>Double</T><D>0</D></PanY>
+<Show><T>Int</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;B1;lI;aB</D></Window>
+<Zoom><T>Double</T><D>1</D></Zoom></Item>
+<Item XName="Legend" Type="Legend">
+<Color><T>Int</T><D>1073741824</D></Color>
+<Height><T>Double</T><D>206.6796875</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>8299.3203125</D></PosY>
+<Width><T>Double</T><D>11606</D></Width>
+<ZOrder><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Name>Arial</Name>
+<Size><T>Int</T><D>8</D></Size></Item></Item>
+<Item XName="MkrGroup" Type="MkrGroup">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<ZOrder><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="Series0" Type="GraphSeries">
+<Color><T>Int</T><D>255</D></Color>
+<Label />
+<Meas>P1</Meas>
+<OnRight><T>Int</T><D>0</D></OnRight>
+<PPVar />
+<PlotType>Spectrum</PlotType>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<SeriesType><T>Int</T><D>7</D></SeriesType>
+<SymbolShape><T>Int</T><D>2</D></SymbolShape>
+<Unparsed><T>Int</T><D>1</D></Unparsed>
+<UserHide><T>Int</T><D>0</D></UserHide>
+<ZOrder><T>Int</T><D>9000</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>Inl_i=P1</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="_Var_Block" Type="VarBlock" /></Item></Item>
+<Item XName="PageHeight" Type="Param">
+<Data><T>Double</T><D>0.2160648852547705</D></Data>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="PageWidth" Type="Param">
+<Data><T>Double</T><D>0.2948003942882886</D></Data>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item>
+<Item XName="Out Spec" UserName="Out Spec" Type="Rectangular Graph">
+<AaBackgnd><T>Int</T><D>0</D></AaBackgnd>
+<AaTraces><T>Int</T><D>1</D></AaTraces>
+<AllowAA><T>Int</T><D>0</D></AllowAA>
+<BkgdColor><T>Int</T><D>16777215</D></BkgdColor>
+<ChartColor><T>Int</T><D>16774124</D></ChartColor>
+<DefContext>System1_Data</DefContext>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPoints><T>Int</T><D>0</D></ShowPoints>
+<Snap><T>Int</T><D>0</D></Snap>
+<Title>Output Spectrum</Title>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<Item XName="AxisQueue" Type="AxisQueue">
+<Current><T>Int</T><D>0</D></Current>
+<Top><T>Int</T><D>0</D></Top></Item>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>14</D></Size>
+<Weight><T>Int</T><D>700</D></Weight></Item>
+<Item XName="Meas0" Type="MeasSer">
+<Measurement>P2</Measurement></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="AxisX" UserName="Frequency (MHz)" Type="GrAxis">
+<AutoScale><T>Int</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>2</D></AxisType>
+<InUse><T>Int</T><D>1</D></InUse>
+<LogScale><T>Int</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>1600000000</D></Max>
+<MaxPT><T>Int</T><D>1</D></MaxPT>
+<Min><T>Double</T><D>45000000</D></Min>
+<MinPT><T>Int</T><D>1</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Int</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Int</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<Unit><T>Int</T><D>1003</D></Unit>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY" UserName="P2 (dBm)" Type="GrAxis">
+<AutoScale><T>Int</T><D>0</D></AutoScale>
+<AxisType><T>Int</T><D>0</D></AxisType>
+<InUse><T>Int</T><D>1</D></InUse>
+<LogScale><T>Int</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0.01</D></Max>
+<MaxPT><T>Int</T><D>1</D></MaxPT>
+<Min><T>Double</T><D>1e-22</D></Min>
+<MinPT><T>Int</T><D>1</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Int</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Int</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>255</D></TextColor>
+<TitleColor><T>Int</T><D>255</D></TitleColor>
+<Unit><T>Int</T><D>11000</D></Unit>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY2" Type="GrAxis">
+<AutoScale><T>Int</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>1</D></AxisType>
+<InUse><T>Int</T><D>0</D></InUse>
+<LogScale><T>Int</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>40</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>3</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Int</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Int</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<Unit><T>Int</T><D>0</D></Unit>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="Display0" Type="GraphDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;A924;R224</D></DVport>
+<GridType><T>Int</T><D>0</D></GridType>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;mg634;Gd034</D></PVPort>
+<PanX><T>Double</T><D>0</D></PanX>
+<PanY><T>Double</T><D>0</D></PanY>
+<Show><T>Int</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;F1;32;3K;PC</D></Window>
+<Zoom><T>Double</T><D>1</D></Zoom></Item>
+<Item XName="Legend" Type="Legend">
+<Color><T>Int</T><D>1073741824</D></Color>
+<Height><T>Double</T><D>206.6796875</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>8299.3203125</D></PosY>
+<Width><T>Double</T><D>11606</D></Width>
+<ZOrder><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Name>Arial</Name>
+<Size><T>Int</T><D>8</D></Size></Item></Item>
+<Item XName="MkrGroup" Type="MkrGroup">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<ZOrder><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="Series0" Type="GraphSeries">
+<Color><T>Int</T><D>255</D></Color>
+<Label />
+<Meas>P2</Meas>
+<OnRight><T>Int</T><D>0</D></OnRight>
+<PPVar />
+<PlotType>Spectrum</PlotType>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<SeriesType><T>Int</T><D>7</D></SeriesType>
+<SymbolShape><T>Int</T><D>2</D></SymbolShape>
+<Unparsed><T>Int</T><D>1</D></Unparsed>
+<UserHide><T>Int</T><D>0</D></UserHide>
+<ZOrder><T>Int</T><D>9000</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>Inl_i=P2</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="_Var_Block" Type="VarBlock" /></Item></Item>
+<Item XName="PageHeight" Type="Param">
+<Data><T>Double</T><D>0.2160648852547705</D></Data>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="PageWidth" Type="Param">
+<Data><T>Double</T><D>0.2948003942882886</D></Data>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="Readme" UserName="Readme" Type="Notes">
+<Description>Example text with pretty printing</Description>
+<LibName>Eagleware</LibName>
+<Selected><T>Bool</T><D>1</D></Selected>
+<Text>&lt;P style=&quot;BORDER-BOTTOM: windowtext 0.75pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0in&quot; class=MsoTitle align=center&gt;&lt;STRONG&gt;&lt;FONT size=5 face=Arial&gt;Harmonic Suppressed Amplifier Workspace&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies Example Workspace&lt;/SPAN&gt;&lt;/P&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;FONT color=#ff0000&gt;(NOTE: System1 must be calculated before the data can be displayed)&lt;/FONT&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;/SPAN&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P style=&quot;TEXT-ALIGN: center; MARGIN: 0in 0in 0pt&quot; class=MsoNormal align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&amp;nbsp;&lt;o:p&gt;&lt;/o:p&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;&lt;STRONG&gt;ABSTRACT&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;This example illustrates a parallel amplifier configuration that cancels both 2nd and 3rd order intermod and harmonic products.&amp;nbsp; The complete amplifier consists of 4 individual amplifiers paralleled in such a way to suppress both 2nd and 3rd order products.&amp;nbsp; Two identical amplifier banks are paralleled and fed 90 degrees apart giving cancellation of 3rd order products.&amp;nbsp; Each amplifier bank consists of 2 amplifiers that are fed 180 degrees apart giving cancellation of 2nd order products.&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;&lt;BR&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;&lt;STRONG&gt;SETUP&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;Two input signals have been created and applied to the input of the amplifier using the multicarrier signal source.&amp;nbsp; Noise calculations have been disabled as well as the identification of individual spectrums.&amp;nbsp; The spectrum analyzer mode has been enabled. Graphs have been created showing the input and output spectrum of the amplifier. Several variables have been created for the splitters.&amp;nbsp; The user can make these variables tunable and examine the performance impact based on parameter variation.&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;&lt;BR&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;&lt;STRONG&gt;ANALYSIS&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;Examining the output spectrum (Out Spec) graph we see that the 2nd order intermod and harmonic products are non-existent.&amp;nbsp; The 3rd order products are about -150 dBc. The third order products are a function of the splitter isolation as well as the 3rd order intercept point of the amplifiers.&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;&lt;BR&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;&lt;STRONG&gt;EXERCISES&lt;/STRONG&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;1. Tune the isolation and notice the impact on the 3rd order products.&lt;/P&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText&gt;2. Make some of the splitter gain and phase parameters tunable (place a &apos;?&apos; infront of the variable name in the equation block) and observe the overall amplifier performance as these values are changed.&lt;BR&gt;&lt;/P&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;eM24;Rm14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;fJdETwRgF34;eHZ6DQG0d24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;yM;o4</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="Sch1" UserName="Sch1" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<PartID>Source</PartID>
+<PinName>1</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part1</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item>
+<Item XName="P2" Type="PartPin">
+<PartID>Split90_1</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N10" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_3</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N11" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_3</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N12" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>13</ResolvedNetName>
+<SchObject>Connect5</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_3</PartID>
+<PinName>Port_3</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect5</MappedSchObject>
+<NetName>13</NetName></Item></Item></Item></Item>
+<Item XName="N13" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>8</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp1</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>8</NetName></Item></Item></Item></Item>
+<Item XName="N14" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>11</ResolvedNetName>
+<SchObject>Connect6</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp1</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect6</MappedSchObject>
+<NetName>11</NetName></Item></Item></Item></Item>
+<Item XName="N15" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp2</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N16" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>10</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp2</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect7</MappedSchObject>
+<NetName>10</NetName></Item></Item></Item></Item>
+<Item XName="N17" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>12</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp3</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part6</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>12</NetName></Item></Item></Item></Item>
+<Item XName="N18" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>15</ResolvedNetName>
+<SchObject>Connect8</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp3</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part6</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect8</MappedSchObject>
+<NetName>15</NetName></Item></Item></Item></Item>
+<Item XName="N19" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>13</ResolvedNetName>
+<SchObject>Connect5</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp4</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect5</MappedSchObject>
+<NetName>13</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>5</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split90_1</PartID>
+<PinName>Port_3</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>5</NetName></Item></Item></Item></Item>
+<Item XName="N20" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>14</ResolvedNetName>
+<SchObject>Connect9</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>RFAmp4</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part7</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect9</MappedSchObject>
+<NetName>14</NetName></Item></Item></Item></Item>
+<Item XName="N21" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>7</ResolvedNetName>
+<SchObject>Connect10</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_2</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part8</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect10</MappedSchObject>
+<NetName>7</NetName></Item></Item></Item></Item>
+<Item XName="N22" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>11</ResolvedNetName>
+<SchObject>Connect6</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_2</PartID>
+<PinName>Port_3</PinName>
+<SchObject>Part8</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect6</MappedSchObject>
+<NetName>11</NetName></Item></Item></Item></Item>
+<Item XName="N23" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>10</ResolvedNetName>
+<SchObject>Connect7</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_2</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part8</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect7</MappedSchObject>
+<NetName>10</NetName></Item></Item></Item></Item>
+<Item XName="N24" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect11</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_4</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part9</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect11</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N25" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>15</ResolvedNetName>
+<SchObject>Connect8</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_4</PartID>
+<PinName>Port_3</PinName>
+<SchObject>Part9</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect8</MappedSchObject>
+<NetName>15</NetName></Item></Item></Item></Item>
+<Item XName="N26" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>14</ResolvedNetName>
+<SchObject>Connect9</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_4</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part9</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect9</MappedSchObject>
+<NetName>14</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect12</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split90_1</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect12</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>7</ResolvedNetName>
+<SchObject>Connect10</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split90_2</PartID>
+<PinName>Port_3</PinName>
+<SchObject>Part10</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect10</MappedSchObject>
+<NetName>7</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>6</ResolvedNetName>
+<SchObject>Connect11</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split90_2</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part10</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect11</MappedSchObject>
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<PartID>Split90_2</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part10</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part11</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item>
+<Item XName="P2" Type="PartPin">
+<PartID>Output</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part11</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Part10</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect12</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_1</PartID>
+<PinName>Port_1</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect12</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>8</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_1</PartID>
+<PinName>Port_2</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>8</NetName></Item></Item></Item></Item>
+<Item XName="N9" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<ResolvedNetName>9</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<PartID>Split180_1</PartID>
+<PinName>Port_3</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>9</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;cM24;M024</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;7FUyunfdF34;148GW0tts24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;}}}}}}}}}}}};q4;vM;gD</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Output" Type="Part">
+<LayoutUse><T>Int</T><D>1</D></LayoutUse>
+<Model UserName="Model" Help="318">*OUT</Model>
+<Netlist>Port_1,2?Part10</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">OUTPUT</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="PORT" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Port Number</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="ZO" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate></Item></Item></Item>
+<Item XName="RFAmp1" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">RFAMP_HO</Model>
+<Netlist>Port_1,8?Connect2|Port_2,11?Connect6</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FC" Type="PartParam">
+<DataEntry>1000</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Corner Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="G" Type="PartParam">
+<DataEntry>20</DataEntry>
+<Description>Gain</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="IMN" Type="PartParam">
+<DataEntry>0;-30;-40</DataEntry>
+<Description>List of Intermods (IM1;IM2;IM3;...)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="NF" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Noise Figure</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OP1dB" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Output P1dB</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OPSAT" Type="PartParam">
+<DataEntry>13</DataEntry>
+<Description>Output Saturation Power</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="RISO" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Reverse Isolation</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="SLOPE" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Rolloff Slope in dB/Decade</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZIN" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZOUT" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="RFAmp2" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">RFAMP_HO</Model>
+<Netlist>Port_1,9?Connect3|Port_2,10?Connect7</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FC" Type="PartParam">
+<DataEntry>1000</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Corner Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="G" Type="PartParam">
+<DataEntry>20</DataEntry>
+<Description>Gain</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="IMN" Type="PartParam">
+<DataEntry>0;-30;-40</DataEntry>
+<Description>List of Intermods (IM1;IM2;IM3;...)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="NF" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Noise Figure</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OP1dB" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Output P1dB</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OPSAT" Type="PartParam">
+<DataEntry>13</DataEntry>
+<Description>Output Saturation Power</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="RISO" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Reverse Isolation</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="SLOPE" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Rolloff Slope in dB/Decade</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZIN" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZOUT" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="RFAmp3" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">RFAMP_HO</Model>
+<Netlist>Port_1,12?Connect4|Port_2,15?Connect8</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FC" Type="PartParam">
+<DataEntry>1000</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Corner Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="G" Type="PartParam">
+<DataEntry>20</DataEntry>
+<Description>Gain</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="IMN" Type="PartParam">
+<DataEntry>0;-30;-40</DataEntry>
+<Description>List of Intermods (IM1;IM2;IM3;...)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="NF" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Noise Figure</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OP1dB" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Output P1dB</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OPSAT" Type="PartParam">
+<DataEntry>13</DataEntry>
+<Description>Output Saturation Power</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="RISO" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Reverse Isolation</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="SLOPE" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Rolloff Slope in dB/Decade</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZIN" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZOUT" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="RFAmp4" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">RFAMP_HO</Model>
+<Netlist>Port_1,13?Connect5|Port_2,14?Connect9</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FC" Type="PartParam">
+<DataEntry>1000</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Corner Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="G" Type="PartParam">
+<DataEntry>20</DataEntry>
+<Description>Gain</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="IMN" Type="PartParam">
+<DataEntry>0;-30;-40</DataEntry>
+<Description>List of Intermods (IM1;IM2;IM3;...)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="NF" Type="PartParam">
+<DataEntry>5</DataEntry>
+<Description>Noise Figure</Description>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OP1dB" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Output P1dB</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="OPSAT" Type="PartParam">
+<DataEntry>13</DataEntry>
+<Description>Output Saturation Power</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="RISO" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Reverse Isolation</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="SLOPE" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Rolloff Slope in dB/Decade</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>0</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZIN" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ZOUT" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="Source" Type="Part" ModelVersion="1.20">
+<Category>System;System Source</Category>
+<Description>Source: Multi</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>0</D></MathLang>
+<Model>MultiSource</Model>
+<ModelID />
+<Netlist>1,1?Part1</Netlist>
+<ParentPartName>MultiSource</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>MultiSrcSym</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" ModelVersion="1.20">
+<Indentifier />
+<ModelName>MultiSource</ModelName>
+<SymbolName>MultiSrcSym</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AutoDesc" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Use Auto Description</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="BW" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Bandwidth</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Carriers" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Number of Carriers</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Dataset" Type="PartParam">
+<DataEntry>GSM</DataEntry>
+<Description>Source Dataset Name</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Descrip" Type="PartParam">
+<DataEntry>450 MHz at -20 dBm, Carriers: 2, Delta: 50 MHz, 0 dB</DataEntry>
+<Description>Description</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Enable" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Enable</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="EnablePN" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Enable Phase Noise (0-Off, 1-On)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="FOff" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Frequency Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Freq" Type="PartParam">
+<DataEntry>450</DataEntry>
+<Description>Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MultiCarrier" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Use Multiple Carriers</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Name" Type="PartParam">
+<DataEntry>Source1</DataEntry>
+<Description>Name</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NoisePoints" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Number of Noise Points</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NoisePower" Type="PartParam">
+<DataEntry>-150</DataEntry>
+<Description>Noise Power (per Hz)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NoiseStart" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Noise Start Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NoiseStop" Type="PartParam">
+<DataEntry>250</DataEntry>
+<Description>Noise Stop Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PNFreq" Type="PartParam">
+<DataEntry>[1e-3;0.01;0.1;1]</DataEntry>
+<Description>Frequency Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PNIndex" Type="PartParam">
+<DataEntry>0;0;0;0</DataEntry>
+<Description>Phase Noise Index</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="PNPwr" Type="PartParam">
+<DataEntry>[-70;-90;-100;-105]</DataEntry>
+<Description>Phase Noise (dBc/Hz)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Port Number</Description>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="POff" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Power Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhOff" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Phase Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Pts" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Number of Source Points</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Pwr" Type="PartParam">
+<DataEntry>-20</DataEntry>
+<Description>Power</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="R" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Source Resistance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>2001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="RefClk" Type="PartParam">
+<DataEntry />
+<Description>Reference Clock</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Show" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Show Description</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="SrcType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Type of Source</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AutoDesc" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Use Auto Description</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="BW" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Bandwidth</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Carriers" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Number of Carriers</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Dataset" Type="PartParam">
+<DataEntry>GSM</DataEntry>
+<Description>Source Dataset Name</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Descrip" Type="PartParam">
+<DataEntry>450 MHz at -20 dBm, Carriers: 2, Delta: 50 MHz, 0 dB</DataEntry>
+<Description>Description</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Enable" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Enable</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="EnablePN" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Enable Phase Noise (0-Off, 1-On)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="FOff" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Frequency Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Freq" Type="PartParam">
+<DataEntry>450</DataEntry>
+<Description>Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="MultiCarrier" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Use Multiple Carriers</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Name" Type="PartParam">
+<DataEntry>Source1</DataEntry>
+<Description>Name</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NoisePoints" Type="PartParam">
+<DataEntry>10</DataEntry>
+<Description>Number of Noise Points</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="NoisePower" Type="PartParam">
+<DataEntry>-150</DataEntry>
+<Description>Noise Power (per Hz)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NoiseStart" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Description>Noise Start Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="NoiseStop" Type="PartParam">
+<DataEntry>250</DataEntry>
+<Description>Noise Stop Frequency</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PNFreq" Type="PartParam">
+<DataEntry>[1e-3;0.01;0.1;1]</DataEntry>
+<Description>Frequency Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1003</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PNIndex" Type="PartParam">
+<DataEntry>0;0;0;0</DataEntry>
+<Description>Phase Noise Index</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="PNPwr" Type="PartParam">
+<DataEntry>[-70;-90;-100;-105]</DataEntry>
+<Description>Phase Noise (dBc/Hz)</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PORT" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Port Number</Description>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="POff" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Power Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>15001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhOff" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Phase Offset</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Phase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Phase</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Pts" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Number of Source Points</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="Pwr" Type="PartParam">
+<DataEntry>-20</DataEntry>
+<Description>Power</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>11002</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="R" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Source Resistance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>2001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="RefClk" Type="PartParam">
+<DataEntry />
+<Description>Reference Clock</Description>
+<EqnLang><T>Int</T><D>0</D></EqnLang>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Show" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Show Description</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item>
+<Item XName="SrcType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Type of Source</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>3</D></Validate></Item></Item></Item>
+<Item XName="Split180_1" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">SPLIT2180</Model>
+<Netlist>Port_1,4?Connect12|Port_2,8?Connect2|Port_3,9?Connect3</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="GBal2" Type="PartParam">
+<DataEntry>GainBalA</DataEntry>
+<Description>Gain Balance, port 3</Description>
+<Formula>GainBalA</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IL" Type="PartParam">
+<DataEntry>3.2</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Insertion Loss</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ISO" Type="PartParam">
+<DataEntry>Iso</DataEntry>
+<Description>Isolation</Description>
+<Formula>Iso</Formula>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="PH2" Type="PartParam">
+<DataEntry>Phase90A</DataEntry>
+<Description>Phase, port 2</Description>
+<Formula>Phase90A</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PH3" Type="PartParam">
+<DataEntry>Phase270A</DataEntry>
+<Description>Phase, port 3</Description>
+<Formula>Phase270A</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Zin" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Zout" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="Split180_2" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">SPLIT2180</Model>
+<Netlist>Port_1,7?Connect10|Port_2,10?Connect7|Port_3,11?Connect6</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="GBal2" Type="PartParam">
+<DataEntry>GainBalB</DataEntry>
+<Description>Gain Balance, port 3</Description>
+<Formula>GainBalB</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IL" Type="PartParam">
+<DataEntry>3.2</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Insertion Loss</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ISO" Type="PartParam">
+<DataEntry>Iso</DataEntry>
+<Description>Isolation</Description>
+<Formula>Iso</Formula>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="PH2" Type="PartParam">
+<DataEntry>Phase90B</DataEntry>
+<Description>Phase, port 2</Description>
+<Formula>Phase90B</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PH3" Type="PartParam">
+<DataEntry>Phase270B</DataEntry>
+<Description>Phase, port 3</Description>
+<Formula>Phase270B</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Zin" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Zout" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="Split180_3" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">SPLIT2180</Model>
+<Netlist>Port_1,5?Connect1|Port_2,12?Connect4|Port_3,13?Connect5</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="GBal2" Type="PartParam">
+<DataEntry>GainBalC</DataEntry>
+<Description>Gain Balance, port 3</Description>
+<Formula>GainBalC</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IL" Type="PartParam">
+<DataEntry>3.2</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Insertion Loss</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ISO" Type="PartParam">
+<DataEntry>Iso</DataEntry>
+<Description>Isolation</Description>
+<Formula>Iso</Formula>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="PH2" Type="PartParam">
+<DataEntry>Phase90C</DataEntry>
+<Description>Phase, port 2</Description>
+<Formula>Phase90C</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PH3" Type="PartParam">
+<DataEntry>Phase270C</DataEntry>
+<Description>Phase, port 3</Description>
+<Formula>Phase270C</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Zin" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Zout" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="Split180_4" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">SPLIT2180</Model>
+<Netlist>Port_1,6?Connect11|Port_2,14?Connect9|Port_3,15?Connect8</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="GBal2" Type="PartParam">
+<DataEntry>GainBalD</DataEntry>
+<Description>Gain Balance, port 3</Description>
+<Formula>GainBalD</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IL" Type="PartParam">
+<DataEntry>3.2</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Insertion Loss</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ISO" Type="PartParam">
+<DataEntry>Iso</DataEntry>
+<Description>Isolation</Description>
+<Formula>Iso</Formula>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="PH2" Type="PartParam">
+<DataEntry>Phase90D</DataEntry>
+<Description>Phase, port 2</Description>
+<Formula>Phase90D</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PH3" Type="PartParam">
+<DataEntry>Phase270D</DataEntry>
+<Description>Phase, port 3</Description>
+<Formula>Phase270D</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Zin" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Zout" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="Split90_1" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">SPLIT290</Model>
+<Netlist>Port_1,1?Part0|Port_2,4?Connect12|Port_3,5?Connect1</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">SPLIT290</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="GBal2" Type="PartParam">
+<DataEntry>GainBalE</DataEntry>
+<Description>Gain Balance, port 3</Description>
+<Formula>GainBalE</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IL" Type="PartParam">
+<DataEntry>3.2</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Insertion Loss</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ISO" Type="PartParam">
+<DataEntry>Iso</DataEntry>
+<Description>Isolation</Description>
+<Formula>Iso</Formula>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="PH2" Type="PartParam">
+<DataEntry>Phase0E</DataEntry>
+<Description>Phase, port 2</Description>
+<Formula>Phase0E</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PH3" Type="PartParam">
+<DataEntry>Phase90E</DataEntry>
+<Description>Phase, port 3</Description>
+<Formula>Phase90E</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Zin" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Zout" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item>
+<Item XName="Split90_2" Type="Part">
+<LayoutUse><T>Int</T><D>0</D></LayoutUse>
+<Model UserName="Model" Help="318">SPLIT290</Model>
+<Netlist>Port_1,2?Part11|Port_2,6?Connect11|Port_3,7?Connect10</Netlist>
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol UserName="Symbol" Help="319">SPLIT290</Symbol>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="GBal2" Type="PartParam">
+<DataEntry>GainBalF</DataEntry>
+<Description>Gain Balance, port 3</Description>
+<Formula>GainBalF</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IL" Type="PartParam">
+<DataEntry>3.2</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Insertion Loss</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="ISO" Type="PartParam">
+<DataEntry>Iso</DataEntry>
+<Description>Isolation</Description>
+<Formula>Iso</Formula>
+<Unit><T>Int</T><D>13001</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="PH2" Type="PartParam">
+<DataEntry>Phase0F</DataEntry>
+<Description>Phase, port 2</Description>
+<Formula>Phase0F</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PH3" Type="PartParam">
+<DataEntry>Phase90F</DataEntry>
+<Description>Phase, port 3</Description>
+<Formula>Phase90F</Formula>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Zin" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Input Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item>
+<Item XName="Zout" Type="PartParam">
+<DataEntry>50</DataEntry>
+<Default UserName="Default" Help="329"><T>Bool</T><D>1</D></Default>
+<Description>Output Impedance</Description>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>34769</D></Unit>
+<Validate><T>Int</T><D>1</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Shown><T>Int</T><D>15354</D></Shown>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>62.5</D></Size></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<CenterX><T>Double</T><D>1833</D></CenterX>
+<CenterY><T>Double</T><D>2666</D></CenterY>
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;8;WXZ24;W8c24;WXZ24;GgwOf24;W00YZ24;GgwOf24;W00YZ24;WKLfi24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.66667</D></PosX>
+<PosY><T>Double</T><D>1166.666669</D></PosY>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect10" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WgAiw24;jD8c24;WgAiw24;zski24;WgAiw24;LLfi24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect11" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WBq24;WKLfi24;WBq24;W8c24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.66667</D></PosX>
+<PosY><T>Double</T><D>1166.666669</D></PosY>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect12" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WgQHm24;LLfi24;WgQHm24;zski24;WggHm24;jD8c24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;le24;rK24;le24;}}FF24;W}}Lh24;}}FF24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.66667</D></PosX>
+<PosY><T>Double</T><D>1332.427147033892</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;le24;2Q24;le24;W}}FV24;W}}Lh24;W}}FV24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.66667</D></PosX>
+<PosY><T>Double</T><D>1332.427147033892</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect4" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;le24;fi24;le24;Wgg2g24;W}}Lh24;Wgg2g24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.666916093735</D></PosX>
+<PosY><T>Double</T><D>1000.333105812495</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect5" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;le24;WFl24;le24;LLxm24;W}}Lh24;LLxm24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.666916093735</D></PosX>
+<PosY><T>Double</T><D>1000.333105812495</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect6" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;W}VHm24;}}FF24;bn24;}}FF24;bn24;rK24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.66667</D></PosX>
+<PosY><T>Double</T><D>1332.427147033892</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect7" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;W}VHm24;W}}FV24;bn24;W}}FV24;bn24;2Q24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.66667</D></PosX>
+<PosY><T>Double</T><D>1332.427147033892</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect8" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;W}VHm24;Wgg2g24;bn24;Wgg2g24;bn24;fi24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.666916093735</D></PosX>
+<PosY><T>Double</T><D>1000.333105812495</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect9" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;W}VHm24;LLxm24;bn24;LLxm24;bn24;Gl24</D></Coords>
+<Filled><T>Int</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>1666.666916093735</D></PosX>
+<PosY><T>Double</T><D>1000.333105812495</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;DM24;yz14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qsx07FkaI2C;LxPT24;sU7uuQ9r534;vaet24</D></PVPort>
+<Show><T>Int</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>62.5</D></Size></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<Designator>Source</Designator>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>2891.666837906221</D></PosX>
+<PosY><T>Double</T><D>3704.666647765612</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>MultiSrcSym</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>306.75</D></PosX>
+<PosY><T>Double</T><D>301</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSource" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Source</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pDescrip0" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>155.815</D></PosY>
+<Text>Source1=450 MHz at -20 dBm, Carriers: 2, Delta: 50 MHz, 0 dB</Text></Item>
+<Item XName="_pPORT" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>PORT=1</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>Split90_1</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>3499.66667</D></PosX>
+<PosY><T>Double</T><D>3499.666669</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">SPLIT290</Symbol>
+<ZOrder><T>Int</T><D>32</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>332.999755859375</D></PosX>
+<PosY><T>Double</T><D>590.5</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSplit90_1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Split90_1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pISO" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>ISO=60 dB10 [Iso]</Text></Item></Item></Item>
+<Item XName="Part10" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>Split90_2</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>7499.66667</D></PosX>
+<PosY><T>Double</T><D>3499.666669</D></PosY>
+<Rotate><T>Double</T><D>-180</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">SPLIT290</Symbol>
+<ZOrder><T>Int</T><D>3</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>333</D></PosX>
+<PosY><T>Double</T><D>590.50048828125</D></PosY>
+<Rotate><T>Double</T><D>180</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSplit90_2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-77.90750000000001</D></PosY>
+<Text>Split90_2</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pISO" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>ISO=60 dB10 [Iso]</Text></Item></Item></Item>
+<Item XName="Part11" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>83</D></CenterY>
+<Designator>Output</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>7499.66667</D></PosX>
+<PosY><T>Double</T><D>3749.666669</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">OUTPUT</Symbol>
+<ZOrder><T>Int</T><D>2</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>78</D></PosX>
+<PosY><T>Double</T><D>206.5</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pOutput" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Output</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>Split180_1</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>4166.666670000001</D></PosX>
+<PosY><T>Double</T><D>2499.427147033892</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<TextOrigin><T>Array_Dbl64</T><D>1;2;8}Mn14;8BlY1C</D></TextOrigin>
+<ZOrder><T>Int</T><D>29</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>277.74658203125</D></PosX>
+<PosY><T>Double</T><D>-149.896728515625</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSplit180_1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Split180_1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pISO" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>ISO=60 dB10 [Iso]</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>Split180_3</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>4166.666916093735</D></PosX>
+<PosY><T>Double</T><D>4500.333105812495</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<TextOrigin><T>Array_Dbl64</T><D>1;2;GAzl14;D9324</D></TextOrigin>
+<ZOrder><T>Int</T><D>28</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>255.64501953125</D></PosX>
+<PosY><T>Double</T><D>612.6015625</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSplit180_3" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>Split180_3</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pISO" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>ISO=60 dB10 [Iso]</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>RFAmp1</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>5166.666824999993</D></PosX>
+<PosY><T>Double</T><D>1999.427090963588</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<ZOrder><T>Int</T><D>19</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>333</D></PosX>
+<PosY><T>Double</T><D>573.5</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pRFAmp1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>RFAmp1</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pG" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>G=20 dB10</Text></Item>
+<Item XName="_pNF" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>155.815</D></PosY>
+<Text>NF=5 dB10</Text></Item></Item></Item>
+<Item XName="Part5" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>RFAmp2</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>5166.666447812509</D></PosX>
+<PosY><T>Double</T><D>2999.427046940148</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<ZOrder><T>Int</T><D>18</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>333</D></PosX>
+<PosY><T>Double</T><D>573.5</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pRFAmp2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>RFAmp2</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pG" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>G=20 dB10</Text></Item>
+<Item XName="_pNF" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>155.815</D></PosY>
+<Text>NF=5 dB10</Text></Item></Item></Item>
+<Item XName="Part6" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>RFAmp3</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>5166.667120187482</D></PosX>
+<PosY><T>Double</T><D>4000.666637906241</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<ZOrder><T>Int</T><D>17</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>333</D></PosX>
+<PosY><T>Double</T><D>573.5</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pRFAmp3" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>RFAmp3</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pG" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>G=20 dB10</Text></Item>
+<Item XName="_pNF" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>155.815</D></PosY>
+<Text>NF=5 dB10</Text></Item></Item></Item>
+<Item XName="Part7" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>RFAmp4</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>5166.667120187475</D></PosX>
+<PosY><T>Double</T><D>5000.666645906245</D></PosY>
+<Rotate><T>Double</T><D>0</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">AMPL</Symbol>
+<ZOrder><T>Int</T><D>16</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>333</D></PosX>
+<PosY><T>Double</T><D>573.5</D></PosY>
+<Rotate><T>Double</T><D>-0</D></Rotate>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pRFAmp4" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>RFAmp4</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pG" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>77.90750000000001</D></PosY>
+<Text>G=20 dB10</Text></Item>
+<Item XName="_pNF" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>155.815</D></PosY>
+<Text>NF=5 dB10</Text></Item></Item></Item>
+<Item XName="Part8" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>Split180_2</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>6832.666669999999</D></PosX>
+<PosY><T>Double</T><D>2499.427147033892</D></PosY>
+<Rotate><T>Double</T><D>-180</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<TextOrigin><T>Array_Dbl64</T><D>1;2;GAzl14;MJV324</D></TextOrigin>
+<ZOrder><T>Int</T><D>7</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>255.64501953125</D></PosX>
+<PosY><T>Double</T><D>623.651123046875</D></PosY>
+<Rotate><T>Double</T><D>180</D></Rotate>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSplit180_2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-77.90750000000001</D></PosY>
+<Text>Split180_2</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pISO" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>ISO=60 dB10 [Iso]</Text></Item></Item></Item>
+<Item XName="Part9" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>333</D></CenterY>
+<Designator>Split180_4</Designator>
+<Mirror><T>Int</T><D>0</D></Mirror>
+<PosX><T>Double</T><D>6832.666916093735</D></PosX>
+<PosY><T>Double</T><D>4500.333105812495</D></PosY>
+<Rotate><T>Double</T><D>-180</D></Rotate>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol UserName="Symbol" Help="319">SPLIT2180</Symbol>
+<TextOrigin><T>Array_Dbl64</T><D>1;2;Wyph14;c7a1C</D></TextOrigin>
+<ZOrder><T>Int</T><D>6</D></ZOrder>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>222.4931640625</D></PosX>
+<PosY><T>Double</T><D>-160.94921875</D></PosY>
+<Rotate><T>Double</T><D>180</D></Rotate>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pSplit180_4" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>-77.90750000000001</D></PosY>
+<Text>Split180_4</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pISO" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>9</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>ISO=60 dB10 [Iso]</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>166.666667</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="System1" UserName="System1" Type="System Analysis">
+<AddPathSpec UserName="AddPathSpec" Help="8322"><T>Int</T><D>0</D></AddPathSpec>
+<AnalFilterType UserName="AnalFilterType" Help="8264"><T>Int</T><D>2</D></AnalFilterType>
+<AnalFreqLimit UserName="AnalFreqLimit" Help="8256"><T>Bool</T><D>0</D></AnalFreqLimit>
+<AnalNoise UserName="AddAnalyzerNoise" Help="8254"><T>Bool</T><D>0</D></AnalNoise>
+<AnalRandNoise UserName="AddAnalyzerRandomNoise" Help="8255"><T>Bool</T><D>0</D></AnalRandNoise>
+<AnalyzerOn UserName="AnalyzerOn" Help="8253"><T>Bool</T><D>1</D></AnalyzerOn>
+<AutoRecalc UserName="AutoCalc" Help="368"><T>Bool</T><D>0</D></AutoRecalc>
+<CalcHarmonics UserName="CalcHarmonics" Help="8258"><T>Bool</T><D>1</D></CalcHarmonics>
+<CalcIntermods UserName="CalcIntermods" Help="8259"><T>Bool</T><D>1</D></CalcIntermods>
+<CalcNoise UserName="CalcNoise" Help="8257"><T>Bool</T><D>0</D></CalcNoise>
+<CalcPhaseNoise UserName="PhaseNoise" Help="8321"><T>Bool</T><D>1</D></CalcPhaseNoise>
+<CoherentIM UserName="CoherentIM" Help="8243"><T>Bool</T><D>1</D></CoherentIM>
+<DataLevels UserName="DataLevels" Help="8323"><T>Int</T><D>1</D></DataLevels>
+<FastIMShape UserName="FastIMShape" Help="8244"><T>Bool</T><D>1</D></FastIMShape>
+<IsActive UserName="IsActive" Help="369"><T>Int</T><D>1</D></IsActive>
+<LOPeakOnly UserName="LOPeakOnly" Help="8245"><T>Bool</T><D>1</D></LOPeakOnly>
+<LinearizeNonlinSubCkt UserName="Linearize Nonlinear Subcircuits" Help="1212"><T>Bool</T><D>0</D></LinearizeNonlinSubCkt>
+<NeedRun><T>Bool</T><D>0</D></NeedRun>
+<OddIMOnly UserName="OddIMOnly" Help="8242"><T>Bool</T><D>0</D></OddIMOnly>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowComponents UserName="ShowComponents" Help="8252"><T>Bool</T><D>1</D></ShowComponents>
+<ShowContrib UserName="ShowSpecContrib" Help="8247"><T>Int</T><D>1</D></ShowContrib>
+<ShowImods UserName="ShowIntermods" Help="8249"><T>Int</T><D>1</D></ShowImods>
+<ShowIntermods UserName="ShowIntermods" Help="8249"><T>Bool</T><D>1</D></ShowIntermods>
+<ShowNoise UserName="ShowNoise" Help="8250"><T>Bool</T><D>0</D></ShowNoise>
+<ShowPhaseNoise UserName="ShowPhaseNoise" Help="8314"><T>Bool</T><D>1</D></ShowPhaseNoise>
+<ShowSignals UserName="ShowSignals" Help="8251"><T>Bool</T><D>1</D></ShowSignals>
+<ShowTotalNoise UserName="ShowTotalNoise" Help="8536"><T>Bool</T><D>1</D></ShowTotalNoise>
+<ShowTotals UserName="ShowTotals" Help="8248"><T>Bool</T><D>1</D></ShowTotals>
+<UseSourcePts UserName="UseSourcePts" Help="8318"><T>Bool</T><D>0</D></UseSourcePts>
+<Item XName="AnalFreqStart" UserName="AnalyzerFreqStart" Help="8236" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="AnalFreqStep" UserName="AnalyzerFreqStep" Help="8238" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="AnalFreqStop" UserName="AnalyzerFreqStop" Help="8237" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="AnalNoiseFloor" UserName="AnalyzerNoiseFloor" Help="8235" Type="Param">
+<DataEntry>-150</DataEntry>
+<Unit><T>Int</T><D>11002</D></Unit></Item>
+<Item XName="AnalRBW" UserName="AnalyzerRBW" Help="8234" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="CalcLinkOpPoint" UserName="CalcLinkOpPoint" Help="8535" Type="Param">
+<Data><T>Bool</T><D>0</D></Data></Item>
+<Item XName="CalcMixerInfoOnly" UserName="MixerOnly" Help="8534" Type="Param">
+<Data><T>Bool</T><D>0</D></Data></Item>
+<Item XName="CarrierRange" UserName="CarrierRange" Help="8505" Type="Param">
+<DataEntry>20</DataEntry>
+<Unit><T>Int</T><D>15002</D></Unit></Item>
+<Item XName="ChanBW" UserName="ChanBW" Help="8218" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="CompThres" UserName="CompThres" Help="8232" Type="Param">
+<DataEntry>-200</DataEntry>
+<Unit><T>Int</T><D>11002</D></Unit></Item>
+<Item XName="ConfigurationName" Type="Param">
+<Data />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="DCAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>System1_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="DataParts" Type="Param">
+<Data><T>Array_BString</T><D>1;12;Output;Split90_1;Split90_2;Split180_1;Split180_2;Split180_3;Split180_4;RFAmp1;RFAmp2;RFAmp3;RFAmp4;Source</D></Data></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>Sch1</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="ElimSpec" UserName="ElimSpec" Help="8506" Type="Param">
+<Data><T>Int</T><D>0</D></Data></Item>
+<Item XName="ExcludeParts" Type="Param">
+<Data><T>Array_BString</T><D>1;0;</D></Data></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data /></Item>
+<Item XName="IgnoreFreqAbove" UserName="IgnoreFreqAbove" Help="8220" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="IgnoreFreqBelow" UserName="IgnoreFreqBelow" Help="8221" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="IgnorePwrLvl" UserName="IgnorePwrLvl" Help="8219" Type="Param">
+<DataEntry>-200</DataEntry>
+<Unit><T>Int</T><D>11002</D></Unit></Item>
+<Item XName="MaxNumSpec" UserName="MaxSpectrums" Help="8224" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="MaxOrder" UserName="MaxOrder" Help="8239" Type="Param">
+<DataEntry>5</DataEntry>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="MinSourcePts" UserName="MinSourcePts" Help="8317" Type="Param">
+<DataEntry>2</DataEntry>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="NoisePointBW" UserName="NoiseBW" Help="8227" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="NoisePtsInBW" UserName="NoisePtsBW" Help="8226" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="NominalZ0" UserName="NominalZo" Help="8233" Type="Param">
+<DataEntry>50</DataEntry>
+<Unit><T>Int</T><D>2001</D></Unit></Item>
+<Item XName="NumNoisePts" UserName="NoisePts" Help="8225" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="PhaseNoiseOffset" UserName="PNOffsets" Help="8513" Type="Param">
+<DataEntry />
+<Unit><T>Int</T><D>1002</D></Unit></Item>
+<Item XName="RedundantRange" UserName="ElimRange" Help="8507" Type="Param">
+<DataEntry>50</DataEntry>
+<Unit><T>Int</T><D>15002</D></Unit></Item>
+<Item XName="RoomTemp" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>21</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="ShowPNin1HzBW" UserName="Show1HzBW" Help="8514" Type="Param">
+<Data><T>Int</T><D>0</D></Data></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>16.85</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="UseCarrierRange" UserName="UseCarrierRange" Help="8504" Type="Param">
+<Data><T>Int</T><D>0</D></Data></Item>
+<Item XName="UsePrevSolution" UserName="UsePrevSolution" Help="8511" Type="Param">
+<Data><T>Int</T><D>0</D></Data></Item>
+<Item XName="UseSpecReduction" UserName="UseSpecReduction" Help="8509" Type="Param">
+<Data><T>Int</T><D>1</D></Data></Item>
+<Item XName="UseWithin" UserName="UseWithin" Help="8201" Type="Param">
+<DataEntry>-600</DataEntry>
+<Unit><T>Int</T><D>13001</D></Unit></Item>
+<Item XName="WarnRange" UserName="WarningRange" Help="8240" Type="Param">
+<DataEntry>3.0102999566</DataEntry>
+<Unit><T>Int</T><D>13001</D></Unit></Item></Item></Item>
+<Item XName="Conversion_Log" Type="Notes">
+<HadConversionIssue><T>Bool</T><D>1</D></HadConversionIssue>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;Text&gt;&lt;H2&gt;Conversion Report&lt;/H2&gt;The workspace you loaded has been converted to the current version on Tue Mar 10 15:00:20 2020.&lt;H2&gt;Conversion Notes&lt;/H2&gt;The workspace you loaded reported one or more messages about the conversion process, which are listed below.&lt;BR&gt;&lt;UL&gt;&lt;LI&gt;&lt;span style = &quot;background-color: #B4FFB4&quot;&gt;Information&lt;/span&gt;: VersionConverter: Converter has run successfuly.&lt;/LI&gt;&lt;LI&gt;&lt;span style = &quot;background-color: #B4FFB4&quot;&gt;Information&lt;/span&gt;: MultiSourceConverterConverter: Converter has run successfuly.&lt;/LI&gt;&lt;/UL&gt;&lt;/Text&gt;</Text>
+<Item XName="Page" Type="PageMgr" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>0</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList">
+<UseAuto><T>Bool</T><D>1</D></UseAuto>
+<Item XName="Tune0" Type="TuneParam">
+<Param>WorkspaceVariables\VarBlock\Iso</Param></Item></Item>
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="GainBalA" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="GainBalB" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="GainBalC" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="GainBalD" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="GainBalE" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="GainBalF" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Iso" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>60</D></Data>
+<Tunable><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="Phase0E" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Phase0F" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Phase270A" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-270</D></Data></Item>
+<Item XName="Phase270B" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-270</D></Data></Item>
+<Item XName="Phase270C" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-270</D></Data></Item>
+<Item XName="Phase270D" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-270</D></Data></Item>
+<Item XName="Phase90A" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-90</D></Data></Item>
+<Item XName="Phase90B" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-90</D></Data></Item>
+<Item XName="Phase90C" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-90</D></Data></Item>
+<Item XName="Phase90D" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-90</D></Data></Item>
+<Item XName="Phase90E" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-90</D></Data></Item>
+<Item XName="Phase90F" Type="Variable">
+<Creator>Equation</Creator>
+<Data><T>Double</T><D>-90</D></Data></Item></Item></Item></Item>

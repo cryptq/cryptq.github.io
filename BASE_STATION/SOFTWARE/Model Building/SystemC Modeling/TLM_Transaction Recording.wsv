@@ -1,0 +1,2391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;TC;i9</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2018:323:15:50</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2011.03</D></Ver>
+<Version>1.21</Version>
+<Item XName="AT Design" UserName="AT Design" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="SC1" UserName="SC1" Type="SystemC Analysis">
+<AutoRecalc><T>Int</T><D>0</D></AutoRecalc>
+<DebugMode><T>Int</T><D>0</D></DebugMode>
+<EnableRunToStarvation><T>Int</T><D>1</D></EnableRunToStarvation>
+<EnableTransactionRecording><T>Int</T><D>1</D></EnableTransactionRecording>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="ConfigurationName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>SC1_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>at_4_phase</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>1000</D></Data>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="Num_Samples_SC" Type="Param">
+<DataEntry>1000</DataEntry></Item>
+<Item XName="Sample_Rate" Type="Param">
+<Data><T>Double</T><D>1000000</D></Data>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="Start_Time_SC" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Stop_Time_SC" Type="Param">
+<DataEntry>1000</DataEntry>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>0.001</D></Data>
+<Unit><T>Int</T><D>7001</D></Unit></Item></Item>
+<Item XName="SC1_Data" UserName="SC1_Data" Type="DataSet">
+<FullPath>AT Design\SC1_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>SystemC Analysis : SC1&#x000D;&#x000A;18/12/2014..10:27 AM&#x000D;&#x000A;Ambient Temperature[C]=16.850000&#x000D;&#x000A;&#x000D;&#x000A;             SystemC 2.3.0-ASI --- Jan 30 2013 11:10:22&#x000D;&#x000A;        Copyright (c) 1996-2012 by all Contributors,&#x000D;&#x000A;        ALL RIGHTS RESERVED&#x000D;&#x000A;&#x000D;&#x000A;Elaboration took: 0.000000 seconds(CPU time).&#x000D;&#x000A;&#x000D;&#x000A;Info: traffic_generator.cpp: 0 s - traffic_generator_thread&#x000D;&#x000A;      Initiator: 101 Starting Traffic&#x000D;&#x000A;&#x000D;&#x000A;Info: traffic_generator.cpp: 0 s - traffic_generator_thread&#x000D;&#x000A;      Initiator: 102 Starting Traffic&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 0 s - initiator_thread&#x000D;&#x000A;      Initiator: 101 starting new transaction for Addr:0x00000100&#x000D;&#x000A;      Initiator: 101 nb_transport_fw (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 0 s - initiator_thread&#x000D;&#x000A;      Initiator: 101 ACCEPTED (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;      Initiator: 101 transaction waiting end-request on backward-path &#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 0 s - initiator_thread&#x000D;&#x000A;      Initiator: 102 starting new transaction for Addr:0x00000200&#x000D;&#x000A;      Initiator: 102 nb_transport_fw (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 0 s - initiator_thread&#x000D;&#x000A;      Initiator: 102 ACCEPTED (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;      Initiator: 102 transaction waiting end-request on backward-path &#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 0 s - nb_transport_fw&#x000D;&#x000A;      Target: 202 nb_transport_fw (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;      Target: 202 ACCEPTED (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 10 ns - end_request_method&#x000D;&#x000A;      Target: 202 starting end-request method&#x000D;&#x000A;      Target: 202 transaction moved to send-response PEQ &#x000D;&#x000A;      Target: 202 nb_transport_bw (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 10 ns - end_request_method&#x000D;&#x000A;      Target: 202 ACCEPTED (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 10 ns - nb_transport_bw&#x000D;&#x000A;      Initiator: 101 nb_transport_bw (GP, END_REQ, 0 s)from Addr:0x00000100&#x000D;&#x000A;      Initiator: 101 transaction waiting begin-response on backward path&#x000D;&#x000A;      Initiator: 101 ACCEPTED (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 10 ns - nb_transport_fw&#x000D;&#x000A;      Target: 202 nb_transport_fw (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;      Target: 202 ACCEPTED (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 20 ns - end_request_method&#x000D;&#x000A;      Target: 202 starting end-request method&#x000D;&#x000A;      Target: 202 transaction moved to send-response PEQ &#x000D;&#x000A;      Target: 202 nb_transport_bw (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 20 ns - end_request_method&#x000D;&#x000A;      Target: 202 ACCEPTED (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 20 ns - nb_transport_bw&#x000D;&#x000A;      Initiator: 102 nb_transport_bw (GP, END_REQ, 0 s)from Addr:0x00000200&#x000D;&#x000A;      Initiator: 102 transaction waiting begin-response on backward path&#x000D;&#x000A;      Initiator: 102 ACCEPTED (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 40 ns - begin_response_method&#x000D;&#x000A;      Target: 202 starting response method&#x000D;&#x000A;&#x000D;&#x000A;Info: memory.cpp: 40 ns - print&#x000D;&#x000A;      ID: 202 COMMAND: WRITE Length: 04&#x000D;&#x000A;      Addr: 0x0000000000000100 Data: 0x00000100&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 40 ns - begin_response_method&#x000D;&#x000A;      Target: 202 nb_transport_bw (GP, BEGIN_RESP, SC_ZERO_TIME)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 40 ns - begin_response_method&#x000D;&#x000A;      Target: 202 ACCEPTED (GP, BEGIN_RESP, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 40 ns - nb_transport_bw&#x000D;&#x000A;      Initiator: 101 nb_transport_bw (GP, BEGIN_RESP, 0 s)from Addr:0x00000100&#x000D;&#x000A;      Initiator: 101 transaction moved to send-end-response PEQ &#x000D;&#x000A;      Initiator: 101 ACCEPTED (GP, BEGIN_RESP, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 47 ns - send_end_rsp_method&#x000D;&#x000A;      Initiator: 101 starting send-end-response method&#x000D;&#x000A;      Initiator: 101 nb_transport_fw (GP, END_RESP, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 47 ns - send_end_rsp_method&#x000D;&#x000A;      Initiator: 101 COMPLETED (GP, END_RESP, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 47 ns - initiator_thread&#x000D;&#x000A;      Initiator: 101 starting new transaction for Addr:0x00000104&#x000D;&#x000A;      Initiator: 101 nb_transport_fw (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 47 ns - initiator_thread&#x000D;&#x000A;      Initiator: 101 ACCEPTED (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;      Initiator: 101 transaction waiting end-request on backward-path &#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 47 ns - nb_transport_fw&#x000D;&#x000A;      Target: 202 nb_transport_fw (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;      Target: 202 ACCEPTED (GP, BEGIN_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 57 ns - end_request_method&#x000D;&#x000A;      Target: 202 starting end-request method&#x000D;&#x000A;      Target: 202 transaction moved to send-response PEQ &#x000D;&#x000A;      Target: 202 nb_transport_bw (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: at_target_4_phase.cpp: 57 ns - end_request_method&#x000D;&#x000A;      Target: 202 ACCEPTED (GP, END_REQ, 0 s)&#x000D;&#x000A;&#x000D;&#x000A;Info: select_initiator.cpp: 57 ns - nb_transport_bw&#x000D;&#x000A;      Initiator: 101 nb_transport_bw (GP, END_REQ, 0 s)from Addr:0x00000104&#x000D;&#x000A;      Initiator: 101 transaction waiting begin-response on backward path&#x000D;&#x000A;      Initiator: 101 ACCEPTED (GP, END_REQ, 0 s)&#x000D;&#x000A;Simulation took: 0.015000 seconds(CPU time).&#x000D;&#x000A;Serialization took: 0.000000 seconds(CPU time).&#x000D;&#x000A;Execution time: 36.831 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;tM24;yA24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;7aTGsnLrJ34;aUIw9foN734</D></PVPort>
+<SelVar>LogOutput</SelVar>
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.2</D></Split>
+<SubSplit><T>Double</T><D>0.5030959752321982</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;F;D1;aB;tE</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item></Item>
+<Item XName="at_4_phase" UserName="at_4_phase" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>I1</PartID>
+<PinName>initiator_socket</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>I2</PartID>
+<PinName>initiator_socket</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>A1</PartID>
+<PinName>m_memory_socket</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>A2</PartID>
+<PinName>m_memory_socket</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>S1</PartID>
+<PinName>target_socket_0</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>S1</PartID>
+<PinName>target_socket_1</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>S1</PartID>
+<PinName>initiator_socket_0</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>S1</PartID>
+<PinName>initiator_socket_1</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;dP24;{D24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;}dwVgl2EM34;UctPU770A34</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;{{}}}}}}}}}};f;cB;mF</D></Window>
+<ZOrder><T>Int</T><D>3</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="A1" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>at_target_4_phase@TLM Models</Model>
+<ModelID />
+<Netlist>m_memory_socket,2?Connect2</Netlist>
+<ParentPartName>at_target_4_phase@TLM Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>at_target_4_phase@TLM Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>201</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>10</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_1</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>50</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>30</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>201</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>10</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_1</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>50</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>30</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="A2" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>at_target_4_phase@TLM Models</Model>
+<ModelID />
+<Netlist>m_memory_socket,3?Connect3</Netlist>
+<ParentPartName>at_target_4_phase@TLM Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>at_target_4_phase@TLM Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>202</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>10</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>50</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>30</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>202</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>10</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>50</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>30</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="I1" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>initiator_top@TLM Models</Model>
+<ModelID />
+<Netlist>initiator_socket,1?Connect0</Netlist>
+<ParentPartName>initiator_top@TLM Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>initiator_top@TLM Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>101</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="active_txn_count" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000100</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000100</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>101</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="active_txn_count" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000100</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000100</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item>
+<Item XName="I2" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>initiator_top@TLM Models</Model>
+<ModelID />
+<Netlist>initiator_socket,4?Connect1</Netlist>
+<ParentPartName>initiator_top@TLM Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>initiator_top@TLM Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>102</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="active_txn_count" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000200</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000200</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>102</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="active_txn_count" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000200</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000200</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item>
+<Item XName="S1" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SimpleBusAT@TLM Models</Model>
+<ModelID />
+<Netlist>target_socket_0,4?Connect1|target_socket_1,1?Connect0|initiator_socket_0,3?Connect3|initiator_socket_1,2?Connect2</Netlist>
+<ParentPartName>SimpleBusAT@TLM Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SimpleBusAT@TLM Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="IOInfo" Type="PartParam">
+<Data>target_socket_0?1?0?1?1#target_socket_1?1?0?1?1#initiator_socket_0?0?0?1?1#initiator_socket_1?0?0?1?1#</Data>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NR_OF_INITIATORS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NR_OF_TARGETS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowTemplateParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<DocSymbol />
+<Enum>SimpleBusAT__ShowTemplateParameters@TLM Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SystemCIOInfo" Type="PartParam">
+<DataEntry>target_socket;NR_OF_INITIATORS;1;1#initiator_socket;NR_OF_TARGETS;0;1#</DataEntry>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="IOInfo" Type="PartParam">
+<Data>target_socket_0?1?0?1?1#target_socket_1?1?0?1?1#initiator_socket_0?0?0?1?1#initiator_socket_1?0?0?1?1#</Data>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NR_OF_INITIATORS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NR_OF_TARGETS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowTemplateParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<DocSymbol />
+<Enum>SimpleBusAT__ShowTemplateParameters@TLM Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SystemCIOInfo" Type="PartParam">
+<DataEntry>target_socket;NR_OF_INITIATORS;1;1#initiator_socket;NR_OF_TARGETS;0;1#</DataEntry>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.2159</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WNg24;Gl24;GF24;Gl24;GF24;WQe24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WNg24;Wcm24;GF24;Wcm24;GF24;G1q24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;G1q24;Gl24;Mx24;Gl24;Mx24;Rd24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;G1q24;Wcm24;Mx24;Wcm24;Mx24;G{r24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;lO24;q224</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;Ccz}b5}1N2C;3g6kycAkY24;w}eCs}Vj334;I9eeKHiYw24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>8500</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>11000</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>I1</Designator>
+<PosX><T>Double</T><D>-1000</D></PosX>
+<PosY><T>Double</T><D>2499.999999999945</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1404</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pI1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>I1 {initiator_top@TLM Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=101</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_pactive_txn_count" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>active_txn_count=2</Text></Item>
+<Item XName="_pbase_address_1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>base_address_1=0x0000000000000100</Text></Item>
+<Item XName="_pbase_address_2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>base_address_2=0x0000000010000100</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>A1</Designator>
+<PosX><T>Double</T><D>6750</D></PosX>
+<PosY><T>Double</T><D>2374.99999999999</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pA1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>A1 {at_target_4_phase@TLM Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=201</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>902.5600000000001</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_paccept_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>accept_delay=10 ns</Text></Item>
+<Item XName="_pmemory_size" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>memory_size=4*1024</Text></Item>
+<Item XName="_pmemory_socket" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>memory_socket=memory_socket_1</Text></Item>
+<Item XName="_pmemory_width" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>memory_width=4</Text></Item>
+<Item XName="_pread_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>676.9200000000001</D></PosY>
+<Text>read_response_delay=50 ns</Text></Item>
+<Item XName="_pwrite_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>789.7400000000001</D></PosY>
+<Text>write_response_delay=30 ns</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>A2</Designator>
+<PosX><T>Double</T><D>6750.000000000014</D></PosX>
+<PosY><T>Double</T><D>4999.999999999987</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pA2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>A2 {at_target_4_phase@TLM Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=202</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>902.5600000000001</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_paccept_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>accept_delay=10 ns</Text></Item>
+<Item XName="_pmemory_size" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>memory_size=4*1024</Text></Item>
+<Item XName="_pmemory_socket" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>memory_socket=memory_socket_2</Text></Item>
+<Item XName="_pmemory_width" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>memory_width=4</Text></Item>
+<Item XName="_pread_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>676.9200000000001</D></PosY>
+<Text>read_response_delay=50 ns</Text></Item>
+<Item XName="_pwrite_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>789.7400000000001</D></PosY>
+<Text>write_response_delay=30 ns</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>S1</Designator>
+<PosX><T>Double</T><D>3125</D></PosX>
+<PosY><T>Double</T><D>3500</D></PosY>
+<Selected><T>Bool</T><D>1</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pS1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>S1 {SimpleBusAT@TLM Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pNR_OF_INITIATORS" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>NR_OF_INITIATORS=2</Text></Item>
+<Item XName="_pNR_OF_TARGETS" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>NR_OF_TARGETS=2</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_pShowTemplateParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ShowTemplateParameters=YES</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>I2</Designator>
+<PosX><T>Double</T><D>-999.9999999999964</D></PosX>
+<PosY><T>Double</T><D>4500.000000000004</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1404</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pI2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>I2 {initiator_top@TLM Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=102</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_pactive_txn_count" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>active_txn_count=2</Text></Item>
+<Item XName="_pbase_address_1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>base_address_1=0x0000000000000200</Text></Item>
+<Item XName="_pbase_address_2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>base_address_2=0x0000000010000200</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.2794</D></Data></Item></Item></Item></Item>
+<Item XName="Equation1" UserName="Equation1" Type="Equation">
+<Selected><T>Bool</T><D>0</D></Selected>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="EquationDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;kD24;QI24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;fKfIbgEo934;wTctPU8yF34</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.3</D></Split>
+<Split2><T>Double</T><D>0.3</D></Split2>
+<Window><T>Array_I64</T><D>1;4;82;C7;Z9;eP</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder></Item></Item>
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=1.0000000000000000e-03;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1.0000000000000000e+06;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1.0000000000000000e+03;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0.0000000000000000e+00;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1.0000000000000002e-06;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1.0000000000000000e+03;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="Data_Persistence" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="FREQ" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000000</D></Data></Item>
+<Item XName="Freq_Resolution" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Num_Samples" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1001</D></Data></Item>
+<Item XName="Num_Samples_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000</D></Data></Item>
+<Item XName="Sample_Rate" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1000000</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="Start_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Start_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="Stop_Time_SC" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>1e-06</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="TEMPERATURE" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>16.85</D></Data></Item>
+<Item XName="TIME" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0</D></Data></Item>
+<Item XName="Time_Spacing" Type="Variable">
+<Creator>GlobalEqns</Creator>
+<Data><T>Double</T><D>0.001</D></Data>
+<SIUnits />
+<Unit><T>Int</T><D>7004</D></Unit></Item></Item></Item>
+<Item XName="LT Design" UserName="LT Design" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="SC2" UserName="SC2" Type="SystemC Analysis">
+<AutoRecalc><T>Int</T><D>0</D></AutoRecalc>
+<DebugMode><T>Int</T><D>0</D></DebugMode>
+<EnableRunToStarvation><T>Int</T><D>1</D></EnableRunToStarvation>
+<EnableTransactionRecording><T>Int</T><D>1</D></EnableTransactionRecording>
+<NeedRun><T>Bool</T><D>1</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<Selected><T>Bool</T><D>1</D></Selected>
+<Item XName="ConfigurationName" Type="Param">
+<DataEntry />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>SC2_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>lt</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>1000</D></Data>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="Num_Samples_SC" Type="Param">
+<DataEntry>1000</DataEntry></Item>
+<Item XName="Sample_Rate" Type="Param">
+<Data><T>Double</T><D>1000000</D></Data>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="Start_Time_SC" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Stop_Time_SC" Type="Param">
+<DataEntry>500</DataEntry>
+<Unit><T>Int</T><D>7001</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>0.001</D></Data>
+<Unit><T>Int</T><D>7001</D></Unit></Item></Item>
+<Item XName="SC2_Data" UserName="SC2_Data" Type="DataSet">
+<FullPath>LT Design\SC2_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>SystemC Analysis : SC2&#x000D;&#x000A;18/12/2014..10:32 AM&#x000D;&#x000A;Ambient Temperature[C]=16.850000&#x000D;&#x000A;Execution time: 67.591 sec&#x000D;&#x000A;</Data></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;mL24;Wv14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;6DQqeHltI34;COmW13{7s24</D></PVPort>
+<SelVar />
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.2</D></Split>
+<SubSplit><T>Double</T><D>0.2</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;81;G2;wB;39</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder></Item></Item></Item>
+<Item XName="lt" UserName="lt" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>S1</PartID>
+<PinName>target_socket_0</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>S1</PartID>
+<PinName>target_socket_1</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>S1</PartID>
+<PinName>initiator_socket_0</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>S1</PartID>
+<PinName>initiator_socket_1</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>A1</PartID>
+<PinName>m_memory_socket</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect3</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>L1</PartID>
+<PinName>m_memory_socket</PinName>
+<SchObject>Part5</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect3</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>I1</PartID>
+<PinName>top_initiator_socket</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>4</ResolvedNetName>
+<SchObject>Connect1</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>I2</PartID>
+<PinName>top_initiator_socket</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect1</MappedSchObject>
+<NetName>4</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;dP24;{D24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;}dwVgl2EM34;UctPU770A34</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;e{}}}}}}}}}};e;FB;lF</D></Window>
+<ZOrder><T>Int</T><D>4</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="A1" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>at_target_1_phase@TLM_LT Models</Model>
+<ModelID />
+<Netlist>m_memory_socket,3?Connect2</Netlist>
+<ParentPartName>at_target_1_phase@TLM_LT Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>at_target_1_phase@TLM_LT Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>201</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>at_target_1_phase__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>20</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_1</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>100</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>60</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>201</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>at_target_1_phase__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>20</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_1</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>100</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>60</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="I1" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>initiator_top@TLM_LT Models</Model>
+<ModelID />
+<Netlist>top_initiator_socket,2?Connect0</Netlist>
+<ParentPartName>initiator_top@TLM_LT Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>initiator_top@TLM_LT Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>101</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>initiator_top__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>101</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>initiator_top__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item>
+<Item XName="I2" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>initiator_top@TLM_LT Models</Model>
+<ModelID />
+<Netlist>top_initiator_socket,4?Connect1</Netlist>
+<ParentPartName>initiator_top@TLM_LT Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>initiator_top@TLM_LT Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>102</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>initiator_top__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>102</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>initiator_top__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="base_address_1" Type="PartParam">
+<DataEntry>0x0000000000000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="base_address_2" Type="PartParam">
+<DataEntry>0x0000000010000000</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item>
+<Item XName="L1" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>lt_target@TLM_LT Models</Model>
+<ModelID />
+<Netlist>m_memory_socket,1?Connect3</Netlist>
+<ParentPartName>lt_target@TLM_LT Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>lt_target@TLM_LT Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>202</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>lt_target__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>10</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>50</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>30</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ID" Type="PartParam">
+<DataEntry>202</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>lt_target__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="accept_delay" Type="PartParam">
+<DataEntry>10</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="memory_size" Type="PartParam">
+<DataEntry>4*1024</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_socket" Type="PartParam">
+<DataEntry>memory_socket_2</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="memory_width" Type="PartParam">
+<DataEntry>4</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="read_response_delay" Type="PartParam">
+<DataEntry>50</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="write_response_delay" Type="PartParam">
+<DataEntry>30</DataEntry>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>7001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="S1" Type="Part">
+<Category />
+<Description>User-defined SystemC Module</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>SimpleBusLT@TLM_LT Models</Model>
+<ModelID />
+<Netlist>target_socket_0,4?Connect1|target_socket_1,2?Connect0|initiator_socket_0,1?Connect3|initiator_socket_1,3?Connect2</Netlist>
+<ParentPartName>SimpleBusLT@TLM_LT Parts</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>SimpleBusLT@TLM_LT Models</ModelName>
+<SymbolName>AutoSymDF{SystemC}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="IOInfo" Type="PartParam">
+<Data>target_socket_0?1?0?1?1#target_socket_1?1?0?1?1#initiator_socket_0?0?0?1?1#initiator_socket_1?0?0?1?1#</Data>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NR_OF_INITIATORS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NR_OF_TARGETS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>SimpleBusLT__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowTemplateParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<DocSymbol />
+<Enum>SimpleBusLT__ShowTemplateParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SystemCIOInfo" Type="PartParam">
+<DataEntry>target_socket;NR_OF_INITIATORS;1;1#initiator_socket;NR_OF_TARGETS;0;1#</DataEntry>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="IOInfo" Type="PartParam">
+<Data>target_socket_0?1?0?1?1#target_socket_1?1?0?1?1#initiator_socket_0?0?0?1?1#initiator_socket_1?0?0?1?1#</Data>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="InsertConfigFunctions" Type="PartParam">
+<DataEntry />
+<DocSymbol />
+<HideCondition>ShowAdvancedParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NR_OF_INITIATORS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="NR_OF_TARGETS" Type="PartParam">
+<DataEntry>2</DataEntry>
+<DocSymbol />
+<HideCondition>ShowTemplateParameters==0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="ShowAdvancedParameters" Type="PartParam">
+<DataEntry>0</DataEntry>
+<DocSymbol />
+<Enum>SimpleBusLT__ShowAdvancedParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowTemplateParameters" Type="PartParam">
+<DataEntry>1</DataEntry>
+<DocSymbol />
+<Enum>SimpleBusLT__ShowTemplateParameters@TLM_LT Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SystemCIOInfo" Type="PartParam">
+<DataEntry>target_socket;NR_OF_INITIATORS;1;1#initiator_socket;NR_OF_TARGETS;0;1#</DataEntry>
+<DocSymbol />
+<HideCondition>true</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>4</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.2159</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WNg24;Gl24;GF24;Gl24;GF24;WQe24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect1" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WNg24;Wcm24;GF24;Wcm24;GF24;G1q24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;G1q24;Gl24;Goz24;Gl24;Goz24;Rd24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;G1q24;Wcm24;Mx24;Wcm24;Mx24;G{r24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;EP24;cC24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;Ccz}b5}1N2C;3g6kycAkY24;w}eCs}Vj334;qh{4G3AV134</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.90909090909091</D></Size></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>8500</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>11000</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>A1</Designator>
+<PosX><T>Double</T><D>7375.000000000005</D></PosX>
+<PosY><T>Double</T><D>2375.000000000001</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pA1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>A1 {at_target_1_phase@TLM_LT Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=201</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>902.5600000000001</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_paccept_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>accept_delay=20 ns</Text></Item>
+<Item XName="_pmemory_size" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>memory_size=4*1024</Text></Item>
+<Item XName="_pmemory_socket" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>memory_socket=memory_socket_1</Text></Item>
+<Item XName="_pmemory_width" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>memory_width=4</Text></Item>
+<Item XName="_pread_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>676.9200000000001</D></PosY>
+<Text>read_response_delay=100 ns</Text></Item>
+<Item XName="_pwrite_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>789.7400000000001</D></PosY>
+<Text>write_response_delay=60 ns</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>I1</Designator>
+<PosX><T>Double</T><D>-999.9999999999995</D></PosX>
+<PosY><T>Double</T><D>2500.000000000001</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1404</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pI1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>I1 {initiator_top@TLM_LT Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=101</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_pbase_address_1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>base_address_1=0x0000000000000000</Text></Item>
+<Item XName="_pbase_address_2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>base_address_2=0x0000000010000000</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>I2</Designator>
+<PosX><T>Double</T><D>-1000.000000000001</D></PosX>
+<PosY><T>Double</T><D>4500.000000000002</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1404</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pI2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>I2 {initiator_top@TLM_LT Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=102</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_pbase_address_1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>base_address_1=0x0000000000000000</Text></Item>
+<Item XName="_pbase_address_2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>base_address_2=0x0000000010000000</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>S1</Designator>
+<PosX><T>Double</T><D>3125.000059842659</D></PosX>
+<PosY><T>Double</T><D>3499.999960821921</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pS1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>S1 {SimpleBusLT@TLM_LT Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pNR_OF_INITIATORS" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>NR_OF_INITIATORS=2</Text></Item>
+<Item XName="_pNR_OF_TARGETS" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>NR_OF_TARGETS=2</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_pShowTemplateParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ShowTemplateParameters=YES</Text></Item></Item></Item>
+<Item XName="Part5" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>User-defined SystemC Module</Description>
+<Designator>L1</Designator>
+<PosX><T>Double</T><D>6749.999999999979</D></PosX>
+<PosY><T>Double</T><D>4999.999999999995</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{SystemC}</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>846</D></PosX>
+<PosY><T>Double</T><D>1045</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pL1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>L1 {lt_target@TLM_LT Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pID" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>112.82</D></PosY>
+<Text>ID=202</Text></Item>
+<Item XName="_pShowAdvancedParameters" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>902.5600000000001</D></PosY>
+<Text>ShowAdvancedParameters=NO</Text></Item>
+<Item XName="_paccept_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>564.1</D></PosY>
+<Text>accept_delay=10 ns</Text></Item>
+<Item XName="_pmemory_size" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>338.46</D></PosY>
+<Text>memory_size=4*1024</Text></Item>
+<Item XName="_pmemory_socket" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>225.64</D></PosY>
+<Text>memory_socket=memory_socket_2</Text></Item>
+<Item XName="_pmemory_width" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>451.28</D></PosY>
+<Text>memory_width=4</Text></Item>
+<Item XName="_pread_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>676.9200000000001</D></PosY>
+<Text>read_response_delay=50 ns</Text></Item>
+<Item XName="_pwrite_response_delay" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>789.7400000000001</D></PosY>
+<Text>write_response_delay=30 ns</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.2794</D></Data></Item></Item></Item></Item>
+<Item XName="Note" UserName="Note" Type="Notes">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;FONT size=6&gt;&amp;nbsp;&lt;/FONT&gt; &lt;FONT size=5 face=Arial&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 18pt&quot;&gt;&lt;STRONG&gt;&#x000D;&#x000A;&lt;P style=&quot;BORDER-BOTTOM: windowtext 0.75pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0in&quot; class=MsoTitle align=center&gt;&lt;FONT size=5 face=Arial&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 18pt&quot;&gt;&lt;STRONG&gt;TLM Transaction Recording&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P style=&quot;MARGIN: 0in 0in 0pt&quot; class=MsoBodyText align=center&gt;&lt;FONT size=2&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;Keysight Technologies SystemVue Example Workspace&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;This workspace contains&amp;nbsp;two&amp;nbsp;SystemC designs. Their purpose is to demonstrate&amp;nbsp;the Transaction Recording capability of SystemVue for SsytemC Designs containing models with TLM transaction sokects&lt;STRONG&gt;.&lt;/STRONG&gt; Both designs come from the examples&amp;nbsp;of the&amp;nbsp;official distribution of SystemC 2.3&amp;nbsp;from Accellera (&lt;A href=&quot;http://www.accellera.org/downloads/standards/systemc&quot;&gt;http://www.accellera.org/downloads/standards/systemc&lt;/A&gt;)&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;The first design is the &lt;EM&gt;&lt;STRONG&gt;at_4_phase&lt;/STRONG&gt;&lt;/EM&gt; and it demonstrates the recording feature in case of AT (Approximately-Timed) transactions.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;The other one is the&amp;nbsp;&lt;STRONG&gt;&lt;EM&gt;lt&lt;/EM&gt;&lt;/STRONG&gt;&amp;nbsp;and it demonstrates the feature in case of LT (Loosely-Timed) transactions.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;Before you can run the designs, you have to create the library of the models being used. All the source code needed is located in a subdirectory of the current directory.&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;For the AT Design follow these steps:&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;OL&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;&lt;SPAN style=&quot;LINE-HEIGHT: 115%; FONT-FAMILY: &apos;Calibri&apos;,&apos;sans-serif&apos;; FONT-SIZE: 11pt; mso-fareast-font-family: Calibri; mso-bidi-font-family: &apos;Times New Roman&apos;; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;&gt;Go to: Action &amp;gt; Create SystemC Models Library&#x2026;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/LI&gt;&lt;SPAN style=&quot;LINE-HEIGHT: 115%; FONT-FAMILY: &apos;Calibri&apos;,&apos;sans-serif&apos;; FONT-SIZE: 11pt; mso-fareast-font-family: Calibri; mso-bidi-font-family: &apos;Times New Roman&apos;; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level1 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;Fill the dialog:&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;UL&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level1 lfo1&quot; class=MsoNormal&gt;&lt;FONT face=Arial&gt;&lt;FONT size=2&gt;For&amp;nbsp;&#x201C;Library Name&#x201D; use&amp;nbsp;&#x201C;TLM&#x201D;. &lt;?xml:namespace prefix = o ns = &quot;urn:schemas-microsoft-com:office:office&quot; /&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT face=Arial&gt;&lt;FONT size=2&gt;Specify a &#x201C;Location&#x201D; where you have write-access&lt;o:p&gt;&lt;/o:p&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;&#x201C;Add&#x201D; SystemC Files ( select all the&amp;nbsp;files located in the subdirectory: TLM_Transaction_Recording Models/AT_models )&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;Change the tab to &quot;&lt;EM&gt;Build Options&lt;/EM&gt;&quot; and insert the value &lt;STRONG&gt;SC_INCLUDE_DYNAMIC_PROCESSES&lt;/STRONG&gt; in the &quot;&lt;EM&gt;Preprocessor Definitions&quot;&lt;/EM&gt; field&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;Click &#x201C;Create&#x201D;&lt;/FONT&gt;&lt;/LI&gt;&lt;/UL&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;When the SystemC Model Library process finishes, a library with the name &#x201C;TLM&#x201D; should exist in the Part Selector A window on the right.&lt;/FONT&gt;&lt;/LI&gt;&lt;/OL&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;For the LT Design follow these steps:&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;OL&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT size=2 face=Arial&gt;&lt;SPAN style=&quot;LINE-HEIGHT: 115%; FONT-FAMILY: &apos;Calibri&apos;,&apos;sans-serif&apos;; FONT-SIZE: 11pt; mso-fareast-font-family: Calibri; mso-bidi-font-family: &apos;Times New Roman&apos;; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;&gt;Go to: Action &amp;gt; Create SystemC Models Library&#x2026;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/LI&gt;&lt;SPAN style=&quot;LINE-HEIGHT: 115%; FONT-FAMILY: &apos;Calibri&apos;,&apos;sans-serif&apos;; FONT-SIZE: 11pt; mso-fareast-font-family: Calibri; mso-bidi-font-family: &apos;Times New Roman&apos;; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA&quot;&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level1 lfo1&quot; class=MsoNormal&gt;&lt;FONT face=Arial&gt;&lt;FONT size=2&gt;Fill the dialog:&lt;o:p&gt;&lt;/o:p&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;UL&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT face=Arial&gt;&lt;FONT size=2&gt;For&amp;nbsp;&#x201C;Library Name&#x201D; use&amp;nbsp;&#x201C;TLM_LT&#x201D;. &lt;o:p&gt;&lt;/o:p&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT face=Arial&gt;&lt;FONT size=2&gt;Specify a &#x201C;Location&#x201D; where you have write-access&lt;o:p&gt;&lt;/o:p&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;&#x201C;Add&#x201D; SystemC Files ( select all the&amp;nbsp;files located in the subdirectory: &lt;FONT color=#00c0c0&gt;TLM_Transaction_Recording Models/LT_models&lt;/FONT&gt; )&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;Change the tab to &quot;&lt;EM&gt;Build Options&lt;/EM&gt;&quot; and insert the value &lt;STRONG&gt;SC_INCLUDE_DYNAMIC_PROCESSES&lt;/STRONG&gt; in the &quot;&lt;EM&gt;Preprocessor Definitions&quot;&lt;/EM&gt; field&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;Click &#x201C;Create&#x201D;&lt;/FONT&gt;&lt;/LI&gt;&lt;/UL&gt;&#x000D;&#x000A;&lt;LI style=&quot;MARGIN: 0in 0in 10pt; mso-list: l0 level2 lfo1&quot; class=MsoNormal&gt;&lt;FONT size=2 face=Arial&gt;When the SystemC Model Library process finishes, a library with the name &#x201C;TLM_LT&#x201D; should exist in the Part Selector A window on the right.&lt;/FONT&gt;&lt;/LI&gt;&lt;/OL&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;EM&gt;For more information on &quot;SystemC Model Library&quot; consult &lt;FONT color=#000000&gt;SystemVue Documentation (under &lt;FONT color=#ff00ff&gt;Users Guide &amp;gt; Using SystemVue &amp;gt; User Defined Models &amp;gt; SystemC Models &amp;gt; SystemC Model Library&lt;/FONT&gt;).&lt;/FONT&gt;&lt;/EM&gt;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;After the libraries are loaded, you can start the simulation of the designs. When the SystemC simulation is finished, a pop-up window will be displayed, containing all the Transaction Streams discovered in the design (there should be 4 for each design in the current example). By double-clicking one of the recorded streams, you can see the graphic representation of all the transactions on this stream.&lt;/FONT&gt;&lt;/P&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;EM&gt;For more information on &quot;Transaction Recording&quot; consult &lt;FONT color=#000000&gt;SystemVue Documentation (under &lt;FONT color=#c80080&gt;&lt;FONT color=#ff00ff&gt;Simulation \ SystemC \ SystemC TLM&lt;/FONT&gt;&amp;nbsp;&lt;/FONT&gt;).&lt;/FONT&gt;&lt;/EM&gt;&lt;/FONT&gt;&lt;/P&gt;</Text>
+<ViewSource><T>Bool</T><D>1</D></ViewSource>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;I824;2224</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;RsiPpce7034;sMOSXjByt24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>3</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;66;U5</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="a" Type="Variable">
+<Creator>WorkspaceVariables</Creator>
+<Data><T>Double</T><D>4</D></Data></Item>
+<Item XName="b" Type="Variable">
+<Creator>WorkspaceVariables</Creator>
+<Data><T>Double</T><D>3</D></Data></Item></Item></Item></Item>

@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="SystemVueCustomUI.Sine_UI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <GroupBox Header="Amplitude" Height="52" VerticalAlignment="Top">
+            <Grid>
+                <TextBox Name="Amplitude" LostFocus="Amplitude_LostFocus"></TextBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Offset" Height="52" Margin="0,58,0,0" VerticalAlignment="Top">
+            <Grid>
+                <TextBox Name="Offset" LostFocus="Offset_LostFocus"></TextBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Frequency" Margin="0,116,0,0" Height="52" VerticalAlignment="Top">
+            <Grid>
+                <TextBox Name="Frequency" LostFocus="Frequency_LostFocus"></TextBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Phase" Margin="0,174,0,0" Height="52" VerticalAlignment="Top">
+            <Grid>
+                <TextBox Name="Phase" LostFocus="Phase_LostFocus"></TextBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="SampleRate" Margin="0,232,0,0" Height="52" VerticalAlignment="Top">
+            <Grid>
+                <TextBox Name="SampleRate" LostFocus="SampleRate_LostFocus"></TextBox>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

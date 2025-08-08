@@ -1,0 +1,13 @@
+﻿<Window x:Class="SystemVue.Plugins.StatusDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    FontFamily="Tahoma" SizeToContent="Height" Width="350"  ShowInTaskbar="False" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+        </Grid.RowDefinitions>
+        <TextBox Name="messageBox" IsReadOnly="True" TextWrapping="Wrap" />
+        <StatusBar Grid.Row="1" Name="statusBar" />
+    </Grid>
+</Window>

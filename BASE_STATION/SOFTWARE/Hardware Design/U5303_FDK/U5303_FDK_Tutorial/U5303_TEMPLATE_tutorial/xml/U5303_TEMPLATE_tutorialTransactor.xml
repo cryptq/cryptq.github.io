@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Transactor HROCSpecPath="U5303_TEMPLATE_tutorialHROC.xml" name="U5303_TEMPLATE_tutorial">
+<Initialize>
+<Write url="/U5303A_FDK_Design_tutorial/U5303_TEMPLATE_tutorial/FPGA0/Register">
+<Constant value="FromSystemVue" /></Write></Initialize>
+<Runtime>
+<ReadGroup>
+<Read url="/U5303A_FDK_Design_tutorial/U5303_TEMPLATE_tutorial/FPGA0/OutI">
+<Output index="0" /></Read>
+<Read url="/U5303A_FDK_Design_tutorial/U5303_TEMPLATE_tutorial/FPGA0/OutQ">
+<Output index="1" /></Read></ReadGroup></Runtime></Transactor>

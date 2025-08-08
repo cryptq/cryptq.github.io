@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceprocedure xsi:schemaLocation="http://tempuri.org/SequenceProcedureSchema.xsd" procedurename="Untitled" synopsis="No description yet." schemaVersion="7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tempuri.org/SequenceProcedureSchema.xsd">
+	<parameters>
+		<localvariables />
+		<inputparameters>
+			<inputparameter id="AttValue">
+				<scalartype basetype="Real64" />
+				<value>20</value>
+			</inputparameter>
+		</inputparameters>
+		<outputparameters>
+			<outputparameter id="overflowflag">
+				<scalartype basetype="Int32" />
+			</outputparameter>
+		</outputparameters>
+	</parameters>
+	<actions>
+		<connect configuration="MXA" address="" commandSet="5048fed0-d4d5-4271-94c9-92ceb6ba2dcb" source="SCPI" commandSetDesc="X-Series Signal Analyzers LTE FDD Commands / A.08.03" />
+		<do configuration="MXA" hierarchy="SCPI" path="INITiate:IMMediate" syntax="0">
+			<inputs />
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="SENSe:POWer:RF:ATTenuation" syntax="0">
+			<inputs>
+				<inputreference inputparameter="AttValue" />
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="STATus:QUEStionable:INTegrity:CONDition" syntax="0">
+			<inputs />
+			<outputs>
+				<outputreference outputparameter="overflowflag" />
+			</outputs>
+		</do>
+		<do configuration="MXA" hierarchy="SCPI" path="*WAI" syntax="0">
+			<inputs />
+			<outputs />
+		</do>
+	</actions>
+</sequenceprocedure>

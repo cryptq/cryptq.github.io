@@ -1,0 +1,2781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item Type="WorkspaceData">
+<ClientWnd><T>Array_I64</T><D>1;4;;;PC;e9</D></ClientWnd>
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Time>2018:323:15:55</Time>
+<ToolbarSize><T>Int</T><D>25</D></ToolbarSize>
+<Ver><T>Double</T><D>2011.1</D></Ver>
+<Version>1.21</Version>
+<Item XName="Designs" UserName="Designs" Type="Folder">
+<IsOpen><T>Bool</T><D>1</D></IsOpen>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Design1" UserName="Design1" Type="Design">
+<Intent><T>Int</T><D>1</D></Intent>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M2</PartID>
+<PinName>input2</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>6</NetName></Item></Item></Item></Item>
+<Item XName="N10" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="C2" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect5</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M2</PartID>
+<PinName>output</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>4</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect5</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M2</PartID>
+<PinName>LO</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>3</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>7</NetName></Item></Item></Item></Item>
+<Item XName="N3" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>M2</PartID>
+<PinName>quad_output</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>5</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>9</NetName></Item></Item></Item></Item>
+<Item XName="N4" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>LNA</PartID>
+<PinName>LNA_OUT</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>2</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N5" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect5</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>LNA</PartID>
+<PinName>RF_IN</PinName>
+<SchObject>Part0</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect5</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N6" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>0</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>1</D></Direction>
+<PartID>R1</PartID>
+<PinName>output</PinName>
+<SchObject>Part1</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item>
+<Item XName="N7" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>2</ResolvedNetName>
+<SchObject>Connect2</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>input</PartID>
+<PinName>input</PinName>
+<SchObject>Part2</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect2</MappedSchObject>
+<NetName>2</NetName></Item></Item></Item></Item>
+<Item XName="N8" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>1</ResolvedNetName>
+<SchObject>Connect4</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<IsMultiport><T>Bool</T><D>1</D></IsMultiport>
+<PartID>output</PartID>
+<PinName>input</PinName>
+<SchObject>Part3</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect4</MappedSchObject>
+<NetName>1</NetName></Item></Item></Item></Item>
+<Item XName="N9" Type="Nexus">
+<Item XName="C1" Type="ConnEndpoint">
+<Direction><T>Int</T><D>1</D></Direction>
+<ResolvedNetName>3</ResolvedNetName>
+<SchObject>Connect0</SchObject></Item>
+<Item XName="P1" Type="PartPin">
+<Direction><T>Int</T><D>0</D></Direction>
+<PartID>M2</PartID>
+<PinName>input1</PinName>
+<SchObject>Part4</SchObject>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<MappedSchObject>Connect0</MappedSchObject>
+<NetName>3</NetName></Item></Item></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;Ot14;em14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;yYmB2lG2l24;JGB1j4i4c24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;o4;A6;d9</D></Window>
+<ZOrder><T>Int</T><D>0</D></ZOrder>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="PartList" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>0</D></PageNo></Item></Item></Item>
+<Item XName="Display1" Type="DesignDisp">
+<CurTab>Schematic</CurTab>
+<DVport><T>Array_Dbl64</T><D>1;4;;;ocEUzxu8B24;OI8qB74lr14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;GJz24;WLUtd24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show>
+<Item XName="TabInfo" Type="SerItem">
+<Item XName="Schematic" Type="TabInfo">
+<PageNo><T>Int</T><D>1</D></PageNo></Item></Item></Item></Item>
+<Item XName="PartList" Type="PartList">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="LNA" Type="Part">
+<Category>Cosimulation</Category>
+<Description>GoldenGate Fast Circuit Envelope</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>FastCircuitEnvelope@Data Flow Models</Model>
+<ModelID>Level1Amp5</ModelID>
+<Netlist>RF_IN,2?Connect5|LNA_OUT,1?Connect4</Netlist>
+<ParentPartName>FastCircuitEnvelope@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShareParamValues><T>Int</T><D>0</D></ShareParamValues>
+<ShortSymbol />
+<Symbol>AutoSymDF{GoldenGate}</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier>Level1Amp5</Indentifier>
+<ModelName>FastCircuitEnvelope@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF{GoldenGate}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FCEOutputFc" Type="PartParam">
+<Data><T>Array_Dbl64</T><D>1;1;8fiZZ74</D></Data>
+<Description>Output characterization frequencies</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="FCEOutputPorts" Type="PartParam">
+<DataEntry>{&apos;LNA_OUT&apos;}</DataEntry>
+<Description>Output port names</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="File" Type="PartParam">
+<DataEntry>SIM_LNA_2p625GHz_m10dBm_level1_ampaccuracy5.fce</DataEntry>
+<Description>Fast Circuit Envelope file</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>RF_IN?1?0?1?15?0#LNA_OUT?0?0?1?15?0#</DataEntry>
+<Description>IO Port Info</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="OnlyShowInUse" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Only show outputs in use</Description>
+<DocSymbol />
+<Enum>FastCircuitEnvelope__OnlyShowInUse@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="OutOfRangeOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Option when input signal is out of range</Description>
+<DocSymbol />
+<Enum>FastCircuitEnvelope__OutOfRangeOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry">
+<Indentifier>Level3Amp5Freq1</Indentifier>
+<ModelName>FastCircuitEnvelope@Data Flow Models</ModelName>
+<SymbolName>AutoSymDF{GoldenGate}</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FCEOutputFc" Type="PartParam">
+<Data><T>Array_Dbl64</T><D>1;1;8fiZZ74</D></Data>
+<Description>Output characterization frequencies</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="FCEOutputPorts" Type="PartParam">
+<DataEntry>{&apos;LNA_OUT&apos;}</DataEntry>
+<Description>Output port names</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="File" Type="PartParam">
+<DataEntry>SIM_LNA_2p625GHz_m10dBm_level3_ampaccuracy5_freqaccuracy1.fce</DataEntry>
+<Description>Fast Circuit Envelope file</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>RF_IN?1?0?1?15?0#LNA_OUT?0?0?1?15?0#</DataEntry>
+<Description>IO Port Info</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="OnlyShowInUse" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Only show outputs in use</Description>
+<DocSymbol />
+<Enum>FastCircuitEnvelope__OnlyShowInUse@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="OutOfRangeOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Option when input signal is out of range</Description>
+<DocSymbol />
+<Enum>FastCircuitEnvelope__OutOfRangeOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="FCEOutputFc" Type="PartParam">
+<Data><T>Array_Dbl64</T><D>1;1;8fiZZ74</D></Data>
+<Description>Output characterization frequencies</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>14</D></Validate></Item>
+<Item XName="FCEOutputPorts" Type="PartParam">
+<DataEntry>{&apos;LNA_OUT&apos;}</DataEntry>
+<Description>Output port names</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="File" Type="PartParam">
+<DataEntry>SIM_LNA_2p625GHz_m10dBm_level1_ampaccuracy5.fce</DataEntry>
+<Description>Fast Circuit Envelope file</Description>
+<DocSymbol />
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="IOInfo" Type="PartParam">
+<DataEntry>RF_IN?1?0?1?15?0#LNA_OUT?0?0?1?15?0#</DataEntry>
+<Description>IO Port Info</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="OnlyShowInUse" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Only show outputs in use</Description>
+<DocSymbol />
+<Enum>FastCircuitEnvelope__OnlyShowInUse@Data Flow Enums</Enum>
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="OutOfRangeOption" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Option when input signal is out of range</Description>
+<DocSymbol />
+<Enum>FastCircuitEnvelope__OutOfRangeOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="M2" Type="Part">
+<Category>Communications;Analog/RF</Category>
+<Description>Modulator</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Modulator@Data Flow Models</Model>
+<ModelID />
+<Netlist>input1,3?Connect0|input2,6|LO,7|output,2?Connect5|quad_output,9</Netlist>
+<ParentPartName>Modulator@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Modulator@Data Flow Models</ModelName>
+<SymbolName>SYM_Modulator</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<DocSymbol>S&lt;sub&gt;a&lt;/sub&gt;</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<DocSymbol />
+<Enum>Modulator__ConjugatedQuadrature@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>2.625</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<DocSymbol>f&lt;sub&gt;c&lt;/sub&gt;</DocSymbol>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<DocSymbol>S&lt;sub&gt;f&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 2</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB</Description>
+<DocSymbol>G</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<DocSymbol>R</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<DocSymbol>I&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<DocSymbol>theta.gif</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<DocSymbol />
+<Enum>Modulator__InputType@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<DocSymbol />
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance</Description>
+<DocSymbol>phi.gif</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<DocSymbol>S&lt;sub&gt;p&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<DocSymbol>Q&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show I and Q impairments</Description>
+<DocSymbol />
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="AmpSensitivity" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Amplitude sensitivity</Description>
+<DocSymbol>S&lt;sub&gt;a&lt;/sub&gt;</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ConjugatedQuadrature" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Negate quadrature output</Description>
+<DocSymbol />
+<Enum>Modulator__ConjugatedQuadrature@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="FCarrier" Type="PartParam">
+<DataEntry>2.625</DataEntry>
+<Description>Carrier frequency (used if optional LO input not used)</Description>
+<DocSymbol>f&lt;sub&gt;c&lt;/sub&gt;</DocSymbol>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Unit><T>Int</T><D>1004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="FreqSensitivity" Type="PartParam">
+<DataEntry>10000</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Frequency deviation sensitivity in Hz/Volt</Description>
+<DocSymbol>S&lt;sub&gt;f&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 2</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="GainImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Gain imbalance in dB</Description>
+<DocSymbol>G</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="IQ_Rotation" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>IQ rotation</Description>
+<DocSymbol>R</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="I_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>I origin offset</Description>
+<DocSymbol>I&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InitialPhase" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial phase</Description>
+<DocSymbol>theta.gif</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="InputType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Input type</Description>
+<DocSymbol />
+<Enum>Modulator__InputType@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="MirrorSignal" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Mirror signal about carrier</Description>
+<DocSymbol />
+<Enum>Modulator__MirrorSignal@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="PhaseImbalance" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase imbalance</Description>
+<DocSymbol>phi.gif</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>8001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="PhaseSensitivity" Type="PartParam">
+<DataEntry>90</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Phase deviation sensitivity in degrees/Volt</Description>
+<DocSymbol>S&lt;sub&gt;p&lt;/sub&gt;</DocSymbol>
+<HideCondition>InputType ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="Q_OriginOffset" Type="PartParam">
+<DataEntry>0.0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Q origin offset</Description>
+<DocSymbol>Q&lt;sub&gt;off&lt;/sub&gt;</DocSymbol>
+<HideCondition>ShowIQ_Impairments ~= 1</HideCondition>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ShowIQ_Impairments" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show I and Q impairments</Description>
+<DocSymbol />
+<Enum>Modulator__ShowIQ_Impairments@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item></Item></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="PartListDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;qCpCpCpZA2C;QcPcPcvBH2C;pCpCpCdG234;pCpCpCNe734</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item></Item>
+<Item XName="R1" Type="Part">
+<Category>Sources</Category>
+<Description>Ramp Waveform</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Ramp@Data Flow Models</Model>
+<ModelID />
+<Netlist>output,3?Connect0</Netlist>
+<ParentPartName>Ramp@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<Symbol>SYM_Ramp</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Ramp@Data Flow Models</ModelName>
+<SymbolName>SYM_Ramp</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<DocSymbol>D</DocSymbol>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range>[ 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InitialValue" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial ramp voltage value</Description>
+<DocSymbol>I</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>Ramp__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<DocSymbol />
+<Enum>Ramp__ShowAdvancedParams@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StepPerSample" Type="PartParam">
+<DataEntry>0.0004</DataEntry>
+<Description>Step value per simulation sample</Description>
+<DocSymbol>SS</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="InitialDelay" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Output sample delay</Description>
+<DocSymbol>D</DocSymbol>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range>[ 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="InitialValue" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Initial ramp voltage value</Description>
+<DocSymbol>I</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRate" Type="PartParam">
+<DataEntry>Sample_Rate</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Explicit sample rate</Description>
+<DocSymbol>S</DocSymbol>
+<HideCondition>( SampleRateOption == 2 ) || ( ShowAdvancedParams ~= 1 )</HideCondition>
+<Range>( 0:inf )</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>1001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="SampleRateOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sample rate option</Description>
+<DocSymbol>SO</DocSymbol>
+<Enum>Ramp__SampleRateOption@Data Flow Enums</Enum>
+<HideCondition>ShowAdvancedParams ~= 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="ShowAdvancedParams" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Show advanced parameters</Description>
+<DocSymbol />
+<Enum>Ramp__ShowAdvancedParams@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StepPerSample" Type="PartParam">
+<DataEntry>0.0004</DataEntry>
+<Description>Step value per simulation sample</Description>
+<DocSymbol>SS</DocSymbol>
+<Range>(-inf:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>1</D></RunTimeTunable>
+<Validate><T>Int</T><D>0</D></Validate></Item></Item></Item>
+<Item XName="input" Type="Part">
+<Category>Sinks</Category>
+<Description>Data Sink</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Sink@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,2?Connect2</Netlist>
+<ParentPartName>Sink@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Sink</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Sink@Data Flow Models</ModelName>
+<SymbolName>SYM_Sink</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>SinkData</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file name</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<DocSymbol />
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<DocSymbol />
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<DocSymbol />
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>100- 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Location where simulation data is written</Description>
+<DocSymbol />
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<DocSymbol />
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Write data from all inputs to the same file</Description>
+<DocSymbol />
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range>[1:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>SinkData</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file name</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<DocSymbol />
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<DocSymbol />
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<DocSymbol />
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>100- 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Location where simulation data is written</Description>
+<DocSymbol />
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<DocSymbol />
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Write data from all inputs to the same file</Description>
+<DocSymbol />
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range>[1:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item>
+<Item XName="output" Type="Part">
+<Category>Sinks</Category>
+<Description>Data Sink</Description>
+<Footprint />
+<MathLang><T>Bool</T><D>1</D></MathLang>
+<Model>Sink@Data Flow Models</Model>
+<ModelID />
+<Netlist>input,1?Connect4</Netlist>
+<ParentPartName>Sink@Algorithm Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<ShortSymbol />
+<SimOverride><T>Int</T><D>0</D></SimOverride>
+<Symbol>SYM_Sink</Symbol>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<ReplaceMethod><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<Indentifier />
+<ModelName>Sink@Data Flow Models</ModelName>
+<SymbolName>SYM_Sink</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>SinkData</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file name</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<DocSymbol />
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<DocSymbol />
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<DocSymbol />
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>100- 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Location where simulation data is written</Description>
+<DocSymbol />
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<DocSymbol />
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Write data from all inputs to the same file</Description>
+<DocSymbol />
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range>[1:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ClippingLevel" Type="PartParam">
+<DataEntry>1.0</DataEntry>
+<Description>Clipping voltage level</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || NormalizeWaveform == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range>(0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>9001</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ContinuousMode" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Run simulation in continuous mode</Description>
+<DocSymbol />
+<Enum>Sink__ContinuousMode@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DataFileName" Type="PartParam">
+<DataEntry>SinkData</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file name</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>10</D></Validate></Item>
+<Item XName="DataFileType" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Data file format</Description>
+<DocSymbol />
+<Enum>Sink__DataFileType@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="DisableDataCollect" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Disable the collection of data</Description>
+<DocSymbol />
+<Enum>Sink__DisableDataCollect@Data Flow Enums</Enum>
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="EquationBP" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoints</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationBPStates" Type="PartParam">
+<DataEntry>[]</DataEntry>
+<Description>Equation Breakpoint States</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>5</D></Validate></Item>
+<Item XName="EquationText" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Equation Text to Parse, edited in the equation set</Description>
+<DocSymbol />
+<IsSettable><T>Bool</T><D>0</D></IsSettable>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="Graph" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Graph to display the data in (if empty no graph is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="NormalizeWaveform" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Description>Normalize input signal magnitude to [-1,1] range before writing to file</Description>
+<DocSymbol />
+<Enum>Sink__NormalizeWaveform@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || ( DataFileType ~= 2 &amp;&amp; DataFileType ~= 3 ) || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Persistence" Type="PartParam">
+<DataEntry>Data_Persistence</DataEntry>
+<Description>Keep sink data in dataset when workspace is saved</Description>
+<DocSymbol />
+<Enum>Sink__Persistence@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SampleStart" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Sample number to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SampleStop" Type="PartParam">
+<DataEntry>100- 1</DataEntry>
+<Description>Sample number to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 2</HideCondition>
+<Range>[SampleStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item>
+<Item XName="SinkTarget" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Location where simulation data is written</Description>
+<DocSymbol />
+<Enum>Sink__SinkTarget@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="SkipFrequency" Type="PartParam">
+<DataEntry>0</DataEntry>
+<Description>Do not write characterization frequency (for complex envelope data) to file</Description>
+<DocSymbol />
+<Enum>Sink__SkipFrequency@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || DataFileType == 2 || DataFileType == 3 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="StartStopOption" Type="PartParam">
+<DataEntry>2</DataEntry>
+<Description>Sink collection mode</Description>
+<DocSymbol />
+<Enum>Sink__StartStopOption@Data Flow Enums</Enum>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="Table" Type="PartParam">
+<DataEntry />
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Table to display the data in (if empty no table is created)</Description>
+<DocSymbol />
+<HideCondition>SinkTarget == 1 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>4</D></Validate></Item>
+<Item XName="TimeStart" Type="PartParam">
+<DataEntry>Start_Time</DataEntry>
+<Description>Time to start data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[0:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="TimeStop" Type="PartParam">
+<DataEntry>Stop_Time</DataEntry>
+<Description>Time to stop data collection</Description>
+<DocSymbol />
+<HideCondition>StartStopOption == 1</HideCondition>
+<Range>[TimeStart:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Unit><T>Int</T><D>7004</D></Unit>
+<Validate><T>Int</T><D>0</D></Validate></Item>
+<Item XName="ToSingleFile" Type="PartParam">
+<DataEntry>1</DataEntry>
+<Default><T>Bool</T><D>1</D></Default>
+<Description>Write data from all inputs to the same file</Description>
+<DocSymbol />
+<Enum>Sink__ToSingleFile@Data Flow Enums</Enum>
+<HideCondition>SinkTarget == 0 || (ContinuousMode==1 &amp;&amp; DisableDataCollect==1)</HideCondition>
+<Range />
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>16</D></Validate></Item>
+<Item XName="WindowSize" Type="PartParam">
+<DataEntry>500</DataEntry>
+<Description>Number of samples to collect and display in dynamically updated graph</Description>
+<DocSymbol />
+<HideCondition>ContinuousMode == 0</HideCondition>
+<Range>[1:inf)</Range>
+<RunTimeTunable><T>Bool</T><D>0</D></RunTimeTunable>
+<Show><T>Bool</T><D>0</D></Show>
+<Validate><T>Int</T><D>11</D></Validate></Item></Item></Item></Item>
+<Item XName="Schematic" Type="CSchematic">
+<SchVer><T>Int</T><D>1</D></SchVer>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowPage><T>Int</T><D>0</D></ShowPage>
+<Shown><T>Int</T><D>15354</D></Shown>
+<SymRotate><T>Double</T><D>0</D></SymRotate>
+<SymScale><T>Double</T><D>1</D></SymScale>
+<Units><T>Int</T><D>6003</D></Units>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<DataEntry>8</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Annotate0" Type="TextA">
+<BorderColor><T>Int</T><D>8388608</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>3</D></BorderWeight>
+<Color><T>Int</T><D>14483455</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Height><T>Double</T><D>874.9999999999995</D></Height>
+<HorizMargin><T>Int</T><D>50</D></HorizMargin>
+<Justification><T>Int</T><D>4</D></Justification>
+<PosX><T>Double</T><D>1624.999999999999</D></PosX>
+<PosY><T>Double</T><D>4125</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ToPoint><T>Bool</T><D>0</D></ToPoint>
+<VertMargin><T>Int</T><D>50</D></VertMargin>
+<Width><T>Double</T><D>4250</D></Width>
+<ZOrder><T>Int</T><D>2</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>0</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>152.7777777777778</D></Size></Item>
+<Item XName="Text" Type="Param">
+<DataEntry>Manage Models for LNA&#x000D;&#x000A;1. FCE level 1, amplitude accuracy 5&#x000D;&#x000A;2. FCE level 1, amplitude accuracy 5, frequency accuracy 1&#x000D;&#x000A;</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item></Item>
+<Item XName="Annotate1" Type="TextA">
+<BorderColor><T>Int</T><D>8388608</D></BorderColor>
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<BorderWeight><T>Int</T><D>3</D></BorderWeight>
+<Color><T>Int</T><D>-16777215</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Height><T>Double</T><D>625</D></Height>
+<HorizMargin><T>Int</T><D>50</D></HorizMargin>
+<Justification><T>Int</T><D>5</D></Justification>
+<PosX><T>Double</T><D>2250</D></PosX>
+<PosY><T>Double</T><D>1250</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ToPoint><T>Bool</T><D>0</D></ToPoint>
+<VertMargin><T>Int</T><D>50</D></VertMargin>
+<Width><T>Double</T><D>3750</D></Width>
+<ZOrder><T>Int</T><D>-1</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>277.7777777777778</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Text" Type="Param">
+<DataEntry>Voltage amplitude sweep&#x000D;&#x000A;LNA model verification</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item></Item>
+<Item XName="Connect0" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;WZY24;WQe24;W0WcW24;WQe24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect2" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;6;WQu24;WHk24;G7m24;WHk24;G7m24;WQe24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>2</D></eRight></Item>
+<Item XName="Connect4" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Gxt24;WQe24;WQu24;WQe24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>1</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect5" Type="SchConnector">
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderStyle><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight><T>Int</T><D>1</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;G7m24;WQe24;m5n24;WQe24</D></Coords>
+<Filled><T>Bool</T><D>0</D></Filled>
+<NetLabel Attrib="13" />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<eLeft><T>Int</T><D>2</D></eLeft>
+<eRight><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Display0" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;qr14;mh14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;dnYTZoey14;WMTIAalBF24;avq9w{n5}24;UGkKCmJYs24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Display1" Type="SchematicDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;MA24;p14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="LabelSet" Type="LabelSet">
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>21760</D></Color>
+<Name>Arial</Name>
+<Size><T>Double</T><D>41.66666666666667</D></Size></Item></Item>
+<Item XName="PageBox" Type="PageBox">
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Color><T>Int</T><D>128</D></Color>
+<Height><T>Double</T><D>7999</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Visible><T>Bool</T><D>0</D></Visible>
+<Width><T>Double</T><D>10999</D></Width></Item>
+<Item XName="Part0" Type="SchPart">
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Description>GoldenGate Fast Circuit Envelope</Description>
+<Designator>LNA</Designator>
+<PosX><T>Double</T><D>4124.999766523861</D></PosX>
+<PosY><T>Double</T><D>2500.000001523501</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>AutoSymDF{GoldenGate}</Symbol>
+<TextOrigin><T>Array_Dbl64</T><D>1;2;cowH24;ukBZ1C</D></TextOrigin>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>1146.79052734375</D></PosX>
+<PosY><T>Double</T><D>-153.466552734375</D></PosY>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pLNA" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>LNA {FastCircuitEnvelope@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFile" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>File=SIM_LNA_2p625GHz_m10dBm_level1_ampaccuracy5.fce</Text></Item></Item></Item>
+<Item XName="Part1" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>R1</Designator>
+<PosX><T>Double</T><D>2125.000335693357</D></PosX>
+<PosY><T>Double</T><D>3125.000000000005</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Ramp</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>-596</D></PosX>
+<PosY><T>Double</T><D>420</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pR1" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>R1 {Ramp@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pStepPerSample" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>StepPerSample=0.0004</Text></Item></Item></Item>
+<Item XName="Part2" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>input</Designator>
+<PosX><T>Double</T><D>6249.000000000026</D></PosX>
+<PosY><T>Double</T><D>3875.000000000038</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Sink</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>596</D></PosX>
+<PosY><T>Double</T><D>232.5</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pinput" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>input {Sink@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pStartStopOption" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>StartStopOption=Time</Text></Item></Item></Item>
+<Item XName="Part3" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>output</Designator>
+<PosX><T>Double</T><D>6248.999999999998</D></PosX>
+<PosY><T>Double</T><D>3125.00000000004</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Sink</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>596</D></PosX>
+<PosY><T>Double</T><D>232.5</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__poutput" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>output {Sink@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pStartStopOption" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>StartStopOption=Time</Text></Item></Item></Item>
+<Item XName="Part4" Type="SchPart">
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>0</D></CenterY>
+<Designator>M2</Designator>
+<PosX><T>Double</T><D>2375</D></PosX>
+<PosY><T>Double</T><D>3124.999999999993</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Symbol>SYM_Modulator</Symbol>
+<Item XName="DrawParams" Type="DrawGroup">
+<PosX><T>Double</T><D>875</D></PosX>
+<PosY><T>Double</T><D>295</D></PosY>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Item XName="__pM2" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>0</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Text>M2 {Modulator@Data Flow Models}</Text>
+<Visible><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="_pFCarrier" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>275.2933333333334</D></PosY>
+<Text>FCarrier=2.625 GHz</Text></Item>
+<Item XName="_pInputType" Type="SchParameter">
+<BorderStyle><T>Int</T><D>5</D></BorderStyle>
+<Filled><T>Bool</T><D>0</D></Filled>
+<FontColor><T>Int</T><D>11141120</D></FontColor>
+<Justification><T>Int</T><D>1</D></Justification>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>137.6466666666667</D></PosY>
+<Text>InputType=I/Q</Text></Item></Item></Item></Item>
+<Item XName="PartLength" Type="Param">
+<DataEntry>1</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data>
+<Unit><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Width" Type="Param">
+<DataEntry>11</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit></Item></Item></Item>
+<Item XName="Design1 Analysis" UserName="Design1 Analysis" Type="Data Flow Analysis">
+<AutoRecalc><T>Bool</T><D>0</D></AutoRecalc>
+<AutoSave><T>Int</T><D>0</D></AutoSave>
+<CollectFixedPtData><T>Int</T><D>0</D></CollectFixedPtData>
+<DataFlowInformation><T>Int</T><D>0</D></DataFlowInformation>
+<DeadlockResolution><T>Int</T><D>0</D></DeadlockResolution>
+<NeedRun><T>Bool</T><D>0</D></NeedRun>
+<OutList><T>Array_BString</T><D>1;0;</D></OutList>
+<RepeatableRandomSequences><T>Int</T><D>0</D></RepeatableRandomSequences>
+<RunTimeTuning><T>Bool</T><D>0</D></RunTimeTuning>
+<SchedulerType><T>Int</T><D>0</D></SchedulerType>
+<Selected><T>Bool</T><D>1</D></Selected>
+<ShowPtolemyErrors><T>Bool</T><D>1</D></ShowPtolemyErrors>
+<Item XName="ConfigurationName" Type="Param">
+<Data />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="CustomSinks" Type="SerItem" />
+<Item XName="Cycle_Accurate" Type="Param">
+<Data><T>Bool</T><D>1</D></Data></Item>
+<Item XName="DCAnalysis" Type="Param">
+<Data />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="DataName" Type="Param">
+<DataEntry>Design1_Data</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="Data_Persistence" Type="Param">
+<Data><T>Int</T><D>1</D></Data></Item>
+<Item XName="DefaultNumericStart" Type="Param">
+<DataEntry>0</DataEntry></Item>
+<Item XName="DefaultNumericStop" Type="Param">
+<DataEntry>100</DataEntry></Item>
+<Item XName="DefaultSeed" Type="Param">
+<Data>1234567</Data></Item>
+<Item XName="DefaultTimeStart" Type="Param">
+<DataEntry>0</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DefaultTimeStop" Type="Param">
+<DataEntry>100</DataEntry>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="DesignName" Type="Param">
+<DataEntry>Design1</DataEntry>
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="FreqRes" Type="Param">
+<Data><T>Double</T><D>1e-06</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Freq_Resolution" Type="Param">
+<Data><T>Double</T><D>7372.78</D></Data>
+<Unit><T>Int</T><D>1001</D></Unit></Item>
+<Item XName="HBAnalysis" Type="Param">
+<Data />
+<TextParam><T>Bool</T><D>1</D></TextParam></Item>
+<Item XName="NumSamples" Type="Param">
+<Data><T>Int</T><D>1024</D></Data></Item>
+<Item XName="Num_Samples" Type="Param">
+<DataEntry>1000</DataEntry></Item>
+<Item XName="ProfileTimesFile" Type="Param">
+<Data /></Item>
+<Item XName="SampleRate" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>1000</D></Unit></Item>
+<Item XName="Sample_Rate" Type="Param">
+<DataEntry>7.37278</DataEntry>
+<Unit><T>Int</T><D>1003</D></Unit></Item>
+<Item XName="ScheduleLogFile" Type="Param">
+<Data /></Item>
+<Item XName="Start_Time" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Stop_Time" Type="Param">
+<Data><T>Double</T><D>0.0001354984144379732</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param">
+<DataEntry>27.0</DataEntry>
+<Unit><T>Int</T><D>12001</D></Unit></Item>
+<Item XName="TimeSpacing" Type="Param">
+<Data><T>Double</T><D>0.000977</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStart" Type="Param">
+<Data><T>Double</T><D>0</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="TimeStop" Type="Param">
+<Data><T>Double</T><D>1</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item>
+<Item XName="Time_Spacing" Type="Param">
+<Data><T>Double</T><D>1.356340484864596e-07</D></Data>
+<Unit><T>Int</T><D>7002</D></Unit></Item></Item>
+<Item XName="Design1_Data" UserName="Design1_Data" Type="DataSet">
+<FullPath>Designs\Design1_Data</FullPath>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="Eqns" Type="Equation">
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock">
+<Item XName="LogOutput" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data>Data Flow Analysis : Design1 Analysis&#x000D;&#x000A;3/21/2017..12:43 PM&#x000D;&#x000A;Ambient Temperature[C]=27.000000&#x000D;&#x000A;output of Ramp &apos;Design1.R1&apos;: Sample Rate of this signal defaulting to the System Sample Rate ( 7.3727799999999997 MHz ).&#x000D;&#x000A;Execution time: 0.772 sec&#x000D;&#x000A;</Data></Item>
+<Item XName="input" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Cplx64</T><D>1;2000;;;jC47hBkDwy3;;jC47hBkDAz3;;Y9JLmeIgJz3;;jC47hBkDQz3;;ydQyItaOWz3;;Y9JLmeIgZz3;;7hBkDQ0ycz3;;jC47hBkDgz3;;JkyV8zSVjz3;;ydQyItaOmz3;;luse1mS1oz3;;Y9JLmeIgpz3;;LQl1VX9Jrz3;;7hBkDQ0ysz3;;wxdQyItauz3;;jC47hBkDwz3;;WTWpP4bsxz3;;JkyV8zSVzz3;;5}OCtrI8}z3;;ydQyItaO0{3;;MmeIgJ0D1{3;;luse1mS12{3;;815}OCtr2{3;;Y9JLmeIg3{3;;xHXh75kU4{3;;LQl1VX9J5{3;;kYzNsza76{3;;7hBkDQ0y6{3;;XpP4bsSm7{3;;wxdQyIta8{3;;K4smJlIP9{3;;jC47hBkDA{3;;6LIT2e92B{3;;WTWpP4bsB{3;;vbk9nW0hC{3;;JkyV8zSVD{3;;isAsVPtJE{3;;5}OCtrI8F{3;;V7dYEIkyF{3;;ydQyItaOG{3;;9iXdUbooG{3;;MmeIgJ0DH{3;;Yqlzr1EdH{3;;luse1mS1I{3;;yyzJDUfSI{3;;815}OCtrI{3;;L5Cgaw4GJ{3;;Y9JLmeIgJ{3;;kDQ0yMW4K{3;;xHXh75kUK{3;;8MeMJpxuK{3;;LQl1VX9JL{3;;XUsigFNjL{3;;kYzNsza7M{3;;xc432ioXM{3;;7hBkDQ0yM{3;;KlIPP8EMN{3;;XpP4bsSmN{3;;jtWlmafAO{3;;wxdQyItaO{3;;70l5815}O{3;;K4smJlIPP{3;;W8zSVTWpP{3;;jC47hBkDQ{3;;wGBosvxdQ{3;;6LIT2e92S{3;;JPP8EMNRS{3;;WTWpP4bsS{3;;jXdUbooGR{3;;vbk9nW0hR{3;;6grqyEE5T{3;;JkyV8zSVT{3;;Vo3BKhfvT{3;;isAsVPtJU{3;;vwHXh75kU{3;;5}OCtrI8V{3;;I3Wt2aWYV{3;;V7dYEIkyV{3;;s5t6D0UBW{3;;ydQyItaOW{3;;2A{nOkhbW{3;;9iXdUbooW{3;;FE5TaRv}W{3;;MmeIgJ0DX{3;;RIC8mA7QX{3;;Yqlzr1EdX{3;;fMJpxuKqX{3;;luse1mS1Y{3;;rQQU7dYEY{3;;yyzJDUfSY{3;;2VX9JLmeY{3;;815}OCtrY{3;;FZeqU3{2Z{3;;L5Cgaw4GZ{3;;SdlVgnBTZ{3;;Y9JLmeIgZ{3;;ehsAsVPtZ{3;;kDQ0yMW4a{3;;rlzr1EdHa{3;;xHXh75kUa{3;;2q4XDyqha{3;;8MeMJpxua{3;;EuBCPg26b{3;;LQl1VX9Jb{3;;SyItaOGWb{3;;XUsigFNjb{3;;e0QYm6Uwb{3;;kYzNsza7c{3;;q4XDyqhKc{3;;xc432ioXc{3;;19eu7Zvkc{3;;7hBkDQ0yc{3;;EDlZJH79d{3;;KlIPP8EMd{3;;QHsEV}KZd{3;;XpP4bsSmd{3;;dLzvgjYzd{3;;jtWlmafAe{3;;qP4bsSmNe{3;;wxdQyItae{3;;1UBG2A{ne{3;;70l5815}e{3;;DYIxDuBCf{3;;K4smJlIPf{3;;QcPcPcPcf{3;;W8zSVTWpf{3;;dgWHbKd0g{3;;jC47hBkDg{3;;pkdym2rQg{3;;wGBosvxdg{3;;pkdym2rg{3;;6LIT2e92h{3;;DtrI8VGFh{3;;JPP8EMNRh{3;;PxyzJDUfh{3;;WTWpP4bsh{3;;c}3fVxh3i{3;;jXdUbooGi{3;;p3BKhfvTi{3;;vbk9nW0hi{3;;8I}sN7ui{3;;6grqyEE5j{3;;CCPg26LIj{3;;JkyV8zSVj{3;;PGWLEqYij{3;;Vo3BKhfvj{3;;cKd0QYm6k{3;;isAsVPtJk{3;;oOkhbG{Wk{3;;vwHXh75kk{3;;}RrMn{Bxk{3;;5}OCtrI8l{3;;CXy1ziPLl{3;;I3Wt2aWYl{3;;Ob3j8Sdll{3;;V7dYEIkyl{3;;pK5Cgaw4m{3;;s5t6D0UBm{3;;vse1mS1Im{3;;ydQyItaOm{3;;}OCtrI8Vm{3;;2A{nOkhbm{3;;6xlix9Fim{3;;9iXdUboom{3;;CTJY11Mvm{3;;FE5TaRv}m{3;;I}sN7uR6n{3;;MmeIgJ0Dn{3;;PXQDDlZJn{3;;RIC8mA7Qn{3;;V3{2JcgWn{3;;Yqlzr1Edn{3;;bbXuOTnjn{3;;fMJpxuKqn{3;;i75kUKuwn{3;;luse1mS1o{3;;ofeZaB}7o{3;;rQQU7dYEo{3;;uBCPg26Lo{3;;yyzJDUfSo{3;;}jlEmvCYo{3;;2VX9JLmeo{3;;5GJ4smJlo{3;;815}OCtro{3;;CosvxdQyo{3;;FZeqU3{2p{3;;IKQl1VX9p{3;;L5Cgaw4Gp{3;;Osza7MeMp{3;;SdlVgnBTp{3;;VOXQDDlZp{3;;Y9JLmeIgp{3;;bw4GJ4smp{3;;ehsAsVPtp{3;;hRe5Pxyzp{3;;kDQ0yMW4q{3;;o{BxUo3Bq{3;;rlzr1EdHq{3;;uWlmafAOq{3;;xHXh75kUq{3;;{2JcgWHbq{3;;2q4XDyqhq{3;;5bsSmNOoq{3;;8MeMJpxuq{3;;B7QHsEV}q{3;;EuBCPg26r{3;;Hfz6y5cCr{3;;LQl1VX9Jr{3;;OBXy1ziPr{3;;SyItaOGWr{3;;Uj4o7qpcr{3;;XUsigFNjr{3;;aFedDhwpr{3;;e0QYm6Uwr{3;;hnBTJY11s{3;;kYzNsza7s{3;;nJlIPP8Es{3;;q4XDyqhKs{3;;trI8VGFSs{3;;xc432ioXs{3;;{Nsza7Mes{3;;19eu7Zvks{3;;4wPpg{Rrs{3;;7hBkDQ0ys{3;;BRzemrZ2t{3;;EDlZJH79t{3;;H{WUsigFt{3;;KlIPP8EMt{3;;NW4KyZnRt{3;;QHsEV}KZt{3;;U2e92Suft{3;;XpP4bsSmt{3;;aaB}7I}st{3;;dLzvgjYzt{3;;g6lqD964u{3;;jtWlmafAu{3;;neIgJ0DHu{3;;qP4bsSmNu{3;;tAsVPtJUu{3;;wxdQyItau{3;;ziPLVkQhu{3;;1UBG2A{nu{3;;4FzAbbXuu{3;;70l5815}u{3;;AnW0hRe5v{3;;DYIxDuBCv{3;;GJ4smJlIv{3;;K4smJlIPv{3;;NrdhsAsVv{3;;QcPcPcPcv{3;;TNBXy1ziv{3;;W8zSVTWpv{3;;ZvkM2v3wv{3;;dgWHbKd0w{3;;gSIC8mA7w{3;;jC47hBkDw{3;;mzr1EdHKw{3;;pkdym2rQw{3;;tVPtJUOXw{3;;wGBosvxdw{3;;z1ziPLVkw{3;;pkdym2rw{3;;3aWYVCcxw{3;;6LIT2e92x{3;;A64Ob3j8x{3;;DtrI8VGFx{3;;GedDhwpLx{3;;JPP8EMNRx{3;;MAB3nnwYx{3;;PxyzJDUfx{3;;Tikuse1mx{3;;WTWpP4bsx{3;;ZEIkyV8zx{3;;c}3fVxh3y{3;;fmrZ2NFAy{3;;jXdUbooGy{3;;mIPP8EMNy{3;;p3BKhfvTy{3;;sqyEE5Tay{3;;vbk9nW0hy{3;;yMW4KyZny{3;;8I}sN7uy{3;;3v3wPpg{y{3;;6grqyEE5z{3;;9SdlVgnBz{3;;CCPg26LIz{3;;FzAbbXuOz{3;;JkyV8zSVz{3;;MVkQhO}bz{3;;PGWLEqYiz{3;;R1IGnF6pz{3;;Vo3BKhfvz{3;;ZZr5t6D0{{3;;cKd0QYm6{{3;;f5PxyzJD{{3;;isAsVPtJ{{3;;ldym2rQQ{{3;;oOkhbG{W{{3;;s9Wc8iXd{{3;;vwHXh75k{{3;;yh3REZeq{{3;;}RrMn{Bx{{3;;2EdHKQl1}{3;;5}OCtrI8}{3;;9mA7QHsE}{3;;CXy1ziPL}{3;;FIkyV8zS}{3;;I3Wt2aWY}{3;;LqHob}3f}{3;;Ob3j8Sdl}{3;;RMrdhsAs}{3;;V7dYEIky}{3;;HRikuse10}3;;pK5Cgaw40}3;;KDUfSIC80}3;;s5t6D0UB0}3;;N{Fa{jlE0}3;;vse1mS1I0}3;;Sl1VX9JL0}3;;ydQyItaO0}3;;UWpP4bsS0}3;;}OCtrI8V0}3;;XHbKd0QY0}3;;2A{nOkhb0}3;;a2NFARze0}3;;6xlix9Fi0}3;;dp8AjtWl0}3;;9iXdUboo0}3;;gaw4GJ4s0}3;;CTJY11Mv0}3;;kLi}okdy0}3;;FE5TaRv}0}3;;n6UwLAB31}3;;I}sN7uR61}3;;qtFrubk91}3;;MmeIgJ0D1}3;;te1mS1IG1}3;;PXQDDlZJ1}3;;wPpg{RrM1}3;;RIC8mA7Q1}3;;zAbbXuOT1}3;;V3{2JcgW1}3;;1yMW4KyZ1}3;;Yqlzr1Ed1}3;;4j8SdlVg1}3;;bbXuOTnj1}3;;7UwLAB3n1}3;;fMJpxuKq1}3;;AFiGjcct1}3;;i75kUKuw1}3;;D0UBG2A{1}3;;luse1mS12}3;;HnF6pTj42}3;;ofeZaB}72}3;;KY11MvGB2}3;;rQQU7dYE2}3;;NJpxuKqH2}3;;uBCPg26L2}3;;Q4bsSmNO2}3;;yyzJDUfS2}3;;TrMn{BxU2}3;;}jlEmvCY2}3;;Wc8iXdUb2}3;;2VX9JLme2}3;;aNwc432i2}3;;5GJ4smJl2}3;;d8iXdUbo2}3;;815}OCtr2}3;;gvTRAw8v2}3;;CosvxdQy2}3;;jgFNjLi}2}3;;FZeqU3{23}3;;mS1IGnF63}3;;IKQl1VX93}3;;pCpCpCpC3}3;;L5Cgaw4G3}3;;tza7MeMJ3}3;;Osza7MeM3}3;;wkM2v3wP3}3;;SdlVgnBT3}3;;zV8zSVTW3}3;;VOXQDDlZ3}3;;Hwt{w0d3}3;;Y9JLmeIg3}3;;32ioXMaj3}3;;bw4GJ4sm3}3;;7pTj4o7q3}3;;ehsAsVPt3}3;;AaFedDhw3}3;;hRe5Pxyz3}3;;DL1ZAfE14}3;;kDQ0yMW44}3;;G6pTj4o74}3;;o{BxUo3B4}3;;JtaOGWLE4}3;;rlzr1EdH4}3;;MeMJpxuK4}3;;uWlmafAO4}3;;QP8EMNRS4}3;;xHXh75kU4}3;;TAw8vo}X4}3;;{2JcgWHb4}3;;Wxh3REZe4}3;;2q4XDyqh4}3;;ZiT{{f6l4}3;;5bsSmNOo4}3;;cTFvX5gr4}3;;8MeMJpxu4}3;;fE1q4XDy4}3;;B7QHsEV}4}3;;j}okdym25}3;;EuBCPg265}3;;mmafAOK95}3;;Hfz6y5cC5}3;;pXMajptF5}3;;LQl1VX9J5}3;;sI8VGFSM5}3;;OBXy1ziP5}3;;v3wPpg{R5}3;;SyItaOGW5}3;;zqhKM6YZ5}3;;Uj4o7qpc5}3;;cTFvX5g5}3;;XUsigFNj5}3;;3NFARzem5}3;;aFedDhwp5}3;;6815}OCt5}3;;e0QYm6Uw5}3;;9vo}Xqlz5}3;;hnBTJY116}3;;Cgaw4GJ46}3;;kYzNsza76}3;;GSMrdhsA6}3;;nJlIPP8E6}3;;JC8mA7QH6}3;;q4XDyqhK6}3;;MzvgjYzN6}3;;trI8VGFS6}3;;PkhbG{WU6}3;;xc432ioX6}3;;RVTWpP4b6}3;;{Nsza7Me6}3;;VGFSMrdh6}3;;19eu7Zvk6}3;;Z11MvGBo6}3;;4wPpg{Rr6}3;;cooGRiku6}3;;7hBkDQ0y6}3;;fZaB}7I}6}3;;BRzemrZ27}3;;iKM6YZr57}3;;EDlZJH797}3;;l5815}OC7}3;;H{WUsigF7}3;;osvxdQyI7}3;;KlIPP8EM7}3;;sdhsAsVP7}3;;NW4KyZnR7}3;;vOTnjH3W7}3;;QHsEV}KZ7}3;;y9FiGjcc7}3;;U2e92Suf7}3;;}w0dp8Aj7}3;;XpP4bsSm7}3;;2ioXMajp7}3;;aaB}7I}s7}3;;6TaRv}Gw7}3;;dLzvgjYz7}3;;9EMNRSq08}3;;g6lqD9648}3;;C}7I}sN78}3;;jtWlmafA8}3;;FmvCYIxD8}3;;neIgJ0DH8}3;;IXh75kUK8}3;;qP4bsSmN8}3;;LIT2e92S8}3;;tAsVPtJU8}3;;P3FzAbbX8}3;;wxdQyIta8}3;;Rq0uj09e8}3;;ziPLVkQh8}3;;VbooGRik8}3;;1UBG2A{n8}3;;YMajptFr8}3;;4FzAbbXu8}3;;b7MeMJpx8}3;;70l5815}8}3;;eu7ZvkM29}3;;AnW0hRe59}3;;ifvTRAw89}3;;DYIxDuBC9}3;;lQhO}bTF9}3;;GJ4smJlI9}3;;oBTJY11M9}3;;K4smJlIP9}3;;ryEE5TaR9}3;;NrdhsAsV9}3;;uj09eu7Z9}3;;QcPcPcPc9}3;;yUo3BKhf9}3;;TNBXy1zi9}3;;}Fa{jlEm9}3;;W8zSVTWp9}3;;21MvGBos9}3;;ZvkM2v3w9}3;;5o7qpcLz9}3;;dgWHbKd0A}3;;8ZvkM2v3A}3;;gSIC8mA7A}3;;BKhfvTRAA}3;;jC47hBkDA}3;;F5TaRv}GA}3;;mzr1EdHKA}3;;IsEV}KZNA}3;;pkdym2rQA}3;;Ld0QYm6UA}3;;tVPtJUOXA}3;;OOoK5CgaA}3;;wGBosvxdA}3;;S9aFedDhA}3;;z1ziPLVkA}3;;UwLAB3nnA}3;;pkdym2rA}3;;Yh75kUKuA}3;;3aWYVCcxA}3;;bRv}Gwt{A}3;;6LIT2e92B}3;;eDhwpLS5B}3;;A64Ob3j8B}3;;h{RrMn{BB}3;;DtrI8VGFB}3;;klEmvCYIB}3;;GedDhwpLB}3;;oW0hRe5PB}3;;JPP8EMNRB}3;;rHob}3fVB}3;;MAB3nnwYB}3;;u2aWYVCcB}3;;PxyzJDUfB}3;;xpLS5xliB}3;;Tikuse1mB}3;;{a7MeMJpB}3;;WTWpP4bsB}3;;1MvGBosvB}3;;ZEIkyV8zB}3;;57hBkDQ0C}3;;c}3fVxh3C}3;;8uR6Hfz6C}3;;fmrZ2NFAC}3;;BfE1q4XDC}3;;jXdUbooGC}3;;EQ0yMW4KC}3;;mIPP8EMNC}3;;HBosvxdQC}3;;p3BKhfvTC}3;;KyZnRNBXC}3;;sqyEE5TaC}3;;OjLi}okdC}3;;vbk9nW0hC}3;;SU7dYEIkC}3;;yMW4KyZnC}3;;UFvX5grqC}3;;8I}sN7uC}3;;X0hRe5PxC}3;;3v3wPpg{C}3;;anRNBXy1D}3;;6grqyEE5D}3;;eYEIkyV8D}3;;9SdlVgnBD}3;;hJ0DHO3FD}3;;CCPg26LID}3;;k4o7qpcLD}3;;FzAbbXuOD}3;;nrZ2NFARD}3;;JkyV8zSVD}3;;qcLzvgjYD}3;;MVkQhO}bD}3;;tN7uR6HfD}3;;PGWLEqYiD}3;;x8vo}XqlD}3;;R1IGnF6pD}3;;{vgjYzNsD}3;;Vo3BKhfvD}3;;1hRe5PxyD}3;;ZZr5t6D0E}3;;4REZeqU3E}3;;cKd0QYm6E}3;;7D0UBG2AE}3;;f5PxyzJDE}3;;A{nOkhbGE}3;;isAsVPtJE}3;;ElZJH79NE}3;;ldym2rQQE}3;;HWLEqYiTE}3;;oOkhbG{WE}3;;KH79N{FaE}3;;s9Wc8iXdE}3;;N2v3wPpgE}3;;vwHXh75kE}3;;Qpg{RrMnE}3;;yh3REZeqE}3;;TaRv}GwtE}3;;}RrMn{BxE}3;;XLEqYiT{E}3;;2EdHKQl1F}3;;a60l5815F}3;;5}OCtrI8F}3;;dtnfeZaBF}3;;9mA7QHsEF}3;;geZaB}7IF}3;;CXy1ziPLF}3;;jPLVkQhOF}3;;FIkyV8zSF}3;;nA7QHsEVF}3;;I3Wt2aWYF}3;;qxuKqHobF}3;;LqHob}3fF}3;;tigFNjLiF}3;;Ob3j8SdlF}3;;wTRAw8voF}3;;RMrdhsAsF}3;;zEE5TaRvF}3;;V7dYEIkyF}3;;G}3;;HRikuse1G}3;;YuOTnjH3G}3;;pK5Cgaw4G}3;;3nnwYSZ6G}3;;KDUfSIC8G}3;;bfAOK9r9G}3;;s5t6D0UBG}3;;7YZr5t6DG}3;;N{Fa{jlEG}3;;eQyItaOGG}3;;vse1mS1IG}3;;AJLmeIgJG}3;;Sl1VX9JLG}3;;hBkDQ0yMG}3;;ydQyItaOG}3;;D47hBkDQG}3;;UWpP4bsSG}3;;lyV8zSVTG}3;;}OCtrI8VG}3;;Grubk9nWG}3;;XHbKd0QYG}3;;ojH3Wt2aG}3;;2A{nOkhbG}3;;JcgWHbKdG}3;;a2NFARzeG}3;;rU3{2JcgG}3;;6xlix9FiG}3;;MNRSq0ujG}3;;dp8AjtWlG}3;;uFrubk9nG}3;;9iXdUbooG}3;;Q8EMNRSqG}3;;gaw4GJ4sG}3;;x0dp8AjtG}3;;CTJY11MvG}3;;Tv}Gwt{wG}3;;kLi}okdyG}3;;{nOkhbG{G}3;;FE5TaRv}G}3;;WgnBTJY1H}3;;n6UwLAB3H}3;;2ZAfE1q4H}3;;I}sN7uR6H}3;;ZSZ60l58H}3;;qtFrubk9H}3;;5KyZnRNBH}3;;MmeIgJ0DH}3;;cCL1ZAfEH}3;;te1mS1IGH}3;;85kUKuwHH}3;;PXQDDlZJH}3;;gz6y5cCLH}3;;wPpg{RrMH}3;;BsVPtJUOH}3;;RIC8mA7QH}3;;jkuse1mSH}3;;zAbbXuOTH}3;;EdHKQl1VH}3;;V3{2JcgWH}3;;mVgnBTJYH}3;;1yMW4KyZH}3;;HO3FzAbbH}3;;Yqlzr1EdH}3;;pGRikuseH}3;;4j8SdlVgH}3;;L9r9Wc8iH}3;;bbXuOTnjH}3;;s1EdHKQlH}3;;7UwLAB3nH}3;;Owc432ioH}3;;fMJpxuKqH}3;;vo}XqlzrH}3;;AFiGjcctH}3;;ShO}bTFvH}3;;i75kUKuwH}3;;zZnRNBXyH}3;;D0UBG2A{H}3;;URAw8vo}H}3;;luse1mS1I}3;;LZNwc43I}3;;HnF6pTj4I}3;;XDyqhKM6I}3;;ofeZaB}7I}3;;36LIT2e9I}3;;KY11MvGBI}3;;a{jlEmvCI}3;;rQQU7dYEI}3;;6t6D0UBGI}3;;NJpxuKqHI}3;;elVgnBTJI}3;;uBCPg26LI}3;;9eu7ZvkMI}3;;Q4bsSmNOI}3;;hWHbKd0QI}3;;yyzJDUfSI}3;;CPg26LITI}3;;TrMn{BxUI}3;;kH3Wt2aWI}3;;}jlEmvCYI}3;;GARzemrZI}3;;Wc8iXdUbI}3;;n2rQQU7dI}3;;2VX9JLmeI}3;;JxDuBCPgI}3;;aNwc432iI}3;;qpcLzvgjI}3;;5GJ4smJlI}3;;Mi}okdymI}3;;d8iXdUboI}3;;uaOGWLEqI}3;;815}OCtrI}3;;PTnjH3WtI}3;;gvTRAw8vI}3;;xLAB3nnwI}3;;CosvxdQyI}3;;REZeqU3{I}3;;jgFNjLi}I}3;;{6y5cCL1J}3;;FZeqU3{2J}3;;V}KZNwc4J}3;;mS1IGnF6J}3;;1uj09eu7J}3;;IKQl1VX9J}3;;Zm6UwLABJ}3;;pCpCpCpCJ}3;;4fVxh3REJ}3;;L5Cgaw4GJ}3;;cXuOTnjHJ}3;;tza7MeMJJ}3;;7QHsEV}KJ}3;;Osza7MeMJ}3;;fIgJ0DHOJ}3;;wkM2v3wPJ}3;;BB3nnwYSJ}3;;SdlVgnBTJ}3;;i3REZeqUJ}3;;zV8zSVTWJ}3;;EyqhKM6YJ}3;;VOXQDDlZJ}3;;lqD964ObJ}3;;Hwt{w0dJ}3;;HjcctnfeJ}3;;Y9JLmeIgJ}3;;pb}3fVxhJ}3;;32ioXMajJ}3;;KUOXQDDlJ}3;;bw4GJ4smJ}3;;sMn{BxUoJ}3;;7pTj4o7qJ}3;;NFARzemrJ}3;;ehsAsVPtJ}3;;v7ZvkM2vJ}3;;AaFedDhwJ}3;;Q0yMW4KyJ}3;;hRe5PxyzJ}3;;yuKqHob}J}3;;DL1ZAfE1K}3;;UnjH3Wt2K}3;;kDQ0yMW4K}3;;}f6lqD96K}3;;G6pTj4o7K}3;;XYVCcxQ9K}3;;o{BxUo3BK}3;;2SufNfiCK}3;;JtaOGWLEK}3;;aJH79N{FK}3;;rlzr1EdHK}3;;6Cgaw4GJK}3;;MeMJpxuKK}3;;d432ioXMK}3;;uWlmafAOK}3;;9zSVTWpPK}3;;QP8EMNRSK}3;;grqyEE5TK}3;;xHXh75kUK}3;;CkDQ0yMWK}3;;TAw8vo}XK}3;;kcctnfeZK}3;;{2JcgWHbK}3;;FV}KZNwcK}3;;Wxh3REZeK}3;;nNOoK5CgK}3;;2q4XDyqhK}3;;IGnF6pTjK}3;;ZiT{{f6lK}3;;q8AjtWlmK}3;;5bsSmNOoK}3;;L1ZAfE1qK}3;;cTFvX5grK}3;;tvxdQyItK}3;;8MeMJpxuK}3;;PoK5CgawK}3;;fE1q4XDyK}3;;wgjYzNszK}3;;B7QHsEV}K}3;;RZ60l581L}3;;j}okdym2L}3;;zSVTWpP4L}3;;EuBCPg26L}3;;VKuwHXh7L}3;;mmafAOK9L}3;;1DHO3FzAL}3;;Hfz6y5cCL}3;;Y5grqyEEL}3;;pXMajptFL}3;;4{2JcgWHL}3;;LQl1VX9JL}3;;bsSmNOoKL}3;;sI8VGFSML}3;;7lqD964OL}3;;OBXy1ziPL}3;;fdDhwpLSL}3;;v3wPpg{RL}3;;AWc8iXdUL}3;;SyItaOGWL}3;;iO}bTFvXL}3;;zqhKM6YZL}3;;DHO3FzAbL}3;;Uj4o7qpcL}3;;l9nW0hReL}3;;cTFvX5gL}3;;G2A{nOkhL}3;;XUsigFNjL}3;;owYSZ60lL}3;;3NFARzemL}3;;KpxuKqHoL}3;;aFedDhwpL}3;;rhKM6YZrL}3;;6815}OCtL}3;;NajptFruL}3;;e0QYm6UwL}3;;uR6Hfz6yL}3;;9vo}XqlzL}3;;QLVkQhO}L}3;;hnBTJY11M}3;;yDuBCPg2M}3;;Cgaw4GJ4M}3;;T6Hfz6y5M}3;;kYzNsza7M}3;;}{f6lqD9M}3;;GSMrdhsAM}3;;Wt2aWYVCM}3;;nJlIPP8EM}3;;2mS1IGnFM}3;;JC8mA7QHM}3;;aeqU3{2JM}3;;q4XDyqhKM}3;;5XDyqhKMM}3;;MzvgjYzNM}3;;dPcPcPcPM}3;;trI8VGFSM}3;;8I}sN7uRM}3;;PkhbG{WUM}3;;gAOK9r9WM}3;;xc432ioXM}3;;B3nnwYSZM}3;;RVTWpP4bM}3;;jx9FiGjcM}3;;{Nsza7MeM}3;;FqYiT{{fM}3;;VGFSMrdhM}3;;mix9FiGjM}3;;19eu7ZvkM}3;;IbKd0QYmM}3;;Z11MvGBoM}3;;pTj4o7qpM}3;;4wPpg{RrM}3;;LM6YZr5tM}3;;cooGRikuM}3;;tEV}KZNwM}3;;7hBkDQ0yM}3;;O7uR6HfzM}3;;fZaB}7I}M}3;;w}Gwt{w0N}3;;BRzemrZ2N}3;;SufNfiC4N}3;;iKM6YZr5N}3;;zm2rQQU7N}3;;EDlZJH79N}3;;VfSIC8mAN}3;;l5815}OCN}3;;Yqlzr1EN}3;;H{WUsigFN}3;;YQDDlZJHN}3;;osvxdQyIN}3;;3JcgWHbKN}3;;KlIPP8EMN}3;;bB}7I}sNN}3;;sdhsAsVPN}3;;64Ob3j8SN}3;;NW4KyZnRN}3;;eym2rQQUN}3;;vOTnjH3WN}3;;Ar9Wc8iXN}3;;QHsEV}KZN}3;;hjYzNszaN}3;;y9FiGjccN}3;;DcxQ9aFeN}3;;U2e92SufN}3;;kUKuwHXhN}3;;}w0dp8AjN}3;;GNjLi}okN}3;;XpP4bsSmN}3;;oF6pTj4oN}3;;2ioXMajpN}3;;J8VGFSMrN}3;;aaB}7I}sN}3;;r0uj09euN}3;;6TaRv}GwN}3;;MvGBosvxN}3;;dLzvgjYzN}3;;unfeZaB}N}3;;9EMNRSq0O}3;;Qg26LIT2O}3;;g6lqD964O}3;;xYSZ60l5O}3;;C}7I}sN7O}3;;TSq0uj09O}3;;jtWlmafAO}3;;{JDUfSICO}3;;FmvCYIxDO}3;;WCcxQ9aFO}3;;neIgJ0DHO}3;;15}OCtrIO}3;;IXh75kUKO}3;;ZzNsza7MO}3;;qP4bsSmNO}3;;5smJlIPPO}3;;LIT2e92SO}3;;ck9nW0hRO}3;;tAsVPtJUO}3;;8dYEIkyVO}3;;P3FzAbbXO}3;;fVxh3REZO}3;;wxdQyItaO}3;;BOK9r9WcO}3;;Rq0uj09eO}3;;jGjcctnfO}3;;ziPLVkQhO}3;;E964Ob3jO}3;;VbooGRikO}3;;m1VX9JLmO}3;;1UBG2A{nO}3;;Hwt{w0dpO}3;;YMajptFrO}3;;poGRikusO}3;;4FzAbbXuO}3;;LhfvTRAwO}3;;b7MeMJpxO}3;;sZ2NFARzO}3;;70l5815}O}3;;ORSq0uj0P}3;;eu7ZvkM2P}3;;vKqHob}3P}3;;AnW0hRe5P}3;;SDDlZJH7P}3;;ifvTRAw8P}3;;y5cCL1ZAP}3;;DYIxDuBCP}3;;U{{f6lqDP}3;;lQhO}bTFP}3;;tN7uR6HP}3;;GJ4smJlIP}3;;XlmafAOKP}3;;oBTJY11MP}3;;3e92SufNP}3;;K4smJlIPP}3;;aWYVCcxQP}3;;ryEE5TaRP}3;;6PxyzJDUP}3;;NrdhsAsVP}3;;eHKQl1VXP}3;;uj09eu7ZP}3;;9AjtWlmaP}3;</D></Data>
+<IndepValue>Designs\Design1_Data\Eqns\VarBlock\input_Time</IndepValue></Item>
+<Item XName="input_Fc" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Dbl64</T><D>1;1;8fiZZ74</D></Data></Item>
+<Item XName="input_Time" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Dbl64</T><D>1;1000;;hQ77rc5D2w3;hQ77rc5DIw3;8hgFQeJSw3;hQ77rc5DYw3;MHvOY0Nmcw3;8hgFQeJhw3;h{Ryypvslw3;hQ77rc5Dow3;M0mhJkUqw3;MHvOY0Nmsw3;hCo1Pj}1vw3;8hgFQeJxw3;M3aJ67Hbzw3;h{Ryypvs}w3;zgoPGH41x3;hQ77rc5D2x3;MuZSGzvL3x3;M0mhJkU4x3;hpR47gYd5x3;MHvOY0Nm6x3;lLjzMBv7x3;hCo1Pj}19x3;MgEMq3qAAx3;8hgFQeJBx3;hb7}gmRRCx3;M3aJ67HbDx3;1X0eXT5kEx3;h{RyypvsFx3;BkR8C5tVGx3;zgoPGH4Hx3;sBvRdSheHx3;hQ77rc5DIx3;WfLn2oVnIx3;MuZSGzvLJx3;B7o5U8KwJx3;M0mhJkUKx3;saEQvU83Lx3;hpR47gYdLx3;W2hkKryBMx3;MHvOY0NmMx3;BW73mBnKNx3;lLjzMBvNx3;szZNBYbTOx3;hCo1Pj}1Px3;WS0icuPcPx3;MgEMq3qAQx3;BvR02FElQx3;8hgFQeJSx3;sMvKTb2uSx3;hb7}gmRRRx3;XqLfuxs0Tx3;M3aJ67HbTx3;BIozJIh9Ux3;1X0eXT5kUx3;slEIleVIVx3;h{RyypvsVx3;mcLJb}fDWx3;BkR8C5tVWx3;crZzoA4oWx3;zgoPGH4Xx3;S4od0MUMXx3;sBvRdSheXx3;GJ0IEXuwXx3;hQ77rc5DYx3;6YEySiIVYx3;WfLn2oVnYx3;xmRcfti3Zx3;MuZSGzvLZx3;m}gGt27eZx3;B7o5U8KwZx3;cEvw4EXCax3;M0mhJkUax3;ST7bIPxmax3;saEQvU83bx3;GiLFWaLLbx3;hpR47gYdbx3;6xZvjllvbx3;W2hkKryBcx3;x9oZxw9Ucx3;MHvOY0Nmcx3;mO0E96a2dx3;BW73mBnKdx3;cdEuMH{cdx3;lLjzMBvdx3;SsRYaROBex3;szZNBYbTex3;G5hCodolex3;hCo1Pj}1fx3;6Kvs}oCKfx3;WS0icuPcfx3;xY7XD{cufx3;MgEMq3qAgx3;mnLBS91Tgx3;BvR02FElgx3;c0areKS1hx3;8hgFQeJhx3;SFoVsVrbhx3;sMvKTb2uhx3;HU0A4hFAix3;hb7}gmRRix3;6jEqHsfkix3;XqLfuxs0jx3;xxRUV14Jjx3;M3aJ67Hbjx3;nAh8jCUtjx3;BIozJIh9kx3;cPvowNuSkx3;1X0eXT5kkx3;Se7T8ZI0lx3;slEIleVIlx3;HtL7Mkialx3;h{Ryypvslx3;33ounRZ4mx3;mcLJb}fDmx3;UAvjOYmMmx3;BkR8C5tVmx3;uH0Z}dzemx3;crZzoA4omx3;JP7OcjAxmx3;zgoPGH4nx3;kWEDDpNDnx3;S4od0MUMnx3;8eL2quaVnx3;sBvRdShenx3;ZlRtQ{nnnx3;GJ0IEXuwnx3;{sZi14}3ox3;hQ77rc5Dox3;O{gXe9CMox3;6YEySiIVox3;p5oMFFPeox3;WfLn2oVnox3;EDvBsKcwox3;xmRcfti3px3;eK01TQpCpx3;MuZSGzvLpx3;3R7s3W0Vpx3;m}gGt27epx3;UZEhgbDnpx3;B7o5U8Kwpx3;ugLWHhQ3qx3;cEvw4EXCqx3;JoRLumdLqx3;M0mhJkUqx3;kvZAVsqdqx3;ST7bIPxmqx3;81h}5y1wqx3;saEQvU83rx3;Z8oqi1FCrx3;GiLFWaLLrx3;{FvfJ7RUrx3;hpR47gYdrx3;ON0VwCfmrx3;6xZvjllvrx3;pU7KXIs2sx3;W2hkKryBsx3;EcE98O3Lsx3;x9oZxw9Usx3;ejL{kTGdsx3;MHvOY0Nmsx3;3rRpLZTvsx3;mO0E96a2tx3;UyZeyegBtx3;BW73mBnKtx3;u3hTZktTtx3;cdEuMH{ctx3;JBoIAq4mtx3;lLjzMBvtx3;kIv7nvH2ux3;SsRYaROBux3;8Q0zN}UKux3;szZNBYbTux3;ZX7o{4icux3;G5hCodolux3;{eEdbAvuux3;hCo1Pj}1vx3;OmLRCG6Bvx3;6Kvs}oCKvx3;ptRHpLJTvx3;WS0icuPcvx3;E}Z6QSWlvx3;xY7XD{cuvx3;e6hx0Xj1wx3;MgEMq3qAwx3;3EomdcwJwx3;mnLBS91Twx3;ULvbEi7cwx3;BvR02FElwx3;uR0SrnKuwx3;c0areKS1xx3;Ja7GRtXAxx3;8hgFQeJxx3;khE53zkRxx3;SFoVsVrbxx3;9pLwf2ykxx3;sMvKTb2uxx3;ZwRlG891yx3;HU0A4hFAyx3;{1aatDMJyx3;hb7}gmRRyx3;P9hPUJZbyx3;6jEqHsfkyx3;pGoE5Pmtyx3;XqLfuxs0zx3;EOv3iUz9zx3;xxRUV14Jzx3;fV0vIaARzx3;M3aJ67Hbzx3;3d7kvfNkzx3;nAh8jCUtzx3;UkEZWla0{x3;BIozJIh9{x3;vrLO7rnI{x3;cPvowNuS{x3;JzRDkw{a{x3;1X0eXT5k{x3;k4a2L0Ct{x3;Se7T8ZI0}x3;9Chtx5P9}x3;slEIleVI}x3;ZJoiYBcS}x3;HtL7Mkia}x3;{QvX9Hpj}x3;h{Ryypvs}x3;CHWBOB000y3;33ounRZ40y3;wq3cBk690y3;mcLJb}fD0y3;dOd0}GDI0y3;UAvjOYmM0y3;KyASopJS0y3;BkR8C5tV0y3;2WkrbMQa0y3;uH0Z}dze0y3;l3IGPvWj0y3;crZzoA4o0y3;RdrgCRds0y3;JP7OcjAx0y3;ABP50}j}0y3;zgoPGH41y3;tkyVpXq81y3;kWEDDpND1y3;aIWwc4xH1y3;S4od0MUM1y3;Is3LQd1S1y3;8eL2quaV1y3;}PdlDA8a1y3;sBvRdShe1y3;izAA1jEj1y3;ZlRtQ{nn1y3;QXkaqFLs1y3;GJ0IEXuw1y3;75I}doS}1y3;{sZi14}32y3;qerPSLY82y3;hQ77rc5D2y3;YCPqEueH2y3;O{gXe9CM2y3;FmyE2SlQ2y3;6YEySiIV2y3;yJWfrzrZ2y3;p5oMFFPe2y3;gt34fWyi2y3;WfLn2oVn2y3;NSdUR33s2y3;EDvBsKcw2y3;4}AvFc9}2y3;xmRcfti33y3;oYkJ39G83y3;eK01TQpC3y3;V6IkshMH3y3;MuZSGzvL3y3;Cgr8gETQ3y3;3R7s3W0V3y3;wDPZTnZZ3y3;m}gGt27e3y3;dnyzGKgi3y3;UZEhgbDn3y3;KLWO4tmr3y3;B7o5U8Kw3y3;2v3ptPt{3y3;ugLWHhQ34y3;lRdDhyz74y3;cEvw4EXC4y3;R0BeUV4H4y3;JoRLumdL4y3;Aak2I2BQ4y3;M0mhJkU4y3;t7IT5bHZ4y3;kvZAVsqd4y3;ahrtu7Oi4y3;ST7bIPxm4y3;IFPIigUr4y3;81h}5y1w4y3;}oyiVDb{4y3;saEQvU835y3;iMW7Jmh75y3;Z8oqi1FC5y3;Qw3Y6JoG5y3;GiLFWaLL5y3;7UdyvruP5y3;{FvfJ7RU5y3;q1BNjO}Y5y3;hpR47gYd5y3;YbknWx5i5y3;ON0VwCfm5y3;F9ICKUCr5y3;6xZvjllv5y3;yirc71J{5y3;pU7KXIs26y3;gGP1xZP76y3;W2hkKryB6y3;NqySk6WG6y3;EcE98O3L6y3;4OWsXfcP6y3;x9oZxw9U6y3;ox3HLCjY6y3;ejL{kTGd6y3;VVdh8lph6y3;MHvOY0Nm6y3;C3B6yHwq6y3;3rRpLZTv6y3;wckWlq0{6y3;mO0E96a27y3;dAIxYN777y3;UyZeyegB7y3;KkrLMwDG7y3;BW73mBnK7y3;2IPm9TKP7y3;u3hTZktT7y3;lryAz}QY7y3;cdEuMH{c7y3;RPWbmYXh7y3;JBoIAq4m7y3;Az30a5eq7y3;lLjzMBv7y3;tWdQNekz7y3;kIv7nvH28y3;a4BrABr68y3;SsRYaROB8y3;IekF{jxF8y3;8Q0zN}UK8y3;}BIgnG2P8y3;szZNBYbT8y3;ilr4bp8Y8y3;ZX7o{4ic8y3;QJPVOMFh8y3;G5hCodol8y3;7tyvBvLq8y3;{eEdbAvu8y3;qQWK}SRz8y3;hCo1Pj}19y3;Y{3lo{Y69y3;OmLRCG6B9y3;FYd9cXfF9y3;6Kvs}oCK9y3;y5BaP4mO9y3;ptRHpLJT9y3;gfk{CdsX9y3;WS0icuPc9y3;NDIP0Azg9y3;E}Z6QSWl9y3;4nrppi3q9y3;xY7XD{cu9y3;oKPEdFAz9y3;e6hx0Xj1Ay3;VuyeQoG6Ay3;MgEMq3qAAy3;CRW3ELNFAy3;3EomdcwJAy3;w}3U1uTOAy3;mnLBS91TAy3;dZduqQaXAy3;ULvbEi7cAy3;K7BJezggAy3;BvR02FElAy3;2hkjSWnpAy3;uR0SrnKuAy3;lEI8F3uyAy3;c0areKS1By3;RorY2c{5By3;Ja7GRtXABy3;AMPzr85FBy3;8hgFQeJBy3;tvyNfhBOBy3;khE53zkRBy3;bTWoREIXBy3;SFoVsVrbBy3;I14DGnOgBy3;9pLwf2ykBy3;}add3KVpBy3;sMvKTb2uBy3;j8B2tsbyBy3;ZwRlG891Cy3;QikRgPi5Cy3;HU0A4hFACy3;7GItTyoECy3;{1aatDMJCy3;rprHHVvNCy3;hb7}gmRRCy3;YNPi420XCy3;P9hPUJZbCy3;Fxy6ua6gCy3;6jEqHsfkCy3;zUWXh7DpCy3;pGoE5PmtCy3;g24yUgJyCy3;XqLfuxs0Dy3;NcdMIDQ5Dy3;EOv3iUz9Dy3;5ABn5mWEDy3;xxRUV14JDy3;ojkBvIdNDy3;fV0vIaARDy3;VHIcirjWDy3;M3aJ67HbDy3;Drr0WOqfDy3;3d7kvfNkDy3;wOPSJxwoDy3;nAh8jCUtDy3;dyyr6U1yDy3;UkEZWla0Ey3;LWWGw085Ey3;BIozJIh9Ey3;244hjZEEEy3;vrLO7rnIEy3;ldd5X6LNEy3;cPvowNuSEy3;TBBWKfSWEy3;JzRDkw{aEy3;Alkw7CYfEy3;1X0eXT5kEy3;tIILxkeoEy3;k4a2L0CtEy3;bsrlkHlxEy3;Se7T8ZI0Fy3;IQPAYqr4Fy3;9Chtx5P9Fy3;}zyaLNyDFy3;slEIleVIFy3;jXW}8w2NFy3;ZJoiYBcSFy3;Q54QyR9WFy3;HtL7MkiaFy3;7fdql}FfFy3;{QvX9HpjFy3;rCBFZYMoFy3;h{RyypvsFy3;YmkfM5TxFy3;CHWBOB00Gy3;8A925qH2Gy3;33ounRZ4Gy3;{xQlU5r6Gy3;wq3cBk69Gy3;rjiRuMOBGy3;mcLJb}fDGy3;iV{9IexFGy3;dOd0}GDIGy3;YHGthvUKGy3;UAvjOYmMGy3;P3Ya5B2PGy3;KyASopJSGy3;GrpHVRbTGy3;BkR8C5tVGy3;6d5}uj8YGy3;2WkrbMQaGy3;zONiI}hcGy3;uH0Z}dzeGy3;qAfPiGFhGy3;l3IGPvWjGy3;gyw66YolGy3;crZzoA4oGy3;XkCqVpLqGy3;RdrgCRdsGy3;OWUXv4vuGy3;JP7OcjAxGy3;EImEJMRzGy3;ABP50}j}Gy3;542yid}1Hy3;zgoPGH4Hy3;yrJf6vY6Hy3;tkyVpXq8Hy3;odbMWA6BHy3;kWEDDpNDHy3;fPt3wSfFHy3;aIWwc4xHHy3;WB9nJjCKHy3;S4od0MUMHy3;MzQUj{lOHy3;Is3LQd1SHy3;DliB7GJTHy3;8eL2quaVHy3;4X{uWXsXHy3;}PdlDA8aHy3;wIGcwoPcHy3;sBvRdSheHy3;n4YJK4zgHy3;izAA1jEjHy3;esp0kLWlHy3;ZlRtQ{nnHy3;Ue5k7d3qHy3;QXkaqFLsHy3;LQNSXucuHy3;GJ0IEXuwHy3;CCf8x9AzHy3;75I}doS}Hy3;2{wrKSj1Iy3;{sZi14}3Iy3;vlCZkiG6Iy3;qerPSLY8Iy3;mXUG8{pAIy3;hQ77rc5DIy3;cJmzXFNFIy3;YCPqEueHIy3;T52hxWwJIy3;O{gXe9CMIy3;KtJOLoTOIy3;FmyE2SlQIy3;Afb5l31TIy3;6YEySiIVIy3;1Sto8LaXIy3;yJWfrzrZIy3;uC9WYc7cIy3;p5oMFFPeIy3;k{QDytggIy3;gt34fWyiIy3;bmiwL9ElIy3;WfLn2oVnIy3;RY{dlQnpIy3;NSdUR33sIy3;IKGL9iKuIy3;EDvBsKcwIy3;96Y2ZztyIy3;4}AvFc9}Iy3;uplyES1Jy3;xmRcfti3Jy3;sf5TMW{5Jy3;oYkJ39G8Jy3;jSNAmnXAJy3;eK01TQpCJy3;aDft935FJy3;V6IkshMHJy3;Q}waZKeJJy3;MuZSGzvLJy3;HnCIzbBOJy3;Cgr8gETQJy3;8ZU}MtkRJy3;3R7s3W0VJy3;{Kmim8IXJy3;wDPZTnZZJy3;r62QAQrbJy3;m}gGt27eJy3;iuJ7ahOgJy3;dnyzGKgiJy3;YgbqzyxkJy3;UZEhgbDnJy3;PRtXNEVpJy3;KLWO4tmrJy3;GE9FnV2uJy3;B7o5U8KwJy3;60SyAnbyJy3;2v3ptPt{Jy3;znifa291Ky3;ugLWHhQ3Ky3;qZ{M{Ji5Ky3;lRdDhyz7Ky3;gLG4ObFAKy3;cEvw4EXCKy3;X7YnnsoEKy3;R0BeUV4HKy3;OvpUB8MJKy3;JoRLumdLKy3;Eh5CbPvNKy3;Aak2I2BQKy3;5TNv{gRRKy3;M0mhJkUKy3;yEfcOy}WKy3;t7IT5bHZKy3;o0xJoDZbKy3;kvZAVsqdKy3;foC1CV6gKy3;ahrtu7OiKy3;WaUkbmfkKy3;ST7bIPxmKy3;MMmS}1DpKy3;IFPIigUrKy3;D829PJmtKy3;81h}5y1wKy3;4wJsoaJyKy3;}oyiVDb{Ky3;whbZCss0Ly3;saEQvU83Ly3;nTtGc7Q5Ly3;iMW7Jmh7Ly3;eF9{}Oz9Ly3;Z8oqi1FCLy3;U1ShPgWELy3;Qw3Y6JoGLy3;LpiOpx3JLy3;GiLFWaLLLy3;Cb{5DDdNLy3;7UdyvruPLy3;2NGpcUARLy3;{FvfJ7RULy3;v8YW0mjWLy3;q1BNjO}YLy3;mwpDQ1HbLy3;hpR47gYdLy3;ci5xpIqfLy3;YbknWx5iLy3;TUNeDaNkLy3;ON0VwCfmLy3;KGfLdrwoLy3;F9ICKUCrLy3;A2x217UtLy3;6xZvjllvLy3;1qCmQO1yLy3;yirc71J{Ly3;ubUTqfa0My3;pU7KXIs2My3;kNmAEx75My3;gGP1xZP7My3;b92udCh9My3;W2hkKryBMy3;RxJb1UEEMy3;NqySk6WGMy3;IjbISlnIMy3;EcE98O3LMy3;9Vt}q0LNMy3;4OWsXfcPMy3;H9jEIuSMy3;x9oZxw9UMy3;s2SQeZSWMy3;ox3HLCjYMy3;jqi72r{aMy3;ejL{kTGdMy3;ac{qS6YfMy3;VVdh8lphMy3;QOGYrN5kMy3;MHvOY0NmMy3;HAYFFfeoMy3;C3B6yHwqMy3;8ypyewBtMy3;3rRpLZTvMy3;{j5g2ClxMy3;wckWlq0{My3;rVNNRTI0Ny3;mO0E96a2Ny3;iHf4skr4Ny3;dAIxYN77Ny3;Y3xnF0P9Ny3;UyZeyegBNy3;PrCVfHyDNy3;KkrLMwDGNy3;GdUC3ZVINy3;BW73mBnKNy3;6PmvRq2NNy3;2IPm9TKPNy3;zA2ds5cSNy3;u3hTZktTNy3;qyJKGN9WNy3;lryAz}QYNy3;gkb1geiaNy3;cdEuMH{cNy3;XWtk3wFfNy3;RPWbmYXhNy3;OI9RTBpjNy3;JBoIAq4mNy3;E4S9tRMoNy3;Az30a5eqNy3;5sisGkvsNy3;lLjzMBvNy3;yd{Zg}RxNy3;tWdQNekzNy3;oPGH4H00Oy3;kIv7nvH2Oy3;fBY{TYZ4Oy3;a4BrABr6Oy3;Wzphtp69Oy3;SsRYaROBOy3;Ml5PH5gDOy3;IekF{jxFOy3;DXN6hMDIOy3;8Q0zN}UKOy3;4Jfp4emMOy3;}BIgnG2POy3;w4xWUvJSOy3;szZNBYbTOy3;nsCEuAtVOy3;ilr4bp8YOy3;eeUxHRQaOy3;ZX7o{4icOy3;UQmehjzeOy3;QJPVOMFhOy3;LC2M5}WjOy3;G5hCodolOy3;C{J3VG4oOy3;7tyvBvLqOy3;2mbmuXdsOy3;{eEdbAvuOy3;vXtTIpAxOy3;qQWK}SRzOy3;mJ9Bi4k}Oy3;hCo1Pj}1Py3;c5Su5MH4Py3;Y{3lo{Y6Py3;TtibVdq8Py3;OmLRCG6BPy3;Kf{IvuNDPy3;FYd9cXfFPy3;ASG0JAxHPy3;6Kvs}oCKPy3;1DYjiSUMPy3;y5BaP4mOPy3;u{pQ6j1SPy3;ptRHpLJTPy3;km58W{aVPy3;gfk{CdsXPy3;bYNrvF8aPy3;WS0icuPcPy3;RKfYJXhePy3;NDIP0AzgPy3;I6xFjoEjPy3;E}Z6QSWlPy3;9uCz64onPy3;4nrppi3qPy3;gUgWLLsPy3;xY7XD{cuPy3;sSmNwcuwPy3;oKPEdFAzPy3;jD25KuS}Py3;e6hx0Xj1Qy3;a}Joj9}3Qy3;VuyeQoG6Qy3;QnbV7SY8Qy3;MgEMq3qAQy3;HZtCXi5DQy3;CRW3ELNFQy3;8L9wwzeHQy3;3EomdcwJQy3;{6SdKFCMQy3;w}3U1uTOQy3;ruiKkWlQQy3;mnLBS91TQy3;ig{18oIVQy3;dZduqQaXQy3;YRGlX3sZQy3;ULvbEi7cQy3;PEYRxKPeQy3;K7BJezggQy3;G0q9LcyiQy3;BvR02FElQy3;6o5tktVnQy3;2hkjSWnpQy3;zZNa893sQy3;uR0SrnKuQy3;qLfHYQcwQy3;lEI8F3uyQy3;g7x{xh9}Qy3;c0areKS1Sy3;XvCiLzi3Sy3;RorY2c{5Sy3;OhUPlEG8Sy3;Ja7GRtXASy3;ETm69WpCSy3;AMPzr85FSy3;5F2qYnMHSy3;8hgFQeJSy3;y0KXy2wLSy3;tvyNfhBOSy3;pobEMKTQSy3;khE53zkRSy3;fatxlb0VSy3;bTWoREIXSy3;WM9f9tZZSy3;SFoVsVrbSy3;N8SMZ87eSy3;I14DGnOgSy3;Dwi3zPgiSy3;9pLwf2ykSy3;4i{mMhDnSy3;}add3KVpSy3;xTGUmymrSy3;sMvKTb2uSy3;nFYBAEKwSy3;j8B2tsbySy3;e1quZVt{Sy3;ZwRlG891Ry3;Vp5czmQ3Ry3;QikRgPi5Ry3;LbNJN2{7Ry3;HU0A4hFARy3;CNf0nJXCRy3;7GItTyoERy3;39xjAb4HRy3;{1aatDMJRy3;vwCSasdLRy3;rprHHVvNRy3;miU8{7BQRy3;hb7}gmRRRy3;dUmrNPkURy3;YNPi420XRy3;TG2ZngHZRy3;P9hPUJZbRy3;K2KGByqdRy3;Fxy6ua6gRy3;BqbzaDOiRy3;6jEqHsfkRy3;1ctg{UxmRy3;zUWXh7DpRy3;uN9OOmUrRy3;pGoE5PmtRy3;l9S5o12wRy3;g24yUgJyRy3;bxioBJb{Ry3;XqLfuxs0Ty3;Rj{Vba83Ty3;NcdMIDQ5Ty3;JVGD}rh7Ty3;EOv3iUz9Ty3;9HYwO7FCTy3;5ABn5mWETy3;3qdoOoGTy3;xxRUV14JTy3;tq5LCgLLTy3;ojkBvIdNTy3;jcN2cxuPTy3;fV0vIaARTy3;aOfl}CRUTy3;VHIcirjWTy3;SAxRPU}YTy3;M3aJ67HbTy3;HyCAplYdTy3;Drr0WOqfTy3;8kUtC16iTy3;3d7kvfNkTy3;}VmacIfmTy3;wOPSJxwoTy3;rH2I0aCrTy3;nAh8jCUtTy3;i3K}PrlvTy3;dyyr6U1yTy3;Zrbip6J{Ty3;UkEZWla0Uy3;PdtPDOs2Uy3;LWWGw085Uy3;GP97dfP7Uy3;BIozJIh9Uy3;7BSq0xyBUy3;244hjZEEUy3;zyiXQCWGUy3;vrLO7rnIUy3;qk{EqT3LUy3;ldd5X6LNUy3;hWGyDlcPUy3;cPvowNuSUy3;XIYfd0AUUy3;TBBWKfSWUy3;O4qM1IjYUy3;JzRDkw{aUy3;Fs54SZGdUy3;Alkw7CYfUy3;5eNnqqphUy3;1X0eXT5kUy3;yPfUE6NmUy3;tIILxkeoUy3;pBxBeNwqUy3;k4a2L0CtUy3;fzCv1fTvUy3;bsrlkHlxUy3;WlUcSw0{Uy3;Se7T8ZI0Vy3;NXmJrBa2Vy3;IQPAYqr4Vy3;DJ21FT77Vy3;9Chtx5P9Vy3;45KkekgBVy3;}zyaLNyDVy3;xsbS20EGVy3;slEIleVIVy3;net8RHnKVy3;jXW}8w2NVy3;eQ9srYKPVy3;ZJoiYBcSVy3;VCSZFqtTVy3;Q54QyR9WVy3;L{iGf5SYVy3;HtL7MkiaVy3;Cm{z2N{cVy3;7fdql}FfVy3;3YGhReXhVy3;{QvX9HpjVy3;vJYOsv4mVy3;rCBFZYMoVy3;m5q5GBeqVy3;h{RyypvsVy3;dt5pfRBvVy3;YmkfM5TxVy3;TfNW3kkzVy3;CHWBOB00Wy3;gjqck}81Wy3;8A925qH2Wy3;bcTTSeQ3Wy3;33ounRZ4Wy3;XV6K8Hi5Wy3;{xQlU5r6Wy3;ROlArvz7Wy3;wq3cBk69Wy3;NHO1YYFAWy3;rjiRuMOBWy3;JA1uEBXCWy3;mcLJb}fDWy3;E3gkxpoEWy3;iV{9IexFWy3;9yIbeR4HWy3;dOd0}GDIWy3;5rxSL5MJWy3;YHGthvUKWy3;kaI2kdLWy3;UAvjOYmMWy3;xcD9lMvNWy3;P3Ya5B2PWy3;tVs}S}AQWy3;KyASopJSWy3;oOVs8eRRWy3;GrpHVRbTWy3;jH8jrGkUWy3;BkR8C5tVWy3;fAnZYv}WWy3;6d5}uj8YWy3;a3QQFYHZWy3;2WkrbMQaWy3;Vy2HyAZbWy3;zONiI}hcWy3;Srh7fpqdWy3;uH0Z}dzeWy3;MkK{LR6gWy3;qAfPiGFhWy3;Hdzq25OiWy3;l3IGPvWjWy3;DWchljfkWy3;gyw66YolWy3;8PFYRMxmWy3;crZzoA4oWy3;3IuO9}CpWy3;XkCqVpLqWy3;}AXFsdUrWy3;RdrgCRdsWy3;w3A6ZGmtWy3;OWUXv4vuWy3;ryoyFv1wWy3;JP7OcjAxWy3;nrSpyXJyWy3;EImEJMRzWy3;ik4gfAb{Wy3;ABP50}j}Wy3;ddjWMps0Xy3;542yid}1Xy3;ZWMN3R83Xy3;zgoPGH4Xy3;UP}Dm4Q5Xy3;yrJf6vY6Xy3;PIe4Tjh7Xy3;tkyVpXq8Xy3;LBHx9Mz9Xy3;odbMWA6BXy3;G4wns{ECXy3;kWEDDpNDXy3;BzYeZdWEXy3;fPt3wSfFXy3;7sBVGGoGXy3;aIWwc4xHXy3;2lqLzu3JXy3;WB9nJjCKXy3;zdTCgXLLXy3;S4od0MUMXy3;vW63NAdNXy3;MzQUj{lOXy3;qPlv3puPXy3;Is3LQd1SXy3;lIOmmSARXy3;DliB7GJTXy3;hB1dT4RUXy3;8eL2quaVXy3;c4gTAjjWXy3;4X{uWXsXXy3;XzIKtL}YXy3;}PdlDA8aXy3;TsxAa{GbXy3;wIGcwoPcXy3;Ola1HdYdXy3;sBvRdSheXy3;JeDuzFqfXy3;n4YJK4zgXy3;FXskgu5iXy3;izAA1jEjXy3;AQVbNXNkXy3;esp0kLWlXy3;5J8R4AfmXy3</D></Data>
+<Unit><T>Int</T><D>7004</D></Unit></Item>
+<Item XName="output" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Cplx64</T><D>1;2000;Gxm}FGopB;71TdvdpB;QRDdy3LOPzB;87SBnAFbNzB;Osnu85LOfzB;ZGOz27FbdzB;xE{T5pF2pzB;hBkUuExhnzB;xhlqt0LOvzB;JKAEAnEbtzB;shv6HAQk}zB;YwDel6YUzzB;AKKTpcF23{B;NB3q0cwh1{B;VT4Sd4ID6{B;dWWai{Ze4{B;lUpFlTKO9{B;Ff5ZdBDb7{B;kadkLnMZC{B;OHPD{AsXA{B;Gycgb{OkF{B;F521zwUUD{B;4vSxKYjRH{B;VOpDuiZDG{B;d9GZMXE2J{B;P0NToothH{B;AMJ6zSldK{B;SG}TJkBAJ{B;5b8{jHGDM{B;gUVUXUVeK{B;syIaE2noN{B;D1hjY2p6M{B;sZLI4jHOP{B;9ELQTP6bN{B;VWpXqHozQ{B;bSHpNYP3P{B;BvFi4mIZR{B;c}I7ORiXQ{B;JqDBQ7p8U{B;HGDba6}}S{B;JOGOQNJkV{B;jZpS3WHUT{B;pLTMrlvfW{B;GvvwdZyU{B;HwNHulfRX{B;dr8dekQDW{B;oRffehPFY{B;k5uJcVZyW{B;aW3CvY92Z{B;Q3agP6ihX{B;oeNbRLvqZ{B;iPcobYqQY{B;iONY53fda{B;fpOpjpy9Z{B;RJqlchOQb{B;IyKqKv4vZ{B;GyVwoE8Dc{B;fUqyzoCea{B;NsBlRit}c{B;q5HKCWKNb{B;xafwM4dod{B;pR42Z0R6c{B;Chg9KMMbe{B;hEeDbJZrc{B;Li097Y5Of{B;U6M{rOgad{B;aBTbYdqAg{B;EldSuFnJe{B;6inBPcZzg{B;}psiFut2f{B;8nleTUImh{B;q}RvUH{nf{B;tz8fYF1Zi{B;mzp89S4Xg{B;WrkvQvlLj{B;qOLYnKAGh{B;GxI7vSU8k{B;5yQDxzF}h{B;Moc{lsCxk{B;cIUH9MLki{B;yzSCo9xjl{B;O7vr{RQTj{B;e0oEPgKGm{B;W552}HVCk{B;nFOlnhhfm{B;uSziqZxk{B;zTP{xe23n{B;v9Nlh4egl{B;rREInXPRn{B;9JeFl0sCm{B;{zF1BMmrn{B;5yGAKrNam{B;}osX267Fo{B;ILIBsVvxm{B;VjSAHnTeo{B;KKPs60SJn{B;4VNHmNq1p{B;gkIltLygn{B;Kv2DPvASp{B;sPhPwWT2o{B;sjsJ5MXqp{B;PBGP0X{Po{B;WoQxjjtDq{B;5OcFxLVno{B;UKM7C0Edq{B;bNSiS}}8p{B;c0fODa0r{B;FwiHTWWp{B;vvyGCLwPr{B;p4{BDl0up{B;tYklVNGpr{B;Q}X4{qWFq{B;hpurBKcCs{B;H5XHKk0dq{B;8}{J9Bybs{B;qRsj}QW{q{B;zNawGyH}s{B;XCTKmw}Lr{B;xGCQSddOt{B;oQG0MDVjr{B;pyPZXCznt{B;5EBiWI{4s{B;Mkm6RhIBu{B;ri8J0ATRs{B;Kupq34eau{B;Vz3mapxps{B;Uj6UHMzzu{B;U6uzzEQBt{B;cWCpzXINv{B;GEWtxSuYt{B;Raea1ddmv{B;HStNEQMwt{B;mB{YLby9w{B;ypuPb9qHu{B;KfmUoRHZw{B;kUVumfHfu{B;uFZ8HDcyw{B;4YckWwk0v{B;CIvGgswLx{B;Q49taxBOv{B;33MesOFlx{B;AC2Djielv{B;CrR}kpZ8y{B;p}ChfD57w{B;Pxm6C7uXy{B;mbaCAUXUw{B;Oerk6JCxy{B;T44i{Tzrw{B;{EEeNNWKz{B;OYc4tCPDx{B;w1UZtJqjz{B;x57HZgqax{B;R72HV887{{B;Qq7CpsFyx{B;3QkK7rSW{{B;d97zLngJy{B;tAIvdPlv{{B;NeJ6vP5hy{B;ccV6vr2J}{B;yJ0{9mV2z{B;2w84p9Mi}{B;dFWwrpvPz{B;z80zcgq20}B;gU6IgaJnz{B;Yzxt0CUF0}B;P46SK2j8{{B;61nM3f7R0}B;4ohXC6W{{B;2QOTg1ne0}B;sWTQ}2Vt{{B;kEhFoLQr0}B;7USzQbtE}{B;ZbYnMb321}B;8}{gXpFc}{B;vat6KmiE1}B;C7Sv0jdz}{B;8JZJcsLS1}B;mRX}oeVA0}B;gsUS9u{d1}B;ii49VGBM0}B;sLZYvqdq1}B;3rWaSjsX0}B;3tfioiG12}B;TN}yU}Xj0}B;iWhzmVvD2}B;ZrfzV6Dv0}B;9PXPmDYQ2}B;}mfHL2u41}B;nc44jsAd2}B;Nh8aroYG1}B;zFE1ZQpp2}B;M6GWtNDR1}B;6StKEvS03}B;aZ9nHntd1}B;ZEv2hI4D3}B;ga{1x{Xp1}B;jmCFrciP3}B;Ghuzf0C}1}B;{7hzerKc3}B;P1GLsrA2}B;hQDI2}yo3}B;XFYZpVVM2}B;GliGz2b}3}B;UmaZxy8Y2}B;3wqrL1DC4}B;Z}KcZDoj2}B;5sZW7wqO4}B;C2ahWHSv2}B;pNDeDjRb4}B;ohnRd8453}B;dJ5aZQ4o4}B;alTZioiG3}B;{TVh42i{4}B;t08faFLR3}B;KhlLiZJB5}B;zIGN4Vzd3}B;4m9wL}wN5}B;6PMN0Xbp3}B;eW1myKYa5}B;c6wIDLD}3}B;VngERa9n5}B;kESpVxqA4}B;1NPjljmz5}B;naPYiJRM4}B;i5XZomNA6}B;1yK9eT3Y4}B;xnL8Wj{M6}B;m7jH7Pgj4}B;9GBppZbZ6}B;Fx1b{5Hv4}B;oKLxeJCm6}B;o9pi2at45}B;Iq7uwyoy6}B;gcWI8pTG5}B;4Zs0bVP97}B;A5g}3p3R5}B;aLriYx}L7}B;YOlTgZfd5}B;E0OJlGcY7}B;8KGMm4Fp5}B;RNoB6VCl7}B;AhiIAMq{5}B;hFOjYcox7}B;zGayiNPA6}B;MTTF0dO88}B;nuMzC9{L6}B;uqL9QW{K8}B;wLa{UgYX6}B;lALohIaX8}B;gSifNx6j6}B;KJlXmz9k8}B;HzEehxgu6}B;33ukZXlw8}B;3khZFhE47}B;LGbi0{K79}B;DM5tt9oF7}B;q5852JwJ9}B;{eDwMNLS7}B;6f9DYWVW9}B;qcu{TJuc7}B;u46PSc4j9}B;2TGM{zQo7}B;rZPzdafv9}B;uOVHfMzz7}B;gGWE2SE6A}B;gdl1GTV98}B;6MsWa9pIA}B;gMBuZH1L8}B;p{t89mNVA}B;9py5MpYW8}B;UL1SgEyhA}B;OAEyN24i8}B;sakh2bWuA}B;jf9iQ{at8}B;atSFCp45B}B;LUvcFd539}B;NObQ1veHB}B;crdzdybE9}B;xHdXRsCUB}B;myU1L{5Q9}B;ykzuNhmgB}B;51f38ibb9}B;8w4rjNKtB}B;vFGLo55n9}B;A{OgOxt3C}B;SsU75Bay9}B;m5MjIMSGC}B;}1Vhnx28A}B;cSOIMe{RC}B;u}QIfNXJA}B;PAyjTnXfC}B;LzRDTU}UA}B;qRTKZn4sC}B;g7lj{FTgA}B;dTOQXed2D}B;AiS4}hwrA}B;SN9KIMAFD}B;4uiYFoN1B}B;{KCMmwiSD}B;iuiPXYqCB}B;{WzqrLFeD}B;LxbwbyGOB}B;66v4TdnqD}B;FDYME0jZB}B;SSPOWlJ1E}B;M3ltBj8lB}B;wglFvjrDE}B;p1ZyC3awB}B;1O2NWYNQE}B;cTYGz1}5C}B;VPyNEDvcE}B;44yM8fPHC}B;5c8yxjQpE}B;XY{oPupRC}B;XqHjX4y}E}B;Icu7TlDeC}B;Yx2LuGTCF}B;fyuuzDdpC}B;tn6TuI{OF}B;yIEfdJ0}C}B;HE8lQAVbF}B;WM7y50PAD}B;U7oqNt}nF}B;eqoK4JnLD}B;DKlNePW{F}B;fQVMEC9XD}B;eLrWYOW5G}B;wrSaFhWiD}B;fX7EpUmBG}B;gpsXplttD}B;ZfZeYV0IG}B;H1}nbPE3E}B;i8}4jQGOG}B;2C3uHeaEE}B;TQFuEGWUG}B;H1INZSwPE}B;Fw9N40maG}B;MEwo5pFbE}B;M3as9g}gG}B;WWAkakamE}B;BHJhSEFnG}B;6bHihDvxE}B;7}CAsiUtG}B;R9UG6GD7F}B;We6eL5kzG}B;sw{zVrWIF}B;lerPsNz3H}B;gc2OazpTF}B;CSFqKaCAH}B;Cwt1}d6fF}B;DS9CjgSGH}B;kYjUSqOqF}B;A4PsxggMH}B;cDoHbYg}F}B;CNd7zavRH}B;p}T{3vT5G}B;tvIuiO8ZH}B;7nSyLH6BG}B;xU766NfH}B;3b3YvPkGG}B;XwEj3jblH}B;WhdLVIMMG}B;IOcXWDqrH}B;LKQztwzSG}B;EqeRNd2yH}B;Tlj}pIbXG}B;DkPMZwG2I}B;mCq24QCdG}B;Bcy6}6V8I}B;8y}iOGpiG}B;1yKcbCjEI}B;TDZaYrPoG}B;dFciHBxKI}B;eGmFI90uG}B;u0qH{29SI}B;YLvKOBczG}B;kl1EcpMXI}B;4iGQbxB3H}B;1yIP4TadI}B;7a86gPn8H}B;j5hhJ}njI}B;aDp{MbMEH}B;giDzEQ}pI}B;LuYgRUxJH}B;pG{5njCwI}B;Hqflh4WPH}B;}H0{qvP0J}B;IHQqqN4VH}B;BGNTL{c6J}B;HV6VeNeaH}B;Eh6RDxpCJ}B;7k0Mt3CgH}B;33IoNm0JJ}B;jDS}HRllH}B;btyNlTDPJ}B;yDe1fWIrH}B;heA5F3QVJ}B;i{v2jGrwH}B;Gs{nnWcbJ}B;tlYfEiN0I}B;D0TMIsohJ}B;MnqS{ov5I}B;Rcegh3}nJ}B;1J20jaSBI}B;u8bcu8BuJ}B;paTyA1zGI}B;HVDgp5N{J}B;1zmS78UMI}B;VutkLwY4K}B;CJDZBv{SI}B;gvgINckAK}B;S1em{JVXI}B;77jpm9wGK}B;bUsX8O}cI}B;955mQa5NK}B;U1kKG5ViI}B;3OvbDsGTK}B;z04dzQ{nI}B;8aGp1}SZK}B;qpjstOTtI}B;gDHsl{cfK}B;xmWXc{xyI}B;{u1DGrnlK}B;7FI5nBQ2J}B;NAfLSYyrK}B;Dbt}{}t7J}B;7cDk967yK}B;2A6ltQLDJ}B;ZmrqJWH2L}B;RKpm2RoIJ}B;yDe7omS8L}B;FSqY73FOJ}B;dYh4TtbEL}B;Ir{YjFhTJ}B;sI6ADqlKL}B;Pv7FR17ZJ}B;y2}rwcvQL}B;Q{45xNYeJ}B;ENRcUF3XL}B;AShYnIzjJ}B;{pavmjCdL}B;Wcm5dnNpJ}B;VzUDg1MjL}B;Ft9C3qnuJ}B;4OH03BVpL}B;CaiJjPB{J}B;e2mp9evL}B;E4EwCYa3K}B;eHvwqzm}L}B;BkZT9Dz8K}B;Evx{{cv5M}B;suYSAQLEK}B;43HQA52CM}B;6x0It8jJK}B;VJ}gFOAIM}B;lBpUtO4PK}B;qWQ}6WIOM}B;wLDTn9SUK}B;QKTHcRQUM}B;loSt1SnZK}B;blk9YDYaM}B;tUA10C7fK}B;RW0GlofgM}B;FraA3RRkK}B;7L4C2CnmM}B;mGsZYAnpK}B;jxhbFPusM}B;NCATrM5vK}B;M2f4CQ}yM}B;}2i6J0P{K}B;ANjGiE63N}B;ZFdmI6i3L}B;GegnasC9N}B;{C7hBe{8L}B;oZIFgHJFN}B;EMN6LbGEL}B;rtMHnVPLN}B;B6ZI6zXJL}B;YIfVkWVSN}B;otrVskoOL}B;YxXMKbXN}B;{5S{yv2UL}B;OK}}TwgdN}B;hBU{mTIZL}B;oNcXvImjN}B;rZAmfPXeL}B;JQYkTTrpN}B;LfhZ{iljL}B;4AbE}PwvN}B;8tCf6NzoL}B;ELWfI8}}N}B;9evGPNAuL}B;tf5dCe36O}B;JNzgDjMzL}B;8s6lXv7CO}B;YVZ7xNY2M}B;9eLf6yBIO}B;pStsuMj7M}B;kZzllFOO}B;{c49UftCM}B;srYJIKJUO}B;RME2F1IM}B;oj4JYfMaO}B;qLuMy6ANM}B;y3xZKlPgO}B;NlroZGIRM}B;iAGjTbRmO}B;o{zcFhPXM}B;}0E6oBVsO}B;SUuEIMWcM}B;UXuq5YXyO}B;mZr8vGchM}B;wCU{CeZ2P}B;J7cZHQhmM}B;}ZDexTb8P}B;X1xjenlrM}B;U7Lt53dEP}B;vAbsBMpwM}B;7O3nVNeKP}B;xSLC87s}M}B;bscQzQfQP}B;3jyzg3u4N}B;g3EvIDgWP}B;osBQ1Bv9N}B;3W7IKkgcP}B;cnplORvEN}B;ViXgrzgiP}B;zLbD{suJN}B;k9h7hxgoP}B;NRH2}PtON}B;WOokedguP}B;IzeRe4rTN}B;Wv5bY1g{P}B;CnRh7snYN}B;VDqlC9f4Q}B;amTzfjjdN}B;CrBKS{dAQ}B;wpRXRgeiN}B;MHSN2XcGQ}B;hpAcihYnN}B;g2n{rmaMQ}B;NeOQdmSsN}B;wfSFgjYRQ}B;RAtCQuJxN}B;pdfEJNWYQ}B;OINCI2B0O}B;3Tf1bjTeQ}B;hufdRD15O}B;QgfjJmQkQ}B;prVj6Ps9O}B;cmuNJVNqQ}B;F2giTagEO}B;NGb5OwJwQ}B;UMvpkkTJO}B;SgzxL1G0S}B;{g{H7tFOO}B;m}P11qB6S}B;Dz2Qqy0TO}B;jRnMGI7CS}B;2zqbE}mXO}B;HH}31R2IS}B;DIAX5{VcO}B;6CE2HHzNS}B;bzWpBvDhO}B;txeA{ntTS}B;30N4KmwlO}B;CFQM6{nZS}B;RQAxGZcqO}B;mqiUdrhfS}B;gDP}qHHvO}B;EShRVOblS}B;aQXuoxwzO}B;EnW9icUrS}B;221EzWZ2P}B;RbNUBWNxS}B;x4Md61B7P}B;XcQKx4G1R}B;7a{h1RnBP}B;7ZqavK87R}B;TWO3XnMGP}B;v9m84G0DR}B;rw1LN1xKP}B;V9OvOstIR}B;7qO8NBUPP}B;bGtlr7lOR}B;BDx4JF0UP}B;qDObO4cUR}B;u67ozCXYP}B;tl5J}hRaR}B;6YQt941dP}B;MbAod{IgR}B;hVJyfqVhP}B;zRnxFy8mR}B;X0GeGUzlP}B;L55fra{rR}B;U5kYm0QqP}B;9DGpMupxR}B;SlBJySruP}B;2ZTJnse1T}B;G}6XclFzP}B;hrt23WT7T}B;orzpXxe1Q}B;ipfw9qHDT}B;wJEpW}06Q}B;oB{p3p5JT}B;XQM6MxNAQ}B;ai}dkRvOT}B;TAqKqkjEQ}B;XdnV7niUT}B;dX4rpP2JQ}B;oRaH8mVaT}B;aII5cyLNQ}B;tNxvfPIgT}B;S9nSZNeSQ}B;HUPLbj4mT}B;AWrE4hvVQ}B;VrXWphsrT}B;ompqWt9aQ}B;ZtNDKexT}B;IL0aHzOeQ}B;MizthcP1U}B;ddlokyciQ}B;NNz7ZA7U}B;p1MtGspmQ}B;RedaQ9xCU}B;oz78Gg}qQ}B;BcHgRPhIU}B;brPx4PAvQ}B;jLuA7JSOU}B;B3Wd73KzQ}B;Vy{2JsAUU}B;Y0lYmeR1S}B;5W8Fv2wZU}B;g7S3OAa5S}B;x5uhouefU}B;XouVMeg9S}B;ZpmLuNNlU}B;8SRE43mDS}B;RkL93W5rU}B;TSQbvQqHS}B;4y93CHpwU}B;TD7xEmtLS}B;{Xm}BhW0V}B;ABtbR3wPS}B;cbixxjD6V}B;Yk{xwKxTS}B;VCXpKPwBV}B;aHoJ2bxXS}B;5RnZFjcHV}B;EEc3BqwbS}B;yP09bfINV}B;Y{kXj2vfS}B;YBnVEE{RV}B;RyW42HsjS}B;Ksca4SfYV}B;yXG2XVonS}B;rV4K0GKeV}B;29InYkjrS}B;zqaHwi{jV}B;ofNyV{dvS}B;Q{5CdnepV}B;Y0KLqFXzS}B;6dxevTIvV}B;cD}TzYP1R}B;UmsBanx{V}B;UbXvOuG5R}B;1EKiCMI2W}B;lR3BaG79R}B;drWv5d65W}B;s7jryhyCR}B;llP}Mhw7W}B;MxcR0BnGR}B;9TtFvYkAW}B;lBvYCkaKR}B;XUoybDYDW}B;XDih{LNOR}B;eK3OMhLGW}B;FL8Qq29RR}B;BWYp3y8JW}B;NtLHBrvVR}B;wX8Xd}xLW}B;R8TqWjfZR}B;XwjowrkOW}B;zRccIiOdR}B;pABwsUXSW}B;U9wA{n6hR}B;SpO9LwJUW}B;RYW41}pkR}B;7LFoE86XW}B;PyXsuJWoR}B;fGd6T8uZW}B;th643nBsR}B;i6POvwfcW}B;L5NGzMsvR}B;2OTvRVSfW}B;MTS{46WzR}B;Nbix0sCiW}B;Q8Rnt{81T}B;QF}mU{zkW}B;}QXCp1n4T}B;wsDhluknW}B;gfpoKFO8T}B;byGyiaVqW}B;v8S7wd{BT}B;B11sF2GtW}B;FDWj0CaFT}B;QbMgHH0wW}B;BBB86y8JT}B;BMRnhHmyW}B;eMJwduiMT}B;e79FQ3W}W}B;6NVV32GQT}B;Orb3RcF2X}B;2DOBsOoTT}B;JbYOmw{4X}B;}tCHTzJXT}B;8TlNM0k7X}B;SNC4MmqaT}B;kYyADtRAX}B;xgbtznKeT}B;vxvxJVBDX}B;ynd{n2qhT}B;QkNqfuvFX}B;iXiFZIlT}B;706{D3eIX}B;fOYKqJmoT}B;psqY}{LLX}B;Ltu9zKDsT}B;IOKizh3OX}B;e7qV7dfvT}B;OgKa7AnQX}B;19ZfmA5zT}B;uobKRPUTX}B;xKwL0W0U}B;dtt6xPBWX}B;9TObK8w3U}B;N{w4ZBuYX}B;vkyz9ZJ7U}B;{CVOJkabX}B;qlGNJHiAU}B;EfKBB2HeX}B;OVZ4EJ4EU}B;xOBd97zgX}B;7z3PNfSHU}B;wXprDzejX}B;Z81eCKoKU}B;{9z0NaKmX}B;B1g4BK8OU}B;xMOIay}oX}B;XcD2mfTSU}B;ZErpq5hrX}B;5uwpOLoUU}B;js3l70MuX}B;Or0jYN6YU}B;BLqDRh0xX}B;yTk0hmPbU}B;mlsPn7hzX}B;FnI2FXieU}B;GcGT6LL0Y}B;tWb4if{hU}B;ztBVSJ}2Y}B;73FOUAGlU}B;oLWgo2f5Y}B;sC0}}3XoU}B;HfESEZI8Y}B;H24egMnrU}B;{SNDnqxAY}B;ddb2u21vU}B;VNxRTtaDY}B;81mz19GyU}B;N5xbLhDGY}B;1Jk8YfU}U}B;AFN4RGsIY}B;aXhIoai2V}B;TUGKpcULY}B;zmoACxv5V}B;oRdnTk6OY}B;R5FW9j69V}B;mpRuTdkQY}B;HZB24xICV}B;vCn4sHMTY}B;fEpVLbUFV}B;pHboejzVY}B;rBHeNifIV}B;ivTuwaYY}B;2VmAaGqLV}B;65lYdvBbY}B;XCRsKI{OV}B;f66TufodY}B;WOVQ3o7RV}B;BQ}ejBPgY}B;C75c9mGVV}B;JfSY9V}iY}B;tRO81DPYV}B;ZTSbEablY}B;kTam39XbV}B;WW}D}QBoY}B;1EqDhaeeV}B;lS8uT3nqY}B;{nIFHWlhV}B;ous}iTMtY}B;rDBaFyrkV}B;GXB1lfxvY}B;qbex}uxnV}B;g{6OcdWyY}B;A{r4yM1rV}B;cwfWLN5}Y}B;7S{kTM6uV}B;f{qs{uf1Z}B;w0Df{tAxV}B;WcljaCE4Z}B;s0YTtxE{V}B;mfMm8Io6Z}B;HCp{DHf0W}B;oiHUi9M9Z}B;{DTH}rA2W}B;MH8NHpvBZ}B;}4VpOCi3W}B;8vXwuETEZ}B;mmenZKD5W}B;u56eaR0HZ}B;hGgOfEk6W}B;JPR}LRZJZ}B;EaJrowE8W}B;5LCWEE6MZ}B;pgKK9Pl9W}B;{QzfFoeOZ}B;sZT2sfFBW}B;hCNyQ8BSZ}B;qEUC2jlCW}B;xB1tnGjTZ}B;7h6}sYFEW}B;QwYvLBFWZ}B;Du6dTBlFW}B;tvZZ8umYZ}B;VrEH}cEHW}B;ihKBNIbZ}B;RYEAbrjIW}B;YoXiVepdZ}B;R{rUOtCKW}B;CljA7iKgZ}B;{8rSYihLW}B;h3tE3YriZ}B;T1yDCLANW}B;iHbOLAMlZ}B;Jdw1VneOW}B;}wV7}asnZ}B;{vW4a17QW}B;GXEx1oMqZ}B;uuUYa5bSW}B;FcOJVnssZ}B;VZaefz2TW}B;dhblOZMvZ}B;CvXZyfWUW}B;8JTll7sxZ}B;Tv6WcA{VW}B;V{cobUL{Z}B;jZ3hmVSXW}B;QFgOydq0a}B;Nt7HafuYW}B;2fHzqZJ3a}B;bP}IAeLaW}B;YfJKGIo5a}B;emntfSobW}B;LyZwEpG8a}B;3cF094FdW}B;dDaCn6lAa}B;KeIijXheW}B;Z9sctCDDa}B;xbqxTq7gW}B;MRxbY5hFa}B;ODlkVyZhW}B;BoLcom8Ia}B;9Dy4vv}iW}B;Ftc4eEcKa}B;lJL{liSkW}B;iNGT3V3Na}B;eFqQALtlW}B;l}pC5YWPa}B;JlIQEpInW}B;aSpljNzSa}B;IXgy17koW}B;MNmYz}PUa}B;1Kr1hG9qW}B;IVC2rQsWa}B;2sifFGarW}B;ZVfgKeIZa}B;prAqr5}sW}B;L4fuRekba}B;p19XZnPuW}B;qvi8ESAea}B;a8XmUJqvW}B;BiMte0cga}B;YuCYjhExW}B;e78XjO1ja}B;E06sLweyW}B;KuYYRZRla}B;8E6iT}2{W}B;Tg8OsWtna}B;kG74BxR}W}B;EASUxGIqa}B;Xs2{Zjs0X}B;p3yHipisa}B;{joPkMG2X}B;O3DF997va}B;dbGNmsf3X}B;7rloIHXxa}B;wBMslD35X}B;F56P9Cxza}B;MFzsoSR6X}B;nVNUjvK0b}B;9pfM}Wr7X}B;mk}I}Pk2b}B;I1kFQTE9X}B;LBGw{i75b}B;zkhG7HdAX}B;JjMioW7b}B;M824Ay}BX}B;IZxg7hv9b}B;dPGKcUODX}B;hPVvGMICb}B;wkrhVumEX}B;iJz48qgEb}B;RKHrv99GX}B;skvFj43Hb}B;LM2SuIXHX}B;d8vR08SJb}B;n0e7VJvIX}B;Y{Vk1{oLb}B;wVXbnBHKX}B;7kI7ncAOb}B;x}DVpxeLX}B;sqrfE2YQb}B;}iCVeZ0NX}B;FmjOQGvRb}B;GpyFK3OOX}B;pzUMKHGVb}B;uUzSwQlPX}B;2xjby4dXb}B;3yjjUg6SX}B;T5}8JhzZb}B;xMjl4oTRX}B;bws2O4Kcb}B;gxQCmnqTX}B;vtvLBGgeb}B;SsLkafBVX}B;xQi4jE0hb}B;PJz}bPYWX}B;A1pHz}Ljb}B;lUmht1vXX}B;78o}xZhlb}B;caERTYFZX}B;IDEHfw0ob}B;BnsxQxbaX}B;Dkh854Mqb}B;cG8rpCybX}B;N8leF0hsb}B;3FYohMIdX}B;Hvyp8l}ub}B;juZU6PeeX}B;bdwimGKxb}B;a2aZ7K{fX}B;59wP7bezb}B;ifvGo7KhX}B;nPP9Diy}b}B;9K2w8qfiX}B;qoyA2cG2c}B;NJOgDP}jX}B;Oj8kcIa4c}B;nuLj2tKlX}B;dYX2xnt6c}B;nLLEgDgmX}B;hhhN}3B9c}B;oxmO6T}nX}B;iXBzp8UBc}B;Gy2OPbKpX}B;uTb2P0nDc}B;aebNbcfqX}B;LvTtkg3Gc}B;BIpYiW{rX}B;GDPhr7MIc}B;VA65nJJtX}B;noxjjNeKc}B;xYu9r}duX}B;23gENQwMc}B;viaywayvX}B;FN8ToFCPc}B;rvae43HxX}B;V8xe}tTSc}B;9SJPKQbyX}B;}lc1}IlTc}B;IYAQigvzX}B;uclsmW0Wc}B;eWasEqD}X}B;I6wNLXHYc}B;edxvzsX0Y}B;PdgqiKYac}B;i8glxor1Y}B;NZbRtwocc}B;FLAZAe93Y}B;MJFVrJ3fc}B;jUsViMT4Y}B;VGCCdVJhc}B;Vs8nZ{m5Y}B;yp0pCUZjc}B;1kSYoV47Y}B;uMHZcFplc}B;kM9}QwN8Y}B;RIYiqp2oc}B;2iIVEh9Y}B;q}NUtAIqc}B;J1Ue1R{AY}B;J5iClKXsc}B;UgH54ZHCY}B;6gYVRHmuc}B;Pk3FeZaDY}B;j5t401}wc}B;t5pYlTtEY}B;HoagQZDzc}B;YbUTSHAGY}B;}9d{iuS}c}B;725Rj{RHY}B;dvkt0g1d}B;IGbxcblIY}B;XZNfxxt3d}B;m4{O962KY}B;hPySvf56d}B;DKEHMWKLY}B;eZZqnAJ8d}B;JpK1FqcMY}B;bS8XbUWAd}B;nMG6r1vNY}B;iScFLbjCd}B;Hp}y99BPY}B;7{uj1VwEd}B;WzX2FATQY}B;3TxfhB7Hd}B;Bgrp55lSY}B;eIfnJhJJd}B;yjvjlv0TY}B;2vzowzVLd}B;XziDEeIUY}B;RgqSX3iNd}B;aDEmYGaVY}B;219Q8ytPd}B;qIRokorWY}B;yMsSmd3Rd}B;x1MnpE7YY}B;N6uEQ6FUd}B;cFw9paOZY}B;Uf9X6OQWd}B;Xm7PkqfaY}B;QQc0sRbYd}B;NPzxc{wbY}B;Np9SfKmad}B;s{PFU2CdY}B;WElUX}wcd}B;eLRmL0TeY}B;}5IvUT5fd}B;SI3yEujfY}B;qjOYkFhd}B;xfDFBg{gY}B;c7niioPjd}B;ugY6CMFiY}B;g2{t{fZld}B;wPpwIyVjY}B;8K28QKjnd}B;CXU2XRmkY}B;b9rg}nspd}B;vk0qts0mY}B;amDkm20sd}B;6nsbOBHnY}B;gM3Wk69ud}B;wLTk4QXoY}B;R9DEwzHwd}B;UBHazYnpY}B;TMY6LeQyd}B;v}kT4c1rY}B;JBwM06Z{d}B;HXJnQZHsY}B;XrBDzMh0e}B;lTSr1SXtY}B;jYEtCSp2e}B;QZZ0xCnuY}B;QWvYmIx4e}B;QW8f7v0wY}B;Cy3Ufz27e}B;q2d5fVGxY}B;f3bsuSA9e}B;ouSiW0WyY}B;J4KwVjHBe}B;Qm3qlSlzY}B;nB8tVoODe}B;qNxoNn{{Y}B;cduwvgVFe}B;7TV}P1E0Z}B;NbRJlMcHe}B;QkCmtBT1Z}B;dIhE1siJe}B;rvVSoGi2Z}B;yySwm8pLe}B;VjrNBGx3Z}B;wnba}EvNe}B;Wtgx3AA5Z}B;5}}Qk8}Pe}B;6RTT{O6Z}B;oXh{r4Re}B;47cJPjd7Z}B;JO2anMAUe}B;rebquMs8Z}B;U}OI8hFWe}B;QPtMzw4AZ}B;}wn44pKYe}B;a87HePJBZ}B;g8PJckPae}B;tI81xoXCZ}B;T7{XmTUce}B;UAzCt6mDZ}B;pYvKa0Zee}B;pN5SUL{EZ}B;36aG3Ndge}B;DZ0IoUCGZ}B;fRMvEXhie}B;7LEOqYQHZ}B;yHfp8Vlke}B;tLEKcXeIZ}B;OHrZoGpme}B;vDWi9SsJZ}B;L6JkDssoe}B;ZbZ7WF4LZ}B;CRStSFwqe}B;F5uBh{HMZ}B;O{cZURzse}B;MLzVieVNZ}B;IOENNT0ve}B;G{IgbDjOZ}B;JLgs7I3xe}B;NeOHOjwPZ}B;sWJcnw5ze}B;2yjx588SZ}B;IcYAMN8}e}B;hXoFmTLRZ}B;2Hm7tdA1f}B;i16qOkYTZ}B;WCL2MiC3f}B;S48F1wlUZ}B;54gUqaE5f}B;JIO7h0zVZ}B;AZ71KHG7f}B;hJM3O2AXZ}B;AL6EsnH9f}B;zmXf9}MYZ}B;T5}fR6JBf}B;YIQW1tZZZ}B;RVAv8FKDf}B;oWVE1gmaZ}B;YE1WyBLFf}B;74HQAOzbZ}B;8{x2vyLHf}B;uaEgU1AdZ}B;ePJ60YMJf}B;Vhta}bMeZ}B;s7XEJxMLf}B;Jiimk5ZfZ}B;WSP3q8NNf}B;zqlsjWlgZ}B;okZKaANPf}B;{oqb{sxhZ}B;Kliob0NSf}B;TdYjY88jZ}B;lAXEwgMTf}B;XJWzSLKkZ}B;ikjOZ9MVf}B;IuK5iTWlZ}B;o8}1ZRLXf}B;tMdqKXimZ}B;h62xwZKZf}B;Om{wNWunZ}B;}LZqiVJbf}B;x528tQ4pZ}B;NaFVwFIdf}B;eOOBqGGqZ}B;SVphbqGff}B;cfeqG2RrZ}B;rqxAmDFhf}B;zvPpEldsZ}B;DILjSSDjf}B;qAJtlNptZ}B;Abi3gTBlf}B;ITxlrx{uZ}B;MSk{RK9nf}B;VovCYSAwZ}B;QY7Fs}6pf}B;XBrzssLxZ}B;{dabtV4rf}B;XfKorDXyZ}B;hPooYq1tf}B;cD}PWWizZ}B;9bTdvz{uf}B;suSaukt{Z}B;1uIqzxxwf}B;QiH10v20a}B;x}{9nkuyf}B;Of7Wu{D1a}B;XgEPLMr{f}B;umamZ0P2a}B;PbkIion0g}B;24GY3{Z3a}B;FUBdt3k2g}B;yZmaPtk4a}B;g2I7v9g4g}B;jHjddiv5a}B;I0lZo4c6g}B;UEjQlT47a}B;ysSjbqX8g}B;xmXjoAF8a}B;7TFMKPTAg}B;vsjGppP9a}B;2JG0pOCg}B;kL3roOaAa}B;yqlDh1KEg}B;t2KBpvkBa}B;K5l0N5FGg}B;npH4sMvCa}B;W2QS5{9Ig}B;xTkGzl3Ea}B;txvFuh4Kg}B;psSXA5EFa}B;o0OGnE}Lg}B;upBdVMOGa}B;eWzEocvNg}B;dAmI{ZYHa}B;mgpzyppPg}B;UmwKejiIa}B;ak3FJsjSg}B;yQTUVpsJa}B;PxsqsjdTg}B;U}9Wbr0La}B;fWMXfQXVg}B;aJoAypAMa}B;gjh6jyQXg}B;gC8FbkKNa}B;rn}M3KKZg}B;GWzTYbUOa}B;XyS4kWDbg}B;o34erOePa}B;6T91lY6dg}B;miDUW8oQa}B;zYH}7Q}eg}B;eGCnaqxSa}B;RTzmw6ugg}B;sanH4T5Ta}B;xSM89fmig}B;xUlm02FUa}B;pjbtq0fkg}B;Jqt{SZOVa}B;SYqm}DXmg}B;UQyiN1YWa}B;99CchGPog}B;t6lhrShXa}B;Onr9w8Hqg}B;l1itoqYa}B;VgwDjs8sg}B;K8cUV6{Za}B;}32a6Q0ug}B;Zg4pkM7ba}B;yd3u7ptvg}B;eOhCdZGca}B;1MMoo1lxg}B;Dt27AjPda}B;v}Dx86czg}B;ZjizOpYea}B;6N{wB0T}g}B;sYACLshfa}B;FDxPzlJ1h}B;K{zD0sqga}B;xJO0VLA3h}B;BdeUSozha}B;iRfMom05h}B;f4iPeh6ja}B;DP25v1t6h}B;yzfQeXFka}B;1xspq8j8h}B;Jw3zRKOla}B;kpQBd5ZAh}B;vWSR74Xma}B;wq1qHuOCh}B;}OIKfmfna}B;Am}LsWEEh}B;m9A04Qooa}B;6NePM}3Gh}B;RQaxO0xpa}B;ISFdpJvHh}B;Ho2YfZ3ra}B;Lk8dFUkJh}B;Su6Ft3Csa}B;p1e1iUZLh}B;9KIU3XKta}B;L71VALONh}B;gi6hFxRua}B;Umddi1DPh}B;Af5HTIbva}B;rkl3Ka1Sh}B;ummhjcjwa}B;qiS2zrRh}B;2hfM2urxa}B;anoNvBgUh}B;q{HjR6{ya}B;7PLWwGUWh}B;UJBB{H6{a}B;GReT7CIYh}B;EGtBeQE}a}B;ai}tXz5ah}B;HRtARWM0b}B;fNQNBbvbh}B;FiNZSZU1b}B;NPbP53jdh}B;IFgbdZc2b}B;dI0GHNWfh}B;CF5L1Xk3b}B;R9TBmXJhh}B;IjEqfSs4b}B;u3kRZY6jh}B;ugi5YJ{5b}B;z7bKiPvkh}B;K95Ch867b}B;iSq3C7imh}B;w9{96xD8b}B;A5Ex3hUoh}B;1kz1qgL9b}B;PAaBL5Hqh}B;zsfsrNTAb}B;Sne51M3sh}B;4cegC2bBb}B;H0Ew8Trth}B;gyVWvfiCb}B;{y5wjQdvh}B;4yrQzEqDb}B;bj2MnEPxh}B;fbGRPnxEb}B;9OsUKvAzh}B;iwLdEH3Gb}B;h2JbOQy{h}B;ayh{TkAHb}B;EpAw{nj0i}B;biua89IIb}B;qlFk80V2i}B;4CYRFXPJb}B;W{JIt4G4i}B;NREepsWKb}B;Kb9tB016i}B;pUZAs9eLb}B;IgYj7on7i}B;jK76OQlMb}B;TJH6iQY9i}B;Q}VTQesNb}B;rc7IwvIBi}B;EWJJ{pzOb}B;XgtXpF3Di}B;Wu7g4z4Qb}B;WaJ6PRpEi}B;b9Zak3CSb}B;rQDGiVZGi}B;oKB5z7JRb}B;4bKGkPJIi}B;MaaEn9QTb}B;PosBWA3Ki}B;8hSxB9XUb}B;hdzi2ooLi}B;5P}pD6eVb}B;kHwPMGYNi}B;c{qTt0lWb}B;MzzuSbHPi}B;4iXU9vrXb}B;MtPmJn0Si}B;qngS4lyYb}B;aCVc{plRi}B;HWrweY3ab}B;q9V1TjUUi}B;o7dXtJAbb}B;vxgdlTDWi}B;luarm2Hcb}B;elJ}s4yXi}B;W3KRLlNdb}B;pngkpYgZi}B;TuPxbPUeb}B;GF1RctObi}B;{dSuY1bfb}B;qKejF37di}B;SY{uCdhgb}B;HFn9m5rei}B;DudYaAohb}B;RBjM8}Ygi}B;gvyQghuib}B;8MjwOlGii}B;BtY7VA}jb}B;By2RYM{ji}B;91}D3d5lb}B;OA}Wbqhli}B;xdsJN1Cmb}B;ZDplY9Pni}B;vxk{SPInb}B;WImkQL6pi}B;RDDqHlOob}B;3c74EOpqi}B;wisPv2Vpb}B;1LAMzHWsi}B;jgGLJKbqb}B;Di9Bf2Dui}B;CN0CWZhrb}B;RuM9Igvvi}B;l2hZWmnsb}B;X63tu8cxi}B;lzr1Lxttb}B;GZVwTUIzi}B;YO6C{3{ub}B;3Zn1h{{i}B;YqmaRA4wb}B;cNRGakg0j}B;Zx0UmEAxb}B;rnZ{4fM2j}B;AU35wGGyb}B;GJHZZQ24j}B;275dvGMzb}B;Vzyb}2k5j}B;qWIHlER{b}B;7o{jOYP7j}B;BMuGSAY}b}B;iokYku49j}B;oH3pz3e0c}B;q0bh06mAj}B;I{}4Nxj1c}B;4UvlEASCj}B;L6xJdmp2c}B;2C4NO56Ej}B;dK1jkZv3c}B;KCT8TtmFj}B;oJVTjK}4c}B;UWRhRWSHj}B;VkXoZ356c}B;6AQdM06Jj}B;QFLvHmA7c}B;mAkZANmKj}B;BX6}tQG8c}B;4am7uaQMj}B;VE2HM3M9c}B;bNvwUf4Oj}B;}1LyifSAc}B;wcWa{akPj}B;LcBEyDXBc}B;dJ{hMNOSj}B;CcoJ4mcCc}B;IVguc02Tj}B;DiMQ5GiDc}B;WBznkWhUj}B;4Z4l}jnEc}B;uPE}jtKWj}B;Sr8Vp9tFc}B;zBs7a5{Xj}B;xDmtWZyGc}B;MZCpGAdZj}B;GN768x1Ic}B;dXfep5Gbj}B;3yQNfG7Jc}B;N8bFCuucj}B;}ctu4aCKc}B;}ICBQXXej}B;oDasQrHLc}B;u4wFR1Agj}B;wOGh4NMc}B;OUnqGOohj}B;8LY{rHRNc}B;RPOGsbQjj}B;iX5vwRXOc}B;5mKvAg2lj}B;KY7uvbcPc}B;ERC6Dbgmj}B;bPjpoihQc}B;sNbDxMIoj}B;2AyZbnmSc}B;xR5cJ}vpj}B;Hsu0IqrRc}B;ObIcKUXrj}B;tWe2uqwTc}B;Fhoayp8tj}B;QCGXNp}Uc}B;SeBu90muj}B;UxqKml4Wc}B;xM3tw2Nwj}B;emSL2g9Xc}B;hm}tDyzxj}B;Tk9SDYEYc}B;hlcH1iazj}B;Zt3UHOJZc}B;uDUQJIB}j}B;UEFMECOac}B;F5Cf2ln0k}B;qrmx3{Rbc}B;lFMKD2O2k}B;Amj6ojXcc}B;KdYonB{3k}B;30BlOScdc}B;{5NQkBa5k}B;7eDjt6hec}B;fbPY12A7k}B;wgwuEmlfc}B;K0GXfkl8k}B;BNAUNqgc}B;zFWjaHLAk}B;}AePbyuhc}B;VEmTngwBk}B;RjoUaVzic}B;yrb8EwVDk}B;yqxHS02kc}B;F0d4v}4Fk}B;4a8h9V6lc}B;FiBdmxfGk}B;6wCYlxAmc}B;PEVRojEIk}B;WuxbCMFnc}B;l4VUxLpJk}B;ZF9QWkJoc}B;Hx5a8qNLk}B;i7{Xg4Opc}B;{TEaM8yMk}B;KfZWgORqc}B;rOpLYIWOk}B;sy2vVgWrc}B;rNlleI4Qk}B;kAbEAwasc}B;{6zec8eSk}B;KSJ4f7ftc}B;GINuOqBTk}B;5tMzxIjuc}B;fbuKyLlUk}B;ScuR2Rnvc}B;AjSrDjIWk}B;mn16yYrwc}B;oKxGAwrXk}B;WXxSedvxc}B;V8IUkyOZk}B;3{k17gzyc}B;IqQKtqxak}B;tFbQNg1{c}B;A4GgXYUck}B;KVd9Pe5}c}B;7aiMg51ek}B;tq{nBa90d}B;70hGEUZfk}B;uOqskTD1d}B;946FAi5hk}B;pJHx1LH2d}B;FRu8Sldik}B;3kUY4AL3d}B;Mqyqzd9kk}B;3mbFsyO4d}B;VuDAlLhlk}B;CYlbMjR5d}B;eKc}huCnk}B;wC58bSW6d}B;oq0CnGkok}B;dulPX7a7d}B;y4OcxTFqk}B;kjuzAnd8d}B;4nc58Wmrk}B;gqeNXOh9d}B;PcXWJNHtk}B;l48AazkAd}B;A0fGQ3ouk}B;AvGoIWoBd}B;zYdeNaIwk}B;2LzTi0sCd}B;waem6woxk}B;uFvOmUvDd}B;BRtmY4Jzk}B;DXmkTwyEd}B;vUVnc3p{k}B;Z0FhpJ0Gd}B;B3iwDtI0l}B;Sb0Qng3Hd}B;EVeKJVo1l}B;M7n6M}6Id}B;79W7oxH3l}B;sTCzWHAJd}B;2NUSbCn4l}B;RW{8HXDKd}B;8VkOeHG6l}B;e6prbkGLd}B;VtS7sAl7l}B;z7MFUvJMd}B;Ksnl9uD9l}B;ySJXv1NNd}B;knxPUPiAl}B;6wMts7QOd}B;s}4ElkACl}B;yPCTLBTPd}B;tsOKtteDl}B;pVUKCWQd}B;ti2rnq6Fl}B;oyy6pAZSd}B;2uDuPbaGl}B;rkFYm6cRd}B;Vk5cg92Il}B;g04yB0fTd}B;Pcr6VXVJl}B;nf5W4thUd}B;ureYoiyKl}B;iX0QPhkVd}B;5pg1WhPMl}B;xVWr9TnWd}B;Aq6iYTsNl}B;2RH{KCqXd}B;FF8gr2JPl}B;XD}}vusYd}B;UQw3KSlQl}B;vhL6uYvZd}B;}he1vcBRl}B;ik0TEAyad}B;mbDRVbdTl}B;rDsByk{bd}B;Eyh{0N3Vl}B;hz470H1dd}B;DGLxMxUWl}B;kZiyOm3ed}B;OQaQIwXl}B;sQiQ5D6fd}B;x9CC5RLZl}B;tz3F4d8gd}B;LRx4GOmal}B;gdo7K{Ahd}B;W5vWq6Bcl}B;2ptopIDid}B;nxLohdbdl}B;swI{XaFjd}B;TrYBlw}el}B;yP3OTpHkd}B;sem{t}Pgl}B;9h8ka}Jld}B;JCGU}sphl}B;M9Yks8Mmd}B;8MIy{VDjl}B;MFF7IFOnd}B;fy7hlwckl}B;OFcrIQod}B;As1zA70ml}B;A{XvVJRpd}B;}uG4A5Pnl}B;fR6lFHUqd}B;Ux5Jcqnol}B;LEyq3CWrd}B;wpnxOLAql}B;2k2vw3Ysd}B;eObGSdYrl}B;eMPfpuZtd}B;yVnZcgwsl}B;xY}pigbud}B;90d7qUIul}B;ojq6bPdvd}B;clMEz3gvl}B;3IuFS5fwd}B;daHAxP1xl}B;Zg9zDkgxd}B;VLeDdWOyl}B;AIeyxJiyd}B;auhgwNlzl}B;iZJyZsjzd}B;74jpk}5}l}B;}vAg4Ml{d}B;iw3S{BE0m}B;RuLoRom}d}B;ieeZEGv0m}B;JbAhgBo0e}B;Iu8iZCa1m}B;g6yRiXp1e}B;6Yriv0F2m}B;eZkFWqq2e}B;qU}TCjv2m}B;N3cB44s3e}B;5dttNHa3m}B;1jcOMGt4e}B;YpkoNjE4m}B;jdq{KPu5e}B;syr681v4m}B;bwJ6{Uv6e}B;gxTiaCZ5m}B;oi8tFXw7e}B;detSfFD6m}B;Q5NP8Wx8e}B;PyJDIAt6m}B;gB3rbSy9e}B;el3vQyW7m}B;e6HIcJzAe}B;}wNN}bA8m}B;Uz4v78{Be}B;6NXWx6q8m}B;LtYn8v{Ce}B;fymCBVT9m}B;Lxk3dc}De}B;GaNKgk6Am}B;dGjtWG0Fe}B;c6clKrlAm}B;K{XLqs0Ge}B;KRjM6pOBm}B;bBHbVP1He}B;4U{1xd1Cm}B;Y}{kWu1Ie}B;W4gfkJgCm}B;LXlwrJ2Je}B;H816TsIDm}B;7ucGTh2Ke}B;2YKF2GxDm}B;BfuK}2Le}B;RArzPWZEm}B;9XwwQF3Me}B;8wp9WdBFm}B;g1VVjS3Ne}B;nfXhGbpFm}B;jpQkAa3Oe}B;JwDSdPSGm}B;edFlme3Pe}B;47NGW43Hm}B;6pGMTf3Qe}B;GFU1tbgHm}B;7fj}Dc3Se}B;mP0bdzHIm}B;3CK60V3Re}B;RjQnjBvIm}B;HUo4nJ3Te}B;CHAT5GWJm}B;7YsLU43Ue}B;vBiUgA7Km}B;{PEK5n2Ve}B;PaTiOxjKm}B;C8eQZP2We}B;cXxyBYKLm}B;8ln3sz1Xe}B;NAZ60}wLm}B;AHPgwT1Ye}B;bbn}mHXMm}B;emCfkv0Ze}B;7w3VQQ7Nm}B;vFwQFH0ae}B;sEtQuOjNm}B;LnFQQa}ae}B;fgef6DJOm}B;INx1Dp{be}B;PKr11tuOm}B;94hiazzce}B;{IwPZMUPm}B;FwCrU3zde}B;FjKefh3Qm}B;yxEsu4yee}B;6gXZFseQm}B;dBVAm1xfe}B;PG{1HsDSm}B;dhhC2wvge}B;1d7wfhoSm}B;JUYNijuhe}B;tqQ2MMNRm}B;3cn5iRtie}B;n0LHHsxRm}B;C57o{6sje}B;fHJTNBWTm}B;7{GtXiqke}B;MkoRaL4Um}B;BJzlIDple}B;nTG6qKeUm}B;k6wsEfnme}B;4NEG29CVm}B;bapcJ0mne}B;NlWCBolVm}B;rWjFUIkoe}B;47pGCGJWm}B;VnFdhVipe}B;mk8z2ZsWm}B;ed}Uudgqe}B;zsanigPXm}B;IKYe1here}B;FmAE7dyXm}B;Y8Tr3fcse}B;7hzoFOVYm}B;SLLtxXate}B;8u004{1Zm}B;CmVcLYue}B;sdNLXOaZm}B;MzIW04Wve}B;qA5Jbd6am}B;WwYg6jTwe}B;anCPDheam}B;YK5mrGSxe}B;fin7NZAbm}B;WRVYAlOye}B;cCt{}Fibm}B;RZMp18Mze}B;{XWU5nDcm}B;RwFKOSJ{e}B;Kzm6b6lcm}B;YomsAfG}e}B;BlhNRGGdm}B;oRUCMnD0f}B;58KneEndm}B;HA{6tpA1f}B;bOjp71Iem}B;CrNgm72f}B;Fnw{sdoem}B;5pemid43f}B;bY}op2Jfm}B;ZG{2xO14f}B;9z{lxHpfm}B;UrQ0I4{4f}B;WHyLCLJgm}B;voZQkfw5f}B;Bmw4ZCpgm}B;tP{2D9t6f}B;lfzRztIhm}B;UxFhgYp7f}B;iE8{ONohm}B;mez44sl8f}B;dlT8pgHim}B;noi1M3i9f}B;P{Zt9omim}B;4rdITAeAf}B;CLvNTjFjm}B;U}hcMBaBf}B;tpQbkRkjm}B;oG8i{5WCf}B;6B7R{}Ckm}B;6cBHIwSDf}B;aBztDNhkm}B;Zy44EeNEf}B;xbxqTY9lm}B;DH3pkFJFf}B;vA1FlXdlm}B;DXLCnmEGf}B;7hC23L5mm}B;ffA{HBAHf}B;ItRAQyYmm}B;ednsDV5If}B;3WmZrN0nm}B;GOPaXi0Jf}B;7M6AMdTnm}B;euGr9pxJf}B;AATvygwnm}B;t5dN3psKf}B;ripjgYNom}B;4zgvAinLf}B;rk8ZWEqom}B;MSh9TUiMf}B;q0SLVkGpm}B;oTtrs9dNf}B;UJf0e2jpm}B;W1UiKkXOf}B;UNoWxA9qm}B;e3kSpBRPf}B;WzqnQ7bqm}B;EXsnFYMQf}B;Esll6u0rm}B;SN6TcnGSf}B;LoXM0TRrm}B;KZiBqvARf}B;UY9Y8strm}B;12uhrw4Tf}B;NtbEW3Jsm}B;fmthdq{Tf}B;fXrN85ksm}B;Hiwv6duUf}B;Itv1x8tm}B;2oF4GIoVf}B;7vfmDbZtm}B;1}5v}rhWf}B;U8Y1j3{tm}B;XBTAJIbXf}B;wqXYYMOum}B;PDlN7dUYf}B;1UNKoToum}B;SxSUQqNZf}B;x87PWPCvm}B;9hbRAwGaf}B;nwqom9cvm}B;6oEGLu9bf}B;juaZdk}vm}B;pbPtuk2cf}B;u7Sj88Pwm}B;sS8GpTxcf}B;SjSIOMowm}B;mfTO25qdf}B;VkgKQPBxm}B;4bSEaaief}B;CGCsIHaxm}B;JZ4mMyaff}B;jN4v5{yxm}B;3wQxNCTgf}B;BANVtVLym}B;q{WkbKLhf}B;ki8hhsjym}B;A7P7{KDif}B;V4TUc26zm}B;ee54VD5jf}B;eMOxh3Uzm}B;lueY6{yjf}B;Ie{30wrzm}B;4D5Xocqkf}B;c{JwcbD{m}B;9xRzW7ilf}B;jURWa6b{m}B;WOorFWZmf}B;lDRuyRy{m}B;iw78zmQnf}B;tGN4qeJ}m}B;GtVocvHof}B;EjH6Egg}m}B;lZyoAw8pf}B;ydF0FX10n}B;hLW7do}pf}B;B6LqwDO0n}B;dYDkvYsqf}B;3DcaLmk0n}B;6W6b0Bjrf}B;k17JZ851n}B;hZDgvgZsf}B;Qoe2eMS1n}B;iA8zY2Qtf}B;JSkGeQn1n}B;KmEOxHGuf}B;yXLzeK72n}B;yIU13P6vf}B;8ZiAl4T2n}B;gsn3wNyvf}B;hx1x}go2n}B;ZV4gWEowf}B;P8aGW783n}B;lHH}sydxf}B;3cXDLQT3n}B;JHJEzYTyf}B;Vn8qZZo3n}B;LY5Yp0Jzf}B;V7e6HZ74n}B;x8Z5QM8{f}B;s4E7YPR4n}B;B9d3nZz{f}B;O69uS6n4n}B;CdCdueo}f}B;vedS3g55n}B;4dExmbd0g}B;A9upT4Q5n}B;uCeAQQR1g}B;1493mLk5n}B;kRKWq6H2g}B;FseB}T26n}B;jQE70h53g}B;fybFGTM6n}B;xAHAz6w3g}B;2qEHeJg6n}B;TnNqhQk4g}B;CvnIC1{6n}B;QITGCcY5g}B;yeTM1cH7n}B;unRfUfM6g}B;5WWUC2b7n}B;zJHAZaA7g}B;Qx8joLu7n}B;lyrzPN{7g}B;kNb4vWB8n}B;Km5F32o8g}B;qH4daZU8n}B;pox8Vab9g}B;X6qMwTn8n}B;G8Jsj{OAg}B;dI3M}F49n}B;oq6YlGCBg}B;7{{cuvM9n}B;CPMNaQ}Bg}B;Nzp2hSf9n}B;pBG}CRoCg}B;jxhBSrx9n}B;m2SGhLbDg}B;8v7WD7EAn}B;w{gD17OEg}B;dreU6HWAn}B;31qvGmAFg}B;BnlbAJoAn}B;1AgNRHzFg}B;phzJUD4Bn}B;eQ1gbglGg}B;Ubp760MBn}B;ipjpkxXHg}B;EUoV6hdBn}B;1MZtv4KIg}B;1MSwZEvBn}B;R2Mu866Jg}B;uCFsYgACn}B;ovvuT}tJg}B;o2ln7}SCn}B;sy2ywmfKg}B;ltSBNCjCn}B;RCb4YQSLg}B;khsXLI{Cn}B;PfKLLyCMg}B;nUWJ7HFDn}B;YK5nMM{Mg}B</D></Data>
+<IndepValue>Designs\Design1_Data\Eqns\VarBlock\output_Time</IndepValue></Item>
+<Item XName="output_Fc" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Dbl64</T><D>1;1;8fiZZ74</D></Data></Item>
+<Item XName="output_Time" Type="Variable">
+<ByAnalysis><T>Bool</T><D>1</D></ByAnalysis>
+<Data><T>Array_Dbl64</T><D>1;1000;;hQ77rc5D2w3;hQ77rc5DIw3;8hgFQeJSw3;hQ77rc5DYw3;MHvOY0Nmcw3;8hgFQeJhw3;h{Ryypvslw3;hQ77rc5Dow3;M0mhJkUqw3;MHvOY0Nmsw3;hCo1Pj}1vw3;8hgFQeJxw3;M3aJ67Hbzw3;h{Ryypvs}w3;zgoPGH41x3;hQ77rc5D2x3;MuZSGzvL3x3;M0mhJkU4x3;hpR47gYd5x3;MHvOY0Nm6x3;lLjzMBv7x3;hCo1Pj}19x3;MgEMq3qAAx3;8hgFQeJBx3;hb7}gmRRCx3;M3aJ67HbDx3;1X0eXT5kEx3;h{RyypvsFx3;BkR8C5tVGx3;zgoPGH4Hx3;sBvRdSheHx3;hQ77rc5DIx3;WfLn2oVnIx3;MuZSGzvLJx3;B7o5U8KwJx3;M0mhJkUKx3;saEQvU83Lx3;hpR47gYdLx3;W2hkKryBMx3;MHvOY0NmMx3;BW73mBnKNx3;lLjzMBvNx3;szZNBYbTOx3;hCo1Pj}1Px3;WS0icuPcPx3;MgEMq3qAQx3;BvR02FElQx3;8hgFQeJSx3;sMvKTb2uSx3;hb7}gmRRRx3;XqLfuxs0Tx3;M3aJ67HbTx3;BIozJIh9Ux3;1X0eXT5kUx3;slEIleVIVx3;h{RyypvsVx3;mcLJb}fDWx3;BkR8C5tVWx3;crZzoA4oWx3;zgoPGH4Xx3;S4od0MUMXx3;sBvRdSheXx3;GJ0IEXuwXx3;hQ77rc5DYx3;6YEySiIVYx3;WfLn2oVnYx3;xmRcfti3Zx3;MuZSGzvLZx3;m}gGt27eZx3;B7o5U8KwZx3;cEvw4EXCax3;M0mhJkUax3;ST7bIPxmax3;saEQvU83bx3;GiLFWaLLbx3;hpR47gYdbx3;6xZvjllvbx3;W2hkKryBcx3;x9oZxw9Ucx3;MHvOY0Nmcx3;mO0E96a2dx3;BW73mBnKdx3;cdEuMH{cdx3;lLjzMBvdx3;SsRYaROBex3;szZNBYbTex3;G5hCodolex3;hCo1Pj}1fx3;6Kvs}oCKfx3;WS0icuPcfx3;xY7XD{cufx3;MgEMq3qAgx3;mnLBS91Tgx3;BvR02FElgx3;c0areKS1hx3;8hgFQeJhx3;SFoVsVrbhx3;sMvKTb2uhx3;HU0A4hFAix3;hb7}gmRRix3;6jEqHsfkix3;XqLfuxs0jx3;xxRUV14Jjx3;M3aJ67Hbjx3;nAh8jCUtjx3;BIozJIh9kx3;cPvowNuSkx3;1X0eXT5kkx3;Se7T8ZI0lx3;slEIleVIlx3;HtL7Mkialx3;h{Ryypvslx3;33ounRZ4mx3;mcLJb}fDmx3;UAvjOYmMmx3;BkR8C5tVmx3;uH0Z}dzemx3;crZzoA4omx3;JP7OcjAxmx3;zgoPGH4nx3;kWEDDpNDnx3;S4od0MUMnx3;8eL2quaVnx3;sBvRdShenx3;ZlRtQ{nnnx3;GJ0IEXuwnx3;{sZi14}3ox3;hQ77rc5Dox3;O{gXe9CMox3;6YEySiIVox3;p5oMFFPeox3;WfLn2oVnox3;EDvBsKcwox3;xmRcfti3px3;eK01TQpCpx3;MuZSGzvLpx3;3R7s3W0Vpx3;m}gGt27epx3;UZEhgbDnpx3;B7o5U8Kwpx3;ugLWHhQ3qx3;cEvw4EXCqx3;JoRLumdLqx3;M0mhJkUqx3;kvZAVsqdqx3;ST7bIPxmqx3;81h}5y1wqx3;saEQvU83rx3;Z8oqi1FCrx3;GiLFWaLLrx3;{FvfJ7RUrx3;hpR47gYdrx3;ON0VwCfmrx3;6xZvjllvrx3;pU7KXIs2sx3;W2hkKryBsx3;EcE98O3Lsx3;x9oZxw9Usx3;ejL{kTGdsx3;MHvOY0Nmsx3;3rRpLZTvsx3;mO0E96a2tx3;UyZeyegBtx3;BW73mBnKtx3;u3hTZktTtx3;cdEuMH{ctx3;JBoIAq4mtx3;lLjzMBvtx3;kIv7nvH2ux3;SsRYaROBux3;8Q0zN}UKux3;szZNBYbTux3;ZX7o{4icux3;G5hCodolux3;{eEdbAvuux3;hCo1Pj}1vx3;OmLRCG6Bvx3;6Kvs}oCKvx3;ptRHpLJTvx3;WS0icuPcvx3;E}Z6QSWlvx3;xY7XD{cuvx3;e6hx0Xj1wx3;MgEMq3qAwx3;3EomdcwJwx3;mnLBS91Twx3;ULvbEi7cwx3;BvR02FElwx3;uR0SrnKuwx3;c0areKS1xx3;Ja7GRtXAxx3;8hgFQeJxx3;khE53zkRxx3;SFoVsVrbxx3;9pLwf2ykxx3;sMvKTb2uxx3;ZwRlG891yx3;HU0A4hFAyx3;{1aatDMJyx3;hb7}gmRRyx3;P9hPUJZbyx3;6jEqHsfkyx3;pGoE5Pmtyx3;XqLfuxs0zx3;EOv3iUz9zx3;xxRUV14Jzx3;fV0vIaARzx3;M3aJ67Hbzx3;3d7kvfNkzx3;nAh8jCUtzx3;UkEZWla0{x3;BIozJIh9{x3;vrLO7rnI{x3;cPvowNuS{x3;JzRDkw{a{x3;1X0eXT5k{x3;k4a2L0Ct{x3;Se7T8ZI0}x3;9Chtx5P9}x3;slEIleVI}x3;ZJoiYBcS}x3;HtL7Mkia}x3;{QvX9Hpj}x3;h{Ryypvs}x3;CHWBOB000y3;33ounRZ40y3;wq3cBk690y3;mcLJb}fD0y3;dOd0}GDI0y3;UAvjOYmM0y3;KyASopJS0y3;BkR8C5tV0y3;2WkrbMQa0y3;uH0Z}dze0y3;l3IGPvWj0y3;crZzoA4o0y3;RdrgCRds0y3;JP7OcjAx0y3;ABP50}j}0y3;zgoPGH41y3;tkyVpXq81y3;kWEDDpND1y3;aIWwc4xH1y3;S4od0MUM1y3;Is3LQd1S1y3;8eL2quaV1y3;}PdlDA8a1y3;sBvRdShe1y3;izAA1jEj1y3;ZlRtQ{nn1y3;QXkaqFLs1y3;GJ0IEXuw1y3;75I}doS}1y3;{sZi14}32y3;qerPSLY82y3;hQ77rc5D2y3;YCPqEueH2y3;O{gXe9CM2y3;FmyE2SlQ2y3;6YEySiIV2y3;yJWfrzrZ2y3;p5oMFFPe2y3;gt34fWyi2y3;WfLn2oVn2y3;NSdUR33s2y3;EDvBsKcw2y3;4}AvFc9}2y3;xmRcfti33y3;oYkJ39G83y3;eK01TQpC3y3;V6IkshMH3y3;MuZSGzvL3y3;Cgr8gETQ3y3;3R7s3W0V3y3;wDPZTnZZ3y3;m}gGt27e3y3;dnyzGKgi3y3;UZEhgbDn3y3;KLWO4tmr3y3;B7o5U8Kw3y3;2v3ptPt{3y3;ugLWHhQ34y3;lRdDhyz74y3;cEvw4EXC4y3;R0BeUV4H4y3;JoRLumdL4y3;Aak2I2BQ4y3;M0mhJkU4y3;t7IT5bHZ4y3;kvZAVsqd4y3;ahrtu7Oi4y3;ST7bIPxm4y3;IFPIigUr4y3;81h}5y1w4y3;}oyiVDb{4y3;saEQvU835y3;iMW7Jmh75y3;Z8oqi1FC5y3;Qw3Y6JoG5y3;GiLFWaLL5y3;7UdyvruP5y3;{FvfJ7RU5y3;q1BNjO}Y5y3;hpR47gYd5y3;YbknWx5i5y3;ON0VwCfm5y3;F9ICKUCr5y3;6xZvjllv5y3;yirc71J{5y3;pU7KXIs26y3;gGP1xZP76y3;W2hkKryB6y3;NqySk6WG6y3;EcE98O3L6y3;4OWsXfcP6y3;x9oZxw9U6y3;ox3HLCjY6y3;ejL{kTGd6y3;VVdh8lph6y3;MHvOY0Nm6y3;C3B6yHwq6y3;3rRpLZTv6y3;wckWlq0{6y3;mO0E96a27y3;dAIxYN777y3;UyZeyegB7y3;KkrLMwDG7y3;BW73mBnK7y3;2IPm9TKP7y3;u3hTZktT7y3;lryAz}QY7y3;cdEuMH{c7y3;RPWbmYXh7y3;JBoIAq4m7y3;Az30a5eq7y3;lLjzMBv7y3;tWdQNekz7y3;kIv7nvH28y3;a4BrABr68y3;SsRYaROB8y3;IekF{jxF8y3;8Q0zN}UK8y3;}BIgnG2P8y3;szZNBYbT8y3;ilr4bp8Y8y3;ZX7o{4ic8y3;QJPVOMFh8y3;G5hCodol8y3;7tyvBvLq8y3;{eEdbAvu8y3;qQWK}SRz8y3;hCo1Pj}19y3;Y{3lo{Y69y3;OmLRCG6B9y3;FYd9cXfF9y3;6Kvs}oCK9y3;y5BaP4mO9y3;ptRHpLJT9y3;gfk{CdsX9y3;WS0icuPc9y3;NDIP0Azg9y3;E}Z6QSWl9y3;4nrppi3q9y3;xY7XD{cu9y3;oKPEdFAz9y3;e6hx0Xj1Ay3;VuyeQoG6Ay3;MgEMq3qAAy3;CRW3ELNFAy3;3EomdcwJAy3;w}3U1uTOAy3;mnLBS91TAy3;dZduqQaXAy3;ULvbEi7cAy3;K7BJezggAy3;BvR02FElAy3;2hkjSWnpAy3;uR0SrnKuAy3;lEI8F3uyAy3;c0areKS1By3;RorY2c{5By3;Ja7GRtXABy3;AMPzr85FBy3;8hgFQeJBy3;tvyNfhBOBy3;khE53zkRBy3;bTWoREIXBy3;SFoVsVrbBy3;I14DGnOgBy3;9pLwf2ykBy3;}add3KVpBy3;sMvKTb2uBy3;j8B2tsbyBy3;ZwRlG891Cy3;QikRgPi5Cy3;HU0A4hFACy3;7GItTyoECy3;{1aatDMJCy3;rprHHVvNCy3;hb7}gmRRCy3;YNPi420XCy3;P9hPUJZbCy3;Fxy6ua6gCy3;6jEqHsfkCy3;zUWXh7DpCy3;pGoE5PmtCy3;g24yUgJyCy3;XqLfuxs0Dy3;NcdMIDQ5Dy3;EOv3iUz9Dy3;5ABn5mWEDy3;xxRUV14JDy3;ojkBvIdNDy3;fV0vIaARDy3;VHIcirjWDy3;M3aJ67HbDy3;Drr0WOqfDy3;3d7kvfNkDy3;wOPSJxwoDy3;nAh8jCUtDy3;dyyr6U1yDy3;UkEZWla0Ey3;LWWGw085Ey3;BIozJIh9Ey3;244hjZEEEy3;vrLO7rnIEy3;ldd5X6LNEy3;cPvowNuSEy3;TBBWKfSWEy3;JzRDkw{aEy3;Alkw7CYfEy3;1X0eXT5kEy3;tIILxkeoEy3;k4a2L0CtEy3;bsrlkHlxEy3;Se7T8ZI0Fy3;IQPAYqr4Fy3;9Chtx5P9Fy3;}zyaLNyDFy3;slEIleVIFy3;jXW}8w2NFy3;ZJoiYBcSFy3;Q54QyR9WFy3;HtL7MkiaFy3;7fdql}FfFy3;{QvX9HpjFy3;rCBFZYMoFy3;h{RyypvsFy3;YmkfM5TxFy3;CHWBOB00Gy3;8A925qH2Gy3;33ounRZ4Gy3;{xQlU5r6Gy3;wq3cBk69Gy3;rjiRuMOBGy3;mcLJb}fDGy3;iV{9IexFGy3;dOd0}GDIGy3;YHGthvUKGy3;UAvjOYmMGy3;P3Ya5B2PGy3;KyASopJSGy3;GrpHVRbTGy3;BkR8C5tVGy3;6d5}uj8YGy3;2WkrbMQaGy3;zONiI}hcGy3;uH0Z}dzeGy3;qAfPiGFhGy3;l3IGPvWjGy3;gyw66YolGy3;crZzoA4oGy3;XkCqVpLqGy3;RdrgCRdsGy3;OWUXv4vuGy3;JP7OcjAxGy3;EImEJMRzGy3;ABP50}j}Gy3;542yid}1Hy3;zgoPGH4Hy3;yrJf6vY6Hy3;tkyVpXq8Hy3;odbMWA6BHy3;kWEDDpNDHy3;fPt3wSfFHy3;aIWwc4xHHy3;WB9nJjCKHy3;S4od0MUMHy3;MzQUj{lOHy3;Is3LQd1SHy3;DliB7GJTHy3;8eL2quaVHy3;4X{uWXsXHy3;}PdlDA8aHy3;wIGcwoPcHy3;sBvRdSheHy3;n4YJK4zgHy3;izAA1jEjHy3;esp0kLWlHy3;ZlRtQ{nnHy3;Ue5k7d3qHy3;QXkaqFLsHy3;LQNSXucuHy3;GJ0IEXuwHy3;CCf8x9AzHy3;75I}doS}Hy3;2{wrKSj1Iy3;{sZi14}3Iy3;vlCZkiG6Iy3;qerPSLY8Iy3;mXUG8{pAIy3;hQ77rc5DIy3;cJmzXFNFIy3;YCPqEueHIy3;T52hxWwJIy3;O{gXe9CMIy3;KtJOLoTOIy3;FmyE2SlQIy3;Afb5l31TIy3;6YEySiIVIy3;1Sto8LaXIy3;yJWfrzrZIy3;uC9WYc7cIy3;p5oMFFPeIy3;k{QDytggIy3;gt34fWyiIy3;bmiwL9ElIy3;WfLn2oVnIy3;RY{dlQnpIy3;NSdUR33sIy3;IKGL9iKuIy3;EDvBsKcwIy3;96Y2ZztyIy3;4}AvFc9}Iy3;uplyES1Jy3;xmRcfti3Jy3;sf5TMW{5Jy3;oYkJ39G8Jy3;jSNAmnXAJy3;eK01TQpCJy3;aDft935FJy3;V6IkshMHJy3;Q}waZKeJJy3;MuZSGzvLJy3;HnCIzbBOJy3;Cgr8gETQJy3;8ZU}MtkRJy3;3R7s3W0VJy3;{Kmim8IXJy3;wDPZTnZZJy3;r62QAQrbJy3;m}gGt27eJy3;iuJ7ahOgJy3;dnyzGKgiJy3;YgbqzyxkJy3;UZEhgbDnJy3;PRtXNEVpJy3;KLWO4tmrJy3;GE9FnV2uJy3;B7o5U8KwJy3;60SyAnbyJy3;2v3ptPt{Jy3;znifa291Ky3;ugLWHhQ3Ky3;qZ{M{Ji5Ky3;lRdDhyz7Ky3;gLG4ObFAKy3;cEvw4EXCKy3;X7YnnsoEKy3;R0BeUV4HKy3;OvpUB8MJKy3;JoRLumdLKy3;Eh5CbPvNKy3;Aak2I2BQKy3;5TNv{gRRKy3;M0mhJkUKy3;yEfcOy}WKy3;t7IT5bHZKy3;o0xJoDZbKy3;kvZAVsqdKy3;foC1CV6gKy3;ahrtu7OiKy3;WaUkbmfkKy3;ST7bIPxmKy3;MMmS}1DpKy3;IFPIigUrKy3;D829PJmtKy3;81h}5y1wKy3;4wJsoaJyKy3;}oyiVDb{Ky3;whbZCss0Ly3;saEQvU83Ly3;nTtGc7Q5Ly3;iMW7Jmh7Ly3;eF9{}Oz9Ly3;Z8oqi1FCLy3;U1ShPgWELy3;Qw3Y6JoGLy3;LpiOpx3JLy3;GiLFWaLLLy3;Cb{5DDdNLy3;7UdyvruPLy3;2NGpcUARLy3;{FvfJ7RULy3;v8YW0mjWLy3;q1BNjO}YLy3;mwpDQ1HbLy3;hpR47gYdLy3;ci5xpIqfLy3;YbknWx5iLy3;TUNeDaNkLy3;ON0VwCfmLy3;KGfLdrwoLy3;F9ICKUCrLy3;A2x217UtLy3;6xZvjllvLy3;1qCmQO1yLy3;yirc71J{Ly3;ubUTqfa0My3;pU7KXIs2My3;kNmAEx75My3;gGP1xZP7My3;b92udCh9My3;W2hkKryBMy3;RxJb1UEEMy3;NqySk6WGMy3;IjbISlnIMy3;EcE98O3LMy3;9Vt}q0LNMy3;4OWsXfcPMy3;H9jEIuSMy3;x9oZxw9UMy3;s2SQeZSWMy3;ox3HLCjYMy3;jqi72r{aMy3;ejL{kTGdMy3;ac{qS6YfMy3;VVdh8lphMy3;QOGYrN5kMy3;MHvOY0NmMy3;HAYFFfeoMy3;C3B6yHwqMy3;8ypyewBtMy3;3rRpLZTvMy3;{j5g2ClxMy3;wckWlq0{My3;rVNNRTI0Ny3;mO0E96a2Ny3;iHf4skr4Ny3;dAIxYN77Ny3;Y3xnF0P9Ny3;UyZeyegBNy3;PrCVfHyDNy3;KkrLMwDGNy3;GdUC3ZVINy3;BW73mBnKNy3;6PmvRq2NNy3;2IPm9TKPNy3;zA2ds5cSNy3;u3hTZktTNy3;qyJKGN9WNy3;lryAz}QYNy3;gkb1geiaNy3;cdEuMH{cNy3;XWtk3wFfNy3;RPWbmYXhNy3;OI9RTBpjNy3;JBoIAq4mNy3;E4S9tRMoNy3;Az30a5eqNy3;5sisGkvsNy3;lLjzMBvNy3;yd{Zg}RxNy3;tWdQNekzNy3;oPGH4H00Oy3;kIv7nvH2Oy3;fBY{TYZ4Oy3;a4BrABr6Oy3;Wzphtp69Oy3;SsRYaROBOy3;Ml5PH5gDOy3;IekF{jxFOy3;DXN6hMDIOy3;8Q0zN}UKOy3;4Jfp4emMOy3;}BIgnG2POy3;w4xWUvJSOy3;szZNBYbTOy3;nsCEuAtVOy3;ilr4bp8YOy3;eeUxHRQaOy3;ZX7o{4icOy3;UQmehjzeOy3;QJPVOMFhOy3;LC2M5}WjOy3;G5hCodolOy3;C{J3VG4oOy3;7tyvBvLqOy3;2mbmuXdsOy3;{eEdbAvuOy3;vXtTIpAxOy3;qQWK}SRzOy3;mJ9Bi4k}Oy3;hCo1Pj}1Py3;c5Su5MH4Py3;Y{3lo{Y6Py3;TtibVdq8Py3;OmLRCG6BPy3;Kf{IvuNDPy3;FYd9cXfFPy3;ASG0JAxHPy3;6Kvs}oCKPy3;1DYjiSUMPy3;y5BaP4mOPy3;u{pQ6j1SPy3;ptRHpLJTPy3;km58W{aVPy3;gfk{CdsXPy3;bYNrvF8aPy3;WS0icuPcPy3;RKfYJXhePy3;NDIP0AzgPy3;I6xFjoEjPy3;E}Z6QSWlPy3;9uCz64onPy3;4nrppi3qPy3;gUgWLLsPy3;xY7XD{cuPy3;sSmNwcuwPy3;oKPEdFAzPy3;jD25KuS}Py3;e6hx0Xj1Qy3;a}Joj9}3Qy3;VuyeQoG6Qy3;QnbV7SY8Qy3;MgEMq3qAQy3;HZtCXi5DQy3;CRW3ELNFQy3;8L9wwzeHQy3;3EomdcwJQy3;{6SdKFCMQy3;w}3U1uTOQy3;ruiKkWlQQy3;mnLBS91TQy3;ig{18oIVQy3;dZduqQaXQy3;YRGlX3sZQy3;ULvbEi7cQy3;PEYRxKPeQy3;K7BJezggQy3;G0q9LcyiQy3;BvR02FElQy3;6o5tktVnQy3;2hkjSWnpQy3;zZNa893sQy3;uR0SrnKuQy3;qLfHYQcwQy3;lEI8F3uyQy3;g7x{xh9}Qy3;c0areKS1Sy3;XvCiLzi3Sy3;RorY2c{5Sy3;OhUPlEG8Sy3;Ja7GRtXASy3;ETm69WpCSy3;AMPzr85FSy3;5F2qYnMHSy3;8hgFQeJSy3;y0KXy2wLSy3;tvyNfhBOSy3;pobEMKTQSy3;khE53zkRSy3;fatxlb0VSy3;bTWoREIXSy3;WM9f9tZZSy3;SFoVsVrbSy3;N8SMZ87eSy3;I14DGnOgSy3;Dwi3zPgiSy3;9pLwf2ykSy3;4i{mMhDnSy3;}add3KVpSy3;xTGUmymrSy3;sMvKTb2uSy3;nFYBAEKwSy3;j8B2tsbySy3;e1quZVt{Sy3;ZwRlG891Ry3;Vp5czmQ3Ry3;QikRgPi5Ry3;LbNJN2{7Ry3;HU0A4hFARy3;CNf0nJXCRy3;7GItTyoERy3;39xjAb4HRy3;{1aatDMJRy3;vwCSasdLRy3;rprHHVvNRy3;miU8{7BQRy3;hb7}gmRRRy3;dUmrNPkURy3;YNPi420XRy3;TG2ZngHZRy3;P9hPUJZbRy3;K2KGByqdRy3;Fxy6ua6gRy3;BqbzaDOiRy3;6jEqHsfkRy3;1ctg{UxmRy3;zUWXh7DpRy3;uN9OOmUrRy3;pGoE5PmtRy3;l9S5o12wRy3;g24yUgJyRy3;bxioBJb{Ry3;XqLfuxs0Ty3;Rj{Vba83Ty3;NcdMIDQ5Ty3;JVGD}rh7Ty3;EOv3iUz9Ty3;9HYwO7FCTy3;5ABn5mWETy3;3qdoOoGTy3;xxRUV14JTy3;tq5LCgLLTy3;ojkBvIdNTy3;jcN2cxuPTy3;fV0vIaARTy3;aOfl}CRUTy3;VHIcirjWTy3;SAxRPU}YTy3;M3aJ67HbTy3;HyCAplYdTy3;Drr0WOqfTy3;8kUtC16iTy3;3d7kvfNkTy3;}VmacIfmTy3;wOPSJxwoTy3;rH2I0aCrTy3;nAh8jCUtTy3;i3K}PrlvTy3;dyyr6U1yTy3;Zrbip6J{Ty3;UkEZWla0Uy3;PdtPDOs2Uy3;LWWGw085Uy3;GP97dfP7Uy3;BIozJIh9Uy3;7BSq0xyBUy3;244hjZEEUy3;zyiXQCWGUy3;vrLO7rnIUy3;qk{EqT3LUy3;ldd5X6LNUy3;hWGyDlcPUy3;cPvowNuSUy3;XIYfd0AUUy3;TBBWKfSWUy3;O4qM1IjYUy3;JzRDkw{aUy3;Fs54SZGdUy3;Alkw7CYfUy3;5eNnqqphUy3;1X0eXT5kUy3;yPfUE6NmUy3;tIILxkeoUy3;pBxBeNwqUy3;k4a2L0CtUy3;fzCv1fTvUy3;bsrlkHlxUy3;WlUcSw0{Uy3;Se7T8ZI0Vy3;NXmJrBa2Vy3;IQPAYqr4Vy3;DJ21FT77Vy3;9Chtx5P9Vy3;45KkekgBVy3;}zyaLNyDVy3;xsbS20EGVy3;slEIleVIVy3;net8RHnKVy3;jXW}8w2NVy3;eQ9srYKPVy3;ZJoiYBcSVy3;VCSZFqtTVy3;Q54QyR9WVy3;L{iGf5SYVy3;HtL7MkiaVy3;Cm{z2N{cVy3;7fdql}FfVy3;3YGhReXhVy3;{QvX9HpjVy3;vJYOsv4mVy3;rCBFZYMoVy3;m5q5GBeqVy3;h{RyypvsVy3;dt5pfRBvVy3;YmkfM5TxVy3;TfNW3kkzVy3;CHWBOB00Wy3;gjqck}81Wy3;8A925qH2Wy3;bcTTSeQ3Wy3;33ounRZ4Wy3;XV6K8Hi5Wy3;{xQlU5r6Wy3;ROlArvz7Wy3;wq3cBk69Wy3;NHO1YYFAWy3;rjiRuMOBWy3;JA1uEBXCWy3;mcLJb}fDWy3;E3gkxpoEWy3;iV{9IexFWy3;9yIbeR4HWy3;dOd0}GDIWy3;5rxSL5MJWy3;YHGthvUKWy3;kaI2kdLWy3;UAvjOYmMWy3;xcD9lMvNWy3;P3Ya5B2PWy3;tVs}S}AQWy3;KyASopJSWy3;oOVs8eRRWy3;GrpHVRbTWy3;jH8jrGkUWy3;BkR8C5tVWy3;fAnZYv}WWy3;6d5}uj8YWy3;a3QQFYHZWy3;2WkrbMQaWy3;Vy2HyAZbWy3;zONiI}hcWy3;Srh7fpqdWy3;uH0Z}dzeWy3;MkK{LR6gWy3;qAfPiGFhWy3;Hdzq25OiWy3;l3IGPvWjWy3;DWchljfkWy3;gyw66YolWy3;8PFYRMxmWy3;crZzoA4oWy3;3IuO9}CpWy3;XkCqVpLqWy3;}AXFsdUrWy3;RdrgCRdsWy3;w3A6ZGmtWy3;OWUXv4vuWy3;ryoyFv1wWy3;JP7OcjAxWy3;nrSpyXJyWy3;EImEJMRzWy3;ik4gfAb{Wy3;ABP50}j}Wy3;ddjWMps0Xy3;542yid}1Xy3;ZWMN3R83Xy3;zgoPGH4Xy3;UP}Dm4Q5Xy3;yrJf6vY6Xy3;PIe4Tjh7Xy3;tkyVpXq8Xy3;LBHx9Mz9Xy3;odbMWA6BXy3;G4wns{ECXy3;kWEDDpNDXy3;BzYeZdWEXy3;fPt3wSfFXy3;7sBVGGoGXy3;aIWwc4xHXy3;2lqLzu3JXy3;WB9nJjCKXy3;zdTCgXLLXy3;S4od0MUMXy3;vW63NAdNXy3;MzQUj{lOXy3;qPlv3puPXy3;Is3LQd1SXy3;lIOmmSARXy3;DliB7GJTXy3;hB1dT4RUXy3;8eL2quaVXy3;c4gTAjjWXy3;4X{uWXsXXy3;XzIKtL}YXy3;}PdlDA8aXy3;TsxAa{GbXy3;wIGcwoPcXy3;Ola1HdYdXy3;sBvRdSheXy3;JeDuzFqfXy3;n4YJK4zgXy3;FXskgu5iXy3;izAA1jEjXy3;AQVbNXNkXy3;esp0kLWlXy3;5J8R4AfmXy3</D></Data>
+<Unit><T>Int</T><D>7004</D></Unit></Item></Item></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="DataSetDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;m524;qz14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;7DQqeHlt234;MhMjQrStv24</D></PVPort>
+<SelVar>input_Fc</SelVar>
+<Show><T>Bool</T><D>0</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Split><T>Double</T><D>0.2</D></Split>
+<SubSplit><T>Int</T><D>0</D></SubSplit>
+<Window><T>Array_I64</T><D>1;4;A6;56;PC;DC</D></Window>
+<ZOrder><T>Int</T><D>5</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="Voltage ramp - Pout-Pin" UserName="Voltage ramp - Pout-Pin" Type="Rectangular Graph">
+<AaBackgnd><T>Bool</T><D>0</D></AaBackgnd>
+<AaTraces><T>Bool</T><D>1</D></AaTraces>
+<AllowAA><T>Bool</T><D>0</D></AllowAA>
+<DefContext>Design1_Data</DefContext>
+<GoalFill><T>Int</T><D>2</D></GoalFill>
+<GoalLine><T>Int</T><D>1</D></GoalLine>
+<LastAxisTab>X</LastAxisTab>
+<MarkerLine><T>Int</T><D>1</D></MarkerLine>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowColumns><T>Bool</T><D>0</D></ShowColumns>
+<ShowOptTargets><T>Bool</T><D>1</D></ShowOptTargets>
+<ShowPoints><T>Bool</T><D>0</D></ShowPoints>
+<ShowYieldTargets><T>Bool</T><D>0</D></ShowYieldTargets>
+<Title>Power - Ouptut vs. Input</Title>
+<Item XName="AxisQueue" Type="AxisQueue">
+<Current><T>Int</T><D>0</D></Current>
+<Top><T>Int</T><D>0</D></Top></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>20</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.1016</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="AxisX" Type="GrAxis">
+<AutoScale><T>Bool</T><D>0</D></AutoScale>
+<AxisType><T>Int</T><D>2</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>-80</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>8</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>0</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>14</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="AxisY" UserName="y" Type="GrAxis">
+<AutoScale><T>Bool</T><D>0</D></AutoScale>
+<AxisType><T>Int</T><D>0</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>10</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>-70</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>8</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>16711680</D></TextColor>
+<TitleColor><T>Int</T><D>16711680</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>0</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>14</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="AxisY2" Type="GrAxis">
+<AutoScale><T>Bool</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>1</D></AxisType>
+<InUse><T>Bool</T><D>0</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>-2.443460952792061</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>16711680</D></TextColor>
+<TitleColor><T>Int</T><D>16711680</D></TitleColor>
+<Unit><T>Int</T><D>8000</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="Display0" Type="GraphDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;it14;a14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;w7MaoWTV234;}}}}}}}Fl24</D></PVPort>
+<PanX><T>Double</T><D>0</D></PanX>
+<PanY><T>Double</T><D>0</D></PanY>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;A6;;PC;B3</D></Window>
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Zoom><T>Double</T><D>1</D></Zoom></Item>
+<Item XName="Legend" Type="Legend">
+<Color><T>Int</T><D>1073741824</D></Color>
+<Height><T>Double</T><D>156.4149284362793</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>3843.58507156372</D></PosY>
+<Width><T>Double</T><D>9467.689043209877</D></Width>
+<ZOrder><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Name>Arial</Name>
+<Size><T>Double</T><D>8</D></Size></Item></Item>
+<Item XName="MkrGroup" Type="MkrGroup">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<ZOrder><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="Series0" Type="GraphSeries">
+<Color><T>Int</T><D>16711680</D></Color>
+<Context>&lt; Post Processed &gt;</Context>
+<DataFormat><T>Int</T><D>3</D></DataFormat>
+<Meas>y</Meas>
+<MeasFormat />
+<MeasGroup />
+<MeasSource><T>Int</T><D>2</D></MeasSource>
+<OnRight><T>Bool</T><D>0</D></OnRight>
+<PPVar>y</PPVar>
+<PlotType />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<SeriesType><T>Int</T><D>8</D></SeriesType>
+<SymbolShape><T>Int</T><D>2</D></SymbolShape>
+<UserHide><T>Bool</T><D>0</D></UserHide>
+<ZOrder><T>Int</T><D>9000</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>y = getvariable(&apos;Design1_Data&apos;, &apos;output&apos;);&#x000D;&#x000A;y = 10*log(abs( y ));&#x000D;&#x000A;x = getvariable(&apos;Design1_Data&apos;, &apos;input&apos;);&#x000D;&#x000A;x = 10*log(abs( x ));&#x0009;% apply format&#x000D;&#x000A;setindep(&apos;y&apos;, &apos;x&apos;);</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang>
+<UsingContext>Design1_Data;</UsingContext></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" /></Item></Item></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.2404793016975309</D></Data></Item></Item>
+<Item XName="Voltage ramp - linear mag" UserName="Voltage ramp - linear mag" Type="Rectangular Graph">
+<AaBackgnd><T>Bool</T><D>0</D></AaBackgnd>
+<AaTraces><T>Bool</T><D>1</D></AaTraces>
+<AllowAA><T>Bool</T><D>0</D></AllowAA>
+<DefContext>Design1_Data</DefContext>
+<GoalFill><T>Int</T><D>2</D></GoalFill>
+<GoalLine><T>Int</T><D>1</D></GoalLine>
+<LastAxisTab>Y</LastAxisTab>
+<MarkerLine><T>Int</T><D>1</D></MarkerLine>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowColumns><T>Bool</T><D>0</D></ShowColumns>
+<ShowOptTargets><T>Bool</T><D>1</D></ShowOptTargets>
+<ShowPoints><T>Bool</T><D>0</D></ShowPoints>
+<ShowYieldTargets><T>Bool</T><D>0</D></ShowYieldTargets>
+<Title>Linear Voltage - Output vs. Input</Title>
+<Item XName="AxisQueue" Type="AxisQueue">
+<Current><T>Int</T><D>0</D></Current>
+<Top><T>Int</T><D>0</D></Top></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>20</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.1016</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="AxisX" UserName="Time (us)" Type="GrAxis">
+<AutoScale><T>Bool</T><D>0</D></AutoScale>
+<AxisType><T>Int</T><D>2</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0.0001355</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>0</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>8</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>7002</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>14</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="AxisY" UserName="abs( input ), abs( output )" Type="GrAxis">
+<AutoScale><T>Bool</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>0</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>2</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>0</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>8</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>255</D></TextColor>
+<TitleColor><T>Int</T><D>255</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>0</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>14</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="AxisY2" Type="GrAxis">
+<AutoScale><T>Bool</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>1</D></AxisType>
+<InUse><T>Bool</T><D>0</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>-2.443460952792061</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>16711680</D></TextColor>
+<TitleColor><T>Int</T><D>16711680</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>8000</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="Display0" Type="GraphDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;it14;8a14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;yQGEN47O234;}}}}}}}Fl24</D></PVPort>
+<PanX><T>Double</T><D>0</D></PanX>
+<PanY><T>Double</T><D>0</D></PanY>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;A6;S6;PC;d9</D></Window>
+<ZOrder><T>Int</T><D>3</D></ZOrder>
+<Zoom><T>Double</T><D>1</D></Zoom></Item>
+<Item XName="Legend" Type="Legend">
+<Color><T>Int</T><D>1073741824</D></Color>
+<Height><T>Double</T><D>156.4149284362793</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>3843.58507156372</D></PosY>
+<Width><T>Double</T><D>9408.883521202362</D></Width>
+<ZOrder><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Name>Arial</Name>
+<Size><T>Double</T><D>8</D></Size></Item></Item>
+<Item XName="MkrGroup" Type="MkrGroup">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<ZOrder><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="Series0" Type="GraphSeries">
+<Color><T>Int</T><D>255</D></Color>
+<Context>Design1_Data</Context>
+<DataFormat><T>Int</T><D>3</D></DataFormat>
+<Meas>abs( input )</Meas>
+<MeasFormat />
+<MeasGroup />
+<MeasSource><T>Int</T><D>1</D></MeasSource>
+<OnRight><T>Bool</T><D>0</D></OnRight>
+<PPVar />
+<PlotType />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<SeriesType><T>Int</T><D>7</D></SeriesType>
+<SymbolShape><T>Int</T><D>2</D></SymbolShape>
+<UserHide><T>Bool</T><D>0</D></UserHide>
+<ZOrder><T>Int</T><D>9000</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>Inl_i=abs( input );</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" /></Item></Item>
+<Item XName="Series1" Type="GraphSeries">
+<Color><T>Int</T><D>16711680</D></Color>
+<Context>Design1_Data</Context>
+<DataFormat><T>Int</T><D>3</D></DataFormat>
+<Meas>abs( output )</Meas>
+<MeasFormat />
+<MeasGroup />
+<MeasSource><T>Int</T><D>2</D></MeasSource>
+<OnRight><T>Bool</T><D>0</D></OnRight>
+<PPVar />
+<PlotType />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<SeriesType><T>Int</T><D>7</D></SeriesType>
+<SymbolShape><T>Int</T><D>3</D></SymbolShape>
+<UserHide><T>Bool</T><D>0</D></UserHide>
+<ZOrder><T>Int</T><D>8999</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>Inl_i=abs( output );</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" /></Item></Item></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.23898564143854</D></Data></Item></Item>
+<Item XName="Voltage ramp - phase" UserName="Voltage ramp - phase" Type="Rectangular Graph">
+<AaBackgnd><T>Bool</T><D>0</D></AaBackgnd>
+<AaTraces><T>Bool</T><D>1</D></AaTraces>
+<AllowAA><T>Bool</T><D>0</D></AllowAA>
+<DefContext>Design1_Data</DefContext>
+<GoalFill><T>Int</T><D>2</D></GoalFill>
+<GoalLine><T>Int</T><D>1</D></GoalLine>
+<LastAxisTab>X</LastAxisTab>
+<MarkerLine><T>Int</T><D>1</D></MarkerLine>
+<Selected><T>Bool</T><D>0</D></Selected>
+<ShowColumns><T>Bool</T><D>1</D></ShowColumns>
+<ShowOptTargets><T>Bool</T><D>1</D></ShowOptTargets>
+<ShowPoints><T>Bool</T><D>0</D></ShowPoints>
+<ShowYieldTargets><T>Bool</T><D>0</D></ShowYieldTargets>
+<Title>Linear Phase - Output vs. Input</Title>
+<Item XName="AxisQueue" Type="AxisQueue">
+<Current><T>Int</T><D>0</D></Current>
+<Top><T>Int</T><D>0</D></Top></Item>
+<Item XName="Font" Type="Font">
+<Angle><T>Int</T><D>0</D></Angle>
+<Color><T>Int</T><D>0</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>20</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.1016</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="AxisX" UserName="Time (us)" Type="GrAxis">
+<AutoScale><T>Bool</T><D>0</D></AutoScale>
+<AxisType><T>Int</T><D>2</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0.0001354984144379732</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>0</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>9</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>0</D></TextColor>
+<TitleColor><T>Int</T><D>0</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>7002</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY" Type="GrAxis">
+<AutoScale><T>Bool</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>0</D></AxisType>
+<InUse><T>Bool</T><D>0</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0.8</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>0</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>255</D></TextColor>
+<TitleColor><T>Int</T><D>255</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>0</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="AxisY2" UserName="Input, Output (deg)" Type="GrAxis">
+<AutoScale><T>Bool</T><D>1</D></AutoScale>
+<AxisType><T>Int</T><D>1</D></AxisType>
+<InUse><T>Bool</T><D>1</D></InUse>
+<LogScale><T>Bool</T><D>0</D></LogScale>
+<MajorColor><T>Int</T><D>0</D></MajorColor>
+<MajorTick><T>Int</T><D>1</D></MajorTick>
+<Max><T>Double</T><D>0</D></Max>
+<MaxPT><T>Int</T><D>0</D></MaxPT>
+<Min><T>Double</T><D>-2.617993877991494</D></Min>
+<MinPT><T>Int</T><D>0</D></MinPT>
+<MinorColor><T>Int</T><D>12632256</D></MinorColor>
+<MinorTick><T>Int</T><D>2</D></MinorTick>
+<NumMajorDiv><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv><T>Int</T><D>2</D></NumMinorDiv>
+<ShowMajorGrid><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid><T>Bool</T><D>1</D></ShowMinorGrid>
+<TextColor><T>Int</T><D>255</D></TextColor>
+<TitleColor><T>Int</T><D>255</D></TitleColor>
+<TitleOverride />
+<Unit><T>Int</T><D>8000</D></Unit>
+<Visible><T>Bool</T><D>1</D></Visible>
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Size><T>Int</T><D>9</D></Size></Item></Item>
+<Item XName="Display0" Type="GraphDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;it14;Ga14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;MD9GfSsG234;}}}}}}}Fl24</D></PVPort>
+<PanX><T>Double</T><D>0</D></PanX>
+<PanY><T>Double</T><D>0</D></PanY>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;A6;B3;PC;O6</D></Window>
+<ZOrder><T>Int</T><D>2</D></ZOrder>
+<Zoom><T>Double</T><D>1</D></Zoom></Item>
+<Item XName="Legend" Type="Legend">
+<Color><T>Int</T><D>1073741824</D></Color>
+<Height><T>Double</T><D>156.4149284362793</D></Height>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>3843.58507156372</D></PosY>
+<Width><T>Double</T><D>9350.803993293706</D></Width>
+<ZOrder><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Name>Arial</Name>
+<Size><T>Double</T><D>8</D></Size></Item></Item>
+<Item XName="MkrGroup" Type="MkrGroup">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>1</D></Selected>
+<ZOrder><T>Int</T><D>7000</D></ZOrder>
+<Item XName="Font" Type="Font">
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>8</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item>
+<Item XName="Marker_A" Type="Marker">
+<Indep><T>Double</T><D>1.085072387891677e-06</D></Indep>
+<Index><T>Int</T><D>8</D></Index>
+<MarkAll><T>Bool</T><D>1</D></MarkAll>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Series>Series0</Series>
+<SortNum><T>Int</T><D>1</D></SortNum>
+<Trace>Trace0</Trace>
+<UserIndep><T>Double</T><D>1.085072387891677e-06</D></UserIndep>
+<dCoord><T>Array_Dbl64</T><D>1;2;hQ77rc5Dow3;</D></dCoord>
+<Item XName="Trace1" Type="SubMkr">
+<Indep><T>Double</T><D>1.085072387891677e-06</D></Indep>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Series>Series0</Series>
+<Trace>Trace0</Trace>
+<dCoord><T>Array_Dbl64</T><D>1;2;hQ77rc5Dow3;</D></dCoord>
+<Item XName="MkrText" Type="DrawText">
+<Color><T>Int</T><D>16774124</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Justification><T>Int</T><D>8</D></Justification>
+<PosX><T>Double</T><D>206.1251129967695</D></PosX>
+<PosY><T>Double</T><D>416.2445322111836</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>1.085 us, 0 deg</Text>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>255</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="Symbol" Type="MkrSymbol">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected></Item></Item>
+<Item XName="Trace2" Type="SubMkr">
+<Indep><T>Double</T><D>1.085072387891677e-06</D></Indep>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Series>Series1</Series>
+<Trace>Trace0</Trace>
+<dCoord><T>Array_Dbl64</T><D>1;2;hQ77rc5Dow3;YNz0l0B930C</D></dCoord>
+<Item XName="MkrText" Type="DrawText">
+<Color><T>Int</T><D>16774124</D></Color>
+<Filled><T>Bool</T><D>1</D></Filled>
+<Justification><T>Int</T><D>8</D></Justification>
+<PosX><T>Double</T><D>206.1251129967695</D></PosX>
+<PosY><T>Double</T><D>3117.578508150692</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>1.085 us, -137.104 deg</Text>
+<Item XName="Font" Type="Font">
+<Color><T>Int</T><D>16711680</D></Color>
+<Italic><T>Int</T><D>0</D></Italic>
+<Name>Arial</Name>
+<Size><T>Double</T><D>111.1111111111111</D></Size>
+<Weight><T>Int</T><D>400</D></Weight></Item></Item>
+<Item XName="Symbol" Type="MkrSymbol">
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected></Item></Item></Item></Item>
+<Item XName="Series0" Type="GraphSeries">
+<Color><T>Int</T><D>255</D></Color>
+<Context>&lt; Post Processed &gt;</Context>
+<DataFormat><T>Int</T><D>4</D></DataFormat>
+<Label>Input</Label>
+<Meas>MyVar</Meas>
+<MeasFormat />
+<MeasGroup />
+<MeasSource><T>Int</T><D>1</D></MeasSource>
+<OnRight><T>Bool</T><D>1</D></OnRight>
+<PPVar>MyVar</PPVar>
+<PlotType />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Selected><T>Bool</T><D>0</D></Selected>
+<SeriesType><T>Int</T><D>7</D></SeriesType>
+<SymbolShape><T>Int</T><D>1</D></SymbolShape>
+<UserHide><T>Bool</T><D>0</D></UserHide>
+<ZOrder><T>Int</T><D>9000</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>using(&apos;Design1_Data&apos;);&#x000D;&#x000A;MyVar = angle( input )</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang>
+<UsingContext>Design1_Data;</UsingContext></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" /></Item></Item>
+<Item XName="Series1" Type="GraphSeries">
+<Color><T>Int</T><D>16711680</D></Color>
+<Context>&lt; Post Processed &gt;</Context>
+<DataFormat><T>Int</T><D>4</D></DataFormat>
+<Label>Output</Label>
+<Meas>MyVar</Meas>
+<MeasFormat />
+<MeasGroup />
+<MeasSource><T>Int</T><D>0</D></MeasSource>
+<OnRight><T>Bool</T><D>1</D></OnRight>
+<PPVar>MyVar</PPVar>
+<PlotType />
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<SeriesType><T>Int</T><D>7</D></SeriesType>
+<SymbolShape><T>Int</T><D>4</D></SymbolShape>
+<UserHide><T>Bool</T><D>0</D></UserHide>
+<ZOrder><T>Int</T><D>8999</D></ZOrder>
+<Item XName="Eqns" Type="Equation">
+<Text>using(&apos;Design1_Data&apos;);&#x000D;&#x000A;MyVar = angle( output)</Text>
+<UnitUse><T>Int</T><D>2</D></UnitUse>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang>
+<UsingContext>Design1_Data;</UsingContext></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" /></Item></Item></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.2375104214296601</D></Data></Item></Item></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation">
+<Text>FREQ=1e6;&#x000D;&#x000A;TIME=0.0;&#x000D;&#x000A;TEMPERATURE=16.85;&#x000D;&#x000A;Start_Time=0;&#x000D;&#x000A;setdisplayunit(Start_Time, &apos;s&apos;);&#x000D;&#x000A;Stop_Time=1;&#x000D;&#x000A;setdisplayunit(Stop_Time, &apos;s&apos;);&#x000D;&#x000A;Time_Spacing=.001;&#x000D;&#x000A;setdisplayunit(Time_Spacing, &apos;s&apos;);&#x000D;&#x000A;Num_Samples=1001;&#x000D;&#x000A;Sample_Rate=1000;&#x000D;&#x000A;setdisplayunit(Sample_Rate, &apos;Hz&apos;);&#x000D;&#x000A;Freq_Resolution=1;&#x000D;&#x000A;setdisplayunit(Freq_Resolution, &apos;Hz&apos;);&#x000D;&#x000A;Data_Persistence=0;&#x000D;&#x000A;Start_Time_SC=0;&#x000D;&#x000A;setdisplayunit(Start_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Stop_Time_SC=1;&#x000D;&#x000A;setdisplayunit(Stop_Time_SC, &apos;s&apos;);&#x000D;&#x000A;Num_Samples_SC=1001;&#x000D;&#x000A;</Text>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item>
+<Item XName="Note" UserName="Note" Type="Notes">
+<Selected><T>Bool</T><D>0</D></Selected>
+<Text>&lt;P class=MsoTitle style=&quot;BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 1pt; MARGIN: 0in 0in 0pt; BORDER-LEFT: medium none; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.75pt solid&quot; align=center&gt;&lt;STRONG&gt;&lt;FONT face=Arial size=5&gt;Fast Circuit Envelope (FCE) &lt;BR&gt;simulation of an&amp;nbsp;LNA&lt;/FONT&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt&quot;&gt;&#x000D;&#x000A;&lt;P class=MsoBodyText style=&quot;MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;EM&gt;Keysight Technologies SystemVue Example Workspace&lt;/EM&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P class=MsoBodyText style=&quot;MARGIN: 0in 0in 0pt&quot; align=center&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-bidi-font-size: 12.0pt&quot;&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&amp;nbsp;&lt;/P&gt;&lt;/SPAN&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;This example shows a quick verification of a GoldenGate &quot;fast circuit envelope&quot; model, to validate the voltage range and integrity of a model.&amp;nbsp; Also it is helpful to evaluate differences between models&lt;/FONT&gt;&lt;FONT size=2&gt;.&amp;nbsp; Once a model is valildated, then it can be used in more sophisticated simulations, such as an LTE system. &lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;Two FCE models have been provided for this LNA, at different levels of accuracy.&amp;nbsp;&amp;nbsp;Try simulating using both models.&amp;nbsp;&lt;/FONT&gt;&lt;/P&gt;&#x000D;&#x000A;&lt;OL&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT face=Arial&gt;&lt;FONT size=2&gt;SIM_LNA_2p625GHz_m10dBm_level1_ampaccuracy5.fce&lt;/FONT&gt;&lt;/FONT&gt;&lt;/LI&gt;&#x000D;&#x000A;&lt;LI&gt;&lt;FONT face=Arial size=2&gt;SIM_LNA_2p625GHz_m10dBm_level1_ampaccuracy5_freqaccuracy1.fce&lt;/FONT&gt;&lt;/LI&gt;&lt;/OL&gt;&#x000D;&#x000A;&lt;P&gt;&lt;FONT size=2&gt;&lt;/FONT&gt;&amp;nbsp;&lt;/P&gt;</Text>
+<Item XName="Page" Type="PageMgr">
+<Item XName="Display0" Type="NotesDisp">
+<DVport><T>Array_Dbl64</T><D>1;4;;;Ot14;Rm14</D></DVport>
+<PVPort><T>Array_Dbl64</T><D>1;4;;;yYmB2lG2l24;anD6tOmqb24</D></PVPort>
+<Show><T>Bool</T><D>1</D></Show>
+<ShowCmd><T>Int</T><D>1</D></ShowCmd>
+<Window><T>Array_I64</T><D>1;4;;;A6;o4</D></Window>
+<ZOrder><T>Int</T><D>4</D></ZOrder></Item></Item></Item>
+<Item XName="Page" Type="PageMgr" />
+<Item XName="TuneList" Type="TuneList" />
+<Item XName="Variables" Type="SerItem" />
+<Item XName="WorkspaceVariables" Attrib="14" Type="Equation">
+<AutoCalc><T>Bool</T><D>0</D></AutoCalc>
+<Selected><T>Bool</T><D>0</D></Selected>
+<Item XName="BPMgr" Type="BPMgr">
+<BPLines><T>Empty</T></BPLines>
+<BPStates><T>Empty</T></BPStates></Item>
+<Item XName="EqnBlock" Type="EqnBlock">
+<Lang><T>Int</T><D>1</D></Lang></Item>
+<Item XName="Font" Type="Font">
+<Name>Courier New</Name>
+<Size><T>Double</T><D>125</D></Size></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="VarBlock" Type="VarBlock" /></Item></Item>

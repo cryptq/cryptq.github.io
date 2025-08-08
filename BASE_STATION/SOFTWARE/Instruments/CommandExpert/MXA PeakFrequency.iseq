@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceprocedure xsi:schemaLocation="http://tempuri.org/SequenceProcedureSchema.xsd" procedurename="AgSAn Retrieve Spectrum" synopsis="Retrieve the spectrum and peak marker data  from a signal analyzer supported by the Keysight AgSAn IVI-COM driver.&#xA;&#xA;Operation:&#xA;1. Reset and configure the signal analyzer.&#xA;2. Set the start and stop frequencies.&#xA;3. Initiate a sweep.&#xA;4. Retrieve the spectrum data.&#xA;&#xA;Requirements:&#xA;This example was written for signal analyzers supported by the Keysight AgSAn IVI-COM driver (e.g., MXA).  This example was tested with verion 1.2.20.0 of the AgSAn driver.  This example was tested with the following instrument(s): N9020A (ver. A.06.06).&#xA;&#xA;You have a royalty-free right to use, modify, reproduce and distribute this example program (and/or any modified version) in any way you find useful, provided you agree that Keysight Technologies has no warranty, obligations, or liability for any example programs." schemaVersion="7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tempuri.org/SequenceProcedureSchema.xsd">
+	<parameters>
+		<localvariables />
+		<inputparameters>
+			<inputparameter id="start">
+				<scalartype basetype="Real64" />
+				<value>87000000</value>
+			</inputparameter>
+			<inputparameter id="stop">
+				<scalartype basetype="Real64" />
+				<value>108000000</value>
+			</inputparameter>
+		</inputparameters>
+		<outputparameters>
+			<outputparameter id="amplitude">
+				<arraytype dimension="1">
+					<scalartype basetype="Real64" />
+				</arraytype>
+			</outputparameter>
+			<outputparameter id="peakX">
+				<scalartype basetype="Real64" />
+			</outputparameter>
+			<outputparameter id="peakY">
+				<scalartype basetype="Real64" />
+			</outputparameter>
+		</outputparameters>
+	</parameters>
+	<actions>
+		<connect configuration="AgSAn" address="" commandSet="870f77b1-afa6-4f7b-aff3-4132a2870bbe" source="IVI-COM" commandSetDesc="AgSAn" />
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Utility/Reset" syntax="0">
+			<inputs />
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Acquisition/Configure" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>0</value>
+				</input>
+				<input>
+					<scalartype basetype="Int32" />
+					<value>25</value>
+				</input>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>0</value>
+				</input>
+				<input>
+					<scalartype basetype="String" />
+					<value>IviSpecAnDetectorTypeAutoPeak</value>
+				</input>
+				<input>
+					<scalartype basetype="String" />
+					<value>IviSpecAnVerticalScaleLogarithmic</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Level/Configure" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="String" />
+					<value>IviSpecAnAmplitudeUnitsDBM</value>
+				</input>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>50</value>
+				</input>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>-30</value>
+				</input>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>0</value>
+				</input>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>1</value>
+				</input>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>6</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Display/UnitsPerDivision" syntax="1">
+			<inputs>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>7</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/SweepCoupling/Configure" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>1</value>
+				</input>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>160000</value>
+				</input>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>1</value>
+				</input>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>160000</value>
+				</input>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>1</value>
+				</input>
+				<input>
+					<scalartype basetype="Real64" />
+					<value>0.001</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Frequency/ConfigureStartStop" syntax="0">
+			<inputs>
+				<inputreference inputparameter="start" />
+				<inputreference inputparameter="stop" />
+			</inputs>
+			<outputs />
+		</do>
+		<comment text="Following retrieves the spectrum Y values." />
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Traces/Item/ReadY" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="String" />
+					<value>Trace1</value>
+				</input>
+				<input>
+					<scalartype basetype="Int32" />
+					<value>10000</value>
+				</input>
+				<input>
+					<arraytype dimension="1">
+						<scalartype basetype="Real64" />
+					</arraytype>
+					<value>[0,0,0,0,0,0]</value>
+				</input>
+			</inputs>
+			<outputs>
+				<outputreference outputparameter="amplitude" />
+			</outputs>
+		</do>
+		<comment text="Obtain peak frequency X and Y from marker." />
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Marker/ActiveMarker" syntax="1">
+			<inputs>
+				<input>
+					<scalartype basetype="String" />
+					<value>1</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Marker/ConfigureEnabled" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="Bool" />
+					<value>1</value>
+				</input>
+				<input>
+					<scalartype basetype="String" />
+					<value>Trace1</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Marker/Search" syntax="0">
+			<inputs>
+				<input>
+					<scalartype basetype="String" />
+					<value>IviSpecAnMarkerSearchHighest</value>
+				</input>
+			</inputs>
+			<outputs />
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Marker/Position" syntax="0">
+			<inputs />
+			<outputs>
+				<outputreference outputparameter="peakX" />
+			</outputs>
+		</do>
+		<do configuration="AgSAn" hierarchy="IVI-COM" path="IIviSpecAn/Marker/Amplitude" syntax="0">
+			<inputs />
+			<outputs>
+				<outputreference outputparameter="peakY" />
+			</outputs>
+		</do>
+	</actions>
+</sequenceprocedure>

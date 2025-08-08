@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item XName="5GAdvancedModem_BEL_Eval_Symbols.XML" UserName="5G Advanced Modem BEL Eval Symbols" Type="PartLibrary">
+<Version>1.18</Version>
+<PartType Attrib="14">Design</PartType>
+
+<Item XName="SYM_MIMO_Encoder" UserName="SYM_MIMO_Encoder" Type="Design">
+<Item XName="Page" Type="PageMgr" />
+<Item XName="PartList" Type="PartList">
+<Item XName="Symbols" Type="Part">
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ZO" Type="PartParam">
+<Description>Impedance</Description>
+<Unit><T>Int</T><D>2000</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate>
+<Data><T>Double</T><D>50</D></Data>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="PORT" Type="PartParam">
+<Description>Port Number</Description>
+<Validate><T>Int</T><D>3</D></Validate>
+<Data><T>Double</T><D>1</D></Data>
+<DataEntry>1</DataEntry></Item></Item>
+<Description>Input: Standard (*INP)</Description>
+<ParentPartName>INP_INPUT@RF Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<Model>*INP</Model>
+<Symbol>INPUT</Symbol>
+<ShortSymbol />
+<Footprint />
+<Category>Basic</Category>
+<Rotate><T>Int</T><D>180</D></Rotate>
+<Netlist>Port_1,1</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<ModelName>*INP</ModelName>
+<Indentifier />
+<SymbolName>INPUT</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ZO" Type="PartParam">
+<Description>Impedance</Description>
+<Unit><T>Int</T><D>2000</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate>
+<Data><T>Double</T><D>50</D></Data>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="PORT" Type="PartParam">
+<Description>Port Number</Description>
+<Validate><T>Int</T><D>3</D></Validate>
+<Data><T>Double</T><D>1</D></Data>
+<DataEntry>1</DataEntry></Item></Item></Item></Item></Item>
+<Item XName="TransmitData" Type="Part">
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ZO" Type="PartParam">
+<Description>Impedance</Description>
+<Unit><T>Int</T><D>2000</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate>
+<Data><T>Double</T><D>50</D></Data>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="PORT" Type="PartParam">
+<Description>Port Number</Description>
+<Validate><T>Int</T><D>3</D></Validate>
+<Data><T>Double</T><D>2</D></Data>
+<DataEntry>2</DataEntry></Item></Item>
+<Description>Output Port</Description>
+<ParentPartName>OUT_OUTPUT@RF Design</ParentPartName>
+<SectionNum><T>Int</T><D>0</D></SectionNum>
+<Model>*OUT</Model>
+<Symbol>OUTPUT</Symbol>
+<ShortSymbol />
+<Footprint />
+<Category>Basic</Category>
+<Netlist>Port_1,2</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet">
+<Item XName="ModelSet_0" Type="ModelListEntry">
+<ModelName>*OUT</ModelName>
+<Indentifier />
+<SymbolName>OUTPUT</SymbolName>
+<Item XName="ParamSet" Type="ParamSet">
+<Item XName="ZO" Type="PartParam">
+<Description>Impedance</Description>
+<Unit><T>Int</T><D>2000</D></Unit>
+<Validate><T>Int</T><D>5</D></Validate>
+<Data><T>Double</T><D>50</D></Data>
+<Show><T>Bool</T><D>0</D></Show></Item>
+<Item XName="PORT" Type="PartParam">
+<Description>Port Number</Description>
+<Validate><T>Int</T><D>3</D></Validate>
+<Data><T>Double</T><D>2</D></Data>
+<DataEntry>2</DataEntry></Item></Item></Item></Item></Item>
+<Selected><T>Bool</T><D>0</D></Selected></Item>
+<Intent><T>Int</T><D>3</D></Intent>
+<Item XName="Schematic" Type="CSchematic">
+<Item XName="PartLength" Type="Param">
+<DataEntry>1.0</DataEntry>
+<Unit><T>Int</T><D>6003</D></Unit>
+<Data><T>Double</T><D>0.0254</D></Data></Item>
+<Item XName="SnapGrid" Type="Param">
+<Data><T>Double</T><D>125</D></Data></Item>
+<Item XName="Page" Type="PageMgr">
+<Item XName="PageBox" Type="PageBox">
+<Color><T>Int</T><D>128</D></Color>
+<PosX><T>Double</T><D>0</D></PosX>
+<PosY><T>Double</T><D>0</D></PosY>
+<Width><T>Double</T><D>11000</D></Width>
+<Height><T>Double</T><D>8500</D></Height>
+<Alpha><T>Int</T><D>32</D></Alpha>
+<Visible><T>Bool</T><D>0</D></Visible></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.909090909090907</D></Size></Item>
+<Item XName="Annotate0" Type="RectA">
+<ZOrder><T>Int</T><D>10000</D></ZOrder>
+<BorderColor><T>Int</T><D>0</D></BorderColor>
+<BorderWeight><T>Int</T><D>10</D></BorderWeight>
+<Color><T>Int</T><D>16773864</D></Color>
+<PosX><T>Double</T><D>750</D></PosX>
+<PosY><T>Double</T><D>250</D></PosY>
+<Width><T>Double</T><D>750</D></Width>
+<Height><T>Double</T><D>750</D></Height>
+<Treat><T>Int</T><D>1</D></Treat></Item>
+<Item XName="Annotate1" Type="TextA">
+<ToPoint><T>Bool</T><D>1</D></ToPoint>
+<ZOrder><T>Int</T><D>9999</D></ZOrder>
+<FontColor><T>Int</T><D>8388608</D></FontColor>
+<Justification><T>Int</T><D>5</D></Justification>
+<FontHeight><T>Int</T><D>83</D></FontHeight>
+<PosX><T>Double</T><D>1125</D></PosX>
+<PosY><T>Double</T><D>625</D></PosY>
+<Item XName="Text" Type="Param">
+<TextParam><T>Bool</T><D>1</D></TextParam>
+<DataEntry>MIMO_Encoder</DataEntry>
+<Data>MIMO_Encoder</Data></Item></Item>
+<CenterX><T>Double</T><D>250</D></CenterX>
+<CenterY><T>Double</T><D>250</D></CenterY>
+<Item XName="Annotate2" Type="LineA">
+<ZOrder><T>Int</T><D>10100</D></ZOrder>
+<BorderColor><T>Int</T><D>8388608</D></BorderColor>
+<BorderWeight><T>Int</T><D>10</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;Gl14;Y324;R724;Y324</D></Coords>
+<Treat><T>Int</T><D>6</D></Treat></Item>
+<Item XName="Part0" Type="SchPart">
+<Designator>Symbols</Designator>
+<Mirror><T>Int</T><D>1</D></Mirror>
+<PosX><T>Double</T><D>250.00001525878906</D></PosX>
+<PosY><T>Double</T><D>542</D></PosY>
+<Symbol>INPUT</Symbol>
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>83</D></CenterY>
+<Justification><T>Int</T><D>6</D></Justification>
+<Item XName="DrawParams" Type="DrawGroup">
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Visible><T>Bool</T><D>1</D></Visible>
+<PosX><T>Double</T><D>50.499984741210938</D></PosX>
+<PosY><T>Double</T><D>83</D></PosY></Item></Item>
+<Item XName="Annotate3" Type="LineA">
+<ZOrder><T>Int</T><D>10100</D></ZOrder>
+<BorderColor><T>Int</T><D>8388608</D></BorderColor>
+<BorderWeight><T>Int</T><D>10</D></BorderWeight>
+<Coords><T>Array_Dbl64</T><D>1;4;GV24;Y324;RN24;Y324</D></Coords>
+<Treat><T>Int</T><D>6</D></Treat></Item>
+<Item XName="Part1" Type="SchPart">
+<Designator>TransmitData</Designator>
+<PosX><T>Double</T><D>2000</D></PosX>
+<PosY><T>Double</T><D>542</D></PosY>
+<Symbol>OUTPUT</Symbol>
+<CenterX><T>Double</T><D>0</D></CenterX>
+<CenterY><T>Double</T><D>83</D></CenterY>
+<Justification><T>Int</T><D>4</D></Justification>
+<Item XName="DrawParams" Type="DrawGroup">
+<ZOrder><T>Int</T><D>1</D></ZOrder>
+<Visible><T>Bool</T><D>1</D></Visible>
+<PosX><T>Double</T><D>-50.5</D></PosX>
+<PosY><T>Double</T><D>83</D></PosY></Item></Item></Item>
+<Item XName="Height" Type="Param">
+<Data><T>Double</T><D>0.2159</D></Data></Item>
+<Item XName="Width" Type="Param">
+<Data><T>Double</T><D>0.27940000000000004</D></Data></Item>
+<Item XName="Font" Type="Font">
+<Size><T>Double</T><D>90.909090909090907</D></Size></Item>
+<Shown><T>Int</T><D>14592</D></Shown>
+<Selected><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Connectivity" Type="DesignTopology">
+<Item XName="N1" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<SchObject>Part0</SchObject>
+<PinName>Port_1</PinName>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>1</NetName></Item></Item>
+<PartID>Symbols</PartID></Item></Item>
+<Item XName="N2" Type="Nexus">
+<Item XName="P1" Type="PartPin">
+<SchObject>Part1</SchObject>
+<PinName>Port_1</PinName>
+<TermNum>1</TermNum>
+<Item XName="Subterminals" Type="SerItem">
+<Item XName="T1" Type="SubTerm">
+<NetName>2</NetName></Item></Item>
+<PartID>TransmitData</PartID></Item></Item></Item>
+<Selected><T>Bool</T><D>1</D></Selected></Item>
+</Item>

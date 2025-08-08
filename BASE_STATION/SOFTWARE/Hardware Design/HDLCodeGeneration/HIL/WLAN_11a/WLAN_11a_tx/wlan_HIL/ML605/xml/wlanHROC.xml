@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<VISA_PXI name="WLAN_11a_tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Transport_VISA_PXI.xsd">
+<VisaPxiViMap PRBitFilePath="..\project\bitfiles\" bar="0" bus="1" device="3" function="0" intfc="0" length="100" name="wlan" offset="1000">
+<Field name="Control" offset="4096" readable="true" width="32" writable="true" />
+<Field name="Q_out" offset="0" readable="true" width="14" writable="false" />
+<Field name="I_out" offset="14" readable="true" width="14" writable="false" /></VisaPxiViMap></VISA_PXI>

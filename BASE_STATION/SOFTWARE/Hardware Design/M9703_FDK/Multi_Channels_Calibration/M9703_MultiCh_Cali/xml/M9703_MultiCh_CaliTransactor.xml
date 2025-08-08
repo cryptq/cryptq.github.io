@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Transactor HROCSpecPath="M9703_MultiCh_CaliHROC.xml" name="M9703_MultiCh_Cali">
+<Initialize>
+<Write url="/M9703_FDK_Multi_Channels_Cali/M9703_MultiCh_Cali/FPGA0/BlockRegister">
+<Constant value="FromSystemVue" /></Write>
+<Write url="/M9703_FDK_Multi_Channels_Cali/M9703_MultiCh_Cali/FPGA0/Register">
+<Constant value="FromSystemVue" /></Write></Initialize>
+<Runtime>
+<ReadGroup>
+<Read url="/M9703_FDK_Multi_Channels_Cali/M9703_MultiCh_Cali/FPGA0/Out1">
+<Output index="0" /></Read></ReadGroup></Runtime></Transactor>
