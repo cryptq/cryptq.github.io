@@ -67,6 +67,10 @@
 
 ---
 
+![](https://cryptq.github.io/css/psyweapon.png)
+
+---
+
 <!-- <h3 align="center">
 <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/SACRIFICE_OF_THE_RUSSIAN_PEOPLE.MD">
 ИМИТАЦИЯ ПОВЕДЕНИЯ ХОЗЯЕВ СТРАНЫ (ССЫЛКА)
