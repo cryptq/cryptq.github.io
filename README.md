@@ -1,4 +1,4 @@
-![](https://cryptq.github.io/css/OPS.jpg)
+![](https://cryptq.github.io/css/Struktura_OPS.jpg)
 
 
 <h2 align="center">
