@@ -1,6 +1,7 @@
 import os, re
 
 # Поиск файлов, где упоминается SamplingRate
+# Можно найти любые параметры и управляющие команды в неограниченном количестве файлов.
 
 pattern = re.compile(r'SamplingRate', re.IGNORECASE)
 for root, _, files in os.walk(r'C:\Users\User\Desktop\SOFTWARE'):
