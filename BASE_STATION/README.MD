@@ -2,8 +2,8 @@
 
 ![](https://cryptq.github.io/css/uwb.jpg)
 ---
-![](https://cryptq.github.io/css/man1.jpg)
----
+<!-- ![](https://cryptq.github.io/css/man1.jpg)
+--- -->
 ![](https://cryptq.github.io/css/man2.jpg)
 ---
 
