@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Мозговая подпись — уникальная биоэлектромагнитная подпись</title>
+  <style>
+    ::-webkit-scrollbar {width: 0;}
+    * {margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background: linear-gradient(135deg,#1a0f3c,#2d1b69,#4c1d95);color:#e6eef8}
+
+    .container{max-width:1300px;margin:28px auto;padding:22px}
+
+    .hero{background:rgba(0,0,0,0.35);border:2px solid rgba(168,85,247,0.25);padding:36px;border-radius:18px;text-align:center;position:relative;overflow:hidden}
+    .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(45deg,rgba(168,85,247,0.06),rgba(236,72,153,0.04));pointer-events:none}
+    .logo{display:inline-block;background:linear-gradient(135deg,#8e44ff,#ff6fcf);padding:16px;border-radius:12px;font-weight:800;color:#071227;margin-bottom:12px}
+    .hero h1{font-size:34px;color:#a855f7;margin:10px 0;text-shadow:0 4px 28px rgba(168,85,247,0.18)}
+    .hero p{color:#d6ccff;max-width:980px;margin:0 auto}
+
+    .nav-tabs{display:flex;gap:10px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+    .nav-tab{background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.18);padding:10px 18px;border-radius:22px;color:#e9dbff;cursor:pointer;font-weight:600}
+    .nav-tab.active{background:linear-gradient(135deg,rgba(168,85,247,0.25),rgba(236,72,153,0.12));box-shadow:0 10px 30px rgba(72,0,100,0.25)}
+
+    .section{display:none;background:rgba(0,0,0,0.45);border-radius:14px;padding:24px;border:1px solid rgba(168,85,247,0.15);margin-bottom:20px}
+    .section.active{display:block}
+    .section h2{color:#f3e8ff;margin-bottom:14px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.03);padding-bottom:12px}
+
+    .system-scheme{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:center}
+    .scheme-block{min-width:200px;padding:18px;border-radius:12px;background:linear-gradient(145deg,rgba(139,92,246,0.08),rgba(236,72,153,0.04));border:1px solid rgba(139,92,246,0.14);text-align:center}
+    .scheme-arrow{font-size:22px;color:#ff7ab8}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .card{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+
+    .devices-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:12px}
+    .device-card{border-radius:12px;padding:16px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.08));border:1px solid rgba(255,255,255,0.03)}
+    .device-title{color:#f6e08b;font-weight:700;margin:8px 0}
+    .device-features li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.02);list-style:none}
+
+    .tech-table{width:100%;border-collapse:collapse;margin-top:10px}
+    .tech-table th, .tech-table td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.03);font-size:14px}
+    .tech-table th{background:linear-gradient(90deg,rgba(168,85,247,0.08),rgba(236,72,153,0.04));color:#f0e6ff;text-align:left}
+
+    .warning{background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.25);padding:12px;border-radius:10px;color:#ffd2d2}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02)}
+
+    footer{margin-top:18px;text-align:center;color:rgba(255,255,255,0.6)}
+
+    @media(max-width:980px){.grid{grid-template-columns:1fr}.hero h1{font-size:26px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="logo">BP</div>
+      <h1>Мозговая подпись — уникальная биоэлектромагнитная подпись</h1>
+      <p>Почему у каждого человека есть уникальная нейрофизиологическая подпись (brainprint), как её извлечь из fMRI/EEG и какие юридические и этические риски это несёт.</p>
+    </div>
+
+    <div class="nav-tabs">
+      <div class="nav-tab active" data-target="overview">Обзор</div>
+      <div class="nav-tab" data-target="pipeline">Конвейер</div>
+      <div class="nav-tab" data-target="demo">Демо</div>
+      <div class="nav-tab" data-target="materials">Материалы</div>
+      <div class="nav-tab" data-target="ethics">Этика</div>
+    </div>
+
+    <div id="overview" class="section active">
+      <h2>Коротко — что такое "brainprint"</h2>
+      <div class="system-scheme">
+        <div class="scheme-block">
+          <strong>fMRI connectome</strong>
+          <div class="small">Матрица корреляций областей мозга</div>
+        </div>
+        <div class="scheme-arrow">→</div>
+        <div class="scheme-block">
+          <strong>EEG / SSVEP</strong>
+          <div class="small">Спектрально‑временные паттерны</div>
+        </div>
+        <div class="scheme-arrow">→</div>
+        <div class="scheme-block">
+          <strong>Signature</strong>
+          <div class="small">Вектор признаков / PCA / embeddings</div>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:18px">
+        <div class="card">
+          <h3>Почему это работает</h3>
+          <ul style="margin:8px 0;padding-left:18px">
+            <li>Индивидуальная архитектура сети и физиология дают стабильные паттерны.</li>
+            <li>Методы ML выделяют сочетания признаков, устойчивые в пределах субъекта.</li>
+            <li>SSVEP/VEP усиливают SNR и дают повторяемые спектральные пики.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Ограничения</h3>
+          <ul style="margin:8px 0;padding-left:18px">
+            <li>Чувствительность к артефактам (движение, шум, оборудование).</li>
+            <li>Необходимость многосессионной валидации (test–retest).</li>
+            <li>Этические и юридические риски при хранении нейроданных.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="pipeline" class="section">
+      <h2>Пошаговый конвейер извлечения подписи (fMRI / EEG)</h2>
+      <div class="card">
+        <h3>fMRI — шаги</h3>
+        <ol style="margin-left:18px;margin-top:8px">
+          <li>fMRIPrep: motion correction, normalization, confounds extraction.</li>
+          <li>Extract ROI time series (Schaefer / AAL).</li>
+          <li>Compute connectivity (Pearson / partial / precision).</li>
+          <li>Fisher z-transform, graph metrics, PCA/embeddings.</li>
+          <li>Evaluate: identification rate, ICC, permutation test.</li>
+        </ol>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>EEG — шаги</h3>
+        <ol style="margin-left:18px;margin-top:8px">
+          <li>Filter: notch 50/60Hz, bandpass 1–80Hz; ref: average.</li>
+          <li>Artifact removal: ICA, channel interpolation.</li>
+          <li>Features: bandpowers, coherence/PLV, SSVEP STFT, microstates.</li>
+          <li>Compact signature: flatten upper-triangle, PCA/autoencoder.</li>
+          <li>Evaluate: split A/B sessions, cosine NN, ROC, EER.</li>
+        </ol>
+      </div>
+
+      <div style="margin-top:12px" class="card">
+        <h3>Кодовые фрагменты и pseudocode</h3>
+        <pre style="background:rgba(0,0,0,0.25);padding:12px;border-radius:8px"># EEG bandpower (Welch)
+for ch in channels:
+  f,P = welch(signal[ch])
+  pow = integrate(P in band)
+signature = mean(pow across channels)</pre>
+      </div>
+    </div>
+
+    <div id="demo" class="section">
+      <h2>Интерактивное демо (симуляция)</h2>
+      <p class="small">Генератор синтетических подписей и простая проверка идентифицируемости.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <button class="nav-tab" id="genBtn">Generate</button>
+        <button class="nav-tab" id="simBtn">Identification test</button>
+        <select id="pickA" class="nav-tab"></select>
+        <select id="pickB" class="nav-tab"></select>
+        <button class="nav-tab" id="compareBtn">Compare</button>
+        <a class="nav-tab" href="https://cryptq.github.io/BASE_STATION/brainprints_example_dataset.zip">Download sample dataset</a>
+      </div>
+      <div class="card" id="viz" style="height:260px;display:flex;align-items:center;justify-content:center">
+        <canvas id="waveCanvas" style="width:100%;height:100%;border-radius:8px"></canvas>
+      </div>
+      <div class="card" id="compareResult" style="margin-top:10px">Нажмите Generate.</div>
+    </div>
+
+    <div id="materials" class="section">
+      <h2>Материалы и источники</h2>
+      <div class="card">
+        <table class="tech-table">
+          <tr><th>Источник</th><th>Ссылка</th></tr>
+          <tr><td>Interneuro — мозговые отпечатки</td><td><a href="https://interneuro.ru/news/mozgovye-otpechatki-podrostkov-mogut-predskazat-problemy/" target="_blank" style="color:#ffd">interneuro.ru</a></td></tr>
+          <tr><td>Habr — обзор</td><td><a href="https://habr.com/ru/articles/422021/" target="_blank" style="color:#ffd">habr.com</a></td></tr>
+          <tr><td>ScientificRussia — отпечатки мозга</td><td><a href="https://scientificrussia.ru/articles/otpecatki-mozga-novyj-sag-k-biometriceskim-sistemam-bezopasnosti" target="_blank" style="color:#ffd">scientificrussia.ru</a></td></tr>
+          <tr><td>Пример синтетических данных</td><td><a href="https://cryptq.github.io/BASE_STATION/brainprints_example_dataset.zip" style="color:#ffd">Скачать dataset (synthetic)</a></td></tr>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Рекомендации для репликации</h3>
+        <ul style="margin-top:6px;padding-left:18px">
+          <li>Разделение по сессиям при CV, nested CV для гиперпараметров.</li>
+          <li>Test–retest (дни / недели / месяцы).</li>
+          <li>Permutation tests и explainable-AI для проверки артефактов.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="ethics" class="section">
+      <h2>Этика, безопасность и правовые риски</h2>
+      <div class="warning">Нейроданные — чувствительная категория. Требуется информированное согласие, шифрование хранения, и оценка рисков (ре-идентификация, дискриминация).</div>
+      <div class="card" style="margin-top:12px">
+        <h3>Ключевые рекомендации</h3>
+        <ol style="margin-left:18px">
+          <li>Не храните raw EEG/fMRI без шифрования и прав доступа.</li>
+          <li>Документируйте pipeline, версии ПО и QC-метрики.</li>
+          <li>Ограничьте доступ и обеспечьте юридические гарантии использования.</li>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      <div>Содержит синтетические файлы для демонстрации. Используйте ответственно.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Navigation
+    document.querySelectorAll('.nav-tab[data-target]').forEach(tab=>{
+      tab.addEventListener('click', (e)=>{
+        document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        const target = e.currentTarget.getAttribute('data-target');
+        document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
+      })
+    });
+
+    // Demo logic (same as previous)
+    const genBtn = document.getElementById('genBtn');
+    const simBtn = document.getElementById('simBtn');
+    const compareBtn = document.getElementById('compareBtn');
+    const pickA = document.getElementById('pickA');
+    const pickB = document.getElementById('pickB');
+    const compareResult = document.getElementById('compareResult');
+    const waveCanvas = document.getElementById('waveCanvas');
+    let ctx = waveCanvas.getContext('2d');
+
+    // Resize canvas to match CSS size * devicePixelRatio and set a consistent transform
+    function resizeCanvas(){
+      const rect = waveCanvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      // set bitmap size
+      waveCanvas.width = Math.max(1, Math.floor(rect.width * dpr));
+      waveCanvas.height = Math.max(1, Math.floor(rect.height * dpr));
+      // get context and set transform so drawing uses CSS pixels
+      ctx = waveCanvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    window.addEventListener('resize', resizeCanvas);
+    // initial size
+    resizeCanvas();
+
+    let subjects = [];
+    function randomSignature(dim=10){ const base=Array.from({length:dim},()=>Math.random()*2-1); return base.map((v,i)=>v + (Math.random()-0.5)*0.2); }
+    function cosine(a,b){const dot=a.reduce((s,x,i)=>s + x*b[i],0);const na=Math.sqrt(a.reduce((s,x)=>s + x*x,0));const nb=Math.sqrt(b.reduce((s,x)=>s + x*x,0));return dot/(na*nb)}
+    function drawWave(sig){
+      const w = waveCanvas.clientWidth;
+      const h = waveCanvas.clientHeight;
+      const samples = 500;
+      // clear using CSS pixels (transform set so coords are CSS pixels)
+      ctx.clearRect(0,0,w,h);
+      ctx.fillStyle='rgba(0,0,0,0.02)';
+      ctx.fillRect(0,0,w,h);
+      ctx.lineWidth = 2;
+      ctx.strokeStyle='rgba(255,200,70,0.95)';
+      ctx.beginPath();
+      for(let i=0;i<samples;i++){
+        const x = i/samples * w;
+        const y = h/2 + Math.sin(i/10 + (sig[0]||0)*2) * (h/4) * (0.6 + (sig[1]||0)*0.2);
+        if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+      }
+      ctx.stroke();
+    }
+    function populateSelects(){pickA.innerHTML='';pickB.innerHTML='';subjects.forEach((s,i)=>{const o1=document.createElement('option');o1.value=i;o1.textContent=s.name;pickA.appendChild(o1);pickB.appendChild(o1.cloneNode(true));});}
+
+    genBtn.addEventListener('click', ()=>{subjects=[];const N=12;for(let i=0;i<N;i++)subjects.push({name:'subj_'+(i+1).toString().padStart(2,'0'),sig:randomSignature(10)});populateSelects();compareResult.innerHTML='<b>'+subjects.length+' synthetic subjects generated.</b>';drawWave(subjects[0].sig);});
+    compareBtn.addEventListener('click', ()=>{const a=subjects[Number(pickA.value)];const b=subjects[Number(pickB.value)];if(!a||!b){compareResult.textContent='Choose two subjects.';return;}const sim=cosine(a.sig,b.sig);compareResult.innerHTML=`<b>${a.name}</b> vs <b>${b.name}</b> — cosine: <span style="color:#9be27a">${sim.toFixed(3)}</span>`;drawWave(a.sig);});
+    simBtn.addEventListener('click', ()=>{if(subjects.length===0){compareResult.textContent='Generate first.';return;}const M=subjects.length;let correct=0;for(let i=0;i<M;i++){let best=-1,bi=-1;for(let j=0;j<M;j++){if(i===j)continue;const s=cosine(subjects[i].sig,subjects[j].sig);if(s>best){best=s;bi=j;}}if(bi===i)correct++;}compareResult.innerHTML=`Identification (naive NN excluding self): <b>${correct}/${M}</b>`;});
+    // init
+    genBtn.click();
+  </script>
+</body>
+</html>
