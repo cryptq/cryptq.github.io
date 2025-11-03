@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новые полномочия ФСБ по контролю за техническими средствами</title>
+      <meta property="og:description" content="27 Федеральных Законов, 50 Статей УК РФ, 25 экспертиз, 14 симптомов, 10 синдромов." />
+      <meta name="twitter:title" content="ДИВЕРСАНТЫ ЗАВЕРБОВАННЫЕ УКРАИНОЙ" />
+      <meta name="twitter:description" content="ИПСО, ГОСИЗМЕНА, ШПИОНАЖ, ТЕРРОРИЗМ" />
+      <meta property="og:image" content="https://cryptq.github.io/css/tr1.jpg" />
+      <meta name="twitter:image" content="https://cryptq.github.io/css/tr1.jpg" />
+      <meta name="twitter:card" content="summary_large_image" />
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #2a3a7c, #3a4a8c);
+            color: #333;min-height: 100vh;display: flex;
+            align-items: center;justify-content: center;
+            overflow-x: hidden;padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;width: 100%;background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;animation: fadeIn 1s ease-out;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;padding: 2.5rem;
+            text-align: center;position: relative;
+        }
+
+        .header::after {
+            content: '';position: absolute;bottom: 0;left: 0;right: 0;height: 4px;
+            background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71);
+        }
+
+        .icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content {padding: 2.5rem;}
+        .section {margin-bottom: 2.5rem;animation: slideInUp 0.8s ease-out;}
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e74c3c;
+            display: inline-block;
+        }
+
+        .law-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .law-card:hover {transform: translateY(-5px);}
+        .law-card h3 {color: #2c3e50;margin-bottom: 1rem;font-size: 1.3rem;}
+        .definition-box {
+            background: #e8f4fc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #3498db;
+        }
+
+        .definition-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .timeline {position: relative;max-width: 800px;margin: 2rem auto;}
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            padding: 1.2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .timeline-content::after {
+         content: '';
+         position: absolute;
+         width: 20px;
+         height: 20px;
+         right: -34px;
+         background: white;
+         top: 40px;
+         border-radius: 50%;
+         z-index: 1;
+         border: 4px solid #3498db;
+        }
+
+        /* .timeline-content::before {
+           content: '';
+           position: absolute;
+           background: white;
+           top: 24%;z-index: 1;
+        /* border-radius: 50%; */
+        /* width: 20px;height: 0px;right: -34px;
+           border: 2px solid #3498db;
+
+        } */
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -33px;
+            right: auto;
+        }
+
+     /* .timeline-item:nth-child(even) .timeline-content::before {
+            left: -36px;
+            right: auto;
+        } */
+
+        .timeline-date {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 4px solid #2ecc71;
+        }
+
+        .tech-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .legal-note {
+            background: #fff8e1;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-left: 5px solid #f39c12;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 1.8rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 1.8rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-content::after {
+                left: -10px;
+                right: auto;
+            }
+            
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }*/
+    </style>
+
+        <style>
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .law-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .law-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .law-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .definition-box {
+            background: #e8f4fc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #3498db;
+        }
+
+        .definition-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            padding: 1.2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background: white;
+            top: 20px;
+            border-radius: 50%;
+            z-index: 1;
+            border: 4px solid #3498db;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -10px;
+            right: auto;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+
+        .powers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .power-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            border-top: 4px solid #2ecc71;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .power-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .power-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .power-item h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .prison-info {
+            background: #fff8e1;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-left: 5px solid #f39c12;
+        }
+
+        .prison-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #e74c3c;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .prison-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .analysis-box {
+            background: #e8f4fc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #3498db;
+        }
+
+        .analysis-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .detention-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #9b59b6;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .detention-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 1.8rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 1.8rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-content::after {
+                left: -10px;
+                right: auto;
+            }
+            
+            .powers-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="icon">🛡️</span>
+            <h1 style="margin-bottom: 0;">Новые полномочия ФСБ</h1><h2 style="text-align:center;font-weight:bolder;">2025г. - 2026г.</h2>
+            <p class="subtitle" style="font-weight:bolder;">Контроль за техническими средствами для негласного получения информации, право на самостоятельные задержания и создание спецтюрем для шпионов и террористов</p>
+            <p><b>Как системы, как и ПО</b> для электронных вычислительных машин и других электронных устройств,
+               независимо от их внешнего вида,
+               технических характеристик,
+               а также принципов работы, <b>которые декодируют активность головного мозга</b> в мыслеобразы и при этом предназначены (или используются) для скрытного получения информации без ведома/согласия человека,
+               <b>попадают под определение «специальных технических средств»</b>.
+            </p>
+          <!--  
+          <br>
+            <center>
+            <img style="width:100%;border-radius:10px;" src="18.jpg" />
+            </center>
+           -->
+        </div>
+       
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Новые полномочия ФСБ</h2>
+                
+                <div class="powers-grid">
+                    <div class="power-item">
+                        <div class="power-icon">🔍</div>
+                        <h3>Контроль за спецтехникой</h3>
+                        <p>Регистрация и учет специальных технических средств для негласного получения информации</p>
+                    </div>
+                    <div class="power-item">
+                        <div class="power-icon">👮</div>
+                        <h3>Административные задержания</h3>
+                        <p>Право осуществлять задержания за нарушения КоАП без привлечения других ведомств</p>
+                    </div>
+                    <div class="power-item">
+                        <div class="power-icon">🏢</div>
+                        <h3>Спецтюрьмы ФСБ</h3>
+                        <p>Создание сети специализированных тюрем для шпионов и террористов</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Законодательные изменения</h2>
+                
+                <div class="law-card">
+                    <h3>Изменения в Уголовный кодекс РФ</h3>
+                    <p>Федеральный закон о внесении изменения <b>в статью 138.1</b> Уголовного кодекса Российской Федерации вводит юридическое определение специальных технических средств (СТС).</p>
+                    
+                    <div class="definition-box">
+                        <div class="definition-title">Определение СТС согласно законопроекту:</div>
+                        <p>Под специальными техническими средствами, предназначенными для негласного получения информации, понимаются приборы, системы, комплексы, устройства, специальный инструмент и программное обеспечение для электронных вычислительных машин и других электронных устройств, независимо от их внешнего вида, технических характеристик, а также принципов работы, которым намеренно приданы качества и свойства для обеспечения функции скрытного (тайного, неочевидного) получения информации либо доступа к ней (без ведома ее обладателя).</p>
+                    </div>
+                </div>
+                
+                <div class="law-card">
+                    <h3>Расширение полномочий ФСБ</h3>
+                    <p>Согласно инициативе, ФСБ получает право вести государственный реестр специальных технических средств и осуществлять контроль за их оборотом. Это включает регистрацию, учет и лицензирование подобных устройств и программного обеспечения.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Хронология событий</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">20 октября 2025</div>
+                            <p>Публикация информации о законопроекте, предоставляющем ФСБ право контроля за регистрацией "шпионских" устройств и ПО</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">21 октября 2025</div>
+                            <p>Законопроект принят Государственной Думой в первом чтении</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">22 октября 2025</div>
+                            <p>Одобрение Советом Федерации</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">27 октября 2025</div>
+                            <p>Подписание Президентом Российской Федерации</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">1 января 2026</div>
+                            <p>Планируемая дата вступления закона в силу</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Технические средства, попадающие под регулирование</h2>
+                
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">🎤</div>
+                        <h3>Аудиоустройства</h3>
+                        <p>Скрытые микрофоны, направленные микрофоны, устройства для прослушивания</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">📹</div>
+                        <h3>Видеоустройства</h3>
+                        <p>Миниатюрные камеры, камеры в бытовых предметах, системы скрытого видеонаблюдения</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">📱</div>
+                        <h3>Мобильные устройства</h3>
+                        <p>Шпионские приложения, трояны, программы для удаленного доступа к устройствам</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🖥️</div>
+                        <h3>Программное обеспечение</h3>
+                        <p>Кейлоггеры, программы перехвата трафика, средства взлома и негласного доступа</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">📡</div>
+                        <h3>Радиоэлектронные средства</h3>
+                        <p>Устройства перехвата сигналов, средства радиоразведки, анализаторы трафика</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🔧</div>
+                        <h3>Специализированный инструмент</h3>
+                        <p>Устройства для вскрытия, инструменты для установки средств наблюдения</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Правовые последствия</h2>
+                
+                <div class="law-card">
+                    <h3>Для производителей и распространителей</h3>
+                    <p>Обязательная регистрация специальных технических средств в реестре ФСБ. Несоблюдение требований влечет административную и уголовную ответственность.</p>
+                </div>
+                
+                <div class="law-card">
+                    <h3>Для пользователей</h3>
+                    <p>Ограничения на приобретение и использование СТС без соответствующих разрешений. Усиление контроля за оборотом средств негласного получения информации.</p>
+                </div>
+                
+                <div class="law-card">
+                    <h3>Для правоохранительных органов</h3>
+                    <p>Расширение полномочий по контролю за оборотом СТС. Право на проведение проверок и изъятие незарегистрированных устройств.</p>
+                </div>
+            </div>
+            
+                
+                <div class="detention-card">
+                    <h3>Последствия права на административное задержание</h3>
+                    <p>Новые полномочия ФСБ позволят:</p>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Повысить оперативность реагирования на административные правонарушения</li>
+                        <li>Снизить зависимость от других силовых ведомств при задержаниях</li>
+                        <li>Усилить контроль за соблюдением законодательства в зонах ответственности ФСБ</li>
+                        <li>Сократить время между выявлением нарушения и применением мер</li>
+                    </ul>
+                </div>
+                
+                <div class="prison-card">
+                    <h3>Создание спецтюрем ФСБ</h3>
+                    <p>Формирование специализированной пенитенциарной системы для содержания лиц, осужденных за шпионаж и терроризм. Это позволит:</p>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Обеспечить повышенный уровень изоляции особо опасных преступников</li>
+                        <li>Создать условия для эффективного оперативного сопровождения дел</li>
+                        <li>Минимизировать риски внешнего влияния на осужденных</li>
+                        <li>Обеспечить специализированные условия содержания</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="prison-info">
+                <p><strong>Аналитическая справка:</strong> Принятые законодательные изменения являются частью комплексного подхода к усилению национальной безопасности. Они направлены на создание правовых и инфраструктурных механизмов для противодействия современным угрозам, включая шпионаж и терроризм, в условиях продолжающейся СВО и геополитической напряженности. Расширение полномочий ФСБ в трех ключевых направлениях (контроль за техсредствами, право на задержания и создание спецтюрем) формирует единую систему мер по укреплению безопасности государства.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Анимация появления элементов при скролле
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Наблюдаем за всеми карточками и элементами таймлайна
+            const elementsToAnimate = document.querySelectorAll('.law-card, .timeline-item, .tech-item');
+            elementsToAnimate.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
