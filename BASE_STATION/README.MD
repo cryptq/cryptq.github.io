@@ -1,5 +1,7 @@
 ## Чтобы быстро понять как именно это устроено вот файлы из PathWave System Design (SystemVue) Software от Keysight<br><hr>Включая Drivers - драйверы отвечающие за Инфразвук, V2k, Радар, Преследование целей и UWB<br><hr>
 
+![](https://cryptq.github.io/css/rhode.jpg)
+---
 ![](https://cryptq.github.io/css/uwb.jpg)
 ---
 <!-- ![](https://cryptq.github.io/css/man1.jpg)
