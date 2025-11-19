@@ -1,0 +1,1353 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Адаптивный мультиканальный пайплайн: сигналы, мозг и законодательство</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#2563eb;
+      --accent-soft:#e0ecff;
+      --accent-strong:#1d4ed8;
+      --accent-green:#16a34a;
+      --accent-red:#dc2626;
+      --accent-violet:#7c3aed;
+      --ink:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --shadow:0 14px 30px rgba(15,23,42,0.08);
+      --radius-lg:18px;
+      --radius-md:12px;
+    }
+
+    * {
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body {
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
+      background:radial-gradient(circle at top left,#e0edff,#f5f7fb 45%,#eef2ff 100%);
+      color:var(--ink);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .page {
+      max-width:1180px;
+      margin:0 auto;
+      padding:24px 16px 40px;
+    }
+
+    .header {
+      background:linear-gradient(135deg,#fafcff,#e0ecff);
+      border-radius:var(--radius-lg);
+      padding:22px 20px 24px;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+      margin-bottom:24px;
+    }
+
+    .header::before {
+      content:"";
+      position:absolute;
+      inset:-40%;
+      background:radial-gradient(circle at top right,rgba(96,165,250,0.4),transparent 60%);
+      opacity:0.6;
+      pointer-events:none;
+    }
+
+    .header-inner {
+      position:relative;
+      z-index:1;
+      display:flex;
+      flex-wrap:wrap;
+      gap:18px;
+      align-items:flex-start;
+    }
+
+    .header-text {
+      flex:1 1 260px;
+    }
+
+    .header-badge {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:4px 10px;
+      border-radius:999px;
+      background:#eef2ff;
+      color:#4b5563;
+      font-size:12px;
+      margin-bottom:8px;
+    }
+
+    .header-badge span {
+      font-size:16px;
+    }
+
+    h1 {
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:6px;
+      color:#0f172a;
+    }
+
+    .subtitle {
+      font-size:14px;
+      color:var(--muted);
+      max-width:620px;
+      line-height:1.55;
+      margin-bottom:10px;
+    }
+
+    .header-tags {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:6px;
+    }
+
+    .tag {
+      font-size:11px;
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid rgba(148,163,184,0.7);
+      background:rgba(255,255,255,0.9);
+      backdrop-filter:blur(10px);
+      color:#374151;
+    }
+
+    .header-viz {
+      flex:1 1 260px;
+    }
+
+    #pipelineCanvas {
+      width:100%;
+      height:220px;
+      display:block;
+      border-radius:var(--radius-md);
+      background:radial-gradient(circle at center,#e5edff,#f5f7ff 60%,#e0ecff 100%);
+      box-shadow:0 10px 22px rgba(15,23,42,0.1);
+    }
+
+    main {
+      margin-top:8px;
+    }
+
+    .section {
+      margin-top:26px;
+      background:var(--card);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:18px 18px 22px;
+    }
+
+    .section-header {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:10px;
+    }
+
+    .section-icon {
+      width:28px;
+      height:28px;
+      border-radius:999px;
+      background:#e0ecff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:16px;
+    }
+
+    .section-title {
+      font-size:18px;
+      font-weight:600;
+      color:#111827;
+    }
+
+    .section-intro {
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:12px;
+      line-height:1.55;
+    }
+
+    /* Пайплайн: навигация и панели */
+
+    .pipeline-shell {
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .pipeline-left {
+      flex:2 1 280px;
+    }
+
+    .pipeline-right {
+      flex:1.4 1 260px;
+    }
+
+    .stage-pills {
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      margin-bottom:10px;
+    }
+
+    .stage-pill {
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#f9fafb;
+      padding:4px 10px;
+      font-size:11px;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      cursor:pointer;
+      transition:all 0.16s ease;
+      color:#4b5563;
+    }
+
+    .stage-pill span.num {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:18px;
+      height:18px;
+      border-radius:999px;
+      background:#e5e7eb;
+      font-size:11px;
+      font-weight:600;
+      color:#111827;
+    }
+
+    .stage-pill.active {
+      background:linear-gradient(135deg,#2563eb,#1d4ed8);
+      color:#f9fafb;
+      border-color:transparent;
+    }
+
+    .stage-pill.active span.num {
+      background:rgba(15,23,42,0.28);
+      color:#e5e7eb;
+    }
+
+    .pipeline-panel {
+      margin-top:10px;
+      border-radius:var(--radius-md);
+      background:#f9fafb;
+      border:1px solid var(--border);
+      padding:10px 12px 11px;
+      display:none;
+      animation:fadeIn 0.18s ease-out;
+    }
+
+    .pipeline-panel.active {
+      display:block;
+    }
+
+    .panel-title {
+      font-size:14px;
+      font-weight:600;
+      margin-bottom:4px;
+      color:#111827;
+    }
+
+    .panel-meta {
+      font-size:11px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+
+    .panel-body {
+      font-size:13px;
+      color:#374151;
+      line-height:1.55;
+    }
+
+    .panel-body ul {
+      padding-left:16px;
+      margin-top:4px;
+    }
+
+    .panel-body li {
+      margin-bottom:2px;
+    }
+
+    /* SVG-пайплайн */
+
+    .svg-wrapper {
+      margin-top:12px;
+      background:linear-gradient(#f9fafb,#ffffff);
+      border-radius:var(--radius-md);
+      border:1px dashed #d1d5db;
+      padding:8px;
+    }
+
+    svg {
+      width:100%;
+      height:120px;
+      display:block;
+    }
+
+    .svg-stage-node circle {
+      fill:#e5edff;
+      stroke:#bfdbfe;
+      stroke-width:2;
+      transition:all 0.18s ease;
+      cursor:pointer;
+    }
+
+    .svg-stage-node text {
+      font-size:10px;
+      fill:#4b5563;
+      text-anchor:middle;
+      pointer-events:none;
+    }
+
+    .svg-stage-node.active circle {
+      fill:#2563eb;
+      stroke:#1d4ed8;
+    }
+
+    .svg-stage-node.active text {
+      fill:#ffffff;
+      font-weight:600;
+    }
+
+    .svg-connector {
+      stroke:#c4c9d4;
+      stroke-width:2;
+      stroke-dasharray:4 4;
+    }
+
+    /* Правый блок (слой права / мозг / Frey+infra) */
+
+    .side-card {
+      border-radius:var(--radius-md);
+      padding:10px 10px;
+      background:#fdfefe;
+      border:1px solid #e5e7eb;
+      font-size:12px;
+      color:#374151;
+      line-height:1.5;
+    }
+
+    .side-card h4 {
+      font-size:13px;
+      margin-bottom:4px;
+      color:#111827;
+    }
+
+    .side-chip {
+      display:inline-block;
+      padding:2px 8px;
+      font-size:11px;
+      border-radius:999px;
+      border:1px solid rgba(148,163,184,0.7);
+      background:#eff6ff;
+      margin-bottom:5px;
+    }
+
+    .side-list {
+      padding-left:16px;
+      margin-top:4px;
+    }
+
+    .side-list li {
+      margin-bottom:2px;
+    }
+
+    .side-highlight {
+      margin-top:6px;
+      padding:6px 8px;
+      border-radius:8px;
+      background:#fefce8;
+      border-left:3px solid #facc15;
+      font-size:11px;
+      color:#854d0e;
+    }
+
+    /* Библиотеки и стек */
+
+    .stack-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:10px;
+      margin-top:8px;
+    }
+
+    .stack-card {
+      border-radius:var(--radius-md);
+      border:1px solid var(--border);
+      background:#f9fafb;
+      padding:9px 10px;
+      font-size:12px;
+      color:#374151;
+    }
+
+    .stack-card h4 {
+      font-size:13px;
+      margin-bottom:4px;
+      color:#111827;
+    }
+
+    .stack-label {
+      display:inline-block;
+      padding:2px 6px;
+      font-size:10px;
+      border-radius:999px;
+      background:#e0f2fe;
+      color:#0369a1;
+      margin-bottom:4px;
+    }
+
+    .stack-card ul {
+      padding-left:14px;
+      margin-top:2px;
+    }
+
+    .stack-card li {
+      margin-bottom:2px;
+    }
+
+    /* Законодательный слой */
+
+    .law-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:10px;
+      margin-top:8px;
+    }
+
+    .law-card {
+      border-radius:var(--radius-md);
+      border-left:3px solid #d1d5db;
+      background:#f9fafb;
+      padding:8px 9px 9px;
+      font-size:12px;
+      color:#374151;
+    }
+
+    .law-card h4 {
+      font-size:13px;
+      margin-bottom:3px;
+      color:#111827;
+    }
+
+    .law-card p {
+      margin-bottom:3px;
+    }
+
+    .law-severity {
+      display:inline-block;
+      padding:2px 8px;
+      border-radius:999px;
+      font-size:10px;
+      margin-top:2px;
+    }
+
+    .sev-high {
+      background:#fee2e2;
+      color:#b91c1c;
+    }
+
+    .sev-mid {
+      background:#ffedd5;
+      color:#c2410c;
+    }
+
+    .sev-info {
+      background:#e0f2fe;
+      color:#075985;
+    }
+
+    .law-card.red {
+      border-left-color:var(--accent-red);
+    }
+
+    .law-card.blue {
+      border-left-color:var(--accent);
+    }
+
+    .law-card.violet {
+      border-left-color:var(--accent-violet);
+    }
+
+    .law-note {
+      margin-top:8px;
+      border-radius:10px;
+      border-left:4px solid #facc15;
+      padding:7px 9px;
+      font-size:11px;
+      color:#854d0e;
+      background:#fefce8;
+    }
+
+    /* BCI и мозговая активность */
+
+    .bci-layout {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:12px;
+      margin-top:8px;
+    }
+
+    .bci-card {
+      border-radius:var(--radius-md);
+      border:1px solid var(--border);
+      background:#f9fafb;
+      padding:8px 10px 9px;
+      font-size:12px;
+      color:#374151;
+    }
+
+    .bci-card h4 {
+      font-size:13px;
+      margin-bottom:4px;
+    }
+
+    .bci-card ul {
+      padding-left:14px;
+    }
+
+    .bci-card li {
+      margin-bottom:2px;
+    }
+
+    .bci-pill {
+      display:inline-block;
+      padding:2px 7px;
+      font-size:10px;
+      border-radius:999px;
+      background:#e0f2fe;
+      color:#0369a1;
+      margin-bottom:4px;
+    }
+
+    .bci-limit {
+      margin-top:5px;
+      font-size:11px;
+      color:#6b7280;
+      background:#eff6ff;
+      border-radius:8px;
+      padding:6px 8px;
+    }
+
+    /* Frey + инфразвук */
+
+    .combo-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:10px;
+      margin-top:10px;
+    }
+
+    .combo-card {
+      border-radius:var(--radius-md);
+      border:1px solid var(--border);
+      background:#f9fafb;
+      padding:8px 10px;
+      font-size:12px;
+      color:#374151;
+    }
+
+    .combo-card h4 {
+      font-size:13px;
+      margin-bottom:4px;
+    }
+
+    .chip-frey {
+      background:#e0f2fe;
+      color:#1d4ed8;
+    }
+
+    .chip-infra {
+      background:#ede9fe;
+      color:#6d28d9;
+    }
+
+    .combo-chip {
+      display:inline-block;
+      padding:2px 8px;
+      font-size:10px;
+      border-radius:999px;
+      margin-bottom:4px;
+    }
+
+    .combo-card ul {
+      padding-left:14px;
+    }
+
+    /* Пример сценария */
+
+    .example {
+      font-size:12px;
+      color:#374151;
+      line-height:1.55;
+    }
+
+    .example-code {
+      margin-top:5px;
+      background:#f9fafb;
+      border-radius:8px;
+      border:1px solid #e5e7eb;
+      padding:6px 8px;
+      font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+      font-size:11px;
+      white-space:pre-line;
+    }
+
+    /* Практический вывод */
+
+    .summary {
+      margin-top:10px;
+      border-radius:var(--radius-lg);
+      background:linear-gradient(135deg,#ecfdf5,#e0f2fe);
+      border:1px solid #bbf7d0;
+      padding:10px 12px 11px;
+      font-size:12px;
+      color:#064e3b;
+    }
+
+    .summary-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:8px;
+      margin-top:4px;
+    }
+
+    .summary-block {
+      padding:4px 2px;
+    }
+
+    .summary-block h4 {
+      font-size:13px;
+      margin-bottom:3px;
+    }
+
+    .summary-block ul {
+      padding-left:14px;
+    }
+
+    .summary-block li {
+      margin-bottom:2px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(4px);}
+      to   {opacity:1; transform:translateY(0);}
+    }
+
+    @media (max-width:768px) {
+      .header-inner {
+        flex-direction:column;
+      }
+      #pipelineCanvas {
+        height:200px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-text">
+        <div class="header-badge">
+          <span>🧩</span>
+          <span>Мультиканальный пайплайн: сигналы → модели → право</span>
+        </div>
+        <h1>Адаптивный пайплайн анализа сигналов и автоматического сопоставления с законодательством</h1>
+        <p class="subtitle">
+          Единая схема, которая собирает многомодальные данные (видео, аудио, текст, физиология, ЭЭГ/fMRI),
+          пропускает их через стек моделей (ASR, NLP, эмоции, BCI-декодирование) и на выходе формирует
+          юридически ориентированную картину рисков по статьям УК РФ и смежным нормам, с обязательным участием человека.
+        </p>
+        <div class="header-tags">
+          <span class="tag">ASR · NLP · Emotion AI</span>
+          <span class="tag">Non-invasive BCI (EEG, fMRI)</span>
+          <span class="tag">Frey + инфразвук как сенсорный контекст</span>
+          <span class="tag">Автосопоставление с УК РФ</span>
+          <span class="tag">Пример: массив 25×4ч видео + голосовые + переписки</span>
+        </div>
+      </div>
+      <div class="header-viz">
+        <canvas id="pipelineCanvas"></canvas>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Каркас пайплайна -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📡</div>
+        <div class="section-title">1. Каркас пайплайна: от сигналов до правовой оценки</div>
+      </div>
+      <p class="section-intro">
+        Ниже — логика конвейера уровня «система безопасности / НКО / экспертная платформа». Он охватывает
+        всё: от многоканального сбора сигналов до автоматического сопоставления событий с текущим
+        российским законодательством и формирования отчётов для человека-эксперта.
+      </p>
+
+      <div class="pipeline-shell">
+        <div class="pipeline-left">
+          <div class="stage-pills" id="stagePills">
+            <button class="stage-pill" data-stage="1">
+              <span class="num">1</span> Ингест и нормализация сигналов
+            </button>
+            <button class="stage-pill" data-stage="2">
+              <span class="num">2</span> Предобработка и сегментация
+            </button>
+            <button class="stage-pill" data-stage="3">
+              <span class="num">3</span> Модели: ASR, NLP, эмоции, BCI
+            </button>
+            <button class="stage-pill" data-stage="4">
+              <span class="num">4</span> Семантика и событийная модель
+            </button>
+            <button class="stage-pill" data-stage="5">
+              <span class="num">5</span> Автосопоставление с УК РФ
+            </button>
+            <button class="stage-pill" data-stage="6">
+              <span class="num">6</span> Верификация, отчёты, аудит
+            </button>
+          </div>
+
+          <!-- Панели этапов -->
+          <div id="stagePanels">
+            <div class="pipeline-panel" data-stage="1">
+              <div class="panel-title">Этап 1. Ингест и нормализация сигналов</div>
+              <div class="panel-meta">Вход: сырые данные из разных источников • Выход: единый репозиторий с хешами и метаданными</div>
+              <div class="panel-body">
+                <ul>
+                  <li><strong>Видео и аудио.</strong> 25 видеозаписей по 4 часа, десятки голосовых сообщений, микрофонные потоки.</li>
+                  <li><strong>Текст.</strong> Переписки, документы, лог-файлы, транскрипты заседаний.</li>
+                  <li><strong>BCI и физиология.</strong> Сырые ЭЭГ-записи, fNIRS/fMRI-серии, пульс, вариабельность сердечного ритма.</li>
+                  <li><strong>Технический уровень.</strong> Приведение к единым форматам (контейнеры, кодеки, частоты дискретизации),
+                    расчёт криптографических хешей, фиксация цепочки сохранности (chain of custody).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pipeline-panel" data-stage="2">
+              <div class="panel-title">Этап 2. Предобработка и сегментация сигналов</div>
+              <div class="panel-meta">Вход: нормализованные потоки • Выход: сегменты речи, событий и мозговой активности</div>
+              <div class="panel-body">
+                <ul>
+                  <li><strong>VAD и диаризация.</strong> Выделение участков речи, разделение говорящих, нарезка длинных записей на удобные окна.</li>
+                  <li><strong>Извлечение аудио из видео.</strong> Привязка тайм-кодов к кадрам для последующей вербализации событий.</li>
+                  <li><strong>BCI-предобработка.</strong> Фильтрация ЭЭГ (полосовые и пространственные фильтры), коррекция движений и артефактов,
+                    привязка к стимульным событиям (что человек видел/слушал в конкретный момент).</li>
+                  <li><strong>Индексация.</strong> Каждому сегменту присваиваются метки: ID источника, тип сигнала, временной интервал, вероятность качества.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pipeline-panel" data-stage="3">
+              <div class="panel-title">Этап 3. Модели: ASR, NLP, эмоции, BCI-декодирование</div>
+              <div class="panel-meta">Вход: сегменты • Выход: тексты, эмбеддинги, эмоциональные профили, реконструкции восприятия</div>
+              <div class="panel-body">
+                <ul>
+                  <li><strong>ASR (распознавание речи).</strong> Нейросетевые модели уровня Whisper: многоканальная русская речь, сленг, код-переключение.</li>
+                  <li><strong>NLP.</strong> Токенизация, лемматизация, NER, синтаксис, извлечение актов речи (угрозы, планы, призывы, признания).</li>
+                  <li><strong>Emotion / paralinguistics.</strong> Анализ голоса и текста: агрессия, страх, сарказм, радикальная риторика.</li>
+                  <li><strong>BCI-декодирование.</strong> Модели по мотивам современных работ по fMRI/EEG-декодированию (например, визуальные реконструкции
+                    типа Mind-Vis): получение грубых представлений о видимых/представляемых образах и категориях, <em>строго в экспериментальном формате</em>.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pipeline-panel" data-stage="4">
+              <div class="panel-title">Этап 4. Семантика, граф событий и связи</div>
+              <div class="panel-meta">Вход: выводы моделей • Выход: граф «кто–что–кому–когда–как»</div>
+              <div class="panel-body">
+                <ul>
+                  <li><strong>Граф взаимодействий.</strong> Узлы: люди, организации, устройства, каналы; рёбра: «передал данные», «обсуждал диверсию», «получил средства».</li>
+                  <li><strong>Событийные таймлайны.</strong> Хронология: когда впервые обсуждался слив персональных данных, когда был факт передачи,
+                    когда появляется контекст помощи иностранным структурам, когда обсуждается вовлечение несовершеннолетних.</li>
+                  <li><strong>Семантические кластеры.</strong> Группировка эпизодов: персональные данные и финансы, военная информация, диверсии, терроризм, BCI/психовоздействие.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pipeline-panel" data-stage="5">
+              <div class="panel-title">Этап 5. Автоматизированное сопоставление с законодательством</div>
+              <div class="panel-meta">Вход: граф событий • Выход: матрица «эпизод → потенциальные статьи УК РФ»</div>
+              <div class="panel-body">
+                <ul>
+                  <li><strong>Онтология норм.</strong> Машиночитаемое описание ключевых составов: 272.1 (персональные данные), 275/275.1 (помощь противнику
+                    и конфиденциальное сотрудничество), 205.1 и 281.1 (содействие террору и диверсиям, особенно с несовершеннолетними), 138.1 (спецтехника) и др.</li>
+                  <li><strong>Правовой matching.</strong> Правила и ML-классификаторы, которые по признакам эпизода (тип данных, адресат, умысел, участие детей,
+                    масштабы) оценивают, какие статьи <em>могут</em> применяться.</li>
+                  <li><strong>Оценка тяжести.</strong> Для каждого эпизода вычисляются «юридические риски» и красные флаги: трансграничная передача,
+                    интерес иностранного государства, несовершеннолетние, диверсионные цели.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pipeline-panel" data-stage="6">
+              <div class="panel-title">Этап 6. Верификация человеком, отчёты и аудит</div>
+              <div class="panel-meta">Вход: предварительные гипотезы • Выход: проверенные выводы и объяснимые отчёты</div>
+              <div class="panel-body">
+                <ul>
+                  <li><strong>Ручная проверка.</strong> Юрист/следователь просматривает ключевые фрагменты, сверяет тексты с аудио/видео/BCI-данными,
+                    оценивает контекст и умысел.</li>
+                  <li><strong>Формирование досье.</strong> Профили по персонам, таблицы эпизодов, перекрёстные ссылки между сигналами, событиями и нормами права.</li>
+                  <li><strong>Аудит и журналирование.</strong> Логи работы моделей, правовых правил и действий экспертов для последующей проверки и оспаривания.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- SVG-пайплайн -->
+          <div class="svg-wrapper">
+            <svg viewBox="0 0 600 120">
+              <line class="svg-connector" x1="60" y1="60" x2="140" y2="60" />
+              <line class="svg-connector" x1="160" y1="60" x2="240" y2="60" />
+              <line class="svg-connector" x1="260" y1="60" x2="340" y2="60" />
+              <line class="svg-connector" x1="360" y1="60" x2="440" y2="60" />
+              <line class="svg-connector" x1="460" y1="60" x2="540" y2="60" />
+
+              <g class="svg-stage-node" data-stage="1">
+                <circle cx="50" cy="60" r="18"></circle>
+                <text x="50" y="58">Сбор</text>
+                <text x="50" y="70">данных</text>
+              </g>
+
+              <g class="svg-stage-node" data-stage="2">
+                <circle cx="150" cy="60" r="18"></circle>
+                <text x="150" y="58">Предо-</text>
+                <text x="150" y="70">работка</text>
+              </g>
+
+              <g class="svg-stage-node" data-stage="3">
+                <circle cx="250" cy="60" r="18"></circle>
+                <text x="250" y="58">Модели</text>
+                <text x="250" y="70">AI</text>
+              </g>
+
+              <g class="svg-stage-node" data-stage="4">
+                <circle cx="350" cy="60" r="18"></circle>
+                <text x="350" y="58">События</text>
+                <text x="350" y="70">и связи</text>
+              </g>
+
+              <g class="svg-stage-node" data-stage="5">
+                <circle cx="450" cy="60" r="18"></circle>
+                <text x="450" y="58">УК</text>
+                <text x="450" y="70">matching</text>
+              </g>
+
+              <g class="svg-stage-node" data-stage="6">
+                <circle cx="550" cy="60" r="18"></circle>
+                <text x="550" y="58">Эксперт</text>
+                <text x="550" y="70">отчёт</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <aside class="pipeline-right">
+          <div class="side-card">
+            <div class="side-chip">Юридическая чувствительность конвейера</div>
+            <h4>Ключевые точки, где техника переходит в плоскость УК РФ</h4>
+            <ul class="side-list">
+              <li><strong>Тип данных.</strong> Персональные, финансовые, военные, биометрические, BCI.</li>
+              <li><strong>Адресат.</strong> Внутри РФ или в иностранных/враждебных структурах.</li>
+              <li><strong>Участие несовершеннолетних.</strong> Любые признаки вовлечения детей/подростков в диверсии/террор.</li>
+              <li><strong>Спецтехника.</strong> Скрытный сбор информации и обход защиты.</li>
+            </ul>
+            <div class="side-highlight">
+              Модель никогда не должна подменять собой юриста или следователя. Технический пайплайн — это
+              <strong>генератор гипотез</strong>, а не автоматический «вердикт».
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 2. Стек библиотек и уровни моделей -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">🧠</div>
+        <div class="section-title">2. Стек библиотек: ASR, NLP, эмоции, BCI и правовой слой</div>
+      </div>
+      <p class="section-intro">
+        Ниже — уровень стеков. Важно не только «какие модели», но и то, как они стыкуются между собой:
+        аудио → текст → эмоции → события → право, плюс отдельная ветка для сигналов мозга и физиологии.
+        Конкретные версии можно держать актуальными через dependency-файлы и автоматические обновления,
+        не «хардкодя» их в интерфейс.
+      </p>
+
+      <div class="stack-grid">
+        <div class="stack-card">
+          <span class="stack-label">Речь и аудио (ASR / Voice)</span>
+          <h4>Распознавание и паралингвистика</h4>
+          <ul>
+            <li>Нейромодели уровня Whisper/X-класса (PyTorch, ONNX Runtime).</li>
+            <li>Дополнительные движки (например, Vosk/NVIDIA-класс) для оффлайн-режима.</li>
+            <li>Библиотеки анализа аудио: парсинг спектра, prosody, energy, formants.</li>
+            <li>Web-слой: WebAudio API для предобработки в браузере, запись и стриминг.</li>
+          </ul>
+        </div>
+
+        <div class="stack-card">
+          <span class="stack-label">Текст и смысл (NLP)</span>
+          <h4>Семантика, NER и юридический язык</h4>
+          <ul>
+            <li>Стек на базе современных трансформеров (русские модели, law-tuned варианты).</li>
+            <li>Библиотеки поколения spaCy/Stanza-класса для токенизации, POS, Dependency parsing.</li>
+            <li>Юридические онтологии: словари субъектов, действий, типов данных, статей.</li>
+            <li>Генерация эмбеддингов для поиска похожих эпизодов и прецедентов.</li>
+          </ul>
+        </div>
+
+        <div class="stack-card">
+          <span class="stack-label">Emotion &amp; Behavior</span>
+          <h4>Эмоции, радикальная риторика, стресс</h4>
+          <ul>
+            <li>Классификаторы эмоций по тексту и голосу (агрессия, страх, цинизм, экстремизм).</li>
+            <li>Паттерны радикализации: устойчивые комбинации слов, лозунгов, угроз и призывов.</li>
+            <li>Модели детекции оскорблений власти, религии, групп (в пределах УК и КоАП).</li>
+            <li>Модели аномального поведения в видео: двигательные паттерны, паника, суета.</li>
+          </ul>
+        </div>
+
+        <div class="stack-card">
+          <span class="stack-label">BCI и мозговая активность</span>
+          <h4>Нейродекодирование (исключительно экспериментальный уровень)</h4>
+          <ul>
+            <li>Backend: MNE-Python/BrainFlow-класс для работы с ЭЭГ/MEG/fNIRS/fMRI.</li>
+            <li>Глубокие модели типа современных fMRI-декодеров (по мотивам Mind-Vis):
+              реконструкция приблизительных визуальных образов или категорий.</li>
+            <li>Специализированные архитектуры для сопоставления сигналов мозга со стимулами
+              (что человек видел/слушал) — не «чтение мыслей», а реконструкция реакции на стимулы в жёстко контролируемых условиях.</li>
+            <li>Web-слой: визуализация карт активности и траекторий внимания в браузере,
+              без прямого доступа к «сырым» медицинским данным.</li>
+          </ul>
+        </div>
+
+        <div class="stack-card">
+          <span class="stack-label">Правовой уровень</span>
+          <h4>Юридический граф и правила</h4>
+          <ul>
+            <li>Онтология статей: субъекты, объект, форма вины, последствия, квалифицирующие признаки.</li>
+            <li>Rule-engine (правила + ML) для первичного сопоставления эпизодов со статьями УК РФ.</li>
+            <li>Связка с персональными данными (272.1), госизменой (275/275.1), диверсиями/террором (281.1, 205.1),
+              спецтехникой (138.1) и др.</li>
+            <li>Механизм объяснения: «почему система считает, что эпизод относится к этой норме».</li>
+          </ul>
+        </div>
+
+        <div class="stack-card">
+          <span class="stack-label">Интерфейс и интерактив</span>
+          <h4>Three.js, WebGL, SVG, CSS</h4>
+          <ul>
+            <li>Three.js-сцены для визуализации пайплайна и графа взаимодействий (узлы-люди, рёбра-события).</li>
+            <li>SVG-диаграммы для интерактивных карт этапов, частот, юридических связей.</li>
+            <li>CSS-анимации и адаптивная вёрстка под десктоп/мобайл.</li>
+            <li>Безопасное отображение: никаких скрытых tracking-скриптов, жёсткая изоляция пользовательских данных.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Законодательный слой (включая несовершеннолетних) -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">⚖️</div>
+        <div class="section-title">3. Законодательный слой: персональные данные, помощь противнику, диверсии и дети</div>
+      </div>
+      <p class="section-intro">
+        Здесь сигналы и модели превращаются в юридические гипотезы. Пайплайн не вынесет «приговор», но
+        подсветит, где эпизоды объективно попадают в контуры особо тяжёлых составов, особенно при
+        трансграничной передаче данных и вовлечении несовершеннолетних в диверсионно-террористическую активность.
+      </p>
+
+      <div class="law-grid">
+        <article class="law-card blue">
+          <h4>Персональные и финансовые данные (ст. 272.1, 272, 137 УК РФ)</h4>
+          <p>
+            Автоматически собираются эпизоды, где обсуждаются или фиксируются: незаконное получение
+            чужих персональных/финансовых данных, хранение баз без оснований, их продажа или передача,
+            особенно за пределы РФ.
+          </p>
+          <p>
+            Трансграничная передача компьютерной информации с персональными данными — зона 272.1 УК РФ
+            с диапазоном наказаний вплоть до многолетних сроков лишения свободы.
+          </p>
+          <span class="law-severity sev-mid">Высокая тяжесть при трансграничности</span>
+        </article>
+
+        <article class="law-card red">
+          <h4>Помощь иностранному государству и конфиденциальные контакты (ст. 275, 275.1 УК РФ)</h4>
+          <p>
+            Если пайплайн показывает, что массив данных/действий фактически обслуживает интересы
+            иностранного государства или структуры, враждебной РФ, и используется «в деятельности,
+            направленной против безопасности РФ», эпизоды попадают в контур госизмены и конфиденциального
+            сотрудничества.
+          </p>
+          <p>
+            Здесь диапазон наказаний — от 3–8 лет по 275.1 до 12–20 лет и пожизненного по 275-й статье.
+          </p>
+          <span class="law-severity sev-high">Особо тяжкие составы</span>
+        </article>
+
+        <article class="law-card red">
+          <h4>Диверсии, терроризм и несовершеннолетние (ст. 205.1, 281.1 УК РФ)</h4>
+          <p>
+            Отдельный, максимально опасный блок — любые формы <strong>вовлечения несовершеннолетних</strong>:
+            склонение, вербовка, обучение, подготовка, финансирование диверсионной или террористической деятельности.
+          </p>
+          <p>
+            Пайплайн помечает эпизоды, где:
+          </p>
+          <ul>
+            <li>фигурируют дети/подростки в связке с диверсиями, взрывами, поджогами, террором;</li>
+            <li>дается инструкция «что делать» им или за счёт них;</li>
+            <li>обсуждается финансирование или организационная поддержка с участием несовершеннолетних.</li>
+          </ul>
+          <p>
+            В актуальной редакции норм такие эпизоды тянут на <strong>диапазон 10–20 лет и вплоть до
+            пожизненного лишения свободы</strong>, возраст ответственности по ряду диверсионных статей снижен
+            до 14 лет, сроки давности сняты, УДО максимально ограничено.
+          </p>
+          <span class="law-severity sev-high">Пожизненное и отсутствие давности</span>
+        </article>
+
+        <article class="law-card violet">
+          <h4>Специальные технические средства и скрытый сбор информации (ст. 138.1 УК РФ)</h4>
+          <p>
+            Если в эпизодах фиксируются разработки или использование устройств/ПО для скрытого получения
+            информации, обхода защиты или сбора данных без ведома владельца, это попадает в контур
+            специальной техники.
+          </p>
+          <p>
+            Пайплайн помечает такие решения как потенциальные СТС: скрытые микрофоны, несанкционированный
+            перехват, нелегальные схемы BCI-мониторинга и др.
+          </p>
+          <span class="law-severity sev-mid">Криминализация оборота СТС</span>
+        </article>
+      </div>
+
+      <div class="law-note">
+        Вся правовая логика пайплайна должна проектироваться так, чтобы не было иллюзий «автоматического
+        правосудия»: результат — <strong>структурированная карта рисков</strong>, а не «готовый приговор».
+        Особенно это критично в зонах, где ставки доходят до пожизненного.
+      </div>
+    </section>
+
+    <!-- 4. BCI и декодирование мозговой активности -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">🧬</div>
+        <div class="section-title">4. Мозговая активность и BCI: как это вписывается в пайплайн</div>
+      </div>
+      <p class="section-intro">
+        Современные AI-подходы к неинвазивным BCI (ЭЭГ, fNIRS, fMRI) уже умеют в лабораторных условиях
+        реконструировать грубые образы или смысловые категории того, что человек видит или представляет.
+        Это <strong>не «чтение мыслей»</strong>, а статистическая реконструкция реакции мозга на известные стимулы
+        при длительном обучении модели на конкретном человеке.
+      </p>
+
+      <div class="bci-layout">
+        <div class="bci-card">
+          <span class="bci-pill">Слой сигналов</span>
+          <h4>Сбор и предобработка BCI-данных</h4>
+          <ul>
+            <li>ЭЭГ-шапки, высокоплотные fNIRS-системы, fMRI-сканеры (под контролем медиков).</li>
+            <li>Калибровочные сессии: человек смотрит/слушает заранее заданные стимулы (картинки, видео, звук).</li>
+            <li>Маркировка стимулов: точные тайм-коды и описания, что и когда предъявлялось.</li>
+            <li>Предобработка: фильтры, пространственные преобразования, удаление артефактов движений глаз и мышц.</li>
+          </ul>
+          <div class="bci-limit">
+            Все эти данные — <strong>биометрические и медицинские</strong> и по умолчанию подпадают под
+            режим «чувствительных персональных данных», с ограничениями по хранению и доступу.
+          </div>
+        </div>
+
+        <div class="bci-card">
+          <span class="bci-pill">Слой моделей</span>
+          <h4>AI-декодирование активности мозга</h4>
+          <ul>
+            <li>Обучение нейросетей на парах «сигнал мозга → стимул» для каждого человека.</li>
+            <li>Архитектуры по мотивам современных исследований: энкодер мозга → латентное представление → генератор (например, визуальных образов).</li>
+            <li>На выходе — <strong>примерная</strong> реконструкция класса стимулов (категория изображения, общая структура сцены), а не дословное содержание мыслей.</li>
+            <li>Кросс-валидация и строгая оценка качества: где модель действительно угадывает, а где «фантазирует».</li>
+          </ul>
+          <div class="bci-limit">
+            В реальных условиях такая ветка пайплайна <strong>может использоваться только как исследовательский модуль</strong>,
+            а не как источник прямых юридических выводов: погрешности слишком велики.
+          </div>
+        </div>
+
+        <div class="bci-card">
+          <span class="bci-pill">Интеграция в общий пайплайн</span>
+          <h4>Где BCI-данные могут быть полезны</h4>
+          <ul>
+            <li>Сопоставление мозговой реакции со стимулами (например, на пропагандистские материалы или подозрительные видеоролики).</li>
+            <li>Оценка уровня стресса, перегрузки или сбоев в восприятии при предъявлении информации.</li>
+            <li>Корреляция BCI-паттернов с аудио/видео/текстовой активностью (например, как человек реагирует на собственные разговоры).</li>
+            <li>Визуализация для экспертов: карты активации, временные профили, но <strong>без</strong> претензий на «доказанное содержание мыслей».</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Frey + инфразвук как контекст внушаемости -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">🌊</div>
+        <div class="section-title">5. «Эффект Фрея» и инфразвук: контекст внушаемости и стресса</div>
+      </div>
+      <p class="section-intro">
+        В отдельный блок пайплайна можно вынести сенсорные воздействия, которые обсуждаются в связи
+        с повышением внушаемости: микроволновые аудиофеномены (часто ассоциируемые с «эффектом Фрея»)
+        и инфразвук. На уровне модели их разумно трактовать как <strong>стресс-факторы и потенциальные источники
+        дестабилизации</strong>, а не как «магическую зомбировку».
+      </p>
+
+      <div class="combo-grid">
+        <div class="combo-card">
+          <span class="combo-chip chip-frey">Микроволновые аудиофеномены</span>
+          <h4>Что учитывает пайплайн</h4>
+          <ul>
+            <li>Наличие аномальной высокочастотной радиочастотной активности в среде (RF-мониторинг).</li>
+            <li>Субъективные репорты испытуемых: внутренние звуки/ощущения, не связанные с внешним аудио.</li>
+            <li>Корреляции между RF-полем, жалобами и изменением поведения/эмоций.</li>
+            <li>Формальный уровень: это фиксируется как <strong>сенсорный стрессор</strong>, влияющий на состояние,
+              но не как доказанный механизм прямого контроля сознания.</li>
+          </ul>
+        </div>
+
+        <div class="combo-card">
+          <span class="combo-chip chip-infra">Инфразвук</span>
+          <h4>Низкие частоты и психофизиология</h4>
+          <ul>
+            <li>Измерение уровней инфразвука, совпадений с резонансными частотами тела и органов.</li>
+            <li>Сопоставление с симптомами: тревога, дезориентация, физиологический дискомфорт.</li>
+            <li>Анализ влияния на эффективность восприятия информации и устойчивость к внушению.</li>
+            <li>В модели: ещё один фактор, который может повышать уязвимость, но не заменяет
+              ни BCI, ни классическую психологию.</li>
+          </ul>
+        </div>
+
+        <div class="combo-card">
+          <span class="combo-chip" style="background:#dcfce7;color:#166534;">Комбинированный контекст</span>
+          <h4>Как это стыкуется с правом и BCI</h4>
+          <ul>
+            <li>BCI-ветка может показывать, как мозг реагирует на такие воздействия (стресс, перегрузка, усталость).</li>
+            <li>Правовой слой может учитывать их <strong>как обстоятельство</strong> (например, влияние на способность осознавать характер действий),
+              но не как оправдание явно криминальных эпизодов.</li>
+            <li>Всё, что касается «зомбирования», в модели фиксируется как <strong>гипотеза, требующая независимых доказательств</strong>,
+              а не как данность.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Пример сценария -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">📂</div>
+        <div class="section-title">6. Пример сценария: массив 25×4 ч видео + голосовые + переписки</div>
+      </div>
+      <p class="section-intro">
+        Для иллюстрации можно представить кейс: 25 видеозаписей по 4 часа, десятки голосовых сообщений,
+        большие переписки и вложения. Пайплайн работает с этим массивом как с единым объектом, не теряя
+        связи между каналами.
+      </p>
+
+      <div class="example">
+        <p><strong>Высокоуровневая схема в терминах пайплайна:</strong></p>
+        <div class="example-code">
+1. Ингест:
+   • загрузка всех видео/аудио/чатов/вложений, расчёт хешей, фиксация метаданных;
+   • при наличии — загрузка BCI/физиологических логов с тех же периодов.
+
+2. Сегментация:
+   • нарезка видео/аудио на сегменты с речью и событиями;
+   • выделение ключевых эпизодов по тексту (слова «передал», «слил», «взорвать», «школа», «дети» и т.п.).
+
+3. Модели:
+   • ASR → транскрипты с тайм-кодами;
+   • NLP → сущности, действия, связи, акты речи (угрозы/призывы/признания);
+   • Emotion → «горячие» точки агрессии, паники, радикальных лозунгов;
+   • BCI (если есть) → профили стресса и реакции на отдельные стимулы.
+
+4. Семантика:
+   • построение графа «кто–что–кому–когда»;
+   • кластеры: персональные/финансовые данные, иностранные структуры, диверсии, дети/подростки.
+
+5. Право:
+   • автоматический matching эпизодов с блоками 272.1, 275/275.1, 205.1, 281.1, 138.1 и др.;
+   • ранжирование эпизодов по уровню юридической тяжести.
+
+6. Человек:
+   • выбор топ-эпизодов с максимальным риском (персональные данные за рубеж, помощь противнику,
+     вовлечение несовершеннолетних в диверсии/террор);
+   • ручная проверка, контекст, формирование итогового заключения.
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Практический вывод -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-icon">✅</div>
+        <div class="section-title">7. Практический вывод (без розовых очков)</div>
+      </div>
+
+      <div class="summary">
+        <p><strong>Что даёт такой пайплайн на практике, если убрать мифологию и оставить только технику и право:</strong></p>
+        <div class="summary-grid">
+          <div class="summary-block">
+            <h4>1. Цифровой след становится непрерывным</h4>
+            <ul>
+              <li>Видео, аудио, текст, BCI и физиология собираются в одну линию времени с чёткой привязкой к людям и событиям.</li>
+              <li>ASR, NLP и эмоции убирают «шум» и выделяют смысловые и эмоциональные пики.</li>
+              <li>Это превращается в граф эпизодов, удобный для юридической оценки.</li>
+            </ul>
+          </div>
+          <div class="summary-block">
+            <h4>2. Правовой риск можно увидеть заранее</h4>
+            <ul>
+              <li>Любая трансграничная история с персональными/финансовыми данными подсвечивается как риск 272.1 УК РФ.</li>
+              <li>Любая помощь иностранным структурам против безопасности РФ — кандидат на 275/275.1.</li>
+              <li>Любое вовлечение несовершеннолетних в диверсионно-террористический контекст — прямой путь к блоку 205.1/281.1
+                с потенциальным пожизненным.</li>
+            </ul>
+          </div>
+          <div class="summary-block">
+            <h4>3. BCI и сенсорный контекст — только модификаторы</h4>
+            <ul>
+              <li>BCI-данные, Frey/инфразвук и прочие сенсорные воздействия в реальной правовой картине — это фон: они могут
+                объяснять состояние, но не отменяют факта действий.</li>
+              <li>С технической точки зрения они важны для понимания внушаемости, стресса, сниженной критичности, но
+                используются аккуратно и с оговорками.</li>
+              <li>Любые выводы в этих зонах должны оставаться максимально осторожными и верифицироваться независимыми экспертами.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Three.js для визуализации пайплайна -->
+<script src="https://unpkg.com/three/build/three.min.js"></script>
+<script>
+  // Three.js мини-сцена: абстрактное представление пайплайна
+  (function initThreePipeline() {
+    const canvas = document.getElementById('pipelineCanvas');
+    if (!canvas || !window.THREE) return;
+
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+    camera.position.set(0, 0, 16);
+
+    const ambient = new THREE.AmbientLight(0xffffff, 0.8);
+    scene.add(ambient);
+    const dir = new THREE.DirectionalLight(0xffffff, 0.6);
+    dir.position.set(3, 4, 5);
+    scene.add(dir);
+
+    const group = new THREE.Group();
+    scene.add(group);
+
+    const nodeMaterial = new THREE.MeshStandardMaterial({
+      color: 0x2563eb,
+      metalness: 0.4,
+      roughness: 0.2
+    });
+
+    const nodes = [];
+    const nodePositions = [-9, -5.4, -1.8, 1.8, 5.4, 9];
+
+    nodePositions.forEach((x, idx) => {
+      const geom = new THREE.SphereGeometry(0.6, 32, 32);
+      const mesh = new THREE.Mesh(geom, nodeMaterial.clone());
+      mesh.position.set(x, 0, 0);
+      mesh.material.color.setHex(idx === 2 ? 0x16a34a : 0x2563eb);
+      group.add(mesh);
+      nodes.push(mesh);
+    });
+
+    // Линии между сферами
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x9ca3af });
+    for (let i = 0; i < nodePositions.length - 1; i++) {
+      const points = [];
+      points.push(new THREE.Vector3(nodePositions[i] + 0.6, 0, 0));
+      points.push(new THREE.Vector3(nodePositions[i + 1] - 0.6, 0, 0));
+      const geom = new THREE.BufferGeometry().setFromPoints(points);
+      const line = new THREE.Line(geom, lineMaterial);
+      group.add(line);
+    }
+
+    function resizeRenderer() {
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      if (width === 0 || height === 0) return;
+      renderer.setSize(width, height, false);
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      group.rotation.y += 0.003;
+      group.rotation.x = Math.sin(Date.now() * 0.0002) * 0.1;
+      resizeRenderer();
+      renderer.render(scene, camera);
+    }
+
+    animate();
+    window.addEventListener('resize', resizeRenderer);
+  })();
+
+  // Интерактивность: выбор этапов пайплайна и SVG-узлов
+  document.addEventListener('DOMContentLoaded', function () {
+    const pills = document.querySelectorAll('.stage-pill');
+    const panels = document.querySelectorAll('.pipeline-panel');
+    const svgNodes = document.querySelectorAll('.svg-stage-node');
+
+    function activateStage(stage) {
+      pills.forEach(p => {
+        p.classList.toggle('active', p.dataset.stage === stage);
+      });
+      panels.forEach(panel => {
+        panel.classList.toggle('active', panel.dataset.stage === stage);
+      });
+      svgNodes.forEach(node => {
+        node.classList.toggle('active', node.dataset.stage === stage);
+      });
+    }
+
+    pills.forEach(p => {
+      p.addEventListener('click', () => {
+        activateStage(p.dataset.stage);
+      });
+    });
+
+    svgNodes.forEach(node => {
+      node.addEventListener('click', () => {
+        activateStage(node.dataset.stage);
+      });
+    });
+
+    // Активируем первый этап по умолчанию
+    if (pills.length > 0) {
+      activateStage(pills[0].dataset.stage);
+    }
+  });
+</script>
+</body>
+</html>
