@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>ФСБ, новые законы и цифровой конвейер анализа информации</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- OG / Twitter -->
+    <meta property="og:title" content="ФСБ, новые законы и цифровой конвейер анализа информации" />
+    <meta property="og:description" content="Технический пайплайн анализа аудио, видео и переписок + последние законы: 272.1, 275, 275.1, пожизненное за вовлечение несовершеннолетних в диверсии и террор, спец-СИЗО ФСБ, контроль спецтехники." />
+    <meta property="og:image" content="https://cryptq.github.io/css/fsbimg.jpg" />
+    <meta name="twitter:title" content="ФСБ, новые законы и цифровой конвейер анализа информации" />
+    <meta name="twitter:description" content="Подробный технический пайплайн + обновлённая законодательная рамка (2024–2025)." />
+    <meta name="twitter:image" content="https://cryptq.github.io/css/fsbimg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top left, #1e3c72, #2a5298 40%, #000814 80%);
+            color: #111827;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 3.5rem;
+        }
+
+        .header {
+            text-align: left;
+            color: #f9fafb;
+            padding: 2rem;
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(15,23,42,0.96), rgba(30,64,175,0.95));
+            box-shadow: 0 20px 45px rgba(15,23,42,0.7);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            inset: -40%;
+            background: conic-gradient(from 140deg, rgba(236,72,153,0.35), rgba(56,189,248,0.25), rgba(52,211,153,0.3), rgba(236,72,153,0.35));
+            opacity: 0.25;
+            filter: blur(60px);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .icon {
+            font-size: 2.4rem;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .header h2 {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+        }
+
+        .header .subtitle {
+            font-size: 0.98rem;
+            max-width: 780px;
+            line-height: 1.5;
+            opacity: 0.92;
+        }
+
+        .header .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.25rem;
+        }
+
+        .badge {
+            font-size: 0.78rem;
+            padding: 0.35rem 0.7rem;
+            border-radius: 999px;
+            border: 1px solid rgba(148,163,184,0.7);
+            color: #e5e7eb;
+            background: rgba(15,23,42,0.55);
+            backdrop-filter: blur(12px);
+        }
+
+        .content {
+            margin-top: 2rem;
+            background: rgba(15,23,42,0.02);
+            border-radius: 18px;
+            padding: 2rem 1.5rem 2.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .section {
+            margin-bottom: 2.7rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            margin-bottom: 1.2rem;
+            color: #0f172a;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-title span {
+            font-size: 1.4rem;
+        }
+
+        .section-intro {
+            font-size: 0.94rem;
+            color: #4b5563;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Интерактивный пайплайн */
+
+        .pipeline-wrapper {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 1.5rem 1.4rem 1.6rem;
+            box-shadow: 0 14px 35px rgba(15,23,42,0.12);
+        }
+
+        .pipeline-header {
+            font-size: 0.9rem;
+            color: #4b5563;
+            margin-bottom: 1rem;
+            line-height: 1.55;
+        }
+
+        .pipeline-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .pipeline-step {
+            border: 1px solid rgba(148,163,184,0.9);
+            background: #f9fafb;
+            color: #111827;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.7rem;
+            border-radius: 999px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: all 0.18s ease;
+        }
+
+        .pipeline-step span.stage-num {
+            font-size: 0.7rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 999px;
+            background: #e5e7eb;
+        }
+
+        .pipeline-step.active {
+            background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+            color: #f9fafb;
+            border-color: transparent;
+        }
+
+        .pipeline-step.active span.stage-num {
+            background: rgba(15,23,42,0.3);
+        }
+
+        .pipeline-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+            gap: 1.4rem;
+        }
+
+        .pipeline-panel {
+            display: none;
+            animation: fadeIn 0.18s ease-out;
+        }
+
+        .pipeline-panel.active {
+            display: block;
+        }
+
+        .pipeline-panel h3 {
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            color: #0f172a;
+        }
+
+        .pipeline-panel .panel-meta {
+            font-size: 0.78rem;
+            color: #6b7280;
+            margin-bottom: 0.6rem;
+        }
+
+        .pipeline-panel p {
+            font-size: 0.88rem;
+            color: #374151;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .pipeline-panel ul {
+            padding-left: 1.1rem;
+            font-size: 0.84rem;
+            color: #4b5563;
+            line-height: 1.55;
+        }
+
+        .pipeline-panel li {
+            margin-bottom: 0.18rem;
+        }
+
+        .pipeline-side {
+            border-radius: 12px;
+            background: #0f172a;
+            color: #e5e7eb;
+            padding: 0.9rem 0.9rem 1rem;
+            font-size: 0.8rem;
+            line-height: 1.55;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pipeline-side::before {
+            content: "";
+            position: absolute;
+            inset: -30%;
+            background: radial-gradient(circle at top right, rgba(148,163,184,0.25), transparent 60%);
+            opacity: 0.7;
+        }
+
+        .pipeline-side-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .pipeline-side h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .pipeline-side ul {
+            padding-left: 1.1rem;
+        }
+
+        .pipeline-side li {
+            margin-bottom: 0.25rem;
+        }
+
+        .pipeline-badge-critical {
+            display: inline-block;
+            margin-bottom: 0.25rem;
+            padding: 0.1rem 0.6rem;
+            font-size: 0.7rem;
+            border-radius: 999px;
+            border: 1px solid rgba(248,250,252,0.6);
+            background: rgba(248,250,252,0.08);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Блоки законов */
+
+        .law-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.4rem;
+        }
+
+        .law-card {
+            background: #f9fafb;
+            border-radius: 14px;
+            padding: 1.3rem 1.1rem 1.4rem;
+            box-shadow: 0 8px 18px rgba(15,23,42,0.06);
+            border-left: 4px solid #4b5563;
+        }
+
+        .law-card h3 {
+            font-size: 0.98rem;
+            margin-bottom: 0.45rem;
+            color: #111827;
+        }
+
+        .law-card p {
+            font-size: 0.86rem;
+            color: #4b5563;
+            margin-bottom: 0.4rem;
+            line-height: 1.6;
+        }
+
+        .law-card strong {
+            font-weight: 600;
+        }
+
+        .law-tag {
+            display: inline-block;
+            margin-top: 0.3rem;
+            padding: 0.15rem 0.55rem;
+            font-size: 0.7rem;
+            border-radius: 999px;
+            background: #111827;
+            color: #e5e7eb;
+        }
+
+        .law-card.danger {
+            border-left-color: #dc2626;
+        }
+
+        .law-card.warning {
+            border-left-color: #f97316;
+        }
+
+        .law-card.info {
+            border-left-color: #2563eb;
+        }
+
+        .legal-note {
+            margin-top: 1.1rem;
+            background: #fff7ed;
+            border-radius: 10px;
+            padding: 0.9rem 1rem;
+            border-left: 4px solid #f97316;
+            font-size: 0.82rem;
+            color: #7c2d12;
+            line-height: 1.5;
+        }
+
+        /* Таймлайн */
+
+        .timeline {
+            position: relative;
+            padding: 1.5rem 0;
+            margin-top: 0.6rem;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            background: linear-gradient(180deg, #3b82f6, #ec4899);
+            top: 0;
+            bottom: 0;
+            left: 20px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-left: 58px;
+            margin-bottom: 1.1rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -43px;
+            top: 0.3rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 999px;
+            background: #0f172a;
+            border: 3px solid #60a5fa;
+        }
+
+        .timeline-date {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: #6b7280;
+            margin-bottom: 0.1rem;
+        }
+
+        .timeline-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+            color: #111827;
+        }
+
+        .timeline-text {
+            font-size: 0.82rem;
+            color: #4b5563;
+            line-height: 1.55;
+        }
+
+        /* Практический вывод */
+
+        .summary-card {
+            background: #0f172a;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 1.5rem 1.3rem 1.6rem;
+            box-shadow: 0 20px 40px rgba(15,23,42,0.7);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .summary-card::before {
+            content: "";
+            position: absolute;
+            inset: -40%;
+            background: radial-gradient(circle at top right, rgba(248,250,252,0.08), transparent 60%);
+            opacity: 0.7;
+        }
+
+        .summary-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .summary-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.7rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 0.9rem;
+        }
+
+        .summary-block {
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+
+        .summary-block ul {
+            padding-left: 1.1rem;
+            margin-top: 0.2rem;
+        }
+
+        .summary-block li {
+            margin-bottom: 0.18rem;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 0.1rem 0.6rem;
+            font-size: 0.7rem;
+            border-radius: 999px;
+            background: rgba(248,250,252,0.09);
+            border: 1px solid rgba(148,163,184,0.8);
+            margin-bottom: 0.3rem;
+        }
+
+        @media (max-width: 900px) {
+            .pipeline-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 1.6rem 1.3rem;
+            }
+            .content {
+                padding: 1.6rem 1.1rem 2.1rem;
+            }
+            .timeline::before {
+                left: 16px;
+            }
+            .timeline-dot {
+                left: -39px;
+            }
+            .timeline-item {
+                margin-left: 52px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-content">
+            <div class="icon">🛡️</div>
+            <h1>ФСБ, новые законы и цифровой конвейер анализа информации</h1>
+            <h2>2024–2026 гг. • персональные данные, диверсии, терроризм, госизмена, спец-СИЗО и спецтехника</h2>
+            <p class="subtitle">
+                Подробный технический пайплайн обработки 25 видео по 4 часа, голосовых сообщений и переписок
+                с использованием распознавания речи, NLP и анализа эмоций — в связке с последними изменениями
+                законодательства: ст. 272.1 УК РФ (персональные данные), 275 и 275.1 (госизмена и конфиденциальное
+                сотрудничество), пожизненное за вовлечение несовершеннолетних в диверсионную и террористическую
+                деятельность, спец-СИЗО ФСБ и контроль специальных технических средств.
+            </p>
+            <div class="badge-row">
+                <span class="badge">цифровой конвейер: ASR → NLP → эмоции → правовая разметка</span>
+                <span class="badge">ст. 272.1 УК РФ — трансграничная передача персональных данных</span>
+                <span class="badge">ст. 275, 275.1 УК РФ — помощь противнику и конфиденциальные контакты</span>
+                <span class="badge">пожизненное за вовлечение несовершеннолетних в диверсии и террор</span>
+                <span class="badge">спец-СИЗО ФСБ и контроль «спецтехники»</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- 1. Интерактивный технический пайплайн -->
+        <section class="section">
+            <h2 class="section-title"><span>📡</span>1. Интерактивный технический пайплайн анализа 25 видео, голосовых и переписок</h2>
+            <p class="section-intro">
+                Пайплайн ниже описывает, как массив сырого материала (25 видео по 4 часа, десятки голосовых сообщений,
+                большие переписки и вложения) превращается в структурированную доказательственную базу. Каждый этап —
+                это отдельный модуль: от фиксации цифрового следа и распознавания речи до лингвистической разметки,
+                анализа эмоций и правовой квалификации под соответствующие статьи УК РФ.
+            </p>
+
+            <div class="pipeline-wrapper">
+                <p class="pipeline-header">
+                    Выберите этап, чтобы увидеть его подробное описание: что входит на вход, что выходит на выход и
+                    какие юридически значимые артефакты формируются.
+                </p>
+
+                <div class="pipeline-nav" id="pipelineNav">
+                    <button class="pipeline-step" data-stage="1">
+                        <span class="stage-num">1</span> Сбор и фиксация материалов
+                    </button>
+                    <button class="pipeline-step" data-stage="2">
+                        <span class="stage-num">2</span> Предобработка, VAD и диаризация
+                    </button>
+                    <button class="pipeline-step" data-stage="3">
+                        <span class="stage-num">3</span> ASR: распознавание речи
+                    </button>
+                    <button class="pipeline-step" data-stage="4">
+                        <span class="stage-num">4</span> Очистка текста и синхронизация с перепиской
+                    </button>
+                    <button class="pipeline-step" data-stage="5">
+                        <span class="stage-num">5</span> Лингвистический анализ (NLP)
+                    </button>
+                    <button class="pipeline-step" data-stage="6">
+                        <span class="stage-num">6</span> Эмоции, поведение, паттерны риска
+                    </button>
+                    <button class="pipeline-step" data-stage="7">
+                        <span class="stage-num">7</span> Правовая разметка под статьи УК РФ
+                    </button>
+                    <button class="pipeline-step" data-stage="8">
+                        <span class="stage-num">8</span> Верификация, досье и экспорт для следствия
+                    </button>
+                </div>
+
+                <div class="pipeline-layout">
+                    <!-- Панели этапов -->
+                    <div id="pipelinePanels">
+                        <!-- Stage 1 -->
+                        <div class="pipeline-panel" data-stage="1">
+                            <h3>Этап 1. Сбор и фиксация материалов (ингест и chain of custody)</h3>
+                            <div class="panel-meta">Вход: разрозненные видео, аудио, чаты, файлы • Выход: единый каталог дела с хешами и метаданными</div>
+                            <p>
+                                Цель этапа — аккуратно «подтянуть» всё сырьё (25 длинных видеозаписей, голосовые сообщения,
+                                текст переписок, вложения) в единое хранилище и формализовать его так, чтобы любой последующий
+                                шаг не вызывал вопросов в суде.
+                            </p>
+                            <ul>
+                                <li><strong>Каталогизация источников.</strong> Для каждого файла фиксируются:
+                                    дата и время получения, предполагаемый источник (телефон, мессенджер, облако),
+                                    тип (видео, аудио, текст, вложение), краткое описание содержания.</li>
+                                <li><strong>Создание уникальных идентификаторов.</strong> Каждому артефакту присваивается
+                                    стабильный ID (например, CASE01-VID-001), который используется во всех отчётах и ссылках.</li>
+                                <li><strong>Криптографическая фиксация.</strong> Для каждого файла вычисляется хеш
+                                    (например, SHA-256). Хеши регистрируются в журнале, а сам журнал защищается:
+                                    это основа цепочки сохранности (chain of custody).</li>
+                                <li><strong>Нормализация форматов.</strong> Видео приводятся к единому контейнеру и кодеку,
+                                    аудио — к единому формату (например, WAV, mono, 16 кГц), архивы распаковываются
+                                    в структуру каталогов дела.</li>
+                                <li><strong>Привязка временных зон и часов.</strong> Фиксируются системные часы устройств
+                                    и возможные расхождения во времени (разные часовые пояса, сбитые часы), чтобы позже
+                                    корректно выстраивать единую хронику событий.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage 2 -->
+                        <div class="pipeline-panel" data-stage="2">
+                            <h3>Этап 2. Предобработка аудио: VAD, диаризация, улучшение качества</h3>
+                            <div class="panel-meta">Вход: аудиодорожки из видео и голосовые • Выход: очищенные сегменты речи с разбивкой по говорящим</div>
+                            <p>
+                                На этом шаге сырой звук приводится к виду, удобному для точного распознавания речи:
+                                вырезается тишина и шум, разделяются разные говорящие, отмечаются проблемные участки.
+                            </p>
+                            <ul>
+                                <li><strong>Voice Activity Detection (VAD).</strong> Модель определяет, где в звуке есть речь,
+                                    а где — тишина, фон, музыка, посторонние шумы. На основе этого формируются сегменты,
+                                    в которых ASR-модели будут работать максимально эффективно.</li>
+                                <li><strong>Диаризация (кто говорит).</strong> С помощью кластеризации голосовых отпечатков
+                                    аудио разбивается по «голосовым персонам»: Говорящий A, B, C. Для каждого сегмента
+                                    сохраняется ID предполагаемого говорящего.</li>
+                                <li><strong>Усиление и очистка.</strong> Убирается низкочастотный гул, усиливается речь,
+                                    применяются шумоподавление и эквализация. Проблемные зоны помечаются отдельными тегами
+                                    («низкий SNR», «фоновые голоса», «перекрывающиеся реплики»).</li>
+                                <li><strong>Точечная нарезка длинных файлов.</strong> 4-часовые видео целиком не идут
+                                    в ASR: они нарезаются на удобные по длине «окна» (например, по 30–60 секунд) с небольшой
+                                    перекрывающейся областью, чтобы не потерять слова на границах.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage 3 -->
+                        <div class="pipeline-panel" data-stage="3">
+                            <h3>Этап 3. ASR: высокоточное распознавание речи в текст</h3>
+                            <div class="panel-meta">Вход: сегменты речи по говорящим • Выход: тайм-кодированные транскрипты с оценкой уверенности</div>
+                            <p>
+                                Здесь используется нейросетевая модель уровня Whisper: она преобразует очищенные
+                                сегменты речи в текст, учитывая особенности русской речи, сленг, мат, англицизмы и
+                                код-переключение (RU/EN).
+                            </p>
+                            <ul>
+                                <li><strong>Транскрипция с тайм-кодами.</strong> Каждая реплика получает текст, время начала
+                                    и конца, ID говорящего. Это позволяет позже привязать слова к кадрам видео и к отдельным участникам.</li>
+                                <li><strong>Оценка уверенности.</strong> Для каждого фрагмента сохраняется confidence score,
+                                    по которому можно понять, где модель уверена, а где нужны ручные проверки.</li>
+                                <li><strong>Обработка смешанной речи.</strong> Модель отмечает иностранные слова, названия,
+                                    жаргонные выражения, чтобы позже корректно нормализовать их и не потерять смысл.</li>
+                                <li><strong>Выделение маркеров действий.</strong> Уже на этом этапе трекаются ключевые глаголы
+                                    и конструкции («передал», «отправил», «скинул базу», «закинул на карту»), чтобы не потерять
+                                    потенциально важные куски при дальнейшем сжатии материала.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage 4 -->
+                        <div class="pipeline-panel" data-stage="4">
+                            <h3>Этап 4. Очистка текста, нормализация и синхронизация с перепиской</h3>
+                            <div class="panel-meta">Вход: «сырые» транскрипты и чаты • Выход: чистый нормализованный корпус, связанный с чатами и вложениями</div>
+                            <p>
+                                Задача этапа — превратить ASR-текст в удобный для машин и людей корпус, связав голосовые
+                                реплики с сообщениями в переписках и файлами.
+                            </p>
+                            <ul>
+                                <li><strong>Удаление слов-паразитов и шума.</strong> Вся «вербальная шелуха» («эээ», «ммм»,
+                                    прерывания, повторения) убирается или помечается отдельно, чтобы не мешать анализу
+                                    смысла и эмоций.</li>
+                                <li><strong>Орфографическая нормализация.</strong> Сленг, разговорные формы искажённых слов
+                                    приводятся к стандартным формам, но при этом сохраняются исходные варианты для возможных
+                                    экспертиз по стилю.</li>
+                                <li><strong>Сшивка с чатами.</strong> По времени и содержанию голосовые сообщения и видео
+                                    привязываются к текстовым перепискам: кто кому что сказал/написал, в какой последовательности,
+                                    с какими файлами и ссылками.</li>
+                                <li><strong>Единая карта идентичностей.</strong> Ники, контакты, имена и клички из чатов и
+                                    голосовых сопоставляются между собой, формируя единый граф: «участник X в видео»
+                                    = «пользователь Y в мессенджере».</li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage 5 -->
+                        <div class="pipeline-panel" data-stage="5">
+                            <h3>Этап 5. Лингвистический анализ (NLP-уровень)</h3>
+                            <div class="panel-meta">Вход: чистый корпус текста • Выход: разметка сущностей, зависимостей, актов речи и планирования</div>
+                            <p>
+                                Здесь текст проходит глубокую лингвистическую обработку: токенизацию, морфологию,
+                                синтаксис, Named Entity Recognition и извлечение юридически значимых конструкций.
+                            </p>
+                            <ul>
+                                <li><strong>Токенизация, лемматизация, части речи.</strong> Текст разбивается на токены,
+                                    приводится к начальным формам, для каждого слова определяется часть речи и грамматические
+                                    характеристики. Это база для последующей аналитики.</li>
+                                <li><strong>Синтаксический разбор.</strong> Строятся деревья зависимостей, позволяющие
+                                    видеть, кто кому что делает: «он <em>передал</em> <strong>им</strong> мой <strong>адрес</strong>»,
+                                    «я <em>скинул</em> <strong>базу клиентов</strong> в <strong>Украину</strong>» и т.п.</li>
+                                <li><strong>NER (Named Entity Recognition).</strong> В тексте автоматически выделяются:
+                                    ФИО, никнеймы, организации, органы власти, геолокации, адреса, банковские карты,
+                                    номера счетов, суммы денег, упоминания несовершеннолетних, служебных должностей.</li>
+                                <li><strong>Извлечение актов речи и планирования.</strong> Выделяются предложения,
+                                    содержащие:
+                                    <ul>
+                                        <li>признания («я уже отправил», «я слил им»);</li>
+                                        <li>планы и намерения («надо заложить», «давай взорвём», «давай подключим школьников»);</li>
+                                        <li>инструкции и обучение («делай так», «смотри, как собрать информацию», «как вербовать»).</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage 6 -->
+                        <div class="pipeline-panel" data-stage="6">
+                            <h3>Этап 6. Анализ эмоций, поведения и радикальных паттернов</h3>
+                            <div class="panel-meta">Вход: структурированный текст + аудио • Выход: «тепловые карты» эмоций, триггерные эпизоды, паттерны радикализации</div>
+                            <p>
+                                Этап объединяет текстовый и акустический анализ для выявления эмоций, агрессии и
+                                устойчивых радикальных паттернов поведения, которые усиливают тяжесть юридических выводов.
+                            </p>
+                            <ul>
+                                <li><strong>Эмоциональная классификация.</strong> Для каждой реплики оцениваются базовые
+                                    эмоции (страх, гнев, презрение, радость, возбуждение) и уровень возбуждения/напряжения.</li>
+                                <li><strong>Акустические маркеры.</strong> Анализ тембра, громкости, темпа речи и пауз позволяет
+                                    дополнить текстовую оценку: где человек «закипает», где явно торгуется, где боится.</li>
+                                <li><strong>Поиск экстремальной риторики.</strong> Выделяются эпизоды с систематическими
+                                    оскорблениями власти, религии, национальных и религиозных групп, апологией насилия,
+                                    лозунгами типа «Слава Украине» и пр., особенно в связке с обсуждением действий.</li>
+                                <li><strong>Картирование радикализации.</strong> По временной шкале строятся траектории:
+                                    как менялась интенсивность агрессии, где появляются обсуждения диверсий, где —
+                                    вовлечение третьих лиц и несовершеннолетних.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage 7 -->
+                        <div class="pipeline-panel" data-stage="7">
+                            <h3>Этап 7. Правовая разметка: привязка к конкретным статьям УК РФ</h3>
+                            <div class="panel-meta">Вход: разметка смысла, эмоций и сущностей • Выход: эпизоды, привязанные к конкретным составам преступлений</div>
+                            <p>
+                                Здесь конвейер перестаёт быть нейтрально-техническим и начинает работать в логике УК РФ:
+                                каждый фрагмент речи и чата оценивается на предмет попадания в зону конкретных составов.
+                            </p>
+                            <ul>
+                                <li><strong>Блок персональных данных и цифровых баз (ст. 272, 272.1, 137 УК РФ).</strong>
+                                    Выявляются эпизоды, где:
+                                    <ul>
+                                        <li>обсуждается сбор и хранение чужих персональных и финансовых данных без согласия;</li>
+                                        <li>явно говорится о «сливе» баз за рубеж, в том числе на Украину;</li>
+                                        <li>обсуждаются способы обхода защиты, взлома, несанкционированного доступа.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Блок помощи иностранному государству и конфиденциальных контактов
+                                    (ст. 275, 275.1 УК РФ).</strong> В отдельные кластеры собираются:
+                                    <ul>
+                                        <li>эпизоды взаимодействия с зарубежными структурами;</li>
+                                        <li>выполнение их запросов по сбору данных о гражданах РФ;</li>
+                                        <li>любые формы содействия, которые могут быть трактованы как помощь в деятельности
+                                            против безопасности РФ.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Блок диверсий и терроризма (включая несовершеннолетних).</strong>
+                                    Выделяются:
+                                    <ul>
+                                        <li>разговоры о подрывах, поджогах, объектах инфраструктуры;</li>
+                                        <li>эпизоды, где обсуждаются вовлечение подростков и детей в такие действия;
+                                        </li>
+                                        <li>инструкции, обучение, финансирование подобных действий.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Блок оскорблений власти, религии и разжигания ненависти
+                                    (ст. 148, 319, 282 УК РФ, КоАП 20.3/20.1).</strong> Анализируются:
+                                    оскорбления Президента и высшего руководства, высмеивание Аллаха и религии,
+                                    высказывания, направленные против конкретных национальных и религиозных групп.</li>
+                                <li><strong>Формирование эпизодов.</strong> Все найденные фрагменты агрегируются в эпизоды
+                                    с полным контекстом: кто, кому, когда и при каких обстоятельствах говорил или писал,
+                                    с привязкой к исходным файлам и тайм-кодам.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage 8 -->
+                        <div class="pipeline-panel" data-stage="8">
+                            <h3>Этап 8. Верификация, формирование досье и экспорт для следствия</h3>
+                            <div class="panel-meta">Вход: предварительно размеченные эпизоды • Выход: проверенные досье и отчёты, готовые для уголовного дела</div>
+                            <p>
+                                На заключительном этапе технический результат приводится к форме, удобной для следователя,
+                                прокурора и суда. Самые тяжёлые эпизоды проходят ручную проверку.
+                            </p>
+                            <ul>
+                                <li><strong>Ручная верификация ключевых эпизодов.</strong> Юрист и/или следователь просматривает
+                                    привязанные фрагменты видео и аудио, сверяет текст, проверяет контекст, отсеивает
+                                    возможные ошибки распознавания и двусмысленности.</li>
+                                <li><strong>Сшивка временных линий.</strong> Формируется общая временная шкала: когда впервые
+                                    обсуждался слив данных, когда произошла фактическая передача, когда возник контакт с
+                                    иностранной структурой, когда заговорили о диверсиях и о вовлечении несовершеннолетних.</li>
+                                <li><strong>Формирование досье по персонам.</strong> Для каждого ключевого участника дела
+                                    собираются:
+                                    <ul>
+                                        <li>биографические данные и роль;</li>
+                                        <li>карта контактов;</li>
+                                        <li>перечень эпизодов по блокам УК (272.1, 275, 275.1, 205.1, 281.1, 148, 282 и т.д.).</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Экспорт и институциональная интеграция.</strong> Отчёты и данные
+                                    выгружаются в форматы, совместимые с системами органов (PDF, структурированные
+                                    JSON/CSV, внутренние форматы ИС). Сохраняется связка «отчёт → хеш исходного файла →
+                                    тайм-код», чтобы обеспечить проверяемость и повторяемость выводов.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Правый блок с отмечанием юридически чувствительных зон -->
+                    <aside class="pipeline-side">
+                        <div class="pipeline-side-inner">
+                            <div class="pipeline-badge-critical">Юридически чувствительные зоны конвейера</div>
+                            <h4>Где конвейер переходит в плоскость УК РФ</h4>
+                            <ul>
+                                <li><strong>Сбор и фиксация (Этап 1):</strong> важно не нарушить закон при получении
+                                    материалов (иначе часть доказательств может быть признана недопустимой).</li>
+                                <li><strong>Правовая разметка (Этап 7):</strong> именно здесь технические находки
+                                    «подвешиваются» к конкретным нормам: 272.1 (персональные данные), 275/275.1
+                                    (помощь противнику), 205.1 и 281.1 (содействие террору и диверсиям, в том числе
+                                    с несовершеннолетними), 148, 282 и др.</li>
+                                <li><strong>Формирование досье (Этап 8):</strong> от того, как будут сшиты эпизоды и
+                                    сформулированы выводы, зависит реальное обвинительное заключение и итоговая
+                                    квалификация — от «обычной» персоналки до пожизненного за диверсию с участием подростков.</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Законодательная рамка -->
+        <section class="section">
+            <h2 class="section-title"><span>⚖️</span>2. Законодательная рамка и блоки ответственности</h2>
+            <p class="section-intro">
+                Технический пайплайн имеет смысл только в контексте конкретных норм УК РФ и последних законов,
+                подписанных Президентом России. Ниже — систематизированные блоки: персональные данные, помощь
+                иностранным государствам, диверсии и терроризм (особенно с участием несовершеннолетних),
+                спец-СИЗО ФСБ и контроль за специальными техническими средствами.
+            </p>
+
+            <div class="law-grid">
+                <!-- PD 272.1 -->
+                <article class="law-card danger">
+                    <h3>Новая ст. 272.1 УК РФ: незаконное обращение с электронными персональными данными</h3>
+                    <p>
+                        С 2024 года в УК РФ действует статья 272.1 «Незаконные использование и (или) передача, сбор и (или)
+                        хранение компьютерной информации, содержащей персональные данные, а равно создание и (или)
+                        обеспечение функционирования информационных ресурсов, предназначенных для ее незаконных хранения
+                        и (или) распространения».
+                    </p>
+                    <p>
+                        Ключевой смысл: если персональные данные (в том числе финансовые, контактные, адресные) были
+                        получены <strong>незаконным путём</strong> (взлом, злоупотребление доступом, иное вмешательство)
+                        и затем <strong>используются, собираются, хранятся или передаются</strong>, особенно через
+                        информационные системы и базы, это уже уголовный состав.
+                    </p>
+                    <p>
+                        Отдельно выделен особо важный случай: <strong>трансграничная передача компьютерной информации
+                        с персональными данными</strong> (в том числе через интернет) или вывоз/ввоз носителей с такими
+                        данными за пределы РФ. За такие действия предусмотрены наказания до <strong>8–10 лет лишения
+                        свободы</strong> с крупными штрафами.
+                    </p>
+                    <span class="law-tag">272.1 УК РФ • персональные и финансовые данные</span>
+                </article>
+
+                <!-- 275, 275.1 -->
+                <article class="law-card danger">
+                    <h3>Госизмена и конфиденциальное сотрудничество (ст. 275 и 275.1 УК РФ)</h3>
+                    <p>
+                        Обновлённая ст. 275 УК РФ делает госизменой не только выдачу гостайны, но и
+                        <strong>оказание финансовой, материально-технической, консультационной или иной помощи иностранному
+                        государству, международной или иностранной организации или их представителям</strong> в деятельности,
+                        направленной против безопасности РФ.
+                    </p>
+                    <p>
+                        Передача за рубеж массивов персональных данных граждан РФ (особенно военных, лиц, работающих с
+                        государственными органами, или публичных фигур) в структуры, которые российские органы считают
+                        враждебными, может быть квалифицирована как такая «иная помощь».
+                    </p>
+                    <p>
+                        Статья 275.1 УК РФ вводит отдельный состав <strong>«конфиденциального сотрудничества»</strong>:
+                        установление и поддержание скрытых отношений с представителями иностранных государств/организаций
+                        с целью содействия их деятельности против безопасности РФ, даже если до полной госизмены по 275-й
+                        состав не дотягивает.
+                    </p>
+                    <p>
+                        Санкции:
+                        <br>• по 275 УК РФ — <strong>12–20 лет лишения свободы или пожизненное</strong> + штрафы;
+                        <br>• по 275.1 УК РФ — <strong>3–8 лет лишения свободы</strong>.
+                    </p>
+                    <span class="law-tag">275, 275.1 УК РФ • помощь иностранным структурам</span>
+                </article>
+
+                <!-- Особо тяжкий блок minors -->
+                <article class="law-card danger">
+                    <h3>Особо тяжкий блок: вовлечение несовершеннолетних в диверсии и террор</h3>
+                    <p>
+                        В ноябре 2025 года принят и подписан закон, усиливающий ответственность за
+                        <strong>любой вид вовлечения несовершеннолетних в диверсионную и террористическую деятельность</strong>:
+                        склонение, вербовка, подготовка, обучение, финансирование, организация.
+                    </p>
+                    <p>
+                        В статью 281.1 УК РФ «Содействие диверсионной деятельности» добавлен квалифицирующий признак:
+                        совершение деяний в отношении несовершеннолетнего или с использованием служебного положения.
+                        За такие действия предусмотрено наказание от <strong>10 до 20 лет лишения свободы</strong>
+                        со штрафом до 1 млн рублей либо <strong>пожизненное лишение свободы</strong>.
+                    </p>
+                    <p>
+                        Аналогичный квалифицирующий признак внесён в статью 205.1 УК РФ «Содействие террористической
+                        деятельности»: вовлечение несовершеннолетнего в террористическую активность (через пропаганду,
+                        вербовку, обучение, финансирование и т.п.) теперь также влечёт <strong>до пожизненного</strong>.
+                    </p>
+                    <p>
+                        Дополнительно:
+                        <br>• <strong>возраст уголовной ответственности за диверсии снижен до 14 лет</strong> по аналогии с террористическими составами;
+                        <br>• <strong>отменены сроки давности</strong> по диверсионно-террористическим преступлениям;
+                        <br>• введён запрет на условное осуждение за участие в диверсионном сообществе;
+                        <br>• для УДО — требование отбытия не менее <strong>3/4 назначенного срока</strong> и запрет снижать наказание ниже низшего предела санкции.
+                    </p>
+                    <span class="law-tag">205.1, 281.1 УК РФ • несовершеннолетние и пожизненное</span>
+                </article>
+
+                <!-- Диверсии/террор общий блок -->
+                <article class="law-card info">
+                    <h3>Диверсии и терроризм: особый режим наказаний и УДО</h3>
+                    <p>
+                        Для диверсионных и террористических составов (диверсии, содействие диверсионной деятельности,
+                        содействие террористической деятельности, участие в диверсионных и террористических сообществах)
+                        в последние годы сформирован отдельный, максимально жёсткий режим.
+                    </p>
+                    <p>
+                        На уровне УК и практики:
+                    </p>
+                    <ul>
+                        <li>для целого класса преступлений <strong>отменены сроки давности</strong>;</li>
+                        <li>по ряду составов зафиксирован запрет на <strong>условное осуждение</strong>;</li>
+                        <li>для УДО установлено требование отбытия не менее <strong>¾ срока</strong> до возможности
+                            обращения с ходатайством;</li>
+                        <li>суды лишены права опускаться ниже низшего предела наказания, установленного статьёй.</li>
+                    </ul>
+                    <p>
+                        В результате дела, связанные с диверсиями и терроризмом, переходят в категорию фактически
+                        <strong>безсрочных и практически не «смягчаемых»</strong>.
+                    </p>
+                    <span class="law-tag">диверсионно-террористический блок УК РФ</span>
+                </article>
+
+                <!-- СТС ФСБ -->
+                <article class="law-card warning">
+                    <h3>Спецтехника и ПО для негласного сбора информации: контроль ФСБ</h3>
+                    <p>
+                        Вокруг ст. 138.1 УК РФ («Незаконный оборот специальных технических средств, предназначенных для
+                        негласного получения информации») формируется новый контур регулирования. Под «спецсредствами»
+                        понимаются не только классические «жучки», но и <strong>устройства и программное обеспечение для ЭВМ
+                        и других электронных устройств</strong>, которым намеренно приданы свойства скрытого получения
+                        информации или доступа к ней без ведома обладателя.
+                    </p>
+                    <p>
+                        Проект президентского указа, подготовленный ФСБ, предусматривает закрепление за службой
+                        полномочий по <strong>регистрации и учёту всех специальных технических средств для негласного
+                        получения информации</strong>, включая решения, разрабатываемые и продаваемые частными лицами
+                        и компаниями, а также контроль за их импортом и экспортом.
+                    </p>
+                    <p>
+                        Это означает, что любые конвейеры анализа информации, включая нейросетевые и ASR/NLP-системы,
+                        работающие в связке со скрытыми каналами сбора данных, будут попадать в зону прямой регуляции
+                        и надзора ФСБ.
+                    </p>
+                    <span class="law-tag">138.1 УК РФ • реестр специальных технических средств</span>
+                </article>
+
+                <!-- СИЗО ФСБ -->
+                <article class="law-card warning">
+                    <h3>Спец-СИЗО ФСБ и расширение полномочий по задержанию</h3>
+                    <p>
+                        В 2025 году принят и подписан закон, <strong>возвращающий ФСБ право иметь собственные следственные
+                        изоляторы</strong> и передающий в её ведение ряд СИЗО центрального подчинения ФСИН. С 1 января
+                        2026 года такие изоляторы используются прежде всего для дел о госизмене, шпионаже, диверсиях,
+                        терроризме и смежных составах.
+                    </p>
+                    <p>
+                        Параллельно поправками в КоАП и другие законы <strong>расширены полномочия сотрудников ФСБ</strong>
+                        по административным задержаниям, доставлению и составлению протоколов в ряде ситуаций, связанных
+                        с режимными объектами, неповиновением и т.п.
+                    </p>
+                    <p>
+                        Фактически формируется <strong>единая вертикаль</strong> в самых чувствительных категориях дел:
+                        от первичного задержания и изоляции до следствия и сопровождения в суд — под контролем одного
+                        силового ведомства.
+                    </p>
+                    <span class="law-tag">закон о спец-СИЗО ФСБ и изменениях КоАП</span>
+                </article>
+            </div>
+
+            <div class="legal-note">
+                В такой нормативной конфигурации <strong>любой подтверждённый факт незаконной передачи персональных и
+                финансовых данных за рубеж, особенно в адрес структур, воспринимаемых как противник, и тем более при
+                вовлечении несовершеннолетних в диверсионно-террористическую активность</strong>, автоматически попадает
+                в «верхний эшелон» тяжести: от 8–10 лет по 272.1 УК РФ до 12–20 лет или пожизненного по 275, 205.1,
+                281.1 УК РФ.
+            </div>
+        </section>
+
+        <!-- 3. Таймлайн -->
+        <section class="section">
+            <h2 class="section-title"><span>🧭</span>3. Таймлайн формирования нынешней конструкции (2022–2026)</h2>
+            <p class="section-intro">
+                Ниже — условная временная шкала, показывающая, как по шагам складывается связка: ужесточение статей
+                УК РФ → усиление полномочий ФСБ → цифровые конвейеры анализа речи, переписок и баз данных.
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022–2023</div>
+                    <div class="timeline-title">Усиление блоков «армия», «террор», «экстремизм»</div>
+                    <div class="timeline-text">
+                        Активное применение норм о «фейках» и «дискредитации» армии, расширение трактовок оправдания
+                        терроризма, массовое привлечение по «речевым» и «контентным» составам. Формируется доктрина,
+                        что слово и пост могут быть приравнены по тяжести к действию.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023–2024</div>
+                    <div class="timeline-title">Госизмена и конфиденциальные контакты</div>
+                    <div class="timeline-text">
+                        Обновлённая ст. 275 УК РФ и новая 275.1 расширяют понятие госизмены и вводят самостоятельный
+                        состав «конфиденциального сотрудничества». Передача данных о гражданах РФ иностранным структурам
+                        начинает рассматриваться как потенциальная помощь противнику.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024–2025</div>
+                    <div class="timeline-title">272.1 УК РФ: уголовка за электронные персональные данные</div>
+                    <div class="timeline-text">
+                        Введена ст. 272.1 УК РФ, криминализующая незаконное использование, сбор, хранение и передачу
+                        компьютерной информации с персональными данными, включая трансграничную передачу. Это создаёт
+                        прямой «мост» между цифровыми базами (в том числе выгруженными из мессенджеров и облаков)
+                        и уголовной ответственностью вплоть до 8–10 лет.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Июль–ноябрь 2025</div>
+                    <div class="timeline-title">Спец-СИЗО ФСБ, контроль спецтехники и пожизненное за несовершеннолетних</div>
+                    <div class="timeline-text">
+                        Приняты законы, возвращающие ФСБ право собственных СИЗО и передающие ей центральные изоляторы
+                        по «гос» статьям. Параллельно ФСБ готовит указ о централизованной регистрации и контроле всех
+                        специальных технических средств для негласного получения информации. В ноябре 2025 года законодательно
+                        закрепляется <strong>пожизненное лишение свободы</strong> за вовлечение несовершеннолетних в
+                        диверсионную и террористическую деятельность, снижается до 14 лет возраст ответственности
+                        за диверсии, отменяются сроки давности по диверсионно-террористическим составам.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026 и далее</div>
+                    <div class="timeline-title">Интеграция цифровых конвейеров в практику</div>
+                    <div class="timeline-text">
+                        В этой конструктивной рамке масштабные конвейеры анализа аудио, видео и переписок (ASR, NLP,
+                        анализ эмоций и связей) перестают быть экспериментом и превращаются в стандартный инструмент:
+                        на их основе формируются эпизоды по 272.1, 275, 275.1, 205.1, 281.1 и смежным статьям, а фигуранты
+                        оказываются в системе спец-СИЗО ФСБ с минимальными шансами на условное и мягкое наказание.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Практический вывод -->
+        <section class="section">
+            <h2 class="section-title"><span>🧨</span>4. Практический вывод (без розовых очков)</h2>
+
+            <div class="summary-card">
+                <div class="summary-inner">
+                    <div class="summary-title">Что означает связка «технический пайплайн + новые законы» для фигуранта дела</div>
+                    <div class="summary-grid">
+                        <div class="summary-block">
+                            <div class="pill">Цифровой след становится непрерывной лентой</div>
+                            <ul>
+                                <li>25 видео по 4 часа, десятки голосовых и массивы переписок больше не хаос:
+                                    каждый фрагмент речи и текста имеет тайм-код, говорящего и контекст.</li>
+                                <li>ASR, NLP и анализ эмоций превращают живые разговоры и чаты в формализуемые признаки:
+                                    кто, когда и что говорил, с каким эмоциональным фоном и по какому поводу.</li>
+                                <li>На выходе пайплайна — не «дискуссия в чате», а <strong>таблица эпизодов</strong>,
+                                    привязанная к конкретным статьям и квалифицирующим признакам.</li>
+                            </ul>
+                        </div>
+
+                        <div class="summary-block">
+                            <div class="pill">Цена «слива» данных и игры с диверсиями</div>
+                            <ul>
+                                <li>Незаконная трансграничная передача персональных и финансовых данных —
+                                    коридор до <strong>8–10 лет</strong> по 272.1 УК РФ плюс возможные составы по 137 и 272 УК РФ.</li>
+                                <li>Если получателем или выгодоприобретателем является иностранная структура, работающая
+                                    против безопасности РФ (особенно Украина или структуры стран НАТО), возникает риск
+                                    квалификации по <strong>275 и 275.1 УК РФ</strong>: от 3–8 лет до 12–20 лет или пожизненного.</li>
+                                <li>Любое вовлечение несовершеннолетних в обсуждение и подготовку диверсий и террористических
+                                    действий — прямой путь в блок 205.1 и 281.1 УК РФ с <strong>верхним пределом в виде пожизненного
+                                    лишения свободы</strong>, без сроков давности и с минимальными шансами на УДО.</li>
+                            </ul>
+                        </div>
+
+                        <div class="summary-block">
+                            <div class="pill">Вертикаль ФСБ и исчезающее «серое поле»</div>
+                            <ul>
+                                <li>Спец-СИЗО ФСБ, расширенные полномочия по задержаниям, контроль за спецтехникой и
+                                    цифровыми конвейерами анализа данных замыкают всю конструкцию в одну силовую вертикаль.</li>
+                                <li>То, что ещё недавно выглядело как «личный конфликт» или «скандал в тусовке», в условиях
+                                    массового мониторинга и новых норм легко превращается в <strong>дело о госизмене,
+                                    содействии терроризму или диверсиям</strong>.</li>
+                                <li>При наличии объёмной доказательной базы (многочасовые записи, переписки, финансовые
+                                    следы) поле для «юридической ошибки» резко сужается: любые проукраинские высказывания,
+                                    оскорбления власти/религии и обсуждения слива персональных данных за рубеж трактуются
+                                    в максимально жёстком режиме.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    // Простейшая интеракция: выбор этапа пайплайна
+    document.addEventListener("DOMContentLoaded", function () {
+        const steps = document.querySelectorAll(".pipeline-step");
+        const panels = document.querySelectorAll(".pipeline-panel");
+
+        function activateStage(stage) {
+            steps.forEach(step => {
+                step.classList.toggle("active", step.getAttribute("data-stage") === stage);
+            });
+            panels.forEach(panel => {
+                panel.classList.toggle("active", panel.getAttribute("data-stage") === stage);
+            });
+        }
+
+        steps.forEach(step => {
+            step.addEventListener("click", () => {
+                const stage = step.getAttribute("data-stage");
+                activateStage(stage);
+            });
+        });
+
+        // Активируем первый этап по умолчанию
+        if (steps.length > 0) {
+            activateStage(steps[0].getAttribute("data-stage"));
+        }
+    });
+</script>
+</body>
+</html>
