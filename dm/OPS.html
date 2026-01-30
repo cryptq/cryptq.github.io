@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полный анализ структуры группы ДСО-Наука и собранных доказательств</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        } ::-webkit-scrollbar{width:0px;}
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #e74c3c;
+            --warning-color: #f39c12;
+            --info-color: #3498db;
+            --success-color: #27ae60;
+            --light-bg: #ecf0f1;
+            --dark-text: #2c3e50;
+            --light-text: #7f8c8d;
+            --border-color: #bdc3c7;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark-text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .alert {
+            background: var(--warning-color);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .section {
+            background: var(--light-bg);
+            border-radius: 8px;
+            padding: 25px;
+            border-left: 5px solid var(--info-color);
+        }
+
+        .section-critical {
+            border-left-color: var(--accent-color);
+            background: #ffeaea;
+        }
+
+        .section-warning {
+            border-left-color: var(--warning-color);
+            background: #fff4e6;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;margin-bottom: 20px;padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);text-align: center;
+        }
+
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .evidence-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+
+        .evidence-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .evidence-count {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .connection-map {
+            background: white;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+        }
+
+        .map-node {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .node-leader { background: #e74c3c; color: white; }
+        .node-ukraine { background: #3498db; color: white; }
+        .node-russia { background: #2ecc71; color: white; }
+        .node-link { background: #9b59b6; color: white; }
+        .node-business { background: #f39c12; color: white; }
+
+        .religious-offense {
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .sections {
+                grid-template-columns: 1fr;
+            }
+            
+            .evidence-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Анализ структуры группы ДСО-Наука и доказательной базы</h1>
+            <div class="subtitle">Полная систематизация участников, связей и собранных улик</div>
+            <div class="alert">ВСЯ ИНФОРМАЦИЯ ОСНОВАНА НА ПРЕДОСТАВЛЕННЫХ ДОКУМЕНТАХ, УЛИКАХ И ДОКАЗАТЕЛЬСТВАХ</div>
+        </header>
+
+               <div class="connection-map">
+            <h2 class="section-title">Центральная структура связей</h2>
+            <div style="text-align: center; padding: 20px;">
+                <div class="map-node node-leader">Аркадий Галков<br>Создатель ДСО-Наука</div>
+                <div style="margin: 30px;">⇅<br>взаимодействие</div>
+                <div class="map-node node-link">Татьяна Сиволонская<br>Ключевое связующее звено</div>
+                <div style="display: flex; justify-content: space-between; margin: 30px 0;">
+                    <div style="flex: 1;">
+                        <div class="map-node node-ukraine">Украинские участники</div>
+                        <div style="margin-top: 15px;">
+                            <div class="map-node node-ukraine">Артур Орел</div>
+                            <div class="map-node node-ukraine">Юрий Ильченко</div>
+                            <div class="map-node node-ukraine">Олег Тремба</div>
+                        </div>
+                    </div>
+                    <div style="flex: 1;">
+                        <div class="map-node node-russia">Российские участники</div>
+                        <div style="margin-top: 15px;">
+                            <div class="map-node node-russia">Ян Галков</div>
+                            <div class="map-node node-russia">Игорь Зарубин <br> (владелец тибетского медцентра)</div>
+                            <div class="map-node node-russia">Царьков Владислав</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-node node-business">Бизнес-структуры<br>и юридические лица</div>
+            </div>
+        </div>
+
+        <div class="sections">
+            <div class="section section-critical">
+                <h2 class="section-title">Ключевые доказательства (итог)</h2>
+                <div class="evidence-grid">
+                    <div class="evidence-item">
+                        <span class="evidence-count">60</span>
+                        видеозаписей с их переговорами - десятки часов.
+                    </div>
+                    <div class="evidence-item">
+                        <span class="evidence-count">30</span>
+                        аудиосообщений.
+                    </div>
+                    <div class="evidence-item">
+                        <span class="evidence-count"> ~ 25</span>
+                        сообщений и переписок
+                    </div>
+                    <div class="evidence-item">
+                        <span class="evidence-count"> ~ 25</span>
+                        официальных документов
+                    </div>
+                    <div class="evidence-item">
+                        <span class="evidence-count">40+</span>
+                        установленных участников
+                    </div>
+                    <div class="evidence-item">
+                        <span class="evidence-count">15+</span>
+                        юридических лиц
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-warning">
+                <h2 class="section-title">Религиозные преступления</h2>
+                <div class="religious-offense">
+                    <strong>ЗАФИКСИРОВАНЫ СЛУЧАИ:</strong><br><br>
+                    1. Оскорбления Ислама и всех мусульман<br>
+                    2. Нецензурные выражения в сторону Аллаха<br><br>
+                    <em>Данные содержатся в аудио, видеозаписях и скриншотах.</em>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 30px;">
+            <h2 class="section-title">Подробная таблица участников с уже выявленными правонарушениями (скорей всего их гораздо больше)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>ФИО</th>
+                        <th>Статус/Роль</th>
+                        <th>Доказанные правонарушения</th>
+                        <th>Связи</th>
+                        <th>Гражданство</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Галков Аркадий Витальевич</strong></td>
+                        <td>Создатель «ДСО-наука»,<br>учредитель ООО</td>
+                        <td>Организация группы,<br>связи с запрещенными лицами<br>наркотики</td>
+                        <td>Орел Артур,<br>Сиволонская Т.Б.,<br>все участники</td>
+                        <td>РФ</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Орел Артур Валерьевич</strong></td>
+                        <td>ТОВ "ХЕРСОНСЬКА ФЕДЕРАЦІЯ КІННОГО СПОРТУ" (Украина)<br>Консультант по "тёмным делам",<br>руководитель украинских фирм,<br>участник РОО "ФКСХО"</td>
+                        <td>Запрет на въезд в РФ,<br>связи с украинскими спецслужбами</td>
+                        <td>Галков А.В.,<br>Сиволонская Т.Б.</td>
+                        <td>Украина (активно пытается получить паспорт РФ)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><strong>Сиволонская Татьяна Борисовна</strong></td>
+                        <td>Госслужащий,<br>президент РОО "ФЕДЕРАЦИЯ КОННОГО СПОРТА ХЕРСОНСКОЙ ОБЛАСТИ",<br>ИП</td>
+                        <td>Предположительно злоупотребление должностью,<br>связи с Артур Орёл и Аркадий Галков</td>
+                        <td>Ключевая связь между РФ и Украиной</td>
+                        <td>Уроженка Украины,<br>зарегистрирована в РФ</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><strong>Ильченко Юрий Григорьевич</strong></td>
+                        <td>Учредитель РОО "ФКСХО"</td>
+                        <td>230 исполнительных производств,<br>ст.185 ч.3 УК Украины</td>
+                        <td>Сиволонская Т.Б.,<br>Тремба О.В.</td>
+                        <td>Украина / РФ</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><strong>Тремба Олег Владленович</strong></td>
+                        <td>Учредитель РОО "ФКСХО",<br>бизнесмен</td>
+                        <td>15 долговых записей,<br>11 гражданских дел (50% проиграно)</td>
+                        <td>Сиволонская Т.Б.,<br>Ильченко Ю.Г.</td>
+                        <td>Уроженец Украины</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><strong>Кретова Екатерина Евгеньевна</strong></td>
+                        <td>Учредитель РОО "ФКСХО"</td>
+                        <td>Ст.191 ч.3 УК Украины (присвоение),<br>Ст.366 (служебный подлог)</td>
+                        <td>Сиволонская Т.Б.,<br>другие учредители</td>
+                        <td>Зарегистрирована в РФ</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><strong>Галков Ян Аркадьевич</strong></td>
+                        <td>Участник ДСО-Наука,<br>ИП,<br>сын Аркадия Галкова</td>
+                        <td>Активное участие в группе «ДСО-наука»,<br>Психофизическое давление,<br>Считает что его "Жертвы" ничего не смогут доказать</td>
+                        <td>Галков А.В.,<br>Царьков В.И.,<br>Кадин К.А.</td>
+                        <td>РФ</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><strong>Царьков Владислав Игоревич</strong></td>
+                        <td>Участник ДСО-Наука,<br> ИП,<br>друг Яна Галкова</td>
+                        <td>Активное участие в группе «ДСО-наука»,<br>Психофизическое давление,<br>Считает что его "Жертвы" ничего не смогут доказать</td>
+                        <td>Галков А.В,<br>Галков Я.А.,<br>Кадин К.А.</td>
+                        <td>РФ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="padding: 30px;">
+            <h2 class="section-title">Юридические лица и организации</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Организация</th>
+                        <th>ИНН/ОГРН</th>
+                        <th>Статус</th>
+                        <th>Ключевые лица</th>
+                        <th>Роль в структуре</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>РОО "ФКСХО" (Федерация конного спорта Херсонской области)</td>
+                        <td>ИНН 9500024077<br>ОГРН 1249500001629</td>
+                        <td>Действует</td>
+                        <td>Сиволонская Т.Б. (президент),<br> + 9 учредителей</td>
+                        <td>Ключевое связующее звено, прикрытие</td>
+                    </tr>
+                                        <tr>
+                        <td>ТОВ "ХЕРСОНСЬКА ФЕДЕРАЦІЯ КІННОГО СПОРТУ" (Украина)</td>
+                        <td>ЄДРПОУ 37959632</td>
+                        <td>Действует</td>
+                        <td>Орел Артур В. (руководитель)</td>
+                        <td>Украинское прикрытие,<br>координация</td>
+                    </tr>
+                    <tr>
+                        <td>ООО "АРКАТАГ" (медицинский центр)</td>
+                        <td>ИНН 7736202707<br>ОГРН 1037736011609</td>
+                        <td>Действует</td>
+                        <td>Зарубин И.В. (гендиректор)</td>
+                        <td>Финансирование, прикрытие</td>
+                    </tr>
+                    <tr>
+                        <td>ИП Липатов Денис Борисович</td>
+                        <td>ИНН 780711631846</td>
+                        <td>Действует</td>
+                        <td>Липатов Д.Б.</td>
+                        <td>Эксклюзивный производственный партнер и контрактный производитель для ООО «АРКАТАГ»: производство фитопрепаратов,<br>держатель разрешительной документации,<br>технологическое звено</td>
+                    </tr>
+                    <tr>
+                        <td>ООО "Херсонские овощи"</td>
+                        <td>Данные в карточках</td>
+                        <td>Действует</td>
+                        <td>Сиволонская Т.Б. (директор),<br>Сиволонский П.А.</td>
+                        <td>Бизнес-прикрытие, финансирование</td>
+                    </tr>
+                                        <tr>
+                        <td>ООО "ЗТМ-СД"</td>
+                        <td>ИНН 7726651301<br>ОГРН 1107746283182</td>
+                        <td>Ликвидировано 28.03.2019</td>
+                        <td>Галков А.В.,<br>Соломатов А.А.,<br>Щетнев А.В.</td>
+                        <td>Предыдущая финансовая структура</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; font-style: italic; color: var(--light-text);">
+                <strong>Примечание по ИП Липатову Д.Б.:</strong> Является эксклюзивным производственным партнером ООО «АРКАТАГ». 
+                Выполняет функции контрактного производителя (OEM) фитопрепаратов, держателя разрешительной документации 
+                и технологического звена по переработке сырья в готовую продукцию (капсулы, травяные сборы). 
+                Обеспечивает товарную номенклатуру центра «Аркатаг», не входя в состав его учредителей.
+            </p>
+        </div>
+
+        <div style="padding: 30px;">
+            <h2 class="section-title">Криминальные аспекты деятельности</h2>
+            <div class="sections">
+                <div class="section section-critical">
+                    <h3>Уголовные статьи, под которые предположительно подпадают действия группы:</h3>
+                    <ul style="margin-top: 15px; padding-left: 20px;">
+                        <li><strong>Статья 281 УК РФ (Диверсия)</strong> - до пожизненного срока</li>
+                        <li><strong>Статья 205 УК РФ (Терроризм)</strong> - до 20 лет лишения свободы</li>
+                        <li><strong>Статья 138.1 УК РФ (СТС НПИ)</strong> - использование спецтехсредств</li>
+                        <li><strong>Статья 282 УК РФ (Возбуждение ненависти)</strong> - религиозные оскорбления</li>
+                        <li><strong>Статья 275 УК РФ (Госизмена)</strong> - сотрудничество с иностранными спецслужбами</li>
+                        <li><strong>Статья 222.1 УК РФ</strong> - незаконный оборот спецтехсредств</li>
+                    </ul>
+                </div>
+                <div class="section section-warning">
+                    <h3>Технологические аспекты преступлений:</h3>
+                    <ul style="margin-top: 15px; padding-left: 20px;">
+                        <li>Использование DEW-технологий (оружие направленной энергии)</li>
+                        <li>Применение Starlink для обхода СОРМ РФ</li>
+                        <li>Использование базовых станций сотовой связи для атак</li>
+                        <li>Нейрокогнитивное воздействие на граждан РФ</li>
+                        <li>Создание системы "биометрического террора"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 30px;">
+            <h2 class="section-title">Международные связи и спецслужбы</h2>
+            <div class="alert">
+                УЛИКИ И ДОКАЗАТЕЛЬСТВА УКАЗЫВАЮТ НА ВЛИЯНИЕ СПЕЦСЛУЖБ УКРАИНЫ <br> ЧЕРЕЗ ДАННУЮ ГРУППУ :<br>
+                - Управление государственной охраны (УГО)<br>
+                - Главное управление разведки (ГУР)<br>
+                - Служба безопасности Украины (СБУ)
+            </div>
+            <p style="margin-top: 20px;">
+                <strong>Схема работы :</strong> <br> <br> 
+                <center>
+                Украинские спецслужбы → Артур Орел → Татьяна Сиволонская → 
+                Аркадий Галков → Российские участники → Воздействие на цели в РФ через технологические системы.
+                </center>
+            </p>
+        </div>
+
+        <footer>
+            <h3>Итоговый вывод на основе всех предоставленных документов</h3>
+            <p style="margin-top: 15px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Обнаружена разветвленная транснациональная структура, объединяющая уроженцев РФ и уроженцев украинскины, 
+                использующая высокотехнологичные методы воздействия на людей.<br>Есть основания полагать, что данная группа совершает преступления, 
+                подпадающие под статьи о диверсии, терроризме и государственной измене.<br>Имеются неопровержимые 
+                доказательства в виде аудио, видеозаписей и документов, включая оскорбления религиозных чувств 
+                мусульман. Все участники идентифицированы, установлены их связи и юридические привязки.
+            </p>
+            <p style="margin-top: 20px;text-transform: uppercase;
+    font-weight: 900;">
+                Документ создан на основе анализа: Улик и Доказательств.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
