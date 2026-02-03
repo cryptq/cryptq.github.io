@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доказательная база: Демодулятор «Эффекта Фрея»</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #050a0f;
+            --accent: #00f2ff;
+            --accent-dim: rgba(0, 242, 255, 0.2);
+            --text: #a0b0c0;
+            --panel-bg: rgba(10, 20, 30, 0.9);
+            --highlight: #ffcf00;
+        }::-webkit-scrollbar{width:0px;}
+
+        body {
+            background-color: var(--bg);
+            background-image: radial-gradient(var(--accent-dim) 1px, transparent 1px);
+            background-size: 20px 20px;
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid var(--accent-dim);
+            padding: 30px;
+            background: var(--panel-bg);
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        .container::before {
+            content: "\f519";
+            position: absolute;border-radius:2px;
+            font-family: "Font Awesome 6 Free";
+            top: -10px;left: 20px;
+            background: var(--accent);
+            color: #000;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .container::after {
+         content: " РАДИОТЕХНИЧЕСКАЯ // КРИМИНАЛИСТИКА";
+         position: absolute;
+         border-radius: 2px;
+         top: -10px;
+         left: 42px;
+         background: var(--accent);
+         color: #000;
+         padding: 2px 7px;
+         font-size: 10px;
+         font-weight: bold;
+        }
+
+        h1 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {color: var(--accent);}
+
+        .section {
+            margin-bottom: 25px;
+            border-left: 3px solid var(--accent-dim);
+            padding-left: 20px;
+        }
+
+        .section-title {
+            color: var(--highlight);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .fact-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .conclusion {
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px dashed var(--accent);
+            text-align: center;
+            font-size: 1.1em;
+            color: var(--accent);
+        }
+
+        .tech-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 0.9em;
+        }
+
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+            box-shadow: 0 0 5px var(--accent);
+         }.price {position: absolute;font-size: 23px;top: 605px;left: 703px;width: 193px;
+    font-weight: 900;font-family: monospace;color: var(--accent);
+    background-color: #09131c;padding: 0px 10px 0px 19px;border-radius: 5px;}
+          .prod {border-radius:8px;width:100%;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>«Демодулятор Эффекта Фрея»</h1>
+<p style="padding-bottom: 15px;line-height: 2.3;">&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-terminal" aria-hidden="true" style="font-size: 2em;top: 8px;position: relative;"></i>
+          &nbsp;&nbsp;&nbsp;&nbsp; 
+     <b>В 1975 году исследователи (Шарп и Гроув)</b> продемонстрировали возможность распознавания 9 из 10 слов, передаваемых через СВЧ, используя модуляцию, имитирующую огибающую речевого сигнала. 
+     <br> &nbsp;&nbsp;&nbsp;&nbsp; 
+    <i class="fa fa-terminal" aria-hidden="true" style="font-size: 2em;top: 8px;position: relative;"></i>
+          &nbsp;&nbsp;&nbsp;&nbsp; Они использовали <b>импульсно-амплитудную или импульсно-позиционную модуляцию</b>, где каждый СВЧ-импульс создавал микро-«удар» (звуковую точку), а их совокупность выстраивала <b>узнаваемый речевой контур</b> в обход внешнего уха.
+    </p>
+    <img class="prod" src="https://v01na.github.io/img/demodulator.png">
+    <span class="price">ОТ ~$70 ДО $300</span>
+    <br>
+
+    <h2>Технико юридическая значимость</h2>
+
+        <div class="section">
+        <span class="section-title">1. Операциональное определение</span>
+        <div class="fact-box">
+           &nbsp;&nbsp;&nbsp;&nbsp;Система <strong>«Демодулятор Эффекта Фрея»</strong> фиксирует детерминированный акт передачи информации через механизм мультимодальной синхронизации.
+        </div>
+    </div>
+
+    <div class="section">
+        <span class="section-title">2. Техническая верификация (Аппаратный слой)</span>
+        <div class="fact-box">
+            &nbsp;&nbsp;&nbsp;&nbsp;Использование <strong>официального серийного оборудования с известными метрологическими характеристиками</strong> <!--(HackRF One, RTL-SDR v4, Tascam)--> исключает аппаратные артефакты. <br> 
+            &nbsp;&nbsp;&nbsp;&nbsp; <strong>Юридическая значимость данных гарантируется</strong> фиксацией в формате <strong>Raw Float32 Multiplex</strong>, что позволяет проводить повторную независимую экспертизу (воспроизводимость эксперимента).
+        </div>
+    </div>
+
+    <div class="section">
+        <span class="section-title">3. Алгоритмическая прозрачночть и чистота (DSP слой)</span>
+        <div class="fact-box">
+            &nbsp;&nbsp;&nbsp;&nbsp; При первичной обработке демодуляция базируется на <strong>стандартных математических методах</strong>
+            без неинтерпретируемых человеком ИИ процессов и гарантирует, что полученный <strong>аудиосигнал является прямым физическим производным от зафиксированного радиоизлучения</strong>.
+            <!--(Преобразование Гильберта, Детектирование огибающей, Кросс-корреляция).--> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <strong>Научный метод и математическая модель кросс-корреляции</strong> исключают человеческий фактор.
+        </div>
+    </div>
+
+    <div class="section">
+        <span class="section-title">4. Мультимодальная корреляция (Синхронизация)</span>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>Система «Демодулятор Эффекта Фрея» корректно доказывает наличие и отображает содержание внешнего воздействия через связку независимых каналов:</strong></p>
+        <div class="tech-specs">
+            <div class="fact-box">
+                <span class="status-dot"></span> <strong>Радиоканал:</strong> <br> Фиксация СВЧ-импульсов, соответствующих частотным окнам <strong>«Эффект Фрея»</strong>.
+            </div>
+            <div class="fact-box">
+                <span class="status-dot"></span> <strong>Акустический канал:</strong> <br> Микрофонная фиксация вибраций (микрофонный эффект), совпадающая по времени с импульсами SDR.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <span class="section-title">5. Поведенческо событийная таймлайн привязка</span>
+        <div class="fact-box">
+            <strong>Неопровержимый фактор:</strong> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<strong>Синхронизация смыслов и сущностей из демодулированной и неинтерпретированной речи</strong> с хронологией событий (<strong>Event Log</strong>) и журналом перемещений (<strong>Location Log</strong>). <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Когда содержание сигнала <!--(команды, описание действий)--> совпадает с реальными событиями и нахождением конкретных лиц в определённых радиусах, <strong>вероятность "шумовой природы" сигнала математически сводится к нулю</strong>.
+        </div>
+    </div>
+
+    <div class="section">
+        <span class="section-title">6. Статистическая значимость</span>
+        <div class="fact-box">
+            &nbsp;&nbsp;&nbsp;&nbsp; Накопленный <strong>таймлайн инцидентов</strong> позволяет выявить <strong>паттерны присутствия</strong>. 
+            <br> 
+            &nbsp;&nbsp;&nbsp;&nbsp; <strong>Регулярное появление сигнала</strong> является косвенным, но <b>неоспоримым доказательством адресного воздействия</b>.
+        </div>
+    </div>
+
+    <div class="conclusion">
+       Система переводит <strong>«Эффект Фрея»</strong> из разряда субъективных ощущений в разряд <b>объективно фиксируемых и юридически значимых физических инцидентов</b> с четкой привязкой к времени, месту и субъектам.
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; font-size: 0.8em; opacity: 0.5;">
+        DATA AUTHENTICITY VERIFIED // DIGITAL FORENSIC STANDARDS
+    </div>
+</div>
+</body>
+</html>
