@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биомаркеры воздействия DEW: Эффект Фрея и UBI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #050a0f;
+            --accent: #00f2ff;
+            --accent-dim: rgba(0, 242, 255, 0.2);
+            --text: #a0b0c0;
+            --panel-bg: rgba(10, 20, 30, 0.9);
+            --highlight: #ffcf00;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        body {
+            background-color: var(--bg);
+            background-image: radial-gradient(var(--accent-dim) 1px, transparent 1px);
+            background-size: 20px 20px;
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid var(--accent-dim);
+            padding: 30px;
+            background: var(--panel-bg);
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        .container::before {
+            content: "\f0f9";
+            position: absolute;
+            border-radius: 2px;
+            font-family: "Font Awesome 6 Free";
+            top: -10px;
+            left: 20px;
+            background: var(--accent);
+            color: #000;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .container::after {
+            content: " МЕДИЦИНСКАЯ // НЕЙРОБИОЛОГИЯ";
+            position: absolute;
+            border-radius: 2px;
+            top: -10px;
+            left: 42px;
+            background: var(--accent);
+            color: #000;
+            padding: 2px 7px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 35px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            border-left: 3px solid var(--accent-dim);
+            padding-left: 20px;
+        }
+
+        .section-title {
+            color: var(--highlight);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .fact-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .conclusion {
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px dashed var(--accent);
+            text-align: center;
+            font-size: 1.1em;
+            color: var(--accent);
+        }
+
+        .tech-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 0.9em;
+        }
+
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+            box-shadow: 0 0 5px var(--accent);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .marker-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .marker-list li:before {
+            content: "\f05d";
+            font-family: "Font Awesome 6 Free";
+            color: var(--accent);
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 2px solid var(--highlight);
+            padding-left: 15px;
+            margin: 20px 0;
+            color: #d0e0f0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <h1>Биомаркеры воздействия <b>DEW: Эффект Фрея и UBI</b></h1>
+
+   <div class="quote">
+&nbsp;&nbsp;<i class="fa fa-quote-left" aria-hidden="true"></i>
+&nbsp;&nbsp;<b>Разрушение личности дистанционно</b> — это не мгновенный процесс, а последовательная деградация нейробиологических функций человека, которая может длится годами.
+&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i>
+    </div>
+
+    <div class="quote">
+&nbsp;&nbsp;<i class="fa fa-quote-left" aria-hidden="true"></i>
+&nbsp;&nbsp;При воздействии <b>оружия направленной энергии (DEW)</b>, включая <b>инфразвук и радиочастотное излучение (Эффект Фрея)</b>, биологические маркеры соответствуют картине «нетрадиционной приобретенной травмы мозга» <b>(UBI)</b>. Эти изменения часто напоминают последствия легкой <b>ЧМТ</b>, но возникают без механического удара.
+&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i>
+    </div>
+
+    <h2>1. Маркеры повреждения нейронов</h2>
+    <div class="section">
+        <span class="section-title">Нейроспецифические белки</span>
+        <div class="fact-box">
+            <p>&nbsp;&nbsp;При интенсивном воздействии <b>микроволн (Эффект Фрея) или инфразвука</b>  в крови и ликворе могут обнаруживаться:</p>
+            <ul class="marker-list">
+                <li><strong>NSE (Нейронспецифическая енолаза):</strong> <br>
+                     Повышается при повреждении тел нейронов.</li>
+                <li><strong>UCH-L1:</strong> <br> Специфический индикатор повреждения нейрональной клеточной мембраны, возникающего вследствие <b>микропузырьковой кавитации в жидкостях черепа при импульсном СВЧ-облучении</b>.</li>
+                <li><strong>NfL (Легкие цепи нейрофиламентов):</strong> <br> Повышается при <b>аксональной дегенерации</b>, вызванной длительным воздействием <b>инфразвука или мощных ЭМ-импульсов</b>.</li>
+            </ul>
+            <p class="fact-box" style="margin-top: 15px; background: rgba(255, 0, 0, 0.05);">
+                <strong>Маркеры апоптоза:</strong> <br> 
+                После воздействия <b>инфразвука (130-135 дБ)</b> фиксируется рост нейронального <b>апоптоза в гиппокампе</b>.
+            </p>
+        </div>
+    </div>
+
+    <h2>2. Маркеры повреждения и активации глии</h2>
+    <div class="section">
+        <span class="section-title">Глиальная реакция</span>
+        <div class="fact-box">
+            <p>Глия (астроциты и микроглия) первой реагирует на электромагнитный стресс и акустическое давление:</p>
+            <div class="tech-specs">
+                <div class="fact-box">
+                    <span class="status-dot"></span> <strong>GFAP:</strong> <br> 
+                    Маркер реактивного астроцитоза. Его повышение свидетельствует о структурном повреждении мозга при DEW-воздействии.
+                </div>
+                <div class="fact-box">
+                    <span class="status-dot"></span> <strong>Iba-1:</strong> <br> 
+                    Ключевой маркер активации микроглии. Исследования показывают резкий рост экспрессии <b>Iba-1</b> и провоспалительных цитокинов <b>(IL-1β, IL-6, TNF-α)</b> в гиппокампе после воздействия <b>инфразвука</b>.
+                </div>
+            </div>
+            <p style="margin-top: 15px;">
+                <strong>S100B:</strong> <br> 
+                Указывает на повреждение астроцитов и сопутствующее <b>нарушение проницаемости гематоэнцефалического барьера (ГЭБ)</b>, которое часто сопровождает <b>акустические и микроволновые атаки</b>.
+            </p>
+        </div>
+    </div>
+
+    <h2>3. Биохимические и функциональные изменения</h2>
+    <div class="section">
+        <span class="section-title">Нейрохимические сдвиги</span>
+        <div class="fact-box">
+            <p><strong>Глутамат:</strong> <br> 
+                <b>Инфразвуковое воздействие</b> провоцирует выброс глутамата астроцитами (через каналы Cx43), что ведет к эксайтотоксичности.</p>
+            <p><strong>Нейромедиаторы:</strong> <br> Наблюдается снижение уровней дофамина и норадреналина в полосатом теле и гиппокампе.</p>
+        </div>
+        <span class="section-title">ЭЭГ-паттерны</span>
+        <div class="fact-box">
+            <p><strong>Альфа/Бета ритмы:</strong> <br> При воздействии мощного шума и частот снижается мощность бета-волн и растет альфа-активность, что коррелирует с когнитивными нарушениями.</p>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <i class="fa fa-dna" aria-hidden="true" style="margin-right: 10px;"></i>
+        Комплексное определение биомаркеров UBI позволяет объективно диагностировать воздействие DEW, переводя субъективные симптомы в область <strong>верифицируемой медицинской доказательности</strong>.
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; font-size: 0.8em; opacity: 0.5;">
+        NEUROBIOLOGICAL EVIDENCE STANDARDS // UBI DIAGNOSTIC MARKERS
+    </div>
+</div>
+
+</body>
+</html>
