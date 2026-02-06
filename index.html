@@ -15,7 +15,44 @@
       <link rel="stylesheet" href="css/restyle.css">
 </head>
 
-    <style>
+<style>
+        :root {
+            --bg: #050a0f;
+            --accent: #00f2ff;
+            --accent-dim: rgba(0, 242, 255, 0.2);
+            --text: #a0b0c0;
+            --panel-bg: rgba(10, 20, 30, 0.95);
+            --highlight: #ffcf00;
+            --critical: #ff4444;
+            --high: #ffaa00;
+            --medium: #44ff44;
+            --low: #8888ff;
+        }
+        body {
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(var(--accent-dim) 1px, transparent 1px),
+                linear-gradient(180deg, rgba(5,10,15,0.8) 0%, rgba(0,20,40,0.9) 100%);
+            background-size: 20px 20px, 100% 100%;
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid var(--accent-dim);
+            padding: 30px;
+            background: var(--panel-bg);
+            box-shadow: 0 0 80px rgba(0, 200, 255, 0.15);
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
         .container::before {
             content: "\f024";
             position: absolute;
@@ -250,7 +287,6 @@
             font-size: 2em;
         }
 </style>
-
 <style>
         /* Основной класс */
         .blink {
