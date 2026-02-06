@@ -15,25 +15,136 @@
       <link rel="stylesheet" href="css/restyle.css">
 </head>
 <style>
+        /* Основной класс */
+        .blink {
+            position: relative;
+            display: inline-block;
+            color: #00f2ff; /* Исходный цвет */
+            
+            /* Плавная смена цвета: 4 секунды, бесконечно, линейно */
+            animation: smoothColor 4s infinite linear;
+        }
 
+        /* Создаем копии текста для эффекта глюка */
+        .blink::before,
+        .blink::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0d0d0d; /* Цвет фона, чтобы перекрывать основной текст */
+        }
 
+        /* Первый слой помех (смещение влево + искажения) */
+        .blink::before {
+            left: 2px;
+            text-shadow: -1px 0 #ffaa00; /* Легкая тень для объема */
+            clip-path: inset(50% 0 30% 0);
+            animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+        }
 
-</style>
+        /* Второй слой помех (смещение вправо + другие искажения) */
+        .blink::after {
+            left: -2px;
+            text-shadow: -1px 0 #ff4444; 
+            clip-path: inset(10% 0 60% 0);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        /* 
+           Анимация ЦВЕТА 
+           0% и 100% совпадают для идеального круга
+        */
+        @keyframes smoothColor {
+            0% {
+                color: #00f2ff; /* Начало */
+            }
+            33% {
+                color: #ffaa00; /* Середина */
+            }
+            66% {
+                color: #ff4444; /* Конец */
+            }
+            100% {
+                color: #00f2ff; /* Возврат к началу */
+            }
+        }
+
+        /* 
+           Генерация ГЛЮКОВ 1
+           Рандомизированные clip-path (обрезка) и transform (сдвиг/искажение)
+        */
+        @keyframes glitch-anim-1 {
+            0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 1px) skew(2deg); }
+            5% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -1px) skew(0deg); }
+            10% { clip-path: inset(40% 0 50% 0); transform: translate(-2px, 2px) skew(-2deg); }
+            15% { clip-path: inset(80% 0 5% 0); transform: translate(1px, -2px) skew(0deg); }
+            20% { clip-path: inset(10% 0 60% 0); transform: translate(-1px, 0px) skew(0deg); }
+            25% { clip-path: inset(30% 0 20% 0); transform: translate(2px, 2px) skew(5deg); }
+            30% { clip-path: inset(50% 0 30% 0); transform: translate(-2px, -1px) skew(0deg); }
+            35% { clip-path: inset(15% 0 80% 0); transform: translate(1px, 1px) skew(-5deg); }
+            40% { clip-path: inset(70% 0 10% 0); transform: translate(-2px, 2px) skew(0deg); }
+            45% { clip-path: inset(55% 0 25% 0); transform: translate(2px, -2px) skew(2deg); }
+            50% { clip-path: inset(25% 0 65% 0); transform: translate(-1px, 1px) skew(0deg); }
+            55% { clip-path: inset(5% 0 90% 0); transform: translate(2px, 2px) skew(0deg); }
+            60% { clip-path: inset(90% 0 5% 0); transform: translate(-2px, -2px) skew(10deg); }
+            65% { clip-path: inset(35% 0 45% 0); transform: translate(1px, -1px) skew(0deg); }
+            70% { clip-path: inset(10% 0 70% 0); transform: translate(-2px, 2px) skew(-10deg); }
+            75% { clip-path: inset(65% 0 20% 0); transform: translate(2px, -2px) skew(0deg); }
+            80% { clip-path: inset(45% 0 40% 0); transform: translate(-1px, 1px) skew(2deg); }
+            85% { clip-path: inset(15% 0 65% 0); transform: translate(1px, -1px) skew(0deg); }
+            90% { clip-path: inset(85% 0 10% 0); transform: translate(-2px, 2px) skew(-2deg); }
+            95% { clip-path: inset(50% 0 30% 0); transform: translate(2px, -2px) skew(0deg); }
+            100% { clip-path: inset(10% 0 80% 0); transform: translate(-1px, 1px) skew(0deg); }
+        }
+
+        /* 
+           Генерация ГЛЮКОВ 2
+           Другой набор параметров для хаотичности
+        */
+        @keyframes glitch-anim-2 {
+            0% { clip-path: inset(10% 0 60% 0); transform: translate(2px, -2px) skew(0deg); }
+            5% { clip-path: inset(80% 0 5% 0); transform: translate(-2px, 2px) skew(-5deg); }
+            10% { clip-path: inset(30% 0 20% 0); transform: translate(2px, 1px) skew(0deg); }
+            15% { clip-path: inset(5% 0 90% 0); transform: translate(-1px, -1px) skew(5deg); }
+            20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -2px) skew(0deg); }
+            25% { clip-path: inset(40% 0 50% 0); transform: translate(-2px, 2px) skew(0deg); }
+            30% { clip-path: inset(20% 0 70% 0); transform: translate(1px, -1px) skew(-2deg); }
+            35% { clip-path: inset(90% 0 5% 0); transform: translate(-2px, 2px) skew(0deg); }
+            40% { clip-path: inset(15% 0 65% 0); transform: translate(2px, -2px) skew(2deg); }
+            45% { clip-path: inset(55% 0 25% 0); transform: translate(-1px, 1px) skew(0deg); }
+            50% { clip-path: inset(25% 0 65% 0); transform: translate(2px, 2px) skew(-5deg); }
+            55% { clip-path: inset(75% 0 10% 0); transform: translate(-2px, -2px) skew(0deg); }
+            60% { clip-path: inset(45% 0 45% 0); transform: translate(1px, -1px) skew(5deg); }
+            65% { clip-path: inset(5% 0 80% 0); transform: translate(-2px, 2px) skew(0deg); }
+            70% { clip-path: inset(65% 0 20% 0); transform: translate(2px, -2px) skew(0deg); }
+            75% { clip-path: inset(35% 0 55% 0); transform: translate(-1px, 1px) skew(-2deg); }
+            80% { clip-path: inset(10% 0 70% 0); transform: translate(2px, 2px) skew(0deg); }
+            85% { clip-path: inset(85% 0 5% 0); transform: translate(-2px, -2px) skew(2deg); }
+            90% { clip-path: inset(50% 0 30% 0); transform: translate(1px, -1px) skew(0deg); }
+            95% { clip-path: inset(20% 0 60% 0); transform: translate(-2px, 2px) skew(0deg); }
+            100% { clip-path: inset(70% 0 10% 0); transform: translate(2px, -2px) skew(-5deg); }
+        }
+    </style>
 <body>
+
 <section class="section">
     <h1 style="border-top:3px solid var(--accent);border-bottom:0;padding-bottom:0px;padding-top:35px;">
-    <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%B8%D0%B7%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%A0%D0%A4.MD" target="blank"> &nbsp;&nbsp;&nbsp;&nbsp; Про-Украинские диверсионные группы на территории РФ и Украины</a> используют телекоммуникационное ПО от <a href="https://www.keysight.com/zz/en/products/software/pathwave-design-software/pathwave-system-design-software.html" target="blank">KEYSIGHT</a> с доступом к ядру сети (Core Network) сотового оператора, и архитектуру распределённого RF-сканирования с применением Украинского ПО DELTA, устанавливая мост с Украиной через Херсонский <a href="https://www.starlink.com/" target="blank">STARLINK</a>.
+    <a href="https://github.com/cryptq/cryptq.github.io/blob/master/MD/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%B8%D0%B7%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D1%8B%20%D0%B8%20%D0%A0%D0%A4.MD" target="blank" data-text="Про-Украинские диверсионные группы на территории РФ и Украины">
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         <span class="blink"> Про-Украинские</span>
+         <span class="blink"> фашистско</span>
+               -
+         <span> диверсионные</span> 
+         <span> группы на</span>
+         <span> территории РФ и Украины</span></a> 
+         используют телекоммуникационное ПО от 
+         <a class="blink" href="https://www.keysight.com/zz/en/products/software/pathwave-design-software/pathwave-system-design-software.html" target="blank" data-text="KEYSIGHT">KEYSIGHT</a> 
+         с доступом к ядру сети <span class="blink">(Core Network)</span> сотового оператора, и архитектуру <span class="blink">распределённого RF-сканирования</span> с применением <span class="blink"> C4ISR ПО DELTA</span>, устанавливая мост с Украиной через Херсонский 
+         <a class="blink" href="https://www.starlink.com/" target="blank" data-text="STARLINK">STARLINK</a>.
     </h1>
-    <hr>
-        <img src="https://v01na.github.io/img/modSymbb.png" alt="DELTA Login Interface" style="border: 1px solid var(--accent-dim);width:100%;">
-    <hr>
-    
-    <h2><i class="fas fa-satellite-dish"></i> ДОСТУП К БАЗОВЫМ СТАНЦИЯМ И ТРАНСЛЯЦИЯ ВОЗДЕЙСТВИЯ</h2>
-    
-    <div class="fact-box">
-        <div class="model-title"><i class="fas fa-wifi"></i> МЕХАНИЗМ ДОСТУПА</div>
-        <p>Доступ к базовым станциям сотовой связи осуществляется через <b>WEB-интерфейсы</b> и <b>ПО "DELTA"</b>, а <b>«Эффект Фрея»</b> транслируется через звонки по телефону на определённые номера.</p>
-    </div>
     
     <div style="text-align: center; margin: 25px 0;">
         <img src="https://cryptq.github.io/css/DELTA_LOGIN.png" alt="DELTA Login Interface" style="width: 100%; border: 1px solid var(--accent-dim);">
