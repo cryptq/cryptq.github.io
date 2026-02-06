@@ -1,1 +1,0 @@
-Please refer to workspaces in Examples/Instruments/ for exploring linkage to measurement instruments.
