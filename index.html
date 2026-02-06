@@ -14,6 +14,243 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <link rel="stylesheet" href="css/restyle.css">
 </head>
+
+    <style>
+        .container::before {
+            content: "\f024";
+            position: absolute;
+            border-radius: 2px;
+            font-family: "Font Awesome 6 Free";
+            top: -10px;
+            left: 20px;
+            background: var(--accent);
+            color: #000;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+        .container::after {
+            content: " ГУР // СПЕЦОПЕРАЦИИ // СИСТЕМНАЯ ИНТЕГРАЦИЯ";
+            position: absolute;
+            border-radius: 2px;
+            top: -10px;
+            left: 42px;
+            background: var(--accent);
+            color: #000;
+            padding: 2px 7px;
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+        h1 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 2.2em;
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+        }
+
+        h2 {
+            color: var(--highlight);
+            margin-top: 45px;
+            padding-left: 15px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .section {
+            margin-bottom: 35px;
+            border: 1px solid var(--accent-dim);
+            padding: 25px;
+            background: rgba(5, 15, 25, 0.6);
+            border-radius: 5px;
+        }
+
+        .section-title {
+            color: var(--accent);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            display: block;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+
+        /* Таблица систематизации */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+        }
+
+        .spec-table th {
+            background: rgba(0, 30, 60, 0.9);
+            color: var(--accent);
+            text-transform: uppercase;
+            padding: 18px 12px;
+            text-align: left;
+            border: 1px solid var(--accent-dim);
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .spec-table td {
+            padding: 16px 12px;
+            border: 1px solid var(--accent-dim);
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        .spec-table tr:nth-child(even) {
+            background: rgba(10, 25, 40, 0.4);
+        }
+
+        .spec-table tr:hover {
+            background: rgba(0, 100, 150, 0.15);
+            transition: background 0.3s;
+        }
+
+        .unit-number {
+            text-align: center;
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 1.1em;
+            width: 50px;
+        }
+
+        .unit-name {
+            color: var(--highlight);
+            font-weight: bold;
+        }
+
+        .priority-level {
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 3px;
+            display: inline-block;
+            font-size: 0.85em;
+        }
+
+        .priority-max {
+            background: rgba(255, 68, 68, 0.15);
+            color: var(--critical);
+            border: 1px solid var(--critical);
+        }
+
+        .priority-high {
+            background: rgba(255, 170, 0, 0.15);
+            color: var(--high);
+            border: 1px solid var(--high);
+        }
+
+        .priority-medium {
+            background: rgba(68, 255, 68, 0.15);
+            color: var(--medium);
+            border: 1px solid var(--medium);
+        }
+
+        .priority-low {
+            background: rgba(136, 136, 255, 0.15);
+            color: var(--low);
+            border: 1px solid var(--low);
+        }
+
+        .operational-value {
+            color: #d0e0ff;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .fact-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .integration-model {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .model-level {
+            background: rgba(0, 30, 50, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            border-top: 3px solid var(--accent);
+        }
+
+        .model-title {
+            color: var(--highlight);
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .model-title i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+
+        .status-dot {
+            height: 12px;
+            width: 12px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            box-shadow: 0 0 8px var(--accent);
+        }
+
+        .conclusion {
+            margin-top: 50px;
+            padding: 30px;
+            border: 2px dashed var(--accent);
+            text-align: center;
+            font-size: 1.2em;
+            color: var(--accent);
+            background: rgba(0, 40, 80, 0.3);
+            border-radius: 5px;
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 3px solid var(--highlight);
+            padding-left: 20px;
+            margin: 25px 0;
+            color: #d0e0f0;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            background: rgba(0, 100, 200, 0.2);
+            color: var(--accent);
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin: 2px;
+            border: 1px solid rgba(0, 200, 255, 0.3);
+        }
+
+        .chain-link {
+            text-align: center;
+            margin: 20px 0;
+            color: var(--accent);
+            font-size: 2em;
+        }
+</style>
+
 <style>
         /* Основной класс */
         .blink {
@@ -390,6 +627,168 @@
         <p>Мы создали «анти-систему», которая зеркалит Delta-Black, но работает на уровень глубже. Если Delta обеспечивает ситуационную осведомленность, то ваша связка обеспечивает ситуационное доминирование, превращая свободную волю членов ОПС в предсказуемый алгоритм.</p>
     </div>
 </section>
+
+
+<div class="container">
+    <h1>СИСТЕМАТИЗАЦИЯ: СПЕЦПОДРАЗДЕЛЕНИЕ GHOST, STARLINK И ИНТЕГРАЦИЯ С DELTA</h1>
+
+    <div class="quote">
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+        &nbsp;&nbsp;Подразделение «Ghost» (Призрак) является приоритетным получателем верификации и технических исключений в системе Starlink. 
+        Их деятельность в глубоком тылу обеспечивается прямыми каналами Минобороны, цифровыми сертификатами Delta и снятием геоограничений, 
+        формируя замкнутый контур управления и разведки для высокоточных операций.
+        <i class="fa fa-quote-right" aria-hidden="true"></i>
+    </div>
+
+    <div class="section">
+        <span class="section-title"><i class="fa fa-table" aria-hidden="true"></i> Систематизация ключевых элементов</span>
+        <p>Следующая таблица формализует структуру, возможности и приоритеты подразделения «Ghost» в контексте использования Starlink и системы Delta.</p>
+        
+        <table class="spec-table">
+            <thead>
+                <tr>
+                    <th width="50">№</th>
+                    <th width="200">Элемент / Аспект</th>
+                    <th width="250">Назначение / Описание</th>
+                    <th width="150">Приоритет / Статус</th>
+                    <th>Операционная значимость</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="unit-number">1</td>
+                    <td class="unit-name">Подразделение «GHOST»<br><span class="tech-badge">ГУР МО</span><span class="tech-badge">СпН</span></td>
+                    <td>Элитная группа специального назначения ГУР, специализирующаяся на высокоточных операциях в глубоком тылу</td>
+                    <td><span class="priority-level priority-max">МАКСИМАЛЬНЫЙ</span></td>
+                    <td class="operational-value">Основная действующая единица в Херсонской области и других "серых зонах". Имеет высший приоритет на получение ресурсов и верификации.</td>
+                </tr>
+                <tr>
+                    <td class="unit-number">2</td>
+                    <td class="unit-name">Терминалы Starlink<br><span class="tech-badge">МО Каналы</span><span class="tech-badge">Белый список</span></td>
+                    <td>Устройства связи, получаемые напрямую через Минобороны, внесённые в "белый список" до передачи бойцам</td>
+                    <td><span class="priority-level priority-high">ВЫСОКИЙ</span></td>
+                    <td class="operational-value">Критический канал связи и передачи данных. Каждое устройство привязано к уникальному цифровому сертификату в системе Delta, что исключает несанкционированный доступ.</td>
+                </tr>
+                <tr>
+                    <td class="unit-number">3</td>
+                    <td class="unit-name">Цифровой сертификат Delta<br><span class="tech-badge">Верификация</span><span class="tech-badge">Идентификация</span></td>
+                    <td>Уникальная цифровая привязка терминала к подразделению и оператору в системе Delta</td>
+                    <td><span class="priority-level priority-max">МАКСИМАЛЬНЫЙ</span></td>
+                    <td class="operational-value">Формирует доверенную среду. Гарантирует, что данные и целеуказания поступают только верифицированным группам. Основа для снятия геоограничений.</td>
+                </tr>
+                <tr>
+                    <td class="unit-number">4</td>
+                    <td class="unit-name">Снятие геоограничений<br><span class="tech-badge">Геофенсинг</span><span class="tech-badge">Исключение</span></td>
+                    <td>Техническое исключение, разрешающее работу терминала в координатах, заблокированных для гражданских устройств</td>
+                    <td><span class="priority-level priority-high">ВЫСОКИЙ</span></td>
+                    <td class="operational-value">Позволяет группе "Ghost" работать в глубоком тылу (в т.ч. в Тимирязевском лесу, Херсонской обл.), где обычный Starlink неактивен. Обеспечивается через координацию ГУР с высшим командованием и SpaceX.</td>
+                </tr>
+                <tr>
+                    <td class="unit-number">5</td>
+                    <td class="unit-name">Режим скрытности<br><span class="tech-badge">РЭБ</span><span class="tech-badge">Маскировка</span></td>
+                    <td>Специальные настройки/модификации для минимизации радиоизлучения терминала</td>
+                    <td><span class="priority-level priority-medium">СРЕДНИЙ</span></td>
+                    <td class="operational-value">Критически важен для операций в тылу для избежания обнаружения средствами радиоэлектронной борьбы (РЭБ) РФ. Повышает выживаемость группы.</td>
+                </tr>
+                <tr>
+                    <td class="unit-number">6</td>
+                    <td class="unit-name">Интеграция с Delta<br><span class="tech-badge">Целеуказание</span><span class="tech-badge">Аэроразведка</span></td>
+                    <td>Получение данных разведки и точных координат целей в реальном времени через систему Delta</td>
+                    <td><span class="priority-level priority-max">МАКСИМАЛЬНЫЙ</span></td>
+                    <td class="operational-value">Ключевой операционный элемент. Превращает группу в высокоточный инструмент. Без этого канала эффективность диверсионно-разведывательных задач резко падает.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2><i class="fa fa-link" aria-hidden="true"></i> ИНТЕГРИРОВАННАЯ ОПЕРАЦИОННАЯ МОДЕЛЬ</h2>
+    
+    <div class="integration-model">
+        <div class="model-level">
+            <div class="model-title"><i class="fa fa-user-secret"></i> ПОДРАЗДЕЛЕНИЕ И ВЕРИФИКАЦИЯ</div>
+            <p><span class="status-dot"></span> Приоритетный статус ГУР</p>
+            <ul>
+                <li>Подразделение «Ghost» (Призрак)</li>
+                <li>Прямые каналы поставки от Минобороны</li>
+                <li>Терминалы в «белом списке» до передачи</li>
+                <li>Привязка к цифровому сертификату Delta</li>
+            </ul>
+        </div>
+        
+        <div class="chain-link"><i class="fa fa-arrow-right"></i></div>
+        
+        <div class="model-level">
+            <div class="model-title"><i class="fa fa-satellite"></i> ТЕХНИЧЕСКИЕ ВОЗМОЖНОСТИ</div>
+            <p><span class="status-dot"></span> Снятие ограничений</p>
+            <ul>
+                <li>Работа в зонах геофенсинга (Тимирязевский лес, Херсонская обл.)</li>
+                <li>Режим минимизации излучения (против РЭБ)</li>
+                <li>Верифицированный доступ к сети Starlink</li>
+            </ul>
+        </div>
+        
+        <div class="chain-link"><i class="fa fa-arrow-right"></i></div>
+        
+        <div class="model-level">
+            <div class="model-title"><i class="fa fa-bullseye"></i> БОЕВОЕ ПРИМЕНЕНИЕ</div>
+            <p><span class="status-dot"></span> Интеграция с разведкой</p>
+            <ul>
+                <li>Получение данных аэроразведки в реальном времени</li>
+                <li>Точное целеуказание через систему Delta</li>
+                <li>Выполнение диверсионно-разведывательных задач</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fact-box">
+        <div class="model-title"><i class="fa fa-exclamation-triangle"></i> ТАКТИЧЕСКИЕ ОГРАНИЧЕНИЯ И НЮАНСЫ</div>
+        <p><strong>1. Работа в Тимирязевском лесу (рядом с домом Галкова А.В.):</strong> Технически возможна благодаря снятию геоограничений, но оценивается как <strong>тактически рискованная</strong> из-за близости к объекту внимания и потенциальной возможности противодействия.</p>
+        <p><strong>2. Ограничение SpaceX (Dual-use restrictions):</strong> Даже для ГУР сохраняется запрет на использование Starlink для <strong>непосредственного управления дальнобойными ударными платформами (дронами-камикадзе)</strong>, летящими вглубь территории РФ. Это нарушение условий использования сервиса.</p>
+        <p><strong>3. Разрешенное использование:</strong> Ограничений <strong>практически нет</strong> для связи, управления группами на земле, передачи данных разведки и координации операций на оккупированных территориях (например, Херсонская область).</p>
+    </div>
+
+    <h2><i class="fa fa-cogs" aria-hidden="true"></i> ЗОНА ОТВЕТСТВЕННОСТИ И КООРДИНАЦИЯ</h2>
+    
+    <div class="section">
+        <div class="tech-specs" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="fact-box">
+                <span class="section-title">ХЕРСОНСКАЯ ОБЛАСТЬ</span>
+                <ul>
+                    <li>Основная зона деятельности подразделения «Ghost»</li>
+                    <li>«Серая зона» / территория активных боевых действий</li>
+                    <li>Требует постоянного доступа к данным Delta и связи Starlink</li>
+                    <li>Геоограничения сняты по согласованию с SpaceX</li>
+                </ul>
+            </div>
+            <div class="fact-box">
+                <span class="section-title">СИСТЕМА DELTA</span>
+                <ul>
+                    <li>Цифровой сертификат — ключ доступа для терминала</li>
+                    <li>Канал для данных аэроразведки и целеуказания</li>
+                    <li>Обеспечивает верификацию «свой-чужой» на техническом уровне</li>
+                    <li>Интеграция — критическое условие эффективности «Ghost»</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <i class="fa fa-project-diagram" aria-hidden="true" style="margin-right: 15px; font-size: 1.5em;"></i>
+        Спецподразделение «Ghost» функционирует как высокоинтегрированный элемент в контуре ГУР–Starlink–Delta. 
+        <strong>Приоритетный доступ, снятые геоограничения и прямая связь с системой разведки</strong> трансформируют его из обычной группы в инструмент 
+        высокоточного силового воздействия в глубоком тылу, действующий в рамках установленных технических и договорных ограничений.
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; font-size: 0.85em; opacity: 0.7; letter-spacing: 1px;">
+        ГУР MO УКРАЇНИ // SPECIAL OPERATIONS // STARLINK-DELTA INTEGRATION // GHOST UNIT PROTOCOL
+    </div>
+</div>
+
+
+
+
+
+  
 
 <section class="section">
     <h1 style="text-align: center;"><i class="fas fa-wave-square"></i> ДЕМОДУЛЯТОР ЭФФЕКТА ФРЕЯ</h1>
