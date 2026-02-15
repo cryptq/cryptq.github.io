@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имеющиеся доказательства</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #050a0f;
+            --accent: #00f2ff;
+            --accent-dim: rgba(0, 242, 255, 0.2);
+            --text: #a0b0c0;
+            --panel-bg: rgba(10, 20, 30, 0.9);
+            --highlight: #ffcf00;
+        }::-webkit-scrollbar{width:0px;}
+
+        body {
+            background-color: var(--bg);
+            background-image: radial-gradient(var(--accent-dim) 1px, transparent 1px);
+            background-size: 20px 20px;
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid var(--accent-dim);
+            padding: 30px;
+            background: var(--panel-bg);
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        .container::before {
+            content: "\f519";
+            position: absolute;border-radius:2px;
+            font-family: "Font Awesome 6 Free";
+            top: -10px;left: 20px;
+            background: var(--accent);
+            color: #000;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .container::after {
+         content: " КРИМИНАЛИСТИЧЕСКИЙ // ПАКЕТ";
+         position: absolute;
+         border-radius: 2px;
+         top: -10px;
+         left: 42px;
+         background: var(--accent);
+         color: #000;
+         padding: 2px 7px;
+         font-size: 10px;
+         font-weight: bold;
+        }
+
+        h1 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 35px;
+            border-left: 4px solid var(--highlight);
+            padding-left: 15px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            border-left: 3px solid var(--accent-dim);
+            padding-left: 20px;
+        }
+
+        .section-title {
+            color: var(--highlight);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+
+        .evidence-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 18px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border: 1px solid rgba(0, 242, 255, 0.1);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 0.9em;
+        }
+
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            box-shadow: 0 0 5px var(--accent);
+        }
+
+        .category {
+            color: var(--highlight);
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 1.2em;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--accent-dim);
+        }
+
+        .file-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .file-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(160, 176, 192, 0.2);
+        }
+
+        .file-list li:before {
+            content: "\f15c";
+            font-family: "Font Awesome 6 Free";
+            margin-right: 10px;
+            color: var(--accent);
+            font-size: 0.9em;
+        }
+
+        .conclusion {
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px dashed var(--accent);
+            text-align: center;
+            font-size: 1.1em;
+            color: var(--accent);
+            background: rgba(0, 242, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2 class="section-title">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-terminal"></i>
+    </h2>
+
+    <div class="section">
+        <div class="evidence-box">
+            <strong> • УЛИКИ</strong><br>
+        — Это <b>совокупность</b> фактических <b>данных</b>,<br>
+         полученных <b>из разрозненных источников</b>, 
+         обладающих <b>потенциальной связью</b> с событием.
+        </div>
+        
+        <div class="evidence-box">
+            <strong> • ДОКАЗАТЕЛЬСТВА</strong><br>
+        — Это <b>результаты верификации и систематизации</b> фактов,<br>
+             подтверждающие их достоверность,
+             относимость и <b>взаимную логическую связь</b> в рамках дела.
+        </div>
+        
+        <div class="evidence-box">
+            <strong> • ВЕРДИКТ</strong><br>
+        — Это <b>итоговое решение</b>,<br> 
+        основанное на полной реконструкции событий 
+        и всестороннем анализе всей <b>совокупности доказательств</b>.
+        </div>
+    </div>
+
+    <h1>ИМЕЮЩИЕСЯ ДОКАЗАТЕЛЬСТВА</h1>
+
+    <div class="section">
+        <span class="section-title">ОСНОВНОЙ МАТЕРИАЛ</span>
+        <div class="tech-grid">
+            <div class="evidence-box">
+                <span class="status-dot"></span> <strong>62 ВИДЕО (десятки часов)</strong><br>
+                Хронологически синхронизированные записи инцидентов.
+            </div>
+            <div class="evidence-box">
+                <span class="status-dot"></span> <strong>30 АУДИОЗАПИСЕЙ</strong><br>
+                Исходные файлы в lossless-форматах, метаданные сохранены.
+            </div>
+            <div class="evidence-box">
+                <span class="status-dot"></span> <strong>25 СООБЩЕНИЙ</strong><br>
+                Текстовые и мультимедийные коммуникации.
+            </div>
+            <div class="evidence-box">
+                <span class="status-dot"></span> <strong>25 ОФИЦИАЛЬНЫХ ДОКУМЕНТОВ</strong><br>
+                Включая документы от «ФСБ». <br> Штампы, печати, регистрационные номера.
+            </div>
+        </div>
+    </div>
+
+    <h2>СЕТЕВАЯ И РАДИОТЕХНИЧЕСКАЯ ИНФОРМАЦИЯ</h2>
+
+    <div class="section">
+        <div class="evidence-box">
+            <strong>I/Q-записи SDR (широкополосные)</strong><br>
+            Формат:<!--raw I/Q--> <b>Raw Float32 Multiplex</b>, sample rate, имя файла + <b>UTC</b> метка начала/конца.
+        </div>
+        
+        <div class="evidence-box">
+            <strong>Спектрограммы/Waterfall</strong><br>
+            Оригинальные файлы (не сжатые). Указаны: центр частоты, ширина, оборудование.
+        </div>
+        
+        <div class="evidence-box">
+            <strong>Логи сетевой инфраструктуры</strong><br>
+            • <b>eNodeB/gNodeB</b> (<b>RAN</b> management logs): <b>timestamps, IP/port</b>, конфиги.<br>
+            • Core logs (<b>MME/AMF, HSS/UDM, SGSN, GGSN, PGW, S/PGW</b>): signalling traces (<b>GTP, Diameter, SIP, SS7</b>).
+        </div>
+        
+        <div class="evidence-box">
+            <strong>Логи устройств и трафика</strong><br>
+            • <b>Web/API access logs</b> устройств <b>(Keysight/Ixia): /var/log/*, access.log, auth.log, backup конфиги</b>.<br>
+            • <b>Netflow/PCAP</b> с внешними туннелями (<b>Starlink/внешние IP</b>). <b>PCAP</b> сохранен в оригинале.
+        </div>
+    </div>
+
+    <h2>C. УСТРОЙСТВА И АБОНЕНТСКИЕ ДАННЫЕ</h2>
+    
+    <div class="section">
+        <div class="evidence-box">
+            <strong>Срезы <b>call detail records</b> (<b>CDR</b>)</strong><br>
+            Номера, <b>Timestamps, IMSI/IMEI, cell id, TA, RSSI</b>.
+        </div>
+        
+        <div class="evidence-box">
+            <strong>Метаданные и изменения</strong><br>
+            Изменения <b>IMEI/SIM/синонимы</b>, факт смены <b>SIM</b> (официальный отчёт оператора).
+        </div>
+    </div>
+
+    <h2>D. МЕДИЦИНСКАЯ ЧАСТЬ</h2>
+    
+    <div class="section">
+        <div class="evidence-box">
+            <strong>Визуализация (<b>DICOM</b>)</strong><br>
+            Файлы <b>DTI/dMRI/fMRI</b> + заключение врача.
+        </div>
+        
+        <div class="evidence-box">
+            <strong>Аудиологические результаты</strong><br>
+            Протоколы исследований слуха и вестибулярного аппарата.
+        </div>
+    </div>
+
+    <h2>E. ЮРИДИЧЕСКИЙ ПАКЕТ</h2>
+    
+    <div class="section">
+        <div class="evidence-box">
+            <strong>Официальные обращения</strong><br>
+            • Письменное заявление с регистрацией (МВД).<br>
+            • Копии обращений к оператору, ФСБ с отметками о получении.
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <strong>КОМПЛЕКС ДОКАЗАТЕЛЬСТВ</strong> сформирован по категориям, обеспечивающим верификацию на техническом, медицинском и юридическом уровнях.<br>
+        Все данные имеют временные метки и могут быть подвергнуты <b>перекрёстной проверке</b>.
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; font-size: 0.8em; opacity: 0.5;">
+        FORENSIC DATA PACKAGE // MULTIMODAL EVIDENCE COLLECTION
+    </div>
+</div>
+
+</body>
+</html>
