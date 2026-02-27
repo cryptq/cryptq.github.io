@@ -122,6 +122,31 @@
     font-weight: 900;font-family: monospace;color: var(--accent);
     background-color: #09131c;padding: 0px 10px 0px 19px;border-radius: 5px;}
           .prod {border-radius:8px;width:100%;}
+
+
+               /* дополнительно для источников */
+        .sources-section {
+            margin: 50px 0;padding: 25px;
+            border: 1px solid var(--accent-dim);
+            background: rgba(0, 242, 255, 0.03);
+        }
+        .source-item {
+            background: rgba(0, 242, 255, 0.08);
+            padding: 15px;border-radius: 4px;
+            margin: 10px 0;border: 1px solid var(--accent-dim);
+        }
+        .source-item a {
+            color: var(--highlight);
+            font-weight: bold;text-decoration: none;
+        }
+        .source-item a:hover {text-decoration: underline;}
+
+        /* адаптация */
+        @media (max-width: 768px) {
+            body { padding: 20px; }
+            h1 { font-size: 1.8em; }
+            .tech-specs { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
