@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Основной CSS (без изменений) -->
+    <!-- Основной CSS -->
     <link rel="stylesheet" href="https://cryptq.github.io/css/main.css">
     <!-- Дополнительные стили для улучшенной версии -->
     <style>
@@ -300,6 +300,22 @@
         .content {
             padding: 40px;
         }
+
+        /* === Дополнительные классы для растягивания элементов на всю ширину === */
+        .hero-fullwidth {
+            margin-left: -40px;
+            margin-right: -40px;
+            margin-top: -40px;      /* поднимаем hero до верхней границы .container */
+            margin-bottom: 40px;     /* сохраняем вертикальный отступ после hero */
+            width: auto;
+        }
+        .fullwidth-image {
+            display: block;
+            margin-left: -25px;      /* компенсируем padding .intro-text (25px) */
+            margin-right: -25px;
+            width: calc(100% + 50px);
+            max-width: none;
+        }
     </style>
 </head>
 <body>
@@ -333,8 +349,8 @@
     <!-- Основной контент (с отступами внутри .content) -->
     <main id="main" class="container">
         <div class="content">
-            <!-- Hero секция -->
-            <section class="hero">
+            <!-- Hero секция (теперь на всю ширину) -->
+            <section class="hero hero-fullwidth">
                 <picture>
                     <source media="(max-width: 768px)" srcset="https://cryptq.github.io/css/zersetzung2.0_2.png">
                     <img class="hero-desktop" src="https://cryptq.github.io/css/zersetzung.2026.png" alt="Zersetzung 2.0 обложка">
@@ -378,7 +394,8 @@
 
             <section id="infrastructure" class="intro-text" style="margin-top: 40px; margin-bottom: 20px;">
                 <h2 style="color: var(--accent); margin-top: 0; border-left: 3px solid var(--accent); padding-left: 15px;">Инфраструктура как оружие: скрытые возможности сетей связи</h2>
-                <img class="hero-desktop" style="width:100%;" src="https://cryptq.github.io/css/isac.jpg" alt="isac">
+                <!-- Изображение isac.jpg на всю ширину контейнера -->
+                <img class="fullwidth-image" src="https://cryptq.github.io/css/isac.jpg" alt="isac">
                 <p><span class="term" data-tooltip="Дистанционное разрушение личности">Разрушение личности дистанционно</span> — это не мгновенный процесс, а последовательная деградация нейробиологических функций человека, которая может длиться годами.</p>
                 <p>Современная <span class="acronym">БС сотовой связи</span> — это не просто антенна для звонков, а мощный радар с миллиметровой точностью и программное обеспечение, позволяющее управлять этим радаром как угодно. С её помощью можно:</p>
                 <ul style="list-style-type: none; padding-left: 0;">
@@ -990,14 +1007,14 @@
             <!-- Заключение -->
             <section class="conclusion">
                 <strong>АНАЛИЗ И ВЫВОДЫ:</strong><br>
-                Концепции <span class="term">Чарли Армстронга Адамса</span>, описанные в трилогии <span class="term">«Zersetzung 2.0»</span>, <span class="term">«Gang-Stalking»</span> и <span class="term">«COINTELPRO 5.0»</span>, 
+                Концепции <span class="term">Чарли Армстронга Адамса</span>, описанные в трилогии «<span class="term">Zersetzung 2.0</span>», «<span class="term">Gang-Stalking</span>» и «<span class="term">COINTELPRO 5.0</span>», 
                 представляют собой методологическую основу для трансформации психологических методов воздействия в <span class="term">автоматизированные системы контроля</span>. 
                 Интеграция этих концепций с современными системами управления и разведки (<span class="acronym">CJADC2</span>, <span class="acronym">C4ISR</span>, <span class="acronym">ISAC</span>, <span class="acronym">DELTA</span>) создает принципиально новую парадигму 
                 социального контроля, где инфраструктура связи становится одновременно инструментом наблюдения, воздействия и управления. 
-                Ключевым отличием <span class="term">«Zersetzung 2.0»</span> от классических методов является переход от дискретных актов психологического давления к непрерывному, 
+                Ключевым отличием <span class="term">Zersetzung 2.0</span> от классических методов является переход от дискретных актов психологического давления к непрерывному, 
                 автоматизированному процессу социального инжиниринга, интегрированному в общую архитектуру <span class="term">информационно-психологических операций</span>.
                 <br><br>
-                Феномен <span class="term">«Targeted Individuals»</span> объединяет исторические precedents <span class="term">(COINTELPRO, MKUltra)</span> <br>
+                Феномен <span class="term">Targeted Individuals</span> объединяет исторические precedents <span class="term">(COINTELPRO, MKUltra)</span> <br>
                 с современными технологиями направленной энергии, нейромониторинга и психотронного воздействия. 
                 Хотя часть западного академического сообщества до сих пор относится к заявлениям <span class="acronym">TI</span> скептически, <span class="term">Российская правовая наука, в лице профессора Г.П. Лозовитской, уже в 2017 году предметно поставила вопрос о криминализации этих деяний</span>. Существующие патенты, военные разработки и, что важнее, работы авторитетных ученых из Академии управления МВД России, указывают на реальность угрозы и необходимость перехода от дискуссии о существовании феномена к созданию системы защиты и правовой квалификации таких преступлений.
 
