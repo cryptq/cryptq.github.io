@@ -1,0 +1,505 @@
+        :root {
+            --bg: #050a0f;
+            --accent: #0066ff;
+            --accent-dim: rgba(0, 102, 255, 0.2);
+            --text: #a0b0c0;
+            --panel-bg: rgba(10, 20, 30, 0.95);
+            --highlight: #ffcc00;
+            --warning: #ff3333;
+            --warning-dim: rgba(255, 51, 51, 0.1);
+            --system-blue: #0066ff;
+            --system-green: #00cc66;
+            --system-orange: #ff9900;
+            --system-purple: #9966ff;
+
+            --border-radius: 4px;
+            --card-bg: rgba(0, 102, 255, 0.05);
+            --card-border: 1px solid var(--accent-dim);
+            --transition: 0.3s;
+        }
+
+        ::-webkit-scrollbar { width: 0; }
+
+        body {
+            background-color: var(--bg);
+            background-image: radial-gradient(var(--accent-dim) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(5, 10, 25, 0.9), rgba(2, 5, 15, 0.95));
+            background-size: 20px 20px, 100% 100%;
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 40px auto;
+            border: 1px solid var(--accent-dim);
+            background: var(--panel-bg);
+            box-shadow: 0 0 60px rgba(0, 102, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "\f085";
+            position: absolute;
+            font-family: "Font Awesome 6 Free";
+            top: 10px;
+            left: 20px;
+            background: var(--accent);
+            color: #fff;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 2px;
+            z-index: 10;
+        }
+
+        .container::after {
+            content: " СИСТЕМНАЯ ИНТЕГРАЦИЯ // ZERSETZUNG 2.0";
+            position: absolute;
+            top: 10px;
+            left: 42px;
+            background: var(--accent);
+            color: #fff;
+            padding: 2px 7px;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 2px;
+            z-index: 10;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border-bottom: 1px solid var(--accent-dim);
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(1.1) saturate(1.1);
+        }
+
+        .hero-mobile {
+            display: none;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(5, 10, 20, 0.95), transparent);
+            padding: 30px;
+            color: white;
+        }
+
+        h1 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2.8em;
+            margin: 0 0 10px;
+            text-shadow: 0 0 15px rgba(0, 102, 255, 0.5);
+        }
+
+        .hero-subtitle {
+            color: var(--highlight);
+            font-size: 1.4em;
+            font-weight: 300;
+            line-height: 1.6;
+            text-shadow: 0 0 5px rgba(255, 204, 0, 0.3);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        h2 {
+            color: var(--accent);
+            border-left: 3px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: var(--highlight);
+            margin-top: 30px;
+            border-bottom: 1px dashed rgba(255, 204, 0, 0.3);
+            padding-bottom: 8px;
+            font-size: 1.3em;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            padding: 25px;
+            border: 1px dashed var(--accent-dim);
+            line-height: 1.8;
+            background: rgba(0, 102, 255, 0.03);
+            border-radius: var(--border-radius);
+        }
+
+        /* Карточки */
+        .systems-grid,
+        .term-grid,
+        .tech-grid {
+            display: grid;
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .systems-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+        .term-grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+        .tech-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+        .system-card,
+        .term-card,
+        .tech-item,
+        .source-item,
+        .fact-box {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            border: var(--card-border);
+            transition: transform var(--transition), box-shadow var(--transition);
+            position: relative;
+        }
+
+        .system-card:hover,
+        .term-card:hover,
+        .tech-item:hover,
+        .source-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 102, 255, 0.15);
+        }
+
+        .system-card.cjdc2 { border-top: 4px solid var(--system-blue); }
+        .system-card.c4isr { border-top: 4px solid var(--system-green); }
+        .system-card.isac { border-top: 4px solid var(--system-orange); }
+        .system-card.delta { border-top: 4px solid var(--system-purple); }
+
+        .term-card {
+            background: rgba(255, 204, 0, 0.05);
+            border-top: 4px solid var(--highlight);
+        }
+
+        .system-title {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .system-code {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 102, 255, 0.1);
+            color: var(--accent);
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        /* Вкладки */
+        .concept-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--accent-dim);
+        }
+
+        .tab {
+            padding: 15px 25px;
+            background: rgba(0, 102, 255, 0.05);
+            border: 1px solid transparent;
+            cursor: pointer;
+            color: var(--text);
+            transition: all var(--transition);
+            font-weight: bold;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+
+        .tab.active {
+            background: rgba(0, 102, 255, 0.15);
+            color: var(--accent);
+            border-color: var(--accent-dim);
+            border-bottom-color: var(--accent);
+        }
+
+        .tab:hover:not(.active) {
+            background: rgba(0, 102, 255, 0.1);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 30px;
+            background: rgba(0, 102, 255, 0.03);
+            border: 1px solid var(--accent-dim);
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+        }
+
+        .tab-content.active { display: block; }
+
+        /* Таблицы */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            padding: 16px 12px;
+            border: 1px solid var(--accent-dim);
+            vertical-align: top;
+            line-height: 2;
+        }
+
+        th {
+            background: rgba(0, 102, 255, 0.1);
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) { background: rgba(0, 102, 255, 0.03); }
+        tr:hover { background: rgba(0, 102, 255, 0.08); }
+
+        /* Специфические таблицы */
+        .comparison-table th {
+            background: rgba(255, 204, 0, 0.1);
+            color: var(--highlight);
+        }
+
+        .integration-table td { vertical-align: top; }
+
+        /* Системные теги */
+        .system-tag {
+            display: inline-block;
+            background: rgba(0, 102, 255, 0.1);
+            color: var(--accent);
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin: 2px;font-weight:900;
+            border: 1px solid rgba(0, 102, 255, 0.3);
+        }
+
+        .system-tag.cjdc2 { background: rgba(0, 102, 255, 0.15); color: var(--system-blue); }
+        .system-tag.c4isr { background: rgba(0, 204, 102, 0.15); color: var(--system-green); }
+        .system-tag.isac { background: rgba(255, 153, 0, 0.15); color: var(--system-orange); }
+        .system-tag.delta { background: rgba(153, 102, 255, 0.15); color: var(--system-purple); }
+
+        /* Глоссарий, термины, акронимы */
+        .term {
+            color: var(--highlight);
+            font-weight: bold;
+            background: rgba(255, 204, 0, 0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+            border: 1px solid rgba(255, 204, 0, 0.2);
+        }
+
+        .acronym {
+            color: var(--accent);
+            font-weight: bold;
+            background: rgba(0, 102, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 102, 255, 0.2);
+        }
+
+        /* Статус-точка */
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            box-shadow: 0 0 5px var(--accent);
+        }
+
+        /* Секция источников */
+        .sources-section {
+            margin: 50px 0;
+            padding: 25px;
+            border: var(--card-border);
+            background: rgba(0, 102, 255, 0.03);
+            border-radius: var(--border-radius);
+        }
+
+        .sources-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .source-item a {
+            color: var(--highlight);
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .source-item a:hover {
+            text-decoration: underline;
+            color: #ffdb4d;
+        }
+
+        .source-description {
+            color: #d0e0ff;
+            font-size: 0.9em;
+            line-height: 1.9;
+        }
+
+        /* Заключение (красный блок) */
+        .conclusion {
+            margin-top: 50px;
+            padding: 30px;
+            border: 2px solid var(--warning);
+            text-align: center;
+            font-size: 1.1em;
+            color: #ff6666;
+            background: var(--warning-dim);
+            border-radius: var(--border-radius);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .conclusion::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--warning), #ff6666, var(--warning));
+        }
+
+        .conclusion strong {
+            color: var(--warning);
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Футер */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            opacity: 0.7;
+            border-top: 1px solid var(--accent-dim);
+            padding-top: 20px;
+            color: #88aadd;
+        }
+
+        /* Ссылки */
+        a {
+            color: #4d94ff;
+        }
+        a:hover {
+            color: #80b3ff;
+        }
+
+        /* Мобильная адаптация */
+        @media (max-width: 768px) {
+            .hero {
+                height: 300px;
+            }
+            .hero-desktop {
+                display: none;
+            }
+            .hero-mobile {
+                display: block;
+            }
+            .hero-overlay {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+            .content {
+                padding: 20px;
+            }
+            .tab {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+            .term-grid,
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+            .container::before,
+            .container::after {
+                font-size: 8px;
+                top: 8px;
+            }
+            .container::before {
+                left: 10px;
+                padding: 2px 8px;
+            }
+            .container::after {
+                left: 32px;
+                padding: 2px 5px;
+            }
+        }
+
+        .fact-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border-left: 3px solid var(--accent);
+        }
+
+        .tech-item strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .legal-list {
+            padding-left: 20px;
+        }
+
+        .legal-list li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        .legal-list strong {
+            color: var(--highlight);
+        }
+
+        .section-title {
+            color: var(--highlight);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 25px 0 15px 0;
+            display: block;
+            font-size: 1.1em;
+        }
