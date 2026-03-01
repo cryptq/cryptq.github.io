@@ -14,326 +14,95 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Основной CSS -->
-    <link rel="stylesheet" href="https://cryptq.github.io/css/main.css">
+    <link rel="stylesheet" href="main1.css">
     <!-- Дополнительные стили для улучшенной версии -->
-    <style>
-        /* === Дополнительные стили (сохраняют общую стилистику) === */
-
-        /* Ссылка для пропуска навигации (accessibility) */
-        .skip-to-main {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--accent);
-            color: #fff;
-            padding: 8px;
-            z-index: 1000;
-            text-decoration: none;
-        }
-        .skip-to-main:focus {
-            top: 0;
+         <style>
+        .systems-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 25px 0;
         }
 
-        /* Шапка с оглавлением и прогресс-баром */
-        .page-header {
-            position: sticky;
-            top: 0;
-            z-index: 200;
-            background: var(--panel-bg);
-            border-bottom: 1px solid var(--accent-dim);
-        }
-
-        /* Оглавление – новая стилизация (блочное, контрастное, по центру) */
-        .toc {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center; /* центрирование */
-            padding: 10px 20px;
-            background: rgba(0, 102, 255, 0.1);
-            border-bottom: 1px solid var(--accent-dim);
-        }
-        .toc-toggle {
-            display: none; /* скрыт на десктопе */
-            background: var(--accent);
-            border: none;
-            color: #fff;
-            padding: 10px 15px;
+        .system-card {
+            background: var(--card-bg);
+            padding: 25px;
             border-radius: var(--border-radius);
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .toc-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            justify-content: center;
-        }
-        .toc-list li a {
-            display: block;
-            padding: 8px 16px;
-            background: rgba(0, 102, 255, 0.2);
             border: 1px solid var(--accent-dim);
-            border-radius: 30px; /* пилюли */
-            color: var(--accent);
-            text-decoration: none;
-            font-size: 0.95em;
-            font-weight: bold;
-            transition: all 0.2s;
-            white-space: nowrap;
-        }
-        .toc-list li a i {
-            margin-right: 6px;
-            color: var(--highlight);
-        }
-        .toc-list li a:hover {
-            background: var(--accent);
-            color: #fff;
-            border-color: var(--accent);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0, 102, 255, 0.3);
-        }
-        .toc-list li a:hover i {
-            color: #fff;
-        }
-
-        /* Мобильная версия оглавления */
-        @media (max-width: 768px) {
-            .toc {
-                flex-wrap: nowrap;
-                justify-content: space-between;
-            }
-            .toc-toggle {
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-            }
-            .toc-list {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                margin-top: 10px;
-            }
-            .toc-list.show {
-                display: flex;
-            }
-            .toc-list li a {
-                white-space: normal;
-                text-align: left;
-            }
-        }
-
-        /* Прогресс-бар */
-        .progress-container {
-            width: 100%;
-            height: 4px;
-            background: rgba(0,102,255,0.1);
-        }
-        .progress-bar {
-            height: 4px;
-            background: var(--accent);
-            width: 0%;
-            transition: width 0.1s;
-        }
-
-        /* Кнопка наверх */
-        .scroll-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: var(--accent);
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 24px;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s, visibility 0.3s;
-            z-index: 99;
-            box-shadow: 0 0 15px rgba(0,102,255,0.5);
-        }
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* Якорные ссылки у заголовков */
-        .anchor {
-            opacity: 0.3;
-            margin-left: 10px;
-            font-size: 0.7em;
-            text-decoration: none;
-            color: inherit;
-            transition: opacity 0.2s;
-        }
-        h2:hover .anchor, h3:hover .anchor {
-            opacity: 1;
-        }
-
-        /* Адаптивные таблицы */
-        @media (max-width: 768px) {
-            table, thead, tbody, tr, th, td {
-                display: block;
-            }
-            table {
-                border: none;
-            }
-            thead {
-                display: none;
-            }
-            tr {
-                margin-bottom: 20px;
-                border: 1px solid var(--accent-dim);
-                border-radius: var(--border-radius);
-                overflow: hidden;
-            }
-            td {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                padding: 12px;
-                border: none;
-                border-bottom: 1px solid var(--accent-dim);
-            }
-            td:last-child {
-                border-bottom: none;
-            }
-            td::before {
-                content: attr(data-label);
-                font-weight: bold;
-                color: var(--accent);
-                width: 40%;
-                flex-shrink: 0;
-            }
-        }
-
-        /* Аккордеоны для источников */
-        .accordion {
-            border: 1px solid var(--accent-dim);
-            border-radius: var(--border-radius);
-            margin-bottom: 15px;
-            background: rgba(0,102,255,0.02);
-        }
-        .accordion-toggle {
-            width: 100%;
-            background: rgba(0,102,255,0.1);
-            border: none;
-            padding: 15px 20px;
-            text-align: left;
-            font-size: 1.1em;
-            font-weight: bold;
-            color: var(--accent);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.2s;
-        }
-        .accordion-toggle:hover {
-            background: rgba(0,102,255,0.2);
-        }
-        .accordion-toggle::after {
-            content: "▼";
-            font-size: 0.8em;
-            transition: transform 0.3s;
-        }
-        .accordion-toggle[aria-expanded="true"]::after {
-            transform: rotate(180deg);
-        }
-        .accordion-content {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out, padding 0.3s;
-        }
-        .accordion-content.show {
-            max-height: 1000px; /* достаточно большое значение */
-            padding: 20px;
-        }
-
-        /* Всплывающие подсказки для терминов */
-        .term, .acronym {
+            transition: transform var(--transition), box-shadow var(--transition);
             position: relative;
-            cursor: help;
-            border-bottom: 1px dotted currentColor;
+            border-top: 4px solid transparent; /* Будет переопределено для каждой карточки */
         }
-        .term[data-tooltip]:hover::after,
-        .acronym[data-tooltip]:hover::after {
-            content: attr(data-tooltip);
-            position: absolute;
-            bottom: 100%;
-            left: 0;
-            background: var(--panel-bg);
-            border: 1px solid var(--accent);
-            color: var(--text);
-            padding: 5px 10px;
-            border-radius: var(--border-radius);
-            white-space: nowrap;
+
+        .system-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Индивидуальные верхние границы */
+        .card-concepts { border-top-color: var(--accent); }
+        .card-legal { border-top-color: var(--warning); }
+        .card-science { border-top-color: var(--system-green); }
+
+        .system-code {
+
+        }
+
+        h3 {
+            color: var(--highlight);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 1px dashed rgba(255, 204, 0, 0.3);
+            padding-bottom: 8px;
+        }
+
+        /* Стили для ссылок */
+        .source-links {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--accent-dim);
+        }
+        .source-links a {
+            display: inline-block;
+            margin-right: 10px;
+            color: var(--highlight);
+            text-decoration: none;
             font-size: 0.9em;
-            z-index: 300;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            pointer-events: none;
+            transition: color 0.2s;
+        }
+        .source-links a:hover {
+            color: #ffdb4d;
+            text-decoration: underline;
+        }
+        .source-links i {
+            margin-right: 5px;
+            color: var(--accent);
         }
 
-        /* Классы для удаления inline-стилей */
-        .hero-title-badge {
-            background: #0066ff;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 4px;
-        }
-        .hero-subtitle-badge {
-            background: #ffcc00;
-            color: #000000;
-            padding: 3px 10px;
-            border-radius: 4px;
-        }
-
-        /* Возвращаем отступы контентному блоку (как в оригинале) */
-        .content {
-            padding: 40px;
-        }
-
-        /* === Дополнительные классы для растягивания элементов на всю ширину === */
-        .hero-fullwidth {
-            margin-left: -40px;
-            margin-right: -40px;
-            margin-top: -40px;      /* поднимаем hero до верхней границы .container */
-            margin-bottom: 40px;     /* сохраняем вертикальный отступ после hero */
-            width: auto;
-        }
-        .fullwidth-image {
-            display: block;
-            margin-left: -25px;      /* компенсируем padding .intro-text (25px) */
-            margin-right: -25px;
-            width: calc(100% + 50px);
-            max-width: none;
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .systems-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Ссылка для пропуска навигации -->
     <a href="#main" class="skip-to-main">Перейти к основному контенту</a>
 
-    <!-- Шапка с оглавлением и прогресс-баром -->
     <header class="page-header">
         <nav class="toc" aria-label="Оглавление">
             <button class="toc-toggle" aria-expanded="false" id="tocToggle">
                 <i class="fas fa-bars"></i> Содержание
             </button>
             <ul class="toc-list" id="tocList">
+                <li><a href="#scheme"><i class="fas fa-satellite-dish"></i> Принцип действия</a></li>
                 <li><a href="#intro"><i class="fas fa-home"></i> Введение</a></li>
-                <li><a href="#systems"><i class="fas fa-satellite-dish"></i> Системы</a></li>
+                <li><a href="#systems"><i class="fas fa-network-wired"></i> Системы</a></li>
                 <li><a href="#concepts"><i class="fas fa-brain"></i> Концепции</a></li>
                 <li><a href="#glossary"><i class="fas fa-book"></i> Глоссарий</a></li>
                 <li><a href="#integration"><i class="fas fa-code-branch"></i> Интеграция</a></li>
+                <li><a href="#effects"><i class="fas fa-exclamation-triangle"></i> Эффекты</a></li>
                 <li><a href="#comparison"><i class="fas fa-scale-balanced"></i> Сравнение</a></li>
                 <li><a href="#incidents"><i class="fas fa-exclamation-triangle"></i> Инциденты</a></li>
                 <li><a href="#legal"><i class="fas fa-gavel"></i> Право</a></li>
@@ -346,10 +115,9 @@
         </div>
     </header>
 
-    <!-- Основной контент (с отступами внутри .content) -->
     <main id="main" class="container">
         <div class="content">
-            <!-- Hero секция (теперь на всю ширину) -->
+            <!-- Hero секция -->
             <section class="hero hero-fullwidth">
                 <picture>
                     <source media="(max-width: 768px)" srcset="https://cryptq.github.io/css/zersetzung2.0_2.png">
@@ -364,27 +132,185 @@
                 </div>
             </section>
 
-            <!-- Введение (intro-text) -->
-            <section id="intro" class="intro-text">
-                <i><b>
-                    Концепции <span class="term" data-tooltip="Автор трилогии о современных методах психотехнологического воздействия">Чарли Армстронга Адамса</span>, изложенные в работах <span class="term" data-tooltip="Основная работа по современным методам психотехнологического воздействия">«Zersetzung 2.0»</span>, 
-                    <span class="term" data-tooltip="Анализ методов организованного преследования в цифровую эпоху">«Gang-Stalking: The Dark Art of Societal Control»</span> и <span class="term" data-tooltip="Современная интерпретация методов контрразведывательных программ">«COINTELPRO 5.0»</span>, 
-                    описывают трансформацию классических методов психологического воздействия в высокотехнологичные системы социального контроля. 
-                    Данный анализ демонстрирует их интеграцию с современными системами управления и разведки. 
-                    <br> <br>
-                    <span class="term" data-tooltip="Общественная опасность таких воздействий признана на законодательном уровне">Общественная опасность такого вида воздействий</span> в РФ стала очевидна в 2001 году, когда <span class="term" data-tooltip="Изменения в Федеральный закон «Об оружии»">были внесены изменения</span> в <span class="acronym" data-tooltip="Статья 6 Федерального закона об оружии">ст.6 Ф.З об оружии</span>.
-                    <br>
-                    Характер таких <span class="term" data-tooltip="Воздействия с использованием электромагнитных, инфразвуковых и ультразвуковых излучений">психофизических воздействий</span> подробно описан:
-                    <br>
-                    <span class="acronym" data-tooltip="Учёная степень">Доктором юридических наук</span> и <span class="acronym" data-tooltip="Должность">профессором кафедры</span> <span class="acronym" data-tooltip="Академия управления МВД России">Академии управления МВД России</span> <span class="term" data-tooltip="Автор работ по психотронному оружию">Лозовитской Галиной Петровной</span>, 
-                    <br>
-                    в её официальных работах о <span class="term" data-tooltip="Воздействие с использованием специальных излучений">психотронном воздействии, оружии поражающим излучением</span> и <span class="term" data-tooltip="Преступления, совершаемые с использованием такого оружия">совершаемых с их помощью преступлениях</span> преимущественно в составе <span class="acronym" data-tooltip="Организованная преступная группа">ОПС</span>.
-                    <br><br>
-                    Ключевое значение имеет её статья <span class="term" data-tooltip="Статья в журнале «Труды Академии управления МВД России» 2017 г.">«Оружие, поражающее излучением, как средство совершения преступлений»</span>, где впервые в Российской правовой науке был поставлен вопрос о необходимости разработки экспертных методик для фиксации вреда от воздействия электромагнитных, инфразвуковых и ультразвуковых излучений. Это подводит научную базу под квалификацию действий с применением таких технологий как <span class="term" data-tooltip="Уголовная ответственность">уголовных преступлений</span>.
-                </b></i>
-                <br><br>
-                <i><b>Параллельно с российской правовой школой, западная инженерно-биофизическая наука также предоставляет доказательства реалистичности таких угроз. Профессор <span class="term" data-tooltip="Пенсильванский университет, специалист по биоэффектам ЭМИ">Кеннет Р. Фостер</span>, ведущий специалист по биоэффектам электромагнитного излучения, в своей работе 2023 года продемонстрировал, что для генерации акустических волн в голове человека (эффект Фрея) достаточно <span class="term" data-tooltip="Импульсные лазеры, доступные на открытом рынке">коммерчески доступных импульсных лазеров</span>. Это означает, что <span class="term" data-tooltip="Технологии скрытого психофизического воздействия">технологии скрытого психофизического воздействия</span> перестали быть гипотетическими и могут быть реализованы с использованием оборудования, свободно продающегося на открытом рынке.</b></i>
+            <!-- Секция 1: Схема принципа действия (обновлённая) -->
+            <section id="scheme" class="diagram-section">
+                <h2 style="text-align:center; margin-top: 30px;">
+                    Сочетание фазированных антенных решёток (ФАР) и анализа многочастотных биосигнатур позволяет как «ВИДЕТЬ», так и «СЛЕДОВАТЬ» за человеком не только по классическому радиоканалу мобильной связи, но и по его уникальным физиологическим характеристикам (
+                    <a href="https://habr.com/ru/articles/422021/" target="_blank" rel="noopener" style="color: var(--highlight); text-decoration: none; border-bottom: 1px dashed var(--accent);">
+                        <b>биоcигнатура, сопоставимая с отпечатком пальца</b>
+                    </a>).
+                </h2>
             </section>
+
+            <section id="scheme" class="diagram-section">
+                <!-- Основная диаграмма с интегрированными технологиями ФАР -->
+                <div class="diagram-container">
+                    <!-- Карточка интерфейса систем управления -->
+                    <div class="diagram-block">
+                        <i class="fas fa-satellite-dish" aria-hidden="true"></i>
+                        <div class="diagram-title">«C4ISR|CJADC2»</div>
+                        <div class="diagram-block-desc">Интерфейс систем управления и связи</div>
+                    </div>
+
+                    <!-- Стрелка -->
+                    <div class="infographic-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+                    <!-- Модулятор звука -->
+                    <div class="diagram-block">
+                        <i class="fas fa-microphone" aria-hidden="true"></i>
+                        <div class="diagram-title">МОДУЛЯТОР ЗВУКА</div>
+                        <div class="diagram-block-desc">Для передачи голоса</div>
+                    </div>
+
+                    <!-- Стрелка -->
+                    <div class="infographic-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+                    <!-- Группа параллельных генераторов (СВЧ + Инфразвук) -->
+                    <div class="diagram-group">
+                        <div class="diagram-block">
+                            <i class="fas fa-wave-square" aria-hidden="true"></i>
+                            <div class="diagram-title">СВЧ-ГЕНЕРАТОР/ЛАЗЕР</div>
+                            <div class="diagram-block-desc">Генерирует СВЧ-сигнал</div>
+                        </div>
+                        <div class="diagram-block">
+                            <i class="fas fa-wave-square" aria-hidden="true"></i>
+                            <div class="diagram-title">ИНФРАЗВУКОВОЙ ГЕНЕРАТОР</div>
+                            <div class="diagram-block-desc">Создаёт инфразвук</div>
+                        </div>
+                    </div>
+
+                    <!-- Стрелка к ФАР -->
+                    <div class="infographic-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+                    <!-- Блок ФАР с интегрированными технологиями -->
+                    <div class="far-block">
+                        <!-- Основной блок ФАР -->
+                        <div class="diagram-block far-main">
+                            <i class="fas fa-broadcast-tower" aria-hidden="true"></i>
+                            <div class="diagram-title">НАПРАВЛЕННЫЕ ФАЗИРОВАННЫЕ АНТЕННЫЕ РЕШЁТКИ</div>
+                            <div class="diagram-block-desc">В базовых станциях сотовой связи</div>
+                        </div>
+
+                        <!-- Заголовок для технологий -->
+                        <div class="tech-title">Ключевые возможности ФАР</div>
+
+                        <!-- Сетка технологий (3x2, без стрелок) -->
+                        <div class="tech-grid">
+                            <div class="infographic-item">
+                                <i class="fas fa-bullseye" aria-hidden="true"></i>
+                                <div class="infographic-title">ФОРМИРОВАНИЕ ЛУЧА</div>
+                                <div class="infographic-desc">Электронное управление направлением и формой луча без механики</div>
+                            </div>
+                            <div class="infographic-item">
+                                <i class="fas fa-user-friends" aria-hidden="true"></i>
+                                <div class="infographic-title">СОПРОВОЖДЕНИЕ ЦЕЛЕЙ «ХЭНДОВЕР»</div>
+                                <div class="infographic-desc">Лучи (в т.ч Эффект Фрея, Инфразвук) "следуют" за биоэлектромагнитной подписью — биосигнатурой («оцифрованным подсознанием»), телефоном или другими целями</div>
+                            </div>
+                            <div class="infographic-item">
+                                <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                                <div class="infographic-title">SDMA / MU-MIMO</div>
+                                <div class="infographic-desc">Передача разных потоков разным пользователям в одном канале</div>
+                            </div>
+                            <div class="infographic-item">
+                                <i class="fas fa-signal" aria-hidden="true"></i>
+                                <div class="infographic-title">УВЕЛИЧЕНИЕ ПОКРЫТИЯ</div>
+                                <div class="infographic-desc">Больше энергии — лучше сигнал и скорость на краях соты</div>
+                            </div>
+                            <div class="infographic-item">
+                                <i class="fas fa-slash" aria-hidden="true"></i>
+                                <div class="infographic-title">ПОДАВЛЕНИЕ ПОМЕХ</div>
+                                <div class="infographic-desc">Луч минимизирует влияние помех с других направлений</div>
+                            </div>
+                            <div class="infographic-item">
+                                <i class="fas fa-th" aria-hidden="true"></i>
+                                <div class="infographic-title">MASSIVE MIMO</div>
+                                <div class="infographic-desc">Множество адаптивных лучей — максимум эффективности (5G)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Стрелка к мозгу и телу -->
+                    <div class="infographic-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+                    <!-- Мозг и тело человека -->
+                    <div class="diagram-block">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                        <div class="diagram-title">ЧЕЛОВЕК</div>
+                        <div class="diagram-block-desc">Воспринимает сигналы</div>
+                    </div>
+
+                    <!-- Стрелка к итоговому эффекту -->
+                    <div class="infographic-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+                    <!-- Комбинированное воздействие -->
+                    <div class="diagram-block">
+                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                        <div class="diagram-title">КОМБИНИРОВАННОЕ ВОЗДЕЙСТВИЕ</div>
+                        <div class="diagram-block-desc">Психофизиологический и социальный эффект</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Далее идут все остальные секции из оригинального index.html (без изменений) -->
+    <section id="intro" style="max-width: 1400px; margin: 0 auto;">
+        <h2 style="color: var(--accent); border-left: 3px solid var(--accent); padding-left: 15px; margin-top: 0;">Введение</h2>
+
+        <div class="systems-grid">
+            <!-- Карточка 1: Концепции Zersetzung 2.0 -->
+            <div class="system-card card-concepts">
+                <div class="system-code" aria-hidden="true"><i class="fas fa-brain"></i></div>
+                <h3>Концепции Zersetzung 2.0</h3>
+                <p>Трилогия <span class="term" data-tooltip="Автор трилогии о современных методах психотехнологического воздействия">Чарли Армстронга Адамса</span> описывает трансформацию классических методов психологического воздействия в высокотехнологичные системы социального контроля.</p>
+                <p><strong>Ключевые работы:</strong></p>
+                <ul style="margin-bottom: 15px;">
+                    <li>«Zersetzung 2.0»</li>
+                    <li>«Gang-Stalking: The Dark Art of Societal Control»</li>
+                    <li>«COINTELPRO 5.0»</li>
+                </ul>
+                <p>Данный анализ демонстрирует их интеграцию с современными системами управления и разведки.</p>
+
+                <!-- Ссылки на книги (Amazon) -->
+                <div class="source-links">
+                    <a href="https://www.amazon.in/Zersetzung-2-0-Psychology-Surveillance-Influence-ebook/dp/B0FZ27ZWTV" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Zersetzung 2.0</a>
+                    <a href="https://www.amazon.com/Gang-Stalking-Dark-Art-Societal-Control-ebook/dp/B0F4548VZY" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Gang-Stalking</a>
+                    <a href="https://www.amazon.in/COINTELPRO-5-0-Gangstalking-Engineering-Surveillance-ebook/dp/B0CVB14TBQ" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> COINTELPRO 5.0</a>
+                </div>
+            </div>
+
+            <!-- Карточка 2: Российская правовая база -->
+            <div class="system-card card-legal">
+                <div class="system-code" aria-hidden="true"><i class="fas fa-gavel"></i></div>
+                <h3>Правовая база в РФ</h3>
+                <p><span class="term" data-tooltip="Общественная опасность таких воздействий признана на законодательном уровне">Общественная опасность</span> признана в 2001 году – изменения в <span class="acronym" data-tooltip="Статья 6 Федерального закона об оружии">ст.6 ФЗ об оружии</span>.</p>
+                <p>Профессор <span class="term" data-tooltip="Автор работ по психотронному оружию">Г.П. Лозовитская</span> (<span class="acronym" data-tooltip="Академия управления МВД России">Академия МВД</span>) в работах о <span class="term" data-tooltip="Воздействие с использованием специальных излучений">психотронном воздействии</span> обосновала необходимость разработки экспертных методик для фиксации вреда от электромагнитных, инфразвуковых и ультразвуковых излучений.</p>
+                <p><strong>Ключевая статья:</strong> «Оружие, поражающее излучением, как средство совершения преступлений» (2017).</p>
+
+                <!-- Ссылки на работы Лозовитской -->
+                <div class="source-links">
+                    <a href="https://scholar.google.com/citations?user=P7Ip_tcAAAAJ&hl=ru" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Все работы Лозовитской</a>
+                    <a href="https://cyberleninka.ru/article/n/oruzhie-porazhayuschee-izlucheniem-kak-sredstvo-soversheniya-prestupleniy" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Ключевая статья</a>
+                </div>
+            </div>
+
+            <!-- Карточка 3: Международные исследования -->
+            <div class="system-card card-science">
+                <div class="system-code" aria-hidden="true"><i class="fas fa-flask"></i></div>
+                <h3>Научное обоснование</h3>
+                <p>Профессор <span class="term" data-tooltip="Пенсильванский университет, специалист по биоэффектам ЭМИ">Кеннет Р. Фостер</span> в 2023 году доказал, что для генерации акустических волн в голове человека (<span class="term" data-tooltip="Микроволновый слуховой эффект">эффект Фрея</span>) достаточно коммерчески доступных импульсных лазеров [<a href="#ref1" style="color:var(--accent);">1</a>].</p>
+                <p><strong>Вывод:</strong> технологии скрытого психофизического воздействия перестали быть гипотетическими и могут быть реализованы с использованием оборудования, свободно продающегося на открытом рынке.</p>
+
+                <!-- Ссылка на исследование Фостера (Frontiers in Public Health, 2023) -->
+                <div class="source-links">
+                    <a href="https://scholar.google.com/citations?user=P7Ip_tcAAAAJ&hl=ru" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Все работы Биоинженера Пенсильванского университета Кеннета Р. Фостера</a>
+                    <a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.1118762/full" target="_blank" rel="noopener"><i class="fas fa-microscope"></i> Foster (2023) — оригинальное исследование</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Сноска для ссылки на Фостера (опционально) -->
+        <p id="ref1" style="font-size:0.8em; opacity:0.7; margin-top:10px;">[1] Foster KR. Commentary: Can the microwave auditory effect be "weaponized"? Front Public Health. 2023 Jan 6;10:1118762. DOI: 10.3389/fpubh.2022.1118762 [citation:1]</p>
+    </section>
 
             <section id="intro2" class="intro-text">
                 С техническо-нормативной точек зрения, интеграция функций <span class="term" data-tooltip="Дистанционный нейромониторинг">нейромониторинга</span> в системы 
@@ -394,7 +320,6 @@
 
             <section id="infrastructure" class="intro-text" style="margin-top: 40px; margin-bottom: 20px;">
                 <h2 style="color: var(--accent); margin-top: 0; border-left: 3px solid var(--accent); padding-left: 15px;">Инфраструктура как оружие: скрытые возможности сетей связи</h2>
-                <!-- Изображение isac.jpg на всю ширину контейнера -->
                 <img class="fullwidth-image" src="https://cryptq.github.io/css/isac.jpg" alt="isac">
                 <p><span class="term" data-tooltip="Дистанционное разрушение личности">Разрушение личности дистанционно</span> — это не мгновенный процесс, а последовательная деградация нейробиологических функций человека, которая может длиться годами.</p>
                 <p>Современная <span class="acronym">БС сотовой связи</span> — это не просто антенна для звонков, а мощный радар с миллиметровой точностью и программное обеспечение, позволяющее управлять этим радаром как угодно. С её помощью можно:</p>
@@ -613,6 +538,44 @@
                 </table>
             </section>
 
+            <!-- Секция 2: Эффекты комбинированного воздействия (перенесена после таблицы) -->
+            <section id="effects" class="section">
+                <div class="effects-title">
+                    <b>ЭФФЕКТЫ КОМБИНИРОВАННОГО ВОЗДЕЙСТВИЯ</b>
+                </div>
+                
+                <div class="evidence-model">
+                    <div class="model-level">
+                        <div class="model-title"><i class="fas fa-headphones" aria-hidden="true"></i> СЛУХОВЫЕ ЭФФЕКТЫ</div>
+                        <p>Создание "голосов в голове", щелчков, тонов или речи за счёт термоакустической трансформации СВЧ-сигнала в тканях мозга.</p>
+                    </div>
+                    
+                    <div class="model-level">
+                        <div class="model-title"><i class="fas fa-brain" aria-hidden="true"></i> ПСИХОЭМОЦИОНАЛЬНОЕ ВОЗДЕЙСТВИЕ</div>
+                        <p>Инфразвук вызывает тревожность, страх, панику и депрессию, усиливая восприимчивость к слуховым галлюцинациям.</p>
+                    </div>
+                    
+                    <div class="model-level">
+                        <div class="model-title"><i class="fas fa-heartbeat" aria-hidden="true"></i> ФИЗИОЛОГИЧЕСКИЙ ДИСКОМФОРТ</div>
+                        <p>Резонансное воздействие инфразвука на органы вызывает тошноту, головокружение, нарушение координации и боль.</p>
+                    </div>
+                    
+                    <div class="model-level">
+                        <div class="model-title"><i class="fas fa-user-slash" aria-hidden="true"></i> КОГНИТИВНЫЕ НАРУШЕНИЯ</div>
+                        <p>Снижение концентрации, ухудшение памяти и логического мышления.<br>14 симптомов, 10 синдромов.</p>
+                    </div>
+                    
+                    <div class="model-level">
+                        <div class="model-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> ФИЗИЧЕСКИЕ ПОВРЕЖДЕНИЯ</div>
+                        <p>Инфразвук высокой интенсивности может вызывать микротравмы органов, повреждение слуха и вестибулярного аппарата.</p>
+                        <div class="fact-box" style="margin-top: 15px; font-size: 0.9em;">
+                            <div class="model-title"><i class="fas fa-file-medical-alt" aria-hidden="true"></i> ДОКУМЕНТАЦИЯ</div>
+                            <p>Документ «Влияние волнового воздействия на ткани и материалы организма на основе диэлектрических свойств и резонансных частот» приложен ко всем материалам.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- 5. Сравнительный анализ -->
             <section id="comparison">
                 <h2>5. Сравнение: классические vs. интегрированные методы <a href="#comparison" class="anchor">🔗</a></h2>
@@ -724,7 +687,7 @@
 
                 <h2>2. Формализация механизмов воздействия (Технический базис)</h2>
                 <p>Научное сообщество и военные аналитики выделяют три компонента, формирующих «невидимое поражение»:</p>
-                <div class="tech-grid">
+                <div class="tech-grid" style="grid-template-columns: repeat(3, 1fr);">
                     <div class="tech-item">
                         <strong>Термоакустический эффект (Эффект Фрея):</strong>
                         <div class="section-title">Механика:</div>
@@ -1038,34 +1001,9 @@
     <!-- Кнопка наверх -->
     <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
 
-    <!-- Скрипт для работы новых компонентов (вкладки, оглавление, прогресс-бар, аккордеоны, кнопка наверх) -->
+    <!-- Скрипт -->
     <script>
         (function() {
-            // --- Вкладки (с ARIA) ---
-            const tabs = document.querySelectorAll('[role="tab"]');
-            const tabContents = document.querySelectorAll('[role="tabpanel"]');
-            if (tabs.length) {
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', function() {
-                        // Деактивируем все табы
-                        tabs.forEach(t => {
-                            t.classList.remove('active');
-                            t.setAttribute('aria-selected', 'false');
-                        });
-                        // Скрываем все панели
-                        tabContents.forEach(c => {
-                            c.classList.remove('active');
-                        });
-                        // Активируем текущий таб и его панель
-                        this.classList.add('active');
-                        this.setAttribute('aria-selected', 'true');
-                        const panelId = this.getAttribute('aria-controls');
-                        document.getElementById(panelId).classList.add('active');
-                    });
-                });
-            }
-
-            // --- Оглавление (бургер) ---
             const tocToggle = document.getElementById('tocToggle');
             const tocList = document.getElementById('tocList');
             if (tocToggle && tocList) {
@@ -1076,7 +1014,6 @@
                 });
             }
 
-            // --- Плавный скролл к якорям (перехватываем все ссылки с #) ---
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const href = this.getAttribute('href');
@@ -1089,7 +1026,6 @@
                 });
             });
 
-            // --- Прогресс-бар ---
             const progressBar = document.getElementById('progressBar');
             if (progressBar) {
                 window.addEventListener('scroll', function() {
@@ -1100,7 +1036,6 @@
                 });
             }
 
-            // --- Кнопка наверх ---
             const scrollTopBtn = document.getElementById('scrollTop');
             if (scrollTopBtn) {
                 window.addEventListener('scroll', function() {
@@ -1112,6 +1047,27 @@
                 });
                 scrollTopBtn.addEventListener('click', function() {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // --- Вкладки (с ARIA) ---
+            const tabs = document.querySelectorAll('[role="tab"]');
+            const tabContents = document.querySelectorAll('[role="tabpanel"]');
+            if (tabs.length) {
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', function() {
+                        tabs.forEach(t => {
+                            t.classList.remove('active');
+                            t.setAttribute('aria-selected', 'false');
+                        });
+                        tabContents.forEach(c => {
+                            c.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                        this.setAttribute('aria-selected', 'true');
+                        const panelId = this.getAttribute('aria-controls');
+                        document.getElementById(panelId).classList.add('active');
+                    });
                 });
             }
 
