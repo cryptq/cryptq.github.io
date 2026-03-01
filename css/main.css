@@ -86,9 +86,7 @@
             filter: contrast(1.1) saturate(1.1);
         }
 
-        .hero-mobile {
-            display: none;
-        }
+        .hero-mobile {display: none;}
 
         .hero-overlay {
             position: absolute;
@@ -152,15 +150,13 @@
         /* Карточки */
         .systems-grid,
         .term-grid,
-        .tech-grid {
-            display: grid;
-            gap: 25px;
-            margin: 25px 0;
-        }
+        .tech-grid { display: grid;gap: 25px;margin: 25px 0; }
 
         .systems-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
         .term-grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
         .tech-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+        .source-item{ margin: 10px 0; }
 
         .system-card,
         .term-card,
@@ -173,6 +169,7 @@
             border: var(--card-border);
             transition: transform var(--transition), box-shadow var(--transition);
             position: relative;
+                
         }
 
         .system-card:hover,
@@ -498,3 +495,4 @@
             font-size: 1.1em;
 
         }
+
